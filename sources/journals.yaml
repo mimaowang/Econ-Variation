@@ -1,0 +1,17 @@
+schema_version: 1
+scope_note: Journal rank is a discovery prior, never evidence that a variation is exogenous or a design is valid.
+families:
+  economics_top_five: [American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, Review of Economic Studies]
+  business_lists: [UTD24, FT50]
+  quality_filters: [ABS 3, ABS 4, SSCI Q1]
+  field_priorities:
+    - labor
+    - development
+    - public economics
+    - environmental economics
+    - urban and regional economics
+    - health economics
+    - political economy
+    - finance
+    - innovation
+selection_rule: Prefer papers with an identifiable China-related variation, an inspectable institutional section, and evidence sufficient to recover assignment and data requirements.

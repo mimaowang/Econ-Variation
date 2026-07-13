@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EconVariation variation case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "id", "name", "aliases", "status", "provenance", "scope", "identity",
+    "timeline", "assignment", "research_compatibility", "design", "threats",
+    "empirical_requirements", "evidence", "design_applications", "method_transfer", "readiness_blockers"
+  ],
+  "properties": {
+    "schema_version": {"const": 2},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 3},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {"enum": ["extracted", "grounded", "design-documented", "contested", "deprecated"]},
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task_id"],
+      "properties": {
+        "task_id": {"type": "string", "minLength": 3}
+      }
+    },
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["country", "regions", "domains", "variation_type", "knowledge_role", "china_relevance"],
+      "properties": {
+        "country": {"type": "string"},
+        "regions": {"type": "array", "items": {"type": "string"}},
+        "domains": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "variation_type": {"enum": ["staggered-rollout", "eligibility-threshold", "boundary-discontinuity", "cohort-rule", "event-shock", "continuous-exposure", "single-date-reform", "pilot-assignment", "judicial-decision", "other"]},
+        "knowledge_role": {"enum": ["china-variation", "global-china-variation", "transferable-method"]},
+        "china_relevance": {"type": "string", "minLength": 10}
+      }
+    },
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["instrument", "authority", "legal_identifiers", "implementation_regime", "assignment_mechanism", "parent", "related_variations"],
+      "properties": {
+        "instrument": {"type": "string", "minLength": 3},
+        "authority": {"type": "string", "minLength": 2},
+        "legal_identifiers": {"type": "array", "items": {"type": "string"}},
+        "implementation_regime": {"type": "string", "minLength": 3},
+        "assignment_mechanism": {"type": "string", "minLength": 3},
+        "parent": {"type": ["string", "null"]},
+        "related_variations": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "timeline": {
+      "type": "object", "additionalProperties": false,
+      "required": ["announcement", "effective", "implementation_start", "implementation_end", "local_timing", "anticipation", "last_verified"],
+      "properties": {
+        "announcement": {"type": ["string", "null"]},
+        "effective": {"type": ["string", "null"]},
+        "implementation_start": {"type": ["string", "integer", "null"]},
+        "implementation_end": {"type": ["string", "integer", "null"]},
+        "local_timing": {"type": "string", "minLength": 2},
+        "anticipation": {"type": "string", "minLength": 2},
+        "last_verified": {"type": "string", "format": "date"}
+      }
+    },
+    "assignment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["unit", "treated", "comparison_pool", "rule", "intensity", "exemptions", "compliance", "exposure_construction", "required_identifiers", "spillovers"],
+      "properties": {
+        "unit": {"type": "string", "minLength": 2},
+        "treated": {"type": "string", "minLength": 3},
+        "comparison_pool": {"type": "string", "minLength": 3},
+        "rule": {"type": "string", "minLength": 3},
+        "intensity": {"type": ["string", "null"]},
+        "exemptions": {"type": "array", "items": {"type": "string"}},
+        "compliance": {"type": "string", "minLength": 2},
+        "exposure_construction": {"type": "string", "minLength": 3},
+        "required_identifiers": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "spillovers": {"type": "string", "minLength": 2}
+      }
+    },
+    "research_compatibility": {
+      "type": "object", "additionalProperties": false,
+      "required": ["outcome_domains", "affected_populations", "mechanism_channels", "best_for", "not_good_for"],
+      "properties": {
+        "outcome_domains": {"type": "array", "items": {"type": "string"}},
+        "affected_populations": {"type": "array", "items": {"type": "string"}},
+        "mechanism_channels": {"type": "array", "items": {"type": "string"}},
+        "best_for": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "not_good_for": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "design": {
+      "type": "object", "additionalProperties": false,
+      "required": ["affordances", "candidate_designs", "identifying_variation", "primary_strategy", "estimand", "treatment_variable", "comparison_logic", "estimation_notes", "assumptions", "diagnostics"],
+      "properties": {
+        "claim_type": {"enum": ["causal", "reduced-form", "structural", "descriptive", "method-pattern"]},
+        "affordances": {"type": "array", "items": {"type": "string"}},
+        "candidate_designs": {"type": "array", "items": {"type": "string"}},
+        "identifying_variation": {"type": "string", "minLength": 3},
+        "primary_strategy": {"type": "string", "minLength": 3},
+        "estimand": {"type": "string", "minLength": 3},
+        "treatment_variable": {"type": "string", "minLength": 3},
+        "comparison_logic": {"type": "string", "minLength": 3},
+        "estimation_notes": {"type": "string", "minLength": 3},
+        "assumptions": {"type": "array", "items": {"type": "string"}},
+        "diagnostics": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "threats": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["type", "basis", "condition", "evidence_refs", "possible_diagnostics"],
+        "properties": {
+          "type": {"type": "string"},
+          "basis": {"enum": ["documented", "reported", "inferred"]},
+          "condition": {"type": "string", "minLength": 3},
+          "evidence_refs": {"type": "array", "items": {"type": "string", "pattern": "^E[1-9][0-9]*$"}},
+          "possible_diagnostics": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "empirical_requirements": {
+      "type": "object", "additionalProperties": false,
+      "required": ["contract_version", "population", "observation_unit", "geography_level", "time_start", "time_end", "minimum_frequency", "minimum_pre_periods", "minimum_post_periods", "required_fields", "required_identifiers", "treatment_key", "treatment_source", "measurement_risks"],
+      "properties": {
+        "contract_version": {"const": 1},
+        "population": {"type": "string"},
+        "observation_unit": {"type": "string"},
+        "geography_level": {"type": "string"},
+        "time_start": {"type": ["string", "integer", "null"]},
+        "time_end": {"type": ["string", "integer", "null"]},
+        "minimum_frequency": {"type": "string"},
+        "minimum_pre_periods": {"type": "integer", "minimum": 0},
+        "minimum_post_periods": {"type": "integer", "minimum": 0},
+        "required_fields": {"type": "array", "items": {"type": "string"}},
+        "required_identifiers": {"type": "array", "items": {"type": "string"}},
+        "treatment_key": {"type": "array", "items": {"type": "string"}},
+        "treatment_source": {"type": "string"},
+        "measurement_risks": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidence": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "source_type", "citation", "url", "date", "supports", "verification_status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^E[1-9][0-9]*$"},
+          "source_type": {"enum": ["policy-document", "implementation-document", "paper", "appendix", "replication", "official-data", "archive", "scholarship", "other"]},
+          "citation": {"type": "string", "minLength": 3},
+          "url": {"type": "string"},
+          "date": {"type": ["string", "integer", "null"]},
+          "supports": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "verification_status": {"enum": ["verified", "reported", "lead-only", "blocked"]},
+          "access_level": {"enum": ["metadata", "abstract", "full-text", "appendix", "replication", "official-document", "dataset"]},
+          "locator": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "design_applications": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["paper", "doi", "journal", "year", "research_question", "population", "outcome", "data_used", "treatment_encoding", "comparison", "empirical_design", "assumptions", "threats_addressed", "evidence_refs"],
+        "properties": {
+          "paper": {"type": "string"}, "doi": {"type": ["string", "null"]}, "journal": {"type": "string"},
+          "year": {"type": "integer"}, "research_question": {"type": "string"}, "population": {"type": "string"},
+          "outcome": {"type": "string"}, "data_used": {"type": "array", "items": {"type": "string"}},
+          "treatment_encoding": {"type": "string"}, "comparison": {"type": "string"},
+          "empirical_design": {"type": "string"}, "assumptions": {"type": "array", "items": {"type": "string"}},
+          "threats_addressed": {"type": "array", "items": {"type": "string"}},
+          "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^E[1-9][0-9]*$"}}
+        }
+      }
+    },
+    "method_transfer": {
+      "type": ["object", "null"],
+      "required": ["source_context", "strategy_family", "reusable_logic", "construction_steps", "source_treatment_or_endogenous_variable", "source_instrument_or_assignment", "first_stage_or_contrast", "identifying_assumptions", "diagnostics", "china_use_cases", "china_data_requirements", "transfer_limits"],
+      "properties": {
+        "source_context": {"type": "string", "minLength": 3},
+        "strategy_family": {"type": "string", "minLength": 2},
+        "reusable_logic": {"type": "string", "minLength": 10},
+        "construction_steps": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "source_treatment_or_endogenous_variable": {"type": "string", "minLength": 3},
+        "source_instrument_or_assignment": {"type": "string", "minLength": 3},
+        "first_stage_or_contrast": {"type": "string", "minLength": 3},
+        "identifying_assumptions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "diagnostics": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "china_use_cases": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "china_data_requirements": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "transfer_limits": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "readiness_blockers": {"type": "array", "items": {"type": "string"}},
+    "superseded_by": {"type": ["string", "null"]},
+    "deprecation_reason": {"type": ["string", "null"], "minLength": 3}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"scope": {"properties": {"knowledge_role": {"const": "transferable-method"}}}}},
+      "then": {"properties": {"method_transfer": {"type": "object"}}},
+      "else": {"properties": {"method_transfer": {"type": "null"}}}
+    }
+  ]
+}

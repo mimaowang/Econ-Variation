@@ -1,0 +1,292 @@
+schema_version: 2
+purpose: Product regression cases for structured recall and deterministic data-fit gates. Natural-language prompts are context; executable queries are Agent-normalized inputs.
+cases:
+  - id: environmental-firm-innovation
+    mode: match
+    prompt: I have annual firm patent data with prefecture codes from 2005 to 2018 and want to study whether local climate policy changes green innovation.
+    query:
+      candidate_ids: [china-low-carbon-pilot-first-wave]
+      data:
+        time_start: 2005
+        time_end: 2018
+        frequency: annual
+        identifiers: [prefecture code, year]
+        derivable_identifiers: [province code]
+        available_fields: [outcome, year, province code, prefecture code]
+        observation_unit: firm-year
+        geography: prefecture
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: conditional
+      expected_ids: [china-low-carbon-pilot-first-wave]
+      expected_reason_codes: [knowledge-conditional, identifier-crosswalk-manual-review]
+      allowed_roles: [china-variation]
+      must_identify: [province crosswalk requires verification, pilot nesting and spillovers require judgment]
+
+  - id: carbon-city-efficiency
+    mode: match
+    prompt: Which Chinese policy variation could support a city-level study of carbon efficiency with annual data from 2003 to 2018?
+    query:
+      candidate_ids: [china-low-carbon-pilot-first-wave]
+      data:
+        time_start: 2003
+        time_end: 2018
+        frequency: annual
+        identifiers: [province code, prefecture code, year]
+        available_fields: [outcome, year, province code, prefecture code]
+        observation_unit: city-year
+        geography: prefecture
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: conditional
+      expected_ids: [china-low-carbon-pilot-first-wave]
+      expected_reason_codes: [knowledge-conditional]
+      allowed_roles: [china-variation]
+      must_identify: [grounded knowledge retains blockers, city and province pilots require nesting review]
+
+  - id: hukou-worker-wages
+    mode: match
+    prompt: I have worker wages, hukou status, migrant status, city, and year from 2010 to 2020. Can a reform generate useful variation?
+    query:
+      candidate_ids: [china-2014-hukou-local-implementation]
+      data:
+        time_start: 2010
+        time_end: 2020
+        frequency: annual
+        identifiers: [city code, year, population eligibility marker]
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-2014-hukou-local-implementation]
+      expected_reason_codes: [knowledge-excluded]
+      allowed_roles: [china-variation]
+      must_identify: [mixed assignment record is contested, split threshold and staggered adoption before use]
+
+  - id: hukou-no-location
+    mode: match
+    prompt: I want to use the 2014 hukou reform, but my repeated cross-section has year and hukou status without city identifiers.
+    query:
+      candidate_ids: [china-2014-hukou-local-implementation]
+      include_leads: true
+      data:
+        time_start: 2010
+        time_end: 2020
+        frequency: annual
+        identifiers: [year, hukou status]
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-2014-hukou-local-implementation]
+      expected_reason_codes: [knowledge-excluded, missing-identifiers]
+      allowed_roles: [china-variation]
+      must_identify: [missing treatment geography, treatment cannot be joined, lead cannot be recommended]
+
+  - id: hukou-national-before-after
+    mode: match
+    prompt: Can I estimate the causal effect of the 2014 hukou reform using only national annual averages from 2012 to 2016?
+    query:
+      candidate_ids: [china-2014-hukou-local-implementation]
+      include_leads: true
+      data:
+        time_start: 2012
+        time_end: 2016
+        frequency: annual
+        identifiers: [year]
+        observation_unit: national-year
+        geography: national
+      comparison: {untreated_available: false}
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-2014-hukou-local-implementation]
+      expected_reason_codes: [knowledge-excluded, missing-identifiers, no-comparison, insufficient-pre-periods]
+      allowed_roles: [china-variation]
+      must_identify: [no untreated comparison, insufficient pre and post periods, aggregate data cannot join city treatment]
+
+  - id: rural-tax-households
+    mode: review
+    prompt: I have rural household income and county identifiers annually from 1995 to 2008. What reform might be relevant?
+    query:
+      candidate_ids: [china-rural-tax-fee-reform-expansion]
+      data:
+        time_start: 1995
+        time_end: 2008
+        frequency: annual
+        identifiers: [province code, county code, year, rural/urban status]
+        observation_unit: household-year
+        geography: county
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-rural-tax-fee-reform-expansion]
+      expected_reason_codes: [knowledge-excluded]
+      allowed_roles: [china-variation]
+      must_identify: [mixed assignment record is contested, split rollout and tax abolition before use]
+
+  - id: rural-tax-post-only
+    mode: review
+    prompt: I have county fiscal data only for 2005 to 2008 and want to estimate the original rural tax reform rollout.
+    query:
+      candidate_ids: [china-rural-tax-fee-reform-expansion]
+      data:
+        time_start: 2005
+        time_end: 2008
+        frequency: annual
+        identifiers: [province code, county code, year, rural/urban status]
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-rural-tax-fee-reform-expansion]
+      expected_reason_codes: [knowledge-excluded, insufficient-pre-periods]
+      allowed_roles: [china-variation]
+      must_identify: [no pre-treatment observations for the original rollout]
+
+  - id: monthly-natural-disaster
+    mode: match
+    prompt: I need a sudden natural disaster shock for monthly retail outcomes, but the current catalog only contains policy reforms.
+    query:
+      filters:
+        roles: [china-variation, global-china-variation]
+        domains: [natural-disaster]
+        variation_types: [event-shock]
+      data:
+        frequency: monthly
+    evaluation:
+      decision: gap
+      expected_ids: []
+      expected_reason_codes: [knowledge-gap]
+      allowed_roles: [china-variation, global-china-variation]
+      must_identify: [catalog coverage gap, do not force a policy match]
+
+  - id: education-threshold
+    mode: match
+    prompt: I want an eligibility cutoff for schooling outcomes in China and can observe exact birth date, but not locality.
+    query:
+      filters:
+        roles: [china-variation]
+        domains: [education]
+        variation_types: [eligibility-threshold]
+    evaluation:
+      decision: gap
+      expected_ids: []
+      expected_reason_codes: [knowledge-gap]
+      allowed_roles: [china-variation]
+      must_identify: [no recommendation-ready China education threshold, do not substitute an unrelated threshold]
+
+  - id: policy-spillovers
+    mode: match
+    prompt: I want to use neighboring cities as controls for low-carbon pilots even though firms may relocate across borders.
+    query:
+      candidate_ids: [china-low-carbon-pilot-first-wave]
+      data:
+        time_start: 2005
+        time_end: 2018
+        frequency: annual
+        identifiers: [province code, prefecture code, year]
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: conditional
+      expected_ids: [china-low-carbon-pilot-first-wave]
+      expected_reason_codes: [knowledge-conditional]
+      allowed_roles: [china-variation]
+      must_identify: [spillover and nesting threats require human judgment]
+
+  - id: data-variation-joint-fit
+    mode: review
+    prompt: I have biennial household data beginning in 2010 with restricted county codes. Find a variation and explain whether the data can actually be joined.
+    query:
+      candidate_ids: [china-rural-tax-fee-reform-expansion]
+      data:
+        time_start: 2010
+        time_end: 2020
+        frequency: biennial
+        identifiers: [year]
+        observation_unit: household-year
+        geography: restricted county
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-rural-tax-fee-reform-expansion]
+      expected_reason_codes: [knowledge-excluded, insufficient-frequency, missing-identifiers, insufficient-pre-periods]
+      allowed_roles: [china-variation]
+      must_identify: [frequency below requirement, restricted treatment identifiers cannot join, no pre-period]
+
+  - id: no-pre-period
+    mode: match
+    prompt: My firm panel starts in 2011. Can I credibly use the first-wave 2010 low-carbon pilot with an event study?
+    query:
+      candidate_ids: [china-low-carbon-pilot-first-wave]
+      data:
+        time_start: 2011
+        time_end: 2018
+        frequency: annual
+        identifiers: [province code, prefecture code, year]
+      comparison: {untreated_available: true}
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-low-carbon-pilot-first-wave]
+      expected_reason_codes: [insufficient-pre-periods]
+      allowed_roles: [china-variation]
+      must_identify: [no pre-treatment observations, event-study pre-trends unavailable]
+
+  - id: foreign-policy-not-china-shock
+    mode: match
+    prompt: A US Medicaid expansion paper has a strong design. Should I use that policy itself as a shock for Chinese household outcomes?
+    query:
+      candidate_ids: [us-medicaid-eligibility-expansion]
+      include_leads: true
+    evaluation:
+      decision: incompatible
+      expected_ids: [us-medicaid-eligibility-expansion]
+      expected_reason_codes: [knowledge-excluded]
+      allowed_roles: [transferable-method]
+      must_identify: [foreign policy does not expose Chinese units, unaudited method lead cannot be recommended]
+
+  - id: transferable-simulated-eligibility
+    mode: match
+    prompt: I study Chinese social-insurance eligibility and need an instrument that separates policy rules from endogenous household composition. Are there transferable overseas construction ideas?
+    query:
+      candidate_ids: [us-medicaid-eligibility-expansion]
+      include_leads: true
+    evaluation:
+      decision: incompatible
+      expected_ids: [us-medicaid-eligibility-expansion]
+      expected_reason_codes: [knowledge-excluded]
+      allowed_roles: [transferable-method]
+      must_identify: [simulated eligibility is an unaudited method lead, China analogue requires separate validation]
+
+  - id: global-event-china-exposure
+    mode: match
+    prompt: A multilateral trade-rule change altered quota exposure for Chinese textile exporters. Should this be treated as an irrelevant foreign policy or a China-facing global variation?
+    query:
+      candidate_ids: [china-mfa-quota-removal-textile-exporters]
+      include_leads: true
+    evaluation:
+      decision: incompatible
+      expected_ids: [china-mfa-quota-removal-textile-exporters]
+      expected_reason_codes: [knowledge-excluded]
+      allowed_roles: [global-china-variation]
+      must_identify: [global-China role is correct, lead-only record is not recommendation-ready]
+
+  - id: audited-wind-direction-method
+    mode: match
+    prompt: I have Chinese county-day pollution and health data from 2015 to 2024. Can the audited wind-direction construction inspire an IV without treating the US study period as China's treatment date?
+    query:
+      candidate_ids: [us-air-pollution-wind-direction-iv]
+      data:
+        time_start: 2015-01-01
+        time_end: 2024-12-31
+        frequency: daily
+    evaluation:
+      decision: method-only
+      expected_ids: [us-air-pollution-wind-direction-iv]
+      expected_reason_codes: [method-inspiration, source-period-not-transferable]
+      allowed_roles: [transferable-method]
+      must_identify: [overseas source period is not a Chinese assignment date, exact China analogue requires manual review]
+
+  - id: irrelevant-overseas-policy
+    mode: collection
+    prompt: Collect a municipal parking reform in a small European city that has no China exposure and no reusable identification construction.
+    evaluation:
+      decision: skip
+      expected_ids: []
+      expected_reason_codes: [collection-skip]
+      allowed_roles: []
+      must_identify: [no China exposure, no reusable identification construction]

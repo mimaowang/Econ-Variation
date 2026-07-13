@@ -1,0 +1,64 @@
+{
+  "knowledge_snapshot_date": "2026-07-13",
+  "repository_health": {
+    "status": "valid",
+    "errors": [],
+    "warnings": []
+  },
+  "record_count": 55,
+  "status_counts": {
+    "extracted": 43,
+    "contested": 5,
+    "deprecated": 5,
+    "grounded": 2
+  },
+  "knowledge_role_counts": {
+    "transferable-method": 10,
+    "china-variation": 42,
+    "global-china-variation": 3
+  },
+  "knowledge_readiness": {
+    "eligibility_counts": {
+      "method-lead": 9,
+      "do-not-recommend": 10,
+      "lead-only": 33,
+      "conditional-candidate": 2,
+      "method-inspiration": 1
+    },
+    "direct_candidates": 0,
+    "conditional_candidates": 2,
+    "lead_only": 33,
+    "method_leads": 9,
+    "method_inspirations": 1,
+    "do_not_recommend": 10,
+    "stop_bulk_discovery": false,
+    "interpretation": "Repository validity is not research readiness. Lead-only and contested records require audit before recommendation."
+  },
+  "quality_debt": {
+    "legacy_backlog": {
+      "record_count": 38,
+      "missing_primary_evidence": 37,
+      "missing_primary_institutional_core": 38,
+      "missing_application_data": 29,
+      "mojibake_detected": 0,
+      "causal_overclaim_lint": 38,
+      "invalid_evidence_paths": 130
+    },
+    "managed_active_pipeline": {
+      "record_count": 7,
+      "missing_primary_evidence": 4,
+      "missing_primary_institutional_core": 4,
+      "missing_application_data": 4,
+      "mojibake_detected": 0,
+      "causal_overclaim_lint": 3,
+      "invalid_evidence_paths": 14
+    },
+    "possible_duplicate_warnings": 0
+  },
+  "priority_audit_ids": [
+    "china-huai-river-heating-air-pollution",
+    "china-pollution-information-disclosure",
+    "china-water-quality-monitoring-rd",
+    "china-low-carbon-pilot-first-wave"
+  ]
+}
