@@ -8,7 +8,7 @@ from typing import Any
 
 sys.dont_write_bytecode = True
 
-from econvariation_lib import ROOT  # noqa: E402
+from econ_variation_lib import ROOT  # noqa: E402
 
 
 TOKEN_RE = re.compile(r"[a-z0-9]+|[\u4e00-\u9fff]+", re.IGNORECASE)
@@ -178,7 +178,7 @@ def load_router() -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Recall EconVariation candidates before deterministic idea/data matching.")
+    parser = argparse.ArgumentParser(description="Recall Econ-Variation candidates before deterministic idea/data matching.")
     parser.add_argument("--role", action="append", choices=["china-variation", "global-china-variation", "transferable-method"])
     parser.add_argument(
         "--eligibility",

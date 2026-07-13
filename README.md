@@ -1,14 +1,14 @@
-<h1 align="center">EconVariation</h1>
+<h1 align="center">Econ-Variation</h1>
 
-<p align="center"><strong>EconVariation helps researchers find policy changes, reforms, and events they can use to study cause and effect in China.</strong></p>
+<p align="center"><strong>Econ-Variation helps researchers find policy changes, reforms, and events they can use to study cause and effect in China.</strong></p>
 
-EconVariation is a knowledge base for researchers and AI coding agents such as Claude Code, Codex, and Kimi Code. Tell the agent your research question and what data you have; it uses EconVariation to find relevant changes, explain how they could support a study, identify the data still needed, and flag risks that could make the result unreliable.
+Econ-Variation is a knowledge base for researchers and AI coding agents such as Claude Code, Codex, and Kimi Code. Tell the agent your research question and what data you have; it uses Econ-Variation to find relevant changes, explain how they could support a study, identify the data still needed, and flag risks that could make the result unreliable.
 
 ---
 
 ## Quick start
 
-Use EconVariation in two ways: **match a research idea against existing knowledge**, or ask an agent to **collect and verify new knowledge**. Both start by reading `AGENTS.md` and running the repository doctor.
+Use Econ-Variation in two ways: **match a research idea against existing knowledge**, or ask an agent to **collect and verify new knowledge**. Both start by reading `AGENTS.md` and running the repository doctor.
 
 Python 3.10 or newer is required. From the repository root:
 
@@ -88,7 +88,7 @@ Screen tasks cannot modify canonical records. Only later `discover`, `resolve`, 
 
 ## Scope and limits
 
-EconVariation does **not** label a policy as intrinsically exogenous. Exogeneity and usefulness are query-specific: they depend on the outcome, population, time window, assignment process, exposure measure, comparison group, and identifying assumptions.
+Econ-Variation does **not** label a policy as intrinsically exogenous. Exogeneity and usefulness are query-specific: they depend on the outcome, population, time window, assignment process, exposure measure, comparison group, and identifying assumptions.
 
 The repository distinguishes three knowledge lanes:
 
@@ -100,7 +100,7 @@ Publication prestige is a discovery prior, not evidence that a design is valid. 
 
 ## Project status
 
-EconVariation is a repository-local tool and knowledge base, not a hosted service or PyPI package. The canonical collection currently contains both managed records and a frozen legacy lead backlog. Legacy leads remain available for audit but do not block new targeted work and are not recommended by default. Any legacy record that is edited must enter the current task and evidence workflow.
+Econ-Variation is a repository-local tool and knowledge base, not a hosted service or PyPI package. The canonical collection currently contains both managed records and a frozen legacy lead backlog. Legacy leads remain available for audit but do not block new targeted work and are not recommended by default. Any legacy record that is edited must enter the current task and evidence workflow.
 
 ## Knowledge model
 
@@ -147,7 +147,7 @@ Validation success means the repository is structurally and operationally consis
 
 ## Relationship to Econ-Data-Foundry
 
-EconVariation and Econ-Data-Foundry remain independent. EconVariation states what a variation requires; the data repository states what a dataset supplies. An agent compares population, observation unit, geography, time, frequency, fields, access conditions, and join identifiers at runtime. Neither repository imports the other or stores reciprocal dataset IDs.
+Econ-Variation and Econ-Data-Foundry remain independent. Econ-Variation states what a variation requires; the data repository states what a dataset supplies. An agent compares population, observation unit, geography, time, frequency, fields, access conditions, and join identifiers at runtime. Neither repository imports the other or stores reciprocal dataset IDs.
 
 ## License and contribution
 

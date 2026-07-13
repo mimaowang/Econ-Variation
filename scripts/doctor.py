@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from econvariation_lib import ROOT, STATE_DIR, read_jsonl
+from econ_variation_lib import ROOT, STATE_DIR, read_jsonl
 
 
 TASKS = STATE_DIR / "tasks.jsonl"

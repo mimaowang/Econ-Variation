@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from build_router import entry
 from match import match_query, time_dimension
-from econvariation_lib import load_records
+from econ_variation_lib import load_records
 
 
 def router() -> dict:

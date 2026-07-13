@@ -1,4 +1,4 @@
-# EconVariation Operations Guide
+# Econ-Variation Operations Guide
 
 ## Invariant
 
@@ -108,7 +108,7 @@ For overseas work, `method_transfer` answers: what is portable; how the variable
 
 ## Data requirements and dual-repository use
 
-EconVariation states a versioned `empirical_requirements` contract rather than duplicating dataset profiles: observation unit, population, geography, time coverage, minimum frequency, pre/post periods, required fields, treatment source, and join keys. Compatibility is evaluated at runtime; EconVariation stores no reciprocal dataset IDs.
+Econ-Variation states a versioned `empirical_requirements` contract rather than duplicating dataset profiles: observation unit, population, geography, time coverage, minimum frequency, pre/post periods, required fields, treatment source, and join keys. Compatibility is evaluated at runtime; Econ-Variation stores no reciprocal dataset IDs.
 
 For joint reasoning, compare:
 

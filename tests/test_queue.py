@@ -7,7 +7,7 @@ from datetime import timedelta
 
 import pytest
 
-import econvariation_lib
+import econ_variation_lib
 import task_queue
 
 
@@ -188,11 +188,11 @@ def test_touched_record_gate_requires_locators_and_rejects_search_snippets() -> 
 
 
 def test_stale_empty_lock_is_recovered(monkeypatch, tmp_path) -> None:
-    monkeypatch.setattr(econvariation_lib, "STATE_DIR", tmp_path)
+    monkeypatch.setattr(econ_variation_lib, "STATE_DIR", tmp_path)
     lock = tmp_path / ".broken.lock"
     lock.write_text("", encoding="utf-8")
     old = time.time() - 10
     os.utime(lock, (old, old))
-    with econvariation_lib.workspace_lock("broken", stale_seconds=1):
+    with econ_variation_lib.workspace_lock("broken", stale_seconds=1):
         assert lock.exists() and lock.stat().st_size > 0
     assert not lock.exists()

@@ -4,7 +4,7 @@ import yaml
 
 from build_router import entry
 from match import match_query
-from econvariation_lib import ROOT, load_records
+from econ_variation_lib import ROOT, load_records
 
 
 def benchmark() -> dict:

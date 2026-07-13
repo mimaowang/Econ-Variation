@@ -6,7 +6,7 @@ from collections import Counter
 
 sys.dont_write_bytecode = True
 
-from econvariation_lib import ROOT, knowledge_eligibility, load_records, write_json, workspace_lock  # noqa: E402
+from econ_variation_lib import ROOT, knowledge_eligibility, load_records, write_json, workspace_lock  # noqa: E402
 
 
 ROUTER_PURPOSE = (

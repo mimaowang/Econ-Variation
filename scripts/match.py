@@ -421,7 +421,7 @@ def load_query(path: str) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Apply deterministic EconVariation knowledge and data-fit gates.")
+    parser = argparse.ArgumentParser(description="Apply deterministic Econ-Variation knowledge and data-fit gates.")
     parser.add_argument("--query", required=True, help="YAML/JSON query path, or '-' for stdin.")
     args = parser.parse_args()
     try:

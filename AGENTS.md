@@ -1,6 +1,6 @@
-# EconVariation Agent Operating Notes
+# Econ-Variation Agent Operating Notes
 
-EconVariation succeeds when recorded knowledge helps a researcher decide whether a variation fits an idea and explain the institution, assignment, treatment, comparison, data needs, feasible design, assumptions, and threats. Never call a policy intrinsically exogenous.
+Econ-Variation succeeds when recorded knowledge helps a researcher decide whether a variation fits an idea and explain the institution, assignment, treatment, comparison, data needs, feasible design, assumptions, and threats. Never call a policy intrinsically exogenous.
 
 ## Start by intent
 

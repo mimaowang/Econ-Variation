@@ -4,7 +4,7 @@ import json
 
 from build_router import build
 from check_generated import expected_router
-from econvariation_lib import ROOT
+from econ_variation_lib import ROOT
 
 
 def test_router_is_deterministic_and_current() -> None:

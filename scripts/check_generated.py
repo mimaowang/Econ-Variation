@@ -7,7 +7,7 @@ from collections import Counter
 sys.dont_write_bytecode = True
 
 from build_router import ROUTER_PURPOSE, entry  # noqa: E402
-from econvariation_lib import ROOT, load_records  # noqa: E402
+from econ_variation_lib import ROOT, load_records  # noqa: E402
 from validate import run  # noqa: E402
 
 

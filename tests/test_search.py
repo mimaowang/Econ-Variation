@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from build_router import entry
-from econvariation_lib import load_records
+from econ_variation_lib import load_records
 from search import compact_result, search_items
 
 

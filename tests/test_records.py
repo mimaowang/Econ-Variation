@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from validate import run
-from econvariation_lib import identity_fingerprint, load_records, public_url_issues
+from econ_variation_lib import identity_fingerprint, load_records, public_url_issues
 
 
 def test_repository_records_validate() -> None:

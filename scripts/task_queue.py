@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 
-from econvariation_lib import ROOT, STATE_DIR, read_frontmatter, read_jsonl, workspace_lock, write_json, write_jsonl  # noqa: E402
+from econ_variation_lib import ROOT, STATE_DIR, read_frontmatter, read_jsonl, workspace_lock, write_json, write_jsonl  # noqa: E402
 
 
 TASKS = STATE_DIR / "tasks.jsonl"
@@ -427,7 +427,7 @@ def reclaim_expired() -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Manage bounded EconVariation work with leases and recovery.")
+    parser = argparse.ArgumentParser(description="Manage bounded Econ-Variation work with leases and recovery.")
     sub = parser.add_subparsers(dest="command", required=True)
     add = sub.add_parser("enqueue")
     add.add_argument("--stage", choices=sorted(STAGES), required=True)

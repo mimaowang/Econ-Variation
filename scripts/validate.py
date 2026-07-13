@@ -12,7 +12,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 sys.dont_write_bytecode = True
 
-from econvariation_lib import (  # noqa: E402
+from econ_variation_lib import (  # noqa: E402
     ROOT, SCHEMA_PATH, STATE_DIR, identity_fingerprint, knowledge_eligibility, load_records, public_url_issues,
     read_jsonl, write_json,
 )
@@ -488,7 +488,7 @@ def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate EconVariation canonical knowledge and durable state.")
+    parser = argparse.ArgumentParser(description="Validate Econ-Variation canonical knowledge and durable state.")
     parser.add_argument("--write-health", action="store_true")
     args = parser.parse_args()
     audit, report = run(args.write_health)
