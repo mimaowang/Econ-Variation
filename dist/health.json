@@ -1,64 +1,61 @@
 {
-  "knowledge_snapshot_date": "2026-07-13",
+  "knowledge_snapshot_date": "2026-07-14",
   "repository_health": {
     "status": "valid",
     "errors": [],
     "warnings": []
   },
-  "record_count": 55,
+  "record_count": 72,
   "status_counts": {
-    "extracted": 43,
+    "extracted": 46,
     "contested": 5,
-    "deprecated": 5,
-    "grounded": 2
+    "grounded": 16,
+    "deprecated": 5
   },
   "knowledge_role_counts": {
-    "transferable-method": 10,
-    "china-variation": 42,
+    "transferable-method": 14,
+    "china-variation": 55,
     "global-china-variation": 3
   },
   "knowledge_readiness": {
     "eligibility_counts": {
-      "method-lead": 9,
+      "method-lead": 8,
       "do-not-recommend": 10,
+      "conditional-candidate": 15,
       "lead-only": 33,
-      "conditional-candidate": 2,
-      "method-inspiration": 1
+      "method-inspiration": 6
     },
     "direct_candidates": 0,
-    "conditional_candidates": 2,
+    "conditional_candidates": 15,
     "lead_only": 33,
-    "method_leads": 9,
-    "method_inspirations": 1,
+    "method_leads": 8,
+    "method_inspirations": 6,
     "do_not_recommend": 10,
     "stop_bulk_discovery": false,
     "interpretation": "Repository validity is not research readiness. Lead-only and contested records require audit before recommendation."
   },
   "quality_debt": {
     "legacy_backlog": {
-      "record_count": 38,
-      "missing_primary_evidence": 37,
-      "missing_primary_institutional_core": 38,
-      "missing_application_data": 29,
+      "record_count": 37,
+      "missing_primary_evidence": 36,
+      "missing_primary_institutional_core": 37,
+      "missing_application_data": 28,
       "mojibake_detected": 0,
-      "causal_overclaim_lint": 38,
-      "invalid_evidence_paths": 130
+      "causal_overclaim_lint": 37,
+      "invalid_evidence_paths": 126
     },
     "managed_active_pipeline": {
-      "record_count": 7,
-      "missing_primary_evidence": 4,
-      "missing_primary_institutional_core": 4,
-      "missing_application_data": 4,
+      "record_count": 25,
+      "missing_primary_evidence": 5,
+      "missing_primary_institutional_core": 6,
+      "missing_application_data": 0,
       "mojibake_detected": 0,
-      "causal_overclaim_lint": 3,
-      "invalid_evidence_paths": 14
+      "causal_overclaim_lint": 0,
+      "invalid_evidence_paths": 0
     },
     "possible_duplicate_warnings": 0
   },
   "priority_audit_ids": [
-    "china-huai-river-heating-air-pollution",
-    "china-pollution-information-disclosure",
-    "china-water-quality-monitoring-rd",
-    "china-low-carbon-pilot-first-wave"
+    "china-ctrip-work-from-home-experiment"
   ]
 }

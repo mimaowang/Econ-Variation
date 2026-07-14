@@ -22,6 +22,9 @@ HEALTH = ROOT / "dist" / "health.json"
 STAGES = {"screen", "discover", "resolve", "ground", "audit", "consolidate"}
 OUTCOMES = {"created", "updated", "consolidated", "candidate", "contested", "skipped", "blocked"}
 SCREEN_OUTCOMES = {"candidate", "skipped", "blocked"}
+ROLE_PRIORITY = {"china-variation": 30, "global-china-variation": 20, "transferable-method": 0}
+STAGE_PRIORITY = {"ground": 50, "resolve": 45, "audit": 40, "consolidate": 40, "screen": 15, "discover": 10}
+CANDIDATE_TERMINAL = {"resolved", "contested", "skipped", "blocked"}
 
 
 def now() -> datetime:
@@ -84,25 +87,80 @@ def recover() -> None:
     if not TRANSACTION.exists():
         return
     value = json.loads(TRANSACTION.read_text(encoding="utf-8"))
-    if value.get("version") != 1 or not isinstance(value.get("tasks"), list) or not isinstance(value.get("runs"), list):
+    if value.get("version") not in {1, 2} or not isinstance(value.get("tasks"), list) or not isinstance(value.get("runs"), list):
         raise RuntimeError("queue transaction is unreadable")
     write_jsonl(TASKS, value["tasks"])
     write_jsonl(RUNS, value["runs"])
+    if value.get("version") == 2:
+        if not isinstance(value.get("candidates"), list):
+            raise RuntimeError("queue transaction candidates are unreadable")
+        write_jsonl(CANDIDATES, value["candidates"])
     TRANSACTION.unlink()
 
 
-def commit(before_tasks: list[dict], before_runs: list[dict], tasks: list[dict], runs: list[dict], operation: str) -> None:
-    write_json(TRANSACTION, {"version": 1, "operation": operation, "tasks": before_tasks, "runs": before_runs})
+def commit(
+    before_tasks: list[dict],
+    before_runs: list[dict],
+    tasks: list[dict],
+    runs: list[dict],
+    operation: str,
+    *,
+    before_candidates: list[dict] | None = None,
+    candidates: list[dict] | None = None,
+) -> None:
+    with_candidates = before_candidates is not None or candidates is not None
+    if with_candidates and (before_candidates is None or candidates is None):
+        raise RuntimeError("candidate transaction requires before and after state")
+    transaction = {"version": 2 if with_candidates else 1, "operation": operation, "tasks": before_tasks, "runs": before_runs}
+    if before_candidates is not None:
+        transaction["candidates"] = before_candidates
+    write_json(TRANSACTION, transaction)
     try:
         write_jsonl(TASKS, tasks)
         write_jsonl(RUNS, runs)
+        if candidates is not None:
+            write_jsonl(CANDIDATES, candidates)
     except Exception:
         raise
     else:
         TRANSACTION.unlink()
 
 
-def enqueue(stage: str, goal: str, idempotency_key: str, source: str | None) -> dict:
+def effective_priority(task: dict) -> int:
+    explicit = int(task.get("priority") or 0)
+    return explicit + STAGE_PRIORITY.get(str(task.get("stage")), 0) + ROLE_PRIORITY.get(
+        str(task.get("knowledge_role_hint")), 0
+    )
+
+
+def new_task(
+    stage: str,
+    goal: str,
+    idempotency_key: str,
+    source: str | None,
+    *,
+    candidate_id: str | None = None,
+    knowledge_role: str | None = None,
+    priority: int = 0,
+) -> dict:
+    task = {
+        "id": f"task-{uuid.uuid4().hex[:12]}", "idempotency_key": idempotency_key, "stage": stage,
+        "goal": goal, "source": source, "status": "pending", "attempts": 0, "records_touched": [],
+        "created_at": timestamp(), "priority": priority,
+        "candidate_id": candidate_id, "knowledge_role_hint": knowledge_role,
+    }
+    return {key: value for key, value in task.items() if value is not None}
+
+
+def enqueue(
+    stage: str,
+    goal: str,
+    idempotency_key: str,
+    source: str | None,
+    candidate_id: str | None = None,
+    knowledge_role: str | None = None,
+    priority: int = 0,
+) -> dict:
     if stage not in STAGES:
         raise RuntimeError(f"invalid stage: {stage}")
     if stage == "screen" and not str(source or "").strip():
@@ -110,22 +168,45 @@ def enqueue(stage: str, goal: str, idempotency_key: str, source: str | None) -> 
     with workspace_lock("task-queue"):
         recover()
         tasks = load(TASKS)
+        before_tasks = [dict(row) for row in tasks]
         existing = next((row for row in tasks if row.get("idempotency_key") == idempotency_key), None)
         if existing:
             return existing
-        task = {
-            "id": f"task-{uuid.uuid4().hex[:12]}", "idempotency_key": idempotency_key, "stage": stage,
-            "goal": goal, "source": source, "status": "pending", "attempts": 0, "records_touched": [],
-            "created_at": timestamp(),
-        }
-        tasks.append({key: value for key, value in task.items() if value is not None})
-        write_jsonl(TASKS, tasks)
+        candidates = load(CANDIDATES)
+        candidate = None
+        if candidate_id:
+            candidate = next((row for row in candidates if row.get("id") == candidate_id), None)
+            if not candidate:
+                raise RuntimeError(f"candidate not found: {candidate_id}")
+            if candidate.get("status") in CANDIDATE_TERMINAL:
+                raise RuntimeError(f"candidate is already terminal: {candidate_id}")
+            if stage != candidate.get("stage"):
+                raise RuntimeError(f"candidate requires stage {candidate.get('stage')}")
+            knowledge_role = str(candidate.get("knowledge_role") or knowledge_role or "")
+        if knowledge_role and knowledge_role not in ROLE_PRIORITY:
+            raise RuntimeError("invalid knowledge role hint")
+        task = new_task(
+            stage, goal, idempotency_key, source, candidate_id=candidate_id,
+            knowledge_role=knowledge_role, priority=priority,
+        )
+        tasks.append(task)
+        if candidate is not None:
+            before_tasks, before_candidates = [dict(row) for row in tasks[:-1]], [dict(row) for row in candidates]
+            candidate.update({"status": "queued", "follow_up_task_id": task["id"]})
+            commit(
+                before_tasks, load(RUNS), tasks, load(RUNS), "enqueue-candidate",
+                before_candidates=before_candidates, candidates=candidates,
+            )
+        else:
+            write_jsonl(TASKS, tasks)
         return task
 
 
 def peek() -> dict:
     tasks = load(TASKS)
-    return next((row for row in tasks if row.get("status") == "pending"), {})
+    pending = [row for row in tasks if row.get("status") == "pending"]
+    pending.sort(key=lambda row: (-effective_priority(row), str(row.get("created_at", "")), str(row.get("id", ""))))
+    return pending[0] if pending else {}
 
 
 def find(tasks: list[dict], task_id: str) -> dict:
@@ -147,17 +228,20 @@ def claim(
     with workspace_lock("task-queue"):
         recover()
         tasks = load(TASKS)
+        before_tasks = [dict(row) for row in tasks]
         claimed = next((row for row in tasks if row.get("status") == "claimed"), None)
         if claimed:
             raise RuntimeError(
                 f"shared worktree already has claimed task {claimed.get('id')}; complete, release, or reclaim it first"
             )
-        task = next((
+        eligible = [
             row for row in tasks
             if row.get("status") == "pending"
             and (task_id is None or row.get("id") == task_id)
             and (stage is None or row.get("stage") == stage)
-        ), None)
+        ]
+        eligible.sort(key=lambda row: (-effective_priority(row), str(row.get("created_at", "")), str(row.get("id", ""))))
+        task = eligible[0] if eligible else None
         if not task:
             selector = task_id or stage or "the requested queue"
             raise RuntimeError(f"no pending task for {selector}")
@@ -175,7 +259,20 @@ def claim(
             task.pop("override_reason", None)
         if task.get("stage") == "screen":
             task["canonical_digest_at_claim"] = canonical_digest()
-        write_jsonl(TASKS, tasks)
+        candidate_id = task.get("candidate_id")
+        if candidate_id:
+            candidates = load(CANDIDATES)
+            before_candidates = [dict(row) for row in candidates]
+            candidate = next((row for row in candidates if row.get("id") == candidate_id), None)
+            if not candidate:
+                raise RuntimeError(f"linked candidate not found: {candidate_id}")
+            candidate["status"] = "in-progress"
+            commit(
+                before_tasks, load(RUNS), tasks, load(RUNS), "claim-candidate",
+                before_candidates=before_candidates, candidates=candidates,
+            )
+        else:
+            write_jsonl(TASKS, tasks)
         return task
 
 
@@ -260,6 +357,49 @@ def add_candidate(
         return candidate
 
 
+def linked_candidate(candidates: list[dict], task: dict) -> dict | None:
+    candidate_id = task.get("candidate_id")
+    if not candidate_id:
+        return None
+    candidate = next((row for row in candidates if row.get("id") == candidate_id), None)
+    if not candidate:
+        raise RuntimeError(f"linked candidate not found: {candidate_id}")
+    return candidate
+
+
+def close_candidate(candidate_id: str, status: str, records: list[str], note: str) -> dict:
+    if status not in CANDIDATE_TERMINAL:
+        raise RuntimeError("candidate close status must be terminal")
+    if status in {"resolved", "contested"} and not records:
+        raise RuntimeError(f"candidate status {status} requires at least one canonical record")
+    missing = [record for record in records if not (ROOT / "variations" / f"{record}.md").exists()]
+    if missing:
+        raise RuntimeError(f"candidate close references missing records: {missing}")
+    if not note.strip():
+        raise RuntimeError("candidate close requires a reconciliation note")
+    with workspace_lock("task-queue"):
+        recover()
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
+        before_candidates = [dict(row) for row in candidates]
+        candidate = next((row for row in candidates if row.get("id") == candidate_id), None)
+        if not candidate:
+            raise RuntimeError(f"candidate not found: {candidate_id}")
+        if candidate.get("status") in CANDIDATE_TERMINAL:
+            return candidate
+        candidate.update({
+            "status": status,
+            "outcome": "historical-reconciliation",
+            "closed_at": timestamp(),
+            "resolved_record_ids": records,
+            "closure_note": note.strip(),
+        })
+        commit(
+            tasks, runs, tasks, runs, "candidate-close",
+            before_candidates=before_candidates, candidates=candidates,
+        )
+        return candidate
+
+
 def validate_touched_record(canonical, outcome: str = "updated") -> None:
     from validate import EVIDENCE_PATH
 
@@ -331,8 +471,9 @@ def complete(
         run_gate()
     with workspace_lock("task-queue"):
         recover()
-        tasks, runs = load(TASKS), load(RUNS)
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
         before_tasks, before_runs = [dict(row) for row in tasks], [dict(row) for row in runs]
+        before_candidates = [dict(row) for row in candidates]
         task = find(tasks, task_id)
         assert_active_claim(task, agent, claim_token, "complete")
         task.update({"status": "completed", "outcome": outcome, "records_touched": records, "finished_at": timestamp()})
@@ -344,11 +485,45 @@ def complete(
             "id": f"run-{uuid.uuid4().hex[:12]}", "task_id": task_id, "agent": agent, "stage": task["stage"],
             "goal": task["goal"], "source": task.get("source"), "attempt": task.get("attempts"),
             "started_at": task.get("claimed_at"), "outcome": outcome, "records_touched": records,
-            "finished_at": task["finished_at"], "note": note, "candidate_id": candidate_id,
+            "finished_at": task["finished_at"], "note": note,
+            "candidate_id": candidate_id or task.get("candidate_id"),
             "override_reason": task.get("override_reason"),
         }
         runs.append({key: value for key, value in event.items() if value is not None})
-        commit(before_tasks, before_runs, tasks, runs, "complete")
+        if task.get("stage") == "screen" and outcome == "candidate":
+            candidate = next((row for row in candidates if row.get("id") == candidate_id), None)
+            if not candidate:
+                raise RuntimeError("screen candidate disappeared before completion")
+            if not candidate.get("follow_up_task_id"):
+                follow_up = new_task(
+                    candidate["stage"],
+                    f"Resolve candidate: {candidate['name']}. {candidate['reason']}",
+                    f"candidate:{candidate['id']}",
+                    candidate.get("source"),
+                    candidate_id=candidate["id"],
+                    knowledge_role=candidate.get("knowledge_role"),
+                )
+                tasks.append(follow_up)
+                candidate.update({"status": "queued", "follow_up_task_id": follow_up["id"]})
+        elif task.get("candidate_id"):
+            linked = next((row for row in candidates if row.get("id") == task["candidate_id"]), None)
+            if not linked:
+                raise RuntimeError(f"linked candidate not found: {task['candidate_id']}")
+            terminal = {
+                "created": "resolved", "updated": "resolved", "consolidated": "resolved",
+                "contested": "contested", "skipped": "skipped", "blocked": "blocked",
+            }.get(outcome)
+            if terminal:
+                linked.update({
+                    "status": terminal,
+                    "outcome": outcome,
+                    "closed_at": task["finished_at"],
+                    "resolved_record_ids": records,
+                })
+        commit(
+            before_tasks, before_runs, tasks, runs, "complete",
+            before_candidates=before_candidates, candidates=candidates,
+        )
         if gate:
             run_generated_check()
     return task
@@ -357,8 +532,9 @@ def complete(
 def fail(task_id: str, agent: str, claim_token: str, reason_code: str, reason: str, retryable: bool) -> dict:
     with workspace_lock("task-queue"):
         recover()
-        tasks, runs = load(TASKS), load(RUNS)
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
         before_tasks, before_runs = [dict(row) for row in tasks], [dict(row) for row in runs]
+        before_candidates = [dict(row) for row in candidates]
         task = find(tasks, task_id)
         assert_active_claim(task, agent, claim_token, "fail")
         task.update({"status": "failed", "reason_code": reason_code, "reason": reason, "retryable": retryable, "finished_at": timestamp()})
@@ -369,28 +545,42 @@ def fail(task_id: str, agent: str, claim_token: str, reason_code: str, reason: s
             "outcome": "failed", "reason_code": reason_code, "retryable": retryable, "finished_at": task["finished_at"],
             "override_reason": task.get("override_reason"),
         })
-        commit(before_tasks, before_runs, tasks, runs, "fail")
+        candidate = linked_candidate(candidates, task)
+        if candidate:
+            candidate.update({"status": "blocked", "failure_task_id": task_id, "failure_reason": reason})
+        commit(
+            before_tasks, before_runs, tasks, runs, "fail",
+            before_candidates=before_candidates, candidates=candidates,
+        )
         return task
 
 
 def release(task_id: str, agent: str, claim_token: str, note: str | None) -> dict:
     with workspace_lock("task-queue"):
         recover()
-        tasks = load(TASKS)
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
+        before_tasks, before_candidates = [dict(row) for row in tasks], [dict(row) for row in candidates]
         task = find(tasks, task_id)
         assert_active_claim(task, agent, claim_token, "release")
         task["status"] = "pending"
         task["release_note"] = note
         for key in ("claimed_by", "claimed_at", "lease_expires_at", "heartbeat_at", "claim_token"):
             task.pop(key, None)
-        write_jsonl(TASKS, tasks)
+        candidate = linked_candidate(candidates, task)
+        if candidate:
+            candidate["status"] = "queued"
+        commit(
+            before_tasks, runs, tasks, runs, "release",
+            before_candidates=before_candidates, candidates=candidates,
+        )
         return task
 
 
 def retry(task_id: str) -> dict:
     with workspace_lock("task-queue"):
         recover()
-        tasks = load(TASKS)
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
+        before_tasks, before_candidates = [dict(row) for row in tasks], [dict(row) for row in candidates]
         task = find(tasks, task_id)
         if task.get("status") != "failed" or not task.get("retryable"):
             raise RuntimeError("task is not a retryable failure")
@@ -400,14 +590,23 @@ def retry(task_id: str) -> dict:
             "lease_expires_at", "heartbeat_at",
         ):
             task.pop(key, None)
-        write_jsonl(TASKS, tasks)
+        candidate = linked_candidate(candidates, task)
+        if candidate:
+            candidate["status"] = "queued"
+            candidate.pop("failure_task_id", None)
+            candidate.pop("failure_reason", None)
+        commit(
+            before_tasks, runs, tasks, runs, "retry",
+            before_candidates=before_candidates, candidates=candidates,
+        )
         return task
 
 
 def reclaim_expired() -> dict:
     with workspace_lock("task-queue"):
         recover()
-        tasks = load(TASKS)
+        tasks, runs, candidates = load(TASKS), load(RUNS), load(CANDIDATES)
+        before_tasks, before_candidates = [dict(row) for row in tasks], [dict(row) for row in candidates]
         reclaimed: list[str] = []
         for task in tasks:
             if task.get("status") != "claimed":
@@ -421,8 +620,14 @@ def reclaim_expired() -> dict:
             for key in ("claimed_at", "lease_expires_at", "heartbeat_at", "claim_token"):
                 task.pop(key, None)
             reclaimed.append(task["id"])
+            candidate = linked_candidate(candidates, task)
+            if candidate:
+                candidate["status"] = "queued"
         if reclaimed:
-            write_jsonl(TASKS, tasks)
+            commit(
+                before_tasks, runs, tasks, runs, "reclaim-expired",
+                before_candidates=before_candidates, candidates=candidates,
+            )
         return {"count": len(reclaimed), "tasks": reclaimed}
 
 
@@ -434,6 +639,9 @@ def main() -> int:
     add.add_argument("--goal", required=True)
     add.add_argument("--idempotency-key", required=True)
     add.add_argument("--source")
+    add.add_argument("--candidate")
+    add.add_argument("--knowledge-role", choices=sorted(ROLE_PRIORITY))
+    add.add_argument("--priority", type=int, default=0)
     candidate_add = sub.add_parser("candidate-add")
     candidate_add.add_argument("--task-id", required=True)
     candidate_add.add_argument("--agent", required=True)
@@ -448,6 +656,11 @@ def main() -> int:
         choices=["china-variation", "global-china-variation", "transferable-method"],
         required=True,
     )
+    candidate_close = sub.add_parser("candidate-close")
+    candidate_close.add_argument("--id", required=True)
+    candidate_close.add_argument("--status", choices=sorted(CANDIDATE_TERMINAL), required=True)
+    candidate_close.add_argument("--record", action="append", default=[])
+    candidate_close.add_argument("--note", required=True)
     sub.add_parser("peek")
     sub.add_parser("doctor")
     take = sub.add_parser("claim")
@@ -486,12 +699,17 @@ def main() -> int:
     sub.add_parser("reclaim-expired")
     args = parser.parse_args()
     if args.command == "enqueue":
-        result = enqueue(args.stage, args.goal, args.idempotency_key, args.source)
+        result = enqueue(
+            args.stage, args.goal, args.idempotency_key, args.source,
+            args.candidate, args.knowledge_role, args.priority,
+        )
     elif args.command == "candidate-add":
         result = add_candidate(
             args.task_id, args.agent, args.claim_token, args.name, args.next_stage, args.reason,
             args.source, args.source_fingerprint, args.knowledge_role,
         )
+    elif args.command == "candidate-close":
+        result = close_candidate(args.id, args.status, args.record, args.note)
     elif args.command == "peek":
         result = peek()
     elif args.command == "doctor":

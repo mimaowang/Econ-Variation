@@ -61,6 +61,8 @@ high-quality paper or primary source
 
 Tasks use stages `screen`, `discover`, `resolve`, `ground`, `audit`, and `consolidate`. One `screen` task evaluates one paper or clearly identified source and records only `candidate`, `skipped`, or `blocked`; it cannot modify canonical records. A retained source is written to the candidate ledger with a source fingerprint and receives a separate post-screen task. Only sources assigned a supported knowledge role proceed to deep extraction. Discovery should not dominate when managed evidence, identity, or duplication debt is high.
 
+Completing a retained screen automatically queues its post-screen task. The candidate then moves through `queued`, `in-progress`, and a terminal state (`resolved`, `contested`, `skipped`, or `blocked`) with the linked task. Historical candidates may be reconciled to an existing canonical record without deleting their original source, reason, or screening provenance. Default queue priority favors bounded China-facing post-screen work over overseas method screening; an explicit task priority or user-directed scope may override that order.
+
 Every canonical record names its task in `provenance.task_id`. The fixed `legacy-untracked` baseline includes per-file hashes: an untouched legacy lead may remain frozen, but any edit requires a real claimed task and current quality standards. For new or audited records, set the claimed task ID before validation. Completion rejects undeclared provenance, expired or mismatched claim tokens, imprecise evidence paths, missing evidence locators, and search-snippet claims. The shared worktree supports one mutating claim at a time.
 
 ## Evidence discipline
@@ -110,6 +112,8 @@ For overseas work, `method_transfer` answers: what is portable; how the variable
 
 Econ-Variation states a versioned `empirical_requirements` contract rather than duplicating dataset profiles: observation unit, population, geography, time coverage, minimum frequency, pre/post periods, required fields, treatment source, and join keys. Compatibility is evaluated at runtime; Econ-Variation stores no reciprocal dataset IDs.
 
+`empirical_requirements` remains the default contract. When a variation supports genuinely different empirical designs, optional `design_profiles` provide alternative, complete requirements for each design-unit combination. The matcher evaluates profiles separately and selects the best-fitting one; requirements from different profiles are never unioned into artificial missing-data demands.
+
 For joint reasoning, compare:
 
 ```text
@@ -122,6 +126,8 @@ Return `compatible`, `conditional`, or `incompatible` for each dimension and exp
 ## Idea matching
 
 Translate the idea into outcome, population, observation unit, geography, time, frequency, mechanism, available data, identifiers, and constraints. Use `scripts/search.py` for compact recall and `scripts/match.py` for deterministic compatibility before opening canonical records. Apply hard filters before substantive reasoning. Free-text unit, geography, and population comparisons remain manual-review conditions; the tool does not certify parallel trends, exclusion restrictions, or mechanisms.
+
+Normalize broad topics through `schema/topics.yaml`. `domains` remain detailed descriptive tags, while stable topics and their English/Chinese aliases support recall without requiring users to guess a record's exact wording.
 
 Apply static knowledge eligibility before query-specific compatibility. `direct-candidate` may be recommended after canonical review; `conditional-candidate` must state its remaining conditions; `lead-only` may only be offered as an audit lead; `method-inspiration` supplies audited construction logic but never a China shock; `method-lead` is unaudited overseas inspiration; `do-not-recommend` is excluded. If no eligible case survives, report a knowledge gap rather than silently promoting an immature record.
 

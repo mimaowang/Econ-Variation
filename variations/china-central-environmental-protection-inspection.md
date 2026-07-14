@@ -8,9 +8,9 @@ aliases:
 - 中央环保督察
 - 中央生态环境保护督察
 
-status: extracted
+status: grounded
 provenance:
-  task_id: task-2dd4b886e879
+  task_id: task-03f4df2571f3
 scope:
   country: China
   regions:
@@ -66,22 +66,25 @@ timeline:
   implementation_start: 2015
   implementation_end: ongoing
   local_timing: >
-    The Environmental Protection Inspection Plan (Trial) was approved on 1 July 2015.
-    A one-month pilot inspection took place in Hebei around December 2015 / January
-    2016. The first formal batch inspected eight provinces (Inner Mongolia, Heilongjiang,
-    Jiangsu, Jiangxi, Henan, Guangxi, Yunnan, Ningxia) in July–August 2016. The second
-    batch (Beijing, Shanghai, Hubei, Guangdong, Chongqing, Shaanxi, Gansu) followed in
-    November 2016; the third batch (Tianjin, Shanxi, Liaoning, Anhui, Fujian, Hunan,
-    Guizhou) in April–May 2017; and the fourth batch (Jilin, Zhejiang, Shandong, Hainan,
-    Sichuan, Qinghai, Xinjiang, Tibet) in August–September 2017. First-round full
-    coverage was completed by September 2017. "Look-back" inspections occurred in 2018,
-    and a second round ran from 2019 onward.
+    The Environmental Protection Inspection Plan (Trial) was approved on 1 July 2015
+    [E1]. The Hebei pilot ran from 31 December 2015 to 4 February 2016, with feedback
+    delivered on 3 May 2016 [E10]. The first formal batch inspected eight provinces
+    (Inner Mongolia, Heilongjiang, Jiangsu, Jiangxi, Henan, Guangxi, Yunnan, Ningxia)
+    in July–August 2016 [E2]. The second batch (Beijing, Shanghai, Hubei, Guangdong,
+    Chongqing, Shaanxi, Gansu) was launched on 24 November 2016 and all seven teams had
+    stationed by 30 November 2016, with inspections lasting about one month [E6; E7].
+    The third batch (Tianjin, Shanxi, Liaoning, Anhui, Fujian, Hunan, Guizhou) stationed
+    between 24 and 28 April 2017 [E8]. The fourth batch (Jilin, Zhejiang, Shandong,
+    Hainan, Sichuan, Qinghai, Xinjiang, Tibet) stationed between 7 and 15 August 2017
+    and completed the first-round full coverage by mid-September 2017 [E9]. First-round
+    "look-back" inspections covered 20 provinces in two batches during 2018 [E11], and
+    a second round began in 2019.
   anticipation: >
     The establishment of the inspection system was announced in mid-2015, so provincial
     governments could anticipate scrutiny in general terms. The exact batch and timing
     for each province were centrally determined and not fully predictable to local
     actors.
-  last_verified: '2026-07-13'
+  last_verified: '2026-07-14'
 assignment:
   unit: Province-year or plant-week/city-week depending on outcome frequency
   treated: >
@@ -292,6 +295,58 @@ empirical_requirements:
   - firm-level environmental data are often self-reported
   - treatment timing for second-round and look-back inspections needs careful coding
   - province-year aggregation masks within-province heterogeneity
+design_profiles:
+- id: province-year-staggered-did
+  label: Province-year staggered inspection design
+  design_families: [staggered difference-in-differences, event study]
+  when_to_use: Use for province-level outcomes or outcomes that can be aggregated consistently to province-year exposure.
+  outcome_domains: [pollution, public health, fiscal behavior, regulatory enforcement]
+  requirements:
+    population: Chinese provinces observed before and after their first central inspection
+    observation_unit: province-year
+    geography_level: province
+    time_start: 2013
+    time_end: 2020
+    minimum_frequency: annual
+    minimum_pre_periods: 2
+    minimum_post_periods: 2
+    required_fields: [outcome, province code, year, inspection date]
+    required_identifiers: [province code, year]
+    treatment_key: [province code, inspection date]
+- id: firm-year-staggered-did
+  label: Firm-year staggered inspection design
+  design_families: [staggered difference-in-differences, triple differences]
+  when_to_use: Use for firm outcomes when each firm can be linked to the province and inspection timing that determine exposure.
+  outcome_domains: [firm behavior, green innovation, productivity, environmental investment]
+  requirements:
+    population: Chinese firms observed before and after the inspection of their registered or operating province
+    observation_unit: firm-year
+    geography_level: province
+    time_start: 2013
+    time_end: 2020
+    minimum_frequency: annual
+    minimum_pre_periods: 2
+    minimum_post_periods: 2
+    required_fields: [outcome, firm id, province code, year, inspection date, industry classification]
+    required_identifiers: [firm id, province code, year]
+    treatment_key: [province code, inspection date]
+- id: plant-week-inspection-window
+  label: Plant-week active inspection-window design
+  design_families: [high-frequency event study, difference-in-differences]
+  when_to_use: Use for high-frequency emissions or operations when plants can be linked to exact inspection entry and exit dates.
+  outcome_domains: [emissions, pollution, plant operations]
+  requirements:
+    population: Chinese power plants or industrial facilities observed around active inspection windows
+    observation_unit: plant-week
+    geography_level: plant within province
+    time_start: 2015
+    time_end: 2018
+    minimum_frequency: weekly
+    minimum_pre_periods: 8
+    minimum_post_periods: 8
+    required_fields: [outcome, plant id, province code, week, inspection entry date, inspection exit date]
+    required_identifiers: [plant id, province code, week]
+    treatment_key: [province code, inspection entry date, inspection exit date]
 evidence:
 - id: E1
   source_type: policy-document
@@ -378,6 +433,110 @@ evidence:
     Sections 4.1–4.3 and Tables 1–2 define the 2012–2019 A-share sample (3,170 firm-year
     observations), the annual-report environmental-investment measure, and the CEI coding;
     Table 4 reports firm- and year-fixed-effects estimates for CEI × heavy-polluting industry.
+- id: E6
+  source_type: policy-document
+  citation: >
+    State Council / Xinhua. 2016. "2016 Second Batch of Central Environmental Protection
+    Inspections Fully Launched" (published 2016-11-24).
+  url: https://www.gov.cn/hudong/2016-11/24/content_5137206.htm
+  date: '2016-11-24'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    Gov.cn article dated 24 November 2016; states that the second batch of seven central
+    environmental protection inspection teams began stationing in Beijing, Shanghai, Hubei,
+    Guangdong, Chongqing, Shaanxi, and Gansu from 24 November to the end of November.
+- id: E7
+  source_type: policy-document
+  citation: >
+    State Council / Ministry of Environmental Protection. 2016. "All Seven Second-Batch
+    Central Environmental Protection Inspection Teams Have Stationed" (published 2016-11-30).
+  url: https://www.gov.cn/xinwen/2016-11/30/content_5140765.htm
+  date: '2016-11-30'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    Gov.cn article dated 30 November 2016; confirms that all seven second-batch teams had
+    stationed by 30 November 2016 and lists the seven provinces (Beijing, Shanghai, Hubei,
+    Guangdong, Chongqing, Shaanxi, Gansu).
+- id: E8
+  source_type: policy-document
+  citation: >
+    State Council / Ministry of Environmental Protection. 2017. "Third Batch of Central
+    Environmental Protection Inspections Enters On-Site Phase" (published 2017-05-20).
+  url: https://www.gov.cn/xinwen/2017-05/20/content_5195494.htm
+  date: '2017-05-20'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    Gov.cn article dated 20 May 2017; reports that the third batch of seven teams stationed
+    in Tianjin, Shanxi, Liaoning, Anhui, Fujian, Hunan, and Guizhou between 24 and 28 April
+    2017 and completed the on-site phase by 18 May 2017.
+- id: E9
+  source_type: policy-document
+  citation: >
+    Ministry of Ecology and Environment. 2017. "Environmental Protection Chronicle — August
+    2017" (published 2017-09-25).
+  url: https://www.mee.gov.cn/xxgk/dsj/201709/t20170925_422233.shtml
+  date: '2017-09-25'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    MEE monthly chronicle states that, with State Council approval, all eight fourth-batch
+    central environmental protection inspection teams had stationed in Jilin, Zhejiang,
+    Shandong, Hainan, Sichuan, Tibet, Qinghai, and Xinjiang (including Production and
+    Construction Corps) by 15 August 2017.
+- id: E10
+  source_type: policy-document
+  citation: >
+    Ministry of Environmental Protection. 2016. "Hebei Province Central Environmental
+    Protection Inspection Feedback Rectification Plan Officially Released" (published
+    2016-07-06).
+  url: https://www.mee.gov.cn/gkml/sthjbgw/qt/201607/t20160706_357184.htm
+  date: '2016-07-06'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    MEE article dated 6 July 2016; states that the central environmental protection
+    inspection pilot in Hebei ran from 31 December 2015 to 4 February 2016 and that feedback
+    was delivered on 3 May 2016.
+- id: E11
+  source_type: policy-document
+  citation: >
+    State Council / Xinhua. 2019. "By the Numbers: First Round of Central Ecological and
+    Environmental Protection Inspections and 'Look-Back' Inspections" (published 2019-05-15).
+  url: https://www.gov.cn/xinwen/2019-05/15/content_5391977.htm
+  date: '2019-05-15'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    Gov.cn summary dated 15 May 2019; states that the Hebei pilot ran from 31 December 2015
+    to 4 February 2016, the first round completed full provincial coverage by September 2017,
+    and 20 provinces received "look-back" inspections in 2018.
 design_applications:
 - paper: 'Dynamic Responses of SO2 Pollution to China''s Environmental Inspections'
   doi: 10.1073/pnas.2214262120
@@ -472,9 +631,9 @@ design_applications:
   - E5
 readiness_blockers:
 - >
-  The complete province-by-batch schedule for the first round and the exact dates of
-  "look-back" and second-round inspections have not yet been verified from primary
-  official notices inside this record.
+  The first-round province-by-batch schedule is now verified from primary official
+  notices (E1–E11), but the exact province-level dates of the 2018 "look-back" batches
+  and the 2019 onward second-round batches have not yet been independently verified.
 - >
   Treatment definitions differ across studies (active inspection window, post-inspection
   year, ever-inspected indicator), so the appropriate coding depends on the research

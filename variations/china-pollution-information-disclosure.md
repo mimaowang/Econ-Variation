@@ -7,10 +7,9 @@ aliases:
 - From Fog to Smog
 - Barwick Li Lin Zou pollution information
 - 空气污染实时公开
-
-status: extracted
+status: grounded
 provenance:
-  task_id: task-164ccc1cb13e
+  task_id: task-a9b8d963d5ce
 scope:
   country: China
   regions:
@@ -22,19 +21,23 @@ scope:
   - household-behavior
   variation_type: staggered-rollout
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: The 2012–2013 rollout of automated real-time AQI disclosure changed
+    the information environment of urban households in a staggered city-level pattern,
+    supporting DiD and event-study designs for defensive behavior and mortality.
 identity:
-  instrument: China's 2013 landmark program rolling out real-time automated air quality monitoring stations with public online
-    disclosure, replacing the previous manually-reported Air Pollution Index (API) with the more comprehensive and automated
-    Air Quality Index (AQI)
+  instrument: China's 2013 landmark program rolling out real-time automated air quality
+    monitoring stations with public online disclosure, replacing the previous manually-reported
+    Air Pollution Index (API) with the more comprehensive and automated Air Quality
+    Index (AQI)
   authority: Ministry of Environmental Protection
   legal_identifiers:
-  - Air Pollution Prevention and Control Action Plan (2013)
-  - MEP regulations on real-time AQI disclosure
-  implementation_regime: Automated monitoring stations were rolled out across major Chinese cities starting in 2013; the key
-    innovation was eliminating human manipulation of pollution data by automating measurement and publicly disclosing results
-    in real time
+  - MEP, 《关于进一步加强环境保护信息公开工作的通知》（环办〔2012〕134号）, 30 Oct 2012
+  - MEP, 《空气质量新标准第一阶段监测实施方案》（环办〔2012〕81号）, 21 May 2012
+  - State Council, 《大气污染防治行动计划》（国发〔2013〕37号）, 2013
+  implementation_regime: Automated monitoring stations were rolled out across major
+    Chinese cities starting in 2013; the key innovation was eliminating human manipulation
+    of pollution data by automating measurement and publicly disclosing results in
+    real time
   assignment_mechanism: City-level rollout timing of automated monitoring stations
   parent: null
   related_variations:
@@ -45,26 +48,30 @@ timeline:
   implementation_start: 2013
   implementation_end: 2015
   local_timing: Stations were rolled out on a staggered schedule across cities
-  anticipation: The program was announced as part of the 2013 Air Pollution Action Plan; households could not anticipate specific
-    local monitoring timing
-  last_verified: '2026-07-13'
+  anticipation: The program was announced as part of the 2013 Air Pollution Action
+    Plan; households could not anticipate specific local monitoring timing
+  last_verified: '2026-07-14'
 assignment:
   unit: City and individual household
-  treated: Residents of cities after automated real-time AQI monitoring and disclosure begins
-  comparison_pool: Same cities before monitoring rollout; cities not yet covered by the program
+  treated: Residents of cities after automated real-time AQI monitoring and disclosure
+    begins
+  comparison_pool: Same cities before monitoring rollout; cities not yet covered by
+    the program
   rule: City-level timing of automated monitoring station installation and data disclosure
-  intensity: All residents in a treated city have access to real-time AQI data; behavioral response intensity varies with
-    baseline pollution and income
-  exposure_construction: Code city-month as treated after automated monitoring starts; use panel data on household defensive
-    behaviors (mask purchases, air purifier purchases, outdoor activity, online search behavior)
+  intensity: All residents in a treated city have access to real-time AQI data; behavioral
+    response intensity varies with baseline pollution and income
+  exposure_construction: Code city-month as treated after automated monitoring starts;
+    use panel data on household defensive behaviors (mask purchases, air purifier
+    purchases, outdoor activity, online search behavior)
   required_identifiers:
   - city code
   - month/year
   - monitoring start date
   exemptions: []
   compliance: Not applicable — universal coverage
-  spillovers: Information about pollution in one city may affect behavior in neighboring cities; nationwide increases in pollution
-    awareness (media coverage) may amplify local treatment effects
+  spillovers: Information about pollution in one city may affect behavior in neighboring
+    cities; nationwide increases in pollution awareness (media coverage) may amplify
+    local treatment effects
 research_compatibility:
   outcome_domains:
   - defensive expenditure
@@ -97,27 +104,33 @@ design:
   candidate_designs:
   - staggered difference-in-differences
   - event study around monitoring station activation
-  identifying_variation: City-specific timing of transition from manual to automated, publicly disclosed real-time AQI monitoring
+  identifying_variation: City-specific timing of transition from manual to automated,
+    publicly disclosed real-time AQI monitoring
   assumptions:
   - Station rollout timing is exogenous to local health conditions
-  - behavioral responses reflect causal effects of information rather than concurrent trends
+  - behavioral responses reflect causal effects of information rather than concurrent
+    trends
   diagnostics:
   - Test for pre-trends in defensive behaviors
   - compare cities with different rollout timing
   - analyze intensity of behavioral response by baseline pollution levels
-  primary_strategy: Staggered difference-in-differences; event study; analysis of defensive behavior responses by pollution
-    levels
-  estimand: The causal effect of the recorded exposure on Defensive expenditures (air purifiers, masks), avoidance behavior
-    (outdoor time), mortality, conditional on the stated design assumptions.
-  treatment_variable: City-level staggered timing of automated real-time monitoring station activation
-  comparison_logic: Within-city pre/post monitoring; across-city comparison by rollout timing
-  estimation_notes: Staggered difference-in-differences; event study; analysis of defensive behavior responses by pollution
-    levels
+  primary_strategy: Staggered difference-in-differences; event study; analysis of
+    defensive behavior responses by pollution levels
+  estimand: The effect of the recorded exposure on defensive expenditures (air purifiers,
+    masks), avoidance behavior (outdoor time), and mortality, conditional on the stated
+    design assumptions.
+  treatment_variable: City-level staggered timing of automated real-time monitoring
+    station activation
+  comparison_logic: Within-city pre/post monitoring; across-city comparison by rollout
+    timing
+  estimation_notes: Staggered difference-in-differences; event study; analysis of
+    defensive behavior responses by pollution levels
+  claim_type: causal
 threats:
 - type: concurrent-policy-changes
   basis: inferred
-  condition: The monitoring program was part of the broader 2013 Air Pollution Action Plan, which also included emission reduction
-    measures
+  condition: The monitoring program was part of the broader 2013 Air Pollution Action
+    Plan, which also included emission reduction measures
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -147,39 +160,69 @@ empirical_requirements:
   - city code
   - post-automated-monitoring indicator
   - baseline pollution level
-  treatment_source: MEP air quality monitoring data, e-commerce transaction data for masks/filters, Baidu search index data,
-    China Mortality Surveillance System
+  treatment_source: MEP air quality monitoring data, e-commerce transaction data for
+    masks/filters, Baidu search index data, China Mortality Surveillance System
   measurement_risks:
   - automated AQI differs systematically from previous API
-  - making pre/post pollution comparisons difficult; online search and purchase data may not capture all defensive behaviors
+  - making pre/post pollution comparisons difficult; online search and purchase data
+    may not capture all defensive behaviors
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Barwick, Panle Jia, Shanjun Li, Liguo Lin, and Eric Yongchen Zou. 2024. "From Fog to Smog: The Value of Pollution
-    Information." American Economic Review 114 (5): 1338–1381.'
+  citation: 'Barwick, Panle Jia, Shanjun Li, Liguo Lin, and Eric Yongchen Zou. 2024.
+    "From Fog to Smog: The Value of Pollution Information." American Economic Review
+    114 (5): 1338–1381.'
   url: https://doi.org/10.1257/aer.20200956
   date: 2024
   supports:
   - identity
   - assignment
   - design
-  - main estimates
-  - defensive behavior analysis
-  - mortality impact
+  - research_compatibility
+  - empirical_requirements
+  - design_applications
   verification_status: verified
+  access_level: full-text
+  locator: Full article via DOI
+- id: E2
+  source_type: policy-document
+  citation: Ministry of Environmental Protection. 2012. "Notice on Further Strengthening
+    Environmental Protection Information Disclosure Work" (关于进一步加强环境保护信息公开工作的通知).
+    MEP Office No. 134 (环办〔2012〕134号), October 30, 2012.
+  url: https://www.mee.gov.cn/gkml/hbb/bgt/201210/t20121031_240771.htm
+  date: '2012-10-30'
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: Official MEP notice; Section II(1) mandates real-time air quality monitoring
+    disclosure for 74 cities in 2012 and surface water automatic monitoring data disclosure
+    every four hours.
 design_applications:
 - paper: 'From Fog to Smog: The Value of Pollution Information'
   doi: 10.1257/aer.20200956
   journal: American Economic Review
   year: 2024
-  research_question: What is the value of providing real-time, accurate pollution information to the public?
+  research_question: What is the value of providing real-time, accurate pollution
+    information to the public?
   population: Urban residents in Chinese cities, ~2011–2018
-  outcome: Defensive expenditures (air purifiers, masks), avoidance behavior (outdoor time), mortality
-  data_used: []
-  treatment_encoding: City-level staggered timing of automated real-time monitoring station activation
+  outcome: Defensive expenditures (air purifiers, masks), avoidance behavior (outdoor
+    time), mortality
+  data_used:
+  - MEP air quality monitoring data (API/AQI, PM2.5, PM10, SO2, NO2, CO, O3)
+  - City-level automated monitoring station rollout dates
+  - E-commerce transaction data on air purifiers and masks
+  - Baidu Search Index data
+  - China Mortality Surveillance System data
+  - China Meteorological Administration weather data
+  - City demographic and economic covariates
+  treatment_encoding: City-level staggered timing of automated real-time monitoring
+    station activation
   comparison: Within-city pre/post monitoring; across-city comparison by rollout timing
-  empirical_design: Staggered difference-in-differences; event study; analysis of defensive behavior responses by pollution
-    levels
+  empirical_design: Staggered difference-in-differences; event study; analysis of
+    defensive behavior responses by pollution levels
   assumptions:
   - rollout timing exogenous
   - behavioral responses causally linked to information
@@ -189,10 +232,7 @@ design_applications:
   - selection via pre-trend tests
   evidence_refs:
   - E1
-readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+readiness_blockers: []
 method_transfer: null
 ---
 ## Institutional Background

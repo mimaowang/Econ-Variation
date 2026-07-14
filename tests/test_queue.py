@@ -137,6 +137,18 @@ def test_screen_completion_is_decision_only_and_candidate_must_exist(monkeypatch
     )
     assert completed["candidate_id"] == candidate["id"]
     assert task_queue.load(task_queue.RUNS)[0]["candidate_id"] == candidate["id"]
+    candidates = task_queue.load(task_queue.CANDIDATES)
+    assert candidates[0]["status"] == "queued"
+    follow_up = task_queue.load(task_queue.TASKS)[1]
+    assert follow_up["candidate_id"] == candidate["id"]
+    assert follow_up["stage"] == "resolve"
+    claimed_follow_up = task_queue.claim("agent-a", 10, task_id=follow_up["id"])
+    assert task_queue.load(task_queue.CANDIDATES)[0]["status"] == "in-progress"
+    task_queue.complete(
+        follow_up["id"], "agent-a", claimed_follow_up["claim_token"], "blocked", [],
+        "primary source unavailable", gate=False,
+    )
+    assert task_queue.load(task_queue.CANDIDATES)[0]["status"] == "blocked"
 
 
 def test_screen_completion_detects_undeclared_canonical_changes(monkeypatch, tmp_path) -> None:

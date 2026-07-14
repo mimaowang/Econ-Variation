@@ -8,7 +8,7 @@ from typing import Any
 
 sys.dont_write_bytecode = True
 
-from econ_variation_lib import ROOT  # noqa: E402
+from econ_variation_lib import ROOT, canonical_topics  # noqa: E402
 
 
 TOKEN_RE = re.compile(r"[a-z0-9]+|[\u4e00-\u9fff]+", re.IGNORECASE)
@@ -43,8 +43,11 @@ def weighted_fields(item: dict[str, Any]) -> list[tuple[str, int, set[str]]]:
     assignment = item.get("assignment", {})
     research_fit = item.get("research_fit", {})
     data_fit = item.get("data_fit", {})
+    profiles = item.get("design_profiles", [])
+    profile_data = [profile.get("data_fit", {}) for profile in profiles]
     return [
         ("identity", 6, tokenize([item.get("id"), item.get("name"), item.get("aliases", [])])),
+        ("topic", 5, tokenize(item.get("topics", []))),
         ("domain", 5, tokenize(item.get("domains", []))),
         ("outcome", 5, tokenize([research_fit.get("outcomes", []), research_fit.get("application_outcomes", [])])),
         ("assignment", 4, tokenize(assignment)),
@@ -56,10 +59,15 @@ def weighted_fields(item: dict[str, Any]) -> list[tuple[str, int, set[str]]]:
                     data_fit.get("required_identifiers", []),
                     data_fit.get("required_fields", []),
                     data_fit.get("treatment_key", []),
+                    profile_data,
                 ]
             ),
         ),
-        ("design", 3, tokenize(research_fit.get("design_families", []))),
+        (
+            "design",
+            3,
+            tokenize([research_fit.get("design_families", []), [profile.get("design_families", []) for profile in profiles]]),
+        ),
         ("risk", 2, tokenize([item.get("threat_types", []), item.get("blocker_codes", [])])),
     ]
 
@@ -67,6 +75,23 @@ def weighted_fields(item: dict[str, Any]) -> list[tuple[str, int, set[str]]]:
 def phrase_matches(value: str, choices: list[Any]) -> bool:
     wanted = tokenize(value)
     return bool(wanted) and any(wanted <= tokenize(choice) for choice in choices)
+
+
+def topic_matches(value: str, item: dict[str, Any]) -> bool:
+    resolved = canonical_topics([value])
+    if resolved:
+        return all(topic in item.get("topics", []) for topic in resolved)
+    return phrase_matches(value, item.get("domains", []))
+
+
+def text_query_tokens(values: list[str]) -> set[str]:
+    tokens = tokenize(values)
+    if any(re.search(r"[\u4e00-\u9fff]", value) for value in values):
+        topics = canonical_topics(values, substring=True)
+        if topics:
+            tokens = {token for token in tokens if not re.search(r"[\u4e00-\u9fff]", token)}
+            tokens.update(tokenize(topics))
+    return tokens
 
 
 def knowledge_gate(item: dict[str, Any], eligibility: str | None, include_leads: bool) -> bool:
@@ -101,6 +126,7 @@ def search_items(
     roles: list[str] | None = None,
     eligibility: str | None = None,
     domains: list[str] | None = None,
+    topics: list[str] | None = None,
     design: str | None = None,
     identifiers: list[str] | None = None,
     text: list[str] | None = None,
@@ -110,9 +136,10 @@ def search_items(
 ) -> list[dict[str, Any]]:
     roles = roles or []
     domains = domains or []
+    topics = topics or []
     identifiers = identifiers or []
     variation_types = variation_types or []
-    query_tokens = tokenize(text or [])
+    query_tokens = text_query_tokens(text or [])
     ranked: list[dict[str, Any]] = []
     for item in items:
         if not knowledge_gate(item, eligibility, include_leads):
@@ -121,7 +148,9 @@ def search_items(
             continue
         if variation_types and item["variation_type"] not in variation_types:
             continue
-        if domains and not all(phrase_matches(domain, item.get("domains", [])) for domain in domains):
+        if domains and not all(topic_matches(domain, item) for domain in domains):
+            continue
+        if topics and not all(topic_matches(topic, item) for topic in topics):
             continue
         if design and not phrase_matches(design, item.get("research_fit", {}).get("design_families", [])):
             continue
@@ -156,6 +185,7 @@ def compact_result(result: dict[str, Any]) -> dict[str, Any]:
         "score": result["score"],
         "why_matched": result["why_matched"],
         "variation_type": item["variation_type"],
+        "topics": item.get("topics", []),
         "time": item["time"],
         "treatment": assignment.get("treatment", ""),
         "comparison": assignment.get("comparison", ""),
@@ -167,6 +197,10 @@ def compact_result(result: dict[str, Any]) -> dict[str, Any]:
             "required_fields": data_fit.get("required_fields", []),
             "treatment_key": data_fit.get("treatment_key", []),
         },
+        "design_profiles": [
+            {"id": profile["id"], "label": profile["label"], "when_to_use": profile["when_to_use"]}
+            for profile in item.get("design_profiles", [])
+        ],
         "blocker_codes": item.get("blocker_codes", []),
         "threat_types": item.get("threat_types", []),
         "source_path": item["source_path"],
@@ -188,6 +222,7 @@ def main() -> int:
         ],
     )
     parser.add_argument("--domain", action="append")
+    parser.add_argument("--topic", action="append", help="Canonical topic or an English/Chinese topic alias.")
     parser.add_argument("--design")
     parser.add_argument("--identifier", action="append")
     parser.add_argument("--variation-type", action="append")
@@ -202,6 +237,7 @@ def main() -> int:
         roles=args.role,
         eligibility=args.eligibility,
         domains=args.domain,
+        topics=args.topic,
         design=args.design,
         identifiers=args.identifier,
         text=args.text,

@@ -33,6 +33,12 @@ Focused recall is compact and excludes immature leads by default:
 python scripts/search.py --role china-variation --domain environment --text firm --text patent --limit 3
 ```
 
+Stable topics accept canonical names or Chinese/English aliases, while detailed record domains remain available:
+
+```powershell
+python scripts/search.py --role china-variation --topic 环境 --text 中国企业创新 --limit 3
+```
+
 For deterministic data-fit, pass YAML or JSON to `match.py`:
 
 ```yaml
@@ -82,6 +88,8 @@ python scripts/task_queue.py candidate-add --task-id <task-id> --agent <agent-na
 python scripts/task_queue.py complete --id <task-id> --agent <agent-name> --claim-token <token> --outcome candidate --candidate <candidate-id> --note "Screened one source; retained for resolution."
 ```
 
+Completion automatically creates and links the bounded follow-up task. Candidate status then follows that task through claim, release, retry, and completion, so resolved candidates no longer remain indefinitely pending.
+
 Screen tasks cannot modify canonical records. Only later `discover`, `resolve`, `ground`, `audit`, or `consolidate` work may write records, and touched records must satisfy the current evidence standard. The shared worktree permits one mutating claim at a time. Expired or mismatched claim tokens cannot complete work. When health advises stopping bulk discovery, a user-directed or coverage-gap exception must be claimed with a recorded `--override-reason`.
 
 ---
@@ -114,6 +122,8 @@ One file in `variations/` represents one variation case: one instrument, one imp
 - paper-specific design applications;
 - verified facts, reported claims, and analytical inferences.
 
+The default `empirical_requirements` contract supports simple cases. Optional `design_profiles` describe distinct alternatives—such as province-year, firm-year, or plant-week designs—so the matcher selects one coherent requirement set instead of combining unrelated fields.
+
 Canonical statuses are `extracted`, `grounded`, `design-documented`, `contested`, and `deprecated`. Status measures knowledge maturity, not universal causal validity.
 
 ## Repository map
@@ -125,6 +135,7 @@ Canonical statuses are `extracted`, `grounded`, `design-documented`, `contested`
 | `sources/` | Journal scope and discovery guidance |
 | `state/` | Durable tasks, candidates, runs, and frozen legacy manifest |
 | `schema/variation.schema.json` | Machine authority for canonical record structure |
+| `schema/topics.yaml` | Stable bilingual topic vocabulary and aliases for recall |
 | `scripts/doctor.py` | Read-only cold-start and operational readiness check |
 | `scripts/search.py` | Compact, maturity-gated recall |
 | `scripts/match.py` | Deterministic idea/data compatibility gate |

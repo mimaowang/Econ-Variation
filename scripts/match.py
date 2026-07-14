@@ -301,12 +301,20 @@ def semantic_dimensions(item: dict[str, Any], query: dict[str, Any]) -> dict[str
     ):
         supplied = data.get(key)
         if supplied:
-            dimensions[key] = dimension(
-                "conditional",
-                f"Manual review required: query '{supplied}' versus record '{item['data_fit'].get(record_key, '')}'.",
-                f"{key}-manual-review",
-                manual_review=True,
-            )
+            recorded = item["data_fit"].get(record_key, "")
+            if normalized_name(supplied) == normalized_name(recorded):
+                dimensions[key] = dimension(
+                    "compatible",
+                    f"Query '{supplied}' matches the selected design profile.",
+                    f"{key}-matched",
+                )
+            else:
+                dimensions[key] = dimension(
+                    "conditional",
+                    f"Manual review required: query '{supplied}' versus record '{recorded}'.",
+                    f"{key}-manual-review",
+                    manual_review=True,
+                )
     return dimensions
 
 
@@ -353,6 +361,43 @@ def evaluate_item(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]
     }
 
 
+def evaluate_item_profiles(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]:
+    profiles = item.get("design_profiles", [])
+    if not profiles:
+        return evaluate_item(item, query)
+    evaluated: list[tuple[int, dict[str, Any], dict[str, Any]]] = []
+    decision_rank = {"compatible": 4, "conditional": 3, "method-only": 3, "incompatible": 1}
+    for index, profile in enumerate(profiles):
+        profile_item = {**item, "data_fit": profile["data_fit"]}
+        result = evaluate_item(profile_item, query)
+        result["selected_design_profile"] = {
+            "id": profile["id"],
+            "label": profile["label"],
+            "when_to_use": profile["when_to_use"],
+        }
+        incompatible_count = sum(
+            dimension_value["status"] == "incompatible" for dimension_value in result["dimensions"].values()
+        )
+        conditional_count = sum(
+            dimension_value["status"] == "conditional" for dimension_value in result["dimensions"].values()
+        )
+        score = decision_rank[result["decision"]] * 1000 - incompatible_count * 100 - conditional_count * 10 - index
+        evaluated.append((score, result, profile))
+    evaluated.sort(key=lambda row: -row[0])
+    selected = evaluated[0][1]
+    selected["design_profile_results"] = [
+        {
+            "id": profile["id"],
+            "label": profile["label"],
+            "decision": result["decision"],
+            "reason_codes": result["reason_codes"],
+            "missing_join_data": result["missing_join_data"],
+        }
+        for _, result, profile in evaluated
+    ]
+    return selected
+
+
 def select_items(query: dict[str, Any], router: dict[str, Any]) -> list[dict[str, Any]]:
     items = router["variations"]
     candidate_ids = query.get("candidate_ids") or []
@@ -368,6 +413,7 @@ def select_items(query: dict[str, Any], router: dict[str, Any]) -> list[dict[str
         roles=filters.get("roles"),
         eligibility=filters.get("eligibility"),
         domains=filters.get("domains"),
+        topics=filters.get("topics"),
         design=filters.get("design"),
         identifiers=filters.get("identifiers"),
         text=filters.get("text"),
@@ -388,7 +434,7 @@ def match_query(query: dict[str, Any], router: dict[str, Any] | None = None) -> 
             "reason_codes": ["knowledge-gap"],
             "results": [],
         }
-    results = [evaluate_item(item, query) for item in items]
+    results = [evaluate_item_profiles(item, query) for item in items]
     regular = [result for result in results if result["recommendation_eligible"]]
     decisions = {result["decision"] for result in regular}
     if "compatible" in decisions:

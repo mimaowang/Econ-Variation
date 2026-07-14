@@ -9,6 +9,7 @@ from econ_variation_lib import ROOT, STATE_DIR, read_jsonl
 
 
 TASKS = STATE_DIR / "tasks.jsonl"
+CANDIDATES = STATE_DIR / "candidates.jsonl"
 HEALTH = ROOT / "dist" / "health.json"
 ROUTER = ROOT / "dist" / "router.json"
 
@@ -60,6 +61,7 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
     current = current or datetime.now().astimezone()
     snapshot = repository_snapshot()
     tasks, task_errors = read_jsonl(TASKS)
+    candidates, candidate_errors = read_jsonl(CANDIDATES)
     active_rows = [task for task in tasks if task.get("status") == "claimed"]
     active = [
         {
@@ -76,8 +78,14 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
     pending = [task for task in tasks if task.get("status") == "pending"]
     if stop:
         pending = [task for task in pending if task.get("stage") not in {"screen", "discover"}]
+    from task_queue import effective_priority
+
+    pending.sort(key=lambda task: (-effective_priority(task), str(task.get("created_at", "")), str(task.get("id", ""))))
     next_tasks = [
-        {"id": task.get("id"), "stage": task.get("stage"), "goal": str(task.get("goal", ""))[:160]}
+        {
+            "id": task.get("id"), "stage": task.get("stage"), "goal": str(task.get("goal", ""))[:160],
+            "knowledge_role_hint": task.get("knowledge_role_hint"), "priority": effective_priority(task),
+        }
         for task in pending[:3]
     ]
     debt_groups = health.get("quality_debt") or {}
@@ -91,13 +99,15 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
     issues: list[str] = []
     if task_errors:
         issues.append("invalid-task-state")
+    if candidate_errors:
+        issues.append("invalid-candidate-state")
     if snapshot.get("snapshot_error"):
         issues.append("validation-unavailable")
     if len(active_rows) > 1:
         issues.append("multiple-active-tasks")
     if not snapshot["repository_valid"]:
         action = "inspect-validation-errors"
-    elif task_errors:
+    elif task_errors or candidate_errors:
         action = "inspect-task-state"
     elif not snapshot["generated_fresh"]:
         action = "regenerate-and-check-generated"
@@ -122,6 +132,10 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
         "stop_bulk_discovery": stop,
         "active_task": active[0] if active else None,
         "next_tasks": next_tasks,
+        "candidate_status_counts": {
+            status: sum(candidate.get("status") == status for candidate in candidates)
+            for status in ("pending", "queued", "in-progress", "resolved", "contested", "skipped", "blocked")
+        },
         "top_quality_debt": top_debt,
         "safe_action": action,
         "issues": issues,

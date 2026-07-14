@@ -1,0 +1,37 @@
+schema_version: 1
+purpose: Stable bilingual topics for recall. Canonical records keep their detailed domains; topics normalize them without deleting information.
+topics:
+  agriculture-rural:
+    aliases: [agriculture, agricultural-economics, rural-development, land, land-tenure, 农业, 农村, 土地, 土地产权]
+  climate-energy:
+    aliases: [climate, energy, carbon, green-innovation, 气候, 能源, 碳排放, 低碳, 绿色创新]
+  development-poverty:
+    aliases: [development, development-economics, poverty, economic-growth, growth, structural-transformation, 发展, 发展经济学, 贫困, 经济增长]
+  digital-economy:
+    aliases: [digital-regulation, media, media-policy, information, technology, 数字经济, 数字监管, 平台, 媒体, 信息]
+  education:
+    aliases: [education, human-capital, child-development, 教育, 人力资本, 儿童发展, 高等教育]
+  environment:
+    aliases: [environment, environmental-economics, pollution, enforcement, public-health, 环境, 环境经济学, 污染, 环境规制, 环境执法]
+  family-demography:
+    aliases: [demography, family-economics, fertility, population, marriage, gender, 家庭, 人口, 生育, 婚姻, 性别]
+  finance:
+    aliases: [finance, financial-frictions, household-finance, insurance, investment, 金融, 融资约束, 家庭金融, 保险, 投资]
+  firms-innovation:
+    aliases: [firm, firms, firm-behavior, firm-dynamics, firm-entry, firm-heterogeneity, firm-productivity, innovation, productivity, manufacturing, management, 企业, 公司, 企业行为, 创新, 生产率, 制造业]
+  governance-politics:
+    aliases: [governance, political-economy, corruption, local-government, elite-selection, ideology, institutions, 治理, 政治经济学, 腐败, 地方政府, 制度]
+  health:
+    aliases: [health, health-economics, public-health, infant-health, maternal-health, mortality, healthcare-costs, healthcare-spending, healthcare-utilization, 健康, 医疗, 公共卫生, 死亡率]
+  history:
+    aliases: [history, economic-history, historical, 历史, 经济史]
+  infrastructure-urban:
+    aliases: [infrastructure, transportation, urban, urban-economics, urbanization, regional-economics, economic-geography, spatial-economics, 基础设施, 交通, 城市, 城镇化, 区域经济]
+  labor-migration:
+    aliases: [labor, labor-economics, migration, employment, wages, 劳动, 劳动力, 就业, 工资, 移民, 人口流动]
+  law-regulation:
+    aliases: [regulation, judicial-institutions, intellectual-property, property-rights, law, 监管, 法律, 司法, 知识产权, 产权]
+  public-finance:
+    aliases: [public-economics, public-finance, fiscal-transfers, tax, taxation, public-services, 公共经济学, 财政, 税收, 转移支付, 公共服务]
+  trade-globalization:
+    aliases: [trade, international-trade, exports, policy-uncertainty, global, 贸易, 国际贸易, 出口, 全球化, 贸易政策]

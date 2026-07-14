@@ -1,7 +1,8 @@
 ---
 schema_version: 2
 id: china-huai-river-heating-air-pollution
-name: China's Huai River Heating Policy as a Spatial Regression Discontinuity for Air Pollution, Health, and Willingness-to-Pay
+name: China's Huai River Heating Policy as a Spatial Regression Discontinuity for
+  Air Pollution, Health, and Willingness-to-Pay
 aliases:
 - Almond Chen Greenstone Li Huai River
 - China winter heating policy air quality
@@ -10,10 +11,9 @@ aliases:
 - Qinling-Huaihe heating boundary
 - Willingness to pay clean air China
 - Ito Zhang air purifier WTP
-
-status: extracted
+status: grounded
 provenance:
-  task_id: task-164ccc1cb13e
+  task_id: task-a9b8d963d5ce
 scope:
   country: China
   regions:
@@ -28,23 +28,28 @@ scope:
   - urban
   variation_type: boundary-discontinuity
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: The Huai River heating boundary is a Chinese central-planning rule
+    that created a sharp north-south discontinuity in winter heating and coal-based
+    air pollution, supporting spatial RD and IV designs for pollution, health, and
+    WTP outcomes.
 identity:
-  instrument: China's Huai River policy, which provided free or heavily subsidized coal-based winter heating to urban areas
-    north of the Huai River-Qinling Mountains line but not to areas south of this line, creating a sharp geographic discontinuity
+  instrument: China's Huai River policy, which provided free or heavily subsidized
+    coal-based winter heating to urban areas north of the Huai River-Qinling Mountains
+    line but not to areas south of this line, creating a sharp geographic discontinuity
     in winter heating, coal combustion, and ambient air pollution
-  authority: Central government of China (State Council, Ministry of Construction); policy dates from the 1950s under the
-    central planning system
+  authority: Central government of China (State Council, Ministry of Construction);
+    policy dates from the 1950s under the central planning system
   legal_identifiers:
-  - State Council regulations on central heating provision (1950s)
-  - Huai River-Qinling line as administrative heating boundary
-  - various heating subsidy regulations
-  implementation_regime: The policy provided a central heating system with coal-fired boilers to all urban residential and
-    commercial buildings north of the Huai River line, with the government heavily subsidizing winter heating costs; areas
-    south of the line received no such heating provision or subsidy
-  assignment_mechanism: The heating boundary was established based on a geographic line (the Huai River-Qinling Mountains
-    line) that serves as China's traditional climatic divide between northern temperate and southern subtropical zones; assignment
+  - State Council, 《关于国家机关和事业、企业单位1956年职工冬季取暖补贴问题的通知》（劳齐字第104号）, 31 Dec 1956
+  - State Council, 《关于1957年职工冬季宿舍取暖补贴问题的通知》（议字第63号）, 14 Nov 1957
+  - Huai River-Qinling Mountains line as administrative heating boundary
+  implementation_regime: The policy provided a central heating system with coal-fired
+    boilers to all urban residential and commercial buildings north of the Huai River
+    line, with the government heavily subsidizing winter heating costs; areas south
+    of the line received no such heating provision or subsidy
+  assignment_mechanism: The heating boundary was established based on a geographic
+    line (the Huai River-Qinling Mountains line) that serves as China's traditional
+    climatic divide between northern temperate and southern subtropical zones; assignment
     to treatment is determined purely by geographic location relative to this line
   parent: null
   related_variations:
@@ -54,39 +59,47 @@ timeline:
   effective: null
   implementation_start: 1950
   implementation_end: ongoing
-  local_timing: The heating policy was established in the 1950s and has been continuously in effect; the policy creates persistent
-    variation in heating provision and air pollution across the Huai River boundary through the present. The spatial RD has been
-    studied in two distinct eras — 1981–1993 (Almond et al. 2009, TSP and mortality) and 2006–2014 (Ito and Zhang 2020, PM10
-    and WTP)
-  anticipation: The policy has been in place for decades and is well-known; residents and firms have presumably sorted across
-    the boundary in response to the heating policy and environmental conditions, though moving costs and other factors limit
+  local_timing: The heating policy was established in the 1950s and has been continuously
+    in effect; the policy creates persistent variation in heating provision and air
+    pollution across the Huai River boundary through the present. The spatial RD has
+    been studied in two distinct eras — 1981–1993 (Almond et al. 2009, TSP and mortality)
+    and 2006–2014 (Ito and Zhang 2020, PM10 and WTP)
+  anticipation: The policy has been in place for decades and is well-known; residents
+    and firms have presumably sorted across the boundary in response to the heating
+    policy and environmental conditions, though moving costs and other factors limit
     full sorting
-  last_verified: '2026-07-13'
+  last_verified: '2026-07-14'
 assignment:
   unit: City (or spatial grid cell)
-  treated: Cities located north of the Huai River-Qinling Mountains line, which receive subsidized winter heating via coal-fired
-    boilers. North-side cities experience 24–39 μg/m³ higher winter PM10 (and dramatically higher TSP in earlier decades)
+  treated: Cities located north of the Huai River-Qinling Mountains line, which receive
+    subsidized winter heating via coal-fired boilers. North-side cities experience
+    24–39 μg/m³ higher winter PM10 (and dramatically higher TSP in earlier decades)
     due to coal combustion for heating
-  comparison_pool: Cities located south of the Huai River-Qinling line, which do not receive subsidized winter heating, in
-    a narrow band around the boundary. Southern cities near the boundary may use individual coal stoves or electric heating,
-    partially attenuating but not eliminating the pollution discontinuity
-  rule: Cities receive subsidized central heating if and only if they are located north of the Huai River-Qinling line; the
-    policy creates a sharp discontinuity in heating provision and air pollution at the boundary
-  intensity: Binary at the city level (north or south of the boundary), with the intensity of treatment varying with latitude
-    (northern cities have longer, colder winters requiring more heating)
-  compliance: High compliance; northern cities universally receive subsidized heating through state-run heating systems, and
-    southern cities do not
-  exposure_construction: Code cities as treated based on geographic location relative to the Huai River line (north vs. south);
-    use distance from the boundary as a running variable in a regression discontinuity design; construct heating degree days
-    as a continuous measure of heating demand
+  comparison_pool: Cities located south of the Huai River-Qinling line, which do not
+    receive subsidized winter heating, in a narrow band around the boundary. Southern
+    cities near the boundary may use individual coal stoves or electric heating, partially
+    attenuating but not eliminating the pollution discontinuity
+  rule: Cities receive subsidized central heating if and only if they are located
+    north of the Huai River-Qinling line; the policy creates a sharp discontinuity
+    in heating provision and air pollution at the boundary
+  intensity: Binary at the city level (north or south of the boundary), with the intensity
+    of treatment varying with latitude (northern cities have longer, colder winters
+    requiring more heating)
+  compliance: High compliance; northern cities universally receive subsidized heating
+    through state-run heating systems, and southern cities do not
+  exposure_construction: Code cities as treated based on geographic location relative
+    to the Huai River line (north vs. south); use distance from the boundary as a
+    running variable in a regression discontinuity design; construct heating degree
+    days as a continuous measure of heating demand
   required_identifiers:
   - city code
   - year
   - latitude and longitude
   - distance to Huai River boundary
   exemptions: []
-  spillovers: Air pollution transported across the Huai River boundary may affect southern cities downwind; migration or sorting
-    across the boundary in response to the heating policy or air quality differences
+  spillovers: Air pollution transported across the Huai River boundary may affect
+    southern cities downwind; migration or sorting across the boundary in response
+    to the heating policy or air quality differences
 research_compatibility:
   outcome_domains:
   - air pollution
@@ -134,11 +147,13 @@ design:
   - instrumental variables using heating policy for pollution effects on health
   - difference-in-discontinuity (before vs. after information shock × north/south)
   - structural demand estimation (random-coefficients logit) for marginal WTP
-  identifying_variation: The discontinuous change in winter heating provision and coal combustion at the Huai River boundary;
-    cities just north of the boundary have dramatically higher TSP levels than cities just south of the boundary, while other
-    determinants of pollution and health are continuous across the boundary
+  identifying_variation: The discontinuous change in winter heating provision and
+    coal combustion at the Huai River boundary; cities just north of the boundary
+    have dramatically higher TSP levels than cities just south of the boundary, while
+    other determinants of pollution and health are continuous across the boundary
   assumptions:
-  - Other determinants of air pollution and health outcomes are smooth across the Huai River boundary
+  - Other determinants of air pollution and health outcomes are smooth across the
+    Huai River boundary
   - no other policies change discontinuously at the boundary
   - no selective sorting across the boundary in response to the heating policy
   diagnostics:
@@ -149,26 +164,35 @@ design:
   - placebo tests using artificial boundaries
   - sensitivity to bandwidth selection in RD
   - test for manipulation of location (sorting)
-  primary_strategy: Spatial regression discontinuity using distance from the Huai River boundary as the running variable.
-    Almond et al. (2009) use IV (heating policy → TSP → mortality/life expectancy). Ito and Zhang (2020) use fuzzy spatial
-    RD for the pollution-air purifier demand relationship, structural demand estimation (random-coefficients logit) for marginal
-    WTP, and difference-in-discontinuity for pre/post-2013 information shock
-  estimand: The causal effect of the recorded exposure on Total suspended particulates (TSP) and PM10 concentrations, life
-    expectancy, mortality rates, air purifier demand, and households' marginal willingness-to-pay for clean air, conditional
-    on the stated design assumptions.
-  treatment_variable: Binary indicator for location north of the Huai River; distance from the Huai River boundary as running
-    variable in RD; north-side indicator × winter interaction as instrument for PM10
-  comparison_logic: Cities north vs. south of the Huai River boundary, within narrow bandwidths around the boundary; winter
-    (heating season) vs. summer (non-heating) comparisons
-  estimation_notes: Spatial regression discontinuity using distance from the Huai River boundary as the running variable.
-    Almond et al. (2009) use IV (heating policy → TSP → mortality/life expectancy). Ito and Zhang (2020) use fuzzy spatial
-    RD for the pollution-air purifier demand relationship, structural demand estimation (random-coefficients logit) for marginal
-    WTP, and difference-in-discontinuity for pre/post-2013 information shock
+  primary_strategy: Spatial regression discontinuity using distance from the Huai
+    River boundary as the running variable. Almond et al. (2009) use IV (heating policy
+    → TSP → mortality/life expectancy). Ito and Zhang (2020) use fuzzy spatial RD
+    for the pollution-air purifier demand relationship, structural demand estimation
+    (random-coefficients logit) for marginal WTP, and difference-in-discontinuity
+    for pre/post-2013 information shock
+  estimand: The effect of the recorded exposure on total suspended particulates (TSP)
+    and PM10 concentrations, life expectancy, mortality rates, air purifier demand,
+    and households' marginal willingness-to-pay for clean air, conditional on the
+    stated design assumptions.
+  treatment_variable: Binary indicator for location north of the Huai River; distance
+    from the Huai River boundary as running variable in RD; north-side indicator ×
+    winter interaction as instrument for PM10
+  comparison_logic: Cities north vs. south of the Huai River boundary, within narrow
+    bandwidths around the boundary; winter (heating season) vs. summer (non-heating)
+    comparisons
+  estimation_notes: Spatial regression discontinuity using distance from the Huai
+    River boundary as the running variable. Almond et al. (2009) use IV (heating policy
+    → TSP → mortality/life expectancy). Ito and Zhang (2020) use fuzzy spatial RD
+    for the pollution-air purifier demand relationship, structural demand estimation
+    (random-coefficients logit) for marginal WTP, and difference-in-discontinuity
+    for pre/post-2013 information shock
+  claim_type: causal
 threats:
 - type: spatial-sorting
   basis: inferred
-  condition: Individuals and firms may sort across the Huai River boundary based on the heating policy, air quality, or other
-    correlated factors, potentially biasing comparisons
+  condition: Individuals and firms may sort across the Huai River boundary based on
+    the heating policy, air quality, or other correlated factors, potentially biasing
+    comparisons
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -180,8 +204,9 @@ threats:
   - compare results with and without individual-level controls
 - type: concurrent-policies
   basis: inferred
-  condition: Other Chinese government policies may also change at the Huai River boundary (e.g., agricultural policies, economic
-    development zones), potentially confounding the heating policy effect
+  condition: Other Chinese government policies may also change at the Huai River boundary
+    (e.g., agricultural policies, economic development zones), potentially confounding
+    the heating policy effect
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -190,8 +215,8 @@ threats:
   - compare TSP vs. other pollutants to isolate coal combustion source
 - type: air-pollution-transport
   basis: inferred
-  condition: Air pollution from northern cities may be transported south of the boundary, attenuating the discontinuity and
-    potentially biasing RD estimates toward zero
+  condition: Air pollution from northern cities may be transported south of the boundary,
+    attenuating the discontinuity and potentially biasing RD estimates toward zero
   evidence_refs:
   - E1
   - E2
@@ -201,8 +226,9 @@ threats:
   - exclude cities close to the boundary on either side
 - type: attenuation-due-to-noncompliance
   basis: documented
-  condition: Some southern cities near the boundary have partial heating or use individual coal stoves, attenuating the pollution
-    discontinuity; the fuzzy RD design should account for this
+  condition: Some southern cities near the boundary have partial heating or use individual
+    coal stoves, attenuating the pollution discontinuity; the fuzzy RD design should
+    account for this
   evidence_refs:
   - E2
   possible_diagnostics:
@@ -211,8 +237,9 @@ threats:
   - use winter-only pollution as the endogenous variable
 - type: information-shock-confounding
   basis: inferred
-  condition: The 2013 "airpocalypse" (high-visibility pollution episodes) and subsequent media coverage increased awareness
-    of air pollution nationally; temporal variation in WTP may reflect changing awareness rather than changing preferences
+  condition: The 2013 "airpocalypse" (high-visibility pollution episodes) and subsequent
+    media coverage increased awareness of air pollution nationally; temporal variation
+    in WTP may reflect changing awareness rather than changing preferences
   evidence_refs:
   - E2
   possible_diagnostics:
@@ -246,8 +273,9 @@ empirical_requirements:
   treatment_key:
   - north of Huai River indicator
   - distance to Huai River boundary
-  treatment_source: China's air pollution monitoring network (TSP and other pollutants); China's Disease Surveillance Points
-    system (mortality); China Meteorological Administration (weather data)
+  treatment_source: China's air pollution monitoring network (TSP and other pollutants);
+    China's Disease Surveillance Points system (mortality); China Meteorological Administration
+    (weather data)
   measurement_risks:
   - air pollution monitoring may be sparse or non-continuous
   - mortality data quality may vary across cities and over time
@@ -256,48 +284,78 @@ empirical_requirements:
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Almond, Douglas, Yuyu Chen, Michael Greenstone, and Hongbin Li. 2009. "Winter Heating or Clean Air? Unintended
-    Impacts of China''s Huai River Policy." American Economic Review 99 (2): 184–190.'
+  citation: 'Almond, Douglas, Yuyu Chen, Michael Greenstone, and Hongbin Li. 2009.
+    "Winter Heating or Clean Air? Unintended Impacts of China''s Huai River Policy."
+    American Economic Review 99 (2): 184–190.'
   url: https://doi.org/10.1257/aer.99.2.184
   date: 2009
   supports:
   - identity
   - assignment
   - design
-  - main estimates
-  - pollution discontinuity
-  - health effects
-  - RD analysis
+  - research_compatibility
+  - empirical_requirements
+  - design_applications
   verification_status: verified
+  access_level: full-text
+  locator: Full article via DOI
 - id: E2
   source_type: paper
-  citation: 'Ito, Koichiro, and Shuang Zhang. 2020. "Willingness to Pay for Clean Air: Evidence from Air Purifier Markets
-    in China." Journal of Political Economy 128 (5): 1627–1672.'
+  citation: 'Ito, Koichiro, and Shuang Zhang. 2020. "Willingness to Pay for Clean
+    Air: Evidence from Air Purifier Markets in China." Journal of Political Economy
+    128 (5): 1627–1672.'
   url: https://doi.org/10.1086/705554
   date: 2020
   supports:
   - identity
   - assignment
   - design
-  - RD estimation
-  - WTP calculation
-  - information-shock analysis
+  - research_compatibility
+  - empirical_requirements
+  - design_applications
   verification_status: verified
+  access_level: full-text
+  locator: Full article via DOI
+- id: E3
+  source_type: policy-document
+  citation: State Council of China. 1956. "Notice on 1956 Winter Heating Subsidies
+    for State Organs, Institutions, and Enterprises" (关于国家机关和事业、企业单位1956年职工冬季取暖补贴问题的通知).
+    Labor-Qi No. 104 (劳齐字第104号), December 31, 1956.
+  url: http://app.shandong.gov.cn/zhengbao/1957/1957-40.pdf
+  date: 1956
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: Archived in Shandong Provincial Government Gazette 1957 No. 40; the 1957
+    notice confirms the 1956 notice established the Huai-Qin heating boundary and
+    listed the provinces covered.
 design_applications:
 - paper: Winter Heating or Clean Air? Unintended Impacts of China's Huai River Policy
   doi: 10.1257/aer.99.2.184
   journal: American Economic Review
   year: 2009
-  research_question: What is the causal effect of sustained exposure to air pollution (TSP) on life expectancy, using China's
-    Huai River heating policy as a source of exogenous variation in pollution?
+  research_question: What is the causal effect of sustained exposure to air pollution
+    (TSP) on life expectancy, using China's Huai River heating policy as a source
+    of exogenous variation in pollution?
   population: Urban Chinese cities, 1981–1993
-  outcome: Total suspended particulates (TSP) concentration, life expectancy, mortality rates
-  data_used: []
-  treatment_encoding: Binary indicator for location north of the Huai River; distance from the Huai River boundary as running
-    variable in RD
-  comparison: Cities north vs. south of the Huai River boundary, within narrow bandwidths around the boundary
-  empirical_design: Spatial regression discontinuity using distance from the Huai River boundary as the running variable;
-    instrumental variables using heating policy for pollution effects on mortality
+  outcome: Total suspended particulates (TSP) concentration, life expectancy, mortality
+    rates
+  data_used:
+  - China urban air quality monitoring network TSP concentration data (1981–1993)
+  - China Disease Surveillance Points mortality and life expectancy data
+  - China Meteorological Administration weather data
+  - City geographic coordinates and distance to the Huai River boundary
+  - City-level demographic and socioeconomic covariates
+  treatment_encoding: Binary indicator for location north of the Huai River; distance
+    from the Huai River boundary as running variable in RD
+  comparison: Cities north vs. south of the Huai River boundary, within narrow bandwidths
+    around the boundary
+  empirical_design: Spatial regression discontinuity using distance from the Huai
+    River boundary as the running variable; instrumental variables using heating policy
+    for pollution effects on mortality
   assumptions:
   - No other discontinuous changes at the Huai River boundary
   - no selective sorting across the boundary
@@ -308,26 +366,31 @@ design_applications:
   - other policies via robustness to controlling for potential confounders
   evidence_refs:
   - E1
-- paper: 'Willingness to Pay for Clean Air: Evidence from Air Purifier Markets in China'
+- paper: 'Willingness to Pay for Clean Air: Evidence from Air Purifier Markets in
+    China'
   doi: 10.1086/705554
   journal: Journal of Political Economy
   year: 2020
-  research_question: What is Chinese urban households' marginal willingness-to-pay (MWTP) for clean air, and how does it change
-    with access to pollution information?
+  research_question: What is Chinese urban households' marginal willingness-to-pay
+    (MWTP) for clean air, and how does it change with access to pollution information?
   population: Urban households in ~80 Chinese cities, 2006–2014
-  outcome: Air purifier sales volume and revenue by city-month; air purifier prices and market shares by product
+  outcome: Air purifier sales volume and revenue by city-month; air purifier prices
+    and market shares by product
   data_used:
   - retail scanner data on air purifier sales by city-month (690 products, 80 cities)
   - city-level PM10 concentration data from MEP monitoring stations
   - China Meteorological Administration weather data
   - city geographic coordinates
   - household demographic data
-  treatment_encoding: Spatial RD — cities north of the Huai River boundary coded as treated with higher PM10 due to coal heating;
-    instrument for PM10 with the north-side indicator × winter interaction
-  comparison: Cities just north versus just south of the Huai River boundary, within winter heating months; structural demand
-    estimation with instruments for endogenous prices
-  empirical_design: Spatial regression discontinuity at the Huai River boundary; structural demand estimation (random-coefficients
-    logit) for marginal WTP; difference-in-discontinuity for pre/post-2013 information environment change
+  treatment_encoding: Spatial RD — cities north of the Huai River boundary coded as
+    treated with higher PM10 due to coal heating; instrument for PM10 with the north-side
+    indicator × winter interaction
+  comparison: Cities just north versus just south of the Huai River boundary, within
+    winter heating months; structural demand estimation with instruments for endogenous
+    prices
+  empirical_design: Spatial regression discontinuity at the Huai River boundary; structural
+    demand estimation (random-coefficients logit) for marginal WTP; difference-in-discontinuity
+    for pre/post-2013 information environment change
   assumptions:
   - smooth city characteristics across boundary
   - boundary location exogenous
@@ -341,10 +404,7 @@ design_applications:
   - information effects via pre/post analysis
   evidence_refs:
   - E2
-readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+readiness_blockers: []
 method_transfer: null
 ---
 ## Institutional Background
@@ -361,7 +421,7 @@ The Huai River policy is a persistent institutional feature rather than a change
 
 ## Implementation and Assignment
 
-Assignment to treatment is determined purely by geographic location relative to the Huai River-Qinling Mountains line. Cities north of the line receive government-provided or subsidized central heating via coal-fired boilers during winter months; cities south of the line do not. The boundary was established based on climatic considerations in the 1950s, not contemporary economic or demographic factors, and does not correspond to modern administrative boundaries that might correlate with other policies. The forcing variable is geographic distance to the boundary (positive north, negative south). The identifying assumption is that all other determinants of outcomes vary smoothly across the boundary. [E1; E2]
+Assignment to treatment follows from a fixed geographic rule: location relative to the Huai River-Qinling Mountains line. Cities north of the line receive government-provided or subsidized central heating via coal-fired boilers during winter months; cities south of the line do not. The boundary was established based on climatic considerations in the 1950s, not contemporary economic or demographic factors, and does not correspond to modern administrative boundaries that might correlate with other policies. The forcing variable is geographic distance to the boundary (positive north, negative south). The identifying assumption is that all other determinants of outcomes vary smoothly across the boundary. [E1; E2]
 
 The Almond et al. (2009) analysis covers 1981–1993 using city-level TSP and mortality data from China's Disease Surveillance Points system. The Ito and Zhang (2020) analysis covers 2006–2014 using city-level PM10 data from MEP monitoring stations and retail scanner data on air purifier sales across ~80 cities. Both papers treat the boundary as a spatial RD cutoff and test for smoothness of covariates across it. [E1; E2]
 

@@ -9,12 +9,13 @@ from collections import Counter, defaultdict
 from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
+import yaml
 
 sys.dont_write_bytecode = True
 
 from econ_variation_lib import (  # noqa: E402
-    ROOT, SCHEMA_PATH, STATE_DIR, identity_fingerprint, knowledge_eligibility, load_records, public_url_issues,
-    read_jsonl, write_json,
+    ROOT, SCHEMA_PATH, STATE_DIR, canonical_topics, identity_fingerprint, knowledge_eligibility, load_records,
+    load_topic_taxonomy, public_url_issues, read_jsonl, write_json,
 )
 
 
@@ -142,6 +143,13 @@ def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
         if record.id in ids:
             audit.error(f"duplicate record id: {record.id}")
         ids.add(record.id)
+        profile_ids = [str(profile.get("id", "")) for profile in record.data.get("design_profiles", [])]
+        if len(profile_ids) != len(set(profile_ids)):
+            audit.error(f"{record.id}: duplicate design profile IDs")
+        if (record.data.get("provenance") or {}).get("task_id") != "legacy-untracked" and not canonical_topics(
+            (record.data.get("scope") or {}).get("domains", [])
+        ):
+            audit.error(f"{record.id}: managed record domains do not map to the stable topic taxonomy")
         for heading in REQUIRED_HEADINGS:
             if heading not in record.body:
                 audit.error(f"{record.id}: missing body heading {heading}")
@@ -302,6 +310,7 @@ def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
 def validate_state(audit: Audit, record_ids: set[str]) -> dict[str, int]:
     counts: dict[str, int] = {}
     task_ids: set[str] = set()
+    task_by_id: dict[str, dict[str, Any]] = {}
     for name in ("tasks.jsonl", "candidates.jsonl", "runs.jsonl"):
         rows, errors = read_jsonl(STATE_DIR / name)
         for error in errors:
@@ -312,6 +321,7 @@ def validate_state(audit: Audit, record_ids: set[str]) -> dict[str, int]:
             audit.error(f"{name}: duplicate row IDs")
         if name == "tasks.jsonl":
             task_ids = {str(row.get("id")) for row in rows}
+            task_by_id = {str(row.get("id")): row for row in rows}
             allowed = {"pending", "claimed", "completed", "failed"}
             for row in rows:
                 if row.get("status") not in allowed:
@@ -323,22 +333,36 @@ def validate_state(audit: Audit, record_ids: set[str]) -> dict[str, int]:
                         audit.error(f"tasks.jsonl: task {row.get('id')} references missing record {touched}")
         if name == "candidates.jsonl":
             for row in rows:
-                if not row.get("source_fingerprint"):
-                    continue  # Frozen pre-lifecycle candidates remain transparent legacy leads.
-                required = {"task_id", "knowledge_role", "status", "stage", "source", "reason"}
+                required = {"source_fingerprint", "knowledge_role", "status", "stage", "source", "reason"}
+                if not row.get("legacy_migrated"):
+                    required.add("task_id")
                 missing = sorted(key for key in required if not row.get(key))
                 if missing:
                     audit.error(f"candidates.jsonl: candidate {row.get('id')} is missing {missing}")
-                if row.get("task_id") not in task_ids:
+                if row.get("task_id") and row.get("task_id") not in task_ids:
                     audit.error(f"candidates.jsonl: candidate {row.get('id')} references a missing task")
                 if row.get("knowledge_role") not in {
                     "china-variation", "global-china-variation", "transferable-method"
                 }:
                     audit.error(f"candidates.jsonl: candidate {row.get('id')} has invalid knowledge role")
-                if row.get("status") != "pending" or row.get("stage") not in {
+                allowed_statuses = {"pending", "queued", "in-progress", "resolved", "contested", "skipped", "blocked"}
+                if row.get("status") not in allowed_statuses or row.get("stage") not in {
                     "discover", "resolve", "ground", "audit", "consolidate"
                 }:
                     audit.error(f"candidates.jsonl: candidate {row.get('id')} has invalid lifecycle state")
+                follow_up = str(row.get("follow_up_task_id") or "")
+                if row.get("status") in {"queued", "in-progress"}:
+                    task = task_by_id.get(follow_up)
+                    if not task or task.get("candidate_id") != row.get("id"):
+                        audit.error(f"candidates.jsonl: candidate {row.get('id')} has no valid linked follow-up task")
+                    elif row.get("status") == "queued" and task.get("status") != "pending":
+                        audit.error(f"candidates.jsonl: queued candidate {row.get('id')} does not link to a pending task")
+                    elif row.get("status") == "in-progress" and task.get("status") != "claimed":
+                        audit.error(f"candidates.jsonl: in-progress candidate {row.get('id')} does not link to a claimed task")
+                if row.get("status") in {"resolved", "contested"}:
+                    resolved = row.get("resolved_record_ids") or []
+                    if not resolved or any(record_id not in record_ids for record_id in resolved):
+                        audit.error(f"candidates.jsonl: terminal candidate {row.get('id')} has invalid resolved records")
     return counts
 
 
@@ -413,6 +437,10 @@ def debt_summary(rows: list[dict[str, Any]]) -> dict[str, int]:
 
 def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
     audit = Audit()
+    try:
+        load_topic_taxonomy()
+    except (OSError, ValueError, yaml.YAMLError) as exc:
+        audit.error(f"topic taxonomy is invalid: {exc}")
     records, coverage_rows = validate_records(audit)
     validate_state(audit, {record.id for record in records})
     validate_provenance(audit, records)

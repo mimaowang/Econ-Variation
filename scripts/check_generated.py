@@ -17,7 +17,7 @@ def expected_router() -> dict:
         raise RuntimeError("canonical records cannot be parsed")
     entries = [entry(record) for record in sorted(records, key=lambda item: item.id)]
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "purpose": ROUTER_PURPOSE,
         "empirical_requirements_contract_version": 1,
         "record_count": len(records),

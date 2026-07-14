@@ -36,6 +36,34 @@ def test_low_carbon_firm_patents_is_conditional_not_overclaimed_compatible() -> 
     assert candidate["dimensions"]["observation_unit"]["manual_review"] is True
 
 
+def test_multi_design_record_selects_one_profile_without_unioning_other_profile_fields() -> None:
+    result = match_query(
+        {
+            "candidate_ids": ["china-central-environmental-protection-inspection"],
+            "data": {
+                "time_start": 2013,
+                "time_end": 2020,
+                "frequency": "annual",
+                "identifiers": ["firm id", "province code", "year"],
+                "available_fields": [
+                    "outcome", "firm id", "province code", "year", "inspection date", "industry classification",
+                ],
+                "observation_unit": "firm-year",
+                "geography": "province",
+            },
+            "comparison": {"untreated_available": True},
+        },
+        router(),
+    )
+    candidate = result["results"][0]
+    assert candidate["selected_design_profile"]["id"] == "firm-year-staggered-did"
+    assert candidate["dimensions"]["fields"]["status"] == "compatible"
+    assert "pollutant concentration or emissions (for pollution designs)" not in candidate["missing_join_data"]
+    assert {profile["id"] for profile in candidate["design_profile_results"]} == {
+        "province-year-staggered-did", "firm-year-staggered-did", "plant-week-inspection-window",
+    }
+
+
 def test_hukou_without_city_is_incompatible_even_when_lead_is_opened_for_audit() -> None:
     result = match_query(
         {

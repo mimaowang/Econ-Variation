@@ -9,6 +9,7 @@ import time
 import uuid
 from contextlib import contextmanager
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import parse_qsl, urlsplit
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 VARIATION_DIR = ROOT / "variations"
 STATE_DIR = ROOT / "state"
 SCHEMA_PATH = ROOT / "schema" / "variation.schema.json"
+TOPICS_PATH = ROOT / "schema" / "topics.yaml"
 PLACEHOLDER_URLS = {"", "needs-verification", "n/a", "none", "null"}
 SENSITIVE_QUERY_KEYS = {"api_key", "apikey", "auth", "key", "password", "secret", "sig", "signature", "token"}
 
@@ -102,6 +104,35 @@ def write_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
 
 def normalize_identity(value: str) -> str:
     return re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", value.casefold())
+
+
+@lru_cache(maxsize=1)
+def load_topic_taxonomy() -> dict[str, list[str]]:
+    value = yaml.safe_load(TOPICS_PATH.read_text(encoding="utf-8"))
+    if not isinstance(value, dict) or value.get("schema_version") != 1 or not isinstance(value.get("topics"), dict):
+        raise ValueError("schema/topics.yaml is invalid")
+    taxonomy: dict[str, list[str]] = {}
+    for topic, definition in value["topics"].items():
+        aliases = definition.get("aliases") if isinstance(definition, dict) else None
+        if not isinstance(topic, str) or not isinstance(aliases, list) or not aliases:
+            raise ValueError(f"invalid topic definition: {topic}")
+        taxonomy[topic] = [topic, *(str(alias) for alias in aliases)]
+    return taxonomy
+
+
+def canonical_topics(values: Iterable[Any], *, substring: bool = False) -> list[str]:
+    taxonomy = load_topic_taxonomy()
+    normalized_values = [normalize_identity(str(value)) for value in values if str(value or "").strip()]
+    matches: set[str] = set()
+    for topic, aliases in taxonomy.items():
+        normalized_aliases = {normalize_identity(alias) for alias in aliases}
+        if any(
+            value == alias or (substring and alias and alias in value)
+            for value in normalized_values
+            for alias in normalized_aliases
+        ):
+            matches.add(topic)
+    return sorted(matches)
 
 
 def identity_fingerprint(data: dict[str, Any]) -> str:

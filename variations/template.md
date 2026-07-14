@@ -79,6 +79,7 @@ empirical_requirements:
   treatment_key: []
   treatment_source:
   measurement_risks: []
+design_profiles: [] # Optional alternatives; each profile supplies one coherent design-specific requirements contract.
 evidence:
   - id: E1
     source_type: policy-document

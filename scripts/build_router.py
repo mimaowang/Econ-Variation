@@ -6,7 +6,9 @@ from collections import Counter
 
 sys.dont_write_bytecode = True
 
-from econ_variation_lib import ROOT, knowledge_eligibility, load_records, write_json, workspace_lock  # noqa: E402
+from econ_variation_lib import (  # noqa: E402
+    ROOT, canonical_topics, knowledge_eligibility, load_records, write_json, workspace_lock,
+)
 
 
 ROUTER_PURPOSE = (
@@ -39,6 +41,22 @@ def blocker_codes(blockers: list[str]) -> list[str]:
     return sorted(codes)
 
 
+def data_fit(requirements: dict) -> dict:
+    return {
+        "population": concise(requirements["population"], 160),
+        "observation_unit": requirements["observation_unit"],
+        "geography_level": requirements["geography_level"],
+        "time_start": requirements["time_start"],
+        "time_end": requirements["time_end"],
+        "minimum_frequency": requirements["minimum_frequency"],
+        "minimum_pre_periods": requirements["minimum_pre_periods"],
+        "minimum_post_periods": requirements["minimum_post_periods"],
+        "required_fields": requirements["required_fields"],
+        "required_identifiers": requirements["required_identifiers"],
+        "treatment_key": requirements["treatment_key"],
+    }
+
+
 def entry(record: object) -> dict:
     data = record.data
     scope = data["scope"]
@@ -46,6 +64,17 @@ def entry(record: object) -> dict:
     assignment = data["assignment"]
     design = data["design"]
     requirements = data["empirical_requirements"]
+    profiles = [
+        {
+            "id": profile["id"],
+            "label": profile["label"],
+            "design_families": profile["design_families"],
+            "when_to_use": concise(profile["when_to_use"], 240),
+            "outcome_domains": profile.get("outcome_domains", []),
+            "data_fit": data_fit(profile["requirements"]),
+        }
+        for profile in data.get("design_profiles", [])
+    ]
     role = scope["knowledge_role"]
     blockers = data["readiness_blockers"]
     return {
@@ -59,6 +88,7 @@ def entry(record: object) -> dict:
         "recommendation_eligibility": knowledge_eligibility(data),
         "country": scope["country"],
         "domains": scope["domains"],
+        "topics": canonical_topics(scope["domains"]),
         "variation_type": scope["variation_type"],
         "time": {
             "start": timeline["implementation_start"],
@@ -79,19 +109,8 @@ def entry(record: object) -> dict:
             "design_families": design["candidate_designs"],
             "claim_type": design.get("claim_type"),
         },
-        "data_fit": {
-            "population": concise(requirements["population"], 160),
-            "observation_unit": requirements["observation_unit"],
-            "geography_level": requirements["geography_level"],
-            "time_start": requirements["time_start"],
-            "time_end": requirements["time_end"],
-            "minimum_frequency": requirements["minimum_frequency"],
-            "minimum_pre_periods": requirements["minimum_pre_periods"],
-            "minimum_post_periods": requirements["minimum_post_periods"],
-            "required_fields": requirements["required_fields"],
-            "required_identifiers": requirements["required_identifiers"],
-            "treatment_key": requirements["treatment_key"],
-        },
+        "data_fit": data_fit(requirements),
+        "design_profiles": profiles,
         "threat_types": sorted({item["type"] for item in data["threats"]}),
         "blocker_codes": blocker_codes(blockers),
         "blocker_count": len(blockers),
@@ -105,7 +124,7 @@ def build() -> dict:
         raise RuntimeError("cannot build router from invalid frontmatter")
     entries = [entry(record) for record in sorted(records, key=lambda item: item.id)]
     payload = {
-        "schema_version": 3,
+        "schema_version": 4,
         "purpose": ROUTER_PURPOSE,
         "empirical_requirements_contract_version": 1,
         "record_count": len(records),

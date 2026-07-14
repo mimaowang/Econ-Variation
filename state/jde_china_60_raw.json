@@ -1,0 +1,4568 @@
+[
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103837",
+    "title": [
+      "Housing wealth, family relationship and mental health: Evidence from China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0007-7489-3146",
+        "authenticated-orcid": false,
+        "given": "Fenghang",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-5466",
+        "authenticated-orcid": false,
+        "given": "Shenglong",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001203?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001203?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103873",
+    "title": [
+      "The effectiveness of entry deregulation: Quasi-experimental evidence from China's export compulsory inspection deregulation"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-4971-347X",
+        "authenticated-orcid": false,
+        "given": "Zhiqing",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhiyuan",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peiyao",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lianfa",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001562?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001562?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103854",
+    "title": [
+      "Evaluating the environmental and economic implications of curbing transboundary pollution: Evidence from China"
+    ],
+    "author": [
+      {
+        "given": "Zeyang",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuanyi",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dunhu",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dingding",
+        "family": "Shao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xin",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001379?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001379?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103866",
+    "title": [
+      "More power outages, more CO2 emissions: Evidence from self-generation in China's manufacturing firms"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0009-1308-143X",
+        "authenticated-orcid": false,
+        "given": "Panbing",
+        "family": "Wan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7806-1311",
+        "authenticated-orcid": false,
+        "given": "Mian",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bing",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001495?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001495?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103828",
+    "title": [
+      "Who bears the cost: Financial frictions and labor markdown"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8239-2914",
+        "authenticated-orcid": false,
+        "given": "Ming",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7768-2703",
+        "authenticated-orcid": false,
+        "given": "Yao Amber",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4543-2267",
+        "authenticated-orcid": false,
+        "given": "Zehao",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001112?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001112?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103841",
+    "title": [
+      "From rents to results: China’s anti-corruption reforms and the effectiveness of aid to Africa"
+    ],
+    "author": [
+      {
+        "given": "Yiran",
+        "family": "Du",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kai",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7480-156X",
+        "authenticated-orcid": false,
+        "given": "Gang",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001240?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001240?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103874",
+    "title": [
+      "Adult Children’s Human Capital Accumulation and Parents’ Risky Behaviors: Evidence from the Higher Education Expansion in China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0005-7071-8354",
+        "authenticated-orcid": false,
+        "given": "Cong",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5244-1129",
+        "authenticated-orcid": false,
+        "given": "Feng",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Linlin",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruofei",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          7
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001574?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001574?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103878",
+    "title": [
+      "Securing Power, Compromising Climate: Evidence from Drought Shocks in China"
+    ],
+    "author": [
+      {
+        "given": "Jing",
+        "family": "Cao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rong",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8964-4747",
+        "authenticated-orcid": false,
+        "given": "Yu",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          7
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001616?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001616?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103827",
+    "title": [
+      "On the right track? Railroads, industrial development, and distributional effects in historical China"
+    ],
+    "author": [
+      {
+        "given": "Shiyu",
+        "family": "Bo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7515-6128",
+        "authenticated-orcid": false,
+        "given": "Ting",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cong",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yan",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001100?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001100?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103757",
+    "title": [
+      "The art of not being chocked: Environmental awareness, residents' responses and land transactions in China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4741-3083",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Zou",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pinghan",
+        "family": "Liang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000404?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000404?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103801",
+    "title": [
+      "Number one girl: Female top scorers and peer academic performance in junior high schools"
+    ],
+    "author": [
+      {
+        "given": "Xuezheng",
+        "family": "Qin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yingfei",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haochen",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000842?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000842?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103800",
+    "title": [
+      "Winning hearts after tying hands: The political impact of land titling reform in China"
+    ],
+    "author": [
+      {
+        "given": "Zhi-An",
+        "family": "Hu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2246-9830",
+        "authenticated-orcid": false,
+        "given": "Zhuo",
+        "family": "Nie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiaqi",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000830?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000830?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103812",
+    "title": [
+      "Restricting video games in China: Effects on time use, educational achievement, and health"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-0016-0421",
+        "authenticated-orcid": false,
+        "given": "Zhejian",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000957?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000957?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103798",
+    "title": [
+      "The stalled quiet revolution: Population control, skewed sex ratios, and the widening gender gap in labor force participation"
+    ],
+    "author": [
+      {
+        "given": "Zihao",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7438-3807",
+        "authenticated-orcid": false,
+        "given": "Yawen",
+        "family": "Ding",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1070-3581",
+        "authenticated-orcid": false,
+        "given": "Xu",
+        "family": "Tian",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000817?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000817?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103829",
+    "title": [
+      "From trade protectionism to legal protectionism: How the Trump trade war harms US firms in China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8364-2073",
+        "authenticated-orcid": false,
+        "given": "Shiyu",
+        "family": "Bo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wen",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001124?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826001124?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103810",
+    "title": [
+      "Moving to opportunity for polluting: Intra-city evidence from China’s land market"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8364-2073",
+        "authenticated-orcid": false,
+        "given": "Shiyu",
+        "family": "Bo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4778-9099",
+        "authenticated-orcid": false,
+        "given": "Hongjia",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000933?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000933?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103794",
+    "title": [
+      "Product quality, the scope of export destinations and skill demand for sustainable development: An investigation for China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-1557-0930",
+        "authenticated-orcid": false,
+        "given": "Zhuangxiong",
+        "family": "Yu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0056-4186",
+        "authenticated-orcid": false,
+        "given": "Yang",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiemiao",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7052-4606",
+        "authenticated-orcid": false,
+        "given": "Pundarik",
+        "family": "Mukhopadhaya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000775?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000775?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103780",
+    "title": [
+      "The impact of public-private partnership health plans on private insurance"
+    ],
+    "author": [
+      {
+        "given": "Hui",
+        "family": "Ding",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-5208-2609",
+        "authenticated-orcid": false,
+        "given": "Xintong",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7965-161X",
+        "authenticated-orcid": false,
+        "given": "Xian",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000635?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000635?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103796",
+    "title": [
+      "Desired fertility, realized fertility and the effects of China's Universal Two-Child Policy∗"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8268-1636",
+        "authenticated-orcid": false,
+        "given": "Hanming",
+        "family": "Fang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chang",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000799?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000799?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103781",
+    "title": [
+      "The phantom menace in agriculture: How lagged droughts distort input decisions and create environmental deadweight loss"
+    ],
+    "author": [
+      {
+        "given": "Dingqiang",
+        "family": "Sun",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8210-7842",
+        "authenticated-orcid": false,
+        "given": "Xueting",
+        "family": "Qie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kaixing",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000647?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000647?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103720",
+    "title": [
+      "Where has all the dynamism gone? Productivity growth in China’s manufacturing sector, 1998–2013"
+    ],
+    "author": [
+      {
+        "given": "Loren",
+        "family": "Brandt",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4144-5578",
+        "authenticated-orcid": false,
+        "given": "Johannes",
+        "family": "Van Biesebroeck",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luhang",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2286-0178",
+        "authenticated-orcid": false,
+        "given": "Yifan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000039?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000039?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103727",
+    "title": [
+      "When the fire ends: Straw burning, regulation, and pollution substitution"
+    ],
+    "author": [
+      {
+        "given": "Hai",
+        "family": "Hong",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kevin",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000106?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000106?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103758",
+    "title": [
+      "Raising grievances to the state: The political economic effects of anti-corruption crackdowns on labor activism in China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3597-6172",
+        "authenticated-orcid": false,
+        "given": "Huiyi",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000416?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000416?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103756",
+    "title": [
+      "English's significance: Exam performance by subject and future income in China"
+    ],
+    "author": [
+      {
+        "given": "Ruixue",
+        "family": "Jia",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hongbin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9993-8522",
+        "authenticated-orcid": false,
+        "given": "Yu",
+        "family": "Qin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Qiuyi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jing",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000398?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000398?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2026.103731",
+    "title": [
+      "Strategic emissions in the rain"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-8753-483X",
+        "authenticated-orcid": false,
+        "given": "Runhao",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0606-5764",
+        "authenticated-orcid": false,
+        "given": "Ye",
+        "family": "Yuan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000143?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387826000143?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103692",
+    "title": [
+      "Feeling the same heat? Urban–rural inequalities in adapting to extreme temperatures via electricity consumption"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9736-5430",
+        "authenticated-orcid": false,
+        "given": "Caiquan",
+        "family": "Bai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jing",
+        "family": "Cao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ming",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Chen",
+        "family": "Xi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Peng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002433?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002433?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103711",
+    "title": [
+      "CO2 emission regulation and generation allocation with heterogeneous coal-fired generators"
+    ],
+    "author": [
+      {
+        "given": "Zhiyuan",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4542-3157",
+        "authenticated-orcid": false,
+        "given": "Rong",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Li",
+        "family": "Su",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002627?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002627?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103709",
+    "title": [
+      "Do resource rents drive urbanization and structural transformation? A global analysis"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0051-7371",
+        "authenticated-orcid": false,
+        "given": "Qing",
+        "family": "Huang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0144-5143",
+        "authenticated-orcid": false,
+        "given": "Victoria Wenxin",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "You",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002603?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002603?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103717",
+    "title": [
+      "Aging in Haze"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-8753-483X",
+        "authenticated-orcid": false,
+        "given": "Runhao",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0606-5764",
+        "authenticated-orcid": false,
+        "given": "Ye",
+        "family": "Yuan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-1743-5487",
+        "authenticated-orcid": false,
+        "given": "Chong",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4963-1052",
+        "authenticated-orcid": false,
+        "given": "Junjian",
+        "family": "Yi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002688?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002688?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103707",
+    "title": [
+      "Expressways, market access, and industrial development in China: Using walled-city panel instrumental variables of minimum spanning tree"
+    ],
+    "author": [
+      {
+        "given": "Kecen",
+        "family": "Jing",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5672-2016",
+        "authenticated-orcid": false,
+        "given": "Wen-Chi",
+        "family": "Liao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002585?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002585?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103676",
+    "title": [
+      "Grassland certification, grazing behavior, and ecological consequences: Evidence from pastoral China"
+    ],
+    "author": [
+      {
+        "given": "Xinjie",
+        "family": "Shi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bingyu",
+        "family": "Huangfu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9812-7461",
+        "authenticated-orcid": false,
+        "given": "Yan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peinan",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xuwen",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002275?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002275?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103653",
+    "title": [
+      "Rural pension, factor reallocation and agricultural productivity: Evidence from China"
+    ],
+    "author": [
+      {
+        "given": "Shouhan",
+        "family": "Dai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0615-9341",
+        "authenticated-orcid": false,
+        "given": "Binlei",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peinan",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0842-1160",
+        "authenticated-orcid": false,
+        "given": "Xiaoyun",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002044?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002044?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103680",
+    "title": [
+      "Externalities of the personality traits: The effect of peer personality on students’ mental health"
+    ],
+    "author": [
+      {
+        "given": "Liping",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiada",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhifeng",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002317?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002317?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103659",
+    "title": [
+      "Awakening latent human capital: Economic opening up and entrepreneurship in 19th century China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-4207-7968",
+        "authenticated-orcid": false,
+        "given": "Li",
+        "family": "Duan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6975-0083",
+        "authenticated-orcid": false,
+        "given": "Xiaoming",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S030438782500210X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S030438782500210X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103677",
+    "title": [
+      "Social isolation induced negative emotions affect economic behavior: A natural experiment study"
+    ],
+    "author": [
+      {
+        "given": "Shan",
+        "family": "Jin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tiancheng",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zepeng",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6463-2600",
+        "authenticated-orcid": false,
+        "given": "Xiaomeng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002287?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002287?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103624",
+    "title": [
+      "Place-based affirmative action in college admission and educational attainment"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7539-0360",
+        "authenticated-orcid": false,
+        "given": "Liqiu",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-5290-2642",
+        "authenticated-orcid": false,
+        "given": "Yongming",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7441-9523",
+        "authenticated-orcid": false,
+        "given": "Li",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001750?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001750?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103668",
+    "title": [
+      "Two birds, one stone: Responses of agriculture to water pollution regulation"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0615-9341",
+        "authenticated-orcid": false,
+        "given": "Binlei",
+        "family": "Gong",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9543-1767",
+        "authenticated-orcid": false,
+        "given": "Haoyang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2424-9439",
+        "authenticated-orcid": false,
+        "given": "Liguo",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hanxiang",
+        "family": "Ling",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002196?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002196?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103672",
+    "title": [
+      "Narrowing or widening the gender gap in market and domestic work? The impact of workweek reduction reform in China"
+    ],
+    "author": [
+      {
+        "given": "Ang",
+        "family": "Sun",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wang",
+        "family": "Xiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Huili",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Junsen",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002238?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002238?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103628",
+    "title": [
+      "Persistent effects of universities on local industrial growth: Evidence from China's policy-induced college relocation in the 1950s"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7591-6572",
+        "authenticated-orcid": false,
+        "given": "Jianyong",
+        "family": "Fan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-5704-7806",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Feng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001798?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001798?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103630",
+    "title": [
+      "Judicial institution and innovation: Evidence from China's intellectual property courts reform"
+    ],
+    "author": [
+      {
+        "given": "Liyang",
+        "family": "Wan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qian",
+        "family": "Wan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4169-9295",
+        "authenticated-orcid": false,
+        "given": "Zichao",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ying",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001816?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001816?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103619",
+    "title": [
+      "Pedaling to wellness: The impact of dockless bike-sharing services on physical and mental health in China"
+    ],
+    "author": [
+      {
+        "given": "Xun",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-8503-8391",
+        "authenticated-orcid": false,
+        "given": "Congling",
+        "family": "Xia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001701?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001701?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103625",
+    "title": [
+      "Inter-group contact and national identity: Evidence from Hong Kong and Macau students in the mainland of China"
+    ],
+    "author": [
+      {
+        "given": "Zehui",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Haoye",
+        "family": "Liao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2681-9463",
+        "authenticated-orcid": false,
+        "given": "Sen",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Junjie",
+        "family": "Qiu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7542-0136",
+        "authenticated-orcid": false,
+        "given": "Sen",
+        "family": "Xue",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001762?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001762?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103647",
+    "title": [
+      "High-speed railroads and local agricultural development"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3292-4529",
+        "authenticated-orcid": false,
+        "given": "Xiaoguang",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0615-9341",
+        "authenticated-orcid": false,
+        "given": "Binlei",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhilong",
+        "family": "Qin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaoli",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001981?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001981?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103641",
+    "title": [
+      "Pollution reduction effects of new transregional power transmission systems: Evidence from ultra-high-voltage projects of China"
+    ],
+    "author": [
+      {
+        "given": "Shenggang",
+        "family": "Ren",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Li",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9736-5430",
+        "authenticated-orcid": false,
+        "given": "Caiquan",
+        "family": "Bai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001920?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001920?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103674",
+    "title": [
+      "Endogenous migration restrictions and population aging in China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8486-6375",
+        "authenticated-orcid": false,
+        "given": "Zhu",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jipeng",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kang",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002251?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825002251?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103616",
+    "title": [
+      "Allocative implications of government investment in private sector"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0000-3357-632X",
+        "authenticated-orcid": false,
+        "given": "Lili",
+        "family": "Lian",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jingyi",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001671?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001671?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103582",
+    "title": [
+      "The national-integration effect of compulsory education: Evidence from Chinese minorities"
+    ],
+    "author": [
+      {
+        "given": "Zhi-An",
+        "family": "Hu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7247-836X",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001336?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001336?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103599",
+    "title": [
+      "Industrial policy in a new era: Government venture capital in the US–China trade war"
+    ],
+    "author": [
+      {
+        "given": "Y. Joy",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9295-9937",
+        "authenticated-orcid": false,
+        "given": "Robin Kaiji",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jinlin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001506?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001506?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103557",
+    "title": [
+      "Keeping an eye on the villain: Assessing the impact of surveillance cameras on crime"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4166-5581",
+        "authenticated-orcid": false,
+        "given": "Hong",
+        "family": "Ma",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9304-5045",
+        "authenticated-orcid": false,
+        "given": "Mingzhi",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "You",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jinmei",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001087?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001087?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103580",
+    "title": [
+      "Saving an old regime with new elites? The unintended effects of co-opting foreign-educated councilors in China"
+    ],
+    "author": [
+      {
+        "given": "Chu",
+        "family": "Lin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1887-8746",
+        "authenticated-orcid": false,
+        "given": "Chengli",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001312?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001312?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103581",
+    "title": [
+      "Flood shocks, heterogeneous risk exposure, and housing market dynamics in China"
+    ],
+    "author": [
+      {
+        "given": "Yu",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yichen",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5634-4203",
+        "authenticated-orcid": false,
+        "given": "Ning",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001324?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001324?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103610",
+    "title": [
+      "The chilling effects of unsuccessful antidumping investigations on firm export dynamics"
+    ],
+    "author": [
+      {
+        "given": "Ming",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wen",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6618-6870",
+        "authenticated-orcid": false,
+        "given": "Ling",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9778-1736",
+        "authenticated-orcid": false,
+        "given": "Zhiyuan",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Deborah L.",
+        "family": "Swenson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001610?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001610?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103562",
+    "title": [
+      "Why is female labor force participation declining in China? A perspective from urban commuting"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-5466",
+        "authenticated-orcid": false,
+        "given": "Shenglong",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xingyu",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3850-9748",
+        "authenticated-orcid": false,
+        "given": "Yuanyuan",
+        "family": "Wan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaoming",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shaojie",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001130?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825001130?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103538",
+    "title": [
+      "The long-term effect of television on children's human capital development in China"
+    ],
+    "author": [
+      {
+        "given": "Fangjing",
+        "family": "Zha",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Di",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000896?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000896?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103510",
+    "title": [
+      "Relocation from China (with Chinese characteristics)"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7014-3371",
+        "authenticated-orcid": false,
+        "given": "Jason",
+        "family": "Garred",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3570-3545",
+        "authenticated-orcid": false,
+        "given": "Song",
+        "family": "Yuan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000616?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000616?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103509",
+    "title": [
+      "Gender composition, social context, and academic performance in high-stakes examinations"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0007-9618-544X",
+        "authenticated-orcid": false,
+        "given": "Hai",
+        "family": "Huang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4454-1485",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8898-5892",
+        "authenticated-orcid": false,
+        "given": "Xinzheng",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ming-ang",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000604?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000604?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103527",
+    "title": [
+      "Housing costs and real income differences across Chinese cities"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0469-4041",
+        "authenticated-orcid": false,
+        "given": "Ziyang",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7935-7149",
+        "authenticated-orcid": false,
+        "given": "Pierre-Philippe",
+        "family": "Combes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6447-7236",
+        "authenticated-orcid": false,
+        "given": "Sylvie",
+        "family": "Démurger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiuyan",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000781?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000781?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103513",
+    "title": [
+      "Evaluating the labor supply implications of a cash transfer program: Evidence from China"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2310-6743",
+        "authenticated-orcid": false,
+        "given": "Jie-Sheng",
+        "family": "Tan-Soo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2629-5604",
+        "authenticated-orcid": false,
+        "given": "Mingda",
+        "family": "Cheng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1804-9462",
+        "authenticated-orcid": false,
+        "given": "Shuai",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000641?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000641?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103525",
+    "title": [
+      "From heat to high-tech: How innovation responds to climate change"
+    ],
+    "author": [
+      {
+        "given": "Xianling",
+        "family": "Long",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhiqiang",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000768?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000768?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "DOI": "10.1016/j.jdeveco.2025.103517",
+    "title": [
+      "The agricultural and economic impacts of massive water diversion"
+    ],
+    "author": [
+      {
+        "given": "Guangbo",
+        "family": "Huang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chong",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tianyang",
+        "family": "Xi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Huayu",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "You",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "publisher": "Elsevier BV",
+    "container-title": [
+      "Journal of Development Economics"
+    ],
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000689?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304387825000689?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  }
+]

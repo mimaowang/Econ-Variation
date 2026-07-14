@@ -6,10 +6,9 @@ aliases:
 - National Low-Carbon Pilot Program, first batch
 - 国家低碳省区和低碳城市试点（第一批）
 - 发改气候〔2010〕1587号
-
 status: grounded
 provenance:
-  task_id: task-72d10c4ecd9d
+  task_id: task-03f4df2571f3
 scope:
   country: China
   regions:
@@ -34,40 +33,35 @@ scope:
   - innovation
   variation_type: pilot-assignment
   knowledge_role: china-variation
-  china_relevance: The first-wave low-carbon pilot is a Chinese central-government policy
-    experiment that created administrative variation in exposure to low-carbon planning,
-    targets, and supporting policies across five provinces and eight cities from 2010.
-    Because assignment was based on local applications and central assessment of work
-    foundations and representativeness, it is not randomly allocated, but the staggered
-    expansion to second (2012) and third (2017) waves generates not-yet-treated comparison
-    groups for event-study and staggered difference-in-differences designs. Researchers
-    must handle province-city nesting, heterogeneous local implementation, and later-wave
-    contamination.
+  china_relevance: The first-wave low-carbon pilot is a Chinese central-government
+    policy experiment that created administrative variation in exposure to low-carbon
+    planning and targets across five provinces and eight cities from 2010.
 identity:
-  instrument: First-wave national low-carbon province and city pilot designations under
-    NDRC Climate No. 1587 (2010)
+  instrument: First-wave national low-carbon province and city pilot designations
+    under NDRC Climate No. 1587 (2010)
   authority: National Development and Reform Commission (NDRC)
   legal_identifiers:
   - NDRC Climate No. 1587 (2010) — 国家发展改革委关于开展低碳省区和低碳城市试点工作的通知
   - NDRC Climate No. 3760 (2012) — 关于开展第二批低碳省区和低碳城市试点工作的通知
   - NDRC Climate No. 66 (2017) — 关于开展第三批国家低碳城市试点工作的通知
-  implementation_regime: The NDRC designated five provinces (Guangdong, Liaoning, Hubei,
-    Shaanxi, Yunnan) and eight cities (Tianjin, Chongqing, Shenzhen, Xiamen, Hangzhou,
-    Nanchang, Guiyang, Baoding) as the first-wave low-carbon pilots in July 2010. Tianjin
-    and Chongqing are province-level municipalities; the other six city pilots are prefecture-level
-    cities nested in non-pilot provinces (Shenzhen in Guangdong, Xiamen in Fujian, Hangzhou
-    in Zhejiang, Nanchang in Jiangxi, Guiyang in Guizhou, Baoding in Hebei). Province-level
-    pilots expose all prefectures within the province, creating a nesting problem for
-    city-only designs because Guangdong contains both a province pilot and the city pilot
-    Shenzhen. The notice required pilot regions to submit implementation plans by 31 August
-    2010, but actual local policies were developed and approved afterwards. Two later
-    waves (2012 with Beijing, Shanghai, Hainan and 26 cities; 2017 with 45 cities) expanded
-    the program, so the first-wave record is most cleanly used either as a single 2010
-    shock or as the first cohort in a staggered multi-wave design.
+  implementation_regime: The NDRC designated five provinces (Guangdong, Liaoning,
+    Hubei, Shaanxi, Yunnan) and eight cities (Tianjin, Chongqing, Shenzhen, Xiamen,
+    Hangzhou, Nanchang, Guiyang, Baoding) as the first-wave low-carbon pilots in July
+    2010. Tianjin and Chongqing are province-level municipalities; the other six city
+    pilots are prefecture-level cities nested in non-pilot provinces (Shenzhen in
+    Guangdong, Xiamen in Fujian, Hangzhou in Zhejiang, Nanchang in Jiangxi, Guiyang
+    in Guizhou, Baoding in Hebei). Province-level pilots expose all prefectures within
+    the province, creating a nesting problem for city-only designs because Guangdong
+    contains both a province pilot and the city pilot Shenzhen. The notice required
+    pilot regions to submit implementation plans by 31 August 2010, but actual local
+    policies were developed and approved afterwards. Two later waves (2012 with Beijing,
+    Shanghai, Hainan and 26 cities; 2017 with 45 cities) expanded the program, so
+    the first-wave record is most cleanly used either as a single 2010 shock or as
+    the first cohort in a staggered multi-wave design.
   assignment_mechanism: Administrative selection from local applicants. The NDRC considered
-    local work foundations and the representativeness of the pilot layout. Formal designation
-    is observable from the July 2010 notice; substantive exposure depends on locally tailored
-    plans and policies that vary in content and timing.
+    local work foundations and the representativeness of the pilot layout. Formal
+    designation is observable from the July 2010 notice; substantive exposure depends
+    on locally tailored plans and policies that vary in content and timing.
   parent: China national low-carbon pilot program
   related_variations: []
 timeline:
@@ -75,27 +69,29 @@ timeline:
   effective: '2010-07-19'
   implementation_start: 2010
   implementation_end: ongoing
-  local_timing: >
-    The NDRC notice was issued on 19 July 2010 and published on 10 August 2010. Pilot
-    regions were required to submit implementation plans by 31 August 2010. First-wave
-    plans were reportedly approved by the NDRC in early 2012. The second wave was announced
-    on 5 December 2012 (NDRC Climate [2012]3760) and the third wave on 7 January 2017
-    (NDRC Climate [2017]66). Many empirical papers treat the first wave as effective
-    from 2010 for intention-to-treat, while some code the second wave as effective from
-    2013 to allow for a lag between announcement and implementation.
+  local_timing: 'The NDRC notice was issued on 19 July 2010 and published on 10 August
+    2010. Pilot regions were required to submit implementation plans by 31 August
+    2010. First-wave plans were reportedly approved by the NDRC in early 2012. The
+    second wave was announced on 5 December 2012 (NDRC Climate [2012]3760) and the
+    third wave on 7 January 2017 (NDRC Climate [2017]66). Many empirical papers treat
+    the first wave as effective from 2010 for intention-to-treat, while some code
+    the second wave as effective from 2013 to allow for a lag between announcement
+    and implementation.
+
+    '
   anticipation: Local governments applied before designation, and preparatory behaviour
     can precede the formal notice. The July 2010 announcement followed the State Council's
     November 2009 carbon-intensity target, so anticipation was possible.
-  last_verified: '2026-07-13'
+  last_verified: '2026-07-14'
 assignment:
   unit: Province or prefecture-level city
-  treated: The five province-level pilots and eight city-level pilots named in NDRC Climate
-    No. 1587. Province-level pilots expose all prefectures within the province; city-level
-    pilots expose only the named city.
-  comparison_pool: Non-designated provinces or cities not indirectly covered by a treated
-    province, subject to later-wave and contamination checks. A clean city-level comparison
-    must decide whether to exclude or separately code cities inside the five treated
-    provinces.
+  treated: The five province-level pilots and eight city-level pilots named in NDRC
+    Climate No. 1587. Province-level pilots expose all prefectures within the province;
+    city-level pilots expose only the named city.
+  comparison_pool: Non-designated provinces or cities not indirectly covered by a
+    treated province, subject to later-wave and contamination checks. A clean city-level
+    comparison must decide whether to exclude or separately code cities inside the
+    five treated provinces.
   rule: Administrative designation after local applications and central consideration
     of existing foundations and representativeness
   intensity: Local policy packages, targets, and implementation effort vary substantially.
@@ -103,21 +99,21 @@ assignment:
     the framework.
   exemptions: []
   compliance: Formal designation is observable, but the content and timing of actual
-    local implementation are heterogeneous. NDRC evaluation reports indicate that most
-    pilots submitted plans and established target responsibility systems, yet the concrete
-    policy mix differs by locality.
-  exposure_construction: Code designated jurisdictions as exposed from 2010 for an intention-to-treat
-    design; use local plans and implementation dates for designs claiming substantive
-    policy exposure. For city-level designs, choose a rule for cities inside province-level
-    pilots and for province-level municipalities.
+    local implementation are heterogeneous. NDRC evaluation reports indicate that
+    most pilots submitted plans and established target responsibility systems, yet
+    the concrete policy mix differs by locality.
+  exposure_construction: Code designated jurisdictions as exposed from 2010 for an
+    intention-to-treat design; use local plans and implementation dates for designs
+    claiming substantive policy exposure. For city-level designs, choose a rule for
+    cities inside province-level pilots and for province-level municipalities.
   required_identifiers:
   - prefecture code
   - province code
   - calendar year
   spillovers: Treated provinces contain cities not separately named, so province-level
     treatment can contaminate nominal city-level controls. Policy learning, industrial
-    relocation, and factor markets can generate spatial spillovers to neighbouring jurisdictions.
-    Later waves expand treatment and alter the comparison pool.
+    relocation, and factor markets can generate spatial spillovers to neighbouring
+    jurisdictions. Later waves expand treatment and alter the comparison pool.
 research_compatibility:
   outcome_domains:
   - carbon emissions
@@ -142,8 +138,8 @@ research_compatibility:
   best_for:
   - Studying outcomes plausibly affected by local low-carbon planning and policy packages
     after the first-wave designation
-  - Designs that can distinguish province-level exposure, named-city exposure, and later
-    pilot waves
+  - Designs that can distinguish province-level exposure, named-city exposure, and
+    later pilot waves
   - Staggered DID using first, second, and third waves as separate cohorts
   not_good_for:
   - Designs that treat designation as randomly assigned
@@ -162,14 +158,15 @@ design:
   - matched difference-in-differences
   - synthetic controls for selected cities
   - staggered difference-in-differences across three waves
-  identifying_variation: Differences between designated and eligible non-designated jurisdictions
-    before and after the first-wave notice, with later waves handled explicitly. The identifying
-    claim is that, conditional on jurisdiction and year fixed effects and observable pre-treatment
-    characteristics, selection into the first wave is uncorrelated with outcome shocks.
+  identifying_variation: Differences between designated and eligible non-designated
+    jurisdictions before and after the first-wave notice, with later waves handled
+    explicitly. The identifying claim is that, conditional on jurisdiction and year
+    fixed effects and observable pre-treatment characteristics, selection into the
+    first wave is uncorrelated with outcome shocks.
   assumptions:
   - Conditional outcome trends would have evolved comparably without designation.
-  - Pilot application and selection are not driven by unobserved shocks that also change
-    the outcome.
+  - Pilot application and selection are not driven by unobserved shocks that also
+    change the outcome.
   - Spillovers and province-city nesting do not contaminate the comparison definition.
   - Later pilot waves and concurrent environmental policies are handled explicitly.
   diagnostics:
@@ -179,11 +176,11 @@ design:
   - Test sensitivity to later pilot waves and heterogeneous-treatment estimators.
   - Compare first-wave adopters with later-wave adopters on observables.
   primary_strategy: Staggered difference-in-differences
-  estimand: The intention-to-treat effect of first-wave low-carbon pilot designation on
-    the outcome of interest, conditional on the stated design assumptions.
-  treatment_variable: Indicator equal to one for a jurisdiction designated in the first
-    wave from 2010 onward, possibly interacted with post-2010 years and later-wave cohort
-    indicators.
+  estimand: The intention-to-treat effect of first-wave low-carbon pilot designation
+    on the outcome of interest, conditional on the stated design assumptions.
+  treatment_variable: Indicator equal to one for a jurisdiction designated in the
+    first wave from 2010 onward, possibly interacted with post-2010 years and later-wave
+    cohort indicators.
   comparison_logic: Non-pilot or not-yet-pilot cities/provinces in the same year
   estimation_notes: Standard staggered DID with jurisdiction and year fixed effects.
     For multi-wave designs, code treatment cohorts by wave (2010, 2012 effective 2013,
@@ -203,8 +200,8 @@ threats:
   - report sensitivity to differential trends
 - type: heterogeneous-treatment
   basis: documented
-  condition: Pilot jurisdictions were instructed to design locally tailored plans and
-    supporting policies rather than implement one uniform intervention.
+  condition: Pilot jurisdictions were instructed to design locally tailored plans
+    and supporting policies rather than implement one uniform intervention.
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -235,7 +232,8 @@ threats:
 empirical_requirements:
   contract_version: 1
   population: Chinese prefectures, firms, or residents observed before and after 2010
-  observation_unit: Prefecture-year or lower-level unit linkable to prefecture-year exposure
+  observation_unit: Prefecture-year or lower-level unit linkable to prefecture-year
+    exposure
   geography_level: Province and prefecture
   time_start: 2005
   time_end: 2015
@@ -263,12 +261,64 @@ empirical_requirements:
   - local implementation lag
   - boundary-code changes
   - concurrent environmental policies (carbon trading pilots, eco-cities, etc.)
+design_profiles:
+- id: prefecture-year-pilot-design
+  label: Prefecture-year pilot designation design
+  design_families: [difference-in-differences, event study]
+  when_to_use: Use for city outcomes after explicitly coding city pilots, cities nested in pilot provinces, and later pilot waves.
+  outcome_domains: [carbon efficiency, pollution, urban development, public policy]
+  requirements:
+    population: Chinese prefectures observed before and after first-wave low-carbon pilot designation
+    observation_unit: prefecture-year
+    geography_level: prefecture
+    time_start: 2005
+    time_end: 2018
+    minimum_frequency: annual
+    minimum_pre_periods: 4
+    minimum_post_periods: 4
+    required_fields: [outcome, province code, prefecture code, year]
+    required_identifiers: [province code, prefecture code, year]
+    treatment_key: [province code, prefecture code, year]
+- id: firm-year-pilot-design
+  label: Firm-year pilot exposure design
+  design_families: [difference-in-differences, triple differences]
+  when_to_use: Use for firm outcomes when each firm can be linked to a prefecture and the province-city nesting rule is explicit.
+  outcome_domains: [green innovation, investment, productivity, emissions]
+  requirements:
+    population: Chinese firms observed before and after low-carbon pilot designation in their location
+    observation_unit: firm-year
+    geography_level: prefecture
+    time_start: 2005
+    time_end: 2018
+    minimum_frequency: annual
+    minimum_pre_periods: 4
+    minimum_post_periods: 4
+    required_fields: [outcome, firm id, province code, prefecture code, year]
+    required_identifiers: [firm id, province code, prefecture code, year]
+    treatment_key: [province code, prefecture code, year]
+- id: province-year-pilot-design
+  label: Province-year pilot designation design
+  design_families: [difference-in-differences, event study]
+  when_to_use: Use for province-level outcomes when the estimand is restricted to province pilots and city-only pilots are handled separately.
+  outcome_domains: [carbon emissions, energy intensity, green investment]
+  requirements:
+    population: Chinese provinces observed before and after first-wave province-level pilot designation
+    observation_unit: province-year
+    geography_level: province
+    time_start: 2005
+    time_end: 2018
+    minimum_frequency: annual
+    minimum_pre_periods: 4
+    minimum_post_periods: 4
+    required_fields: [outcome, province code, year]
+    required_identifiers: [province code, year]
+    treatment_key: [province code, year]
 evidence:
 - id: E1
   source_type: policy-document
-  citation: National Development and Reform Commission. 2010. "Notice on Launching Low-Carbon
-    Province and Low-Carbon City Pilot Work" (关于开展低碳省区和低碳城市试点工作的通知).
-    NDRC Climate No. 1587 (发改气候〔2010〕1587号), July 19, 2010.
+  citation: National Development and Reform Commission. 2010. "Notice on Launching
+    Low-Carbon Province and Low-Carbon City Pilot Work" (关于开展低碳省区和低碳城市试点工作的通知). NDRC
+    Climate No. 1587 (发改气候〔2010〕1587号), July 19, 2010.
   url: https://www.ndrc.gov.cn/xxgk/zcfb/tz/201008/t20100810_964674.html
   date: '2010-07-19'
   supports:
@@ -277,14 +327,14 @@ evidence:
   - assignment
   verification_status: verified
   access_level: official-document
-  locator: Full notice; Section II confirms the first-wave list of five provinces and
-    eight cities and the selection criteria (local application, work foundations, representativeness);
-    Section III lists the five tasks; Section IV requires implementation plans by 31
-    August 2010
+  locator: Full notice; Section II confirms the first-wave list of five provinces
+    and eight cities and the selection criteria (local application, work foundations,
+    representativeness); Section III lists the five tasks; Section IV requires implementation
+    plans by 31 August 2010
 - id: E2
   source_type: paper
-  citation: 'Wang, Y., Zhang, N., and Li, Y. 2022. "Going Carbon-Neutral in China: Does
-    the Low-Carbon City Pilot Policy Improve Carbon Emission Efficiency?" Sustainable
+  citation: 'Wang, Y., Zhang, N., and Li, Y. 2022. "Going Carbon-Neutral in China:
+    Does the Low-Carbon City Pilot Policy Improve Carbon Emission Efficiency?" Sustainable
     Production and Consumption 33: 312–329.'
   url: https://doi.org/10.1016/j.spc.2022.07.002
   date: '2022'
@@ -296,8 +346,8 @@ evidence:
     DID and finds a 2.04% increase in carbon emission efficiency in pilot cities
 - id: E3
   source_type: policy-document
-  citation: National Development and Reform Commission. 2012. "Notice on Launching the
-    Second Batch of Low-Carbon Province and Low-Carbon City Pilot Work" (关于开展第二批低碳省区和低碳城市试点工作的通知).
+  citation: National Development and Reform Commission. 2012. "Notice on Launching
+    the Second Batch of Low-Carbon Province and Low-Carbon City Pilot Work" (关于开展第二批低碳省区和低碳城市试点工作的通知).
     NDRC Climate No. 3760 (发改气候〔2012〕3760号), December 5, 2012.
   url: http://www.ncsc.org.cn/SY/dtsdysf/202003/t20200319_769716.shtml
   date: '2012-12-05'
@@ -310,10 +360,10 @@ evidence:
     Shanghai, Hainan and 26 cities), confirming the multi-wave staggered structure
 - id: E4
   source_type: paper
-  citation: 'Ma, Jintao, Qiuguang Hu, Weiteng Shen, and Xinyi Wei. 2021. "Does the Low-Carbon
-    City Pilot Policy Promote Green Technology Innovation? Based on Green Patent Data
-    of Chinese A-Share Listed Companies." International Journal of Environmental Research
-    and Public Health 18 (7): 3695.'
+  citation: 'Ma, Jintao, Qiuguang Hu, Weiteng Shen, and Xinyi Wei. 2021. "Does the
+    Low-Carbon City Pilot Policy Promote Green Technology Innovation? Based on Green
+    Patent Data of Chinese A-Share Listed Companies." International Journal of Environmental
+    Research and Public Health 18 (7): 3695.'
   url: https://doi.org/10.3390/ijerph18073695
   date: '2021'
   supports:
@@ -321,13 +371,14 @@ evidence:
   - research_compatibility
   verification_status: verified
   access_level: full-text
-  locator: Sections 2–3 and Table 1; uses A-share listed enterprises 2005–2019 with multi-period
-    DID and finds low-carbon city pilot policy stimulates green invention patents, with
-    stronger effects in eastern cities and high-carbon-emission industries
+  locator: Sections 2–3 and Table 1; uses A-share listed enterprises 2005–2019 with
+    multi-period DID and finds low-carbon city pilot policy stimulates green invention
+    patents, with stronger effects in eastern cities and high-carbon-emission industries
 - id: E5
   source_type: paper
-  citation: 'Yu, Yantuan, and Ning Zhang. 2021. "Low-Carbon City Pilot and Carbon Emission
-    Efficiency: Quasi-Experimental Evidence from China." Energy Economics 96: 105125.'
+  citation: 'Yu, Yantuan, and Ning Zhang. 2021. "Low-Carbon City Pilot and Carbon
+    Emission Efficiency: Quasi-Experimental Evidence from China." Energy Economics
+    96: 105125.'
   url: https://doi.org/10.1016/j.eneco.2021.105125
   date: '2021'
   supports:
@@ -335,11 +386,11 @@ evidence:
   - research_compatibility
   verification_status: verified
   access_level: full-text
-  locator: Sections 2–3; uses Chinese prefecture-level cities with DID/PSM-DID and finds
-    low-carbon city pilots improve carbon emission efficiency
+  locator: Sections 2–3; uses Chinese prefecture-level cities with DID/PSM-DID and
+    finds low-carbon city pilots improve carbon emission efficiency
 design_applications:
-- paper: "Going carbon-neutral in China: Does the low-carbon city pilot policy improve
-    carbon emission efficiency?"
+- paper: 'Going carbon-neutral in China: Does the low-carbon city pilot policy improve
+    carbon emission efficiency?'
   doi: 10.1016/j.spc.2022.07.002
   journal: Sustainable Production and Consumption
   year: 2022
@@ -347,7 +398,10 @@ design_applications:
     efficiency
   population: 285 Chinese cities observed from 2003 to 2018
   outcome: Carbon-emission efficiency
-  data_used: []
+  data_used:
+  - CEADs city-level carbon emissions data
+  - China City Statistical Yearbooks socioeconomic indicators
+  - NDRC low-carbon pilot lists for treatment assignment
   treatment_encoding: Pilot city interacted with post-designation periods across pilot
     waves
   comparison: Non-pilot or not-yet-pilot cities
@@ -360,13 +414,13 @@ design_applications:
   - pre-trends and selection require inspection in the full paper
   evidence_refs:
   - E2
-- paper: "Does the Low-Carbon City Pilot Policy Promote Green Technology Innovation? Based
-    on Green Patent Data of Chinese A-Share Listed Companies"
+- paper: Does the Low-Carbon City Pilot Policy Promote Green Technology Innovation?
+    Based on Green Patent Data of Chinese A-Share Listed Companies
   doi: 10.3390/ijerph18073695
   journal: International Journal of Environmental Research and Public Health
   year: 2021
-  research_question: Whether low-carbon city pilot policy promotes corporate green technology
-    innovation
+  research_question: Whether low-carbon city pilot policy promotes corporate green
+    technology innovation
   population: Chinese A-share listed enterprises, 2005–2019
   outcome: Green invention patent applications
   data_used:
@@ -385,19 +439,20 @@ design_applications:
   - heterogeneous effects by region and industry
   evidence_refs:
   - E4
-- paper: "Low-carbon city pilot and carbon emission efficiency: Quasi-experimental evidence
-    from China"
+- paper: 'Low-carbon city pilot and carbon emission efficiency: Quasi-experimental
+    evidence from China'
   doi: 10.1016/j.eneco.2021.105125
   journal: Energy Economics
   year: 2021
-  research_question: Whether low-carbon city pilots improve urban carbon emission efficiency
+  research_question: Whether low-carbon city pilots improve urban carbon emission
+    efficiency
   population: Chinese prefecture-level cities
   outcome: Carbon emission efficiency
   data_used:
   - City-level carbon emissions and socioeconomic data
   - NDRC pilot lists for treatment assignment
-  treatment_encoding: Pilot city indicator interacted with post-2010 period, with later
-    waves coded separately
+  treatment_encoding: Pilot city indicator interacted with post-2010 period, with
+    later waves coded separately
   comparison: Non-pilot cities, with PSM-DID to balance observables
   empirical_design: Difference-in-differences with propensity-score matching
   assumptions:
@@ -412,9 +467,9 @@ design_applications:
 readiness_blockers:
 - Exact approval dates of first-wave local implementation plans and the actual start
   years of substantive local policies remain to be verified from provincial NDRC documents.
-- The rule for province-city nesting (whether cities inside the five province-level pilots
-  should be coded as treated in city-only designs) has not been resolved with primary
-  evidence.
+- The rule for province-city nesting (whether cities inside the five province-level
+  pilots should be coded as treated in city-only designs) has not been resolved with
+  primary evidence.
 - Concurrent environmental policies (carbon-trading pilots, eco-cities, smart cities)
   and their overlap with low-carbon pilots are not yet documented in this record.
 method_transfer: null

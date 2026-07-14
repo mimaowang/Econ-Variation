@@ -29,7 +29,10 @@ def snapshot(*, fresh: bool = True, valid: bool = True, stop: bool = False) -> d
 def configure(monkeypatch, tmp_path, rows: list[dict], value: dict) -> None:
     tasks = tmp_path / "tasks.jsonl"
     tasks.write_text("".join(json.dumps(row) + "\n" for row in rows), encoding="utf-8")
+    candidates = tmp_path / "candidates.jsonl"
+    candidates.write_text("", encoding="utf-8")
     monkeypatch.setattr(doctor, "TASKS", tasks)
+    monkeypatch.setattr(doctor, "CANDIDATES", candidates)
     monkeypatch.setattr(doctor, "repository_snapshot", lambda: value)
 
 
@@ -71,6 +74,21 @@ def test_doctor_hides_discovery_when_stop_is_active(monkeypatch, tmp_path) -> No
     report = doctor.build_report()
     assert [task["id"] for task in report["next_tasks"]] == ["ground"]
     assert report["safe_action"] == "claim-next-listed-task"
+
+
+def test_doctor_prioritizes_china_facing_post_screen_work(monkeypatch, tmp_path) -> None:
+    rows = [
+        {
+            "id": "method-screen", "stage": "screen", "goal": "Method", "status": "pending",
+            "knowledge_role_hint": "transferable-method", "created_at": "2026-01-01T00:00:00+00:00",
+        },
+        {
+            "id": "china-resolve", "stage": "resolve", "goal": "China", "status": "pending",
+            "knowledge_role_hint": "china-variation", "created_at": "2026-01-02T00:00:00+00:00",
+        },
+    ]
+    configure(monkeypatch, tmp_path, rows, snapshot())
+    assert doctor.build_report()["next_tasks"][0]["id"] == "china-resolve"
 
 
 def test_doctor_validation_failure_takes_precedence(monkeypatch, tmp_path) -> None:

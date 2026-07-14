@@ -137,6 +137,41 @@
         "measurement_risks": {"type": "array", "items": {"type": "string"}}
       }
     },
+    "design_profiles": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "label", "design_families", "when_to_use", "requirements"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "label": {"type": "string", "minLength": 3},
+          "design_families": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "when_to_use": {"type": "string", "minLength": 10},
+          "outcome_domains": {"type": "array", "items": {"type": "string"}},
+          "requirements": {
+            "type": "object", "additionalProperties": false,
+            "required": [
+              "population", "observation_unit", "geography_level", "time_start", "time_end",
+              "minimum_frequency", "minimum_pre_periods", "minimum_post_periods", "required_fields",
+              "required_identifiers", "treatment_key"
+            ],
+            "properties": {
+              "population": {"type": "string"},
+              "observation_unit": {"type": "string"},
+              "geography_level": {"type": "string"},
+              "time_start": {"type": ["string", "integer", "null"]},
+              "time_end": {"type": ["string", "integer", "null"]},
+              "minimum_frequency": {"type": "string"},
+              "minimum_pre_periods": {"type": "integer", "minimum": 0},
+              "minimum_post_periods": {"type": "integer", "minimum": 0},
+              "required_fields": {"type": "array", "items": {"type": "string"}},
+              "required_identifiers": {"type": "array", "items": {"type": "string"}},
+              "treatment_key": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        }
+      }
+    },
     "evidence": {
       "type": "array", "minItems": 1,
       "items": {

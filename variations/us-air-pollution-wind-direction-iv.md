@@ -7,9 +7,9 @@ aliases:
 - PM2.5 mortality wind IV
 - Deryugina air pollution Medicare
 
-status: extracted
+status: grounded
 provenance:
-  task_id: task-e91234691f77
+  task_id: task-07ed0af2eafd
 scope:
   country: United States
   regions:
@@ -58,7 +58,7 @@ timeline:
   anticipation: Wind direction is unpredictable beyond short-term weather forecasts;
     local residents cannot systematically anticipate and avoid exposure based on wind
     patterns
-  last_verified: '2026-07-13'
+  last_verified: '2026-07-14'
 assignment:
   unit: County-day
   treated: Counties that lie downwind of pollution sources on a given day, as predicted
@@ -338,6 +338,40 @@ evidence:
   locator: Constructs IV as average ozone in nearby upwind cities weighted by inverse distance
     and cosine of wind angle; uses weekly city-level mortality data and weather controls;
     another China application of source-to-receptor wind logic
+- id: E6
+  source_type: official-data
+  citation: >
+    U.S. Environmental Protection Agency. Air Quality System (AQS) daily PM2.5
+    monitor data.
+  url: https://www.epa.gov/outdoor-air-quality-data
+  date: 2026
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: dataset
+  locator: >
+    EPA AQS pre-generated data files and query tools; provides daily PM2.5
+    concentrations by monitor for 1999–2011, the spatial anchor for the
+    wind-direction IV construction.
+- id: E7
+  source_type: official-data
+  citation: >
+    NOAA National Centers for Environmental Information. North American
+    Regional Reanalysis (NARR) daily wind and meteorological data.
+  url: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc.C00678
+  date: 2026
+  supports:
+  - identity
+  - timeline
+  - assignment
+  verification_status: verified
+  access_level: dataset
+  locator: >
+    NCEI NARR dataset landing page; provides daily u/v wind components,
+    temperature, and precipitation at 32-km resolution for the contiguous U.S.,
+    1979–present, used to construct daily wind-direction quadrants.
 design_applications:
 - paper: 'The Mortality and Medical Costs of Air Pollution: Evidence from Changes in Wind Direction'
   doi: 10.1257/aer.20180279

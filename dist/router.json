@@ -1,19 +1,19 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 55,
+  "record_count": 72,
   "knowledge_role_counts": {
-    "transferable-method": 10,
-    "china-variation": 42,
+    "transferable-method": 14,
+    "china-variation": 55,
     "global-china-variation": 3
   },
   "recommendation_eligibility_counts": {
-    "method-lead": 9,
+    "method-lead": 8,
     "do-not-recommend": 10,
+    "conditional-candidate": 15,
     "lead-only": 33,
-    "conditional-candidate": 2,
-    "method-inspiration": 1
+    "method-inspiration": 6
   },
   "variations": [
     {
@@ -34,6 +34,12 @@
         "development",
         "agriculture",
         "climate"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "climate-energy",
+        "development-poverty",
+        "governance-politics"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -96,6 +102,7 @@
           "rainfall deviation instrument"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "exclusion-restriction-violation",
         "generalizability",
@@ -126,6 +133,11 @@
         "migration",
         "urban",
         "public-services"
+      ],
+      "topics": [
+        "infrastructure-urban",
+        "labor-migration",
+        "public-finance"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -197,6 +209,7 @@
           "eligibility category"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-local-adoption",
         "endogenous-sorting",
@@ -208,6 +221,103 @@
       ],
       "blocker_count": 5,
       "source_path": "variations/china-2014-hukou-local-implementation.md"
+    },
+    {
+      "id": "china-8-7-poverty-county-threshold",
+      "name": "National Poverty County Eligibility Threshold under China's 8-7 Poverty Reduction Plan (1994–2000)",
+      "aliases": [
+        "China 8-7 Plan poverty county threshold",
+        "国家八七扶贫攻坚计划",
+        "国家级贫困县",
+        "National Poor Counties"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "development",
+        "public-economics",
+        "fiscal-transfers",
+        "poverty",
+        "political-economy"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "public-finance"
+      ],
+      "variation_type": "eligibility-threshold",
+      "time": {
+        "start": 1994,
+        "end": 2000
+      },
+      "assignment": {
+        "unit": "County",
+        "mechanism": "Counties were assigned to treatment largely on the basis of whether their 1992 rural per capita net income fell below the 400-yuan threshold. Counties with income between 400 and 700 yuan were treated if previously designated, producing a…",
+        "treatment": "Indicator for being designated a national poverty county in 1994.",
+        "comparison": "Counties with 1992 income just below 400 yuan are compared with counties with income just above 400 yuan. Under continuity, the only systematic difference near the cutoff is treat…",
+        "required_identifiers": [
+          "county code",
+          "1992 rural per capita net income",
+          "national poverty county indicator"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "rural income growth",
+          "fiscal transfers and public spending",
+          "infrastructure investment",
+          "education and health outcomes",
+          "agricultural productivity",
+          "poverty headcount",
+          "local governance and state capacity"
+        ],
+        "application_outcomes": [
+          "Change in log rural net income per capita from 1994 to 2000"
+        ],
+        "design_families": [
+          "Sharp regression discontinuity at the 400-yuan cutoff",
+          "Fuzzy regression discontinuity at the 700-yuan cutoff",
+          "Difference-in-differences using 1994 as treatment onset"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Rural Chinese counties",
+        "observation_unit": "county-year",
+        "geography_level": "county",
+        "time_start": 1985,
+        "time_end": 2000,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 5,
+        "minimum_post_periods": 5,
+        "required_fields": [
+          "1992 rural per capita net income",
+          "national poverty county indicator",
+          "outcome variables",
+          "pre-determined county characteristics",
+          "fiscal transfer data"
+        ],
+        "required_identifiers": [
+          "county code",
+          "year"
+        ],
+        "treatment_key": [
+          "county code"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "concurrent_reforms",
+        "heterogeneous_effects",
+        "manipulation",
+        "measurement_error",
+        "spillovers"
+      ],
+      "blocker_codes": [],
+      "blocker_count": 0,
+      "source_path": "variations/china-8-7-poverty-county-threshold.md"
     },
     {
       "id": "china-anti-corruption-land-market",
@@ -226,6 +336,11 @@
         "land",
         "corruption",
         "firm"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "firms-innovation",
+        "governance-politics"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -294,6 +409,7 @@
           "post-2012 indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-inspection-timing",
         "measurement-of-connections"
@@ -324,6 +440,12 @@
         "labor",
         "development",
         "history"
+      ],
+      "topics": [
+        "development-poverty",
+        "education",
+        "history",
+        "labor-migration"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -393,6 +515,7 @@
           "birth cohort (for cohort-based designs)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "omitted-variable",
         "other-concurrent-reforms",
@@ -413,9 +536,9 @@
         "中央环保督察",
         "中央生态环境保护督察"
       ],
-      "status": "extracted",
+      "status": "grounded",
       "knowledge_role": "china-variation",
-      "recommendation_eligibility": "lead-only",
+      "recommendation_eligibility": "conditional-candidate",
       "country": "China",
       "domains": [
         "environment",
@@ -424,6 +547,12 @@
         "pollution",
         "public-health",
         "firm-behavior"
+      ],
+      "topics": [
+        "environment",
+        "firms-innovation",
+        "health",
+        "law-regulation"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -494,6 +623,131 @@
           "inspection date"
         ]
       },
+      "design_profiles": [
+        {
+          "id": "province-year-staggered-did",
+          "label": "Province-year staggered inspection design",
+          "design_families": [
+            "staggered difference-in-differences",
+            "event study"
+          ],
+          "when_to_use": "Use for province-level outcomes or outcomes that can be aggregated consistently to province-year exposure.",
+          "outcome_domains": [
+            "pollution",
+            "public health",
+            "fiscal behavior",
+            "regulatory enforcement"
+          ],
+          "data_fit": {
+            "population": "Chinese provinces observed before and after their first central inspection",
+            "observation_unit": "province-year",
+            "geography_level": "province",
+            "time_start": 2013,
+            "time_end": 2020,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 2,
+            "minimum_post_periods": 2,
+            "required_fields": [
+              "outcome",
+              "province code",
+              "year",
+              "inspection date"
+            ],
+            "required_identifiers": [
+              "province code",
+              "year"
+            ],
+            "treatment_key": [
+              "province code",
+              "inspection date"
+            ]
+          }
+        },
+        {
+          "id": "firm-year-staggered-did",
+          "label": "Firm-year staggered inspection design",
+          "design_families": [
+            "staggered difference-in-differences",
+            "triple differences"
+          ],
+          "when_to_use": "Use for firm outcomes when each firm can be linked to the province and inspection timing that determine exposure.",
+          "outcome_domains": [
+            "firm behavior",
+            "green innovation",
+            "productivity",
+            "environmental investment"
+          ],
+          "data_fit": {
+            "population": "Chinese firms observed before and after the inspection of their registered or operating province",
+            "observation_unit": "firm-year",
+            "geography_level": "province",
+            "time_start": 2013,
+            "time_end": 2020,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 2,
+            "minimum_post_periods": 2,
+            "required_fields": [
+              "outcome",
+              "firm id",
+              "province code",
+              "year",
+              "inspection date",
+              "industry classification"
+            ],
+            "required_identifiers": [
+              "firm id",
+              "province code",
+              "year"
+            ],
+            "treatment_key": [
+              "province code",
+              "inspection date"
+            ]
+          }
+        },
+        {
+          "id": "plant-week-inspection-window",
+          "label": "Plant-week active inspection-window design",
+          "design_families": [
+            "high-frequency event study",
+            "difference-in-differences"
+          ],
+          "when_to_use": "Use for high-frequency emissions or operations when plants can be linked to exact inspection entry and exit dates.",
+          "outcome_domains": [
+            "emissions",
+            "pollution",
+            "plant operations"
+          ],
+          "data_fit": {
+            "population": "Chinese power plants or industrial facilities observed around active inspection windows",
+            "observation_unit": "plant-week",
+            "geography_level": "plant within province",
+            "time_start": 2015,
+            "time_end": 2018,
+            "minimum_frequency": "weekly",
+            "minimum_pre_periods": 8,
+            "minimum_post_periods": 8,
+            "required_fields": [
+              "outcome",
+              "plant id",
+              "province code",
+              "week",
+              "inspection entry date",
+              "inspection exit date"
+            ],
+            "required_identifiers": [
+              "plant id",
+              "province code",
+              "week"
+            ],
+            "treatment_key": [
+              "province code",
+              "inspection entry date",
+              "inspection exit date"
+            ]
+          }
+        }
+      ],
       "threat_types": [
         "confounding-policies",
         "endogenous-inspection-timing",
@@ -522,6 +776,12 @@
         "political-economy",
         "public-economics",
         "regulation"
+      ],
+      "topics": [
+        "environment",
+        "governance-politics",
+        "law-regulation",
+        "public-finance"
       ],
       "variation_type": "pilot-assignment",
       "time": {
@@ -589,6 +849,7 @@
           "prefecture-level treatment proportion"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "hawthorne-effects",
         "non-compliance-with-assignment",
@@ -600,6 +861,122 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-citizen-appeals-environmental-governance.md"
+    },
+    {
+      "id": "china-ctrip-work-from-home-experiment",
+      "name": "Ctrip Work-From-Home Randomized Experiment",
+      "aliases": [
+        "Ctrip WFH experiment",
+        "Bloom et al. (2015) Chinese WFH RCT",
+        "Ctrip call-center telecommuting pilot"
+      ],
+      "status": "extracted",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "lead-only",
+      "country": "China",
+      "domains": [
+        "labor",
+        "firms",
+        "productivity",
+        "urban-economics",
+        "management"
+      ],
+      "topics": [
+        "firms-innovation",
+        "infrastructure-urban",
+        "labor-migration"
+      ],
+      "variation_type": "pilot-assignment",
+      "time": {
+        "start": 2010,
+        "end": 2011
+      },
+      "assignment": {
+        "unit": "Individual-employee by day or week during the experiment.",
+        "mechanism": "Random assignment by public lottery based on even or odd birth dates among the 249 eligible volunteers. Employees with even birth dates were assigned to work from home; those with odd birth dates formed the control group.",
+        "treatment": "An indicator for even birth date interacted with the experimental period (December 6, 2010 to August 15, 2011).",
+        "comparison": "Compare eligible volunteers randomly assigned to work from home with eligible volunteers assigned to the office; use additional quasi-control groups to rule out control-group demo…",
+        "required_identifiers": [
+          "employee ID",
+          "birth date (for assignment)",
+          "team / department",
+          "shift date",
+          "work location (home or office)"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "productivity",
+          "labor-supply",
+          "job-attrition",
+          "promotion",
+          "job-satisfaction",
+          "work-life-balance",
+          "commuting",
+          "service-quality",
+          "management-practices"
+        ],
+        "application_outcomes": [
+          "Weekly phone calls answered, minutes on the phone, calls per minute, overall performance z-score, conversion rate, call quality score, attrition, promotion, job satisfaction, and psychological attitude scores."
+        ],
+        "design_families": [
+          "Randomized controlled experiment comparing treatment and control employees",
+          "Difference-in-differences using pre-experiment baseline and employee fixed effects",
+          "Robustness checks using Nan Tong eligible employees and eligible non-volunteers as alternative control groups",
+          "Event-study plots around the December 2010 treatment start"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Call-center employees in Ctrip's Shanghai airfare and hotel booking departments during 2010-2011.",
+        "observation_unit": "Employee-day or employee-week.",
+        "geography_level": "Firm / call center (Shanghai).",
+        "time_start": 2010,
+        "time_end": 2012,
+        "minimum_frequency": "daily",
+        "minimum_pre_periods": 11,
+        "minimum_post_periods": 8,
+        "required_fields": [
+          "employee identifier",
+          "team / department",
+          "birth date (for treatment assignment)",
+          "work location (home or office)",
+          "shift date",
+          "phone calls answered",
+          "minutes logged in",
+          "orders taken",
+          "conversion rate",
+          "call quality score",
+          "attrition indicator",
+          "promotion indicator",
+          "commuting time",
+          "survey-based job satisfaction",
+          "demographics"
+        ],
+        "required_identifiers": [
+          "employee ID",
+          "shift date"
+        ],
+        "treatment_key": [
+          "employee ID",
+          "birth date parity",
+          "experiment-period indicator"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "attrition-bias",
+        "external-validity",
+        "imperfect-compliance",
+        "selection-into-volunteering",
+        "spillover-within-team"
+      ],
+      "blocker_codes": [
+        "missing-primary-evidence",
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-ctrip-work-from-home-experiment.md"
     },
     {
       "id": "china-elite-networks-economic-rise",
@@ -620,6 +997,11 @@
         "networks",
         "history",
         "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "history"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -686,6 +1068,7 @@
           "elite × post-reform interaction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "omitted-geography",
         "reverse-causality"
@@ -695,6 +1078,230 @@
       ],
       "blocker_count": 1,
       "source_path": "variations/china-elite-networks-economic-rise.md"
+    },
+    {
+      "id": "china-environmental-protection-tax-law",
+      "name": "China's Environmental Protection Tax Law (2018)",
+      "aliases": [
+        "Environmental Protection Tax Law",
+        "EPT Law",
+        "环境保护税法",
+        "环保税法",
+        "China environmental protection tax reform",
+        "Pigovian tax (China)"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "environment",
+        "taxation",
+        "regulation",
+        "pollution",
+        "firm-behavior",
+        "public-finance",
+        "green-innovation"
+      ],
+      "topics": [
+        "climate-energy",
+        "environment",
+        "firms-innovation",
+        "law-regulation",
+        "public-finance"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2018,
+        "end": "ongoing"
+      },
+      "assignment": {
+        "unit": "firm-year or province-year",
+        "mechanism": "All enterprises, public institutions, and other producers directly discharging taxable pollutants are taxpayers. Quasi-experimental variation comes from the national effective date interacted with cross-sectional exposure: heavy-polluting…",
+        "treatment": "A post-2018 indicator interacted with a heavy-polluting-industry indicator, or a continuous measure of expected tax burden based on province rates and firm emissions.",
+        "comparison": "Heavy-polluting firms after 2018 are compared with the same firms before 2018 and with light-polluting or non-polluting firms over the same period.",
+        "required_identifiers": [
+          "firm or province identifier",
+          "calendar year",
+          "industry code",
+          "province code",
+          "taxable emissions (for intensity designs)"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "air pollution",
+          "water pollution",
+          "solid waste",
+          "corporate green innovation",
+          "firm environmental investment",
+          "total factor productivity",
+          "employment and green skills",
+          "firm performance",
+          "tax compliance",
+          "public finance"
+        ],
+        "application_outcomes": [
+          "Emissions (wastewater, waste gas, solid waste) and green innovation"
+        ],
+        "design_families": [
+          "difference-in-differences with a 2018 cutoff",
+          "event study around the implementation date",
+          "intensity difference-in-differences using provincial rates",
+          "triple-difference adding polluting versus non-polluting firms",
+          "regression discontinuity at emission-standard thresholds for tax reductions"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Chinese industrial enterprises, especially A-share listed firms or pollution-intensive firms, observed before and after 2018.",
+        "observation_unit": "firm-year or province-year",
+        "geography_level": "province or firm location",
+        "time_start": 2008,
+        "time_end": 2022,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 4,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "outcome (emissions, green patents, investment, productivity, etc.)",
+          "firm identifier",
+          "calendar year",
+          "industry classification",
+          "province code",
+          "taxable emissions or pollution intensity",
+          "firm financial controls"
+        ],
+        "required_identifiers": [
+          "firm identifier",
+          "year",
+          "province code"
+        ],
+        "treatment_key": [
+          "firm identifier",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "confounding-policies",
+        "endogenous-rate-setting",
+        "measurement-error",
+        "selective-compliance",
+        "spillovers-and-leakage"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-environmental-protection-tax-law.md"
+    },
+    {
+      "id": "china-export-compulsory-inspection-deregulation",
+      "name": "China's Export Compulsory Inspection Deregulation (2013)",
+      "aliases": [
+        "Export statutory inspection deregulation",
+        "出口法检取消",
+        "2013 AQSIQ-GAC Announcement No. 109",
+        "出入境检验检疫机构实施检验检疫的进出境商品目录调整"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "trade",
+        "regulation",
+        "exports",
+        "firm-behavior",
+        "innovation",
+        "governance"
+      ],
+      "topics": [
+        "firms-innovation",
+        "governance-politics",
+        "law-regulation",
+        "trade-globalization"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2013,
+        "end": "ongoing"
+      },
+      "assignment": {
+        "unit": "product-year or firm-year",
+        "mechanism": "Treatment is assigned at the product level by HS code. Firms exporting products whose HS codes were removed from the compulsory export inspection list became treated; firms exporting products that remained in the list formed the control gr…",
+        "treatment": "An indicator for an HS code (or a firm's export bundle) being removed from compulsory export inspection after 15 August 2013; alternatively, the share of exports in removed HS cod…",
+        "comparison": "Removed HS codes after August 2013 are compared with the same codes before removal and with HS codes that were never removed.",
+        "required_identifiers": [
+          "ten-digit HS code",
+          "firm identifier",
+          "calendar year or month",
+          "export value or quantity"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "export volume",
+          "export quality",
+          "export extensive margin",
+          "firm innovation",
+          "total factor productivity",
+          "governance efficiency",
+          "customs clearance time",
+          "trade costs"
+        ],
+        "application_outcomes": [
+          "Export volume, export quality, and firm innovation"
+        ],
+        "design_families": [
+          "difference-in-differences at the HS-code level",
+          "difference-in-differences at the firm-year level with share-based intensity",
+          "triple-difference exploiting heterogeneous pre-reform inspection intensity",
+          "event study around August 2013"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Chinese exporting firms and their ten-digit HS-code products observed before and after August 2013.",
+        "observation_unit": "product-year or firm-year",
+        "geography_level": "national customs data",
+        "time_start": 2010,
+        "time_end": 2016,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "outcome (export value, quantity, quality proxy, innovation measure)",
+          "ten-digit HS code",
+          "firm identifier",
+          "calendar year or month",
+          "pre-reform inspection status",
+          "firm/product controls"
+        ],
+        "required_identifiers": [
+          "HS code",
+          "firm identifier",
+          "year"
+        ],
+        "treatment_key": [
+          "HS code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "confounding-policies",
+        "measurement-error",
+        "product-switching",
+        "selection-into-treatment"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-export-compulsory-inspection-deregulation.md"
     },
     {
       "id": "china-firm-dynamics-reallocation",
@@ -714,6 +1321,10 @@
         "productivity",
         "industrial-organization",
         "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -787,6 +1398,7 @@
           "reallocation intensity measure"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "data-attrition",
         "measurement-error-in-productivity"
@@ -815,6 +1427,10 @@
         "political-economy",
         "information",
         "competition"
+      ],
+      "topics": [
+        "digital-economy",
+        "governance-politics"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -881,6 +1497,7 @@
           "exit reform indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-exits"
       ],
@@ -910,6 +1527,11 @@
         "firm",
         "growth",
         "technology"
+      ],
+      "topics": [
+        "development-poverty",
+        "digital-economy",
+        "firms-innovation"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -986,6 +1608,7 @@
           "policy × frontier interaction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-policy-allocation",
         "measurement-of-frontier-distance"
@@ -1015,6 +1638,12 @@
         "development",
         "health",
         "institutions",
+        "history"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "health",
         "history"
       ],
       "variation_type": "continuous-exposure",
@@ -1083,6 +1712,7 @@
           "early childhood famine exposure indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "post-famine-migration",
         "selective-mortality"
@@ -1113,6 +1743,11 @@
         "firm-heterogeneity",
         "financial-frictions",
         "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "finance",
+        "firms-innovation"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -1192,6 +1827,7 @@
           "interest rate relative to benchmark)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "external-validity",
         "measurement",
@@ -1220,6 +1856,12 @@
         "health",
         "household",
         "urban"
+      ],
+      "topics": [
+        "climate-energy",
+        "environment",
+        "health",
+        "infrastructure-urban"
       ],
       "variation_type": "boundary-discontinuity",
       "time": {
@@ -1289,6 +1931,7 @@
           "winter month indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "attenuation-due-to-noncompliance",
         "information-shock-confounding",
@@ -1301,6 +1944,114 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-heating-policy-air-pollution-wtp.md"
+    },
+    {
+      "id": "china-higher-education-expansion-cohort-shock",
+      "name": "China's Higher Education Expansion Cohort Shock (1999)",
+      "aliases": [
+        "1999 higher education expansion",
+        "高校扩招",
+        "University enrollment expansion",
+        "Higher education massification shock"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "education",
+        "human-capital",
+        "labor-economics",
+        "household-behavior",
+        "health",
+        "intergenerational-effects"
+      ],
+      "topics": [
+        "education",
+        "health",
+        "labor-migration"
+      ],
+      "variation_type": "cohort-rule",
+      "time": {
+        "start": 1999,
+        "end": "ongoing"
+      },
+      "assignment": {
+        "unit": "province-cohort or individual",
+        "mechanism": "Treatment is assigned at the province-cohort level. Cohorts reaching college age in/after 1999 faced higher admission probabilities, and the magnitude of the shock differed across provinces because baseline admission rates and university c…",
+        "treatment": "A post-1999 cohort indicator interacted with province-level expansion intensity, or individual college attendance instrumented by the province-cohort admission rate.",
+        "comparison": "Same-province cohorts before 1999 provide the pre-trend benchmark; cohorts in provinces with smaller expansion provide a cross-sectional counterfactual.",
+        "required_identifiers": [
+          "province code",
+          "birth year or cohort",
+          "gender",
+          "province of residence/hukou",
+          "education level"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "educational attainment",
+          "human capital",
+          "labor-market outcomes",
+          "wages and employment",
+          "parental health behaviors",
+          "risky behaviors",
+          "intergenerational mobility",
+          "fertility and marriage",
+          "household consumption"
+        ],
+        "application_outcomes": [
+          "Parents' risky behaviors and children's human capital"
+        ],
+        "design_families": [
+          "province-cohort difference-in-differences",
+          "event study around 1999",
+          "instrumental variables with province-cohort admission rates",
+          "regression discontinuity at cohort boundaries"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Chinese individuals or province-cohorts observed before and after the 1999 expansion.",
+        "observation_unit": "province-cohort or individual",
+        "geography_level": "province",
+        "time_start": 1990,
+        "time_end": 2015,
+        "minimum_frequency": "annual or cross-section",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 5,
+        "required_fields": [
+          "outcome",
+          "province identifier",
+          "birth year or cohort",
+          "gender",
+          "education level",
+          "province-cohort admission rate or enrollment",
+          "individual/household controls"
+        ],
+        "required_identifiers": [
+          "province code",
+          "birth year or cohort"
+        ],
+        "treatment_key": [
+          "province code",
+          "cohort"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "confounding-policies",
+        "endogenous-intensity",
+        "measurement-error",
+        "migration"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-higher-education-expansion-cohort-shock.md"
     },
     {
       "id": "china-highway-network-expansion",
@@ -1321,6 +2072,10 @@
         "infrastructure",
         "economic-geography",
         "industrialization"
+      ],
+      "topics": [
+        "infrastructure-urban",
+        "trade-globalization"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -1389,6 +2144,7 @@
           "market access measure"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-route-placement",
         "spatial-spillovers"
@@ -1420,6 +2176,11 @@
         "productivity",
         "land",
         "structural-transformation"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "firms-innovation"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -1494,6 +2255,7 @@
           "post-reform indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "concurrent-price-reforms",
         "endogenous-adoption-timing",
@@ -1517,9 +2279,9 @@
         "Willingness to pay clean air China",
         "Ito Zhang air purifier WTP"
       ],
-      "status": "extracted",
+      "status": "grounded",
       "knowledge_role": "china-variation",
-      "recommendation_eligibility": "lead-only",
+      "recommendation_eligibility": "conditional-candidate",
       "country": "China",
       "domains": [
         "environmental-economics",
@@ -1528,6 +2290,13 @@
         "public-economics",
         "household",
         "urban"
+      ],
+      "topics": [
+        "climate-energy",
+        "environment",
+        "health",
+        "infrastructure-urban",
+        "public-finance"
       ],
       "variation_type": "boundary-discontinuity",
       "time": {
@@ -1571,7 +2340,7 @@
           "difference-in-discontinuity (before vs. after information shock × north/south)",
           "structural demand estimation (random-coefficients logit) for marginal WTP"
         ],
-        "claim_type": null
+        "claim_type": "causal"
       },
       "data_fit": {
         "population": "Urban Chinese cities, 1981–1993 (original analysis period)",
@@ -1603,6 +2372,7 @@
           "distance to Huai River boundary"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "air-pollution-transport",
         "attenuation-due-to-noncompliance",
@@ -1610,11 +2380,8 @@
         "information-shock-confounding",
         "spatial-sorting"
       ],
-      "blocker_codes": [
-        "missing-primary-evidence",
-        "other-readiness-debt"
-      ],
-      "blocker_count": 2,
+      "blocker_codes": [],
+      "blocker_count": 0,
       "source_path": "variations/china-huai-river-heating-air-pollution.md"
     },
     {
@@ -1635,6 +2402,11 @@
         "productivity",
         "labor",
         "regional-development"
+      ],
+      "topics": [
+        "firms-innovation",
+        "labor-migration",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -1701,6 +2473,7 @@
           "estimated trade costs"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-policy",
         "measurement-error",
@@ -1712,6 +2485,121 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-hukou-migration-productivity.md"
+    },
+    {
+      "id": "china-intellectual-property-courts-reform",
+      "name": "China's Intellectual Property Courts Reform (2014)",
+      "aliases": [
+        "Intellectual Property Courts Reform",
+        "IPC reform",
+        "知识产权法院改革",
+        "Beijing-Shanghai-Guangzhou IP courts",
+        "知识产权法院"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "judicial-institutions",
+        "intellectual-property",
+        "innovation",
+        "firm-behavior",
+        "economic-growth",
+        "public-policy"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "law-regulation"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2014,
+        "end": null
+      },
+      "assignment": {
+        "unit": "city-year or firm-year",
+        "mechanism": "Cities (and firms located in them) become treated when an IP court or tribunal with jurisdiction over their technology-related IP disputes begins operation. The first treated cities are Beijing, Shanghai and Guangzhou in late 2014; additio…",
+        "treatment": "City-year dummy equal to one when an IP court or tribunal is available in the city; at the firm level, a dummy for the city of firm location having an IPC institution.",
+        "comparison": "Cities that received the reform later or not at all provide the counterfactual trend for early adopters; the pre-reform period for each city provides the within-city baseline.",
+        "required_identifiers": [
+          "city code",
+          "calendar year",
+          "firm identifier (for firm-level designs)",
+          "patent application/grant identifier (for patent-level outcomes)"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "invention patenting",
+          "patent structure (invention vs utility vs design)",
+          "patent quality",
+          "research and development expenditure",
+          "firm innovation",
+          "technology commercialization",
+          "judicial efficiency",
+          "intellectual property litigation outcomes"
+        ],
+        "application_outcomes": [
+          "Number of invention patents (3-year window), share of invention patents, patent approval rates, citations per patent, R&D investment, and technology expenditure.\n"
+        ],
+        "design_families": [
+          "City-level staggered difference-in-differences with city and year fixed effects",
+          "Firm-level staggered DID with firm and year fixed effects",
+          "Event-study using Callaway-Sant'Anna or Sun-Abraham estimators",
+          "Triple-difference interacting local human capital or technology intensity"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Chinese cities and listed firms observed before and during the 2014-2020 IP courts reform.",
+        "observation_unit": "city-year or firm-year",
+        "geography_level": "city",
+        "time_start": 2011,
+        "time_end": 2020,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "number of invention patents (3-year window preferred)",
+          "number of utility and design patents",
+          "city code",
+          "calendar year",
+          "GDP per capita",
+          "resident population",
+          "highly educated population share",
+          "FDI",
+          "universities per capita",
+          "hospitals per capita",
+          "education expenditure",
+          "pre-reform patent stock",
+          "firm identifier and location (firm-level)",
+          "firm assets, size, leverage, cash flow (firm-level)"
+        ],
+        "required_identifiers": [
+          "city code",
+          "year",
+          "firm identifier (for firm-level analysis)"
+        ],
+        "treatment_key": [
+          "city code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "confounding-policies",
+        "measurement-error",
+        "patent-quality-vs-quantity",
+        "spatial-spillovers-and-forum-shopping"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-intellectual-property-courts-reform.md"
     },
     {
       "id": "china-keju-abolition-elite-recruitment",
@@ -1731,6 +2619,11 @@
         "history",
         "education",
         "institutions"
+      ],
+      "topics": [
+        "education",
+        "governance-politics",
+        "history"
       ],
       "variation_type": "single-date-reform",
       "time": {
@@ -1796,6 +2689,7 @@
           "quota per capita"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "other-concurrent-reforms"
       ],
@@ -1823,6 +2717,12 @@
         "development-economics",
         "institutions",
         "property-rights"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "governance-politics",
+        "law-regulation"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -1893,6 +2793,7 @@
           "post-reform indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "anticipation-effects",
         "concurrent-reforms",
@@ -1923,6 +2824,11 @@
         "gender",
         "household",
         "development"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "family-demography"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -1988,6 +2894,7 @@
           "post-HRS indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "contemporaneous-one-child-policy",
         "endogenous-adoption"
@@ -2018,6 +2925,11 @@
         "labor",
         "development",
         "land"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "labor-migration"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -2092,6 +3004,7 @@
           "land certification status"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-land-policy",
         "measurement-error",
@@ -2121,6 +3034,12 @@
         "urban",
         "firm",
         "innovation"
+      ],
+      "topics": [
+        "climate-energy",
+        "environment",
+        "firms-innovation",
+        "infrastructure-urban"
       ],
       "variation_type": "pilot-assignment",
       "time": {
@@ -2188,6 +3107,129 @@
           "calendar year"
         ]
       },
+      "design_profiles": [
+        {
+          "id": "prefecture-year-pilot-design",
+          "label": "Prefecture-year pilot designation design",
+          "design_families": [
+            "difference-in-differences",
+            "event study"
+          ],
+          "when_to_use": "Use for city outcomes after explicitly coding city pilots, cities nested in pilot provinces, and later pilot waves.",
+          "outcome_domains": [
+            "carbon efficiency",
+            "pollution",
+            "urban development",
+            "public policy"
+          ],
+          "data_fit": {
+            "population": "Chinese prefectures observed before and after first-wave low-carbon pilot designation",
+            "observation_unit": "prefecture-year",
+            "geography_level": "prefecture",
+            "time_start": 2005,
+            "time_end": 2018,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 4,
+            "minimum_post_periods": 4,
+            "required_fields": [
+              "outcome",
+              "province code",
+              "prefecture code",
+              "year"
+            ],
+            "required_identifiers": [
+              "province code",
+              "prefecture code",
+              "year"
+            ],
+            "treatment_key": [
+              "province code",
+              "prefecture code",
+              "year"
+            ]
+          }
+        },
+        {
+          "id": "firm-year-pilot-design",
+          "label": "Firm-year pilot exposure design",
+          "design_families": [
+            "difference-in-differences",
+            "triple differences"
+          ],
+          "when_to_use": "Use for firm outcomes when each firm can be linked to a prefecture and the province-city nesting rule is explicit.",
+          "outcome_domains": [
+            "green innovation",
+            "investment",
+            "productivity",
+            "emissions"
+          ],
+          "data_fit": {
+            "population": "Chinese firms observed before and after low-carbon pilot designation in their location",
+            "observation_unit": "firm-year",
+            "geography_level": "prefecture",
+            "time_start": 2005,
+            "time_end": 2018,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 4,
+            "minimum_post_periods": 4,
+            "required_fields": [
+              "outcome",
+              "firm id",
+              "province code",
+              "prefecture code",
+              "year"
+            ],
+            "required_identifiers": [
+              "firm id",
+              "province code",
+              "prefecture code",
+              "year"
+            ],
+            "treatment_key": [
+              "province code",
+              "prefecture code",
+              "year"
+            ]
+          }
+        },
+        {
+          "id": "province-year-pilot-design",
+          "label": "Province-year pilot designation design",
+          "design_families": [
+            "difference-in-differences",
+            "event study"
+          ],
+          "when_to_use": "Use for province-level outcomes when the estimand is restricted to province pilots and city-only pilots are handled separately.",
+          "outcome_domains": [
+            "carbon emissions",
+            "energy intensity",
+            "green investment"
+          ],
+          "data_fit": {
+            "population": "Chinese provinces observed before and after first-wave province-level pilot designation",
+            "observation_unit": "province-year",
+            "geography_level": "province",
+            "time_start": 2005,
+            "time_end": 2018,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 4,
+            "minimum_post_periods": 4,
+            "required_fields": [
+              "outcome",
+              "province code",
+              "year"
+            ],
+            "required_identifiers": [
+              "province code",
+              "year"
+            ],
+            "treatment_key": [
+              "province code",
+              "year"
+            ]
+          }
+        }
+      ],
       "threat_types": [
         "anticipation",
         "endogenous-selection",
@@ -2218,6 +3260,10 @@
         "political-economy",
         "information",
         "attitudes"
+      ],
+      "topics": [
+        "digital-economy",
+        "governance-politics"
       ],
       "variation_type": "pilot-assignment",
       "time": {
@@ -2284,6 +3330,7 @@
           "encouragement indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "experimenter-demand-effects",
         "limited-generalizability"
@@ -2313,6 +3360,11 @@
         "productivity",
         "industrial-organization",
         "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "trade-globalization"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -2383,6 +3435,7 @@
           "pre-removal quota utilization rate"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "china-specific-policies",
         "general-equilibrium-effects",
@@ -2412,6 +3465,11 @@
         "firm",
         "migration",
         "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "labor-migration"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -2483,6 +3541,7 @@
           "actual migrant share change"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-migration-networks",
         "general-equilibrium-wage-effects"
@@ -2511,6 +3570,10 @@
         "firm-dynamics",
         "productivity",
         "industrial-organization"
+      ],
+      "topics": [
+        "firms-innovation",
+        "labor-migration"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -2582,6 +3645,7 @@
           "firm-specific minimum wage exposure (share of low-wage workers)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-policy-timing",
         "firm-sorting",
@@ -2593,6 +3657,104 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-minimum-wage-firm-competitive-shocks.md"
+    },
+    {
+      "id": "china-minors-video-game-time-restriction",
+      "name": "China's Minors Online Video Game Time Restriction (2021)",
+      "aliases": [
+        "China minors gaming ban",
+        "830新规",
+        "未成年人网络游戏防沉迷新规",
+        "Online game anti-addiction policy"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "digital-regulation",
+        "education",
+        "health",
+        "child-development",
+        "media-policy"
+      ],
+      "topics": [
+        "digital-economy",
+        "education",
+        "health"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2021,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Individual user-month or individual user-week; alternatively cohort-year",
+        "mechanism": "Treatment is assigned by age at the national effective date: all registered users below age 18 are restricted, while users aged 18 and above are unaffected. The age threshold generates a regression-kink or cohort comparison, and the before…",
+        "treatment": "Binary indicator for being a registered minor user after 1 September 2021; continuous variable for permitted weekly gaming hours by age.",
+        "comparison": "Minors after the policy are compared with minors before the policy and with adults who were never subject to the restriction. The age-18 threshold provides a within-post-period co…",
+        "required_identifiers": [
+          "user age or birth date",
+          "observation date",
+          "registered account age",
+          "user identifier"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "time use and leisure",
+          "academic performance",
+          "mental health and well-being",
+          "physical health",
+          "digital platform engagement",
+          "household regulation of screen time"
+        ],
+        "application_outcomes": [
+          "Gaming engagement, overall internet use, academic performance, study time, physical health, mental well-being"
+        ],
+        "design_families": [
+          "Difference-in-differences with minors as treated and adults or pre-policy minors as controls",
+          "Regression kink at age 18 around the policy date",
+          "Cohort event-study exploiting birth-month or birth-year variation"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Chinese minors who play online video games and a comparison group of adult or pre-policy users",
+        "observation_unit": "individual-month or individual-week",
+        "geography_level": "national or city",
+        "time_start": 2020,
+        "time_end": 2023,
+        "minimum_frequency": "monthly",
+        "minimum_pre_periods": 6,
+        "minimum_post_periods": 6,
+        "required_fields": [
+          "user age or birth date",
+          "observation date",
+          "gaming time or engagement",
+          "outcome of interest",
+          "covariates (gender, city, household characteristics)"
+        ],
+        "required_identifiers": [
+          "user id",
+          "date"
+        ],
+        "treatment_key": [
+          "user age",
+          "date"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "concurrent_reforms",
+        "measurement_error",
+        "noncompliance",
+        "substitution"
+      ],
+      "blocker_codes": [],
+      "blocker_count": 0,
+      "source_path": "variations/china-minors-video-game-time-restriction.md"
     },
     {
       "id": "china-misallocation-trade-liberalization",
@@ -2613,6 +3775,11 @@
         "firm-heterogeneity",
         "misallocation",
         "industrial-organization"
+      ],
+      "topics": [
+        "firms-innovation",
+        "public-finance",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -2691,6 +3858,7 @@
           "interaction of firm distortion and industry trade exposure"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "external-validity",
         "general-equilibrium",
@@ -2721,6 +3889,12 @@
         "development",
         "gender",
         "agriculture",
+        "health"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "family-demography",
         "health"
       ],
       "variation_type": "continuous-exposure",
@@ -2788,6 +3962,7 @@
           "orchard suitability × post-reform"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "measurement-error",
         "omitted-variable-bias"
@@ -2817,6 +3992,11 @@
         "education",
         "health",
         "family-economics"
+      ],
+      "topics": [
+        "education",
+        "family-demography",
+        "health"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -2885,6 +4065,7 @@
           "predicted number of siblings (from twin IV)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "exclusion-violation",
         "fertility-response"
@@ -2914,6 +4095,13 @@
         "health",
         "firm",
         "regulation"
+      ],
+      "topics": [
+        "firms-innovation",
+        "governance-politics",
+        "health",
+        "labor-migration",
+        "law-regulation"
       ],
       "variation_type": "other",
       "time": {
@@ -2976,6 +4164,7 @@
           "connected politician death indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "concurrent-changes",
         "endogenous-connection-formation"
@@ -2996,15 +4185,20 @@
         "Barwick Li Lin Zou pollution information",
         "空气污染实时公开"
       ],
-      "status": "extracted",
+      "status": "grounded",
       "knowledge_role": "china-variation",
-      "recommendation_eligibility": "lead-only",
+      "recommendation_eligibility": "conditional-candidate",
       "country": "China",
       "domains": [
         "environment",
         "health",
         "information",
         "household-behavior"
+      ],
+      "topics": [
+        "digital-economy",
+        "environment",
+        "health"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -3039,7 +4233,7 @@
           "staggered difference-in-differences",
           "event study around monitoring station activation"
         ],
-        "claim_type": null
+        "claim_type": "causal"
       },
       "data_fit": {
         "population": "Urban residents in Chinese cities, 2011–2018",
@@ -3068,15 +4262,129 @@
           "baseline pollution level"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "concurrent-policy-changes"
       ],
+      "blocker_codes": [],
+      "blocker_count": 0,
+      "source_path": "variations/china-pollution-information-disclosure.md"
+    },
+    {
+      "id": "china-processing-trade-ownership-control",
+      "name": "China Processing Trade Ownership and Control Regimes",
+      "aliases": [
+        "Feenstra-Hanson 2005 outsourcing",
+        "processing-trade property-rights variation",
+        "China export-processing ownership-control"
+      ],
+      "status": "extracted",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "lead-only",
+      "country": "China",
+      "domains": [
+        "trade",
+        "firms",
+        "industrial-organization",
+        "international-trade",
+        "institutions",
+        "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "governance-politics",
+        "trade-globalization"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 1997,
+        "end": 2002
+      },
+      "assignment": {
+        "unit": "Year-city-zone-product-destination export cell, aggregated to the share of processing exports in each of the four ownership-control regimes.",
+        "mechanism": "Assignment to a regime is a firm decision driven by contracting costs, human-capital specificity, value-added in processing, bargaining weights, and regional contract-enforcement environments. It is not randomized. The cross-sectional dist…",
+        "treatment": "Not a binary treatment. The outcome is the categorical regime (Chinese/foreign ownership × Chinese/foreign input control) or the share of exports in each regime.",
+        "comparison": "Compare the frequency of each regime across cells with different observable characteristics that shift the surplus under alternative ownership-control allocations.",
+        "required_identifiers": [
+          "year",
+          "Chinese city / customs district",
+          "economic zone type",
+          "product code",
+          "destination country",
+          "processing-trade regime indicator",
+          "factory-ownership indicator",
+          "input-control indicator",
+          "export value"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "multinational-firm-boundaries",
+          "contract-enforcement",
+          "property-rights",
+          "processing-trade",
+          "foreign-direct-investment",
+          "regional-development",
+          "global-value-chains"
+        ],
+        "application_outcomes": [
+          "Share of processing exports in each of four ownership-control regimes (Chinese/foreign ownership × Chinese/foreign input control)."
+        ],
+        "design_families": [
+          "Multinomial logit of regime shares on product/destination/city characteristics implied by the property-rights model",
+          "Structural estimation of human-capital specificity, contract enforcement, and bargaining weight",
+          "Cross-regional comparisons between southern coastal provinces and interior/northern provinces",
+          "Robustness checks using alternative ownership thresholds and zone definitions"
+        ],
+        "claim_type": "structural"
+      },
+      "data_fit": {
+        "population": "Chinese processing-export transactions and the year-city-zone-product-destination cells in which they are recorded.",
+        "observation_unit": "Year-city-zone-product-destination cell or individual processing-export transaction.",
+        "geography_level": "City / customs district.",
+        "time_start": 1997,
+        "time_end": 2002,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 0,
+        "minimum_post_periods": 0,
+        "required_fields": [
+          "year",
+          "city / customs district",
+          "economic zone type",
+          "product code",
+          "destination country",
+          "processing-trade regime (pure assembly vs import-and-assembly)",
+          "factory ownership (Chinese vs foreign)",
+          "input control (Chinese vs foreign)",
+          "export value",
+          "product characteristics (capital intensity, skill intensity, value-added proxies)",
+          "regional contract-enforcement proxies"
+        ],
+        "required_identifiers": [
+          "city",
+          "product code",
+          "destination country",
+          "year"
+        ],
+        "treatment_key": [
+          "city-product-destination-year cell",
+          "ownership-control regime"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "cross-sectional-identification",
+        "endogenous-selection-into-regime",
+        "external-validity",
+        "measurement-error",
+        "omitted-variables"
+      ],
       "blocker_codes": [
-        "missing-primary-evidence",
         "other-readiness-debt"
       ],
-      "blocker_count": 2,
-      "source_path": "variations/china-pollution-information-disclosure.md"
+      "blocker_count": 3,
+      "source_path": "variations/china-processing-trade-ownership-control.md"
     },
     {
       "id": "china-rd-tax-notch",
@@ -3100,6 +4408,10 @@
         "firm-behavior",
         "public-economics",
         "productivity"
+      ],
+      "topics": [
+        "firms-innovation",
+        "public-finance"
       ],
       "variation_type": "eligibility-threshold",
       "time": {
@@ -3183,6 +4495,7 @@
           "size bin (sales < 50M / 50M–200M / > 200M)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "attrition-and-sample-selection",
         "concurrent-policies",
@@ -3194,6 +4507,215 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-rd-tax-notch.md"
+    },
+    {
+      "id": "china-rural-land-titling-reform",
+      "name": "Rural Land Contracting and Management Rights Certification Reform in China (2011–2019 county rollout)",
+      "aliases": [
+        "China rural land titling reform",
+        "农村土地承包经营权确权登记颁证",
+        "Rural land certification reform",
+        "Land contracting-rights confirmation"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "property-rights",
+        "agriculture",
+        "political-economy",
+        "rural-development",
+        "land-tenure"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "governance-politics",
+        "law-regulation"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2011,
+        "end": 2019
+      },
+      "assignment": {
+        "unit": "County-year and household-year",
+        "mechanism": "Staggered county-level adoption. A county is treated once it officially starts issuing certificates to households; the first-certificate date is the usual treatment onset. Within a treated county, all eligible rural households with family-…",
+        "treatment": "Binary county-year indicator equal to one from the first-certificate year onward; or household-year indicator of certificate receipt.",
+        "comparison": "Earlier-treated counties are compared with later-treated counties before the latter adopt the reform. Never-treated or last-treated counties provide a control group in the final p…",
+        "required_identifiers": [
+          "county code",
+          "year",
+          "household id",
+          "village id"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "political trust and regime support",
+          "land rental market activity",
+          "agricultural investment and productivity",
+          "household welfare and consumption",
+          "migration and off-farm labor",
+          "local governance and dispute resolution"
+        ],
+        "application_outcomes": [
+          "Political trust toward government, participation in government social-security programs, engagement in local elections"
+        ],
+        "design_families": [
+          "Staggered difference-in-differences at county-year level",
+          "Event-study with leads and lags around first-certificate year",
+          "Household-level two-way fixed effects with county-time interactions"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Rural households and counties with family-contracted agricultural land",
+        "observation_unit": "county-year or household-year",
+        "geography_level": "county or village",
+        "time_start": 2008,
+        "time_end": 2020,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "outcome variable",
+          "county code",
+          "year",
+          "reform start year or certificate indicator",
+          "household identifiers (for household-level analysis)",
+          "pre-reform county characteristics"
+        ],
+        "required_identifiers": [
+          "county code",
+          "year",
+          "household id (when using micro data)"
+        ],
+        "treatment_key": [
+          "county code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation",
+        "concurrent_reforms",
+        "endogenous_adoption",
+        "measurement_error",
+        "spillovers"
+      ],
+      "blocker_codes": [],
+      "blocker_count": 0,
+      "source_path": "variations/china-rural-land-titling-reform.md"
+    },
+    {
+      "id": "china-rural-pension-program-rollout",
+      "name": "China's New Rural Pension Scheme Rollout (2009-2012)",
+      "aliases": [
+        "New Rural Pension Scheme",
+        "NRPS",
+        "新型农村社会养老保险",
+        "新农保",
+        "Rural social pension rollout"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "social-security",
+        "aging",
+        "agriculture",
+        "labor-economics",
+        "household-behavior",
+        "land-market",
+        "migration"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "labor-migration"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2009,
+        "end": 2012
+      },
+      "assignment": {
+        "unit": "county-year or household-year",
+        "mechanism": "Counties were phased into the NRPS between 2009 and 2012, creating staggered variation in treatment timing. Within treated counties, households with age-eligible elderly (typically age 60+) received benefit eligibility, while households wi…",
+        "treatment": "County-year indicator equal to one after the county joined the NRPS, or a household-level indicator for residing in a treated county with an age-eligible member.",
+        "comparison": "Counties that adopted the NRPS later or not yet serve as a counterfactual for early adopters; same counties before adoption provide the pre-trend baseline.",
+        "required_identifiers": [
+          "county code",
+          "calendar year",
+          "household identifier",
+          "individual age",
+          "rural hukou status"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "agricultural productivity",
+          "land reallocation and rental",
+          "labor supply and retirement",
+          "rural migration",
+          "household consumption",
+          "health and well-being",
+          "savings and investment",
+          "intergenerational transfers"
+        ],
+        "application_outcomes": [
+          "Agricultural productivity, land rental, farm size, labor and machinery use"
+        ],
+        "design_families": [
+          "staggered difference-in-differences at county-year level",
+          "household-level DID with county rollout timing",
+          "regression discontinuity at age 60",
+          "triple-difference comparing age-eligible vs. ineligible households across treated and untreated counties"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Rural households and counties in China observed before and during the 2009-2012 NRPS rollout.",
+        "observation_unit": "county-year or household-year",
+        "geography_level": "county",
+        "time_start": 2005,
+        "time_end": 2015,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "outcome (productivity, land rental, labor supply, etc.)",
+          "county identifier",
+          "calendar year",
+          "household identifier",
+          "individual age",
+          "rural hukou status",
+          "NRPS rollout year by county"
+        ],
+        "required_identifiers": [
+          "county code",
+          "year",
+          "household identifier"
+        ],
+        "treatment_key": [
+          "county code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "age-misreporting",
+        "confounding-policies",
+        "endogenous-rollout-timing",
+        "selective-compliance",
+        "spillovers-and-leakage"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-rural-pension-program-rollout.md"
     },
     {
       "id": "china-rural-tax-fee-reform-expansion",
@@ -3215,6 +4737,11 @@
         "rural-development",
         "local-government",
         "political-economy"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "governance-politics",
+        "public-finance"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -3288,6 +4815,7 @@
           "pre-reform agricultural tax reliance (Phase 2 intensity)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "bundled-fiscal-changes",
         "nonrandom-pilot-selection",
@@ -3318,6 +4846,11 @@
         "education",
         "political-economy",
         "altruism"
+      ],
+      "topics": [
+        "education",
+        "family-demography",
+        "governance-politics"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -3391,6 +4924,7 @@
           "within-family send-down allocation"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "measurement-error",
         "selection-bias"
@@ -3421,6 +4955,10 @@
         "marriage",
         "savings",
         "macroeconomics"
+      ],
+      "topics": [
+        "family-demography",
+        "finance"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -3488,6 +5026,7 @@
           "son-times-sex-ratio interaction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "measurement-error",
         "omitted-variable-bias"
@@ -3515,6 +5054,11 @@
         "international-trade",
         "public-economics",
         "firm-dynamics"
+      ],
+      "topics": [
+        "firms-innovation",
+        "public-finance",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -3588,6 +5132,7 @@
           "China × post-2006 interaction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "confounding-policies",
         "global-financial-crisis",
@@ -3616,6 +5161,9 @@
         "political-economy",
         "institutions",
         "elite-selection"
+      ],
+      "topics": [
+        "governance-politics"
       ],
       "variation_type": "other",
       "time": {
@@ -3685,6 +5233,7 @@
           "total tie count"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "measurement",
         "omitted-variable",
@@ -3715,6 +5264,10 @@
         "state-owned-enterprise",
         "industrial-organization",
         "governance"
+      ],
+      "topics": [
+        "firms-innovation",
+        "governance-politics"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -3787,6 +5340,7 @@
           "distance to oversight government"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "concurrent-reforms",
         "endogenous-timing",
@@ -3797,6 +5351,118 @@
       ],
       "blocker_count": 1,
       "source_path": "variations/china-soe-decentralization.md"
+    },
+    {
+      "id": "china-straw-burning-ban",
+      "name": "China Universal Prohibition on Straw Burning (UPSB) and Crop-Residue Burning Bans",
+      "aliases": [
+        "China straw burning ban",
+        "UPSB policy",
+        "crop residue burning regulation China",
+        "秸秆禁烧"
+      ],
+      "status": "extracted",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "lead-only",
+      "country": "China",
+      "domains": [
+        "environment",
+        "agriculture",
+        "public-health",
+        "pollution",
+        "climate",
+        "rural-development"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "climate-energy",
+        "environment",
+        "health"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 1999,
+        "end": "ongoing"
+      },
+      "assignment": {
+        "unit": "County-year (or province-year) and harvest season; may also be defined at the grid-cell-day level using satellite fire data.",
+        "mechanism": "Spatial and temporal variation in the intensity of the ban and its enforcement. Treatment can be coded as (i) a county/province-year indicator for the intensified campaign period, (ii) a continuous measure of satellite-detected fire-point…",
+        "treatment": "Intensified UPSB enforcement, measured either as a post-campaign indicator interacted with baseline straw production or as satellite-detected fire-point density.",
+        "comparison": "Within-county/province changes over time, compared with localities that experienced weaker enforcement or had lower baseline burning intensity.",
+        "required_identifiers": [
+          "county/province code",
+          "year",
+          "harvest season",
+          "crop type/area"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "air quality",
+          "agricultural productivity",
+          "public health",
+          "water quality",
+          "chemical input use",
+          "greenhouse gas emissions",
+          "rural household behavior"
+        ],
+        "application_outcomes": [
+          "Satellite-detected agricultural fire counts; air pollution (PM2.5, PM10, AQI); water pollution proxies; chemical fertilizer and pesticide use; cost-benefit estimates."
+        ],
+        "design_families": [
+          "Generalized difference-in-differences with county/province and time fixed effects",
+          "Event study around the 2015 intensification and the 2018 Blue Sky reinforcement",
+          "Spatial regression discontinuity at provincial borders with different enforcement intensity",
+          "Wind-direction instrument for downstream air-pollution exposure",
+          "Panel fixed-effects regressions linking fire points to pollution monitors"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Crop-producing counties/provinces in China, with focus on major grain-producing regions and harvest seasons from the early 2000s to the early 2020s.",
+        "observation_unit": "County-year-season or grid-cell-day",
+        "geography_level": "County or province, within China",
+        "time_start": 2000,
+        "time_end": 2024,
+        "minimum_frequency": "annual or seasonal (harvest windows); daily for fire-point and pollution analysis",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "county/province identifier",
+          "year and season",
+          "satellite-detected fire-point counts",
+          "crop area or straw production",
+          "air-pollution readings (PM2.5, PM10, AQI)",
+          "weather variables",
+          "fertilizer and pesticide use or expenditure (for substitution analysis)",
+          "water-quality indicators (for water-pollution analysis)"
+        ],
+        "required_identifiers": [
+          "county/province code",
+          "year",
+          "harvest season"
+        ],
+        "treatment_key": [
+          "county/province code",
+          "year",
+          "harvest season",
+          "post-intensification indicator or fire-point intensity",
+          "baseline straw production/burning intensity"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "general-equilibrium",
+        "measurement-error",
+        "omitted-variable-bias",
+        "parallel-trends-violation",
+        "spillovers"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-straw-burning-ban.md"
     },
     {
       "id": "china-textbook-curriculum-reform",
@@ -3816,6 +5482,10 @@
         "political-economy",
         "ideology",
         "attitudes"
+      ],
+      "topics": [
+        "education",
+        "governance-politics"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -3884,6 +5554,7 @@
           "years of exposure"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "cohort-confounds",
         "endogenous-adoption-timing"
@@ -3913,6 +5584,12 @@
         "migration",
         "productivity",
         "spatial-economics"
+      ],
+      "topics": [
+        "firms-innovation",
+        "infrastructure-urban",
+        "labor-migration",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -3982,6 +5659,7 @@
           "migration cost change"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "measurement-error",
         "model-dependence"
@@ -4013,6 +5691,11 @@
         "firm-entry",
         "industrial-organization",
         "economic-growth"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "trade-globalization"
       ],
       "variation_type": "single-date-reform",
       "time": {
@@ -4088,6 +5771,7 @@
           "interaction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "anticipation-effects",
         "concurrent-policy-changes",
@@ -4099,6 +5783,118 @@
       ],
       "blocker_count": 1,
       "source_path": "variations/china-trade-policy-uncertainty.md"
+    },
+    {
+      "id": "china-universal-two-child-policy",
+      "name": "China's Universal Two-Child Policy (2016)",
+      "aliases": [
+        "Universal Two-Child Policy",
+        "全面两孩政策",
+        "普遍二孩政策",
+        "UTC policy",
+        "Two-Child Policy"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "demography",
+        "family-economics",
+        "labor-economics",
+        "public-policy",
+        "fertility"
+      ],
+      "topics": [
+        "family-demography",
+        "labor-migration"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2016,
+        "end": null
+      },
+      "assignment": {
+        "unit": "woman-year or county-year",
+        "mechanism": "Treatment is legal eligibility to bear a second child under the new universal rule but not under the preceding Single-Only Two-Child Policy. In the primary research application, a woman is coded as treated if she was eligible for a second…",
+        "treatment": "An indicator for being newly eligible for a second child under the UTC policy, interacted with a post-2016 indicator; or a county's share of newly eligible women interacted with a…",
+        "comparison": "Already-eligible women provide the counterfactual trend for newly eligible women, under the assumption that the two groups would have followed parallel fertility paths absent the…",
+        "required_identifiers": [
+          "woman identifier",
+          "calendar year",
+          "parity",
+          "birth history",
+          "county code",
+          "husband only-child status",
+          "urban/rural hukou status",
+          "ethnicity"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "fertility and birth timing",
+          "household consumption and savings",
+          "female labor supply",
+          "maternal health",
+          "child human capital",
+          "marriage and divorce",
+          "fertility desires and intentions"
+        ],
+        "application_outcomes": [
+          "Number of live births per woman (2016-2017) and county-level fertility rates (2016-2020).\n"
+        ],
+        "design_families": [
+          "Individual-level DID with woman fixed effects and province-by-year fixed effects",
+          "County-level DID with county fixed effects and province-by-year fixed effects",
+          "Triple-difference DID using high versus low fertility desire",
+          "Event-study specification around the 2016 reform"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Married women of fertile age in China observed before and after the January 2016 reform, ideally with parity and spouse information.",
+        "observation_unit": "woman-year or county-year",
+        "geography_level": "county",
+        "time_start": 2012,
+        "time_end": 2020,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "number of births in year",
+          "parity as of December 2015",
+          "woman age",
+          "education",
+          "ethnicity",
+          "urban/rural hukou",
+          "work-unit type",
+          "husband characteristics",
+          "county code",
+          "year"
+        ],
+        "required_identifiers": [
+          "woman identifier",
+          "year",
+          "county code"
+        ],
+        "treatment_key": [
+          "woman identifier",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "anticipation-and-leakage",
+        "confounding-by-prior-relaxation",
+        "general-equilibrium-spillovers",
+        "measurement-error",
+        "selective-response"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-universal-two-child-policy.md"
     },
     {
       "id": "china-vat-reform-investment",
@@ -4117,6 +5913,11 @@
         "firm",
         "investment",
         "tax"
+      ],
+      "topics": [
+        "finance",
+        "firms-innovation",
+        "public-finance"
       ],
       "variation_type": "single-date-reform",
       "time": {
@@ -4181,6 +5982,7 @@
           "firm-specific equipment investment intensity"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "anticipation-effects",
         "global-financial-crisis"
@@ -4210,6 +6012,11 @@
         "public-finance",
         "development",
         "governance"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "public-finance"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -4279,6 +6086,7 @@
           "years since first election"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "election-quality-variation",
         "endogenous-adoption-timing"
@@ -4297,15 +6105,21 @@
         "He Wang Zhang watering down regulation",
         "Surface water monitoring China firm TFP"
       ],
-      "status": "extracted",
+      "status": "grounded",
       "knowledge_role": "china-variation",
-      "recommendation_eligibility": "lead-only",
+      "recommendation_eligibility": "conditional-candidate",
       "country": "China",
       "domains": [
         "environment",
         "firm-productivity",
         "regulation",
         "political-economy"
+      ],
+      "topics": [
+        "environment",
+        "firms-innovation",
+        "governance-politics",
+        "law-regulation"
       ],
       "variation_type": "boundary-discontinuity",
       "time": {
@@ -4343,7 +6157,7 @@
           "difference-in-differences (pre/post monitoring station installation)",
           "instrumental variables (distance to monitor as instrument for enforcement intensity)"
         ],
-        "claim_type": null
+        "claim_type": "causal"
       },
       "data_fit": {
         "population": "Water-polluting industrial firms in China, matched between the Annual Survey of Industrial Firms and the Environmental Survey of Polluting Firms, 2000–2014",
@@ -4377,16 +6191,14 @@
           "distance to monitor"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "endogenous-monitor-placement",
         "firm-sorting",
         "spatial-spillovers"
       ],
-      "blocker_codes": [
-        "missing-primary-evidence",
-        "other-readiness-debt"
-      ],
-      "blocker_count": 2,
+      "blocker_codes": [],
+      "blocker_count": 0,
       "source_path": "variations/china-water-quality-monitoring-rd.md"
     },
     {
@@ -4408,6 +6220,12 @@
         "firm",
         "productivity",
         "governance"
+      ],
+      "topics": [
+        "environment",
+        "firms-innovation",
+        "governance-politics",
+        "law-regulation"
       ],
       "variation_type": "boundary-discontinuity",
       "time": {
@@ -4478,6 +6296,7 @@
           "upstream indicator interacted with post-2003 period"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "anticipatory-behavior",
         "firm-sorting",
@@ -4488,6 +6307,122 @@
       ],
       "blocker_count": 1,
       "source_path": "variations/china-water-regulation-enforcement.md"
+    },
+    {
+      "id": "china-workweek-reduction-reform",
+      "name": "China 1995 Workweek Reduction Reform",
+      "aliases": [
+        "China 40-hour workweek reform",
+        "China five-day workweek reform",
+        "国务院关于职工工作时间的规定",
+        "1995年双休制改革"
+      ],
+      "status": "extracted",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "lead-only",
+      "country": "China",
+      "domains": [
+        "labor",
+        "gender",
+        "household-economics",
+        "education",
+        "health",
+        "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "education",
+        "family-demography",
+        "health",
+        "labor-migration"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 1995,
+        "end": 1997
+      },
+      "assignment": {
+        "unit": "Individual-year or household-year in a panel such as the China Health and Nutrition Survey (CHNS).",
+        "mechanism": "Exposure is assigned by employment relationship and sector. Standard-hours employees in state organs, public institutions, and regular enterprises were most tightly bound by the 40-hour cap; employees in approved flexible or shift systems…",
+        "treatment": "Post-1995 indicator interacted with a standard-hours employee dummy.",
+        "comparison": "Within-individual changes over time and between employees covered by the reform and self-employed workers not covered.",
+        "required_identifiers": [
+          "individual ID",
+          "year",
+          "employment status / standard-hours indicator",
+          "household ID",
+          "province"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "time-use",
+          "gender-division-of-labor",
+          "domestic-work",
+          "childcare",
+          "labor-earnings",
+          "occupational-promotion",
+          "education",
+          "health",
+          "household-consumption"
+        ],
+        "application_outcomes": [
+          "Women's and men's time in domestic work, childcare, market work, overtime, educational attainment, occupational promotion, earnings, health, and children's nutrition and schooling."
+        ],
+        "design_families": [
+          "Difference-in-differences comparing standard-hours employees with self-employed workers before and after 1995",
+          "Event-study around the 1995 reform date",
+          "Triple-difference by gender within dual-earner households",
+          "Robustness check replacing the comparison group with non-standard-hours employees"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Working-age individuals and households in China, typically observed in panel surveys spanning the early 1990s to the early 2000s.",
+        "observation_unit": "Individual-year or household-year.",
+        "geography_level": "Individual / household, with province controls.",
+        "time_start": 1989,
+        "time_end": 2011,
+        "minimum_frequency": "biennial or annual panel waves",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "individual and household identifiers",
+          "survey year",
+          "employment status",
+          "weekly work hours",
+          "domestic work and childcare time",
+          "individual wages or earnings",
+          "education level",
+          "self-reported health indicators",
+          "household composition",
+          "province"
+        ],
+        "required_identifiers": [
+          "individual ID",
+          "year",
+          "household ID"
+        ],
+        "treatment_key": [
+          "individual ID",
+          "year",
+          "employment status / standard-hours indicator",
+          "post-1995 indicator"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "general-equilibrium",
+        "measurement-error",
+        "omitted-variable-bias",
+        "parallel-trends-violation",
+        "selection-into-employment-type"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-workweek-reduction-reform.md"
     },
     {
       "id": "china-wto-accession-firm-performance",
@@ -4507,6 +6442,10 @@
         "firm",
         "productivity",
         "industrial-organization"
+      ],
+      "topics": [
+        "firms-innovation",
+        "trade-globalization"
       ],
       "variation_type": "single-date-reform",
       "time": {
@@ -4578,6 +6517,7 @@
           "tariff reduction"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "anticipation-effects",
         "concurrent-reforms"
@@ -4590,6 +6530,225 @@
       "source_path": "variations/china-wto-accession-firm-performance.md"
     },
     {
+      "id": "dell-boundary-discontinuity-method",
+      "name": "Boundary Discontinuity Design (Dell Mining Mita)",
+      "aliases": [
+        "Dell mining mita RD",
+        "geographic regression discontinuity",
+        "spatial boundary discontinuity",
+        "multi-dimensional regression discontinuity"
+      ],
+      "status": "extracted",
+      "knowledge_role": "transferable-method",
+      "recommendation_eligibility": "method-inspiration",
+      "country": "Peru",
+      "domains": [
+        "economic-history",
+        "development",
+        "institutions",
+        "political-economy",
+        "spatial-econometrics",
+        "regional-economics"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "history",
+        "infrastructure-urban"
+      ],
+      "variation_type": "boundary-discontinuity",
+      "time": {
+        "start": 1573,
+        "end": 1812
+      },
+      "assignment": {
+        "unit": "Household or district, depending on outcome data; geographic location measured at the district capital.",
+        "mechanism": "Deterministic and discontinuous assignment based on geographic location relative to the mita boundary. Districts on one side of the boundary were subjected; districts on the other side were exempt.",
+        "treatment": "Mita indicator equal to 1 if the district was inside the catchment boundary and 0 otherwise.",
+        "comparison": "Observations immediately outside the boundary provide the counterfactual for observations immediately inside, under the assumption that expected potential outcomes vary smoothly a…",
+        "required_identifiers": [
+          "geographic coordinates (longitude, latitude) or district identifier",
+          "mita-boundary polygon",
+          "outcome measure",
+          "boundary-segment identifier"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "household-consumption",
+          "child-stunting",
+          "human-capital",
+          "land-tenure",
+          "public-goods-provision",
+          "road-infrastructure",
+          "agricultural-structure",
+          "long-run-development"
+        ],
+        "application_outcomes": [
+          "Equivalent household consumption (ENAHO 2001); child stunting (Ministry of Education height census); hacienda concentration, education, road integration, and subsistence farming."
+        ],
+        "design_families": [
+          "Two-dimensional polynomial in latitude and longitude interacted with the mita indicator",
+          "One-dimensional polynomial in Euclidean distance to Potosi interacted with the mita indicator",
+          "One-dimensional polynomial in distance to the nearest point on the mita boundary",
+          "Nonparametric RD with small bandwidths if georeferenced microdata are available",
+          "Fuzzy RD if assignment was imperfect at the boundary"
+        ],
+        "claim_type": "method-pattern"
+      },
+      "data_fit": {
+        "population": "Geocoded households, districts, or other units located near a sharp historical or administrative boundary.",
+        "observation_unit": "Household or district.",
+        "geography_level": "District capital coordinates or geocoded household coordinates.",
+        "time_start": null,
+        "time_end": null,
+        "minimum_frequency": "cross-sectional",
+        "minimum_pre_periods": 0,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "geographic coordinates or district identifier",
+          "boundary polygon",
+          "outcome of interest",
+          "geographic controls (elevation, slope, soil, climate)",
+          "boundary-segment identifier",
+          "optional pre-boundary covariates for balance tests"
+        ],
+        "required_identifiers": [
+          "unit identifier",
+          "longitude",
+          "latitude"
+        ],
+        "treatment_key": [
+          "unit identifier",
+          "mita indicator",
+          "running variable"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "endogenous-boundary-drawing",
+        "external-validity",
+        "measurement-error-in-boundary",
+        "selective-migration",
+        "spatial-spillovers"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/dell-boundary-discontinuity-method.md"
+    },
+    {
+      "id": "hsieh-klenow-plant-misallocation-method",
+      "name": "Hsieh-Klenow Plant-Level Misallocation Measurement",
+      "aliases": [
+        "Hsieh-Klenow TFPR method",
+        "plant-level misallocation decomposition",
+        "revenue-productivity dispersion method"
+      ],
+      "status": "extracted",
+      "knowledge_role": "transferable-method",
+      "recommendation_eligibility": "method-inspiration",
+      "country": "United States",
+      "domains": [
+        "productivity",
+        "misallocation",
+        "development",
+        "firms",
+        "industrial-organization",
+        "macroeconomics"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 1977,
+        "end": 2005
+      },
+      "assignment": {
+        "unit": "Plant-year or firm-year within a narrowly defined industry.",
+        "mechanism": "Not applicable. The method uses observed cross-sectional plant heterogeneity and a structural model of monopolistic competition; it does not rely on an exogenous treatment assignment.",
+        "treatment": "Not a treatment variable. The key endogenous object is plant-level TFPR, which reflects the combined effect of physical productivity and distortions.",
+        "comparison": "Compare the distribution of TFPR in the study country to the U.S. benchmark, or compare the same country before and after a reform.",
+        "required_identifiers": [
+          "plant or firm identifier",
+          "year",
+          "4-digit industry code",
+          "nominal revenue or value added",
+          "capital stock",
+          "labor compensation or employment",
+          "intermediate inputs (if value added is not directly available)"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "aggregate-productivity",
+          "resource-misallocation",
+          "distortion-measurement",
+          "welfare-gains-from-reform",
+          "firm-heterogeneity",
+          "industrial-policy-evaluation"
+        ],
+        "application_outcomes": [
+          "Aggregate manufacturing TFP and the dispersion of plant-level revenue productivity (TFPR) within 4-digit industries."
+        ],
+        "design_families": [
+          "Cross-country comparison of TFPR dispersion (China/India vs. U.S.)",
+          "Event-study or difference-in-differences of TFPR dispersion before and after a reform",
+          "Decomposition of TFPR variance by observable plant characteristics",
+          "Robustness checks using alternative elasticities of substitution and capital shares"
+        ],
+        "claim_type": "method-pattern"
+      },
+      "data_fit": {
+        "population": "Manufacturing plants or firms in a country with comparable survey data.",
+        "observation_unit": "Plant-year or firm-year.",
+        "geography_level": "Plant / firm, aggregated to industry or country.",
+        "time_start": null,
+        "time_end": null,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 0,
+        "minimum_post_periods": 0,
+        "required_fields": [
+          "plant or firm identifier",
+          "year",
+          "industry code",
+          "nominal revenue or value added",
+          "capital stock",
+          "labor compensation or employment",
+          "intermediate inputs",
+          "ownership status",
+          "age or entry year"
+        ],
+        "required_identifiers": [
+          "plant or firm ID",
+          "year",
+          "industry code"
+        ],
+        "treatment_key": [
+          "plant or firm ID",
+          "year",
+          "industry code",
+          "log TFPR deviation"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "external-validity",
+        "general-equilibrium",
+        "measurement-error",
+        "model-misspecification",
+        "omitted-distortions"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/hsieh-klenow-plant-misallocation-method.md"
+    },
+    {
       "id": "israel-maimonides-rule-class-size",
       "name": "Maimonides' Rule as a Regression Discontinuity Instrument for Class Size in Israeli Public Schools",
       "aliases": [
@@ -4599,12 +6758,17 @@
       ],
       "status": "extracted",
       "knowledge_role": "transferable-method",
-      "recommendation_eligibility": "method-lead",
+      "recommendation_eligibility": "method-inspiration",
       "country": "Israel",
       "domains": [
         "education",
         "labor",
         "human-capital",
+        "public-finance"
+      ],
+      "topics": [
+        "education",
+        "labor-migration",
         "public-finance"
       ],
       "variation_type": "eligibility-threshold",
@@ -4642,7 +6806,7 @@
           "parametric and nonparametric RD estimation",
           "donut-hole RD (excluding observations very near the threshold to address potential sorting)"
         ],
-        "claim_type": null
+        "claim_type": "method-pattern"
       },
       "data_fit": {
         "population": "3rd, 4th, and 5th grade students in Israeli public schools, observed in 1991 and 1992",
@@ -4676,6 +6840,7 @@
           "predicted class size"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "external-validity",
         "functional-form-sensitivity",
@@ -4683,11 +6848,123 @@
         "sorting-around-threshold"
       ],
       "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 1,
+      "source_path": "variations/israel-maimonides-rule-class-size.md"
+    },
+    {
+      "id": "land-gradient-iv-infrastructure-rollout",
+      "name": "Topographic-Cost Instrumental Variable for Infrastructure Rollout (Dinkelman)",
+      "aliases": [
+        "land gradient IV",
+        "topographic cost instrument",
+        "rural electrification instrument",
+        "infrastructure placement IV",
+        "Dinkelman electrification IV"
+      ],
+      "status": "extracted",
+      "knowledge_role": "transferable-method",
+      "recommendation_eligibility": "method-inspiration",
+      "country": "South Africa",
+      "domains": [
+        "infrastructure",
+        "energy",
+        "development",
+        "labor",
+        "instrumental-variables",
+        "economic-geography"
+      ],
+      "topics": [
+        "climate-energy",
+        "development-poverty",
+        "infrastructure-urban",
+        "labor-migration"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 1996,
+        "end": 2001
+      },
+      "assignment": {
+        "unit": "Community or village-year.",
+        "mechanism": "Not randomized. The instrument exploits variation in terrain slope across communities as a cost shifter that affects the order or probability of electrification, conditional on district fixed effects and baseline controls.",
+        "treatment": "Observed community-level infrastructure placement or access indicator.",
+        "comparison": "Compare communities with similar cost-driven rollout probabilities but different actual placement, using terrain as the exogenous cost shifter.",
+        "required_identifiers": [
+          "community identifier",
+          "year",
+          "terrain gradient or slope",
+          "infrastructure placement indicator"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "employment",
+          "labor-force-participation",
+          "female-employment",
+          "time-use",
+          "household-energy-use",
+          "microenterprise-development",
+          "migration",
+          "wages"
+        ],
+        "application_outcomes": [
+          "Female and male employment rates, hours worked, wages, energy use, migration."
+        ],
+        "design_families": [
+          "Two-stage least squares with terrain gradient as the instrument for electrification",
+          "Panel community fixed-effects IV with gradient interacted with time",
+          "Limited-information maximum likelihood or weak-IV robust Anderson-Rubin confidence intervals",
+          "Placebo tests using pre-existing infrastructure or non-treated communities",
+          "Extensions to other infrastructure types (roads, railways, broadband, pipelines)"
+        ],
+        "claim_type": "method-pattern"
+      },
+      "data_fit": {
+        "population": "Communities or villages experiencing an infrastructure rollout in a setting where terrain affects construction cost.",
+        "observation_unit": "Community-year or village-year.",
+        "geography_level": "Community / village.",
+        "time_start": null,
+        "time_end": null,
+        "minimum_frequency": "annual or cross-sectional with two waves",
+        "minimum_pre_periods": 1,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "community identifier",
+          "year",
+          "terrain gradient or slope from DEM",
+          "infrastructure placement or access indicator",
+          "outcome of interest",
+          "baseline community characteristics",
+          "road access and other infrastructure controls",
+          "district or region identifier"
+        ],
+        "required_identifiers": [
+          "community ID",
+          "year"
+        ],
+        "treatment_key": [
+          "community ID",
+          "year",
+          "infrastructure placement indicator",
+          "terrain gradient"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "exclusion-restriction-violation",
+        "external-validity",
+        "measurement-error",
+        "post-instrument-bad-control",
+        "weak-instrument"
+      ],
+      "blocker_codes": [
         "other-readiness-debt",
         "transfer-not-audited"
       ],
-      "blocker_count": 2,
-      "source_path": "variations/israel-maimonides-rule-class-size.md"
+      "blocker_count": 3,
+      "source_path": "variations/land-gradient-iv-infrastructure-rollout.md"
     },
     {
       "id": "old-world-potato-introduction",
@@ -4708,6 +6985,14 @@
         "economic-history",
         "development",
         "trade"
+      ],
+      "topics": [
+        "agriculture-rural",
+        "development-poverty",
+        "family-demography",
+        "history",
+        "infrastructure-urban",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -4778,6 +7063,7 @@
           "potato suitability × post-1700 indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "correlated-crop-suitability",
         "differential-pre-trends",
@@ -4799,7 +7085,7 @@
         "PM2.5 mortality wind IV",
         "Deryugina air pollution Medicare"
       ],
-      "status": "extracted",
+      "status": "grounded",
       "knowledge_role": "transferable-method",
       "recommendation_eligibility": "method-inspiration",
       "country": "United States",
@@ -4809,6 +7095,11 @@
         "public-finance",
         "mortality",
         "healthcare-costs"
+      ],
+      "topics": [
+        "environment",
+        "health",
+        "public-finance"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -4879,6 +7170,7 @@
           "monitor group"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "china-data-availability",
         "exclusion-restriction-violation",
@@ -4911,6 +7203,12 @@
         "manufacturing",
         "local-economy",
         "public-finance"
+      ],
+      "topics": [
+        "firms-innovation",
+        "labor-migration",
+        "public-finance",
+        "trade-globalization"
       ],
       "variation_type": "continuous-exposure",
       "time": {
@@ -4974,6 +7272,7 @@
           "industry-based import exposure instrument"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "correlated-demand-shocks",
         "endogenous-industry-specialization",
@@ -5006,6 +7305,13 @@
         "development",
         "human-capital",
         "economic-history"
+      ],
+      "topics": [
+        "development-poverty",
+        "education",
+        "health",
+        "history",
+        "labor-migration"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -5073,6 +7379,7 @@
           "pre-campaign infection rate × post-campaign cohort indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "cohort-definition",
         "contemporaneous-investments",
@@ -5104,6 +7411,11 @@
         "insurance",
         "maternal-health",
         "infant-health"
+      ],
+      "topics": [
+        "finance",
+        "health",
+        "public-finance"
       ],
       "variation_type": "staggered-rollout",
       "time": {
@@ -5177,6 +7489,7 @@
           "eligibility indicator"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "contemporaneous-policies",
         "crowd-out",
@@ -5208,6 +7521,10 @@
         "public-finance",
         "healthcare-spending",
         "hospital-markets"
+      ],
+      "topics": [
+        "health",
+        "public-finance"
       ],
       "variation_type": "single-date-reform",
       "time": {
@@ -5277,6 +7594,7 @@
           "elderly population share"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "data-limitations-pre-1965",
         "differential-time-trends",
@@ -5309,6 +7627,12 @@
         "urban",
         "health",
         "intergenerational-mobility"
+      ],
+      "topics": [
+        "education",
+        "health",
+        "infrastructure-urban",
+        "labor-migration"
       ],
       "variation_type": "pilot-assignment",
       "time": {
@@ -5380,6 +7704,7 @@
           "child age at randomization"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "age-heterogeneity-misinterpretation",
         "general-equilibrium-effects",
@@ -5392,6 +7717,115 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/us-moving-to-opportunity-experiment.md"
+    },
+    {
+      "id": "us-railroad-market-access-method",
+      "name": "Railroad Market Access Method (Donaldson-Hornbeck)",
+      "aliases": [
+        "Donaldson-Hornbeck market access",
+        "transportation network market access",
+        "railroad market access instrument"
+      ],
+      "status": "extracted",
+      "knowledge_role": "transferable-method",
+      "recommendation_eligibility": "method-inspiration",
+      "country": "United States",
+      "domains": [
+        "transportation",
+        "trade",
+        "regional-economics",
+        "economic-history",
+        "development",
+        "urban-economics"
+      ],
+      "topics": [
+        "development-poverty",
+        "history",
+        "infrastructure-urban",
+        "trade-globalization"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 1870,
+        "end": 1890
+      },
+      "assignment": {
+        "unit": "County-year (or analogous region-year).",
+        "mechanism": "Not randomized. The method exploits the differential exposure of counties to changes in the national transportation network. Counties whose market access increases more when a new line is built experience a larger shock to trade opportunit…",
+        "treatment": "Continuous market-access term (level or change) derived from the transportation network.",
+        "comparison": "Compare counties that experienced larger increases in market access with counties that experienced smaller increases, conditional on baseline observables and fixed effects.",
+        "required_identifiers": [
+          "county or region identifier",
+          "year",
+          "transport network (links and costs)",
+          "source-region productivity or size",
+          "bilateral trade-cost matrix"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "agricultural-land-values",
+          "regional-income",
+          "trade-volumes",
+          "population-growth",
+          "industrial-location",
+          "urbanization",
+          "wage-levels"
+        ],
+        "application_outcomes": [
+          "Agricultural land value per acre; aggregate value of U.S. agricultural land."
+        ],
+        "design_families": [
+          "Panel regression of county outcomes on market access with county and year fixed effects",
+          "Cross-sectional regression of land values on 1890 market access controlling for 1870 values or geographic controls",
+          "Counterfactual simulation removing all railroads or specific lines",
+          "Instrumental-variable strategy using planned-but-unbuilt lines as instruments for actual market access",
+          "Application to Chinese highway or high-speed rail network expansion"
+        ],
+        "claim_type": "method-pattern"
+      },
+      "data_fit": {
+        "population": "Counties or comparable regions in a country with a measurable transport network.",
+        "observation_unit": "County-year or region-year.",
+        "geography_level": "County / region.",
+        "time_start": null,
+        "time_end": null,
+        "minimum_frequency": "decennial or annual",
+        "minimum_pre_periods": 1,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "region identifier",
+          "year",
+          "transport network links (rail, road, water)",
+          "link quality or cost",
+          "source-region size and productivity proxies",
+          "bilateral trade-cost matrix",
+          "local outcome (land value, income, employment, output)",
+          "geographic controls (elevation, distance to coast, rivers)"
+        ],
+        "required_identifiers": [
+          "region ID",
+          "year"
+        ],
+        "treatment_key": [
+          "region ID",
+          "year",
+          "market access level or change"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "endogenous-network-placement",
+        "external-validity",
+        "measurement-error-in-network",
+        "model-misspecification",
+        "spatial-spillovers"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/us-railroad-market-access-method.md"
     },
     {
       "id": "us-tuskegee-study-disclosure",
@@ -5412,6 +7846,9 @@
         "mortality",
         "healthcare-utilization",
         "race"
+      ],
+      "topics": [
+        "health"
       ],
       "variation_type": "event-shock",
       "time": {
@@ -5484,6 +7921,7 @@
           "Alabama (optional)"
         ]
       },
+      "design_profiles": [],
       "threat_types": [
         "contemporaneous-shocks",
         "measurement-of-trust",

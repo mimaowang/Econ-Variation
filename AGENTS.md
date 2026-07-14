@@ -14,9 +14,13 @@ For **knowledge maintenance**, read the relevant sections of `guides/operations.
 
 Triage one source per `screen` task. Screen may only produce `candidate`, `skipped`, or `blocked`; it cannot change canonical files. A retained source gets a durable candidate and a separate follow-up task. Resolve variation identity before extraction: one canonical case contains one instrument, implementation regime, and primary assignment mechanism.
 
+Candidate follow-up tasks are created automatically when a retained screen task completes. Claim, release, retry, failure, and completion keep the linked candidate status synchronized. Prefer queued China-facing resolve/ground work over overseas method screening unless the user names a method or a demonstrated coverage gap justifies it.
+
 Every paper receives exactly one role: `china-variation`, `global-china-variation`, `transferable-method`, or skip. Never retain an overseas policy merely because its paper is prestigious, and never present a transferable method as a Chinese shock.
 
 Canonical records live only in `variations/`. Touched records must use precise evidence field paths; verified or reported evidence needs the inspected access level and locator. Search snippets and unsupported web-search prose are not evidence. Separate verified facts, source-reported claims, and analytical inference. Preserve uncertainty and blockers; never raise maturity to make a result look complete.
+
+Use stable topics from `schema/topics.yaml` for recall while preserving detailed record domains. When one variation supports materially different units, frequencies, or field requirements, add a small number of `design_profiles`; do not combine every possible design's fields into one mandatory list.
 
 Finish through the task lifecycle and quality gate. Generated files are outputs. Do not edit frozen `legacy-untracked` records without assigning a real task provenance. Do not store credentials, restricted documents, copyrighted papers, personal data, or sensitive query URLs.
 

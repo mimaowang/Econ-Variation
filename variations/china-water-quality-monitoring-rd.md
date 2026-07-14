@@ -1,15 +1,15 @@
 ---
 schema_version: 2
 id: china-water-quality-monitoring-rd
-name: Spatial Regression Discontinuity in China's Water Quality Monitoring System — Upstream vs Downstream Firm Regulation
+name: Spatial Regression Discontinuity in China's Water Quality Monitoring System
+  — Upstream vs Downstream Firm Regulation
 aliases:
 - Water quality monitoring upstream RDD
 - He Wang Zhang watering down regulation
 - Surface water monitoring China firm TFP
-
-status: extracted
+status: grounded
 provenance:
-  task_id: task-27815780789b
+  task_id: task-a9b8d963d5ce
 scope:
   country: China
   regions:
@@ -21,22 +21,31 @@ scope:
   - political-economy
   variation_type: boundary-discontinuity
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: The fixed location of national water-quality monitoring stations
+    creates a sharp upstream-downstream discontinuity in regulatory enforcement for
+    Chinese polluting firms, supporting spatial RD designs for firm TFP, emissions,
+    and survival.
 identity:
-  instrument: China's surface water quality monitoring system — local officials are evaluated based on pollutant readings
-    at downstream monitoring stations, but these stations only capture pollution from upstream firms; this creates a spatial
-    regression discontinuity where firms immediately upstream of a monitor face much stricter environmental enforcement than
-    those immediately downstream
+  instrument: China's surface water quality monitoring system — local officials are
+    evaluated based on pollutant readings at downstream monitoring stations, but these
+    stations only capture pollution from upstream firms; this creates a spatial regression
+    discontinuity where firms immediately upstream of a monitor face much stricter
+    environmental enforcement than those immediately downstream
   authority: Ministry of Environmental Protection (now Ministry of Ecology and Environment)
   legal_identifiers:
-  - Surface Water Quality Monitoring regulations under China's Environmental Protection Law
-  implementation_regime: Water quality is monitored at fixed stations along major rivers; local officials' performance evaluations
-    are tied to readings at these stations; because monitors capture upstream but not downstream pollution, enforcement is
-    spatially asymmetric
-  assignment_mechanism: A firm's location relative to the nearest downstream water quality monitor — whether it lies just
-    upstream (within the monitored catchment) or just downstream (outside the monitored catchment) — determines regulatory
-    stringency; this location is determined by the fixed placement of monitoring stations
+  - State Environmental Protection Administration, 《关于印发〈国家环境质量监测网地表水监测断面〉的通知》（环发〔2003〕3号）,
+    6 Jan 2003
+  - State Council, 《国务院关于落实科学发展观加强环境保护的决定》（国发〔2005〕39号）, 3 Dec 2005
+  - General Office of the State Council, 《重点流域水污染防治专项规划实施情况考核暂行办法》（国办发〔2009〕38号）,
+    25 Apr 2009
+  implementation_regime: Water quality is monitored at fixed stations along major
+    rivers; local officials' performance evaluations are tied to readings at these
+    stations; because monitors capture upstream but not downstream pollution, enforcement
+    is spatially asymmetric
+  assignment_mechanism: A firm's location relative to the nearest downstream water
+    quality monitor — whether it lies just upstream (within the monitored catchment)
+    or just downstream (outside the monitored catchment) — determines regulatory stringency;
+    this location is determined by the fixed placement of monitoring stations
   parent: null
   related_variations:
   - china-water-regulation-enforcement
@@ -45,27 +54,35 @@ timeline:
   effective: null
   implementation_start: 2000
   implementation_end: 2014
-  local_timing: The monitoring network was progressively expanded; the main RD analysis period is 2000–2007, and the enforcement
-    regime analysis extends through 2014 under the 9th, 10th, 11th, and 12th Five-Year Plans
-  anticipation: Firm location decisions may be influenced by knowledge of monitoring station locations; however, many stations
-    were placed after existing firms were already located
-  last_verified: '2026-07-13'
+  local_timing: The monitoring network was progressively expanded; the main RD analysis
+    period is 2000–2007, and the enforcement regime analysis extends through 2014
+    under the 9th, 10th, 11th, and 12th Five-Year Plans
+  anticipation: Firm location decisions may be influenced by knowledge of monitoring
+    station locations; however, many stations were placed after existing firms were
+    already located
+  last_verified: '2026-07-14'
 assignment:
   unit: Firm
-  treated: Polluting firms located immediately upstream of a surface water quality monitoring station — their pollution is
-    captured by the monitor and they face strict enforcement of COD (Chemical Oxygen Demand) emissions limits
-  comparison_pool: Polluting firms located immediately downstream of the same monitoring station — their pollution is NOT
-    captured by the monitor and enforcement is substantially weaker
-  rule: A firm's distance to the nearest downstream monitoring station determines whether it falls within the monitored catchment;
-    firms within ~5–10 km upstream are "treated" with stricter regulation
-  intensity: The treatment intensity decays with distance upstream from the monitor; enforcement is strongest in the immediate
-    upstream vicinity (within ~5 km) and weakens at greater distances
+  treated: Polluting firms located immediately upstream of a surface water quality
+    monitoring station — their pollution is captured by the monitor and they face
+    strict enforcement of COD (Chemical Oxygen Demand) emissions limits
+  comparison_pool: Polluting firms located immediately downstream of the same monitoring
+    station — their pollution is NOT captured by the monitor and enforcement is substantially
+    weaker
+  rule: A firm's distance to the nearest downstream monitoring station determines
+    whether it falls within the monitored catchment; firms within ~5–10 km upstream
+    are "treated" with stricter regulation
+  intensity: The treatment intensity decays with distance upstream from the monitor;
+    enforcement is strongest in the immediate upstream vicinity (within ~5 km) and
+    weakens at greater distances
   exemptions: []
-  compliance: Regulatory enforcement is imperfect — local officials balance environmental targets against economic and employment
-    goals, but the monitor creates a sharp incentive gradient
-  exposure_construction: For each firm, compute the geographic coordinates and the distance to the nearest downstream water
-    quality monitoring station along the river system; code firms as upstream or downstream; use distance to the monitor as
-    the forcing variable in a spatial RD
+  compliance: Regulatory enforcement is imperfect — local officials balance environmental
+    targets against economic and employment goals, but the monitor creates a sharp
+    incentive gradient
+  exposure_construction: For each firm, compute the geographic coordinates and the
+    distance to the nearest downstream water quality monitoring station along the
+    river system; code firms as upstream or downstream; use distance to the monitor
+    as the forcing variable in a spatial RD
   required_identifiers:
   - firm ID or name
   - geographic coordinates
@@ -73,8 +90,9 @@ assignment:
   - distance to nearest downstream water quality monitor
   - river basin
   - calendar year
-  spillovers: Tighter regulation upstream may cause polluting firms to relocate downstream (spatial spillovers); competition
-    effects may shift production from regulated to unregulated firms in the same industry
+  spillovers: Tighter regulation upstream may cause polluting firms to relocate downstream
+    (spatial spillovers); competition effects may shift production from regulated
+    to unregulated firms in the same industry
 research_compatibility:
   outcome_domains:
   - firm TFP
@@ -96,12 +114,14 @@ research_compatibility:
   - output reduction
   - firm exit
   - spatial relocation
-  - local official career incentives (promotion evaluation tied to monitored water quality)
+  - local official career incentives (promotion evaluation tied to monitored water
+    quality)
   - regulatory enforcement intensity variation
   best_for:
   - Estimating the firm-level costs of environmental regulation
   - Spatial RD designs with geographic forcing variables
-  - Outcomes observable in Chinese firm-level datasets (Annual Survey of Industrial Firms, Environmental Survey)
+  - Outcomes observable in Chinese firm-level datasets (Annual Survey of Industrial
+    Firms, Environmental Survey)
   not_good_for:
   - Non-point-source pollution (agricultural runoff)
   - Firms not in the Environmental Survey reporting system
@@ -116,36 +136,47 @@ design:
   - spatial regression discontinuity (distance to nearest downstream monitor)
   - difference-in-differences (pre/post monitoring station installation)
   - instrumental variables (distance to monitor as instrument for enforcement intensity)
-  identifying_variation: Discontinuous change in regulatory stringency at each monitoring station location — firms just upstream
-    of a monitor face much stricter enforcement than firms just downstream, driven by the monitor's catchment geometry
+  identifying_variation: Discontinuous change in regulatory stringency at each monitoring
+    station location — firms just upstream of a monitor face much stricter enforcement
+    than firms just downstream, driven by the monitor's catchment geometry
   assumptions:
-  - Firm location is smooth around monitoring station locations (no sorting just upstream vs downstream of a monitor)
-  - Monitoring station locations are exogenous to the characteristics of individual upstream firms
-  - The pollution measurement technology accurately captures upstream but not downstream pollution
+  - Firm location is smooth around monitoring station locations (no sorting just upstream
+    vs downstream of a monitor)
+  - Monitoring station locations are exogenous to the characteristics of individual
+    upstream firms
+  - The pollution measurement technology accurately captures upstream but not downstream
+    pollution
   - No differential shocks to upstream vs downstream firms other than regulation
   diagnostics:
-  - Test for smoothness of firm density and observable characteristics around monitoring stations
+  - Test for smoothness of firm density and observable characteristics around monitoring
+    stations
   - Plot TFP and COD emissions against distance to the monitor
   - Estimate with alternative bandwidths
   - Use alternative measures of regulatory stringency
   - Examine whether effects vary by local officials' promotion incentives
   - Test for firm relocation around monitoring stations
-  primary_strategy: Spatial regression discontinuity using distance to the nearest downstream water quality monitor as the
-    forcing variable; the cutoff is the monitor location (upstream = treated with strict enforcement, downstream = control
-    with weak enforcement)
-  estimand: The causal effect of the recorded exposure on Firm TFP, COD emissions, firm survival, output, employment, conditional
-    on the stated design assumptions.
-  treatment_variable: Firm location upstream versus downstream of the nearest water quality monitoring station, interacted
-    with distance to the monitor in a spatial RD
-  comparison_logic: Firms just downstream versus just upstream of the same monitoring station, controlling for distance
-  estimation_notes: Spatial regression discontinuity using distance to the nearest downstream water quality monitor as the
-    forcing variable; the cutoff is the monitor location (upstream = treated with strict enforcement, downstream = control
-    with weak enforcement)
+  primary_strategy: Spatial regression discontinuity using distance to the nearest
+    downstream water quality monitor as the forcing variable; the cutoff is the monitor
+    location (upstream = treated with strict enforcement, downstream = control with
+    weak enforcement)
+  estimand: The effect of the recorded exposure on firm TFP, COD emissions, firm survival,
+    output, and employment, conditional on the stated design assumptions.
+  treatment_variable: Firm location upstream versus downstream of the nearest water
+    quality monitoring station, interacted with distance to the monitor in a spatial
+    RD
+  comparison_logic: Firms just downstream versus just upstream of the same monitoring
+    station, controlling for distance
+  estimation_notes: Spatial regression discontinuity using distance to the nearest
+    downstream water quality monitor as the forcing variable; the cutoff is the monitor
+    location (upstream = treated with strict enforcement, downstream = control with
+    weak enforcement)
+  claim_type: causal
 threats:
 - type: endogenous-monitor-placement
   basis: inferred
-  condition: If monitoring stations are placed precisely where polluting firms are concentrated (to measure them), the RD
-    is invalid because station placement is endogenous to firm characteristics
+  condition: If monitoring stations are placed precisely where polluting firms are
+    concentrated (to measure them), the RD is invalid because station placement is
+    endogenous to firm characteristics
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -154,8 +185,8 @@ threats:
   - analyze within-river segment variation
 - type: firm-sorting
   basis: inferred
-  condition: New firms may choose to locate downstream of monitors to avoid regulation; existing firms may relocate; this
-    sorting would confound the RD estimates
+  condition: New firms may choose to locate downstream of monitors to avoid regulation;
+    existing firms may relocate; this sorting would confound the RD estimates
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -164,8 +195,9 @@ threats:
   - examine firm relocation patterns
 - type: spatial-spillovers
   basis: inferred
-  condition: Pollution discharged upstream affects downstream water quality (spatial externality); reduced output by regulated
-    upstream firms may benefit unregulated downstream competitors
+  condition: Pollution discharged upstream affects downstream water quality (spatial
+    externality); reduced output by regulated upstream firms may benefit unregulated
+    downstream competitors
   evidence_refs:
   - E1
   possible_diagnostics:
@@ -174,10 +206,11 @@ threats:
   - test for within-industry general equilibrium effects
 empirical_requirements:
   contract_version: 1
-  population: Water-polluting industrial firms in China, matched between the Annual Survey of Industrial Firms and the Environmental
-    Survey of Polluting Firms, 2000–2014
+  population: Water-polluting industrial firms in China, matched between the Annual
+    Survey of Industrial Firms and the Environmental Survey of Polluting Firms, 2000–2014
   observation_unit: Firm-year
-  geography_level: Firm-level geographic coordinates, linked to river network and monitoring station locations
+  geography_level: Firm-level geographic coordinates, linked to river network and
+    monitoring station locations
   time_start: 2000
   time_end: 2014
   minimum_frequency: annual
@@ -202,8 +235,9 @@ empirical_requirements:
   - monitoring station coordinates
   - upstream/downstream indicator
   - distance to monitor
-  treatment_source: MEP water quality monitoring station data; Annual Survey of Industrial Firms (NBS); Environmental Survey
-    of Polluting Firms (MEP); river network GIS data
+  treatment_source: MEP water quality monitoring station data; Annual Survey of Industrial
+    Firms (NBS); Environmental Survey of Polluting Firms (MEP); river network GIS
+    data
   measurement_risks:
   - firm coordinates may be imprecise (registered vs actual address)
   - monitoring station locations may change over time
@@ -213,35 +247,86 @@ empirical_requirements:
 evidence:
 - id: E1
   source_type: paper
-  citation: 'He, Guojun, Shaoda Wang, and Bing Zhang. 2020. "Watering Down Environmental Regulation in China." Quarterly Journal
-    of Economics 135 (4): 2135–2185.'
+  citation: 'He, Guojun, Shaoda Wang, and Bing Zhang. 2020. "Watering Down Environmental
+    Regulation in China." Quarterly Journal of Economics 135 (4): 2135–2185.'
   url: https://doi.org/10.1093/qje/qjaa024
   date: 2020
   supports:
   - identity
   - assignment
   - design
-  - spatial RD
-  - firm TFP effects
-  - COD emissions estimates
-  - cost calculation
+  - research_compatibility
+  - empirical_requirements
+  - design_applications
   verification_status: verified
+  access_level: full-text
+  locator: Full article via DOI
+- id: E2
+  source_type: policy-document
+  citation: State Council of China. 2005. "Decision on Implementing the Scientific
+    Outlook on Development and Strengthening Environmental Protection" (国务院关于落实科学发展观加强环境保护的决定).
+    Guo Fa No. 39 (国发〔2005〕39号), December 3, 2005.
+  url: https://www.gov.cn/zwgk/2005-12/13/content_125680.htm
+  date: '2005-12-03'
+  supports:
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: Official State Council decision; establishes the environmental target responsibility
+    system and incorporates environmental targets into official performance evaluation.
+- id: E3
+  source_type: policy-document
+  citation: State Environmental Protection Administration. 2003. "Notice on Printing
+    and Distributing the National Surface Water Quality Monitoring Network Sections"
+    (关于印发《国家环境质量监测网地表水监测断面》的通知). Huan Fa No. 3 (环发〔2003〕3号), January 6, 2003.
+  url: https://www.mee.gov.cn/gkml/zj/wj/200910/t20091022_172154.htm
+  date: '2003-01-06'
+  supports:
+  - identity
+  - timeline
+  verification_status: verified
+  access_level: official-document
+  locator: Official MEP notice; adjusts the national surface water monitoring sections
+    and requires their use for basin water quality monitoring from January 2003.
+- id: E4
+  source_type: policy-document
+  citation: General Office of the State Council. 2009. "Interim Measures for Assessing
+    Implementation of Key River Basin Water Pollution Prevention Special Plans" (重点流域水污染防治专项规划实施情况考核暂行办法).
+    Guo Ban Fa No. 38 (国办发〔2009〕38号), April 25, 2009.
+  url: http://www.qinghai.gov.cn/xxgk/xxgk/qhzb/qhzb2009/201712/P020171204356648902950.pdf
+  date: '2009-04-25'
+  supports:
+  - assignment
+  verification_status: verified
+  access_level: official-document
+  locator: Qinghai provincial government archive of the State Council notice; Article
+    4 defines water-quality indicators at assessment sections as the basis for provincial-government
+    accountability.
 design_applications:
 - paper: Watering Down Environmental Regulation in China
   doi: 10.1093/qje/qjaa024
   journal: Quarterly Journal of Economics
   year: 2020
-  research_question: What is the effect of water pollution regulation on firm-level total factor productivity in China, exploiting
-    spatial discontinuities in enforcement created by the water quality monitoring system?
+  research_question: What is the effect of water pollution regulation on firm-level
+    total factor productivity in China, exploiting spatial discontinuities in enforcement
+    created by the water quality monitoring system?
   population: Water-polluting industrial firms in China, 2000–2007
   outcome: Firm TFP, COD emissions, firm survival, output, employment
-  data_used: []
-  treatment_encoding: Firm location upstream versus downstream of the nearest water quality monitoring station, interacted
-    with distance to the monitor in a spatial RD
-  comparison: Firms just downstream versus just upstream of the same monitoring station, controlling for distance
-  empirical_design: Spatial regression discontinuity using distance to the nearest downstream water quality monitor as the
-    forcing variable; the cutoff is the monitor location (upstream = treated with strict enforcement, downstream = control
-    with weak enforcement)
+  data_used:
+  - Annual Survey of Industrial Firms (NBS)
+  - Environmental Survey of Polluting Firms (MEP)
+  - MEP national surface water quality monitoring station coordinates and readings
+  - China river network GIS data
+  - Prefecture-level official career-incentive and leadership data
+  treatment_encoding: Firm location upstream versus downstream of the nearest water
+    quality monitoring station, interacted with distance to the monitor in a spatial
+    RD
+  comparison: Firms just downstream versus just upstream of the same monitoring station,
+    controlling for distance
+  empirical_design: Spatial regression discontinuity using distance to the nearest
+    downstream water quality monitor as the forcing variable; the cutoff is the monitor
+    location (upstream = treated with strict enforcement, downstream = control with
+    weak enforcement)
   assumptions:
   - firm location is smooth around monitors
   - monitors are exogenously placed
@@ -254,10 +339,7 @@ design_applications:
   - alternative explanations via multiple specifications
   evidence_refs:
   - E1
-readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+readiness_blockers: []
 method_transfer: null
 ---
 ## Institutional Background
