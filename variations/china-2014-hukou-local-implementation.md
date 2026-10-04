@@ -9,7 +9,7 @@ aliases:
 
 status: contested
 provenance:
-  task_id: task-38231c93e3c3
+  task_id: task-364b55fe5b53
 scope:
   country: China
   regions:
@@ -77,7 +77,7 @@ timeline:
     National New-Type Urbanization Plan, so agents could anticipate change in broad
     terms. The exact timing and content of local measures, however, were not fully known
     in advance, especially for non-megacities.
-  last_verified: '2026-07-13'
+  last_verified: '2026-09-28'
 assignment:
   unit: City-year or individual-year, depending on the design
   treated: >
@@ -332,11 +332,12 @@ evidence:
   url: https://www.ndrc.gov.cn/xwdt/ztzl/xxczhjs/ghzc/201605/t20160505_971903.html
   date: '2014-07-24'
   supports:
-  - identity
-  - timeline
-  - assignment
-  - design
-  - threats
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
+  - assignment.rule
+  - assignment.compliance
   verification_status: verified
   access_level: official-document
   locator: >
@@ -354,9 +355,16 @@ evidence:
   url: https://doi.org/10.1086/722620
   date: 2024
   supports:
-  - design_applications
-  - assignment
-  - design
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.comparison_logic
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
   verification_status: reported
   access_level: full-text
   locator: >
@@ -372,9 +380,16 @@ evidence:
   url: https://doi.org/10.1186/s12889-025-21753-0
   date: 2025
   supports:
-  - design_applications
-  - assignment
-  - timeline
+  - timeline.local_timing
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
   verification_status: reported
   access_level: full-text
   locator: >
@@ -391,14 +406,54 @@ evidence:
   url: https://doi.org/10.1016/j.chieco.2023.102040
   date: 2023
   supports:
-  - design_applications
-  - assignment
+  - timeline.local_timing
+  - assignment.rule
+  - assignment.exposure_construction
   verification_status: reported
   access_level: full-text
   locator: >
     Exploits city-by-city rollout of the 2014 hukou reform after manually collecting
     implementation timing for 311 Chinese cities; uses CMDS 2011–2017; supports existence
     of staggered local adoption as an assignment structure.
+- id: E5
+  source_type: paper
+  citation: >
+    Jiang, Ye, and Yue Yin. 2026. "Delinking Social Identity From Rural-Urban
+    Stereotypes: The Labor Market Effects of Abolishing Agricultural Hukou in China."
+    Journal of Regional Science 66(3):746-765. DOI: 10.1111/jors.70032.
+  url: https://doi.org/10.1111/jors.70032
+  date: 2026
+  supports:
+  - timeline.local_timing
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.exemptions
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.comparison_logic
+  - design.estimation_notes
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
+  - empirical_requirements.required_fields
+  verification_status: verified
+  access_level: full-text
+  locator: >
+    Inspected open-access article, sections 2.2, 3, and 4 plus Appendix references.
+    It uses five repeated CGSS cross-sections (2010-2013 and 2015) in 89 anonymized
+    survey cities. Rather than linking named local notices, it infers each city's
+    adoption year as the first survey year with a respondent observed to have changed
+    from agricultural to residential hukou: 32 cities in 2010, 16 in 2011, 20 in
+    2012, 6 in 2013, 9 in 2015, and six after 2015 (coded never-treated in its sample).
+    The article explicitly says city names and precise locations are confidential,
+    excludes residents whose hukou is registered elsewhere and same-year registrants,
+    and estimates city and year fixed-effect DID with city-clustered standard errors,
+    event studies, and a native-born robustness sample. This is a paper-specific
+    respondent-observation proxy for reform timing, not verified legal adoption dates
+    or a reusable named-city treatment roster.
 design_applications:
 - paper: 'The Local Labor Market Effect of Relaxing Internal Migration Restrictions:
     Evidence from China'
@@ -453,6 +508,51 @@ design_applications:
   - placebo using urban migrants
   evidence_refs:
   - E3
+- paper: 'Delinking Social Identity From Rural-Urban Stereotypes: The Labor Market Effects
+    of Abolishing Agricultural Hukou in China'
+  doi: 10.1111/jors.70032
+  journal: Journal of Regional Science
+  year: 2026
+  research_question: >
+    How did paper-inferred local abolition of the agricultural/nonagricultural hukou
+    distinction affect earnings and employment for rural stayers, rural-urban migrants,
+    and urban incumbents?
+  population: >
+    Adults in five repeated CGSS cross-sections (2010-2013 and 2015) across 89
+    anonymized survey cities; individuals whose registered-hukou city differs from
+    their current city and same-year registrants are excluded.
+  outcome: >
+    Deflated annual labor earnings and current agricultural, nonagricultural, or
+    nonemployment status, reported separately by original hukou and residence group.
+  data_used:
+  - Chinese General Social Survey (CGSS) 2010-2013 and 2015 repeated cross-sections
+  - respondent-reported hukou category and change history
+  - provincial CPI for earnings deflation
+  treatment_encoding: >
+    A city-year adoption indicator beginning in the first CGSS survey wave in which a
+    city has an observed respondent who switched from agricultural to residential hukou.
+    The article groups 89 anonymized survey cities by this inferred first-observation
+    year; it does not merge a named-city legal-notice roster.
+  comparison: >
+    Individuals in cities not yet observed to have adopted the residential-hukou
+    designation, relative to individuals in cities observed to have adopted it, before
+    and after each paper-inferred adoption year.
+  empirical_design: >
+    City and year fixed-effect staggered DID on repeated cross-sections, with individual
+    controls and city-clustered standard errors; event-study leads and a native-born
+    restricted-sample robustness check.
+  assumptions:
+  - First observed residential-hukou respondent is a valid proxy for local reform start.
+  - Anonymized CGSS survey-city panels can support comparable pretrends despite no named-city joins.
+  - Excluding mismatched registration and residence locations adequately limits exposure miscoding.
+  - Reform-timing variation is conditionally unrelated to group-specific labor-market shocks.
+  threats_addressed:
+  - Event-study leads and pre-reform group-trend tests reported by the paper
+  - Exclusion of ambiguous registration-location and same-year-change observations
+  - Native-born restricted-sample robustness check
+  - Explicit limitation that city identities cannot be linked to external local-policy data
+  evidence_refs:
+  - E5
 readiness_blockers:
 - >
   A canonical city-by-year table of local implementation dates has not been independently
@@ -474,6 +574,11 @@ readiness_blockers:
   No design application in this record has been grounded from a replication package or
   primary data source; exact merge keys and sample construction require full-text or
   replication verification.
+- >
+  The JRS 2026 application offers an inspected and useful paper-specific staggered
+  design, but its city adoption dates are inferred from the first observed residential-
+  hukou respondent in anonymized CGSS cities. They cannot validate formal local legal
+  adoption, be joined to named-city outcomes, or replace a verified local-notice roster.
 method_transfer: null
 ---
 ## Institutional Background

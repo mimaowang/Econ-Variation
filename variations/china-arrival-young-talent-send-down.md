@@ -1,277 +1,309 @@
 ---
 schema_version: 2
 id: china-arrival-young-talent-send-down
-name: The Arrival of Young Talent — China's Send-Down Movement and Rural Education
+name: County Exposure to Received Send-Down Youth, 1968–1977
 aliases:
-- Send-down youth education effects
-- Up to the Mountains Down to the Countryside
-- educated youth rustication
-- zhiqing 知青 movement
-- SDY rural education
-
-status: extracted
+- Arrival of Young Talent
+- 上山下乡知青县域接收强度
+- SDY rural education exposure
+status: contested
 provenance:
-  task_id: legacy-untracked
+  task_id: task-9bb70167b880
 scope:
   country: China
   regions:
-  - Rural counties across China
-  domains:
-  - education
-  - labor
-  - development
-  - history
+  - Mainland rural counties; the AER core sample excludes Beijing, Tianjin, Shanghai and city-governed districts
+  domains: [development-economics, education, historical-migration, human-capital]
   variation_type: continuous-exposure
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: >
+    Urban Chinese youths were sent to mainland rural counties. The AER study
+    compares recorded county reception intensity across school-age cohorts.
+    The exposure is real; the sign of its schooling effect is disputed.
 identity:
-  instrument: The Send-Down Movement (上山下乡运动), which mandated approximately 16 million urban "educated youth" (zhiqing) to
-    resettle in the Chinese countryside between the mid-1960s and the late 1970s, generating county-level variation in the
-    intensity of exposure to urban-educated migrants
-  authority: Chinese Communist Party under Mao Zedong; Central Committee directives and local government implementation
+  instrument: >
+    County totals of urban educated youths received in rural villages and
+    collective farms in 1968–1977. This is not an observed county quota,
+    individual teacher assignment, or the full historical movement.
+  authority: >
+    Mao's December 1968 instruction and central/local implementation.
+    The cited retrospective official history documents national mobilization,
+    not a uniform county allocation formula.
   legal_identifiers:
-  - 1966 Central Committee directive on the Send-Down Movement
-  - 1968 Mao Zedong instruction "It is very necessary for educated youth to go to the countryside"
-  implementation_regime: Urban middle-school and high-school graduates were assigned to rural communes and production brigades
-    across China; the number of sent-down youths (SDYs) assigned to each county varied based on county reception capacity,
-    geographic proximity to urban centers, and central planning decisions
-  assignment_mechanism: County-level variation in SDY assignment intensity was driven by a combination of central planning
-    priorities, provincial quotas, geographic factors, and county-level reception capacity — factors that are partially exogenous
-    to pre-existing local educational outcomes
+  - 1968-12-22 People's Daily publication of Mao's instruction on educated youths going to the countryside
+  implementation_regime: >
+    Urban youths moved to rural communities; county gazetteers recorded local
+    reception. State-farm placements are outside the paper's county-gazetteer
+    measure. Its 1968–1977 window is narrower than the whole movement.
+  assignment_mechanism: >
+    Counties received different numbers, but no inspected source establishes
+    a single exogenous county-allocation rule. The paper interacts historical
+    county reception with affected cohorts; it does not randomize placement.
   parent: null
   related_variations: []
 timeline:
-  announcement: '1966'
-  effective: '1968'
-  implementation_start: 1966
-  implementation_end: 1978
-  local_timing: The movement began in the mid-1960s, intensified dramatically after Mao's 1968 instruction, and gradually
-    wound down after the Cultural Revolution ended in 1976, with most SDYs returning to cities by the late 1970s
-  anticipation: The movement was a product of the broader Cultural Revolution and was not anticipated by rural communities
-    before its onset; the timing and intensity of SDY assignments were determined by central and provincial authorities
-  last_verified: '2026-07-13'
+  announcement: '1968-12-22 national mass-mobilization instruction; earlier send-down activity existed'
+  effective: null
+  implementation_start: 1968
+  implementation_end: 1977
+  local_timing: The paper counts 1968–1977 county arrivals; this is a study window, not the whole policy duration.
+  anticipation: County-specific anticipation has not been established.
+  last_verified: '2026-10-02'
 assignment:
-  unit: County (rural county in China)
-  treated: Rural counties that received sent-down youths; treatment is continuous based on the number (or density) of SDYs
-    assigned to the county during the movement
-  comparison_pool: Counties that received fewer SDYs per capita, providing cross-county variation in treatment intensity;
-    within-county variation across cohorts before and after the movement
-  rule: Counties with higher SDY-to-population ratios received a larger influx of urban-educated youth, who served as teachers,
-    tutors, and role models in local schools and communities
-  intensity: Continuous — number of sent-down youths per 1,000 rural residents (or per school-age child) at the county level,
-    measured cumulatively over the movement period
+  unit: Rural county of reception × resident birth cohort for the outcome design
+  treated: Higher county received-youth density, interacting with cohorts born 1956–1969
+  comparison_pool: Lower-density counties and 1946–1955 cohorts in the baseline
+  rule: >
+    The authors divide county received-youth totals by 1964 county population
+    and classify cohorts by primary-school overlap with the mass movement.
+    The measured density is not a statutory threshold.
+  intensity: County received youths in 1968–1977 / 1964 total county population
   exemptions: []
-  compliance: The movement was mandated by central policy and enforced through local government implementation; compliance
-    was high, though some youths avoided assignment through health exemptions or family connections
-  exposure_construction: Construct county-level SDY density as (total number of sent-down youths assigned to the county) /
-    (county population); alternatively, use SDY per school-age child or per rural school
+  compliance: Individual compliance is not measured; received rather than assigned youths enter the variable.
+  exposure_construction: >
+    Join 1968–1977 county reception totals to 1964 county population and
+    interact density with a 1956–1969 birth-cohort indicator. The appendix
+    tests alternative windows and overlap years. Do not substitute a per-child
+    denominator or 1966–1978 window as the published baseline.
   required_identifiers:
-  - county code
-  - year
-  - sent-down youth count
-  - county population
-  - school-age population
-  spillovers: SDYs may have affected neighboring counties through migration or school attendance across county borders; returning
-    SDYs may have transmitted knowledge and attitudes acquired in the countryside to urban areas
+  - harmonized historical county ID
+  - 1964 county population
+  - 1968–1977 received-youth total
+  - rural resident birth cohort and schooling outcome
+  spillovers: County migration and school catchments may matter; negligible spillovers are not established here.
 research_compatibility:
-  outcome_domains:
-  - education
-  - human capital
-  - rural development
-  - intergenerational mobility
-  - labor market outcomes
-  affected_populations:
-  - Rural children and adolescents in China
-  - 1970s–2000s birth cohorts
-  - rural households in recipient counties
-  mechanism_channels:
-  - teacher supply and quality
-  - peer effects from educated youth
-  - parental aspiration changes
-  - improved school resources
-  - knowledge transmission
+  outcome_domains: [rural schooling, human capital]
+  affected_populations: [rural residents born 1946–1969 in the paper's comparison]
+  mechanism_channels: [educated-person arrival, possible teaching and aspiration effects]
   best_for:
-  - Studying how exposure to educated outsiders affects rural educational outcomes
-  - human capital spillovers
-  - long-run effects of historical education interventions
+  - Studying historical county exposure to relocated urban youths after adjudicating the outcome-coding dispute
   not_good_for:
-  - Short-run contemporaneous effects (data lags)
-  - individual-level treatment assignment (county-level treatment)
-  - effects on the SDYs themselves (the paper focuses on rural children)
+  - Claiming randomized county placement or an instrument for every later development outcome
+  - Concluding the movement increased net welfare or growth from a rural-schooling coefficient
+  - Treating every received youth as a teacher
 design:
+  claim_type: reduced-form
   affordances:
-  - county-level variation in SDY density
-  - variation across birth cohorts within counties
-  - pre-movement and post-movement comparison
-  - long panel of educational outcomes (1982–2005)
+  - county-level historical reception counts
+  - birth-cohort variation in school-age overlap
   candidate_designs:
-  - difference-in-differences comparing high-SDY and low-SDY counties before and after the movement
-  - cohort-based DiD exploiting age-at-exposure variation
-  - instrumental variables using geographic determinants of SDY assignment
-  identifying_variation: Cross-county variation in the number of sent-down youths assigned per rural resident, which generates
-    differential exposure of rural children to urban-educated youth during their school-age years
+  - county-density × affected-cohort DID with explicit schooling-measure sensitivity
+  identifying_variation: >
+    Higher versus lower county received-youth density, compared across
+    1956–1969 affected and earlier birth cohorts. County and province-cohort
+    fixed effects make identification conditional, not random.
+  primary_strategy: >
+    AER appendix Table A1 reports rural-individual 1990-census years-of-
+    education regressions on density × affected cohort, with county,
+    province-cohort and baseline-education-by-cohort effects, gender and
+    ethnicity controls, and county-clustered standard errors.
+  estimand: >
+    Differential rural schooling attainment of affected versus older
+    cohorts per unit of county youth-reception density, conditional on
+    outcome coding and DID assumptions; not an individual youth effect.
+  treatment_variable: County received youths / 1964 population × affected-cohort indicator
+  comparison_logic: Affected and earlier rural cohorts within counties of differing historical intensity
+  estimation_notes: >
+    Final appendix Table A1 and Appendix D verify measure and cohort
+    definitions. Table B1 gives 1,773 core counties after exclusions.
+    No geographic IV is documented in the verified baseline.
   assumptions:
-  - SDY assignment across counties is orthogonal to county-level trends in educational outcomes conditional on observables
-  - no selective migration in response to SDY placement
-  - the assignment of SDYs is not correlated with other contemporaneous reforms affecting education
+  - Without arrivals, cohort schooling gaps would not systematically vary with county reception density after controls
+  - Gazetteer omissions and historical geography do not induce material treatment-linked bias
+  - Schooling-years coding is comparable across changing education systems
   diagnostics:
-  - Pre-trend analysis of educational outcomes across high-SDY and low-SDY counties
-  - balance tests on county characteristics
-  - robustness to controlling for geographic and economic covariates
-  - placebo tests using outcomes unaffected by SDY exposure
-  primary_strategy: Difference-in-differences across counties with varying SDY intensity, comparing birth cohorts differentially
-    exposed based on age during the movement
-  estimand: The causal effect of the recorded exposure on Years of schooling, junior high school completion, literacy rates,
-    conditional on the stated design assumptions.
-  treatment_variable: County-level cumulative SDY count per capita, interacted with birth cohort exposure (whether the cohort
-    was of school age during the movement)
-  comparison_logic: High-SDY-density counties vs low-SDY-density counties; cohorts exposed during school age vs those beyond
-    school age
-  estimation_notes: Difference-in-differences across counties with varying SDY intensity, comparing birth cohorts differentially
-    exposed based on age during the movement
+  - Reproduce both historical school-length codings on common data
+  - Check cohort-window and county-sample sensitivity
+  - Audit state-farm exclusions and historical county boundaries
 threats:
-- type: omitted-variable
-  basis: inferred
-  condition: Counties that received more SDYs may have differed systematically from low-SDY counties in ways that affected
-    educational trends (e.g., more developed areas may have had better schools and also received more SDYs)
-  evidence_refs:
-  - E1
+- type: outcome-coding-dispute
+  basis: documented
+  condition: >
+    Gong et al. argue that Cultural Revolution school-length coding makes
+    the positive result negative and insignificant. Chen et al. dispute
+    this and defend the baseline in two replies. Not independently
+    adjudicated here.
+  evidence_refs: [E4, E5, E6]
   possible_diagnostics:
-  - Control for county GDP
-  - urbanization
-  - distance to cities
-  - and other pre-movement characteristics; test balance on pre-movement education outcomes; use geographic instruments for
-    SDY placement
-- type: sorting-selection
+  - Reproduce both codings and schooling-level outcomes on the same microdata
+- type: nonrandom-county-reception
   basis: inferred
-  condition: SDYs were not randomly assigned to counties; assignment reflected central planning priorities, county reception
-    capacity, and provincial quotas that may correlate with educational conditions
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - Instrument SDY density using geographic or political determinants that affect assignment but not educational trends
-  - examine assignment process from historical records
-- type: other-concurrent-reforms
-  basis: inferred
-  condition: The Cultural Revolution period (1966–1976) involved widespread disruption to education, including school closures
-    and curriculum changes; separating the SDY effect from broader Cultural Revolution disruptions is challenging
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - Control for Cultural Revolution intensity measures
-  - use variation in SDY timing relative to school disruptions
-  - examine subsamples with varying disruption levels
+  condition: >
+    County reception could covary with contemporaneous school expansion
+    or disruption. National policy origin alone does not grant exogeneity.
+  evidence_refs: [E2]
+  possible_diagnostics: [Inspect cohort patterns and local school expansion]
+- type: gazetteer-coverage
+  basis: documented
+  condition: >
+    County totals cover 1968–1977 and exclude state farms; some counties
+    lack reception or 1964 population data.
+  evidence_refs: [E2]
+  possible_diagnostics: [Report exclusions and compare province aggregates]
 empirical_requirements:
   contract_version: 1
-  population: Rural counties in China observed over 1982–2005, covering birth cohorts that were school-age during and after
-    the Send-Down Movement
-  observation_unit: County-cohort or county-year (depending on outcome data structure)
-  geography_level: County (rural county, xian)
-  time_start: 1982
-  time_end: 2005
-  minimum_frequency: 'Decennial (census years: 1982, 1990, 2000; plus 2005 mini-census)'
+  population: Rural residents in the 1990 census comparison, born 1946–1969
+  observation_unit: Rural individual × county × birth cohort
+  geography_level: County
+  time_start: 1964
+  time_end: 1990
+  minimum_frequency: Birth cohort, with cumulative 1968–1977 exposure
   minimum_pre_periods: 1
-  minimum_post_periods: 3
+  minimum_post_periods: 1
   required_fields:
-  - county code
-  - year
-  - sent-down youth count
-  - county population
-  - school-age population
-  - educational attainment (years of schooling
-  - enrollment rates
-  - literacy)
-  - age cohort
-  required_identifiers:
-  - county code
-  - year
-  - SDY count measure
-  treatment_key:
-  - county code
-  - year
-  - SDY density (SDYs per capita)
-  - birth cohort (for cohort-based designs)
-  treatment_source: County-level gazetteers (difangzhi) and published historical records of sent-down youth placement; census
-    data for educational outcomes
+  - historical county ID
+  - 1964 county population
+  - 1968–1977 youth-reception total
+  - birth year, rural residence, education attainment and coding
+  required_identifiers: [historical county ID, birth cohort]
+  treatment_key: [historical county ID, birth cohort]
+  treatment_source: >
+    Authors' county-gazetteer compilation; their county dataset is catalogued
+    at PKU DOI 10.18170/DVN/MDIN00, but all files are restricted under
+    access terms. This repository does not copy it.
   measurement_risks:
-  - County boundary changes over time
-  - incomplete historical records of SDY counts in some counties
-  - differential recall or reporting quality across census waves
-  - migration of rural residents across counties between treatment and outcome measurement
+  - historical county harmonization and missing 1964 denominators
+  - exclusion of state-farm placements
+  - disputed schooling-level to years conversion
 evidence:
 - id: E1
+  source_type: archive
+  citation: Beijing Party Organization Department, historical note on 1968-12-22 send-down instruction
+  url: https://www.bjdj.gov.cn/article/35162.html
+  date: 2021
+  supports: [identity.instrument, identity.authority, identity.legal_identifiers, timeline.announcement]
+  verification_status: verified
+  access_level: full-text
+  locator: '党史日历·上山下乡: 1968-12-22 People’s Daily conveyed the instruction; retrospective summary, not original newspaper scan.'
+- id: E2
   source_type: paper
-  citation: 'Chen, Yi, Ziying Fan, Xiaomin Gu, and Li-An Zhou. 2020. "Arrival of Young Talent: The Send-Down Movement and
-    Rural Education in China." American Economic Review 110 (11): 3393–3430.'
-  url: https://doi.org/10.1257/aer.20191414
+  citation: Chen et al. 2020, Arrival of Young Talent, AER online appendix
+  url: https://www.aeaweb.org/articles/materials/13570
   date: 2020
   supports:
-  - identity
-  - assignment
-  - design
-  - threats
-  - empirical_requirements
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.implementation_start
+  - timeline.implementation_end
+  - assignment.rule
+  - assignment.intensity
+  - assignment.exposure_construction
+  - design.identifying_variation
+  - design.primary_strategy
+  - design.treatment_variable
+  - design.estimation_notes
+  - empirical_requirements.treatment_source
   verification_status: verified
+  access_level: full-text
+  locator: 'Table A1 p.3; Table B1 p.7; Appendix C pp.9–11; Appendix D pp.12–13, inspected 2026-10-02.'
+- id: E3
+  source_type: paper
+  citation: Chen, Fan, Gu, Zhou. 2020. Arrival of Young Talent. American Economic Review 110(11):3393–3430. DOI 10.1257/aer.20191414
+  url: https://doi.org/10.1257/aer.20191414
+  date: 2020
+  supports: [identity.instrument, design.estimand]
+  verification_status: verified
+  access_level: abstract
+  locator: 'AEA bibliographic page and abstract; final article full text not directly inspected.'
+- id: E4
+  source_type: paper
+  citation: Gong, Liu, Lu, Wen, Zhou. 2021. Was China’s Send-down Movement Really a Blessing? ShanghaiTech SEM WP 2020-012
+  url: https://sem.shanghaitech.edu.cn/2021/0629/c3558a66929/page.htm
+  date: 2021
+  supports: [threats]
+  verification_status: verified
+  access_level: abstract
+  locator: 'ShanghaiTech working-paper abstract; asserts negative insignificant estimate under revised school-years coding.'
+- id: E5
+  source_type: paper
+  citation: Chen, Fan, Gu, Zhou. 2021. Arrival of Young Talent, Reply. SSRN 3787288
+  url: https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3787288_code2884684.pdf?abstractid=3787288
+  date: 2021
+  supports: [threats]
+  verification_status: verified
+  access_level: abstract
+  locator: 'SSRN abstract; authors reject the critique and report additional evidence.'
+- id: E6
+  source_type: paper
+  citation: Chen, Fan, Gu, Zhou. 2021. Arrival of Young Talent, Further Reply. SSRN 3917492
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3917492
+  date: 2021
+  supports: [threats]
+  verification_status: verified
+  access_level: abstract
+  locator: 'SSRN further-reply abstract documents continuing outcome-coding disagreement.'
+- id: E7
+  source_type: official-data
+  citation: Chen, Fan, Gu, Zhou. 2024. County-Level Sent-down Youth Dataset of China. PKU Open Research Data Platform V1, DOI 10.18170/DVN/MDIN00
+  url: https://opendata.pku.edu.cn/dataset.xhtml?persistentId=doi%3A10.18170%2FDVN%2FMDIN00&version=1.0
+  date: 2024
+  supports: [empirical_requirements.treatment_source]
+  verification_status: verified
+  access_level: metadata
+  locator: 'Dataset description covers 1968–1977 county counts; three files restricted. No data file accessed.'
 design_applications:
 - paper: 'Arrival of Young Talent: The Send-Down Movement and Rural Education in China'
   doi: 10.1257/aer.20191414
   journal: American Economic Review
   year: 2020
-  research_question: How did the influx of urban educated youth to the countryside during the Send-Down Movement affect rural
-    children's educational outcomes?
-  population: Rural counties in China, 1982–2005 census and survey data
-  outcome: Years of schooling, junior high school completion, literacy rates
-  data_used:
-  - Chinese population census (1982, 1990, 2000)
-  - 2005 1% mini-census
-  - county gazetteers for SDY records
-  treatment_encoding: County-level cumulative SDY count per capita, interacted with birth cohort exposure (whether the cohort
-    was of school age during the movement)
-  comparison: High-SDY-density counties vs low-SDY-density counties; cohorts exposed during school age vs those beyond school
-    age
-  empirical_design: Difference-in-differences across counties with varying SDY intensity, comparing birth cohorts differentially
-    exposed based on age during the movement
-  assumptions:
-  - SDY assignment is conditionally exogenous to educational trends
-  - no differential migration across counties correlated with SDY exposure
-  - no other county-level shocks correlated with SDY intensity
-  threats_addressed:
-  - County-level selection via rich controls and robustness checks
-  - pre-trend analysis
-  - geographic and historical covariates
-  - alternative SDY measures
-  evidence_refs:
-  - E1
+  research_question: Did local youth reception change schooling for rural school-age cohorts?
+  population: Rural residents in the core county sample, born 1946–1969
+  outcome: Years of education in 1990 census; coding disputed
+  data_used: [1990 rural census sample, county-gazetteer received-youth totals, 1964 county population]
+  treatment_encoding: County reception density × 1956–1969 birth-cohort indicator
+  comparison: Earlier cohorts in the same county and cohorts across counties of differing intensity
+  empirical_design: Cohort-by-county-density DID with county and province-cohort fixed effects
+  assumptions: [Conditional parallel differences, comparable schooling-years coding]
+  threats_addressed: [Appendix cohort-window and denominator sensitivity; coding dispute not resolved here]
+  evidence_refs: [E2, E3]
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
+- Public critique and replies contest the schooling-effect sign and magnitude; do not recommend it without adjudicating outcome coding on common data.
+- PKU county data files require authorized access or independent gazetteer reconstruction.
 method_transfer: null
 ---
 ## Institutional Background
 
-During the Cultural Revolution (1966–1976), the Chinese Communist Party under Mao Zedong launched the "Up to the Mountains, Down to the Countryside" movement (上山下乡运动), also known as the Send-Down Movement. Approximately 16 million urban middle-school and high-school graduates — the "educated youth" or zhiqing (知青) — were sent to rural areas to be "re-educated" by peasants. These urban youths were assigned to rural communes and production brigades across virtually all of China's rural counties, where they lived and worked for years before most returned to cities in the late 1970s. [E1]
+The 1968 national push moved urban educated youths to rural communities.
+The paper measures historical reception from county gazetteers, not quotas.
+[E1; E2]
 
 ## What Changed
 
-The massive influx of urban-educated youth to rural areas brought human capital to previously isolated rural communities. The SDYs were typically better educated than local rural residents, and many served as teachers or tutors in local schools, or otherwise influenced rural children's educational aspirations and opportunities. The presence of these urban youths introduced new knowledge, attitudes, and role models into rural education systems that had been disrupted by the Cultural Revolution. The key variation is the county-level intensity of this influx. [E1]
+The real research object is county received-youth density during 1968–1977,
+interacted with school-age birth cohorts. [E2]
 
 ## Implementation and Assignment
 
-The assignment of SDYs to counties was determined by a combination of central planning (provincial quotas), geographic proximity (counties near cities tended to receive more SDYs), and reception capacity (counties with more available housing and agricultural land could accommodate more youths). This created substantial variation across counties in SDY density — ranging from counties that received almost no SDYs to those that received very large numbers relative to the local population. The paper uses county gazetteers to construct the cumulative number of SDYs assigned to each county. [E1]
+The final AER appendix divides received youths by 1964 county population;
+state-farm placements are omitted. The affected cohorts are 1956–1969.
+The inspected sources do not establish random county allocation. [E2]
 
 ## Why This Creates Empirical Variation
 
-The variation exploited is the cross-county difference in SDY density, which generates differences in the intensity of exposure of rural children to educated urban youth during their school-age years. Children in counties that received more SDYs were more likely to be taught by educated youth, to interact with them as peers and role models, and to benefit from the knowledge and resources they brought. The identifying variation combines this cross-county intensity with cohort-level variation in exposure (different birth cohorts were at different ages during the movement). [E1; analytical inference]
+The paper compares education gaps between older and school-age cohorts
+across counties with different historical reception densities. This is
+conditional cohort DID, not a simple policy-onset comparison. [E2]
 
 ## Identification Risks
 
-The non-random assignment of SDYs to counties is the central identification challenge. More developed or more politically connected counties may have received more SDYs and also had better educational trajectories for reasons unrelated to SDY exposure. Conversely, counties with more educational disruption during the Cultural Revolution may have been targeted for more SDY placements. The paper addresses this through extensive controls, pre-trend analysis, and robustness checks, but residual confounding from unobserved county characteristics remains possible. Another concern is selective migration: families who valued education more may have moved to counties with more SDYs, or SDYs themselves may have differentially affected out-migration from treated counties. [E1; analytical inference]
+This is a useful lead, not an automatically clean instrument. County reception
+was not verified as random, state farms are omitted, and school systems changed.
+A public critique disputes the paper's schooling-year coding and the authors
+replied twice. Without adjudicating that dispute on common data, this record
+stays contested and cannot be recommended as a ready causal estimate.
+[E2; E3; E4; E5; E6]
 
 ## Data Requirements
 
-The analysis requires county-level data on sent-down youth counts from historical records (primarily county gazetteers and provincial SDY archives). Educational outcomes come from the 1982, 1990, and 2000 population censuses and the 2005 mini-census, which provide individual-level data on educational attainment that can be aggregated to the county-cohort level. County-level socioeconomic controls (GDP, urbanization, distance to nearest city, etc.) are needed for balance tests and robustness. Historical data on the Cultural Revolution's local intensity (e.g., factional violence, school closure periods) can help address confound concerns. [E1]
+The county dataset has a DOI, but the files require authorization. The former
+record overstated a 1966 directive, a 1966–1978 study window, a geographic IV,
+and a 1982–2005 outcome panel as verified baseline facts; these are withdrawn.
+[E2; E7]
 
 ## Evidence Notes
 
-E1 is the published American Economic Review article by Chen, Fan, Gu, and Zhou. The paper finds that counties with a higher density of sent-down youths experienced significant improvements in rural children's educational outcomes, measured by years of schooling and junior high school completion. The effects are concentrated among cohorts that were of school age during the movement and are larger for girls and children from lower-income families. The paper provides extensive evidence on mechanisms, including SDYs serving as teachers and raising parental educational aspirations. Data construction is carefully documented, including the assembly of historical SDY records from county gazetteers.
+E1 is a retrospective official historical summary, not the original
+1968 newspaper. E2 is the final paper's online appendix, E3 its publisher
+abstract, E4 the critical working paper, E5–E6 the authors' replies, and
+E7 restricted dataset metadata. The published full article and restricted
+microdata were not directly inspected here. [E1; E2; E3; E4; E5; E6; E7]

@@ -7,9 +7,9 @@ aliases:
 - 国家八七扶贫攻坚计划
 - 国家级贫困县
 - National Poor Counties
-status: grounded
+status: design-documented
 provenance:
-  task_id: task-5df5750a87cc
+  task_id: task-c843b1804831
 scope:
   country: China
   regions:
@@ -22,7 +22,7 @@ scope:
   - political-economy
   variation_type: eligibility-threshold
   knowledge_role: china-variation
-  china_relevance: The 8-7 Poverty Reduction Plan was China's first national poverty program with explicit income thresholds for county eligibility. Counties with 1992 rural per capita net income below 400 yuan were designated as national poverty counties and received large-scale earmarked transfers and preferential policies. The sharp income cutoff creates a regression-discontinuity design that has been used to evaluate the causal effects of the program on rural income, fiscal capacity, and local development.
+  china_relevance: The 8-7 Poverty Reduction Plan used 1992 rural per-capita-net-income rules to revise national poverty-county eligibility. Counties below 400 yuan entered, while previously designated counties above 700 yuan exited; legacy designation in the intervening range means the income rule creates a fuzzy, not mechanically sharp, regression-discontinuity opportunity. Designation bundled earmarked transfers, subsidized loans, food-for-work, and preferential policies from 1994 through 2000.
 identity:
   instrument: Designation as a national poverty county under the State Council's 8-7 Poverty Reduction Plan.
   authority: State Council of China; State Council Leading Group for Poverty Alleviation and Development (国务院扶贫开发领导小组)
@@ -30,7 +30,7 @@ identity:
   - 国发[1994]30号《国务院关于印发国家八七扶贫攻坚计划的通知》（15 April 1994)
   - 《国家八七扶贫攻坚计划（1994-2000年）》
   implementation_regime: In 1994 the central government selected 592 national poverty counties based on 1992 rural per capita net income. These counties received earmarked fiscal transfers, subsidized loans, food-for-work programs, and other preferential policies from 1994 through 2000. Counties with 1992 income above 700 yuan that had been designated poor in 1986 exited the program.
-  assignment_mechanism: Counties were assigned to treatment largely on the basis of whether their 1992 rural per capita net income fell below the 400-yuan threshold. Counties with income between 400 and 700 yuan were treated if previously designated, producing a fuzzy discontinuity at the upper cutoff. The primary identifying variation is the sharp threshold at 400 yuan.
+  assignment_mechanism: '[E3, verified] Counties below 400 yuan in 1992 entered the national key-support list, while previously designated counties above 700 yuan exited. Legacy poverty-county status therefore modifies treatment in the 400–700 yuan interval. [E5, reported claim] The published design treats the resulting change in designation probability as fuzzy RD rather than assuming that 1992 income deterministically assigns treatment.'
   parent: null
   related_variations: []
 timeline:
@@ -39,19 +39,19 @@ timeline:
   implementation_start: 1994
   implementation_end: 2000
   local_timing: National list announced in April 1994 and applied simultaneously to all counties. Transfers and projects began in 1994 and continued through 2000.
-  anticipation: The plan was announced and implemented in 1994; pre-1994 income is the running variable, so anticipation before 1992 is unlikely to affect the threshold.
-  last_verified: '2026-07-14'
+  anticipation: '[E3, verified] The running variable predates the 1994 plan, so post-announcement behavior cannot change its recorded 1992 value. That timing does not itself rule out measurement error, prior designation politics, or strategic classification in the historical income/status data.'
+  last_verified: '2026-10-04'
 assignment:
   unit: County
   treated: Counties designated as national poverty counties under the 8-7 Plan.
-  comparison_pool: Counties just above and just below the 400-yuan 1992 rural per capita net income cutoff; counties just above and below the 700-yuan upper cutoff for previously designated counties.
-  rule: A county is treated if its 1992 rural per capita net income is below 400 yuan. Previously designated poor counties with 1992 income above 700 yuan exited. Counties with income between 400 and 700 yuan were retained if previously designated, creating fuzzy assignment in that interval.
+  comparison_pool: '[E5, reported claim] Counties near the 400-yuan 1992 rural-income entry cutoff, with treatment inferred from the discontinuous probability of national-poverty-county designation rather than a clean treated-versus-untreated split. Previously designated counties in the 400–700 yuan interval require separate treatment-status coding.'
+  rule: '[E3, verified] A county below 400 yuan in 1992 was included; a previously designated county above 700 yuan exited. The 400–700 yuan interval depends on legacy designation, so a reproducible analysis must merge the 1986/1993 status and the 1994 list rather than impute treatment from income alone.'
   intensity: Binary designation as a national poverty county; intensity of transfers varies with county size and project mix.
   exemptions:
   - Counties just below the threshold that were not included due to data errors or political considerations
   - Counties just above the threshold that were retained in the fuzzy interval
-  compliance: Compliance with the income-based rule was high but not perfect. The 1994 list contains exactly 592 counties, and official documents report the 400/700-yuan rule.
-  exposure_construction: Use 1992 rural per capita net income as the running variable and an indicator for national poverty county designation as the treatment variable. For sharp RD, focus on the 400-yuan cutoff. For fuzzy RD, model treatment probability as a function of the running variable around the cutoffs.
+  compliance: '[E3, verified] The 1994 list contains 592 counties and the official account states the 400/700-yuan rules. [E5, reported claim] Actual designation is nonetheless not fully determined by income alone, so the relevant empirical issue is treatment-rule fidelity and first-stage strength, not individual compliance with a binary rule.'
+  exposure_construction: '[E5, reported claim] Use 1992 rural per capita net income as the running variable, the400-yuan eligibility-side indicator as the instrument, and actual1994 national poverty county designation as the endogenous treatment. Estimate the local designation first stage rather than replacing actual status with eligibility. Prior designation matters; the700-yuan legacy exit rule is not a second interchangeable cutoff for this application.'
   required_identifiers:
   - county code
   - 1992 rural per capita net income
@@ -77,43 +77,42 @@ research_compatibility:
   - County designation creates incentives for poverty-reduction reporting
   best_for:
   - Regression discontinuity designs around the 400-yuan threshold
-  - Fuzzy regression discontinuity at the 700-yuan upper cutoff
+  - Local designation effects at400 yuan with a verified first stage and historical status
   - Difference-in-differences comparing designated counties before and after 1994
   not_good_for:
-  - Outcomes measured only after 2000, when the 8-7 Plan ended and new plans began
+  - Attributing outcomes after2000 solely to the8-7 Plan without separating successor programs
   - Settings where manipulation of 1992 income reporting is a major concern
   - Studies requiring individual-level treatment variation rather than county-level designation
 design:
   claim_type: causal
   affordances:
-  - Sharp income threshold at 400 yuan
-  - Fuzzy upper threshold at 700 yuan
+  - Fuzzy treatment-probability discontinuity at the 400-yuan entry rule
+  - Legacy-status and 700-yuan exit rule that can be separately encoded
   - National policy with common treatment definition
   - Pre-program income available for RD running variable
   candidate_designs:
-  - Sharp regression discontinuity at the 400-yuan cutoff
-  - Fuzzy regression discontinuity at the 700-yuan cutoff
+  - Fuzzy regression discontinuity at the 400-yuan entry cutoff
   - Difference-in-differences using 1994 as treatment onset
-  identifying_variation: Discontinuity in treatment probability at the 400-yuan 1992 rural per capita net income threshold.
-  primary_strategy: Regression discontinuity around the 400-yuan cutoff.
-  estimand: The local average treatment effect of national poverty county designation on outcomes for counties near the 400-yuan threshold.
+  identifying_variation: '[E5, reported claim] A discontinuity in the probability of national-poverty-county designation at the 400-yuan 1992 rural per-capita-net-income entry rule, with legacy designation preventing deterministic assignment.'
+  primary_strategy: '[E1, reported claim; E5, reported claim] Fuzzy regression discontinuity around the 400-yuan entry cutoff, using the income-side indicator as an instrument for actual national-poverty-county designation.'
+  estimand: '[E5, reported claim] A local average treatment effect of national-poverty-county designation for counties whose designation changes with eligibility at the 400-yuan entry rule.'
   treatment_variable: Indicator for being designated a national poverty county in 1994.
-  comparison_logic: Counties with 1992 income just below 400 yuan are compared with counties with income just above 400 yuan. Under continuity, the only systematic difference near the cutoff is treatment status.
-  estimation_notes: Estimate a local-linear or polynomial regression of the outcome on the running variable, allowing a discontinuity at 400 yuan. Use data-driven bandwidth selection (e.g., Imbens-Kalyanaraman, Calonico-Cattaneo-Titiunik) and report robustness across bandwidths and polynomial orders.
+  comparison_logic: '[E5, reported claim] Counties just below and above 400 yuan are compared locally, but their designation status is not perfectly determined by income; the first-stage discontinuity in actual designation is part of the estimand, not a nuisance to be ignored.'
+  estimation_notes: '[E5, reported claim] Estimate the local first stage from the 400-yuan eligibility-side indicator to actual designation and use a fuzzy-RD/IV specification for outcomes. Bandwidth, functional-form, density, covariate-continuity, and first-stage checks remain decision-critical.'
   assumptions:
   - Continuity of potential outcomes and covariates at the 400-yuan threshold
   - No precise manipulation of 1992 rural per capita net income around the cutoff
-  - Treatment assignment is a deterministic or strongly increasing function of the running variable at the cutoff
+  - Eligibility changes the probability of actual designation sufficiently at the cutoff for a locally interpretable fuzzy-RD first stage
   diagnostics:
   - McCrary density test for manipulation of the running variable
   - Balance tests on pre-determined covariates
   - Placebo cutoffs away from 400 and 700 yuan
   - Robustness to bandwidth and functional-form choices
-  - Fuzzy-RD first-stage diagnostics at the 700-yuan cutoff
+  - Fuzzy-RD first-stage diagnostics at the 400-yuan entry cutoff
 threats:
   - type: manipulation
     basis: inferred
-    condition: Local officials may have misreported 1992 rural income to bring counties below the 400-yuan threshold or keep them above the 700-yuan exit threshold.
+    condition: '[Analytical inference] Misreported historical income or status could affect entry below400 yuan or retention below the700-yuan exit threshold. This is a potential threat, not verified evidence that counties changed the1992 values after the1994 announcement.'
     evidence_refs:
     - E2
     - E3
@@ -152,30 +151,32 @@ threats:
     - Report first-stage F-statistics in fuzzy RD
 empirical_requirements:
   contract_version: 1
-  population: Rural Chinese counties
+  population: Rural Chinese counties near the400-yuan entry cutoff with actual1994 and prior designation status
   observation_unit: county-year
   geography_level: county
-  time_start: 1985
+  time_start: 1994
   time_end: 2000
   minimum_frequency: annual
-  minimum_pre_periods: 5
-  minimum_post_periods: 5
+  minimum_pre_periods: 0
+  minimum_post_periods: 0
   required_fields:
   - 1992 rural per capita net income
   - national poverty county indicator
+  - prior national poverty county status
   - outcome variables
   - pre-determined county characteristics
-  - fiscal transfer data
   required_identifiers:
   - county code
   - year
   treatment_key:
   - county code
-  treatment_source: Official list of 592 national poverty counties and 1992 county-level rural per capita net income from the State Council Leading Group for Poverty Alleviation and Development or published statistical materials.
+  treatment_source: '[E3, verified; E5, reported claim] Merge the official 1994 list of 592 national poverty counties, 1992 county rural per-capita-net-income running variable, and prior national-poverty-county status. Income alone is not a valid substitute for the actual designation indicator.'
   measurement_risks:
   - 1992 income may be misreported or revised
   - County boundaries may have changed between 1992 and 2000
   - Outcome data availability varies across counties
+  - The default contract is for designation-based fuzzy RD, not a universal five-before/five-after DID panel. Historical assignment and pre-treatment covariates still need inspection; outcome periods depend on the question.
+  - Transfer amounts are needed for transfer-channel or amount-specific analyses, not every designation effect. A published use of historical data does not establish a currently accessible replication package.
 evidence:
   - id: E1
     source_type: paper
@@ -184,12 +185,18 @@ evidence:
     date: '2013'
     supports:
     - identity.instrument
-    - design.primary_strategy
-    - design_applications
     - assignment.rule
+    - design.primary_strategy
+    - design_applications.paper
+    - design_applications.doi
+    - design_applications.journal
+    - design_applications.year
+    - design_applications.research_question
+    - design_applications.population
+    - design_applications.outcome
     verification_status: reported
     access_level: abstract
-    locator: IDEAS/RePEc abstract and ScienceDirect abstract
+    locator: 'Abstract plus publisher section previews inspected: empirical-strategy preview reports1994-to2000 log rural-income change; data preview describes1946 counties in a1981–1995 Ministry of Agriculture panel. Full Meng text, construction of the2000 endpoint and replication files were not inspected; detailed fuzzy-RD reasoning is attributed to E5, not inferred from the abstract.'
   - id: E2
     source_type: policy-document
     citation: "国务院，《国务院关于印发国家八七扶贫攻坚计划的通知》，国发[1994]30号，1994年4月15日。"
@@ -226,21 +233,49 @@ evidence:
     verification_status: verified
     access_level: official-document
     locator: Official explanation of 1986, 1994, and 2001 poverty county adjustments
+  - id: E5
+    source_type: paper
+    citation: 'Lü, Xiaobo. 2015. "Intergovernmental transfers and local education provision — Evaluating China''s 8-7 National Plan for Poverty Reduction." China Economic Review 33: 200–211.'
+    url: https://doi.org/10.1016/j.chieco.2015.02.001
+    date: '2015'
+    supports:
+    - identity.assignment_mechanism
+    - assignment.comparison_pool
+    - assignment.rule
+    - design.identifying_variation
+    - design.primary_strategy
+    - design.estimand
+    - design.comparison_logic
+    - design.estimation_notes
+    - design.assumptions
+    - design.diagnostics
+    - empirical_requirements.treatment_source
+    - assignment.exposure_construction
+    - empirical_requirements.population
+    - empirical_requirements.time_start
+    - empirical_requirements.time_end
+    - empirical_requirements.minimum_pre_periods
+    - empirical_requirements.minimum_post_periods
+    - empirical_requirements.required_fields
+    - empirical_requirements.measurement_risks
+    verification_status: reported
+    access_level: full-text
+    locator: 'Author-hosted published PDF re-inspected4October2026: https://www.xiaobolu.com/_files/ugd/265480_8331f98fb95544a58dbe2701f917f997.pdf ; printedpp201–202 explain legacy retention below700; pp203–205 Sections3.1–3.2 describe1994–2000 outcomes, pre-treatment1990/1993 covariates and previous designation, unavailable program-specific education transfers, actual designation instrumented at400, rejection of700 for this application, and fuzzy rather than sharp RD. This supports no universal five-year pre-outcome panel requirement, not permission to omit historical assignment or diagnostics.'
 design_applications:
   - paper: Meng (2013)
     doi: 10.1016/j.jpubeco.2013.02.004
     journal: Journal of Public Economics
     year: 2013
-    research_question: What was the causal effect of national poverty county designation under the 8-7 Plan on rural income growth?
+    research_question: '[E1, reported claim] What was the effect of national poverty county designation under the8-7 Plan on rural income growth?'
     population: Rural Chinese counties near the 1992 income threshold
-    outcome: Change in log rural net income per capita from 1994 to 2000
+    outcome: '[E1, reported claim] Change in log rural net income per capita from1994 to2000, as shown in the publisher empirical-strategy preview.'
     data_used:
-    - County-level panel from the Ministry of Agriculture (1981-1995)
+    - '[E1, reported claim] Publisher data preview describes a Ministry of Agriculture panel of1946 counties from1981–1995; construction of the2000 endpoint was not inspected.'
     - 1992 rural per capita net income
     - National poverty county status
-    treatment_encoding: Indicator for national poverty county designation based on the 400-yuan threshold
-    comparison: Counties just above and below the 400-yuan cutoff; difference-in-differences between designated and non-designated counties
-    empirical_design: Regression discontinuity and difference-in-differences
+    treatment_encoding: '[E5, reported claim about Meng] Actual national poverty county designation, instrumented by eligibility around400 yuan; do not equate the designation indicator with the threshold-side indicator.'
+    comparison: '[E5, reported claim about Meng] Local counties around400 yuan with a discontinuity in actual designation probability. The publisher preview begins with a DD framework, not evidence that simple designated-versus-other DD identifies the final causal estimate.'
+    empirical_design: '[E1, reported claim; E5, reported claim about Meng] RD for income growth; E5 explicitly attributes the same fuzzy-RD approach to Meng. The full original implementation has not been independently inspected here.'
     assumptions:
     - Continuity at the 400-yuan threshold
     - No manipulation of 1992 income
@@ -251,6 +286,7 @@ design_applications:
     - E1
     - E2
     - E3
+    - E5
 method_transfer: null
 readiness_blockers: []
 superseded_by: null
@@ -267,11 +303,11 @@ The 8-7 Plan created a formal income-based eligibility rule: counties with 1992 
 
 ## Implementation and Assignment
 
-Treatment assignment was determined primarily by a single pre-program income variable, making the 400-yuan cutoff the central assignment mechanism. The rule was implemented uniformly across the country in 1994. Counties between 400 and 700 yuan retained designation if previously poor, creating a fuzzy upper boundary [E3, verified fact].
+The national rule uses1992 income and previous designation together: legacy counties in the400–700 interval can retain status [E3, verified fact]. Income alone is therefore not actual treatment. [E5, reported claim] The inspected application estimates a fuzzy first stage at400 and excludes700 because political selection there is a concern; neither nationwide rules nor a named cutoff imply mechanically sharp assignment.
 
 ## Why This Creates Empirical Variation
 
-The deterministic income threshold produces a sharp regression discontinuity. Counties just below 400 yuan are otherwise similar to counties just above 400 yuan, except for program eligibility. This allows credible estimation of the local effect of national poverty county designation on rural development outcomes [E1, reported claim].
+The documented income rules create an eligibility discontinuity, but not a mechanically sharp treatment boundary. [E5, reported claim] Actual designation is not fully determined by 1992 income because legacy poverty-county status matters; the usable contrast is therefore fuzzy RD around the 400-yuan entry rule, with an eligibility-side indicator providing a first stage for actual designation. Whether this contrast is credible still depends on local continuity, no sorting/manipulation, and a meaningful first stage.
 
 ## Identification Risks
 
@@ -279,8 +315,10 @@ The main risks are manipulation of 1992 income reporting, heterogeneous treatmen
 
 ## Data Requirements
 
-A usable study needs county-level 1992 rural per capita net income, the 1994 national poverty county indicator, outcome data for the 1980s and 1990s, and predetermined covariates. The official county list and income data have been used in the published literature and are available from Chinese statistical yearbooks and academic replication files [E1, reported claim].
+A designation-based fuzzy RD needs the1992 running variable, actual1994 designation, previous status, outcomes around the cutoff, county identifiers and pre-treatment characteristics for continuity checks. Its default contract does not impose five pre- and five post-outcome years. [E5, reported claim] The inspected application uses1994–2000 outcomes with historical covariates; a single post-program outcome can support an RD comparison across counties, whereas income growth needs its stated endpoints and a DID requires its own pre/post outcomes and assumptions [analytical inference]. The zero period minima remove a spurious universal panel requirement, not the need for observed outcomes, historical assignment or diagnostics.
+
+Fiscal-transfer amounts are additional inputs when studying amounts or channels, not mandatory for every designation effect. [E5, reported claim] Program-specific education transfers were unavailable in the described sources; an aggregate specific-purpose transfer proxy is not the same variable. Published data descriptions establish prior use, not current download access. No author replication package or the original income paper's2000-endpoint construction was inspected. Preserve these access and application limits when proposing an implementation.
 
 ## Evidence Notes
 
-The full text of the State Council notice is available through a provincial government gazette reproduction [E2]. The precise 400/700-yuan rule and the 592-county list are documented in official government white papers and the State Council poverty alleviation office's historical account [E3, E4]. The empirical application is drawn from Meng (2013) in the Journal of Public Economics [E1].
+The prior official-document inspections establish the national notice and400/700 rules [E2–E4]; those pages were not newly certified in this audit. Meng's abstract and publisher previews support the income application only to their stated access boundary [E1]. Lü's inspected author-hosted full text supports the fuzzy designation first stage and clarifies both the historical-data requirements and what was unavailable [E5]. A new outcome still needs its own continuity, sample and measurement assessment; the entry rule does not certify every application.

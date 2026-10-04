@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .env
 state/.*.lock
+
+# Local environment and evidence-retrieval scratch files; keep knowledge visible.
+/.venv/
+/.tmp_*
+/.tmptest/

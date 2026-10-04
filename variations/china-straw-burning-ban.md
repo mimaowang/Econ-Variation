@@ -7,9 +7,9 @@ aliases:
 - UPSB policy
 - crop residue burning regulation China
 - 秸秆禁烧
-status: extracted
+status: grounded
 provenance:
-  task_id: task-180f2fd6694c
+  task_id: task-3e49616df51d
 scope:
   country: China
   regions:
@@ -28,7 +28,7 @@ identity:
   instrument: Universal Prohibition on Straw Burning (UPSB) policy and related national and local bans on open-field crop-residue burning, enforced through satellite remote sensing, drone patrols, administrative penalties, and official accountability.
   authority: State Council of China; National Development and Reform Commission (NDRC); Ministry of Agriculture and Rural Affairs (MARA); Ministry of Ecology and Environment (MEE); provincial and municipal people's governments.
   legal_identifiers:
-  - 《秸秆禁烧和综合利用管理办法》（环发〔1999〕98号）
+  - 《秸秆禁烧和综合利用管理办法》（环发〔1999〕98号，2016年经环境保护部令第40号废止）
   - 《国务院办公厅关于加快推进农作物秸秆综合利用的意见》（国办发〔2008〕105号）
   - 《大气污染防治行动计划》（国发〔2013〕37号）
   - 《关于加强农作物秸秆综合利用和禁烧工作的通知》（发改环资〔2013〕930号）
@@ -45,7 +45,7 @@ timeline:
   implementation_end: ongoing
   local_timing: 'Enforcement concentrates in harvest windows: late May-June (wheat) and September-October (corn/rice). Local governments issue seasonal bans and grid-based patrols during these periods.'
   anticipation: Farmers and local officials anticipate harvest-season inspections; in response some burning shifts to night-time, less-monitored parcels, or adjacent jurisdictions.
-  last_verified: '2026-07-14'
+  last_verified: '2026-08-15'
 assignment:
   unit: County-year (or province-year) and harvest season; may also be defined at the grid-cell-day level using satellite fire data.
   treated: Localities and time periods subject to intensified UPSB enforcement, measured by reduced satellite fire points, stricter penalties, publicized fire-point bulletins, or inclusion in the post-2015 campaign period.
@@ -213,31 +213,40 @@ evidence:
   url: https://www.gov.cn/gongbao/shuju/1999/gwyb199916.pdf
   date: 1999
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.instrument
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
+  - timeline.implementation_start
+  - assignment.rule
   verification_status: verified
   access_level: official-document
-  locator: State Council Gazette PDF, 环发〔1999〕98号
+  locator: State Council Gazette PDF, 环发〔1999〕98号 (scanned gazette issue; content confirmed via official republications and the 2016 MEP abolition decision)
 - id: E2
   source_type: policy-document
   citation: 国务院办公厅《关于加快推进农作物秸秆综合利用的意见》（国办发〔2008〕105号），2008年7月27日。
-  url: https://www.gov.cn/zwgk/2008-08/01/content_1061158.htm
+  url: https://www.gd.gov.cn/zwgk/gongbao/2008/28/content/post_3362461.html
   date: 2008
   supports:
-  - identity
-  - timeline
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
+  - assignment.rule
   verification_status: verified
   access_level: official-document
-  locator: http://www.gov.cn/zwgk/2008-08/01/content_1061158.htm
+  locator: Guangdong Provincial Government Gazette republication (粤府办〔2008〕59号) reproducing the full text; the original gov.cn posting (content_1061158.htm) now returns 404
 - id: E3
   source_type: policy-document
   citation: 国务院《大气污染防治行动计划》（国发〔2013〕37号），2013年9月10日。
   url: https://www.gov.cn/zhengce/content/2013-09/13/content_4561.htm
   date: 2013
   supports:
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
   verification_status: verified
   access_level: official-document
   locator: http://www.gov.cn/zhengce/content/2013-09/13/content_4561.htm
@@ -247,9 +256,15 @@ evidence:
   url: https://www.ndrc.gov.cn/xxgk/zcfb/tz/201511/t20151125_963505.html
   date: 2015
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.instrument
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
+  - assignment.rule
+  - assignment.intensity
+  - assignment.compliance
   verification_status: verified
   access_level: official-document
   locator: http://www.ndrc.gov.cn/xxgk/zcfb/tz/201511/t20151125_963505.html
@@ -259,8 +274,11 @@ evidence:
   url: https://www.gov.cn/zhengce/content/2018-07/03/content_5303158.htm
   date: 2018
   supports:
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.effective
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: http://www.gov.cn/zhengce/content/2018-07/03/content_5303158.htm
@@ -270,13 +288,25 @@ evidence:
   url: https://doi.org/10.1016/j.jdeveco.2026.103727
   date: 2026
   supports:
-  - design
-  - design_applications
-  - threats
-  - empirical_requirements
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
   verification_status: verified
   access_level: abstract
   locator: DOI 10.1016/j.jdeveco.2026.103727
+- id: E7
+  source_type: policy-document
+  citation: 环境保护部《关于废止部分环保部门规章和规范性文件的决定》（环境保护部令第40号），2016年7月13日。
+  url: https://www.gov.cn/gongbao/content/2016/content_5139836.htm
+  date: 2016
+  supports:
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  verification_status: verified
+  access_level: official-document
+  locator: State Council Gazette 2016 no. 33; item 4 of the repealed-rules list formally abolishes the 1999 Measures (环发〔1999〕98号)
 design_applications:
 - paper: 'When the fire ends: Straw burning, regulation, and pollution substitution'
   doi: 10.1016/j.jdeveco.2026.103727
@@ -316,7 +346,7 @@ method_transfer: null
 ---
 ## Institutional Background
 
-Open-field burning of crop residues has long been common in China as a low-cost way to clear fields, control pests, and return some nutrients to the soil. Since 1999 the central government has prohibited such burning through the *Measures for the Prohibition of Straw Burning and Comprehensive Utilization* (E1). The 2008 State Council opinion expanded the policy frame from simple bans toward comprehensive utilization and provided the first national targets (E2). The 2013 *Air Pollution Prevention Action Plan* and the 2015 NDRC-MARA-MEE-Finance notice (E3, E4) intensified enforcement by linking local officials' accountability to satellite-detected fire points, mandating drone and grid patrols, and setting quantitative targets (85% comprehensive utilization by 2020; fire points/burned area down 5% from 2016). The 2018 *Blue Sky Defense Action Plan* reinforced harvest-season grid supervision and extended the framework to the Yangtze River Delta and other key regions (E5). [E1; E2; E3; E4; E5]
+Open-field burning of crop residues has long been common in China as a low-cost way to clear fields, control pests, and return some nutrients to the soil. Since 1999 the central government has prohibited such burning through the *Measures for the Prohibition of Straw Burning and Comprehensive Utilization* (E1). The 2008 State Council opinion expanded the policy frame from simple bans toward comprehensive utilization and provided the first national targets (E2). The 1999 Measures were formally repealed in 2016 by MEP Order No. 40, while the prohibition regime continued under the later action-plan framework (E7). The 2013 *Air Pollution Prevention Action Plan* and the 2015 NDRC-MARA-MEE-Finance notice (E3, E4) intensified enforcement by linking local officials' accountability to satellite-detected fire points, mandating drone and grid patrols, and setting quantitative targets (85% comprehensive utilization by 2020; fire points/burned area down 5% from 2016). The 2018 *Blue Sky Defense Action Plan* reinforced harvest-season grid supervision and extended the framework to the Yangtze River Delta and other key regions (E5). [E1; E2; E3; E4; E5; E7]
 
 ## What Changed
 
@@ -340,4 +370,4 @@ The design requires county- or province-level panels of satellite fire points, c
 
 ## Evidence Notes
 
-Primary institutional grounding comes from the 1999 national ban, the 2008 State Council opinion, the 2013 Air Pollution Prevention Action Plan, the 2015 four-ministry notice, and the 2018 Blue Sky Defense Action Plan (E1–E5). The empirical design is drawn from Hong & Chen (2026, *Journal of Development Economics*), which uses a generalized DID and reports significant reductions in fires and air pollution but increased water pollution through input substitution (E6). [E1; E2; E3; E4; E5; E6]
+Primary institutional grounding comes from the 1999 national ban (repealed in 2016 by MEP Order No. 40), the 2008 State Council opinion, the 2013 Air Pollution Prevention Action Plan, the 2015 four-ministry notice, and the 2018 Blue Sky Defense Action Plan (E1–E5, E7). The empirical design is drawn from Hong & Chen (2026, *Journal of Development Economics*), which uses a generalized DID and reports significant reductions in fires and air pollution but increased water pollution through input substitution (E6). [E1; E2; E3; E4; E5; E6]

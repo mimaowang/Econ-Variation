@@ -78,7 +78,7 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
     pending = [task for task in tasks if task.get("status") == "pending"]
     if stop:
         pending = [task for task in pending if task.get("stage") not in {"screen", "discover"}]
-    from task_queue import effective_priority
+    from task_queue import build_task_brief, effective_priority
 
     pending.sort(key=lambda task: (-effective_priority(task), str(task.get("created_at", "")), str(task.get("id", ""))))
     next_tasks = [
@@ -88,6 +88,27 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
         }
         for task in pending[:3]
     ]
+    candidate_by_id = {str(row.get("id")): row for row in candidates}
+    brief_task = active_rows[0] if active_rows else (pending[0] if pending else None)
+    task_brief = None
+    if brief_task:
+        task_brief = build_task_brief(
+            brief_task,
+            candidate_by_id.get(str(brief_task.get("candidate_id"))),
+        )
+    open_candidates = [
+        {
+            "id": row.get("id"), "stage": row.get("stage"), "status": row.get("status"),
+            "name": str(row.get("name", ""))[:100],
+        }
+        for row in candidates
+        if row.get("status") in {"pending", "queued", "in-progress"}
+    ][:3]
+    feedback_reasons = list((health.get("knowledge_readiness") or {}).get("feedback_reasons") or [])
+    if any(row.get("status") in {"pending", "queued", "in-progress"} for row in candidates):
+        feedback_reasons.append("open-candidates")
+    feedback_reasons = list(dict.fromkeys(feedback_reasons))
+    work_mode = "close-open-loops" if feedback_reasons else "balanced"
     debt_groups = health.get("quality_debt") or {}
     managed_debt = debt_groups.get("managed_active_pipeline") or {}
     debt = {name: count for name, count in managed_debt.items() if isinstance(count, int) and name != "record_count"}
@@ -119,6 +140,12 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
         action = "resume-active-task"
     elif next_tasks:
         action = "claim-next-listed-task"
+    elif any(row.get("status") == "pending" for row in candidates):
+        action = "enqueue-candidate-follow-up"
+    elif health.get("canonical_admission_debt_ids"):
+        action = "enqueue-ground-or-audit-task"
+    elif health.get("promotion_ready_ids"):
+        action = "enqueue-promotion-audit"
     elif stop:
         action = "enqueue-ground-or-audit-task"
     else:
@@ -130,8 +157,12 @@ def build_report(current: datetime | None = None) -> dict[str, Any]:
         "validation_errors": snapshot["validation_error_count"],
         "validation_warnings": snapshot["validation_warning_count"],
         "stop_bulk_discovery": stop,
+        "work_mode": work_mode,
+        "feedback_reasons": feedback_reasons,
         "active_task": active[0] if active else None,
         "next_tasks": next_tasks,
+        "task_brief": task_brief,
+        "open_candidates": open_candidates,
         "candidate_status_counts": {
             status: sum(candidate.get("status") == status for candidate in candidates)
             for status in ("pending", "queued", "in-progress", "resolved", "contested", "skipped", "blocked")

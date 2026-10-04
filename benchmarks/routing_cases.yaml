@@ -259,11 +259,11 @@ cases:
       candidate_ids: [china-mfa-quota-removal-textile-exporters]
       include_leads: true
     evaluation:
-      decision: incompatible
+      decision: conditional
       expected_ids: [china-mfa-quota-removal-textile-exporters]
-      expected_reason_codes: [knowledge-excluded]
+      expected_reason_codes: [knowledge-conditional]
       allowed_roles: [global-china-variation]
-      must_identify: [global-China role is correct, lead-only record is not recommendation-ready]
+      must_identify: [global-China role is correct, grounded record retains safeguard and exposure conditions, user data compatibility is not yet established]
 
   - id: audited-wind-direction-method
     mode: match

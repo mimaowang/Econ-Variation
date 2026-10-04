@@ -1,267 +1,262 @@
 ---
 schema_version: 2
 id: china-citizen-appeals-environmental-governance
-name: Nationwide Field Experiment on Citizen Participation in Environmental Governance through Pollution Appeals in China
+name: Randomized Public and Private Pollution Appeals to Chinese CEMS Firms, 2020
 aliases:
 - Buntaine Greenstone He Liu Wang Zhang squeaky wheel
 - China citizen appeals experiment
-
-status: extracted
+- 中国污染举报随机实验
+status: design-documented
 provenance:
-  task_id: legacy-untracked
+  task_id: task-41ea678ac598
 scope:
   country: China
   regions:
-  - 294 prefectures across China
+  - 333 mainland Chinese prefectures with CEMS-monitored firms in the paper's experimental frame
   domains:
   - environmental-economics
   - political-economy
   - public-economics
   - regulation
-  variation_type: pilot-assignment
+  variation_type: other
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: The research team randomly assigned appeal channels to mainland Chinese plants monitored by the Ministry of Ecology and Environment; these are actual China-based firm exposures, not an overseas method analogy.
 identity:
-  instrument: A nationwide field experiment that randomly assigned citizen appeals (public via social media or private via
-    government hotline) against manufacturing firms violating pollution standards, creating exogenous variation in the type
-    of citizen participation in environmental enforcement
-  authority: Research team in partnership with local environmental protection bureaus (EPBs); the experiment randomized the
-    routing of citizen complaints about pollution violations by firms
+  instrument: Research-team assignment of eligible CEMS plants to no research-team appeal, private appeal, or public Weibo appeal after a verified emissions-standard violation during May–December 2020.
+  authority: The researchers and volunteer citizens recruited through three environmental NGOs assigned and filed the experimental appeals. Local ecology and environment bureaus received them through existing channels; they did not randomize or run the intervention [E1].
   legal_identifiers:
-  - China Environmental Protection Law (2014 revision)
-  - Ambient Air Quality Standards (GB 3095-2012)
-  implementation_regime: The experiment was conducted across 294 prefectures, with citizen appeals randomly assigned to either
-    public (social media) or private (government hotline) channels; the proportion of treated firms within each prefecture
-    was also randomly varied
-  assignment_mechanism: Random assignment of citizen appeals to public vs. private channels; random variation in the proportion
-    of treated firms (10%, 25%, 50%, or 75%) at the prefecture level
+  - 环境保护部令第35号, 环境保护公众参与办法, effective 2015-09-01; authorizes citizen reporting and official response channels, not this experiment's randomization
+  - 环发〔2013〕74号, 关于加强污染源环境监管信息公开工作的通知; public monitoring-information context
+  - AEA RCT Registry AEARCTR-0005601; planned intervention, not proof of exact realized dates or counts
+  implementation_regime: The paper's frame is 24,620 CEMS-monitored plants in 333 prefectures as of January 2020. The experiment ran 2020-05-06 to 2020-12-31. Research volunteers filed appeals only after daily violations were verified; ordinary government enforcement continued independently [E1, §III].
+  assignment_mechanism: Firm-level randomization placed CEMS firms in control, private-appeal or public-Weibo-appeal arms. At a second level, 60% of prefectures were assigned 95% treated firms and 40% were assigned 70% treated firms; this saturation randomization tests spillovers [E1, §III.A].
   parent: null
   related_variations: []
 timeline:
   announcement: null
   effective: null
-  implementation_start: 2017
-  implementation_end: 2019
-  local_timing: The experiment was conducted over 2017–2019 with multiple waves of appeal assignments
-  anticipation: No anticipation possible because appeals were randomly assigned after violations were detected; firms could
-    not predict whether a citizen appeal would be made or through which channel
-  last_verified: '2026-07-13'
+  implementation_start: '2020-05-06'
+  implementation_end: '2020-12-31'
+  local_timing: Assignment preceded the field period. Each day the team checked the previous 24 hours of CEMS readings; verified violations by treated firms triggered a scripted appeal, except repeat violations within a week. A small implementation pilot occurred in April 2020 [E1, §III.B].
+  anticipation: Exact appeals followed violations and were not scheduled to firms in advance, but firms may have known public CEMS reporting and citizen-complaint channels already existed. The paper does not prove zero anticipation or zero independent complaints.
+  last_verified: '2026-10-02'
 assignment:
-  unit: Firm
-  treated: Firms assigned to receive citizen appeals (either public or private) after violating pollution standards
-  comparison_pool: Firms in the same prefecture that were not assigned any citizen appeal (control group); variation across
-    prefectures in the proportion of treated firms
-  rule: Firms violating pollution standards were randomly assigned to either public appeal (via social media), private appeal
-    (via government hotline), or no appeal (control); at the prefecture level, the fraction of violating firms receiving appeals
-    was randomly varied
-  intensity: Binary at the firm level (appeal or no appeal), with type of appeal (public vs. private) providing additional
-    cross-cutting variation; prefecture-level treatment proportion varies from 10% to 75%
-  compliance: High compliance; citizen appeals were executed as designed and regulators responded to assigned appeals
-  exposure_construction: Code firms as treated if a citizen appeal was submitted against them; distinguish between public
-    and private appeal types; use prefecture-level treatment proportion as an additional source of variation for indirect
-    effects
+  unit: CEMS firm for the main assignment; prefecture for randomized treatment saturation; individual Weibo appeal for the visibility subexperiment
+  treated: CEMS firms preassigned to one of the research team's private or public appeal arms. An actual appeal is filed only following a verified standard violation; assigned but nonviolating firms remain in their arm for intention-to-treat comparisons.
+  comparison_pool: CEMS firms assigned no research-team appeal. For spillover analysis compare like-assigned firms across 95%-treated versus 70%-treated prefectures; other citizen complaints can occur in any arm.
+  rule: The researchers randomize CEMS firms, not pollution-violation incidents, to control, private or public appeal arms. After a verified violation, volunteers use the assigned channel. The 2015 public-participation rule recognizes hotline and website reporting, but does not specify the experimental allocation [E1; E3].
+  intensity: Roughly 1/7 of firms are control, 5/7 private and 1/7 public in the broad design; prefectures receive 70% or 95% treated saturation. Private subchannels include Weibo direct message, 12369 website/hotline and phone call to firm; half of public Weibo appeals receive extra likes/shares at the appeal level [E1, §III.A].
+  compliance: The paper reports 2,941 filed appeals out of 5,366 verified violations during the experiment; remaining events include control-firm violations and repeated violations within a week. Filing does not guarantee a regulatory response; 1,161 formal responses were observed [E1, §III.B].
+  exposure_construction: Join preassigned firm arm and prefecture saturation to CEMS firm identifiers and daily readings. Model broad-arm assignment interacted with post-2020-05-06 for daily violations and pollution; use appeal-level randomization only to compare boosted versus unboosted Weibo visibility among public appeals [E1, §§III–IV].
   required_identifiers:
-  - firm ID
+  - CEMS firm identity or social credit code
   - prefecture code
-  - appeal assignment
-  - appeal type
-  - violation date
-  exemptions: []
-  spillovers: The experiment was designed to test for spillovers through random variation in the prefecture-level proportion
-    of treated firms, enabling estimation of general equilibrium effects on untreated firms within the same regulatory environment
+  - randomized firm arm and prefecture saturation
+  - daily timestamp and pollutant monitoring point
+  - appeal event ID for actual filing and visibility subexperiment
+  exemptions:
+  - Plants outside the January 2020 CEMS frame are not in the experiment, even if locally polluting.
+  - CEMS spikes from production shutdown or monitor malfunction were screened out before appeals; repeated violations within a week did not trigger a new appeal.
+  spillovers: Prefecture saturation is randomized precisely to test whether extra appeals change enforcement or pollution at control firms or assigned but nonviolating firms. The paper does not find treated-firm reductions offset by control firms; that is an empirical finding, not a design assumption [E1, §§III.A, V].
 research_compatibility:
   outcome_domains:
-  - pollution emissions
-  - environmental compliance
-  - regulatory behavior
-  - firm behavior
-  - citizen participation
-  - government accountability
+  - CEMS emissions concentrations and standards violations
+  - ambient pollution
+  - regulator responses to citizen appeals
   affected_populations:
-  - Polluting manufacturing firms
+  - CEMS-monitored mainland Chinese plants
   - local environmental regulators
-  - citizens in polluted areas
   mechanism_channels:
-  - regulatory attention channel
-  - public pressure channel
-  - reputation concerns
-  - government accountability
-  - avoidance of public unrest
+  - private regulatory notice
+  - public visibility and regulator responsiveness
   best_for:
-  - Studying how different forms of citizen participation affect environmental enforcement
-  - estimating direct and indirect effects of public appeals
-  - understanding regulator response to public pressure
+  - Comparing the intention-to-treat effects of private and public citizen appeals on monitored plants
+  - Testing within-prefecture spillovers through randomized treatment saturation
+  - Studying whether experimentally boosted public visibility changes responses to Weibo appeals
   not_good_for:
-  - Outcomes not related to environmental enforcement
-  - long-run structural changes
-  - non-China contexts
-  - variation across different institutional environments
+  - Treating actual complaint receipt as randomly assigned among firms conditional on a post-assignment violation
+  - Extrapolating to unmonitored plants or long-run industrial relocation
+  - Interpreting existing complaint law as the experiment's assigning authority
 design:
+  claim_type: causal
   affordances:
-  - random assignment of appeals
-  - variation in appeal type (public vs. private)
-  - prefecture-level variation in treatment proportion
-  - panel structure with multiple waves
+  - Preassigned firm arms before subsequent violation-based appeal triggers
+  - Randomized 70%-versus-95% prefecture treatment saturation
+  - Appeal-level boosted-versus-unboosted Weibo visibility among public appeals
   candidate_designs:
-  - randomized controlled trial comparing public vs. private appeals
-  - difference-in-differences
-  - indirect effect estimation through variation in regional treatment intensity
-  identifying_variation: Exogenous variation in whether a citizen appeal is submitted against a violating firm and through
-    which channel (public vs. private), generated by random assignment; prefecture-level variation in the share of violating
-    firms receiving appeals identifies spillover effects on untreated firms
+  - Firm-arm intention-to-treat analysis using pre/post CEMS panel
+  - Prefecture-saturation spillover analysis
+  - Within-public-appeal visibility experiment for regulator responses
+  identifying_variation: Firm assignment precedes violations and determines which channel is used if a verified violation occurs; prefecture assignment changes the fraction of firms eligible for appeals; half of filed public Weibo posts were separately randomized to boosted visibility [E1, §III].
   assumptions:
-  - random assignment successfully balanced firm characteristics across treatment arms
-  - no contamination across treatment arms within prefectures
-  - regulators did not systematically alter behavior across prefectures based on treatment proportions
+  - Firm-arm comparisons retain originally assigned firms, including those without violations or appeals.
+  - Prefecture spillovers are estimated, not assumed absent.
+  - Public-appeal visibility comparisons are limited to their randomized appeal-level population.
   diagnostics:
-  - balance checks across treatment arms
-  - manipulation checks on randomization
-  - tests for selective attrition
-  - tests for cross-prefecture spillovers
-  primary_strategy: Multi-level randomized controlled trial with firm-level and prefecture-level randomization
-  estimand: The causal effect of the recorded exposure on Firm-level pollution emissions, violation rates, regulator inspection
-    frequency and enforcement actions, conditional on the stated design assumptions.
-  treatment_variable: Binary indicator for any appeal assignment; separate indicators for public (social media) vs. private
-    (hotline) appeal type; prefecture-level share of treated firms
-  comparison_logic: Firms receiving public appeals vs. private appeals vs. no appeals; prefectures with different treatment
-    proportions
-  estimation_notes: Multi-level randomized controlled trial with firm-level and prefecture-level randomization
+  - Paper Table 2 pre-treatment arm balance
+  - Paper Tables 3 and 7 plus appendix robustness and pre-period patterns
+  - CEMS mechanical-spike and production-stop screening
+  primary_strategy: Multi-level randomized field experiment; daily firm-arm intention-to-treat estimates and separate prefecture-saturation and appeal-visibility contrasts [E1, §§III–VI].
+  estimand: Effects of assignment to private or public appeal eligibility on monitored firms' daily violation and emission outcomes; separate saturation spillover and public-post visibility effects.
+  treatment_variable: Firm private-arm × post and public-arm × post; randomized high-intensity prefecture × post; separately randomized Weibo like/share boost for response outcomes.
+  comparison_logic: Preserve assigned control, private and public firm arms regardless of subsequent violations; compare 95% versus 70% prefectures for indirect effects, and boosted versus unboosted public posts for appeal response.
+  estimation_notes: The main daily CEMS regressions use firm and day or province-by-day fixed effects, with two-way prefecture and week clustering [E1, §IV and Table 3]. A comparison of broad arms conditional on post-assignment violations would select on an affected outcome [E1, §III.A n.13].
 threats:
-- type: non-compliance-with-assignment
+- type: triggered-treatment-versus-assignment
   basis: documented
-  condition: Citizen appeals may not have been executed exactly as assigned, or regulators may not have responded uniformly
-    across treatment arms
-  evidence_refs:
-  - E1
+  condition: An appeal follows only a verified violation and at most once per firm within a week. Comparing appealed firms with unappealed firms or conditioning broad-arm response comparisons on subsequent violations loses the clean firm randomization [E1, §III.A n.13 and §III.B].
+  evidence_refs: [E1]
   possible_diagnostics:
-  - compliance checks on appeal execution
-  - comparison of assigned vs. actual appeal type
-  - regulator response audits
+  - Retain original assigned denominator for firm-level ITT.
+  - Tabulate verified violations, appeals filed and responses by arm.
 - type: spillovers
   basis: documented
-  condition: Treatment effects on firms in the same prefecture may affect control firms through regulatory channel, labor
-    market, or product market spillovers
-  evidence_refs:
-  - E1
+  condition: Regulators may shift attention to or away from untreated firms within a prefecture; the design deliberately varies treatment saturation to detect this [E1, §§III.A, VI].
+  evidence_refs: [E1]
   possible_diagnostics:
-  - compare outcomes across prefectures with different treatment proportions
-  - test for spillovers in outcomes of untreated firms
-- type: hawthorne-effects
-  basis: inferred
-  condition: Firms or regulators may have altered behavior due to awareness of being studied, independent of the treatment
-    itself
-  evidence_refs:
-  - E1
+  - Compare control-firm outcomes by randomized 95% versus 70% prefecture saturation.
+- type: measurement-and-external-complaints
+  basis: documented
+  condition: CEMS readings can spike during shutdowns or monitor malfunctions; unrelated citizens also filed complaints in all arms [E1, §§III.B–D].
+  evidence_refs: [E1]
   possible_diagnostics:
-  - compare to external administrative data not linked to the experiment
-  - examine whether effects persist after experiment ends
+  - Recreate verification filters and examine daily flows alongside concentrations.
+  - Separate research-team filings from MEE records of other citizens' appeals.
 empirical_requirements:
   contract_version: 1
-  population: Polluting manufacturing firms and local environmental regulators in 294 Chinese prefectures
-  observation_unit: Firm-wave or prefecture-wave
-  geography_level: Prefecture
-  time_start: 2017
-  time_end: 2019
-  minimum_frequency: wave-level (multiple waves over the study period)
+  population: The paper's 24,620 CEMS-monitored firms in 333 mainland Chinese prefectures as of January 2020; not all Chinese firms.
+  observation_unit: Firm-day for primary CEMS outcomes; firm/appeal-event for complaint responses; prefecture-day or week for saturation and ambient pollution.
+  geography_level: Firm and prefecture
+  time_start: 2020
+  time_end: 2020
+  minimum_frequency: Daily for the primary CEMS outcomes
   minimum_pre_periods: 1
   minimum_post_periods: 1
   required_fields:
-  - firm ID
-  - prefecture code
-  - pollution emissions
-  - violation status
-  - appeal assignment
-  - appeal type
-  - firm characteristics
+  - hourly or daily SO2/COD concentrations and firm-specific emission standards
+  - gas/water flows and production-status indicators for false-positive screening
+  - firm assigned arm, prefecture assigned saturation and experiment start date
+  - verified violation dates, research-team appeal events, channel and formal responses
   required_identifiers:
-  - firm ID
+  - CEMS firm ID or social credit code
   - prefecture code
-  - wave identifier
+  - observation date and pollutant/monitoring point
+  - appeal event ID for appeal-level tests
   treatment_key:
-  - appeal assignment indicator
-  - appeal type indicator
-  - prefecture-level treatment proportion
-  treatment_source: Experiment administrative records; pollution violation data from environmental protection bureaus; citizen
-    appeal records from social media and government hotline platforms
+  - preassigned firm control/private/public arm
+  - prefecture 70%-or-95% assigned saturation
+  - post-2020-05-06 indicator
+  - randomized public-post boost for response subexperiment
+  treatment_source: Research team's nonpublic randomization and appeal logs linked to MEE CEMS and citizen-appeal records by firm identifiers [E1, §III.D]. The public article documents the design but does not make raw assignment keys reconstructible from law or CEMS alone.
   measurement_risks:
-  - measurement error in emissions data
-  - selective reporting of violations
-  - attrition of firms from the sample over waves
-  - regulator gaming of reported outcomes
+  - CEMS false-positive spikes during production stoppage or monitor faults
+  - Other citizens' appeals mistaken for research-team appeals
+  - Post-assignment violation selection when estimating regulator response
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Buntaine, Mark T., Michael Greenstone, Guojun He, Mengdi Liu, Shaoda Wang, and Bing Zhang. 2024. "Does the Squeaky
-    Wheel Get More Grease? The Direct and Indirect Effects of Citizen Participation on Environmental Governance in China."
-    American Economic Review 114 (3): 815–850.'
-  url: https://doi.org/10.1257/aer.20221215
-  date: 2024
-  supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - direct effects
-  - indirect effects
-  - spillover analysis
-  - regulator behavior
+  citation: 'Buntaine, Mark T., Michael Greenstone, Guojun He, Mengdi Liu, Shaoda Wang, and Bing Zhang. 2024. "Does the Squeaky Wheel Get More Grease? The Direct and Indirect Effects of Citizen Participation on Environmental Governance in China." American Economic Review 114(3): 815–850. DOI 10.1257/aer.20221215. Author-hosted final manuscript.'
+  url: https://www.sdwang.org/uploads/4/4/8/5/44856715/pollution_appeals_final.pdf
+  date: '2024'
+  supports: [identity.instrument, identity.authority, identity.implementation_regime, identity.assignment_mechanism, timeline.implementation_start, timeline.implementation_end, assignment.unit, assignment.treated, assignment.comparison_pool, assignment.rule, assignment.intensity, assignment.compliance, assignment.exposure_construction, assignment.spillovers, design.identifying_variation, design.primary_strategy, design.estimand, design.treatment_variable, design.comparison_logic, design.estimation_notes, empirical_requirements.population, empirical_requirements.observation_unit, empirical_requirements.required_fields, empirical_requirements.treatment_source, design_applications.data_used, design_applications.empirical_design]
   verification_status: verified
+  access_level: full-text
+  locator: '§III.A–D, PDF pp. 10–17, especially p. 14 field dates and verified-violation appeal trigger, p. 16 CEMS and registry joins; §IV, PDF pp. 17–20, firm-arm ITT; §VI, PDF pp. 24–27, saturation spillovers; Table 1, PDF pp. 40–41, sample/appeal counts. Inspected 2026-10-02. Reports realized design, unlike the registry’s planned dates.'
+- id: E2
+  source_type: archive
+  citation: 'AEA RCT Registry, AEARCTR-0005601, "Citizen Participation and Government Accountability: Experimental Evidence from Environmental Complaints in China," registered before fieldwork.'
+  url: https://www.socialscienceregistry.org/trials/5601
+  date: '2020'
+  supports: [identity.legal_identifiers, identity.assignment_mechanism, timeline.local_timing, assignment.rule]
+  verification_status: verified
+  access_level: metadata
+  locator: 'Registry study overview and intervention/design fields, inspected 2026-10-02: intended firm/city double randomization and seven arms, planned 2020-04-13 start and 2021-05-01 end. These planned dates and sample are NOT substituted for realized 2020-05-06 to 2020-12-31 and 24,620 firms in E1.'
+- id: E3
+  source_type: policy-document
+  citation: 'Ministry of Environmental Protection, 环境保护公众参与办法, Order No. 35, issued 2015-07-13, effective 2015-09-01.'
+  url: https://www.mee.gov.cn/gzk/gz/202112/t20211211_963794.shtml
+  date: '2015-07-13'
+  supports: [identity.legal_identifiers, identity.implementation_regime, assignment.rule]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Articles 10–13 authorize citizens to report environmental violations through 12369, government websites and related channels and describe receipt, investigation and response; inspected 2026-10-02. Does not authorize or document the research randomization.'
+- id: E4
+  source_type: implementation-document
+  citation: 'Ministry of Environmental Protection, 关于加强污染源环境监管信息公开工作的通知, 环发〔2013〕74号, 2013-07-12.'
+  url: https://www.mee.gov.cn/gkml/hbb/bwj/201307/t20130717_255667.htm
+  date: '2013-07-12'
+  supports: [identity.legal_identifiers, identity.implementation_regime]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Notice on publication of pollution-source regulatory and monitoring information; inspected 2026-10-02. Background for publicly visible monitoring, not evidence of the study’s exact firm sample or appeal assignments.'
+- id: E5
+  source_type: appendix
+  citation: 'Buntaine et al., AER 2024 online appendix and supplementary materials for DOI 10.1257/aer.20221215.'
+  url: https://www.aeaweb.org/articles/materials/20362
+  date: '2024'
+  supports: [design.diagnostics, empirical_requirements.measurement_risks, design_applications.threats_addressed]
+  verification_status: verified
+  access_level: appendix
+  locator: 'AEA article materials page linking online appendix; appendix Table A2 and A3 robustness and Appendix B violation-screening protocol; inspected 2026-10-02.'
+- id: E6
+  source_type: paper
+  citation: 'American Economic Association, publication landing page for Buntaine et al., American Economic Review 114(3), 2024, DOI 10.1257/aer.20221215.'
+  url: https://doi.org/10.1257/aer.20221215
+  date: '2024'
+  supports: [design_applications.paper, design_applications.doi, design_applications.journal, design_applications.year]
+  verification_status: verified
+  access_level: metadata
+  locator: 'Publisher bibliographic identity, title, authors, journal, year and DOI only; inspected 2026-10-02. Empirical details come from E1.'
 design_applications:
 - paper: Does the Squeaky Wheel Get More Grease? The Direct and Indirect Effects of Citizen Participation on Environmental
     Governance in China
   doi: 10.1257/aer.20221215
   journal: American Economic Review
   year: 2024
-  research_question: What are the direct and indirect effects of different forms of citizen participation (public vs. private
-    appeals) on environmental governance outcomes in China?
-  population: Polluting manufacturing firms and local regulators in 294 Chinese prefectures, 2017–2019
-  outcome: Firm-level pollution emissions, violation rates, regulator inspection frequency and enforcement actions
-  data_used: []
-  treatment_encoding: Binary indicator for any appeal assignment; separate indicators for public (social media) vs. private
-    (hotline) appeal type; prefecture-level share of treated firms
-  comparison: Firms receiving public appeals vs. private appeals vs. no appeals; prefectures with different treatment proportions
-  empirical_design: Multi-level randomized controlled trial with firm-level and prefecture-level randomization
+  research_question: Do private or public citizen appeals after observed standard violations reduce Chinese firms' emissions, and do appeals displace enforcement from other firms?
+  population: 24,620 CEMS-monitored firms across 333 prefectures in the January 2020 frame; research appeals filed 2020-05-06 through 2020-12-31.
+  outcome: Daily CEMS emission-standard violations and SO2/COD concentrations or emission amounts; regulator response to filed appeals; ambient pollution and control-firm outcomes for spillover analyses.
+  data_used: [MEE CEMS hourly firm pollution and flow records, research-team firm assignments and filed-appeal/response logs, MEE records of all citizens' 2020 appeals, Ministry of Commerce firm-registration data linked by social credit code, national ambient-air monitoring data for spillover tests]
+  treatment_encoding: Preassigned control/private/public firm arms interacted with post period; 95%- versus 70%-treated prefecture assignment; separately randomized like/share boost among public Weibo appeals.
+  comparison: All preassigned private and public firms versus control regardless of later violations; high- versus lower-saturation prefectures for spillovers; boosted versus unboosted public posts for response.
+  empirical_design: Multi-level randomized field experiment. Main daily firm ITT specifications include firm and day or province-by-day fixed effects; separate saturation and visibility analyses.
   assumptions:
-  - Random assignment ensures comparability across treatment arms
-  - no interference between treatment arms within prefectures
-  - regulators do not systematically compensate or adjust behavior across prefectures
+  - Assigned firm groups are comparable before treatment, assessed in Table 2.
+  - Post-assignment violation status is not conditioned on when comparing broad firm arms.
+  - Within-prefecture interference is investigated via randomized saturation, not ruled out by assumption.
   threats_addressed:
-  - confounding via randomization
-  - spillovers via prefecture-level randomization of treatment proportion
-  - experimenter demand effects via comparison with administrative data
-  evidence_refs:
-  - E1
-readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+  - Baseline imbalance using reported balance tests
+  - CEMS false-positive violations through blinded manual screening and appendix robustness
+  - Control-firm displacement using randomized prefecture saturation
+  - Other-citizen complaints using separate MEE administrative records
+  evidence_refs: [E1, E2, E3, E4, E5, E6]
+readiness_blockers: []
 method_transfer: null
 ---
 ## Institutional Background
 
-China's environmental enforcement system relies on local Environmental Protection Bureaus (EPBs) that monitor firm compliance with pollution standards. While citizens can report violations through official government hotlines and, increasingly, through social media platforms, the effectiveness of these channels in actually reducing pollution had not been causally established. The institutional setting creates a tension between EPBs' dual mandates of facilitating economic growth and enforcing environmental regulations. [E1]
+Chinese CEMS plants' emissions were observable in near-real time, and citizens already had routes to report apparent violations. The 2015 participation rule explains why a private complaint to the 12369 system could reach an official; it did not create the paper's experimental assignments. This is a research-team intervention embedded in existing monitoring and complaint institutions, not a rollout of a new government policy [E1; E3; E4].
 
 ## What Changed
 
-The research team conducted a nationwide field experiment across 294 prefectures in China. When manufacturing firms were detected violating pollution standards, citizen appeals against those firms were randomly assigned to one of three arms: (1) public appeals via social media, (2) private appeals via the government hotline, or (3) no appeal (control group). Additionally, the proportion of violating firms receiving appeals within each prefecture was randomly varied (10%, 25%, 50%, or 75%) to identify general equilibrium effects. [E1]
+Before the May–December 2020 field period, the researchers randomly assigned firms in a 24,620-plant, 333-prefecture CEMS frame to no research appeal, a private appeal channel, or a public Weibo appeal channel. Volunteers filed appeals only when a treated firm subsequently had a verified violation. A separate prefecture assignment made either 70% or 95% of firms eligible for treatment; a further randomization boosted visibility for half of public Weibo appeals [E1, §III and Table 1; E2 records the earlier plan].
 
 ## Implementation and Assignment
 
-Assignment occurred at two levels. First, at the firm level, violating firms were randomly assigned to public appeal, private appeal, or control. Second, at the prefecture level, the share of violating firms receiving any appeal was randomly varied. This dual randomization allows identification of both the direct effect of appeals on targeted firms and the indirect (spillover) effects on untreated firms within the same regulatory environment. Appeals were implemented through existing citizen complaint channels (social media for public, government hotline for private). [E1]
+The private treatment was not just a hotline: it included Weibo direct messages to regulators, the 12369 website and hotline, and calls to firms. The researchers screened daily CEMS breaches and excluded apparent shutdown or monitoring artifacts before volunteers filed. Of 5,366 verified violations, 2,941 generated research-team appeals; control firms and repeat violations within a week account for the remainder. The published end date and realized counts supersede the registry's proposed schedule [E1, §III and Table 1; E2].
 
 ## Why This Creates Empirical Variation
 
-The random assignment of appeals across violating firms generates exogenous variation in whether a firm faces citizen pressure and through which channel. The prefecture-level randomization of treatment share creates additional variation that identifies general equilibrium effects—for example, whether regulators reallocate enforcement effort away from control firms when many firms are targeted. This design allows estimation of both the direct treatment effect on targeted firms and the spillover effects on untargeted firms within the same regulatory jurisdiction. [E1; analytical inference]
+The clean firm comparison is assignment to an appeal channel, not whether an appeal happened: an appeal requires a later violation, which the earlier assignment itself can affect. Daily firm outcomes therefore retain the originally assigned denominator. Random saturation offers a separate test of spillovers onto control firms, while boosted-versus-unboosted public posts isolate how visibility affects regulator response among those posts. These are three related but distinct estimands [E1, §§III–VI].
 
 ## Identification Risks
 
-The experiment relies on the integrity of random assignment and the ability to prevent contamination across treatment arms. If regulators in high-treatment-proportion prefectures systematically altered their behavior across all firms (not just targeted ones), the estimated spillover effects could be confounded with regulatory responses to treatment intensity. Additionally, firms or regulators may have altered behavior due to awareness of being studied (Hawthorne effects), though the comparison with routine administrative data provides a check. [E1; analytical inference]
+Existing complaints by other citizens could reach any firm, so the control group means no *research-team* appeal, not no complaint. Spillovers across firms are a measured possibility, not a violation assumed away. The paper explicitly warns that broad-arm comparisons of regulator response conditional on a later violation are selected; only the appeal-level visibility contrast remains randomized for that question. CEMS errors and shutdown spikes also require the documented screening protocol [E1, §III.A n.13, §§III.B–D].
 
 ## Data Requirements
 
-Firm-level panel data on pollution emissions and violation status from China's continuous emissions monitoring system; administrative records of citizen appeals through social media and government hotline platforms; environmental inspection and enforcement records from local EPBs; firm characteristics from administrative registration data. [E1]
+Reproduction needs the preassigned firm and prefecture keys, research appeal/boost logs, MEE CEMS hourly readings and standards joined by firm ID or social credit code, and dates. The paper also links MEE records of other citizens' complaints and Ministry of Commerce registration data; ambient air monitors support a separate spillover test. The first ten 2020 CEMS weeks are excluded for COVID shutdowns. The published paper identifies these inputs but does not itself expose the firm-level randomization keys, so an independent researcher must obtain authorized experimental records to replicate the exact treatment variable [E1, §III.D].
 
 ## Evidence Notes
 
-E1 reports that public appeals via social media substantially reduced violations and emissions, while private appeals via government hotline had more modest effects. Public appeals shifted regulators' focus from economic growth toward avoiding pollution-induced public unrest. The prefecture-level randomization of treatment proportion reveals that pollution reductions by treated firms were not offset by increases from control firms, indicating that the overall environmental improvement was not zero-sum. The paper provides one of the first causal estimates of how different citizen participation channels affect both targeted firms and the broader regulatory environment.
+The paper finds larger reductions under public than private appeal assignment and no evidence that control-firm emissions offset treated-firm gains. Its explanation that publicity redirects regulator incentives is an interpretation supported by the visibility experiment and other tests, not a directly observed change in an official's objective. E3–E4 establish the preexisting reporting and information regime; E2 preserves what was planned; E1 establishes what the researchers actually did. The distinction matters whenever this record is used to design new research [E1–E5].

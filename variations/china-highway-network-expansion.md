@@ -1,7 +1,7 @@
 ---
 schema_version: 2
 id: china-highway-network-expansion
-name: China's National Trunk Highway System (NTHS) Construction as a Shock to Market Access and Trade Costs (1992–2009)
+name: China's National Trunk Highway System (NTHS) Connections and Peripheral County Growth (1992–2003 exposure)
 aliases:
 - Faber highway China
 - China national trunk highway system
@@ -11,11 +11,11 @@ aliases:
 
 status: extracted
 provenance:
-  task_id: legacy-untracked
+  task_id: task-6ea1cb373890
 scope:
   country: China
   regions:
-  - All prefectures connected by the NTHS network
+  - Non-targeted peripheral county units in China
   domains:
   - trade
   - infrastructure
@@ -23,182 +23,239 @@ scope:
   - industrialization
   variation_type: staggered-rollout
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: Observed NTHS connections expose mainland Chinese peripheral counties to larger metropolitan markets; Faber uses simulated networks to instrument this exposure in a county-growth application.
 identity:
-  instrument: The construction of China's National Trunk Highway System (NTHS), a network of limited-access highways connecting
-    major cities, which created plausibly exogenous variation in market access for prefectures depending on their location
-    relative to the planned highway routes
-  authority: Chinese central government (Ministry of Transport)
+  instrument: NTHS network connections to non-targeted peripheral counties, as encoded in Faber's county-level design; this is not a general claim that every NTHS route was exogenous.
+  authority: '[E3, verified] The former Ministry of Transport formulated the five-vertical/seven-horizontal National Trunk Highway System plan in 1992. [E4, reported claim] A China Highway retrospective, reprinted by a transport bureau, dates State Council approval to 1992 and Ministry issuance to June 1993 (Jiao Ji Fa [1993] No. 600); the original approval and issuance texts were not inspected.'
   legal_identifiers:
-  - National Trunk Highway System Plan (1992)
-  - successive Five-Year Plans for highway construction
-  implementation_regime: The NTHS was planned in 1992 as 7 radial and 5 vertical highways connecting provincial capitals and
-    major cities with populations over 500,000; construction occurred in stages through the 1990s and 2000s
-  assignment_mechanism: The key identifying variation is whether a prefecture lies on the straight-line path connecting two
-    targeted major cities (a "least-cost" path determined by geography, not local economic conditions); peripheral counties
-    connected to the network gain market access while central counties may lose industrial activity
+  - National Trunk Highway System Plan (五纵七横国道主干线系统规划)
+  - 交计发〔1993〕600号 (Ministry of Transport formal issuance of the plan, reported by official planning history)
+  implementation_regime: '[E3, verified] The 1992 five-vertical/seven-horizontal plan is distinct from the 2004 national expressway plan. [E4, reported claim] Formal issuance followed in June 1993. [E5, verified] The Ministry described the network as substantially connected by end-2007 but still scheduled finishing work in 2008; this is not certification of every segment. [E1, reported claim] The application uses connections opened by end-2003, not the national completion milestone.'
+  assignment_mechanism: '[E1, reported claim] Actual route placement was not treated as random. The paper instruments peripheral-county exposure using hypothetical least-cost-path and Euclidean minimum-spanning-tree networks connecting policy-targeted nodes, conditional on stated geography and pre-existing controls.'
   parent: null
   related_variations:
   - china-vat-reform-investment
 timeline:
-  announcement: '1992-01-01'
+  announcement: '1992 (month unspecified in inspected official sources)'
   effective: null
   implementation_start: 1992
-  implementation_end: 2009
-  local_timing: Highway segments were constructed at different times depending on their position in the national plan; connectivity
-    to a prefecture occurs when the relevant segment opens
-  anticipation: The NTHS plan routes were determined by geographical considerations connecting targeted cities; individual
-    counties could not influence whether a highway passed through them
-  last_verified: '2026-07-13'
+  implementation_end: 2007
+  local_timing: '[E4, reported claim] Ministry issuance in 1993 is not a county-level treatment date. [E1, reported claim] Segments are classified as opening before mid-1997, mid-1997 through end-2003, or after 2003; treatment is connection by end-2003. [E5, verified] National substantial connection in 2007 coexisted with finishing work scheduled for 2008; neither supplies county opening dates.'
+  anticipation: '[E1, reported claim] The paper documents that connected peripheral counties were initially larger, richer, more urbanized, and more industrialized, so it does not assume actual route placement was random.'
+  last_verified: '2026-10-02'
 assignment:
-  unit: Prefecture-county and firm
-  treated: Counties connected to the NTHS network after highway segment opening
-  comparison_pool: Counties not yet connected to the NTHS; peripheral counties before vs after connection; central (metropolitan)
-    counties experiencing industrial outflows vs peripheral counties experiencing inflows
-  rule: A county is treated when it lies on or very near the straight-line path connecting two targeted NTHS cities; the targeting
-    of which cities to connect was determined by national planning criteria exogenous to county-level economic conditions
-  intensity: Binary (connected or not) plus continuous distance-based measures of market access change; peripheral counties
-    gain market access, while central connected counties lose industrial activity to lower-cost peripheral areas
-  compliance: Highway construction followed the planned routes; compliance with the plan was high
+  unit: Historically consistent county-level administrative unit
+  treated: '[E1, reported claim] Non-targeted peripheral county with any part within 10 km of an NTHS segment opened to traffic by end-2003.'
+  comparison_pool: '[E1, reported claim] Non-targeted peripheral counties not connected by end-2003; county units within a 50 km commuting buffer of targeted city centers are excluded.'
+  rule: '[E1, reported claim] The paper''s binary treatment is geographic proximity to an opened NTHS segment, not membership on a straight line. Its IVs are simulated minimum-spanning-tree routes rather than the observed treatment rule.'
+  intensity: '[E1, reported claim] Binary connection and log great-circle distance from the county center to the nearest NTHS segment opened by end-2003.'
+  compliance: '[E1, reported claim] Road-atlas digitization identifies completed NTHS segments and their opening cohorts; this is construction exposure, not household or firm take-up.'
   exemptions: []
-  exposure_construction: Code county-year as connected when the nearest NTHS highway segment opens; construct market access
-    measures based on travel time to major cities pre- and post-highway; use straight-line "least-cost" path as instrument
-    for actual highway location
+  exposure_construction: '[E1, reported claim] In the paper''s cross-county growth design, classify a county as connected when any part lies within 10 km of a segment opened by end-2003; alternatively use log distance to the nearest such segment. Reconstructing another timing design requires segment opening data rather than inferring annual treatment from this record.'
   required_identifiers:
   - county code
-  - year
+  - 1997 and 2006 outcome years
   - NTHS connection status
   - distance to highway
-  spillovers: Industrial activity may relocate from connected central counties to connected peripheral counties; the paper
-    explicitly estimates these general equilibrium spatial reallocation effects
+  spillovers: '[E1, reported claim] The paper treats spatial reallocation and nearby-network exposure as central concerns; its primary result is lower industrial and total-output growth for connected non-targeted peripheral counties relative to non-connected peripheral counties, not an estimated gain for the former.'
 research_compatibility:
   outcome_domains:
   - industrial output
-  - firm entry
-  - employment
-  - productivity
-  - spatial concentration
-  - market access
+  - total GDP
+  - local government revenue
+  - spatial reallocation
   affected_populations:
-  - Manufacturing firms
-  - industrial workers
   - peripheral county residents
-  - central county residents
+  - non-targeted peripheral counties
   mechanism_channels:
-  - market access improvement
-  - trade cost reduction
-  - industrial relocation
-  - spatial agglomeration
-  - specialization
+  - trade-cost reduction
+  - core-periphery reallocation
   best_for:
-  - Studying how transport infrastructure affects spatial allocation of economic activity
-  - market integration effects on industrialization
+  - Studying heterogeneous regional effects of network connections on peripheral counties
+  - Market integration and industrial-output growth among non-targeted peripheral counties
   not_good_for:
-  - Short-run outcomes before spatial equilibrium adjustments occur
-  - service-sector outcomes
+  - National aggregate effects or the effects on targeted metropolitan centers
+  - Annual event-study applications without separate segment-opening data
 design:
+  claim_type: causal
   affordances:
-  - geographically predetermined highway routes connecting targeted cities
-  - straight-line least-cost path instrument
-  - pre/post highway opening comparison
-  - cross-county variation in initial remoteness
+  - county proximity to completed NTHS segments
+  - least-cost-path and Euclidean minimum-spanning-tree IVs
+  - cross-county growth comparison between 1997 and 2006
+  - heterogeneity by initial remoteness and market size
   candidate_designs:
-  - difference-in-differences
-  - instrumental variables using straight-line path
-  - spatial general equilibrium analysis
-  identifying_variation: Whether a prefecture lies on the straight-line path between targeted provincial capitals and major
-    cities (the planned NTHS route); this creates plausibly exogenous variation in highway connectivity because the straight
-    line is determined by geography, not local economic conditions
+  - cross-sectional first-difference IV
+  identifying_variation: '[E1, reported claim] Conditional on province fixed effects, proximity to targeted nodes, and pre-existing county controls, the paper uses simulated least-cost-path and Euclidean spanning-tree location to instrument whether a peripheral county was connected by end-2003.'
   assumptions:
-  - Highway routes are determined by geography connecting targeted cities
-  - not local economic lobbying
-  - straight-line path is a valid instrument for actual highway location
-  - no differential pre-trends between connected and unconnected counties
+  - Simulated spanning-tree location affects 1997-2006 county outcome growth only through NTHS connection after stated controls
+  - The construction-cost surface and targeted node set do not proxy for omitted county growth determinants after controls
+  - The two-date growth comparison does not confound treatment with differential contemporaneous shocks
   diagnostics:
-  - First-stage relationship between straight-line path and actual highway location
-  - test for pre-trends in industrial outcomes
-  - compare peripheral vs central county effects
-  - falsification using non-targeted routes
-  primary_strategy: IV using straight-line path as instrument for actual highway placement; DID comparing connected vs unconnected
-    counties; spatial general equilibrium analysis of industrial relocation
-  estimand: The causal effect of the recorded exposure on Industrial output growth, number of firms, employment in manufacturing,
-    conditional on the stated design assumptions.
-  treatment_variable: County-year indicator for NTHS connection; instrumented by whether the county lies on the straight-line
-    path between targeted provincial capitals
-  comparison_logic: Peripheral counties gaining connection vs not-yet-connected; central counties losing industry vs peripheral
-    counties gaining industry
-  estimation_notes: IV using straight-line path as instrument for actual highway placement; DID comparing connected vs unconnected
-    counties; spatial general equilibrium analysis of industrial relocation
+  - First-stage strength for each simulated spanning-tree IV
+  - Sensitivity to pre-existing political, economic, and geography controls
+  - Alternative binary and distance-to-highway treatment encodings
+  - Spatial-dependence-robust inference
+  primary_strategy: '[E1, reported claim] Cross-sectional first-difference IV: regress county outcome growth from 1997 to 2006 on connection by end-2003 (or distance to an opened segment), with province fixed effects and pre-existing controls.'
+  estimand: '[E1, reported claim] The local effect of NTHS connection for non-targeted peripheral county compliers defined by the paper''s simulated network instruments, conditional on its assumptions; it is not an aggregate national infrastructure effect.'
+  treatment_variable: '[E1, reported claim] Binary indicator for any county area within 10 km of NTHS opened by end-2003, or log great-circle distance from county center to the nearest such segment.'
+  comparison_logic: '[E1, reported claim] Connected versus non-connected non-targeted peripheral counties over 1997-2006, excluding units within 50 km of targeted city centers; actual connection is instrumented rather than presumed random.'
+  estimation_notes: '[E1, reported claim] 1997-to-2006 log growth specification with province fixed effects; standard errors clustered by province and spatial-dependence robustness checks. It is not a county-year staggered DID.'
 threats:
 - type: endogenous-route-placement
   basis: inferred
-  condition: If local economic or political conditions influenced the exact routing of highways (deviations from straight-line
-    paths), the instrument may not fully address endogeneity
+  condition: '[E1, reported claim] Actual routes favored initially larger, richer, more urbanized, and industrialized peripheral counties; the IV exclusion remains conditional on distance to targeted nodes and stated pre-existing controls.'
   evidence_refs:
   - E1
   possible_diagnostics:
-  - compare straight-line to actual route
-  - test for route deviations correlated with pre-existing economic conditions
-  - use only the straight-line instrument
+  - assess first-stage strength and sensitivity to pre-existing controls
+  - compare least-cost-path and Euclidean spanning-tree IV results
 - type: spatial-spillovers
   basis: documented
-  condition: The paper's key finding is that connected central counties lose industrial output to peripheral counties; standard
-    DID ignoring these spatial general equilibrium effects would be misleading
+  condition: '[E1, reported claim] The paper interprets the estimated decline in connected peripheral-county output growth through trade-based spatial reallocation, but cannot rule out every alternative microfoundation; standard no-interference interpretations are therefore unsuitable.'
   evidence_refs:
   - E1
   possible_diagnostics:
   - explicitly model spatial reallocation
-  - compare central and peripheral effects
-  - use spatial equilibrium framework
+  - use distance and heterogeneity analyses; state the target population explicitly
 empirical_requirements:
   contract_version: 1
-  population: Chinese counties and manufacturing firms, 1992–2009
-  observation_unit: Firm-year or county-year
+  population: '[E1, reported claim] Historically consistent non-targeted peripheral county units with reported outcome values in 1997 and 2006.'
+  observation_unit: County growth observation (1997 to 2006)
   geography_level: County
-  time_start: 1992
-  time_end: 2009
-  minimum_frequency: annual
-  minimum_pre_periods: 3
-  minimum_post_periods: 5
+  time_start: 1997
+  time_end: 2006
+  minimum_frequency: cross-sectional first difference
+  minimum_pre_periods: 1
+  minimum_post_periods: 1
   required_fields:
   - county code
-  - year
-  - NTHS connection indicator
-  - straight-line path indicator
-  - firm output
-  - employment
-  - industry
-  - location
+  - county GDP and sectoral gross value added in 1997 and 2006
+  - county population and pre-existing characteristics
+  - georeferenced county boundary and county center
+  - NTHS route geometry and segment opening cohort
+  - targeted-node locations
+  - land cover, elevation, and hydrology for the least-cost-path instrument
   required_identifiers:
   - county code
-  - year
-  - firm ID
+  - 1997 and 2006 county identifiers crosswalked to consistent boundaries
   treatment_key:
-  - county code
-  - NTHS connection year
-  - straight-line path indicator
-  - market access measure
-  treatment_source: GIS data on NTHS highway routes and opening dates; Annual Survey of Industrial Firms; county-level economic
-    indicators from statistical yearbooks
+  - county identifier
+  - NTHS connection-by-end-2003 indicator or distance measure
+  - least-cost-path and Euclidean spanning-tree exposure measures
+  treatment_source: '[E1, reported claim] GIS NTHS route geometry digitized from road atlases published 1998-2007, opening cohorts, and simulated spanning-tree networks; county socioeconomic outcomes from provincial statistical yearbooks and the 1990 census.'
   measurement_risks:
-  - highway opening dates may be imprecise for some segments
-  - market access measures sensitive to travel-time assumptions
-  - county boundary changes over the period
+  - exposure depends on segment classification from road atlases rather than a public county-year treatment file
+  - reconstructing the least-cost-path instrument requires the paper's geography inputs and cost-surface choices
+  - historically consistent county-boundary crosswalk is essential
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Faber, Benjamin. 2014. "Trade Integration, Market Size, and Industrialization: Evidence from China''s National
-    Trunk Highway System." Review of Economic Studies 81 (3): 1046–1086.'
+  citation: 'Faber, Benjamin. "Trade Integration, Market Size, and Industrialization: Evidence from China''s National Trunk Highway System." Author-hosted manuscript dated February 21, 2014; published article: Review of Economic Studies 81(3), 1046-1070, DOI 10.1093/restud/rdu010.'
+  url: https://ben-faber.com/China.pdf
+  date: 2014
+  supports:
+  - scope.china_relevance
+  - identity.instrument
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.announcement
+  - timeline.implementation_start
+  - timeline.implementation_end
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.intensity
+  - assignment.compliance
+  - assignment.exposure_construction
+  - assignment.spillovers
+  - design.claim_type
+  - design.primary_strategy
+  - design.identifying_variation
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.estimation_notes
+  - design.assumptions
+  - design.diagnostics
+  - threats.condition
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
+  - empirical_requirements.required_fields
+  - empirical_requirements.required_identifiers
+  - empirical_requirements.treatment_key
+  - empirical_requirements.treatment_source
+  - empirical_requirements.measurement_risks
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
+  verification_status: verified
+  access_level: full-text
+  locator: '29-page author-hosted manuscript dated February 21, 2014, not publisher typesetting. Sections 2 and 3, PDF pages 5-8, re-inspected 2026-10-02 for policy, data, opening cohorts, 10-km exposure, 50-km exclusion and simulated networks. Prior inspection covered pp. 1-8, 9 and 16 and Appendix pp. 19-22. Final publisher full text was not inspected in this audit.'
+- id: E2
+  source_type: paper
+  citation: 'Faber, Benjamin. 2014. "Trade Integration, Market Size, and Industrialization: Evidence from China''s National Trunk Highway System." Review of Economic Studies 81(3): 1046-1070. DOI: 10.1093/restud/rdu010.'
   url: https://doi.org/10.1093/restud/rdu010
   date: 2014
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - spatial reallocation analysis
+  - design_applications.doi
+  verification_status: reported
+  access_level: metadata
+  locator: 'DOI landing page is the authoritative article identifier; substantive paper claims are supported by the inspected author-hosted full text [E1].'
+- id: E3
+  source_type: policy-document
+  citation: 'National Development and Reform Commission. 2022. "Q&A on the National Highway Network Plan, Part I."'
+  url: https://www.ndrc.gov.cn/fggz/fgzy/shgqhy/202207/t20220715_1330780.html
+  date: 2022
+  supports:
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
   verification_status: verified
+  access_level: official-document
+  locator: 'Official planning-history answer identifies the 1992 five-vertical/seven-horizontal National Trunk Highway System plan as formulated by the former Ministry of Transport; it distinguishes this plan from the 1981 national-road trial plan and the 2004 national expressway plan.'
+- id: E4
+  source_type: scholarship
+  citation: 'China Highway public-account retrospective, reprinted by Xinjiang Production and Construction Corps Transport Bureau. 2022. "一路成网！公路网规划的前世今生你知道吗？"'
+  url: https://jtj.xjbt.gov.cn/c/2022-08-09/8240412.shtml
+  date: 2022
+  supports:
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.local_timing
+  verification_status: reported
+  access_level: official-document
+  locator: 'Re-inspected 2026-10-02: header explicitly credits China Highway public account; entries 1991-1993 report submission, approval and issuance. This is a government-hosted retrospective reprint, not the original Ministry issuance or an independently authored bureau implementation document.'
+- id: E5
+  source_type: implementation-document
+  citation: 'Ministry of Communications. 2008. 关于印发2008年全国交通工作会议文件的通知, 交办发〔2008〕15号, issued January 8, 2008; includes Minister Li Shenglin''s January 5 report.'
+  url: https://xxgk.mot.gov.cn/jigou/bgt/202006/t20200623_3307164.html
+  date: '2008-01-08'
+  supports:
+  - identity.implementation_regime
+  - timeline.local_timing
+  verification_status: verified
+  access_level: official-document
+  locator: 'Ministry information-disclosure text inspected 2026-10-02: Li Shenglin report I(2) describes end-2007 substantial connection of roughly 35,000 km; III(2) schedules finishing work in 2008. These passages support the aggregate completion boundary, not county treatment assignment or a segment-opening inventory.'
 design_applications:
 - paper: 'Trade Integration, Market Size, and Industrialization: Evidence from China''s National Trunk Highway System'
   doi: 10.1093/restud/rdu010
@@ -206,48 +263,57 @@ design_applications:
   year: 2014
   research_question: How does improved market access through highway construction affect the spatial concentration of industrial
     production?
-  population: Chinese counties and manufacturing firms, 1992–2009
-  outcome: Industrial output growth, number of firms, employment in manufacturing
-  data_used: []
-  treatment_encoding: County-year indicator for NTHS connection; instrumented by whether the county lies on the straight-line
-    path between targeted provincial capitals
-  comparison: Peripheral counties gaining connection vs not-yet-connected; central counties losing industry vs peripheral
-    counties gaining industry
-  empirical_design: IV using straight-line path as instrument for actual highway placement; DID comparing connected vs unconnected
-    counties; spatial general equilibrium analysis of industrial relocation
+  population: '[E1, reported claim] Non-targeted peripheral county units outside a 50 km commuting buffer of targeted metropolitan centers.'
+  outcome: '[E1, reported claim] 1997-2006 growth in industrial, non-agricultural and total GDP value added, local-government revenue, and population.'
+  data_used:
+  - '[E1, reported claim] Georeferenced 1999 county boundaries, NTHS routes digitized from 1998-2007 road atlases, and USGS/ACASIAN geography inputs.'
+  - '[E1, reported claim] Provincial Statistical Yearbooks (1997 and 2006) and the 1990 census/CITAS controls.'
+  treatment_encoding: '[E1, reported claim] Any county area within 10 km of an NTHS segment opened by end-2003; alternative log distance from county center to nearest such segment.'
+  comparison: '[E1, reported claim] Connected versus non-connected non-targeted peripheral counties in 1997-2006 outcome growth, with actual connection instrumented by least-cost-path and Euclidean spanning-tree exposures.'
+  empirical_design: '[E1, reported claim] Cross-sectional first-difference IV with province fixed effects and pre-existing county controls; it is not a firm panel or staggered county-year DID.'
   assumptions:
-  - straight-line path is exogenous to local economic conditions
-  - highway placement follows geographic logic of connecting targeted cities
-  - no contemporaneous spatially-correlated shocks
+  - simulated spanning-tree location meets the conditional exclusion restriction
+  - stated pre-existing controls adequately address route-selection and location concerns
+  - concurrent shocks do not differentially change connected and comparison peripheral counties after controls
   threats_addressed:
-  - endogenous route placement via straight-line IV
-  - spatial spillovers via explicit modeling of reallocation
-  - heterogeneous effects by initial market access
+  - endogenous actual route placement via simulated network IVs
+  - spatial dependence through province clustering and Conley-style robustness
+  - heterogeneity by initial remoteness and market size
   evidence_refs:
   - E1
+  - E2
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+- NDRC independently confirms the 1992 plan identity and the Ministry documents substantial network connection in 2007, but neither verifies the target-node assignment or county exposure inventory. The original 1992 approval / 1993 plan and their target-node provisions remain uninspected; the bureau-hosted retrospective is a reprint rather than independent primary assignment evidence.
+- The substantive application is documented from the February 21, 2014 author manuscript; final publisher text and any version changes were not checked in this audit.
+- This record documents Faber's two-date peripheral-county design, not a reusable annual county-year opening panel; a separate verified segment-opening source is needed for annual event-study use.
 method_transfer: null
 ---
 ## Institutional Background
-Before the 1990s, China's road network was underdeveloped, limiting market integration and creating fragmented local economies. In 1992, the central government announced the National Trunk Highway System (NTHS) — a network of high-quality, limited-access highways radiating from and crossing the country, designed to connect all provincial capitals and cities with populations exceeding 500,000. By 2009, the network exceeded 50,000 kilometers. [E1]
+
+[E3, verified] NDRC identifies the 1992 five-vertical/seven-horizontal plan separately from its 2004 successor. Faber describes the targeted nodes as provincial capitals, cities above 500,000 urban registered residents and border crossings [E1, reported claim]. The original target provisions remain uninspected. The bureau-hosted history reports the 1992 approval and June 1993 issuance, but credits an external retrospective rather than reproducing the administrative text [E4, reported claim].
+
+The Ministry's January 2008 report calls the network substantially connected at end-2007 and also schedules finishing work in 2008 [E5, verified]. Thus the paper's shorthand of completion in 2007 should not become a claim that every planned segment was open. This aggregate milestone does not alter the application's end-2003 exposure cutoff.
 
 ## What Changed
-The NTHS dramatically reduced travel time between connected cities, effectively integrating previously isolated county-level markets into larger regional and national markets. For peripheral (non-metropolitan) counties located along the routes, this meant a substantial improvement in market access — they could now reach distant consumer and input markets at lower cost. [E1]
+
+The serving object here is narrower than the NTHS policy family: a non-targeted peripheral county's proximity to a completed NTHS segment in Faber's 1997-to-2006 design. [E1, reported claim] Most of the routes used in that design opened between mid-1997 and end-2003. The paper's central empirical question is whether this connection to much larger metropolitan markets changes peripheral-county growth, rather than whether the programme raised China's aggregate output.
 
 ## Implementation and Assignment
-Highway routes were planned to connect targeted provincial capitals and large cities along straight-line paths. Whether a given county lies on the straight line between two targeted cities is determined by geography, not by the county's economic conditions — creating a plausibly exogenous instrument for actual highway connectivity. The staggered construction schedule across different segments creates temporal variation in when counties gain connectivity. [E1]
+
+[E1, reported claim] Actual route placement is explicitly non-random in the paper: connected peripheral counties were initially more prosperous and urbanized. The observed treatment is therefore not a straight-line rule. A county is coded connected if any part falls within 10 km of an NTHS segment opened by the end of 2003; the alternative is distance to that network. The causal design instruments this exposure with simulated least-cost-path and Euclidean minimum-spanning-tree networks connecting the policy-targeted nodes. This gives a conditional IV comparison among non-targeted peripheral counties, after excluding counties within 50 km of target-city centers, rather than a general before/after comparison of all Chinese counties.
 
 ## Why This Creates Empirical Variation
-The key insight: peripheral counties gaining highway connectivity experience a positive market-access shock that attracts industrial firms from central (metropolitan) counties. This creates two-sided spatial variation — some counties gain industry while others lose it — and the straight-line instrument allows causal identification of these general equilibrium effects. The paper's central finding is that highways caused a reduction in industrial output growth in connected metropolitan regions and an increase in connected peripheral regions. [E1; analytical inference]
+
+The simulated networks vary with terrain, land cover, and the fixed set of target nodes, whereas observed routes also reflect planning and local conditions. Under the paper's conditional exclusion restriction, that simulated variation predicts connection without directly changing county growth. [E1, reported claim] The reported IV estimates show lower industrial and total-output growth for connected non-targeted peripheral counties, relative to their comparison counties. The paper offers evidence consistent with a trade-based core-periphery mechanism, but does not claim to rule out every alternative microfoundation; this is not evidence that connection necessarily harms every peripheral county or that it lowers national output.
 
 ## Identification Risks
-The main threat is that actual highway routes may deviate from straight-line paths for economic or political reasons, compromising the instrument. The paper addresses this by using the straight-line prediction regardless of actual placement. Another concern is that the spatial reallocation effects mean standard DID estimates (comparing connected to unconnected) can be misleading if they ignore the outflow of industry from central areas. [E1]
+
+The main risk is the IV exclusion restriction: even a least-cost simulated route may correlate with historical corridors or with geographic features that affect later growth. The paper conditions on distance to targeted nodes, administrative status, and 1990 economic characteristics and compares alternative spanning-tree instruments, but an application should preserve those diagnostics rather than describe routes as automatically exogenous. The two-date design also cannot identify a national aggregate effect, effects on the target-city centers, or annual dynamic responses. [E1, reported claim]
 
 ## Data Requirements
-GIS data on NTHS highway segments with opening dates, county-level geographic coordinates, straight-line path calculations between targeted cities, firm-level manufacturing data from the Annual Survey of Industrial Firms (output, employment, fixed assets, industry classification), and county-level controls from statistical yearbooks. [E1]
+
+To reproduce the documented design, a researcher needs historically consistent county geography, 1997 and 2006 county socioeconomic outcomes, 1990 controls, NTHS route geometry and opening cohorts, the targeted-node set, and land-cover/elevation/hydrology inputs for the least-cost paths. It does not require the Annual Survey of Industrial Firms or a firm panel. Constructing an annual opening-event design needs additional segment-level dates that this record does not claim to provide. [E1, reported claim]
 
 ## Evidence Notes
-E1 documents that NTHS highway connections led to a reduction in industrial output growth in connected metropolitan areas and an increase in peripheral areas, consistent with a spatial reorganization of production toward lower-cost locations as market access improves. The straight-line IV strategy provides strong support for causal interpretation of these spatial effects.
+
+The 2026-10-02 audit (task-6ea1cb373890) re-inspected the author manuscript's background, data and exposure construction, NDRC's answer, the transport-bureau reprint and a newly located contemporaneous Ministry report. E1 is a dated manuscript, not independently checked publisher typesetting; its substantive claims remain attributed to that version. E2 identifies the final article. E3 provides primary plan-identity evidence; E4 is secondary history despite its government URL; E5 establishes substantial connection, not complete segment-level opening. The record remains extracted because primary assignment evidence is still missing, not because all institutional knowledge is merely paper-reported. No restricted data or copyrighted paper was stored, and no replication was executed.

@@ -3,7 +3,7 @@ schema_version: 2
 id: example-variation-case
 name: Exact Variation Case Name
 aliases: []
-status: extracted
+status: grounded # New canonical files must meet this gate; keep incomplete work in candidates.
 provenance:
   task_id: task-required
 scope:
@@ -97,6 +97,8 @@ superseded_by: # Deprecated redirects use a canonical record ID; otherwise leave
 deprecation_reason: # Deprecated records without a replacement must explain why they are terminal.
 ---
 
+Write so that a fresh reader can reconstruct the research decision without the source paper or prior conversation. Preserve case-specific institutional meaning in prose; use the structured fields as a faithful decision interface, not as a checklist to fill.
+
 ## Institutional Background
 
 Explain the pre-change institution, the economic or political pressure behind the change, and how this case fits the wider institutional system. Cite verified facts with `[E1]`, source-attributed statements with `[E2, reported claim]`, and the agent's own implications with `[analytical inference]`.
@@ -123,7 +125,7 @@ Translate the design into observable population, unit, geography, time, frequenc
 
 ## Evidence Notes
 
-Explain conflicts, blocked sources, uncertain dates, or limits on what each source establishes.
+Explain conflicts, blocked sources, uncertain dates, and the boundary of each core source: what the inspected material establishes and what it does not establish. A locator proves access, not support for claims outside the inspected passage.
 
 <!--
 For a non-China paper retained as transferable-method, replace method_transfer: null with:

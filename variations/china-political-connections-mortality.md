@@ -7,13 +7,13 @@ aliases:
 - Fisman Wang political connections China
 - 政治关联与工人安全
 
-status: extracted
+status: contested
 provenance:
-  task_id: legacy-untracked
+  task_id: task-d76de82cefa8
 scope:
   country: China
   regions:
-  - All China
+  - Mainland China listed firms in nine hazardous industrial sectors
   domains:
   - political-economy
   - labor
@@ -25,55 +25,41 @@ scope:
   china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
     research.
 identity:
-  instrument: Within-firm variation in the value of political connections driven by the unexpected death or serious illness
-    of connected politicians, combined with cross-sectional variation in which firms have political ties
-  authority: Not applicable — political connections are informal; the identifying variation comes from exogenous health shocks
-    to connected officials
+  instrument: Annual politically connected senior-executive status and its changes through executive turnover; not a politician death or illness shock
+  authority: Firm executive appointments and departures; no external authority randomly assigns political connections
   legal_identifiers: []
-  implementation_regime: Chinese listed firms form and maintain political connections through executives, board members, and
-    ownership ties to government officials; regulatory enforcement of workplace safety standards is subject to political influence
-  assignment_mechanism: Political connections are endogenously formed, but their value changes exogenously when connected
-    politicians unexpectedly die or become seriously ill; this within-firm, over-time variation identifies the effect of connections
-    on workplace safety compliance
+  implementation_regime: The inspected study measures prior senior government employment of the chairman, vice-chairman, CEO and vice-CEOs of listed firms during2008-2013. Provincial safety-promotion rules are a separate moderator, not the executive-status assignment.
+  assignment_mechanism: Firms acquire or lose connected executives through endogenous appointments and departures. Within-firm regressions use changes in this status; the authors explicitly caution that connections are not exogenously assigned.
   parent: null
   related_variations: []
 timeline:
   announcement: null
   effective: null
-  implementation_start: 2002
-  implementation_end: 2012
-  local_timing: Connected politicians die or become ill at unpredictable times; the shock is firm-specific and temporally
-    staggered
-  anticipation: Death and serious illness of politicians are largely unanticipated events; firms cannot perfectly prepare
-    for the loss of political protection
-  last_verified: '2026-07-13'
+  implementation_start: 2008
+  implementation_end: 2013
+  local_timing: Study observation window, not policy rollout. Status in year y uses executive employment on December31 of y-1, before the year's accidents.
+  anticipation: Appointments and departures can respond to firm conditions; the inspected study does not establish unanticipated executive changes.
+  last_verified: '2026-10-04'
 assignment:
   unit: Firm-year
-  treated: Firm-year observations after the death or serious illness of a politically connected official
-  comparison_pool: The same firm before the death/illness event; firms without political connections; firms whose connected
-    politicians remain healthy
-  rule: The value of political connection decreases when the connected politician dies or becomes seriously ill; the timing
-    is driven by health shocks rather than firm decisions
-  intensity: Binary — connected politician death or serious illness; the intensity varies with the importance of the specific
-    politician
+  treated: Firm-years with at least one qualifying connected senior executive at the preceding year-end
+  comparison_pool: Unconnected firm-years under measured controls; within-firm specifications use status changes, including the subsample with variation in Connected
+  rule: Connected equals1 if a qualifying executive formerly served as mayor or vice-mayor in the firm's city or held a provincial/central government post of equivalent or higher rank. It is not a politician-health event indicator.
+  intensity: Binary connected executive status, not intensity of a health shock
   exemptions: []
   compliance: Not applicable — political connections are not a formal policy
-  exposure_construction: Code firm-year observations as "post-shock" if a connected politician has recently died or become
-    seriously ill; identify political connections through board members, executives, and ownership records; compare within-firm
-    changes in workplace fatalities and regulatory violations
+  exposure_construction: Link annual firm identifiers to year-end senior-executive resumes and past government rank/location; lag status into the outcome year. Separately reconstruct fatalities and employment. Do not code arbitrary board membership or government ownership as equivalent to this status.
   required_identifiers:
   - firm ID
   - year
   - political connection indicator
-  - connected politician health/death status
-  spillovers: When a connected politician dies, affected firms may be replaced in their protected position by other connected
-    firms; the death may have broader political implications beyond the individual firm
+  - executive identity, employment dates, past government rank and jurisdiction
+  spillovers: Executive moves between firms and common local enforcement may connect observations; this is an analytical concern, not a studied politician-death spillover.
 research_compatibility:
   outcome_domains:
   - workplace fatalities
   - worker safety
   - regulatory violations
-  - firm productivity
   - corruption
   affected_populations:
   - workers at politically connected firms
@@ -86,70 +72,64 @@ research_compatibility:
   - regulatory capture
   best_for:
   - Studying the real costs of political connections through regulatory enforcement
-  - within-firm designs exploiting exogenous connection-value changes
+  - Describing within-firm connection-status changes while explicitly retaining endogenous appointment and departure risks
   not_good_for:
   - Outcomes unrelated to regulation or enforcement
-  - short panels without sufficient health-shock events
+  - Politician death or illness event studies attributed to this paper
+  - Treating ordinary executive turnover or provincial safety-rule adoption as random assignment
 design:
+  claim_type: descriptive
   affordances:
-  - exogenous politician health shocks
-  - within-firm pre/post comparison
+  - Within-firm executive-status changes
   - cross-sectional variation in connection status
   candidate_designs:
-  - difference-in-differences with firm fixed effects
-  - event study around politician death/illness
-  identifying_variation: Within-firm changes in workplace safety outcomes following the unexpected death or serious illness
-    of politically connected officials
+  - Firm fixed-effects association between Connected and annual workplace fatalities
+  - Cross-sectional count and linear models with measured controls
+  identifying_variation: Cross-firm and within-firm variation in connected executive status; executive turnover supplies the latter, without an exogenous assignment claim
   assumptions:
-  - Politician health shocks are exogenous to firm safety outcomes
-  - no concurrent changes at the firm that coincide with health shocks
-  - the effect runs from reduced connection value → reduced safety compliance → increased fatalities
+  - A causal interpretation would require time-varying firm conditions not to drive both executive choices and safety; the paper cautions that connections are endogenous
   diagnostics:
-  - Test for differential pre-trends before health shocks
-  - compare with firms whose connected politicians remain healthy
-  - examine alternative explanations (industry-wide trends
-  - economic conditions)
-  primary_strategy: Difference-in-differences with firm fixed effects; event study around politician death/illness; cross-sectional
-    comparison of connected vs unconnected firms
-  estimand: The causal effect of the recorded exposure on Workplace fatalities, regulatory violations for workplace safety,
-    conditional on the stated design assumptions.
-  treatment_variable: Interaction of pre-existing political connections with politician health shock (death/serious illness)
-  comparison_logic: Within-firm changes after connected politician health shocks; between connected and unconnected firms
-  estimation_notes: Difference-in-differences with firm fixed effects; event study around politician death/illness; cross-sectional
-    comparison of connected vs unconnected firms
+  - Compare full and executive-status-switcher samples and pre-existing firm characteristics
+  - Distinguish departures following fatal accidents from antecedent status changes
+  - Check fatality reporting sources and employment denominators
+  primary_strategy: Negative-binomial count models and OLS fatalities/death-rate regressions; province, industry and year effects, with firm effects in selected specifications; firm-clustered standard errors
+  estimand: Conditional association of connected executive status with fatalities and deaths per1000 employees; not a politician-health-shock causal effect
+  treatment_variable: Connected at the previous December31, based on senior-executive employment history
+  comparison_logic: Connected versus unconnected firm-years, and same-firm status changes with controls; executive selection remains unresolved
+  estimation_notes: Inspected NBER June2015 version Section3.1.1 equation5. Fatal-accident stock-return events and subsequent executive departures are separate analyses, not health-shock identification.
 threats:
 - type: endogenous-connection-formation
   basis: documented
   condition: Firms that choose to form political connections may be systematically different from unconnected firms
   evidence_refs:
-  - E1
+  - E2
   possible_diagnostics:
   - within-firm analysis eliminates time-invariant firm characteristics
   - compare connected and unconnected firms' pre-treatment trends
 - type: concurrent-changes
   basis: inferred
-  condition: The death of a politician may coincide with other changes (industry policy, local economic shocks) that independently
-    affect workplace safety
+  condition: Executive appointments may accompany changes in firm strategy or finances, while accidents can themselves trigger connected executives' departures; firm effects do not remove these time-varying channels
   evidence_refs:
-  - E1
+  - E2
   possible_diagnostics:
-  - use narrow windows around health shocks
+  - Separate status before accidents from subsequent executive departures
   - compare with firms in different industries or regions
   - test for effects on placebo outcomes
 empirical_requirements:
   contract_version: 1
-  population: Chinese listed firms, approximately 2002–2012
+  population: Listed Chinese firms in nine hazardous sectors during2008-2013; construction fatality data use a distinct ministry source
   observation_unit: Firm-year
   geography_level: National (firm-level)
-  time_start: 2002
-  time_end: 2012
+  time_start: 2008
+  time_end: 2013
   minimum_frequency: annual
-  minimum_pre_periods: 3
-  minimum_post_periods: 3
+  minimum_pre_periods: 1
+  minimum_post_periods: 0
   required_fields:
   - firm political connections
-  - connected politician health/death data
+  - preceding year-end executive roster and resumes with past government rank and location
   - workplace fatalities
+  - employee count for deaths per1000 workers
   - regulatory violations
   - firm financial variables
   required_identifiers:
@@ -159,12 +139,13 @@ empirical_requirements:
   treatment_key:
   - firm ID
   - year
-  - connected politician death indicator
-  treatment_source: Firm annual reports, CSMAR database, politician biographical data, workplace safety administrative records
+  - preceding year-end qualifying executive-status indicator
+  treatment_source: Executive resumes from Wind and annual reports; corporate disclosures and SAWS records for fatalities, proprietary housing/construction ministry records for construction, WiseSearch supplements; financial controls from CSMAR and employees from Resset in the inspected version
   measurement_risks:
   - underreporting of workplace fatalities
   - political connection measurement error
-  - politician health information availability
+  - Midyear executive turnover and incomplete employment histories
+  - Different coverage for construction contract workers and industrial employees
 evidence:
 - id: E1
   source_type: paper
@@ -173,58 +154,75 @@ evidence:
   url: https://doi.org/10.1093/restud/rdv020
   date: 2015
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - mechanism analysis
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  verification_status: reported
+  access_level: abstract
+  locator: Publisher metadata and abstract; published methods/typesetting not inspected in this audit
+- id: E2
+  source_type: paper
+  citation: Fisman and Wang, The Mortality Cost of Political Connections, NBER Working Paper21266, June2015
+  url: https://www.nber.org/system/files/working_papers/w21266/w21266.pdf
+  date: 2015
+  supports:
+  - identity.instrument
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - assignment.rule
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.estimand
+  - empirical_requirements.required_fields
+  - design_applications.treatment_encoding
   verification_status: verified
+  access_level: full-text
+  locator: PDFp3/printed2 introduction; PDFpp10-14/printed9-13 Section1.4; PDFp19/printed18 Section3.1.1 equation5; PDFp24/printed23 equation6 and post-accident executive departures
 design_applications:
 - paper: The Mortality Cost of Political Connections
   doi: 10.1093/restud/rdv020
   journal: Review of Economic Studies
   year: 2015
   research_question: Do political connections allow firms to avoid safety compliance, and what are the mortality consequences?
-  population: Chinese listed firms, ~2002–2012
+  population: Hazardous-sector Chinese listed firms,2008-2013 in the inspected NBER version
   outcome: Workplace fatalities, regulatory violations for workplace safety
-  data_used: []
-  treatment_encoding: Interaction of pre-existing political connections with politician health shock (death/serious illness)
-  comparison: Within-firm changes after connected politician health shocks; between connected and unconnected firms
-  empirical_design: Difference-in-differences with firm fixed effects; event study around politician death/illness; cross-sectional
-    comparison of connected vs unconnected firms
+  data_used: [Wind executive resumes, Annual corporate reports and CSR disclosures, SAWS accident sources, Proprietary ministry construction accidents, WiseSearch news, CSMAR controls, Resset employees]
+  treatment_encoding: Qualifying executive political experience at the previous year-end; the inspected version uses no politician death/illness instrument
+  comparison: Connected/unconnected firm-years and within-firm executive-status changes
+  empirical_design: Count/linear models with controls, selected firm-effects specifications and firm clustering; separate fatal-accident stock-return events
   assumptions:
-  - health shocks exogenous
-  - within-firm identification addresses selection
-  - no other concurrent changes
+  - Executive-status variation is not exogenously assigned; firm effects remove fixed attributes only
   threats_addressed:
-  - endogenous connections via within-firm design
-  - confounding trends via narrow event windows
+  - Fixed firm differences examined through within-firm specifications, not a complete solution to executive selection
   - industry trends via controls
   evidence_refs:
   - E1
+  - E2
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+- Primary institutional evidence has not been independently verified; institutional and exposure grounding currently relies on the inspected research paper
+- The inherited politician health-shock interpretation is contradicted by inspected methods; this contested record is not an exogenous-shock recommendation
+- Final published methods and replication materials must be reconciled with the NBER version before further maturity review
+- Provincial no-safety/no-promotion rules are a separate application requiring primary province-level assignment audit, not a silently merged exposure
 method_transfer: null
 ---
 ## Institutional Background
-Political connections are pervasive in Chinese business. Firms with politically connected executives or board members may receive favorable regulatory treatment, access to credit, government contracts, and protection from enforcement actions. The flip side of this relationship is that politically protected firms may face weaker incentives to comply with costly regulations — including workplace safety standards. [E1]
+This retained legacy case concerns political experience of senior executives and workplace safety in hazardous-sector listed firms. The inspected methods use executive arrivals and departures, not unexpected death or illness of an affiliated official. Its contested state concerns the inherited record's identification interpretation, not a claim that the published study itself is disputed. [E2]
 
 ## What Changed
-When a politically connected official unexpectedly dies or becomes seriously ill, the value of the firm's political connection drops. This creates a within-firm shock: the same firm, before and after losing political protection, faces different regulatory enforcement regimes. [E1]
+Qualifying executive status changes when firms appoint or lose managers with prior senior government experience. The paper's data window is2008-2013. Political appointments and exits are choices, not independently assigned health events. [E2]
 
 ## Implementation and Assignment
-The identifying variation comes from two sources: (1) cross-sectional — some firms have political connections and others do not; and (2) temporal — the value of connections changes exogenously when connected politicians die or fall ill. The key assumption is that politician health shocks are not caused by firm characteristics and do not coincide with other changes that independently affect workplace safety. [E1]
+The connected indicator uses the previous December31 roster and government employment history. Annual status precedes that year's accidents, while within-firm comparisons rely on executive turnover. Separate provincial safety-promotion laws moderate the connection relationship; their rules must not be folded into executive assignment. [E2]
 
 ## Why This Creates Empirical Variation
-The design exploits a natural experiment in the value of political connections. Death and serious illness are largely random from the firm's perspective and create plausibly exogenous variation in the protection that political connections provide. The within-firm estimator controls for all time-invariant differences between connected and unconnected firms. [E1]
+The variation supports descriptive analysis of executive status and regulatory outcomes. It does not supply a ready-made natural experiment: the authors explicitly caution that connections are not exogenously assigned. [E2]
 
 ## Identification Risks
-Firms do not randomly acquire political connections — connected and unconnected firms differ systematically. While the within-firm design addresses time-invariant selection, it does not address the possibility that firms lose connections precisely when other things are changing. The paper addresses this by using narrow time windows around health shocks and by comparing different types of outcomes. [E1; analytical inference]
+Firm effects do not absorb changing management, strategies or enforcement. The paper separately studies connected executives leaving after fatal accidents, making it particularly important not to mistake subsequent departure for an antecedent external shock. Fatality reporting and construction-worker coverage also require source-specific reconstruction. [E2; analytical inference]
 
 ## Data Requirements
-Firm-level data on political connections (board members, executives, ownership), politician biographical data including health and death information, firm-level workplace fatality and regulatory violation records, and standard firm financial variables. [E1]
+Use executive resumes, dated rosters, government rank and location, firm-year fatalities, employee denominators and financial controls. The inspected version combines corporate and safety-agency reports with commercial news supplements; construction uses proprietary ministry accidents. Raw-data accessibility and final-version reconciliation remain conditions. Politician-health data are not this application's treatment source. [E2]
 
 ## Evidence Notes
-E1 documents that worker death rates at politically connected firms are 2–3 times higher than at unconnected firms, and that the effect operates through reduced safety compliance rather than reduced regulatory response after accidents occur. The finding implies a literal "mortality cost" of the political connection system.
+E1 verifies only the publication/abstract boundary. E2 is the inspected June2015 NBER version, not certified publisher typesetting. The audit preserves the existing file and DOI while replacing the unsupported health-shock story in both structured fields and narrative. No estimates were reproduced and no underlying microdata or PDF was stored.

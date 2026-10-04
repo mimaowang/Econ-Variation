@@ -24,6 +24,10 @@ SCHEMA_PATH = ROOT / "schema" / "variation.schema.json"
 TOPICS_PATH = ROOT / "schema" / "topics.yaml"
 PLACEHOLDER_URLS = {"", "needs-verification", "n/a", "none", "null"}
 SENSITIVE_QUERY_KEYS = {"api_key", "apikey", "auth", "key", "password", "secret", "sig", "signature", "token"}
+EVIDENCE_SUPPORT_ROOTS = {
+    "scope", "identity", "timeline", "assignment", "research_compatibility", "design", "threats",
+    "empirical_requirements", "design_applications", "method_transfer",
+}
 
 
 @dataclass(frozen=True)
@@ -155,8 +159,7 @@ def knowledge_eligibility(data: dict[str, Any]) -> str:
     if status in {"contested", "deprecated"}:
         return "do-not-recommend"
     if role == "transferable-method":
-        managed = (data.get("provenance") or {}).get("task_id") != "legacy-untracked"
-        if status in {"grounded", "design-documented"} or (status == "extracted" and managed):
+        if status in {"grounded", "design-documented"}:
             return "method-inspiration"
         return "method-lead"
     if status == "design-documented":

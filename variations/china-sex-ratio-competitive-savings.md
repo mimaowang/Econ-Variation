@@ -10,12 +10,13 @@ aliases:
 
 status: extracted
 provenance:
-  task_id: legacy-untracked
+  task_id: task-dce32e3730d6
 scope:
   country: China
   regions:
-  - All provinces
-  - with variation by prefecture and county sex ratios
+  - Mainland China
+  - 122 rural counties and 70 cities in the 2002 CHIP survey
+  - provinces in the separate 1980-2007 aggregate analysis
   domains:
   - household-finance
   - gender
@@ -24,23 +25,13 @@ scope:
   - macroeconomics
   variation_type: continuous-exposure
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: This paper links mainland Chinese census cohorts to Chinese households and provinces to study the domestic marriage-market and savings relationship.
 identity:
-  instrument: Cross-regional variation in sex ratios (the ratio of males to females in the pre-marital age cohort) in China,
-    driven by the interaction of son preference, the One-Child Policy, and differential use of sex-selective abortion, creating
-    exogenous variation in marriage market competition and household savings behavior
-  authority: Demographic forces (son preference, fertility restrictions, sex-selective technology) generating variation in
-    pre-marital sex ratios at the regional level
-  legal_identifiers:
-  - One-Child Policy (1979–2015)
-  - pre-marital sex ratio data from Chinese census and surveys
-  implementation_regime: The sex ratio imbalance emerged over the 1980s–2000s as the One-Child Policy interacted with strong
-    son preference and the spread of ultrasound technology enabling prenatal sex determination and sex-selective abortion;
-    by 2005, the sex ratio at birth reached approximately 120 boys per 100 girls
-  assignment_mechanism: Regional sex ratios are determined by historical factors (local son preference intensity, enforcement
-    of the One-Child Policy, access to prenatal sex-determination technology); these are plausibly exogenous to contemporaneous
-    savings decisions
+  instrument: Local male-to-female ratio of the premarital cohort, measured from earlier Chinese population censuses and linked to later household or province-level savings outcomes.
+  authority: No authority assigns this exposure; it is a measured demographic condition. Provincial family-planning penalties and minority exemption shares enter the paper's separate instrumental-variable exercise.
+  legal_identifiers: []
+  implementation_regime: The paper studies sex-ratio imbalance arising across Chinese cohorts and places, with fertility restrictions, son preference and prenatal sex selection discussed as possible drivers. It does not identify a single policy adoption date or treat the one-child policy itself as the exposure.
+  assignment_mechanism: Children and families encounter sex ratios of their local marriage-market cohort. Those ratios are not randomly assigned, and local fertility norms, migration, policy implementation or economic change may jointly affect sex ratios and savings.
   parent: null
   related_variations:
   - china-missing-women-tea-price
@@ -49,37 +40,27 @@ identity:
 timeline:
   announcement: null
   effective: null
-  implementation_start: 1980
-  implementation_end: 2005
-  local_timing: Sex ratio imbalances emerge gradually as cohorts with imbalanced sex ratios enter the marriage market; timing
-    varies by province based on policy enforcement and technology diffusion
+  implementation_start: null
+  implementation_end: null
+  local_timing: The 2002 household analysis advances the 1990 census age-0-to-9 cohort to ages 12-21; the distinct 1980-2007 province panel infers age-7-to-21 sex ratios from the 2000 census.
   anticipation: Households with sons anticipate future marriage market competition; savings behavior adjusts well before the
     son reaches marriage age
-  last_verified: '2026-07-13'
+  last_verified: '2026-10-03'
 assignment:
-  unit: Household
-  treated: Households with sons in regions with high male-to-female sex ratios (more intense marriage market competition for
-    grooms)
-  comparison_pool: Households with daughters in the same region; households with sons in regions with balanced sex ratios;
-    same households before vs after sex ratio imbalances emerged
-  rule: Households with unmarried sons save more when local sex ratios are more male-biased because parents (and the sons
-    themselves) need to increase the son's relative attractiveness in the marriage market, where housing wealth and savings
-    are an important signal of groom quality
-  intensity: Continuous — local sex ratio (males/females at marriageable ages), interacted with the presence of a son in the
-    household
-  compliance: Savings behavior is a choice; the sex ratio imbalance creates an incentive to save but does not mechanically
-    force higher savings
+  unit: Local premarital-age cohort linked to a 2002 household; separately, province-year in the aggregate analysis.
+  treated: Higher male-to-female premarital-cohort ratios, especially among one-child households with a son in the paper's household comparison.
+  comparison_pool: One-child son households across different local ratios and analogous daughter households; the province panel compares within-province changes conditional on year effects.
+  rule: The paper's marriage-market hypothesis predicts stronger competitive saving among son families where potential brides are scarcer. This is a behavioral response, not statutory treatment eligibility.
+  intensity: Continuous census-derived sex ratio; the pooled rural household specification interacts it with a son indicator.
+  compliance: No compliance concept for a demographic exposure; households may respond differently or not at all.
   exemptions: []
-  exposure_construction: 'Construct household-level treatment as: presence of son(s) × local sex ratio; local sex ratio measured
-    as the male-to-female ratio in the pre-marital age cohort at the prefecture or county level; include household and region
-    fixed effects'
+  exposure_construction: Link the 2002 CHIP household location to the 1990 census local sex ratio for ages 0-9 (ages 12-21 in 2002); county for rural households and city for urban households. Keep rural and urban specifications separate. The pooled rural specification interacts the ratio with a son indicator; no household fixed effects are possible in this one-year household sample.
   required_identifiers:
-  - household ID
-  - prefecture/county code
+  - CHIP household identifier and 2002 survey location
+  - rural county or urban city census geography
   - son indicator
   - household demographic composition
-  spillovers: Competitive savings by some households may raise housing prices and marriage costs, increasing the savings pressure
-    on all households with sons (a positional externality)
+  spillovers: Competitive saving and housing-market responses may affect other families in the same marriage market; daughter-family responses need not be a zero-effect placebo.
 research_compatibility:
   outcome_domains:
   - household savings rate
@@ -108,39 +89,28 @@ research_compatibility:
   - fertility decisions
   - estimating the causal effect of the One-Child Policy per se
 design:
+  claim_type: reduced-form
   affordances:
-  - substantial regional variation in sex ratios
-  - panel data on household savings
-  - variation in household composition (son vs daughter)
-  - pre/post emergence of sex ratio imbalance
+  - Census-based local premarital-cohort ratios predate the 2002 household outcome.
+  - CHIP identifies one-child son and daughter families in rural and urban locations.
+  - A separate province-year panel examines aggregate savings over 1980-2007.
   candidate_designs:
-  - difference-in-differences (households with sons in high vs low sex ratio regions)
-  - triple-difference (region × son presence × time)
-  - household fixed effects
-  identifying_variation: The interaction of household composition (having a son) with regional sex ratio imbalances; households
-    with sons in regions with more skewed sex ratios have stronger savings incentives
+  - Cross-sectional local-ratio gradient estimated separately for son and daughter households.
+  - Pooled rural son-indicator-by-local-ratio interaction.
+  - Province and year fixed-effects panel, with a distinct and assumption-sensitive IV exercise.
+  identifying_variation: Differences in local census cohort ratios among 2002 one-child families, and within-province changes in inferred premarital-cohort ratios in the aggregate panel; neither source is inherently exogenous.
   assumptions:
-  - Regional sex ratios are conditionally exogenous to household savings preferences
-  - sex ratios are driven by factors (son preference
-  - policy enforcement
-  - ultrasound access) that do not directly affect savings
-  - no omitted regional variables that affect both sex ratios and savings
+  - Conditional comparisons must separate marriage-market competition from local culture, fertility behavior, migration and economic conditions that also affect saving.
+  - For the IV interpretation, earlier family-planning fines and exemptions must affect later savings only through the measured cohort sex ratio; the paper does not establish this by institutional assignment alone.
   diagnostics:
-  - Test whether sex ratios predict savings for households without sons (placebo)
-  - control for regional economic conditions
-  - test for pre-existing savings differences by sex ratio before imbalances emerged
-  - use province-level policy variation as instrument
-  primary_strategy: Difference-in-differences (son × sex ratio); triple-differences; aggregate analysis linking provincial
-    savings rates to provincial sex ratios; instrumental variables using provincial One-Child Policy fines as instrument for
-    sex ratios
-  estimand: The causal effect of the recorded exposure on Household savings rate, housing wealth accumulation, consumption
-    patterns, conditional on the stated design assumptions.
-  treatment_variable: Household having son(s) × local sex ratio (male/female at marriageable ages)
-  comparison_logic: Households with sons vs daughters; high sex ratio regions vs balanced regions; pre-imbalance vs post-imbalance
-    period
-  estimation_notes: Difference-in-differences (son × sex ratio); triple-differences; aggregate analysis linking provincial
-    savings rates to provincial sex ratios; instrumental variables using provincial One-Child Policy fines as instrument for
-    sex ratios
+  - Compare son and daughter household gradients without equating a nonsignificant daughter coefficient with proof of zero spillovers.
+  - Audit local income, household composition, migration and cultural confounders.
+  - For the province panel, examine instrument exclusion and alternative direct channels from family-planning policy to saving.
+  primary_strategy: The paper's 2002 household analysis uses rural and urban local-ratio regressions; rural Tables 5-7 report son/daughter splits and a pooled interaction. Its separate 1980-2007 province panel has province/year fixed effects and instruments inferred sex ratios with lagged family-planning penalties and exemption share.
+  estimand: Association of local premarital-cohort sex ratio with the paper's savings measures, differentiated by household child sex; IV causal interpretation requires additional exclusion assumptions.
+  treatment_variable: 1990-census local age-0-to-9 male/female ratio linked to 2002 CHIP; for the aggregate panel, inferred province-year age-7-to-21 ratio from the 2000 census.
+  comparison_logic: Son versus daughter one-child households along a local-ratio gradient in the 2002 cross-section; separate within-province time variation for aggregate savings, not a household before/after design.
+  estimation_notes: Rural Table 5 estimates son and daughter subsamples; Table 7 pools them with a son-by-ratio interaction. Table 16 is the separate province-year 2SLS analysis. Neither the household comparison nor the aggregate panel warrants calling the local sex ratio randomly assigned.
 threats:
 - type: omitted-variable-bias
   basis: inferred
@@ -154,8 +124,8 @@ threats:
   - demographic composition
   - and cultural attitudes
   - use within-region variation over time
-  - test placebo on households without sons
-  - instrument sex ratios using policy variation
+  - compare son and daughter gradients
+  - inspect alternative direct effects of family-planning enforcement
 - type: measurement-error
   basis: inferred
   condition: Local sex ratios may be measured with error (census undercount, migration, age misreporting), attenuating estimates
@@ -163,42 +133,40 @@ threats:
   - E1
   possible_diagnostics:
   - use multiple data sources for sex ratios
-  - instrument with province-level policy intensity
+  - examine sensitivity of the province-level IV to policy-related direct saving channels
   - report specification robustness
 empirical_requirements:
   contract_version: 1
-  population: Chinese households, 1980–2005 (with sex ratio imbalances intensifying)
-  observation_unit: Household-year
-  geography_level: Prefecture or county
-  time_start: 1980
-  time_end: 2005
-  minimum_frequency: annual
-  minimum_pre_periods: 3
-  minimum_post_periods: 5
+  population: 2002 CHIP rural and urban one-child households for the household application; a separate 1980-2007 province-year aggregate application.
+  observation_unit: household in 2002; province-year for the aggregate analysis
+  geography_level: rural county or urban city for CHIP; province for aggregate analysis
+  time_start: 2002
+  time_end: 2002
+  minimum_frequency: cross-section
+  minimum_pre_periods: 0
+  minimum_post_periods: 0
   required_fields:
   - household savings
   - income
   - consumption
-  - household composition (age
-  - sex
-  - marital status of all members)
-  - housing wealth
-  - prefecture/county code
+  - household composition including child sex and age
+  - marriage status and family type
+  - 1990 census local cohort ratio
+  - rural county or urban city code
   required_identifiers:
   - household ID
-  - survey year
-  - prefecture/county code
+  - 2002 survey year
+  - rural county or urban city location
   treatment_key:
   - son presence indicator
-  - local sex ratio (male/female at age 15-30)
+  - local sex ratio for the 1990 age-0-to-9 cohort
   - son-times-sex-ratio interaction
-  treatment_source: China Household Income Project (CHIP), Urban Household Survey (UHS), Chinese population census for sex
-    ratios, provincial statistical yearbooks
+  treatment_source: 1990 population census age-sex counts linked to the 2002 Chinese Household Income Project; the separate provincial panel infers sex ratios from the 2000 census.
   measurement_risks:
   - savings measurement error in survey data
   - sex ratio mismeasurement due to internal migration
-  - household composition changes between survey waves
-  - housing wealth valuation
+  - census-to-survey geography matching and local migration
+  - comparability of household and provincial savings measures
 evidence:
 - id: E1
   source_type: paper
@@ -207,13 +175,44 @@ evidence:
   url: https://doi.org/10.1086/660887
   date: 2011
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - mechanism analysis
-  - aggregate implications
+  - identity.instrument
+  - identity.assignment_mechanism
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.estimation_notes
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - design_applications.data_used
   verification_status: verified
+  access_level: metadata
+  locator: 'Journal DOI and publication identity; full-text claims were checked in E4, accessed 2026-10-03.'
+- id: E2
+  source_type: official-data
+  citation: National Bureau of Statistics of China. Communiqué on Major Figures of the 2000 Population Census (No. 1).
+  url: https://www.stats.gov.cn/english/NewsEvents/200204/t20020423_25982.html
+  date: 2001
+  supports: [scope.regions, identity.implementation_regime]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Mainland census coverage, cohort and sex composition sections; this national communiqué confirms the census frame but does not independently reproduce the paper’s county or city premarital-cohort ratios; accessed 2026-10-03.'
+- id: E3
+  source_type: archive
+  citation: Chinese Household Income Project, 2002, ICPSR 21741, version 1.
+  url: https://www.icpsr.umich.edu/web/DSDR/studies/21741
+  date: 2009
+  supports: [empirical_requirements.population, empirical_requirements.treatment_source, design_applications.data_used]
+  verification_status: verified
+  access_level: metadata
+  locator: 'Study description and citation; confirms the 2002 rural and urban household survey exists, not the paper-specific sample construction or field-by-field access; accessed 2026-10-03.'
+- id: E4
+  source_type: paper
+  citation: Wei and Zhang. 2011. Author-hosted published JPE article PDF, with later affiliation erratum.
+  url: https://business.columbia.edu/sites/default/files-efs/pubfiles/3534/Wei_Competitive_Saving_Motive.pdf
+  date: 2011
+  supports: [identity.instrument, identity.assignment_mechanism, assignment.exposure_construction, design.primary_strategy, design.estimation_notes, empirical_requirements.population, empirical_requirements.observation_unit, design_applications.data_used]
+  verification_status: verified
+  access_level: full-text
+  locator: 'Article pp. 528-531 household sample and census linkage; Tables 5-7 pp. 532-537 rural household specifications; pp. 550-559 and Tables 14-16 separate province-year/IV exercise; Appendix pp. 562-563 data definitions; accessed 2026-10-03.'
 design_applications:
 - paper: 'The Competitive Saving Motive: Evidence from Rising Sex Ratios and Savings Rates in China'
   doi: 10.1086/660887
@@ -221,48 +220,51 @@ design_applications:
   year: 2011
   research_question: Does competition in the marriage market caused by sex ratio imbalances explain the rise in China's household
     savings rate?
-  population: Chinese households across provinces with varying sex ratios, 1980–2005
-  outcome: Household savings rate, housing wealth accumulation, consumption patterns
-  data_used: []
-  treatment_encoding: Household having son(s) × local sex ratio (male/female at marriageable ages)
-  comparison: Households with sons vs daughters; high sex ratio regions vs balanced regions; pre-imbalance vs post-imbalance
-    period
-  empirical_design: Difference-in-differences (son × sex ratio); triple-differences; aggregate analysis linking provincial
-    savings rates to provincial sex ratios; instrumental variables using provincial One-Child Policy fines as instrument for
-    sex ratios
+  population: 2002 CHIP one-child households in 122 rural counties and 70 cities; separately, Chinese province-years during 1980-2007.
+  outcome: Household log(income/consumption) in the CHIP tables; a separately constructed provincial savings-rate series in the aggregate panel.
+  data_used:
+  - 2002 Chinese Household Income Project rural and urban surveys (ICPSR 21741)
+  - 1990 Chinese population census local age-sex cohorts for 2002 household exposure
+  - 2000 Chinese population census cohorts for the separate province-year series
+  - Provincial statistical yearbooks for aggregate income and consumption
+  - Provincial family-planning penalty and minority-exemption measures for the IV exercise
+  treatment_encoding: County (rural) or city (urban) 1990 census age-0-to-9 male/female ratio, interpreted as ages 12-21 in 2002; the pooled rural table interacts it with a one-child son indicator.
+  comparison: Son and daughter one-child families across local-ratio gradients in the 2002 household cross-section; distinct within-province aggregate analysis with year effects.
+  empirical_design: Household cross-sectional regressions, including rural separate and pooled son/daughter specifications; distinct province-year fixed-effects and 2SLS analyses.
   assumptions:
-  - sex ratios conditionally exogenous to savings
-  - son presence does not affect savings through channels other than marriage-market competition
-  - policy fines affect savings only through sex ratios
+  - The conditional local sex-ratio gradient is not driven by omitted local determinants of savings or selective migration.
+  - Interpreting the son contrast as marriage-market competition requires considering other consequences of child sex and local demography.
+  - Province-level IV estimates require family-planning measures to lack direct effects on savings apart from cohort sex ratio.
   threats_addressed:
-  - omitted variables via household and region fixed effects
-  - reverse causality via instrument using policy fines
-  - measurement error via multiple data sources
+  - The paper conditions on household and local covariates and examines alternative samples; no household fixed effects in the 2002 cross-section.
+  - Provincial fixed effects and earlier policy penalties address some concerns but do not prove exclusion of direct fertility-policy effects.
+  - Census-derived exposure can differ from the effective marriage market because of migration or reporting error.
   evidence_refs:
   - E1
+  - E3
+  - E4
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+- The independently inspected official census communiqué confirms the national frame, not the 1990 county/city age-sex counts or the paper's exact linked local exposure; the record should not imply those ratios were independently reconstructed.
+- The paper documents multiple useful associations, but endogenous local demography and possible direct effects of family-planning instruments preclude presenting this as a clean exogenous shock without a design-specific audit.
 method_transfer: null
 ---
 ## Institutional Background
-China's household savings rate rose dramatically from about 16% in 1990 to over 30% by the late 2000s — one of the highest savings rates in the world. Simultaneously, the sex ratio at birth became increasingly male-biased, rising from the natural rate of about 105 boys per 100 girls to over 120 by 2005. This sex ratio skew was driven by the interaction of strong son preference, the One-Child Policy's fertility restrictions, and the spread of ultrasound technology enabling sex-selective abortion. [E1]
+This is not a policy rollout or an assigned shock. It is a measured difference in the number of young men relative to young women across Chinese marriage markets. Wei and Zhang ask whether the resulting competition is associated with greater saving by families with sons. Their account connects the demographic imbalance to family-planning restrictions, son preference and sex selection, but the empirical treatment is the cohort sex ratio, not the adoption of the one-child policy. The official 2000 census communiqué establishes the mainland census frame; it does not supply the exact local ratios constructed by the authors. [E1; E2]
 
 ## What Changed
-An increasing share of Chinese men faced a "marriage squeeze" — a shortage of brides in the marriage market. In response, households with sons began saving more to improve their sons' relative attractiveness as marriage partners. The key asset is housing: homeownership has become a prerequisite for marriage in urban China, and families with sons compete to accumulate housing wealth to make their sons more marriageable. [E1]
+For the household exercise, the authors use the 2002 Chinese Household Income Project, covering 122 rural counties and 70 cities. They advance the 0–9 cohort from the 1990 census to ages 12–21 in 2002, measuring exposure at rural county or urban city level. The comparable rural Table 5 sample is a one-child, three-person nuclear family with both parents alive and mother younger than 40. Household saving is operationalized as log(income/consumption), not a household panel savings rate. Rural Tables 5–7 compare son and daughter families across the local ratio; Table 7 includes a son-by-ratio interaction. The study also reports urban results, which should not be silently pooled with rural county exposure. [E1; E3]
 
 ## Implementation and Assignment
-The variation operates at the intersection of household composition (having a son versus a daughter) and regional demographics (the local male-to-female ratio among marriageable young people). Households with sons in regions with more skewed sex ratios face stronger incentives for competitive savings. A key falsification test: sex ratios should not affect savings behavior of households without sons. [E1]
+The local ratio predates the 2002 survey outcome and the son/daughter contrast is informative about the proposed marriage-market mechanism. In the rural estimates, the ratio is positively associated with saving for son families while the daughter-family estimate is not statistically distinguishable from zero. This is not proof that daughter families or prices are unaffected, nor that local ratios are random. The household design is cross-sectional: it has no household fixed effects or before/after household treatment comparison. Regional income, culture, fertility preferences, migration and other demography can confound the gradient. [E1]
 
 ## Why This Creates Empirical Variation
-If sex ratio imbalances are driven by historical son preference and policy — not by contemporaneous economic conditions — then the interaction of household son presence and regional sex ratio isolates the causal effect of marriage-market competition on savings. The paper estimates that the rising sex ratio explains about half of the increase in China's household savings rate. The competitive savings mechanism generates a negative externality: one household's additional savings raises the bar for other households, creating a positional arms race. [E1; analytical inference]
+The paper additionally constructs a 1980–2007 province-year panel, inferring the 7–21 cohort ratio from the 2000 census, and estimates province and year fixed-effects specifications. Its IV exercise uses family-planning financial penalties and the share exempt from birth quotas, lagged about 14 years. These are *instruments proposed by the paper*, not proof of exogenous assignment: family-planning enforcement could influence fertility, household composition and saving through channels other than the measured sex ratio. Table 16 reports positive 2SLS coefficients, and the paper's claim that the ratio explains a large share of China's aggregate savings rise is an estimate under this identifying and aggregation model, not a census fact. The article's text and appendix do not describe the provincial savings transformation identically, so a replication should verify the underlying series rather than merge it into the CHIP outcome. [E1]
 
 ## Identification Risks
-Regions with skewed sex ratios may differ in income levels, development, or cultural norms that also drive savings. The paper tests the key identifying assumption by examining savings behavior in households without sons — these households should not respond to sex ratio variation if the mechanism operates through marriage-market competition. Using provincial One-Child Policy variation (fine levels) as an instrument for sex ratios provides additional identification. [E1]
+The local ratio is not assigned randomly. Regional income, culture, fertility preferences, migration and other demography may jointly shape the census ratio and savings. The son/daughter comparison is a mechanism contrast, not an automatic placebo, and the family-planning instruments can directly alter saving through fertility and household composition. The study's province-level fixed effects and statistical overidentification tests cannot alone close those channels. [E4]
 
 ## Data Requirements
-Household-level survey data with savings, income, consumption, demographic composition, and housing wealth (CHIP, UHS). Regional sex ratios from census data at prefecture or county level. Provincial One-Child Policy fine schedules for IV analysis. Provincial macroeconomic data for aggregate analysis. [E1]
+For a new study, first choose whether the estimand is a family-level relative saving response or an aggregate provincial response. Obtain the matching CHIP household geography, census age-sex counts and income/expenditure fields for the first; obtain province-year income/consumption and actual historical family-planning measures only if reproducing the second. Treat sex-ratio measurement, migration, local selection and the IV exclusion restriction as active design issues. The value of this record is the documented exposure and comparison logic, not a promise that any sex-ratio regression is causal. [E1; E3]
 
 ## Evidence Notes
-E1 provides compelling evidence that sex ratio imbalances are a major driver of China's high savings rate. The paper estimates that households with sons in high-sex-ratio regions save significantly more than comparable households with daughters, and that this mechanism can explain approximately 50% of the aggregate increase in China's household savings rate. The findings link demographic policies to macroeconomic outcomes through the novel channel of marriage-market competition.
+The 2002 survey and the two census vintages are different inputs for different analyses. The official communiqué and ICPSR catalog confirm the existence and broad frame of those inputs, while the full paper is the source for the actual sample restrictions, exposure construction and estimates. Exact local cohort ratios have not been independently reconstructed here, so this corrected record remains at the extracted layer rather than being promoted as a verified exogenous design. [E2; E3; E4]

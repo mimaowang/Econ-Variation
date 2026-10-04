@@ -12,7 +12,7 @@ import yaml
 
 sys.dont_write_bytecode = True
 
-from search import load_router, search_items  # noqa: E402
+from search import load_router, phrase_matches, search_items  # noqa: E402
 
 
 FREQUENCY_DAYS = {
@@ -318,6 +318,52 @@ def semantic_dimensions(item: dict[str, Any], query: dict[str, Any]) -> dict[str
     return dimensions
 
 
+def intent_dimension(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any] | None:
+    intent = query.get("intent", {})
+    fit = item.get("research_fit", {})
+    matched = {
+        key: phrase_matches(intent[key], choices) for key, choices in (
+            ("outcome", fit.get("outcomes", []) + fit.get("application_outcomes", [])),
+            ("design", fit.get("design_families", [])),
+        )
+        if intent.get(key)
+    }
+    unresolved = [key for key, matches in matched.items() if not matches]
+    if unresolved:
+        result = dimension(
+            "conditional", f"The declared research intent needs canonical review: {', '.join(unresolved)}. "
+            "Data completeness does not establish substantive fit.", "intent-manual-review", manual_review=True,
+        )
+        result["matched"] = [key for key, matches in matched.items() if matches]
+        return result
+    if item.get("profile_selection_basis") == "automatic" and not intent.get("outcome"):
+        return dimension(
+            "conditional", "Specify an outcome or a profile before treating this application as relevant; "
+            "a design family alone does not select its outcome.", "profile-intent-unspecified", manual_review=True,
+        )
+    if intent.get("outcome") or intent.get("design"):
+        result = dimension("compatible", "Declared intent matches the recorded vocabulary; verify substantive fit in the canonical record.", "intent-matched")
+        result["matched"] = list(matched)
+        return result
+    if item.get("profile_selection_basis") == "explicit-profile":
+        return dimension("compatible", "The agent explicitly selected this record's research application.", "profile-explicit")
+    return None
+
+
+def fit_rank(result: dict[str, Any]) -> tuple:
+    """Preserve intent before data convenience; ties retain recall order, not arbitrary weights."""
+    dimensions = result["dimensions"]
+    return (
+        result["knowledge_eligibility"] not in {"do-not-recommend", "lead-only", "method-lead"},
+        "outcome" in dimensions.get("intent", {}).get("matched", []),
+        dimensions.get("intent", {}).get("status") == "compatible",
+        {"compatible": 3, "conditional": 2, "method-only": 2, "incompatible": 0}[result["decision"]],
+        -sum(value["status"] == "incompatible" for value in dimensions.values()),
+        -sum(value["status"] == "conditional" for value in dimensions.values()),
+        -len(result["missing_join_data"]),
+    )
+
+
 def evaluate_item(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]:
     data = query.get("data", {})
     identifiers, missing_identifiers = identifiers_dimension(item, data)
@@ -331,6 +377,9 @@ def evaluate_item(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]
         "comparison": comparison_dimension(query),
         **semantic_dimensions(item, query),
     }
+    intent = intent_dimension(item, query)
+    if intent is not None:
+        dimensions["intent"] = intent
     hard_failure = any(value["status"] == "incompatible" for key, value in dimensions.items() if key != "knowledge")
     knowledge_failure = dimensions["knowledge"]["status"] == "incompatible"
     if knowledge_failure:
@@ -363,28 +412,34 @@ def evaluate_item(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]
 
 def evaluate_item_profiles(item: dict[str, Any], query: dict[str, Any]) -> dict[str, Any]:
     profiles = item.get("design_profiles", [])
+    requested = query.get("design_profile_ids", {}).get(item["id"])
+    if requested is not None:
+        profiles = [profile for profile in profiles if profile["id"] == requested]
+        if not profiles:
+            raise ValueError(f"Unknown design profile '{requested}' for variation '{item['id']}'.")
     if not profiles:
         return evaluate_item(item, query)
-    evaluated: list[tuple[int, dict[str, Any], dict[str, Any]]] = []
-    decision_rank = {"compatible": 4, "conditional": 3, "method-only": 3, "incompatible": 1}
-    for index, profile in enumerate(profiles):
-        profile_item = {**item, "data_fit": profile["data_fit"]}
+    evaluated = []
+    for profile in profiles:
+        profile_item = {
+            **item, "data_fit": profile["data_fit"],
+            "research_fit": {"outcomes": profile.get("outcome_domains", []), "design_families": profile["design_families"]},
+            "profile_selection_basis": "explicit-profile" if requested is not None else "automatic",
+        }
         result = evaluate_item(profile_item, query)
         result["selected_design_profile"] = {
             "id": profile["id"],
             "label": profile["label"],
             "when_to_use": profile["when_to_use"],
+            "selection_basis": (
+                "explicit-profile" if requested is not None else
+                "research-intent" if result["dimensions"]["intent"]["status"] == "compatible" else
+                "data-fit-exploration"
+            ),
         }
-        incompatible_count = sum(
-            dimension_value["status"] == "incompatible" for dimension_value in result["dimensions"].values()
-        )
-        conditional_count = sum(
-            dimension_value["status"] == "conditional" for dimension_value in result["dimensions"].values()
-        )
-        score = decision_rank[result["decision"]] * 1000 - incompatible_count * 100 - conditional_count * 10 - index
-        evaluated.append((score, result, profile))
-    evaluated.sort(key=lambda row: -row[0])
-    selected = evaluated[0][1]
+        evaluated.append((result, profile))
+    evaluated.sort(key=lambda row: fit_rank(row[0]), reverse=True)
+    selected = evaluated[0][0]
     selected["design_profile_results"] = [
         {
             "id": profile["id"],
@@ -392,8 +447,9 @@ def evaluate_item_profiles(item: dict[str, Any], query: dict[str, Any]) -> dict[
             "decision": result["decision"],
             "reason_codes": result["reason_codes"],
             "missing_join_data": result["missing_join_data"],
+            "intent": result["dimensions"]["intent"],
         }
-        for _, result, profile in evaluated
+        for result, profile in evaluated
     ]
     return selected
 
@@ -419,15 +475,21 @@ def select_items(query: dict[str, Any], router: dict[str, Any]) -> list[dict[str
         text=filters.get("text"),
         variation_types=filters.get("variation_types"),
         include_leads=include_leads,
-        limit=int(query.get("limit", 10)),
+        limit=len(items),  # Apply the display limit after joint fit, not before it.
     )
     return [result["item"] for result in ranked]
 
 
 def match_query(query: dict[str, Any], router: dict[str, Any] | None = None) -> dict[str, Any]:
     router = router or load_router()
+    for key in ("intent", "design_profile_ids"):
+        if not isinstance(query.get(key, {}), dict):
+            raise ValueError(f"{key} must be an object.")
     items = select_items(query, router)
-    if not items:
+    unused = set(query.get("design_profile_ids", {})) - {item["id"] for item in items}
+    if unused:
+        raise ValueError(f"Profile selectors refer to variations outside the recalled set: {', '.join(sorted(unused))}.")
+    if not items or (not query.get("candidate_ids") and int(query.get("limit", 10)) <= 0):
         return {
             "decision": "gap",
             "reason": "No record passed the requested role, knowledge-readiness, and recall gates; do not force a match.",
@@ -435,6 +497,9 @@ def match_query(query: dict[str, Any], router: dict[str, Any] | None = None) -> 
             "results": [],
         }
     results = [evaluate_item_profiles(item, query) for item in items]
+    results.sort(key=fit_rank, reverse=True)
+    if not query.get("candidate_ids"):
+        results = results[:max(int(query.get("limit", 10)), 0)]
     regular = [result for result in results if result["recommendation_eligible"]]
     decisions = {result["decision"] for result in regular}
     if "compatible" in decisions:
@@ -452,7 +517,9 @@ def match_query(query: dict[str, Any], router: dict[str, Any] | None = None) -> 
         decision = "gap"
     return {
         "decision": decision,
-        "reason": "Static knowledge eligibility and deterministic data compatibility were evaluated separately.",
+        "reason": "Candidates are ordered by knowledge eligibility, declared intent and joint data fit; "
+        "ties retain recall order. Institutional fit and identifying assumptions still require canonical review.",
+        "research_intent": query.get("intent", {}),
         "reason_codes": sorted({code for result in results for code in result["reason_codes"]}),
         "results": results,
     }

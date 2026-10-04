@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from validate import run
-from econ_variation_lib import identity_fingerprint, load_records, public_url_issues
+from econ_variation_lib import identity_fingerprint, knowledge_eligibility, load_records, public_url_issues
 
 
 def test_repository_records_validate() -> None:
@@ -51,3 +51,24 @@ def test_health_and_router_share_one_static_eligibility_contract() -> None:
     router = build()
     assert health["knowledge_readiness"]["eligibility_counts"] == router["recommendation_eligibility_counts"]
     assert sum(health["knowledge_readiness"]["eligibility_counts"].values()) == health["record_count"]
+
+
+def test_managed_extracted_method_remains_a_lead_until_grounded() -> None:
+    data = {
+        "status": "extracted",
+        "provenance": {"task_id": "task-managed"},
+        "scope": {"knowledge_role": "transferable-method"},
+    }
+    assert knowledge_eligibility(data) == "method-lead"
+    data["status"] = "grounded"
+    assert knowledge_eligibility(data) == "method-inspiration"
+
+
+def test_health_exposes_separate_closed_loop_signals() -> None:
+    _, report = run(write_health=False)
+    assert report["knowledge_readiness"]["work_mode"] in {"balanced", "close-open-loops"}
+    assert isinstance(report["knowledge_readiness"]["feedback_reasons"], list)
+    assert isinstance(report["canonical_admission_debt_ids"], list)
+    assert isinstance(report["promotion_ready_ids"], list)
+    assert "imprecise_evidence_paths" in report["quality_debt"]["managed_active_pipeline"]
+    assert "open_candidate_count" not in report["knowledge_readiness"]

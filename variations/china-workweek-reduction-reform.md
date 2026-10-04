@@ -7,9 +7,9 @@ aliases:
 - China five-day workweek reform
 - 国务院关于职工工作时间的规定
 - 1995年双休制改革
-status: extracted
+status: grounded
 provenance:
-  task_id: task-6ba04170de20
+  task_id: task-ced64d06bdd3
 scope:
   country: China
   regions:
@@ -63,7 +63,7 @@ timeline:
   anticipation: The amendment was published on March 25, 1995, roughly five weeks before
     implementation. Enterprises facing difficulties could apply for delayed implementation
     until May 1, 1997, and public institutions until January 1, 1996.
-  last_verified: '2026-07-14'
+  last_verified: '2026-08-15'
 assignment:
   unit: Individual-year or household-year in a panel such as the China Health and Nutrition
     Survey (CHNS).
@@ -281,8 +281,9 @@ evidence:
   url: http://www.npc.gov.cn/npc/c2/c30834/201905/t20190521_296651.html
   date: 1994
   supports:
-  - identity
-  - timeline
+  - identity.instrument
+  - identity.legal_identifiers
+  - identity.implementation_regime
   verification_status: verified
   access_level: official-document
   locator: 中国人大网，第四章“工作时间和休息休假”
@@ -292,8 +293,15 @@ evidence:
   url: https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/fg/202011/t20201103_394935.html
   date: 1995
   supports:
-  - identity
-  - timeline
+  - identity.instrument
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.effective
+  - timeline.implementation_start
+  - timeline.implementation_end
+  - timeline.local_timing
+  - assignment.rule
+  - assignment.exemptions
   verification_status: verified
   access_level: official-document
   locator: 人力资源和社会保障部官网
@@ -303,31 +311,39 @@ evidence:
   url: https://www.ccdi.gov.cn/fgk/law_display/5009
   date: 1995
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.instrument
+  - identity.legal_identifiers
+  - timeline.announcement
+  - timeline.effective
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: 中央纪委国家监委网站法规库，国务院令第174号
 - id: E4
   source_type: implementation-document
   citation: 劳动部《〈国务院关于职工工作时间的规定〉的实施办法》（劳部发〔1995〕143号），第三条、第五条、第九条、第十二条。
-  url: https://docs.ruthout.com/upload/pdf/a3b146ebcf6c6fdbaf34e9d9881dceba.pdf
+  url: https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201710/t20171009_780941.html
   date: 1995
   supports:
-  - identity
-  - assignment
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.implementation_end
+  - assignment.rule
+  - assignment.exemptions
   verification_status: verified
   access_level: official-document
-  locator: PDF scan of Lao Bu Fa [1995] No. 143
+  locator: 北京市政府门户网站政策法规库转载全文（附劳动部实施办法劳部发〔1995〕143号），第十二条规定企业最迟1997年5月1日施行
 - id: E5
   source_type: implementation-document
   citation: 人事部《国家机关、事业单位贯彻〈国务院关于职工工作时间的规定〉的实施办法》（人薪发〔1995〕32号），第三条、第五条、第八条。
   url: https://www.gov.cn/zhengce/2022-08/31/content_5711279.htm
   date: 1995
   supports:
-  - identity
-  - assignment
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
+  - assignment.exemptions
   verification_status: verified
   access_level: official-document
   locator: 中国政府网转载
@@ -339,10 +355,17 @@ evidence:
   url: https://doi.org/10.1016/j.jdeveco.2025.103672
   date: 2026
   supports:
-  - design
-  - design_applications
-  - threats
-  - empirical_requirements
+  - design.primary_strategy
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.treatment_encoding
+  - design_applications.empirical_design
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
   verification_status: reported
   access_level: abstract
   locator: DOI 10.1016/j.jdeveco.2025.103672
@@ -352,9 +375,10 @@ evidence:
   url: https://icpd.zju.edu.cn/2025/1121/c70711a3108814/page.htm
   date: 2025
   supports:
-  - design
-  - design_applications
-  - empirical_requirements
+  - design.primary_strategy
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.empirical_design
   verification_status: reported
   access_level: full-text
   locator: 浙江大学公共管理学院官网新闻页面

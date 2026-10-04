@@ -112,3 +112,16 @@ def test_doctor_flags_multiple_active_tasks(monkeypatch, tmp_path) -> None:
     report = doctor.build_report(current=current)
     assert "multiple-active-tasks" in report["issues"]
     assert report["safe_action"] == "resolve-multiple-active-tasks"
+
+
+def test_doctor_turns_an_unqueued_candidate_into_an_executable_next_action(monkeypatch, tmp_path) -> None:
+    configure(monkeypatch, tmp_path, [], snapshot(stop=True))
+    doctor.CANDIDATES.write_text(
+        json.dumps({
+            "id": "candidate-x", "name": "A retained case", "stage": "resolve", "status": "pending",
+        }) + "\n",
+        encoding="utf-8",
+    )
+    report = doctor.build_report()
+    assert report["safe_action"] == "enqueue-candidate-follow-up"
+    assert report["open_candidates"][0]["id"] == "candidate-x"

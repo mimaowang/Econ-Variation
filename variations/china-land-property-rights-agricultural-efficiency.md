@@ -9,11 +9,11 @@ aliases:
 
 status: extracted
 provenance:
-  task_id: legacy-untracked
+  task_id: task-7c0dd7e9a6ee
 scope:
   country: China
   regions:
-  - Rural villages across multiple Chinese provinces
+  - Rural households and villages in provinces with staggered RLCL implementation
   domains:
   - agricultural-economics
   - development-economics
@@ -24,52 +24,34 @@ scope:
   china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
     research.
 identity:
-  instrument: A property rights reform in rural China that granted farmers the legal right to lease out their contracted land,
-    removing a key restriction on land transferability and enabling land rental markets to emerge
-  authority: Central government of China (State Council, Ministry of Agriculture); reform was piloted in selected villages
-    and then expanded
+  instrument: '[E1, reported claim] Staggered provincial implementation of the Rural Land Contracting Law (RLCL), which formalized farmers'' rights to lease contracted land.'
+  authority: '[E2, verified] The National People''s Congress Standing Committee adopted and the President promulgated the Rural Land Contracting Law (Order No. 73) on 2002-08-29; it took effect on 2003-03-01. [E1, reported claim] The paper''s staggered exposure instead uses provincial local implementation announcements collected by the authors.'
   legal_identifiers:
-  - CPC Central Committee Decision on Several Major Issues Concerning Rural Reform and Development (October 2008)
-  - Opinions on Promoting the Orderly Transfer of Rural Land Contractual Management Rights (2008–2009)
-  - Land Contract Law of the People's Republic of China (2002
-  - amended)
-  implementation_regime: The reform was implemented through a staggered rollout across Chinese villages starting in the late
-    2000s; villages received the reform at different times depending on local government decisions and pilot program assignment,
-    with the reform allowing farmers to legally lease out their contracted land to other farmers
-  assignment_mechanism: The timing of reform adoption varied across villages based on local government decisions; the analysis
-    exploits the staggered timing to identify the effects of the reform on land rental activity, land allocation, and agricultural
-    productivity
+  - Rural Land Contracting Law (2002-08-29 adoption/promulgation; Order No. 73; effective 2003-03-01)
+  implementation_regime: '[E1, reported claim] The authors collected province-level timing of local implementation for the central RLCL announcement; by end-2014, 24 provincial governments had made official local implementation announcements.'
+  assignment_mechanism: '[E1, reported claim] Treatment timing is at province level, not village pilot assignment. The paper estimates staggered province implementation against not-yet-reformed provinces and examines whether changes in rural income and agricultural employment predict timing.'
   parent: null
   related_variations: []
 timeline:
-  announcement: '2008-10-01'
-  effective: '2008-10-01'
-  implementation_start: 2008
-  implementation_end: 2015
-  local_timing: The reform rolled out gradually across villages from 2008 onward; villages in the same county could receive
-    the reform in different years depending on local implementation decisions
-  anticipation: The 2008 Central Committee decision signaled the direction of reform, but the exact timing of local implementation
-    was uncertain and varied across villages
+  announcement: '2002-08-29'
+  effective: '2003-03-01'
+  implementation_start: 2003
+  implementation_end: 2014
+  local_timing: '[E1, reported claim] Province-level implementation timing is collected by the authors; the NFP household panel covers 2003-2010. The paper does not establish village-specific adoption dates.'
+  anticipation: '[E1, reported claim] The central law was announced in 2003 but local implementation varied; the paper tests dynamic reform and post-reform coefficients rather than asserting no anticipation.'
   last_verified: '2026-07-13'
 assignment:
-  unit: Village
-  treated: Villages that adopted the land property rights reform allowing farmers to legally lease out their land
-  comparison_pool: Villages that had not yet adopted the reform (in the staggered rollout framework); villages that never
-    adopted (in some specifications)
-  rule: Villages adopted the reform in different years from 2008 onward; treatment is defined as the year in which the reform
-    was implemented in the village, enabling farmers to legally lease out their contracted land
-  intensity: Binary at the village level (reform adopted or not), but the effective treatment intensity varies with local
-    land market conditions, land inequality, and farmer demand for land rental
-  compliance: High compliance; once the reform was adopted, farmers generally gained the legal right to lease out land, though
-    informal barriers to land transfer may have persisted in some areas
-  exposure_construction: Code villages as treated in the year the reform was implemented and all subsequent years; treatment
-    can be encoded as a binary indicator or used in an event-study framework; the reform's effects may grow over time as land
-    rental markets develop
+  unit: Province-year implementation exposure joined to household-year and village-year outcomes
+  treated: '[E1, reported claim] Households and villages in provinces after their RLCL implementation year.'
+  comparison_pool: '[E1, reported claim] Observations in provinces not yet implementing RLCL, with calendar-year fixed effects and province trends; not a within-province village rollout comparison.'
+  rule: '[E1, reported claim] Treatment is province-level local implementation timing of the 2003 RLCL, joined to NFP household/village observations.'
+  intensity: Binary province-by-post-implementation exposure; the paper also estimates event-time dynamics.
+  compliance: '[E1, reported claim] Formal implementation did not eliminate all transaction costs; the paper interprets the estimated effects as partial relaxation of land-market frictions.'
+  exposure_construction: '[E1, reported claim] Merge province implementation year to 2003-2010 NFP observations; code reform year and post-reform years at the province level, retaining household/village outcomes and event time.'
   required_identifiers:
-  - village code
+  - province code
   - year
-  - household identifiers
-  - land parcel identifiers
+  - household identifier
   exemptions: []
   spillovers: Land rental markets may create spillover effects across village boundaries as farmers rent land from neighboring
     villages; aggregate productivity effects may affect local land prices and wages
@@ -104,6 +86,7 @@ research_compatibility:
   - settings where land rights are not enforced
   - industrial or manufacturing outcomes
 design:
+  claim_type: causal
   affordances:
   - staggered rollout across villages
   - variation in reform timing
@@ -115,8 +98,7 @@ design:
   - event study
   - two-way fixed effects with village and year fixed effects
   - Callaway-Santley estimator for staggered adoption
-  identifying_variation: Variation across villages in the timing of reform adoption; within-village variation over time before
-    and after reform; comparison of land rental activity and productivity between early- and late-adopting villages
+  identifying_variation: '[E1, reported claim] Provincial RLCL implementation timing following the 2003 central announcement, compared with provinces yet to implement, with household or village outcomes and calendar-year effects, province trends, and fixed effects.'
   assumptions:
   - parallel trends in outcomes between early- and late-adopting villages before reform
   - no anticipation of reform timing by farmers
@@ -126,14 +108,12 @@ design:
   - compare characteristics of early vs. late adopters
   - test for selective timing based on village outcomes
   - robustness to using different control groups
-  primary_strategy: Staggered difference-in-differences with village and year fixed effects; event-study analysis around reform
-    adoption
+  primary_strategy: '[E1, reported claim] Staggered difference-in-differences using province-level implementation timing; household regressions use household fixed effects, calendar-year effects and province trends, while aggregate regressions use village fixed effects, year effects and province trends.'
   estimand: The causal effect of the recorded exposure on Land rental activity, land area cultivated by households, agricultural
     output, total factor productivity, labor allocation, conditional on the stated design assumptions.
-  treatment_variable: Binary indicator for whether the village has adopted the land property rights reform in a given year
-  comparison_logic: Early-adopting vs. late-adopting villages, before vs. after reform adoption
-  estimation_notes: Staggered difference-in-differences with village and year fixed effects; event-study analysis around reform
-    adoption
+  treatment_variable: '[E1, reported claim] Province implementation-year and post-implementation indicators joined to household-year and village-year outcomes.'
+  comparison_logic: '[E1, reported claim] Implemented versus not-yet-implemented provinces over 2003-2010; village and household variation are outcome levels, not assignment levels.'
+  estimation_notes: '[E1, reported claim] Standard errors are clustered at province level; the central implementation unit limits the number of treatment clusters and should inform inference.'
 threats:
 - type: non-parallel-trends
   basis: inferred
@@ -169,11 +149,11 @@ threats:
   - placebo tests using unrelated outcomes
 empirical_requirements:
   contract_version: 1
-  population: Rural agricultural households in Chinese villages, 2000–2015
+  population: Rural agricultural households and villages observed in the paper's National Fixed Point Survey panel, 2003–2010
   observation_unit: Village-year or household-year
   geography_level: Village
-  time_start: 2000
-  time_end: 2015
+  time_start: 2003
+  time_end: 2010
   minimum_frequency: annual or survey-wave frequency
   minimum_pre_periods: 3
   minimum_post_periods: 3
@@ -210,14 +190,63 @@ evidence:
   url: https://doi.org/10.1093/restud/rdaa072
   date: 2021
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - rental market activation
-  - productivity gains
-  - land reallocation
+  - identity.instrument
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.announcement
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.intensity
+  - assignment.compliance
+  - assignment.exposure_construction
+  - design.claim_type
+  - design.primary_strategy
+  - design.identifying_variation
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.estimation_notes
+  - design.assumptions
+  - design.diagnostics
+  - threats.condition
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: verified
+  access_level: full-text
+  locator: 'Author-hosted version inspected: pp. 1-7 (RLCL, 2003 announcement, provincial implementation, NFP data, design and threats), pp. 40-43 (household/village specifications and clustering), pp. 30-31 (scope and interpretation).'
+- id: E2
+  source_type: policy-document
+  citation: 'National Development and Reform Commission. 2002. "Rural Land Contracting Law of the People''s Republic of China" (Presidential Order No. 73).'
+  url: https://www.ndrc.gov.cn/xxgk/zcfb/qt/200507/t20050706_967937.html
+  date: 2002
+  supports:
+  - identity.authority
+  - identity.legal_identifiers
+  - timeline.announcement
+  - timeline.effective
+  verification_status: verified
+  access_level: full-text
+  locator: 'Opening promulgation: adopted and promulgated 2002-08-29; effective 2003-03-01. Articles 10 and 32–39 protect and specify lawful transfer/rental; Article 64 permits provincial-level implementation measures.'
 design_applications:
 - paper: Property Rights, Land Misallocation, and Agricultural Efficiency in China
   doi: 10.1093/restud/rdaa072
@@ -228,11 +257,11 @@ design_applications:
   population: Rural farm households in China, 2000–2015
   outcome: Land rental activity, land area cultivated by households, agricultural output, total factor productivity, labor
     allocation
-  data_used: []
-  treatment_encoding: Binary indicator for whether the village has adopted the land property rights reform in a given year
-  comparison: Early-adopting vs. late-adopting villages, before vs. after reform adoption
-  empirical_design: Staggered difference-in-differences with village and year fixed effects; event-study analysis around reform
-    adoption
+  data_used:
+  - '[E1, reported claim] Ministry of Agriculture National Fixed Point Survey household and village panel, 2003–2010, merged to province-level implementation timing collected by the authors.'
+  treatment_encoding: '[E1, reported claim] Province-by-post-local-implementation exposure inherited by household and village observations; not a village adoption indicator.'
+  comparison: '[E1, reported claim] Provinces locally implementing versus provinces not yet implementing in a calendar year; outcome observations are households and villages.'
+  empirical_design: '[E1, reported claim] Staggered province-timing difference-in-differences, with household or village fixed effects, calendar-year effects, and province trends; the record should not relabel it as village-level rollout.'
   assumptions:
   - Parallel trends in outcomes between early and late adopters
   - no anticipation of reform timing
@@ -251,19 +280,19 @@ method_transfer: null
 ---
 ## Institutional Background
 
-Before the reform, China's agricultural land was collectively owned but contracted to individual households under the Household Responsibility System (HRS). However, farmers did not have the legal right to lease out their contracted land to other farmers. This restriction on land transferability created a misallocation problem: less productive farmers who wanted to exit agriculture could not easily transfer their land to more productive farmers who wanted to expand. Land remained with households that lacked comparative advantage in farming, reducing overall agricultural productivity. [E1]
+China's agricultural land remained collectively owned while use rights were contracted to households. The 2002 Rural Land Contracting Law protects the contracting relationship and specifies lawful transfer forms, including subcontracting and rental; it did not privatize the land itself. [E2] The paper studies whether its formalization of leasing rights relaxed transaction costs in land markets. That is the paper's mechanism, not proof that all pre-law transfers were legally impossible. [E1, reported claim]
 
 ## What Changed
 
-A series of policy changes beginning in 2008 granted farmers the legal right to lease out their contracted land to other farmers. The reform was implemented through a staggered rollout across Chinese villages, with different villages adopting the reform at different times between 2008 and 2015. Once adopted, farmers in the village could legally transfer their land use rights to other farmers through rental contracts, enabling the emergence of active land rental markets. [E1]
+[E2, verified] The Rural Land Contracting Law was adopted and promulgated on 29 August 2002 and took effect on 1 March 2003. It preserves collective ownership while allowing lawful contractual-right transfers, including rental. The paper's empirical change is not a 2008 village policy: it is the subsequent staggered provincial implementation timing the authors collected for the central law. [E1, reported claim]
 
 ## Implementation and Assignment
 
-The reform was piloted in selected villages and expanded over time based on local government decisions. The staggered nature of the rollout creates variation across villages in reform exposure: within any given year, some villages have adopted the reform while others have not. The analysis uses this variation, combined with village and year fixed effects, to identify the causal effects of the reform on land rental activity, land reallocation, and agricultural productivity. [E1]
+[E1, reported claim] The authors collect province-level implementation dates and merge them to the Ministry of Agriculture National Fixed Point Survey panel from 2003 to 2010. Households and villages inherit exposure from their province; they are not separately assigned. The paper reports that rural-income and agricultural-employment changes do not predict implementation timing and controls for provincial agricultural-tax rates, but these checks do not turn the administrative sequence into random assignment.
 
 ## Why This Creates Empirical Variation
 
-The staggered rollout of the property rights reform across villages generates variation in reform exposure across both villages and time. This variation identifies how land market liberalization affects the allocation of land across farmers with different productivity levels. If the reform successfully enables land to flow to more productive farmers, we should observe that treated villages experience: (1) an increase in land rental activity, (2) a positive correlation between farmer productivity and land area cultivated, and (3) an increase in aggregate agricultural output and productivity. [E1; analytical inference]
+The comparison is across provinces that have versus have not locally implemented RLCL in each calendar year, using household- and village-level outcomes. [E1, reported claim] The paper finds a subsequent increase in rental activity and about a 7 percent increase in village aggregate revenue and revenue per mu. That is evidence for the paper's province-timing design; it should not be reused as a village-level event study without a separate village implementation source.
 
 ## Identification Risks
 
@@ -271,7 +300,7 @@ The main identification concern is that the timing of reform adoption may be cor
 
 ## Data Requirements
 
-Household- or village-level panel data with information on land use, land rental activity, agricultural output, farm area cultivated, and household characteristics. Data on the exact year each village adopted the land property rights reform. Long panel covering both pre-reform and post-reform periods for early- and late-adopting villages. The paper uses the China Household Income Project (CHIP) survey combined with administrative records on reform timing. [E1]
+Household- or village-level panel data with information on land use, land rental activity, agricultural output, farm area cultivated, and household characteristics, joined to a province identifier and the authors' province-level implementation year. The paper reports using the Ministry of Agriculture National Fixed Point Survey panel for 2003–2010, not CHIP; a new application needs a documented province-timing source rather than an assumed village adoption date. [E1, reported claim]
 
 ## Evidence Notes
 

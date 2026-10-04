@@ -10,7 +10,7 @@ aliases:
 
 status: grounded
 provenance:
-  task_id: task-03f4df2571f3
+  task_id: task-870de312b99a
 scope:
   country: China
   regions:
@@ -51,7 +51,10 @@ identity:
     each round, provinces are treated at different dates, creating staggered variation
     in when a province (and the firms and plants within it) come under central scrutiny.
     Treatment can be coded as the inspection month, the post-inspection rectification
-    period, or an ever-inspected indicator, depending on the research design.
+    period, or an ever-inspected indicator, depending on the research design. Keep the
+    2018 look-back batches distinct from first-round adoption; the first 2019 second-round
+    batch also covered two central SOEs, which are organizational targets rather than
+    additional provincial cohorts.
   parent: null
   related_variations:
   - china-pollution-information-disclosure
@@ -76,15 +79,20 @@ timeline:
     The third batch (Tianjin, Shanxi, Liaoning, Anhui, Fujian, Hunan, Guizhou) stationed
     between 24 and 28 April 2017 [E8]. The fourth batch (Jilin, Zhejiang, Shandong,
     Hainan, Sichuan, Qinghai, Xinjiang, Tibet) stationed between 7 and 15 August 2017
-    and completed the first-round full coverage by mid-September 2017 [E9]. First-round
-    "look-back" inspections covered 20 provinces in two batches during 2018 [E11], and
-    a second round began in 2019.
+    and completed the first-round full coverage by mid-September 2017 [E9]. The 2018
+    "look-back" was a distinct repeat-inspection regime, not first-round adoption: its
+    first batch entered ten provinces from 30 May to 7 June, with province-specific
+    windows running through 30 June–7 July [E12], and its second batch entered ten
+    provinces from 30 October to 6 November, with windows running through 30 November–6
+    December [E13]. The second round began in July 2019. Its first batch entered six
+    provincial-level jurisdictions between 10 and 15 July, with one-month inspection
+    windows, and separately inspected two central SOEs [E14].
   anticipation: >
     The establishment of the inspection system was announced in mid-2015, so provincial
     governments could anticipate scrutiny in general terms. The exact batch and timing
     for each province were centrally determined and not fully predictable to local
     actors.
-  last_verified: '2026-07-14'
+  last_verified: '2026-09-30'
 assignment:
   unit: Province-year or plant-week/city-week depending on outcome frequency
   treated: >
@@ -356,9 +364,10 @@ evidence:
   url: https://www.mee.gov.cn/xxgk/hjyw/201508/t20150810_307921.shtml
   date: '2015-08-10'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.authority
+  - identity.instrument
+  - identity.legal_identifiers
+  - timeline.announcement
   verification_status: verified
   access_level: official-document
   locator: >
@@ -373,9 +382,11 @@ evidence:
   url: https://www.gov.cn/xinwen/2016-07/19/content_5092816.htm
   date: '2016-07-19'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - assignment.unit
+  - assignment.rule
+  - assignment.treated
+  - timeline.local_timing
   verification_status: verified
   access_level: official-document
   locator: >
@@ -391,9 +402,16 @@ evidence:
   url: https://doi.org/10.1073/pnas.2214262120
   date: 2023
   supports:
-  - design_applications
-  - assignment
-  - design
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: reported
   access_level: full-text
   locator: >
@@ -409,8 +427,17 @@ evidence:
   url: https://doi.org/10.1016/j.jenvman.2024.120306
   date: 2024
   supports:
-  - design_applications
-  - assignment
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: reported
   access_level: full-text
   locator: >
@@ -425,8 +452,18 @@ evidence:
   url: https://doi.org/10.3389/fpubh.2025.1688719
   date: 2025
   supports:
-  - design_applications
-  - assignment
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: reported
   access_level: full-text
   locator: >
@@ -441,9 +478,9 @@ evidence:
   url: https://www.gov.cn/hudong/2016-11/24/content_5137206.htm
   date: '2016-11-24'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: >
@@ -458,9 +495,9 @@ evidence:
   url: https://www.gov.cn/xinwen/2016-11/30/content_5140765.htm
   date: '2016-11-30'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: >
@@ -475,9 +512,9 @@ evidence:
   url: https://www.gov.cn/xinwen/2017-05/20/content_5195494.htm
   date: '2017-05-20'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: >
@@ -492,9 +529,9 @@ evidence:
   url: https://www.mee.gov.cn/xxgk/dsj/201709/t20170925_422233.shtml
   date: '2017-09-25'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: >
@@ -511,9 +548,9 @@ evidence:
   url: https://www.mee.gov.cn/gkml/sthjbgw/qt/201607/t20160706_357184.htm
   date: '2016-07-06'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: >
@@ -528,15 +565,71 @@ evidence:
   url: https://www.gov.cn/xinwen/2019-05/15/content_5391977.htm
   date: '2019-05-15'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.implementation_regime
+  - timeline.local_timing
   verification_status: verified
   access_level: official-document
   locator: >
     Gov.cn summary dated 15 May 2019; states that the Hebei pilot ran from 31 December 2015
     to 4 February 2016, the first round completed full provincial coverage by September 2017,
     and 20 provinces received "look-back" inspections in 2018.
+- id: E12
+  source_type: policy-document
+  citation: >
+    Ministry of Ecology and Environment. 2018. "First Batch of Central Environmental
+    Protection Inspection 'Look-Back' Fully Deployed" (published 2018-06-07).
+  url: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/201806/t20180607_630233_wh.html
+  date: '2018-06-07'
+  supports:
+  - timeline.local_timing
+  - assignment.rule
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    MEE notice and attached deployment table, lines 21 and 27–40. Lists the ten first-batch
+    look-back jurisdictions and their on-site windows: Heilongjiang 30 May–30 June; Hebei,
+    Henan, Ningxia, Jiangxi 1 June–1 July; Guangdong, Jiangsu, Yunnan 5 June–5 July;
+    Inner Mongolia 6 June–6 July; and Guangxi 7 June–7 July 2018. The notice describes
+    these as first-round look-back inspections, not first-time provincial adoption.
+- id: E13
+  source_type: policy-document
+  citation: >
+    Ministry of Ecology and Environment. 2018. "Second Batch of Central Ecological and
+    Environmental Protection Inspection 'Look-Back' Fully Deployed" (published 2018-11-06).
+  url: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/201811/t20181106_672732.html
+  date: '2018-11-06'
+  supports:
+  - timeline.local_timing
+  - assignment.rule
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    MEE notice and attached deployment table, lines 29 and 35–47. Lists ten second-batch
+    look-back jurisdictions: Hubei and Hunan 30 October–30 November; Anhui 31 October–30
+    November; Shaanxi 3 November–3 December; Sichuan 3 November–3 December; Liaoning and
+    Guizhou 4 November–4 December; Jilin 5 November–5 December; and Shanxi and Shandong
+    6 November–6 December 2018. These are repeat inspections, distinct from first-round
+    adoption and from the 2019 second round.
+- id: E14
+  source_type: policy-document
+  citation: >
+    Ministry of Ecology and Environment. 2019. "First Batch of Second-Round Central
+    Ecological and Environmental Protection Inspections Fully Deployed" (published
+    2019-07-16).
+  url: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/201907/t20190716_710718.html
+  date: '2019-07-16'
+  supports:
+  - timeline.local_timing
+  - assignment.rule
+  verification_status: verified
+  access_level: official-document
+  locator: >
+    MEE notice and attached deployment table, lines 29 and 37–48. Lists six provincial-level
+    jurisdictions—Shanghai 11 July–11 August, Chongqing and Gansu 12 July–12 August, Hainan
+    and Qinghai 14 July–14 August, and Fujian 15 July–15 August 2019—and two separately
+    targeted central SOEs, China Minmetals Group (10 July–10 August) and China National
+    Chemical Corporation (13 July–13 August). The SOE assignments are organizational
+    exposures, not province-level rollout dates.
 design_applications:
 - paper: 'Dynamic Responses of SO2 Pollution to China''s Environmental Inspections'
   doi: 10.1073/pnas.2214262120
@@ -631,9 +724,10 @@ design_applications:
   - E5
 readiness_blockers:
 - >
-  The first-round province-by-batch schedule is now verified from primary official
-  notices (E1–E11), but the exact province-level dates of the 2018 "look-back" batches
-  and the 2019 onward second-round batches have not yet been independently verified.
+  The first-round schedule, both 2018 "look-back" batches, and the first 2019 second-round
+  batch are verified from primary official notices (E1–E14). Province-specific schedules
+  for later second-round batches remain to be independently checked before coding exposure
+  beyond this first batch.
 - >
   Treatment definitions differ across studies (active inspection window, post-inspection
   year, ever-inspected indicator), so the appropriate coding depends on the research

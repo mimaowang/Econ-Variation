@@ -1,61 +1,102 @@
 {
-  "knowledge_snapshot_date": "2026-07-14",
+  "knowledge_snapshot_date": "2026-10-04",
+  "knowledge_freshness": {
+    "oldest_record_date": "2026-07-13",
+    "newest_record_date": "2026-10-04",
+    "records_at_newest_date": 25
+  },
   "repository_health": {
     "status": "valid",
     "errors": [],
     "warnings": []
   },
-  "record_count": 72,
+  "record_count": 160,
   "status_counts": {
-    "extracted": 46,
-    "contested": 5,
-    "grounded": 16,
-    "deprecated": 5
+    "extracted": 24,
+    "grounded": 108,
+    "design-documented": 10,
+    "contested": 11,
+    "deprecated": 7
   },
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 55,
-    "global-china-variation": 3
+    "china-variation": 141,
+    "global-china-variation": 5
   },
   "knowledge_readiness": {
     "eligibility_counts": {
-      "method-lead": 8,
-      "do-not-recommend": 10,
-      "conditional-candidate": 15,
-      "lead-only": 33,
-      "method-inspiration": 6
+      "method-lead": 13,
+      "conditional-candidate": 107,
+      "direct-candidate": 10,
+      "do-not-recommend": 18,
+      "lead-only": 11,
+      "method-inspiration": 1
     },
-    "direct_candidates": 0,
-    "conditional_candidates": 15,
-    "lead_only": 33,
-    "method_leads": 8,
-    "method_inspirations": 6,
-    "do_not_recommend": 10,
+    "direct_candidates": 10,
+    "conditional_candidates": 107,
+    "lead_only": 11,
+    "method_leads": 13,
+    "method_inspirations": 1,
+    "do_not_recommend": 18,
     "stop_bulk_discovery": false,
+    "work_mode": "close-open-loops",
+    "feedback_reasons": [
+      "managed-half-products",
+      "promotion-ready-awaits-review"
+    ],
     "interpretation": "Repository validity is not research readiness. Lead-only and contested records require audit before recommendation."
   },
   "quality_debt": {
     "legacy_backlog": {
-      "record_count": 37,
-      "missing_primary_evidence": 36,
-      "missing_primary_institutional_core": 37,
-      "missing_application_data": 28,
+      "record_count": 15,
+      "extracted_canonical_records": 15,
+      "missing_primary_evidence": 14,
+      "missing_primary_institutional_core": 15,
+      "missing_application_data": 13,
       "mojibake_detected": 0,
-      "causal_overclaim_lint": 37,
-      "invalid_evidence_paths": 126
+      "causal_overclaim_lint": 15,
+      "invalid_evidence_paths": 62,
+      "imprecise_evidence_paths": 45
     },
     "managed_active_pipeline": {
-      "record_count": 25,
+      "record_count": 127,
+      "extracted_canonical_records": 9,
       "missing_primary_evidence": 5,
-      "missing_primary_institutional_core": 6,
+      "missing_primary_institutional_core": 9,
       "missing_application_data": 0,
       "mojibake_detected": 0,
-      "causal_overclaim_lint": 0,
-      "invalid_evidence_paths": 0
+      "causal_overclaim_lint": 22,
+      "invalid_evidence_paths": 0,
+      "imprecise_evidence_paths": 144
     },
     "possible_duplicate_warnings": 0
   },
+  "canonical_admission_debt_ids": [
+    "china-highway-network-expansion",
+    "china-household-responsibility-system-growth",
+    "china-land-property-rights-agricultural-efficiency",
+    "china-sex-ratio-competitive-savings",
+    "dell-boundary-discontinuity-method",
+    "hsieh-klenow-plant-misallocation-method",
+    "israel-maimonides-rule-class-size",
+    "land-gradient-iv-infrastructure-rollout",
+    "us-railroad-market-access-method"
+  ],
+  "promotion_ready_ids": [
+    "china-2007-pollution-cadre-accountability-subsidy-exposure",
+    "china-2007-property-law-prefecture-private-firm-stock-exposure",
+    "china-soe-decentralization"
+  ],
   "priority_audit_ids": [
-    "china-ctrip-work-from-home-experiment"
+    "china-household-responsibility-system-growth",
+    "china-land-property-rights-agricultural-efficiency",
+    "china-1950s-university-department-relocation",
+    "china-2004-2005-fiscal-province-managing-county-rollout",
+    "china-2004-export-vat-refund-local-financing",
+    "china-2015-local-government-debt-swap-credit-reallocation",
+    "china-5a-attraction-expansion-tourism-exposure",
+    "china-air-pollution-action-plan-firm-emissions",
+    "china-anti-corruption-city-inspection-labor-strikes",
+    "china-beijing-subway-grid-pair-connectivity"
   ]
 }

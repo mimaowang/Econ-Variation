@@ -1,16 +1,15 @@
 ---
 schema_version: 2
 id: china-trade-policy-uncertainty
-name: Reduction in Trade Policy Uncertainty from China's WTO Accession and US Granting of Permanent Normal Trade Relations
-  (2000–2001)
+name: US PNTR for China and Product-Level Tariff-Threat Exposure
 aliases:
 - Handley-Limão trade policy uncertainty
 - China WTO PNTR uncertainty
 - 中国加入WTO贸易政策不确定性
 
-status: extracted
+status: grounded
 provenance:
-  task_id: legacy-untracked
+  task_id: task-d3a098a14272
 scope:
   country: China
   regions:
@@ -23,25 +22,22 @@ scope:
   - firm-entry
   - industrial-organization
   - economic-growth
-  variation_type: single-date-reform
+  - development-economics
+  variation_type: continuous-exposure
   knowledge_role: global-china-variation
-  china_relevance: A global or foreign policy change directly alters the treatment environment faced by Chinese units.
+  china_relevance: US removal of annual NTR renewal exposes Chinese exports differently across products; this supports China-facing trade and development research, not an independently verified city-level treatment.
 identity:
-  instrument: The US granting of Permanent Normal Trade Relations (PNTR) to China in October 2000 (effective when China joined
-    the WTO in December 2001), which eliminated the threat of annual tariff revocations and created a discrete, permanent
-    reduction in trade policy uncertainty facing Chinese exporters to the US market
-  authority: United States Congress (granting PNTR to China), World Trade Organization (China's accession), State Council
-    of China (WTO accession agreement)
+  instrument: '[E1, reported claim] The United States'' post-accession implementation of PNTR for China, which removed the risk that Chinese exports would later face higher US Column 2 tariffs; its empirical exposure is an HS-6 product''s 2000 Column-2-to-MFN tariff-factor ratio, not an observed fall in the applied tariff.'
+  authority: US Congress authorises PNTR through Public Law 106-286; the President implements it through Proclamation 7516.
   legal_identifiers:
-  - US-China Trade Relations Act of 2000 (PNTR)
-  - China's WTO Accession Protocol (2001)
-  - Jackson-Vanik amendment waiver
-  - US MFN/NTR tariff schedules
-  - Section 301 provisions
-  implementation_regime: Before China's WTO accession, the US renewed China's Normal Trade Relations (NTR) status annually
-    through a presidential waiver of the Jackson-Vanik amendment, subjecting Chinese exports to the threat of tariff increases
-    to Smoot-Hawley (Column 2) levels; PNTR eliminated this annual renewal requirement, making the low NTR tariff rates permanent
-    and reducing trade policy uncertainty for Chinese exporters
+  - Public Law 106-286, signed 2000-10-10
+  - Proclamation 7516, signed 2001-12-27, effective 2002-01-01
+  - Chapter 1 of Title IV of the Trade Act of 1974, terminated for China by the proclamation
+  implementation_regime: >
+    Proclamation 7516 ends the annual-waiver regime and extends nondiscriminatory
+    treatment to products of China from 2002-01-01. This removes one source of
+    tariff uncertainty, not antidumping, safeguards, or all future trade-policy risk.
+    China's other WTO commitments and later US tariff regimes are outside this case.
   assignment_mechanism: The reduction in trade policy uncertainty varied across products based on the gap between the NTR
     tariff rate (the low rate granted under annual renewal) and the non-NTR (Column 2) tariff rate (the high rate that would
     apply if NTR was revoked); products with a larger gap experienced a greater reduction in trade policy uncertainty, creating
@@ -52,40 +48,39 @@ identity:
   - china-mfa-quota-removal-textile-exporters
 timeline:
   announcement: '2000-10-10'
-  effective: '2001-12-11'
-  implementation_start: 2000
-  implementation_end: 2001
-  local_timing: The US Congress granted PNTR to China in October 2000, and the policy took effect when China formally joined
-    the WTO on December 11, 2001; the reduction in trade policy uncertainty was immediately effective upon WTO accession
-  anticipation: The PNTR legislation was debated in Congress throughout 2000, so markets partially anticipated the reduction
-    in trade policy uncertainty before the final vote; however, the exact timing and outcome were uncertain until the vote
-    passed
-  last_verified: '2026-07-13'
+  effective: '2002-01-01'
+  implementation_start: 2002
+  implementation_end: null
+  local_timing: >
+    [E3, verified] The proclamation records WTO accession on 2001-12-11, was
+    signed 2001-12-27, and expressly makes NTR extension effective 2002-01-01.
+    The 2000 law is the authorisation, not the operational treatment date. The
+    research window ends in 2005 or 2006 depending on specification; that is not
+    a legal termination date.
+  anticipation: '[E1, reported claim] The authors document remaining uncertainty in 2000 and a 2001 MFN-revocation vote; this is evidence against treating the October 2000 law alone as completed exposure, not proof of zero anticipation.'
+  last_verified: '2026-09-28'
 assignment:
-  unit: Product (HS tariff line) and firm (Chinese exporter)
+  unit: Harmonised HS-6 product-industry; HS-10 trade lines support aggregation and variety measures
   treated: Products exported from China to the US that faced a positive gap between the non-NTR (Column 2) tariff and the
     NTR tariff rate before PNTR; the reduction in trade policy uncertainty is larger for products with a wider gap
-  comparison_pool: Products with zero or small NTR/non-NTR gaps (where PNTR had little effect on trade policy uncertainty);
-    products not affected by US tariff policy
-  rule: A product is treated when the US grants China PNTR, eliminating the annual threat that tariffs on Chinese exports
-    could rise from NTR to non-NTR (Column 2) levels; treatment intensity is the log difference between the non-NTR and NTR
-    tariff rates
-  intensity: Continuous — the NTR gap (log difference between non-NTR and NTR tariff rates); alternative specifications use
-    the tariff risk premium, the probability of a trade war scenario, or a binary indicator for products that faced positive
-    trade policy uncertainty
+  comparison_pool: Lower initial tariff-threat products within Chinese exports to the US; Taiwan-to-US and China-to-EU/Japan flows supply distinct demand or supply comparisons in robustness specifications.
+  rule: >
+    The common PNTR regime change is interacted with pre-existing product-specific
+    tariff threats. Construct r_V=(1+t_Column2,V)/(1+t_MFN,V) using year-2000
+    tariffs, not log of raw percentage rates. The published model-derived
+    uncertainty regressor is 1-r_V^(-sigma), with sigma the elasticity of
+    substitution (sigma=3 in the baseline OLS). Preserve the chosen transformation
+    for the specification rather than treating every monotone ranking as an
+    interchangeable quantitative regressor.
+  intensity: Continuous initial tariff-threat exposure, transformed to potential profit loss in the model; neither observed applied-tariff cuts nor random product assignment
   exemptions: []
-  compliance: The PNTR policy was binding on all US imports from China; no exemptions existed once PNTR was implemented
-  exposure_construction: The NTR gap (ln(1 + τ_non_NTR) − ln(1 + τ_NTR)) for each product at the HS tariff line level, interacted
-    with the post-PNTR period; the instrument uses this cross-product variation in the magnitude of the uncertainty reduction
+  compliance: The proclamation establishes NTR treatment for products of China; temporary trade barriers remain separately relevant, and a low threat gap is an exposure level rather than noncompliance.
+  exposure_construction: Construct harmonised year-2000 tariff factors, their ratio and baseline potential-loss transform; compare HS-6 log export changes from 2000 to 2005 while retaining separate applied-tariff and transport-cost changes. The annual-panel and Taiwan specifications are distinct checks, not grounds to label this measure an IV.
   required_identifiers:
-  - HS product code
-  - NTR tariff rate
-  - non-NTR (Column 2) tariff rate
+  - HS-6 code harmonised to the 1996 classification
+  - Origin and destination country
   - year
-  - Chinese export value to US
-  - Chinese export value to other countries
-  - US import value from China
-  - firm-level export data (for firm-level analysis)
+  - HS-10 line crosswalk when constructing price or variety outcomes
   spillovers: Reduced trade policy uncertainty for China's exports to the US may have diverted Chinese exports from other
     markets toward the US; third countries competing with China in the US market may have been adversely affected
 research_compatibility:
@@ -120,19 +115,18 @@ research_compatibility:
   - Studying domestic Chinese policy variations unrelated to trade; studying non-US export markets; analyzing tariff rate
     changes rather than uncertainty changes; short-run dynamics of adjustment at monthly frequency
 design:
+  claim_type: structural
   affordances:
-  - Cross-product variation in the NTR gap
+  - Cross-product variation in the initial tariff threat
   - before-after comparison around PNTR/WTO accession
   - triple-difference using non-China trade flows as a control group
   - difference-in-differences over time and across products
   candidate_designs:
   - Difference-in-differences comparing products with high vs. low NTR gaps before and after PNTR
-  - instrumental variables using the NTR gap as a shifter of Chinese exports
+  - TPU-augmented gravity long-difference estimation
   - triple-difference with non-Chinese exporter trade flows to control for US demand shocks
   - gravity-model estimation with product fixed effects
-  identifying_variation: Cross-product variation in the NTR gap (the difference between non-NTR and NTR tariff rates) interacted
-    with the post-PNTR period; the identifying assumption is that products with larger and smaller NTR gaps would have followed
-    similar trade trends in the absence of PNTR
+  identifying_variation: Greater and smaller initial product-level tariff threats predict different China-US export changes after the annual renewal risk is removed, conditional on trade-cost and policy controls.
   assumptions:
   - Products with high and low NTR gaps would have had similar export trends absent PNTR; the NTR gap is not correlated with
     other determinants of export growth (such as US demand shocks or Chinese comparative advantage); no other policy changes
@@ -141,16 +135,18 @@ design:
   - Test for pre-trends in high vs. low NTR gap products before PNTR; placebo tests assigning PNTR at different dates; compare
     results using alternative measures of trade policy uncertainty; include product-specific linear trends; control for MFN
     tariff reductions from the Uruguay Round
-  primary_strategy: Difference-in-differences comparing product-level Chinese export growth for products with varying NTR
-    gaps, before and after PNTR; structural estimation of a general equilibrium trade model with policy uncertainty
-  estimand: The causal effect of the recorded exposure on Chinese export values and prices to the United States, number of
-    Chinese exporters, US import prices, US consumer welfare, conditional on the stated design assumptions.
-  treatment_variable: NTR gap = ln(1 + τ_non_NTR) − ln(1 + τ_NTR), interacted with post-PNTR indicator; binary indicator for
-    products with a positive NTR gap
-  comparison_logic: Products with high NTR gap vs. low NTR gap before and after PNTR; Chinese export growth vs. non-Chinese
-    export growth for the same products
-  estimation_notes: Difference-in-differences comparing product-level Chinese export growth for products with varying NTR
-    gaps, before and after PNTR; structural estimation of a general equilibrium trade model with policy uncertainty
+  primary_strategy: TPU-augmented gravity in 2000-2005 HS-6 long changes, followed by annual-panel checks and separate general-equilibrium structural quantification; not merely a binary high-gap DID.
+  estimand: Conditional partial response of product exports or price/variety outcomes to removal of initial tariff-threat exposure; aggregate welfare and implied firm entry additionally depend on the structural model.
+  treatment_variable: Initial tariff-factor ratio r_V and specification-specific 1-r_V^(-sigma), distinguished from an observed applied-tariff reduction
+  comparison_logic: Within China-US product growth, compare different initial threats after conditioning on costs and sector effects; add Taiwan or non-US destinations only with the corresponding pooled specification.
+  estimation_notes: >
+    The baseline uses products traded in both 2000 and 2005 and principally ad
+    valorem tariff lines; zero flows and specific tariffs require the paper's
+    robustness handling. Annual levels checks use 1996-2006. Changes in applied
+    tariffs and CIF/FOB transport costs are separate controls. Pooled comparisons
+    use sector-country and HS-6 effects and cluster by HS-6 where specified.
+    HS-10 variety entry is not observed entry of identifiable firms. Structural
+    welfare counterfactuals are not additional randomised outcomes.
 threats:
 - type: confounding-trends
   basis: inferred
@@ -172,7 +168,7 @@ threats:
   possible_diagnostics:
   - Control for MFN tariff changes in the same period
   - restrict sample to products where MFN tariffs did not change
-  - use the NTR gap as an instrument for trade policy uncertainty while controlling for other WTO-related changes
+  - Retain separate tariff, temporary-barrier and MFA controls; do not declare the threat measure a validated IV merely because it predates PNTR
 - type: anticipation-effects
   basis: inferred
   condition: The reduction in trade policy uncertainty may have been anticipated before the actual PNTR vote, causing firms
@@ -182,7 +178,7 @@ threats:
   possible_diagnostics:
   - Examine dynamics of export growth around the PNTR vote
   - test for structural breaks at different dates
-  - use announcement date rather than effective date
+  - Distinguish announcement and legal operation in event-time tests rather than choosing a date to fit the result
   - control for pre-PNTR expectation measures
 - type: measurement-error
   basis: inferred
@@ -197,37 +193,52 @@ threats:
   - compare results across different measures
 empirical_requirements:
   contract_version: 1
-  population: Chinese exports to the United States at the product (HS) level, 1995–2005
-  observation_unit: Product (HS tariff line)-year; firm-product-year (for firm-level analysis)
-  geography_level: Product (HS) level for trade flows; firm level for exporter analysis
-  time_start: 1995
+  population: Chinese products exported to the United States with linkable initial tariff threats and positive trade at both baseline endpoints
+  observation_unit: Harmonised HS-6 product-industry long change
+  geography_level: China-US bilateral product trade; not a local administrative unit
+  time_start: 2000
   time_end: 2005
-  minimum_frequency: annual
-  minimum_pre_periods: 5
-  minimum_post_periods: 4
+  minimum_frequency: Baseline endpoints 2000 and 2005; annual data required for timing and pre-trend checks
+  minimum_pre_periods: 1
+  minimum_post_periods: 1
   required_fields:
   - HS product code
   - year
   - Chinese export value to US
-  - Chinese export quantity to US
   - NTR tariff rate
   - non-NTR (Column 2) tariff rate
-  - Chinese export value to other countries
-  - US import value from all countries
-  - firm identifiers (for firm-level analysis)
+  - CIF and FOB trade values for transport-cost changes
+  - Applied tariff changes and relevant temporary trade barrier and MFA measures
   required_identifiers:
   - HS product code
   - year
   treatment_key:
-  - NTR gap (ln(1 + τ_non_NTR) − ln(1 + τ_NTR))
-  - post-PNTR indicator
-  - interaction
-  treatment_source: US International Trade Commission (USITC) Tariff Database for tariff rates; US Census Bureau for US import
-    data; Chinese Customs Statistics for Chinese export data
+  - Harmonised HS-6 product code
+  - Year-2000 tariff schedule
+  treatment_source: TRAINS tariff schedules via WITS, harmonised to HS 1996; NBER HS-10 US import data aggregated to HS-6; COMTRADE for non-US export comparisons
   measurement_risks:
-  - NTR gap may be endogenous if tariffs are correlated with product characteristics or political determinants; product-level
-    aggregation may mask firm-level heterogeneity; US import data includes re-exports through third countries; processing
-    trade may respond differently to policy uncertainty than ordinary trade
+  - Concord HS 2002 to HS 1996; price and variety profiles additionally require longitudinal HS-10 matching, with ambiguous reassignments handled as in the paper.
+  - The baseline excludes some zero-flow and specific-tariff lines; AVE construction uses fixed 1996 unit values and must not be silently replaced by current prices.
+  - Firm IDs and proprietary Chinese Customs data are not required by this paper's product-level baseline. Local or firm exposure mapping is a further design, not already verified here.
+  - A single baseline endpoint is not sufficient for an event-study pre-trend claim.
+design_profiles:
+- id: annual-product-timing-panel
+  label: Annual product panel for timing and pre-accession trends
+  design_families: [Product panel, Continuous exposure interacted with time]
+  when_to_use: Use annual product trade data to examine differential timing rather than treating two endpoint observations as a full event study.
+  outcome_domains: [Export values]
+  requirements:
+    population: Chinese products with harmonised trade and policy information
+    observation_unit: HS-6 product-industry-year
+    geography_level: Bilateral product trade
+    time_start: 1996
+    time_end: 2006
+    minimum_frequency: Annual
+    minimum_pre_periods: 5
+    minimum_post_periods: 5
+    required_fields: [Product export value, Initial MFN and Column 2 tariff factors, Applied tariff and transport-cost measures]
+    required_identifiers: [HS-6 code harmonised to 1996, Origin country, Destination country, Year]
+    treatment_key: [Harmonised HS-6 product code, Initial tariff schedule, Year]
 evidence:
 - id: E1
   source_type: paper
@@ -236,14 +247,76 @@ evidence:
   url: https://doi.org/10.1257/aer.20141419
   date: 2017
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - theory framework
-  - welfare quantification
-  - firm entry analysis
+  - identity.instrument
+  - identity.authority
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.effective
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.intensity
+  - assignment.compliance
+  - assignment.exposure_construction
+  - assignment.spillovers
+  - design.primary_strategy
+  - design.identifying_variation
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.estimation_notes
+  - design.assumptions
+  - design.diagnostics
+  - threats.condition
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
+  - empirical_requirements.required_fields
+  - empirical_requirements.required_identifiers
+  - empirical_requirements.treatment_key
+  - empirical_requirements.treatment_source
+  - empirical_requirements.measurement_risks
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: verified
+  access_level: full-text
+  locator: 'Published PDF at https://www.econ.umd.edu/sites/www.econ.umd.edu/files/pubs/aer.20141419.pdf reinspected 2026-09-28: section II.A-B, equations 11-13 and Tables 1-4 (printed 2744-2754), section II.D-E (pre-trends, annual panel, Taiwan and sunk-cost checks), Appendix B (2780-2781) for sources and concordances. Research design and data statements are paper-reported, not an independently executed replication.'
+- id: E2
+  source_type: policy-document
+  citation: 'United States. Public Law 106-286, Normal Trade Relations for the People''s Republic of China, 10 October 2000.'
+  url: https://www.govinfo.gov/content/pkg/PLAW-106publ286/pdf/PLAW-106publ286.pdf
+  date: 2000
+  supports:
+  - identity.authority
+  - identity.legal_identifiers
+  - timeline.announcement
+  verification_status: verified
+  access_level: official-document
+  locator: 'Act title/date and Division A, Title I sections 101-103, printed 114 Stat. 881-882 (PDF pages 3-4), reinspected 2026-09-28; section 102 prevents extension before accession, while section 103 separately preserves market-disruption relief. Congress.gov entry failed on this pass; the official GovInfo copy supplies the inspected text.'
+- id: E3
+  source_type: implementation-document
+  citation: 'United States. Presidential Proclamation 7516 of December 27, 2001, To Extend Nondiscriminatory Treatment to the Products of the People''s Republic of China.'
+  url: https://www.govinfo.gov/content/pkg/CFR-2002-title3-vol1/pdf/CFR-2002-title3-vol1-proc7516.pdf
+  date: '2001-12-27'
+  supports: [identity.instrument, identity.authority, identity.legal_identifiers, identity.implementation_regime, timeline.effective, timeline.implementation_start, timeline.local_timing, assignment.rule, assignment.compliance]
+  verification_status: verified
+  access_level: official-document
+  locator: CFR printed page 717 (PDF page 2), recitals 1 and 3-4, operative clauses 1-2 and signature. Verifies annual-waiver replacement, accession chronology and 2002-01-01 operation; product-specific tariff measures are established by E1, not by this proclamation.
 design_applications:
 - paper: 'Policy Uncertainty, Trade, and Welfare: Theory and Evidence for China and the United States'
   doi: 10.1257/aer.20141419
@@ -251,57 +324,92 @@ design_applications:
   year: 2017
   research_question: How does trade policy uncertainty affect trade flows, firm entry, and consumer welfare, and what was
     the contribution of policy uncertainty reduction to China's export boom after WTO accession?
-  population: Chinese exports to the United States at the product level (approximately 5,000 HS tariff lines, 1995–2005)
-  outcome: Chinese export values and prices to the United States, number of Chinese exporters, US import prices, US consumer
-    welfare
+  population: Baseline 3,211 harmonised HS-6 industries with positive China-US trade at both 2000 and 2005 endpoints and principally ad valorem tariffs; price and variety samples differ
+  outcome: HS-6 export growth, ideal import price index and traded HS-10 variety growth; model-based US welfare and implied firm-entry effects
   data_used:
-  - US ITC tariff data (NTR and non-NTR rates)
-  - US Census trade data
-  - Chinese Customs trade data
-  - Chinese Customs firm-level export data
-  treatment_encoding: NTR gap = ln(1 + τ_non_NTR) − ln(1 + τ_NTR), interacted with post-PNTR indicator; binary indicator for
-    products with a positive NTR gap
+  - NBER Harmonized System US imports at HS-10, concorded and aggregated to HS-6
+  - TRAINS tariffs via WITS; COMTRADE unit values for specific-tariff ad valorem equivalents
+  - COMTRADE Chinese exports to non-US destinations for supply comparisons
+  - Temporary trade-barrier and textile-quota measures specified in Appendix B
+  treatment_encoding: Year-2000 tariff-factor ratio and baseline 1-r^(-3) potential-loss measure; 2000-2005 long changes plus a separate 1996-2006 timing panel
   comparison: Products with high NTR gap vs. low NTR gap before and after PNTR; Chinese export growth vs. non-Chinese export
     growth for the same products
-  empirical_design: Difference-in-differences comparing product-level Chinese export growth for products with varying NTR
-    gaps, before and after PNTR; structural estimation of a general equilibrium trade model with policy uncertainty
+  empirical_design: TPU-augmented gravity long differences with tariff and transport controls; semiparametric functional-form checks, pooled bilateral robustness and separate structural general-equilibrium estimation
   assumptions:
   - Parallel trends across products with different NTR gaps before PNTR; NTR gap is exogenous conditional on product and year
     fixed effects; no other time-varying factors differentially affect high and low NTR gap products
   threats_addressed:
-  - Confounding trends via product fixed effects and pre-trend tests; other WTO changes via controlling for MFN tariff reductions;
-    anticipation via event study dynamics; endogeneity via instrumenting for the NTR gap using product characteristics
+  - Pre-accession growth and annual timing checks; applied tariff, transport, NTB and MFA controls; Taiwan demand and non-US destination supply comparisons; sunk-cost heterogeneity
   evidence_refs:
   - E1
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
+- Recover and execute the precise tariff concordance, specific-duty AVE and zero-flow/sample handling before claiming numerical reproduction; this audit inspected publication and legal sources, not replication code.
+- Price and variety applications require the online appendix's longitudinal HS-10 and ideal-index construction; variety counts are not firm counts.
+- A regional or firm-level China application needs a separately justified pre-policy product-to-location or product-to-firm exposure mapping and counterfactual. The published product-level record does not itself establish that assignment.
 method_transfer: null
 ---
 ## Institutional Background
 
-Before China's accession to the World Trade Organization (WTO) in December 2001, United States trade policy toward China was governed by the Jackson-Vanik amendment to the Trade Act of 1974. This provision required the US President to renew China's Normal Trade Relations (NTR) status annually, subject to a determination that China satisfied certain conditions regarding emigration rights. This annual renewal process created significant trade policy uncertainty: if NTR status was revoked, US tariffs on Chinese imports would revert to the much higher Smoot-Hawley tariff rates (the "Column 2" rates), which averaged approximately 35% compared to NTR rates averaging about 4%. The granting of Permanent Normal Trade Relations (PNTR) to China in October 2000 (effective December 2001) eliminated this annual uncertainty, making the low NTR tariff rates permanent and removing the threat of a tariff increase on Chinese exports. [E1]
+[E3, verified] Chinese products received NTR through annual waivers before the
+proclamation replaced that regime. [E1, paper report] The economically relevant
+change is removal of a threat: firms deciding whether to incur export entry or
+upgrading costs no longer face the same annual risk of losing low tariff treatment.
+This is not evidence of a large contemporaneous cut in applied US tariffs.
 
 ## What Changed
 
-The US Congress passed PNTR legislation in October 2000, and the policy became effective when China joined the WTO on December 11, 2001. This policy change eliminated the annual review of China's NTR status, making the low NTR tariff rates permanent. Critically, the magnitude of the uncertainty reduction varied across products: products with a large gap between the non-NTR (Column 2) rate and the NTR rate faced a large reduction in trade policy uncertainty, while products where the two rates were similar faced little change in uncertainty. This cross-product variation in the "NTR gap" provides the identifying variation for estimating the effects of trade policy uncertainty on Chinese exports and US welfare. [E1]
+[E2-E3, verified] Keep authorisation on 2000-10-10, WTO membership on 2001-12-11,
+the implementing proclamation on 2001-12-27 and operation on 2002-01-01 separate.
+The national regime change is common, but the exposure to the removed threat
+differs by product. [E2] Section 103 also establishes market-disruption relief:
+PNTR must not be described as ending every possible trade restriction.
 
 ## Implementation and Assignment
 
-The PNTR policy was implemented through an act of the US Congress signed into law by President Clinton in October 2000, taking effect upon China's WTO accession in December 2001. The policy change applied to all Chinese exports to the US, but its impact varied across products based on the pre-existing gap between NTR and non-NTR tariff rates. The identification strategy exploits this product-level variation in treatment intensity: the NTR gap measures the magnitude of the trade policy uncertainty reduction for each product. Products with larger NTR gaps experienced a greater reduction in uncertainty about future US tariff policy, generating cross-product variation in the incentive for Chinese firms to enter the US export market. [E1]
+[E3] Legal operation is verified independently of the paper. [E1, paper report]
+The empirical assignment requires the initial tariff schedule and harmonised
+product identity. Use tariff factors including one, with rates converted from
+percentages, before taking a ratio or its model-based transform. A product's
+ranking by a threat gap is not the same object as its quantitative regressor.
+Historical tariff schedules also do not make product assignment random.
 
 ## Why This Creates Empirical Variation
 
-The NTR gap varies across products based on historically determined tariff schedules that are plausibly exogenous to contemporaneous Chinese export supply conditions. Before PNTR, Chinese exporters faced the risk that tariffs on their products could rise from low NTR rates to high non-NTR rates if NTR status was revoked. PNTR eliminated this risk permanently. The identification compares the change in Chinese export outcomes (values, prices, firm entry) for products with high NTR gaps (large uncertainty reduction) to products with low NTR gaps (small uncertainty reduction), before and after the PNTR/WTO policy change. Handley and Limão (2017) find that this reduction in trade policy uncertainty accounts for over one-third of China's export growth to the US between 2000 and 2005, and that the reduction in uncertainty is equivalent to a 13-percentage-point permanent tariff reduction in terms of its effect on US consumer welfare. [E1; analytical inference]
+[E1, paper report] The main comparison is product export growth conditional on
+applied tariffs, transport costs and sector trends. Taiwan-to-US comparisons help
+address product-specific US demand; China-to-other-destination comparisons help
+address Chinese supply. They serve different counterfactual purposes. Annual
+timing tests provide another check, not a substitute for those assumptions.
+
+[Analytical inference] A researcher can study China-facing development outcomes
+with this exposure, but mapping it onto cities, employment or firms needs its own
+pre-policy composition weights, joins and exclusion argument. The product-level
+application does not establish that further spatial design by itself.
 
 ## Identification Risks
 
-The primary identification concern is that products with high and low NTR gaps may have differed in other dimensions that affected their export growth even without PNTR. For example, products in which China had rapidly growing comparative advantage may have been systematically different from products with stagnant export growth. The paper addresses this through product fixed effects, pre-trend tests, and controlling for other WTO-related changes (such as MFN tariff reductions). Additional concerns include: anticipation effects (firms may have adjusted before the policy change was certain), concurrent changes in Chinese trade policy (WTO accession involved multiple liberalization measures), and measurement error in the NTR gap as a proxy for policy uncertainty. The authors address these through event-study dynamics, triple-difference comparisons with non-Chinese exporters to control for US demand shocks, and robustness checks using alternative uncertainty measures. [E1; analytical inference]
+[Analytical inference] Correlated product trends, concurrent WTO commitments,
+textile quotas and temporary barriers may undermine a threat-exposure comparison.
+Control choices and pre-period diagnostics must address the application in hand.
+[E1, paper report] Structural welfare conclusions further depend on demand,
+entry, upgrading and general-equilibrium assumptions. A successful partial export
+regression does not independently verify those assumptions. Do not describe
+uninspected IV or firm-level specifications as robustness tests this paper performed.
 
 ## Data Requirements
 
-Product-level trade data from the US Census Bureau (US imports from China and other countries) and Chinese Customs Statistics (Chinese exports by product and destination). Tariff data from the US International Trade Commission (USITC) providing both NTR (Column 1) and non-NTR (Column 2) tariff rates at the HS tariff line level for the pre-PNTR period. For firm-level analysis, Chinese Customs firm-level export data covering the universe of Chinese exporters with product-destination information. The key variables are the NTR gap for each HS product, Chinese export values and quantities, and US import data. [E1]
+[E1, Appendix B] The baseline is a product-level join, not a proprietary firm
+panel. Tariffs and trade need consistent HS 1996 identities and endpoint years.
+Use the annual profile for timing checks. Price and variety outcomes need finer
+HS-10 construction, while structural welfare quantification needs additional
+aggregate inputs. Keep these requirements separate rather than requiring every
+possible data source for a simple export-growth application.
 
 ## Evidence Notes
 
-E1 is the published AER article. It develops a general equilibrium model of trade with policy uncertainty and firms' export entry decisions, and estimates the model using product-level trade data. The paper's central finding is that the elimination of trade policy uncertainty via PNTR accounted for more than one-third of the increase in Chinese exports to the US during 2000–2005 (a period when Chinese manufacturing exports to the US more than doubled). The welfare analysis shows that the reduction in trade policy uncertainty lowered US import prices and increased US consumers' real income by an amount equivalent to a 13-percentage-point reduction in permanent tariffs. The paper also provides evidence that the effect operates through the extensive margin (entry of new Chinese exporters and new products) rather than primarily through the intensive margin (increased exports by existing exporters).
+Task `task-d3a098a14272` reinspected the published design and added the implementing
+proclamation. It replaces contradictory timing and unsupported firm-data/IV
+descriptions while preserving the existing record identity and its related cases.
+Grounded status means the institutional core and actual application are traceable;
+it is not a claim of executed replication or a ready-made regional instrument.
+The two repositories can link through DOI without copying data-asset documentation.

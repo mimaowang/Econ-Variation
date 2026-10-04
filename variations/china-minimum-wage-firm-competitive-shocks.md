@@ -1,45 +1,55 @@
 ---
 schema_version: 2
 id: china-minimum-wage-firm-competitive-shocks
-name: Firm Response to Competitive Shocks from China's Minimum Wage Policy
+name: Local Minimum-Wage Revisions and Differential Firm Exposure in Mainland China, 2002–2008
 aliases:
 - Hau Huang Wang minimum wage China
 - China minimum wage firm productivity REStud
 - minimum wage competitive shock
-
-status: extracted
+status: grounded
 provenance:
-  task_id: legacy-untracked
+  task_id: task-0c9086dbc0bf
 scope:
   country: China
   regions:
-  - Urban China
-  - covering multiple provinces and counties with varying minimum wage levels
+  - Mainland counties and cities represented in the paper's industrial-firm sample
   domains:
   - labor-economics
   - firm-dynamics
   - productivity
   - industrial-organization
+  - regional-economics
   variation_type: continuous-exposure
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: >
+    Mainland local minimum-wage revisions expose industrial firms to different
+    labor-cost changes depending on both their location and their prior
+    average wage relative to the local statutory floor.
 identity:
-  instrument: China's minimum wage system, in which county-level minimum wages were adjusted frequently and with large variation
-    across counties, creating exogenous variation in labor costs for manufacturing firms
-  authority: Provincial and county-level governments in China; minimum wages were set at the provincial level with county-level
-    discretion, adjusted frequently (sometimes annually) during the 2002–2008 period
+  instrument: >
+    Revisions of local statutory minimum wages, combined in Hau, Huang, and
+    Wang (2020) with a firm-specific, lagged average-wage-based impact factor.
+    This is a sequence of local wage-floor changes, not a single 2004 adoption.
+  authority: >
+    Provincial-level labor authorities draft differentiated local standards
+    for provincial-government approval and publication. City and county
+    conditions influence applicable local standards; counties do not
+    independently enact a new national minimum-wage law.
   legal_identifiers:
-  - Labor Law of the People's Republic of China (1994
-  - effective 1995)
-  - Minimum Wage Regulations (2004)
-  - local provincial minimum wage adjustment notices
-  implementation_regime: Minimum wages were set at the provincial level with variation across counties within provinces; adjustments
-    occurred frequently (often annually) and varied substantially in magnitude across counties, creating both time-series
-    and cross-sectional variation in minimum wage levels
-  assignment_mechanism: Minimum wage levels were determined through a government process at the provincial and county level,
-    based on local economic conditions, cost of living, and labor market conditions; the resulting minimum wage varies substantially
-    across counties and over time
+  - Labor Law of the People's Republic of China, Article 48 (1994)
+  - Minimum Wage Regulations, Ministry of Labor and Social Security Decree No. 21 (issued 2004-01-20; effective 2004-03-01)
+  - Shenzhen Labor and Social Security Bureau notice 深劳社规〔2007〕15号 (one documented local schedule)
+  implementation_regime: >
+    Local monthly and hourly standards differ across administrative areas
+    within a province and are revised over time. The 2004 national regulation
+    refined coverage, hourly wages, supervision, and a minimum adjustment
+    frequency; it did not itself assign the paper's yearly firm treatment.
+  assignment_mechanism: >
+    A firm inherits the local wage floor of its matched county or city and
+    calendar year. A given increase has stronger predicted labor-cost impact
+    where last year's firm average wage was closer to last year's local
+    minimum. The paper estimates a nonlinear impact factor from this lagged
+    ratio, then interacts it with the current local minimum-wage log change.
   parent: null
   related_variations: []
 timeline:
@@ -47,241 +57,275 @@ timeline:
   effective: null
   implementation_start: 2002
   implementation_end: 2008
-  local_timing: Minimum wage adjustments occurred at different times across provinces and counties; adjustments were typically
-    announced shortly before becoming effective
-  anticipation: Minimum wage changes were sometimes announced in advance, but the exact timing and magnitude varied; firms
-    could anticipate that adjustments would occur but not the precise magnitude
-  last_verified: '2026-07-13'
+  local_timing: >
+    These are the paper's firm-sample years, not one national implementation
+    window. Local revisions can occur within a year; the authors use the
+    calendar-year average local wage floor for annual firm observations.
+    The inspected Shenzhen notice records 2007-07-01 and 2007-10-01
+    applicability periods, with the latter published after it began.
+  anticipation: >
+    Firm behavior can respond to expected revisions. The paper describes
+    short advance notice as anecdotal evidence, not a guarantee for every
+    locality; the Shenzhen notice demonstrates that formal publication and
+    stated effective dates need separate checking.
+  last_verified: '2026-10-02'
 assignment:
-  unit: Firm
-  treated: Manufacturing firms in counties with higher minimum wage levels and/or larger minimum wage increases
-  comparison_pool: Firms in the same county before minimum wage increases (time-series variation); firms in other counties
-    with different minimum wage levels (cross-sectional variation); firms in the same industry across different minimum wage
-    regimes
-  rule: Minimum wage increases raised labor costs for firms employing low-wage workers; the policy was binding for firms with
-    a high share of minimum-wage workers (typically labor-intensive, low-productivity firms)
-  intensity: Continuous — treatment intensity varies with the county-level minimum wage level (in RMB) and the firm's exposure
-    to minimum-wage labor (share of workers earning near the minimum wage)
-  compliance: High compliance by firms; China's minimum wage regulations were generally enforced, particularly in urban formal
-    manufacturing sectors
-  exposure_construction: Use county-level minimum wage as a continuous treatment variable; construct firm-specific minimum
-    wage exposure based on the firm's wage distribution and share of low-wage workers; alternatively, use the minimum wage
-    to effective wage ratio as a measure of bindingness
+  unit: Industrial firm-year matched to a local minimum-wage jurisdiction
+  treated: >
+    Firms facing a positive local minimum-wage change, with heterogeneous
+    exposure measured by the paper's impact factor. A low lagged average
+    wage relative to the local floor implies higher predicted exposure.
+  comparison_pool: >
+    The same firms across years and other firms within the same industry-year
+    with different local wage changes or prior wage-to-minimum ratios.
+    The comparison is conditional on firm and industry-by-year effects.
+  rule: >
+    Construct each county/city's annual-average minimum wage if revisions
+    occur within the calendar year. Compute annual log change in that floor;
+    combine it with the nonlinear impact factor estimated from the prior
+    firm average-wage/local-minimum ratio. Retain the minimum-wage change
+    and impact factor separately in the regression.
+  intensity: Nonlinear impact factor times annual log change in local minimum wage
+  compliance: >
+    The regulation requires employers to meet the applicable floor and
+    supplies supervision and penalties. Actual firm-level compliance is
+    unobserved in this record; statutory exposure is not proof of payment.
+  exposure_construction: >
+    The paper lacks the within-firm employee wage distribution. Its proxy
+    uses prior-year average firm wage divided by prior-year local minimum
+    wage, raised to a negative estimated exponent; it is not an observed
+    share of workers paid at or near the minimum wage.
   required_identifiers:
-  - firm ID
-  - year
-  - county code
-  - minimum wage level
+  - stable firm ID and year
+  - firm county or city jurisdiction
+  - local minimum-wage schedule and applicability dates
+  - firm wage bill and employment to calculate prior average wage
   - industry code
-  exemptions: []
-  spillovers: Minimum wage increases may affect labor allocation across firms within the same local labor market; firms may
-    substitute capital for labor, affecting equipment suppliers; consumer prices may adjust in response to higher labor costs
+  exemptions:
+  - Informal workers and firms outside the covered industrial-firm sample are not measured by this application
+  spillovers: >
+    Product-market competitors and labor markets link firms across locations.
+    A local wage change may influence nominally less-exposed firms, so this
+    is a relative exposure contrast, not automatically a no-spillover design.
 research_compatibility:
   outcome_domains:
-  - employment
-  - wages
-  - capital investment
-  - productivity
-  - firm exit
-  - output prices
-  - management practices
-  - input substitution
+  - employment growth
+  - capital-to-labor substitution
+  - revenue-based total factor productivity
+  - output and capital growth
+  - export quantities and prices in a linked robustness sample
   affected_populations:
-  - Manufacturing firms
-  - low-wage workers
-  - labor-intensive industries
-  - private and foreign-invested enterprises
+  - industrial firms covered by ASIF/CIED
+  - workers at firms with different predicted wage-floor exposure
   mechanism_channels:
-  - labor cost channel
-  - capital-labor substitution
-  - productivity improvement channel
-  - firm exit channel
-  - management quality channel
-  - competitive pressure channel
+  - higher wage cost at initially low-wage firms
+  - substitution of capital for labor
+  - within-firm productivity response
   best_for:
-  - Studying how labor cost shocks affect firm behavior and productivity
-  - understanding factor substitution in manufacturing
-  - analyzing heterogeneous effects by firm ownership and management quality
+  - Firm-panel questions about heterogeneous responses to local labor-cost changes
+  - Comparing low- and high-average-wage firms within industry-years
   not_good_for:
-  - Non-manufacturing sectors
-  - informal sector outcomes
-  - purely agricultural settings
-  - very short time horizons
-  - counties with very few manufacturing firms
+  - Inferring the actual share of minimum-wage employees from the proxy
+  - Treating the 2004 regulation as a randomized national rollout
+  - Direct inference about informal, agricultural, or all small firms
 design:
+  claim_type: causal
   affordances:
-  - large regional variation in minimum wages
-  - frequent policy adjustments
-  - variation in firm exposure by worker composition
-  - panel structure with rich firm heterogeneity
+  - Local wage floors vary across jurisdictions and years
+  - Lagged firm wage-to-floor ratio differentiates exposure within a location
+  - Firm panel allows comparisons around time-varying local revisions
   candidate_designs:
-  - continuous treatment difference-in-differences with county and year fixed effects
-  - event study around minimum wage adjustments
-  - firm-level exposure design based on pre-policy wage distribution
-  identifying_variation: Variation across counties in minimum wage levels and over time within counties from minimum wage
-    adjustments; cross-sectional variation in firm-level exposure based on the share of low-wage workers; the identifying
-    assumption is that minimum wage changes are exogenous to firm-level productivity and employment conditional on county
-    and year fixed effects
+  - Firm-year continuous-exposure panel design following the paper
+  identifying_variation: >
+    Time-varying within-firm exposure to local minimum-wage changes,
+    differentiated by lagged average wage relative to the statutory floor,
+    after firm and industry-by-year fixed effects. The impact factor is
+    constructed from firm characteristics, not randomly assigned.
+  primary_strategy: >
+    The paper first estimates the nonlinear impact factor in a wage-response
+    equation. Reduced-form outcome regressions interact it with the annual
+    local minimum-wage log change, include both components separately,
+    and add firm and industry-by-year fixed effects. Other robustness and
+    dynamic-panel specifications do not turn this into a randomized design.
+  estimand: >
+    Conditional differential response of more versus less exposed industrial
+    firms to local minimum-wage changes, not the unconditional national
+    effect of the 2004 regulation or the effect on all Chinese workers.
+  treatment_variable: Estimated impact factor based on lagged firm average wage / lagged local minimum wage, interacted with current annual log minimum-wage change
+  comparison_logic: >
+    Compare outcome growth at firms with different predicted exposure as
+    their local floors change, net of common industry-year shocks and
+    firm-specific average growth patterns.
+  estimation_notes: >
+    The wage-floor panel spans 1996–2012, but the main industrial-firm
+    application in the inspected manuscript is 2002–2008. Its design
+    supports a conditional causal interpretation only if local revision
+    timing and firm exposure are not confounded by omitted shocks.
   assumptions:
-  - Minimum wage changes are not systematically correlated with county-specific economic shocks that independently affect
-    firm outcomes
-  - firms cannot perfectly evade minimum wage regulations
-  - no other major labor market policies coincide with minimum wage adjustments at the county level
+  - Conditional on model controls, local wage-floor revisions do not track unobserved shocks with differential effects on low-wage firms
+  - The lagged average-wage proxy ranks meaningful labor-cost exposure adequately
+  - Attrition, reporting changes, and cross-market spillovers do not create the observed differential response
   diagnostics:
-  - event-study analysis around minimum wage changes
-  - placebo tests using future minimum wage changes
-  - heterogeneity analysis by firm ownership and industry
-  - robustness to controlling for local economic conditions
-  primary_strategy: Difference-in-differences with continuous treatment intensity; county and year fixed effects; firm-level
-    exposure design
-  estimand: The causal effect of the recorded exposure on Employment, capital investment, total factor productivity, output,
-    firm exit, wage distribution, conditional on the stated design assumptions.
-  treatment_variable: County-level minimum wage level interacted with firm-level minimum wage exposure (share of low-wage
-    workers)
-  comparison_logic: Firms in high-minimum-wage vs. low-minimum-wage counties; firms with high vs. low minimum-wage exposure
-    within the same county
-  estimation_notes: Difference-in-differences with continuous treatment intensity; county and year fixed effects; firm-level
-    exposure design
+  - Check whether local business-cycle variables predict revisions
+  - Inspect lead/lag outcomes and other timing evidence for anticipation
+  - Compare ownership and size strata without equating heterogeneity with mechanism proof
+  - Use export quantities/prices and alternative productivity measures for price-deflator concerns
 threats:
 - type: endogenous-policy-timing
   basis: documented
-  condition: Minimum wage adjustments may be correlated with local economic conditions (e.g., counties with rising productivity
-    may also raise minimum wages), creating an endogeneity concern
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - control for county-level economic conditions
-  - use lead minimum wage levels as placebo
-  - instrument for minimum wage using neighboring county minimum wages
-  - test sensitivity to excluding high-growth counties
-- type: firm-sorting
-  basis: inferred
-  condition: Firms may sort across counties based on minimum wage levels, or workers may sort across firms, biasing estimates
-    of firm-level responses
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - control for firm entry and exit
-  - test for changes in firm composition
-  - examine worker flows across firms and counties
-  - use within-firm variation only
-- type: measurement-error-in-minimum-wage
-  basis: inferred
-  condition: Effective minimum wage compliance may differ from statutory minimum wages, particularly in areas with weak enforcement
-    or where firms use informal payments
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - compare statutory minimum wages with actual wage distributions
-  - test sensitivity to using alternative minimum wage measures
-  - examine enforcement intensity across counties
+  condition: Local conditions enter standard-setting by law; the authors' prediction tests mitigate but cannot prove exogenous revision timing.
+  evidence_refs: [E1, E2]
+  possible_diagnostics: [local trend controls, lead/lag checks, matched local policy calendar]
+- type: endogenous-firm-exposure
+  basis: documented
+  condition: Lagged mean wages proxy low-wage employment and are correlated with firm quality, ownership, and prior trends.
+  evidence_refs: [E1]
+  possible_diagnostics: [firm effects, industry-year effects, pre-change trend comparison]
+- type: measurement-and-selection
+  basis: documented
+  condition: ASIF incompletely covers small firms; revenue TFP lacks firm-specific output deflators; statutory floors need not equal paid wages.
+  evidence_refs: [E1, E2]
+  possible_diagnostics: [coverage checks, export-price robustness, wage-response first stage]
 empirical_requirements:
   contract_version: 1
-  population: Chinese manufacturing firms in the Annual Survey of Industrial Firms (ASIF), 2002–2008
+  population: Mainland industrial firms represented in the paper's ASIF/CIED sample
   observation_unit: Firm-year
-  geography_level: County
+  geography_level: County or city wage-floor jurisdiction
   time_start: 2002
   time_end: 2008
   minimum_frequency: annual
-  minimum_pre_periods: 2
-  minimum_post_periods: 2
+  minimum_pre_periods: 1
+  minimum_post_periods: 1
   required_fields:
-  - firm ID
-  - year
-  - county code
-  - employment
-  - wage bill
-  - output
-  - capital
-  - value added
-  - industry code
-  - ownership type
-  required_identifiers:
-  - firm ID
-  - year
-  - county code
-  treatment_key:
-  - county minimum wage level
-  - firm-specific minimum wage exposure (share of low-wage workers)
-  treatment_source: County-level minimum wage schedules from provincial government regulations; firm-level data from the Annual
-    Survey of Industrial Firms (ASIF) conducted by China's National Bureau of Statistics
+  - firm ID, year, and location
+  - wage bill and employment
+  - capital, value added, and output
+  - industry and ownership
+  - local statutory minimum-wage amount and applicable dates
+  required_identifiers: [firm ID, year, local wage-floor jurisdiction, industry]
+  treatment_key: [local wage-floor jurisdiction, year, lagged firm ID]
+  treatment_source: >
+    Paper's 1996–2012 county/city minimum-wage panel from MOHRSS and China
+    Academy of Labor and Social Security, joined to ASIF/CIED firm data.
+    Official notices such as the inspected Shenzhen schedule can verify
+    individual locality-periods but do not reproduce the full panel.
   measurement_risks:
-  - measurement error in firm-level wage data
-  - incomplete coverage of small firms in ASIF
-  - entry and exit of firms around minimum wage changes
-  - misreporting of wages by firms to avoid compliance
+  - No employee-level wage distribution to observe true low-wage worker share
+  - Within-year revisions are compressed to an annual average
+  - Small-firm coverage and firm survival vary in ASIF
+  - Statutory rates do not directly verify compliance
+  - Revenue TFP uses industry deflators rather than firm-specific output prices
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Hau, Harald, Yi Huang, and Gewei Wang. 2020. "Firm Response to Competitive Shocks: Evidence from China''s Minimum
-    Wage Policy." Review of Economic Studies 87 (6): 2639–2671.'
+  citation: 'Hau, Harald, Yi Huang, and Gewei Wang. 2019. "Firm Response to Competitive Shocks: Evidence from China''s Minimum Wage Policy." ECGI Finance Working Paper 561/2018, June 16 author manuscript; published in Review of Economic Studies 87(6), 2639–2671 (2020), DOI 10.1093/restud/rdz058.'
+  url: https://www.ecgi.global/sites/default/files/working_papers/documents/finalhauhuangwang_0.pdf
+  date: 2019
+  supports:
+  - identity.instrument
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - assignment.unit
+  - assignment.exposure_construction
+  - design.identifying_variation
+  - design.primary_strategy
+  - design.treatment_variable
+  - empirical_requirements.population
+  - empirical_requirements.treatment_source
+  - design_applications.treatment_encoding
+  - design_applications.empirical_design
+  verification_status: verified
+  access_level: full-text
+  locator: '93-page author manuscript dated 2019-06-16: §4.1 printed pp.12–13; §4.2 pp.13–14; §5 pp.15–17, equations (2)–(3); §6.1 p.18, equation (4); introduction pp.1–3. Inspected 2026-10-02.'
+- id: E2
+  source_type: implementation-document
+  citation: 'Ministry of Labor and Social Security. 2004. Minimum Wage Regulations (最低工资规定), Decree No. 21; full decree reproduced by Hubei Department of Human Resources and Social Security.'
+  url: https://rst.hubei.gov.cn/zfxxgk/zc/qtzdgkwj/200612/t20061201_704560.shtml
+  date: 2004
+  supports:
+  - identity.authority
+  - identity.implementation_regime
+  - timeline.effective
+  - assignment.compliance
+  - empirical_requirements.treatment_source
+  verification_status: verified
+  access_level: official-document
+  locator: 'Government-hosted full decree, preamble and Articles 2–13, 15: issued 2004-01-20, effective 2004-03-01; differentiated areas, provincial approval and publication, two-year minimum adjustment, employer payment and penalties. Inspected 2026-10-02.'
+- id: E3
+  source_type: implementation-document
+  citation: 'Shenzhen Labor and Social Security Bureau. 2007. 深圳市劳动和社会保障局关于公布深圳市2007年度最低工资标准的通知, 深劳社规〔2007〕15号, government gazette 2007 no. 45.'
+  url: https://www.sz.gov.cn/zfgb/2007/gb575/content/post_4943282.html
+  date: 2007
+  supports:
+  - timeline.local_timing
+  - identity.implementation_regime
+  - assignment.rule
+  verification_status: verified
+  access_level: official-document
+  locator: 'Full Shenzhen government-gazette notice: 2007-07-01 to 2007-09-30 SEZ/outside monthly 810/700 RMB; 2007-10-01 to 2008-06-30 850/750 RMB; notice signed 2007-11-28 and web-published 2007-12-13. One locality only. Inspected 2026-10-02.'
+- id: E4
+  source_type: paper
+  citation: 'Oxford University Press. 2020. Publisher DOI metadata for Hau, Huang, and Wang, Review of Economic Studies 87(6), 2639–2671.'
   url: https://doi.org/10.1093/restud/rdz058
   date: 2020
-  supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - productivity effects
-  - capital-labor substitution
-  - heterogeneity by ownership and management
+  supports: [design_applications.journal, design_applications.year, design_applications.doi]
   verification_status: verified
+  access_level: metadata
+  locator: 'Oxford Academic Review of Economic Studies volume 87 issue 6 contents lists this title on pp.2639–2671 with DOI 10.1093/restud/rdz058; the author listing independently confirms the publication. Metadata only, not the substantive design. Inspected 2026-10-02.'
 design_applications:
 - paper: 'Firm Response to Competitive Shocks: Evidence from China''s Minimum Wage Policy'
   doi: 10.1093/restud/rdz058
   journal: Review of Economic Studies
   year: 2020
-  research_question: How do manufacturing firms respond to competitive labor cost shocks induced by minimum wage increases,
-    and what role does management quality play in shaping these responses?
-  population: Chinese manufacturing firms in the Annual Survey of Industrial Firms, 2002–2008
-  outcome: Employment, capital investment, total factor productivity, output, firm exit, wage distribution
-  data_used: []
-  treatment_encoding: County-level minimum wage level interacted with firm-level minimum wage exposure (share of low-wage
-    workers)
-  comparison: Firms in high-minimum-wage vs. low-minimum-wage counties; firms with high vs. low minimum-wage exposure within
-    the same county
-  empirical_design: Difference-in-differences with continuous treatment intensity; county and year fixed effects; firm-level
-    exposure design
+  research_question: How do mainland industrial firms with different predicted labor-cost exposure change input use and productivity after local minimum-wage increases?
+  population: ASIF/CIED industrial firms observed 2002–2008; small firms incompletely covered
+  outcome: Employment, capital-to-labor ratio, value added, capital, and revenue-based productivity growth; export quantities/prices in a linked robustness sample
+  data_used:
+  - Annual Survey of Industrial Firms / Chinese Industrial Enterprise Database, 2002–2008
+  - Local minimum-wage panel from MOHRSS and China Academy of Labor and Social Security, 1996–2012
+  - Chinese customs export quantity/value data for robustness
+  - Separate management-practices survey for exploratory interpretation, not the main firm-panel treatment
+  treatment_encoding: Annual local minimum-wage log change times nonlinear impact factor estimated from prior firm mean wage / prior local minimum wage
+  comparison: Differential firm-year outcome response by predicted exposure within changing local wage-floor regimes, conditional on firm and industry-year effects
+  empirical_design: Two-step wage-response impact-factor estimation followed by firm-panel reduced-form outcome regressions
   assumptions:
-  - Minimum wage changes are conditionally exogenous to firm outcomes given county and year fixed effects
-  - firm-level exposure is based on pre-determined wage structure
-  - no differential trends by minimum wage exposure
-  threats_addressed:
-  - endogenous minimum wage setting via county fixed effects and local economic controls
-  - sorting via within-firm variation
-  - measurement error via robustness to alternative minimum wage measures
-  evidence_refs:
-  - E1
-readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+  - Conditional revision timing and predicted exposure are not driven by omitted differential firm shocks
+  - Lagged mean wage adequately proxies true incidence of a wage-floor increase
+  threats_addressed: [local economic conditions, firm heterogeneity, incomplete small-firm coverage, output-price deflator error]
+  evidence_refs: [E1, E2, E3, E4]
 method_transfer: null
+readiness_blockers:
+- The full locality-by-year wage-floor panel and firm microdata were not independently reconstructed; E3 checks one local schedule, not all paper-coded changes.
+- Detailed methods were inspected in the 2019 author manuscript; the final 2020 journal PDF was not compared line by line.
+- The impact factor proxies low-wage labor with lagged firm mean wages; no employee-level pay shares or firm-level compliance panel were verified.
+superseded_by: null
+deprecation_reason: null
 ---
+
 ## Institutional Background
 
-China's minimum wage system underwent major institutional development during the 2000s. The 2004 Minimum Wage Regulations required all provinces to establish and regularly adjust minimum wages, with county-level variation within provinces. During the 2002–2008 period, minimum wages were adjusted frequently (often annually) and varied substantially across China's counties — by as much as a factor of two or more between low-wage and high-wage counties. This created a setting with large, frequent, and geographically varied labor cost shocks to manufacturing firms. [E1]
+China's Labor Law introduced a local minimum-wage system before the paper's sample. The 2004 decree changed its regulatory framework—coverage, hourly rates, review, publication, supervision, and adjustment frequency—but did not constitute one uniform firm-level treatment on one date [E1, paper-reported history; E2, verified regulation]. Provincial authorities approve locally differentiated standards. Shenzhen's gazette provides one concrete schedule with different rates inside and outside the then-special economic zone [E3, verified local example].
 
 ## What Changed
 
-County-level minimum wage levels increased substantially and unevenly across China between 2002 and 2008. The increases were large in magnitude (often 10–30% per adjustment) and varied considerably across counties and over time. These minimum wage hikes raised labor costs for firms, particularly those employing a large share of low-wage workers, forcing firms to adjust through a combination of employment reductions, capital substitution, and productivity improvements. [E1]
+The empirical shock is a sequence of local wage-floor revisions during the 2002–2008 industrial-firm observation window. The authors draw the minimum-wage panel from government and labor-research sources and average rates within a calendar year when a locality changes them midyear [E1, reported construction]. A dated local notice is useful for checking one jurisdiction; it does not validate all the author's 17,000-plus coded changes.
 
 ## Implementation and Assignment
 
-Minimum wages were set and adjusted by provincial and county governments. The resulting minimum wage levels exhibit large variation across counties and over time. A firm's treatment intensity depends on: (1) the county-level minimum wage level (which determines the cost of low-wage labor) and (2) the firm's exposure to minimum wage labor (its share of workers earning near the minimum wage). Firms with higher exposure to minimum-wage labor experience a larger cost shock. [E1]
+A firm's location determines its statutory floor, but the same local increase should have very different labor-cost effects for firms paying different average wages. The decisive distinction is measurement: the paper **does not observe employee-level wage shares**. It estimates a nonlinear impact factor from last year's firm average wage relative to last year's local minimum wage and interacts that factor with this year's local wage-floor change [E1, §5]. Calling the treatment an observed share of low-wage workers would misdescribe the actual design.
 
 ## Why This Creates Empirical Variation
 
-The combination of cross-sectional variation in minimum wage levels across counties and time-series variation from frequent adjustments creates a continuous treatment design. Firms in high-minimum-wage counties and firms with more minimum-wage workers experience larger labor cost shocks. This identifies how firms respond to exogenous increases in labor costs, including through input substitution (replacing labor with capital), productivity improvements (especially among less productive firms facing competitive pressure), and, in extreme cases, firm exit. [E1; analytical inference]
+With firm effects and industry-by-year effects, the paper asks whether a firm's outcome changes more in a revision year when its predicted wage-floor exposure is high. It reports labor-to-capital substitution and ownership-specific productivity responses; those are paper estimates, not legal facts [E1, §§5–6]. The research claim depends on conditional comparability of firms and local revision timing. The regulation itself says standard-setting considers local costs, wages, development, and employment, so a wage-floor hike must not be presented as random assignment [E2, Article 6].
 
 ## Identification Risks
 
-The central identification concern is that minimum wages are not set randomly — they may be raised in response to local economic conditions that also independently affect firm outcomes. For example, counties experiencing rapid productivity growth may raise minimum wages, creating a positive correlation that biases estimates. The paper addresses this through county fixed effects (absorbing time-invariant differences) and controlling for local economic conditions, but time-varying confounders remain a concern. Additionally, firms may sort across counties based on minimum wage levels, and enforcement intensity may vary across locations. [E1; analytical inference]
+Local policy can track unobserved local changes, while initially low-average-wage firms may have different trends for reasons unrelated to a new wage floor. The paper tests some local-cycle predictors and includes firm and industry-year effects, but these steps do not prove randomness [E1, §§4–6]. Annual averaging conceals exact within-year exposure; the Shenzhen notice even documents a stated start that predates the published notice [E3]. Incomplete small-firm coverage and industry rather than firm output-price deflators also limit broader interpretation [E1, §4.2].
 
 ## Data Requirements
 
-Firm-level panel data from the Annual Survey of Industrial Firms covering manufacturing firms with detailed information on employment, wages, capital, output, and ownership. County-level minimum wage schedules from provincial government regulations. Ideally, data on firm-level management quality (from surveys like the World Bank Enterprise Survey) to test for complementarities between competitive pressure and management practices. [E1]
+Reuse requires the firm-year panel, location and industry crosswalks, wage bill and employment to calculate lagged mean wages, plus dated local minimum-wage schedules to construct annual averages. Capital, employment, and value-added fields support the primary outcomes; customs exports and management survey data support distinct secondary checks [E1, §4]. The project record points to the evidence and design, not a substitute for validating access to those microdata.
 
 ## Evidence Notes
 
-E1 finds that minimum wage hikes accelerated input substitution from labor to capital, reduced employment growth, and accelerated TFP growth — particularly among less productive firms with private Chinese or foreign ownership. State-owned enterprises were largely unresponsive, consistent with softer budget constraints and weaker competitive pressure. The heterogeneous responses by ownership and management quality suggest that competitive pressure and management quality are complementary: firms with better management responded more effectively to minimum wage shocks. The paper provides one of the first causal estimates of how minimum wage policies affect firm-level productivity in a developing country context.
+The government decree establishes the institutional framework, and the Shenzhen gazette independently confirms one differentiated local revision [E2–E3, verified]. The author manuscript establishes the paper's exposure formula and application [E1, reported design]. The grounded status therefore means this conditional design is sufficiently described for research triage, **not** that every county-year rate, enforcement outcome, or final publisher-version detail has been independently reproduced.

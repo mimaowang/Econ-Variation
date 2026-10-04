@@ -6,6 +6,7 @@ import json
 import re
 import sys
 from collections import Counter, defaultdict
+from functools import lru_cache
 from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -14,8 +15,8 @@ import yaml
 sys.dont_write_bytecode = True
 
 from econ_variation_lib import (  # noqa: E402
-    ROOT, SCHEMA_PATH, STATE_DIR, canonical_topics, identity_fingerprint, knowledge_eligibility, load_records,
-    load_topic_taxonomy, public_url_issues, read_jsonl, write_json,
+    EVIDENCE_SUPPORT_ROOTS, ROOT, SCHEMA_PATH, STATE_DIR, canonical_topics, identity_fingerprint,
+    knowledge_eligibility, load_records, load_topic_taxonomy, public_url_issues, read_jsonl, write_json,
 )
 
 
@@ -87,6 +88,75 @@ def evidence_url_doi(value: Any) -> str | None:
     return normalize_doi(match.group(1)) if match else None
 
 
+def shared_doi_is_audited(audit: Audit, doi: str, records: list[Any]) -> bool:
+    """Recognize a documented assignment decision, not a DOI-wide whitelist."""
+    path = STATE_DIR / "doi-assignment-audits.jsonl"
+    if not path.exists():
+        return False
+    rows, errors = read_jsonl(path)
+    for error in errors:
+        audit.error(f"{path.name}: {error}")
+    if errors:
+        return False
+    ids = {record.id for record in records}
+    for row in rows:
+        if normalize_doi(row.get("doi")) != doi:
+            continue
+        recorded_ids = row.get("record_ids")
+        if not isinstance(recorded_ids, list) or set(recorded_ids) != ids:
+            continue
+        tasks, task_errors = read_jsonl(STATE_DIR / "tasks.jsonl")
+        task = next((item for item in tasks if item.get("id") == row.get("task_id")), None)
+        if (
+            task_errors or not task
+            or task.get("stage") not in {"resolve", "ground", "audit", "consolidate"}
+            or task.get("status") not in {"claimed", "completed"}
+        ):
+            audit.error(f"DOI {doi}: assignment audit requires a traceable maintenance task")
+            return False
+        if not isinstance(row.get("rationale"), str) or not row["rationale"].strip():
+            audit.error(f"DOI {doi}: assignment audit must explain why the cases differ")
+            return False
+        refs_by_record = row.get("evidence_refs")
+        if not isinstance(refs_by_record, dict):
+            audit.error(f"DOI {doi}: assignment audit requires per-case institutional evidence")
+            return False
+        for record in records:
+            refs = refs_by_record.get(record.id)
+            evidence = {item["id"]: item for item in record.data.get("evidence", [])}
+            if not isinstance(refs, list) or not refs or any(ref not in evidence for ref in refs):
+                audit.error(f"DOI {doi}: {record.id} assignment audit has missing evidence references")
+                return False
+            if not any(
+                evidence[ref].get("verification_status") == "verified"
+                and evidence[ref].get("source_type") in {"policy-document", "implementation-document", "official-data", "archive"}
+                and any(str(field).startswith("assignment.") for field in evidence[ref].get("supports", []))
+                for ref in refs
+            ):
+                audit.error(f"DOI {doi}: {record.id} assignment audit lacks verified institutional assignment evidence")
+                return False
+        return True
+    return False
+
+
+@lru_cache(maxsize=1)
+def precise_evidence_paths() -> set[str]:
+    """Return the schema-backed claim fields that canonical evidence may support."""
+    schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+    paths: set[str] = set()
+    for root in EVIDENCE_SUPPORT_ROOTS:
+        definition = schema["properties"][root]
+        if definition.get("type") == "array":
+            definition = definition.get("items", {})
+        for field in (definition.get("properties") or {}):
+            paths.add(f"{root}.{field}")
+    return paths
+
+
+def is_precise_evidence_path(value: Any) -> bool:
+    return str(value) in precise_evidence_paths()
+
+
 def coverage(record: Any) -> dict[str, bool]:
     data = record.data
     verified = [item for item in data.get("evidence", []) if item.get("verification_status") == "verified"]
@@ -99,6 +169,9 @@ def coverage(record: Any) -> dict[str, bool]:
         if item.get("source_type") in {"paper", "appendix", "replication", "scholarship"}
         and item.get("verification_status") in {"verified", "reported"}
     ]
+    verified_research_evidence = [
+        item for item in research_evidence if item.get("verification_status") == "verified"
+    ]
     supports = {path for item in verified for path in item.get("supports", [])}
     primary_supports = {path for item in verified_primary for path in item.get("supports", [])}
     return {
@@ -107,6 +180,7 @@ def coverage(record: Any) -> dict[str, bool]:
         "primary_timeline_supported": any(path.startswith("timeline") for path in primary_supports),
         "primary_assignment_supported": any(path.startswith("assignment") for path in primary_supports),
         "has_research_evidence": bool(research_evidence),
+        "has_verified_research_evidence": bool(verified_research_evidence),
         "timeline_supported": any(path.startswith("timeline") for path in supports),
         "assignment_supported": any(path.startswith("assignment") for path in supports),
         "has_application": bool(data.get("design_applications")),
@@ -123,6 +197,44 @@ def coverage(record: Any) -> dict[str, bool]:
             bool(item.get("data_used")) for item in data.get("design_applications", [])
         ),
     }
+
+
+def maturity_gate_failures(record: Any, row: dict[str, Any], target_status: str) -> list[str]:
+    """Describe observable gaps to a maturity state without assigning the state as a reward."""
+    role = (record.data.get("scope") or {}).get("knowledge_role")
+    if target_status == "grounded":
+        required = (
+            ("has_verified_research_evidence", "method_transfer_documented")
+            if role == "transferable-method"
+            else (
+                "has_primary_evidence", "has_research_evidence", "primary_identity_supported",
+                "primary_timeline_supported", "primary_assignment_supported",
+            )
+        )
+    elif target_status == "design-documented":
+        required = [
+            "has_research_evidence", "has_application", "has_threat_assessment", "has_requirements",
+            "scope_classified", "method_transfer_documented", "application_data_documented",
+        ]
+        if role == "transferable-method":
+            required.append("has_verified_research_evidence")
+        else:
+            required.extend((
+                "has_primary_evidence", "primary_identity_supported", "primary_timeline_supported",
+                "primary_assignment_supported",
+            ))
+        if row.get("imprecise_evidence_path_count"):
+            required.append("precise_evidence_supports")
+    else:
+        raise ValueError(f"unsupported maturity target: {target_status}")
+    failed = [key for key in required if key == "precise_evidence_supports" or not row.get(key)]
+    if target_status == "design-documented" and record.data.get("readiness_blockers"):
+        failed.append("no_readiness_blockers")
+    if target_status == "design-documented" and (row.get("has_mojibake") or row.get("has_causal_overclaim_lint")):
+        failed.append("content_lint_clear")
+    if record.data.get("status") != "deprecated" and not (record.data.get("design") or {}).get("claim_type"):
+        failed.append("design_claim_type")
+    return sorted(set(failed))
 
 
 def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
@@ -197,6 +309,12 @@ def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
         row["invalid_evidence_path_count"] = sum(
             1 for item in evidence for path in item.get("supports", []) if not EVIDENCE_PATH.match(str(path))
         )
+        row["imprecise_evidence_path_count"] = sum(
+            1
+            for item in evidence
+            for path in item.get("supports", [])
+            if EVIDENCE_PATH.match(str(path)) and not is_precise_evidence_path(path)
+        )
         coverage_rows.append(row)
         role = (record.data.get("scope") or {}).get("knowledge_role")
         country = str((record.data.get("scope") or {}).get("country", ""))
@@ -238,31 +356,13 @@ def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
                         "is not matched by a referenced evidence DOI URL"
                     )
         if record.status == "grounded":
-            required = (
-                "has_primary_evidence", "has_research_evidence", "primary_identity_supported",
-                "primary_timeline_supported", "primary_assignment_supported",
-            )
-            failed = [key for key in required if not row[key]]
+            failed = maturity_gate_failures(record, row, "grounded")
             if failed:
                 audit.error(f"{record.id}: grounded gate missing {failed}")
-            if not (record.data.get("design") or {}).get("claim_type"):
-                audit.error(f"{record.id}: grounded record requires design.claim_type")
         if record.status == "design-documented":
-            required = (
-                "has_primary_evidence", "has_research_evidence", "primary_identity_supported",
-                "primary_timeline_supported", "primary_assignment_supported",
-                "has_application", "has_threat_assessment", "has_requirements", "scope_classified",
-                "method_transfer_documented", "application_data_documented",
-            )
-            failed = [key for key in required if not row[key]]
+            failed = maturity_gate_failures(record, row, "design-documented")
             if failed:
                 audit.error(f"{record.id}: design-documented gate missing {failed}")
-            if record.data.get("readiness_blockers"):
-                audit.error(f"{record.id}: design-documented record cannot retain readiness blockers")
-            if not (record.data.get("design") or {}).get("claim_type"):
-                audit.error(f"{record.id}: design-documented record requires design.claim_type")
-            if row["has_mojibake"] or row["has_causal_overclaim_lint"]:
-                audit.error(f"{record.id}: design-documented record contains unresolved content lint")
     records_by_id = {record.id: record for record in records}
     redirects: dict[str, str] = {}
     for record in records:
@@ -297,6 +397,8 @@ def validate_records(audit: Audit) -> tuple[list[Any], list[dict[str, Any]]]:
         unique_ids = sorted(set(record_ids))
         active_ids = [record_id for record_id in unique_ids if records_by_id[record_id].status != "deprecated"]
         if len(active_ids) > 1:
+            if shared_doi_is_audited(audit, doi, [records_by_id[record_id] for record_id in active_ids]):
+                continue
             audit.warn(f"DOI {doi} appears in multiple active variation cases: {active_ids}; audit whether assignment differs")
             if any(records_by_id[record_id].status in {"grounded", "design-documented"} for record_id in active_ids):
                 audit.error(f"DOI {doi}: duplicate assignment audit must be resolved before either record matures")
@@ -404,6 +506,10 @@ def validate_provenance(audit: Audit, records: list[Any]) -> None:
         if record_id not in baseline_ids or not re.fullmatch(r"[0-9a-f]{64}", str(expected)):
             audit.error(f"legacy baseline has invalid file hash entry for {record_id}")
     legacy_ids = [record.id for record in legacy_records]
+    current_ids = {record.id for record in records}
+    missing_frozen_records = sorted(set(baseline_ids) - current_ids)
+    if missing_frozen_records:
+        audit.error(f"frozen legacy records are missing from variations/: {missing_frozen_records}")
     unexpected = sorted(set(legacy_ids) - set(baseline_ids))
     if unexpected:
         audit.error(f"records cannot newly claim legacy-untracked provenance: {unexpected}")
@@ -422,6 +528,7 @@ def validate_provenance(audit: Audit, records: list[Any]) -> None:
 def debt_summary(rows: list[dict[str, Any]]) -> dict[str, int]:
     return {
         "record_count": len(rows),
+        "extracted_canonical_records": sum(row["status"] == "extracted" for row in rows),
         "missing_primary_evidence": sum(not row["has_primary_evidence"] for row in rows),
         "missing_primary_institutional_core": sum(not (
             row["primary_identity_supported"]
@@ -432,6 +539,7 @@ def debt_summary(rows: list[dict[str, Any]]) -> dict[str, int]:
         "mojibake_detected": sum(row["has_mojibake"] for row in rows),
         "causal_overclaim_lint": sum(row["has_causal_overclaim_lint"] for row in rows),
         "invalid_evidence_paths": sum(row["invalid_evidence_path_count"] for row in rows),
+        "imprecise_evidence_paths": sum(row["imprecise_evidence_path_count"] for row in rows),
     }
 
 
@@ -442,6 +550,7 @@ def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
     except (OSError, ValueError, yaml.YAMLError) as exc:
         audit.error(f"topic taxonomy is invalid: {exc}")
     records, coverage_rows = validate_records(audit)
+    record_by_id = {record.id: record for record in records}
     validate_state(audit, {record.id for record in records})
     validate_provenance(audit, records)
     status_counts = Counter(record.status for record in records)
@@ -457,9 +566,23 @@ def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
         if row["knowledge_role"] in {"china-variation", "global-china-variation"}
     ]
     managed_china_debt = debt_summary(managed_china_facing_rows)
-    stop_bulk_discovery = bool(managed_china_facing_rows) and (
+    managed_extracted_rows = [row for row in managed_active_rows if row["status"] == "extracted"]
+    promotion_ready_rows = [
+        row for row in managed_active_rows
+        if row["status"] == "grounded"
+        and not maturity_gate_failures(record_by_id[row["id"]], row, "design-documented")
+    ]
+    primary_grounding_stop = bool(managed_china_facing_rows) and (
         managed_china_debt["missing_primary_evidence"] > len(managed_china_facing_rows) / 2
     )
+    stop_bulk_discovery = primary_grounding_stop
+    feedback_reasons: list[str] = []
+    if managed_extracted_rows:
+        feedback_reasons.append("managed-half-products")
+    if primary_grounding_stop:
+        feedback_reasons.append("primary-grounding-debt")
+    if promotion_ready_rows:
+        feedback_reasons.append("promotion-ready-awaits-review")
     quality_debt = {
         "legacy_backlog": debt_summary(legacy_rows),
         "managed_active_pipeline": debt_summary(managed_active_rows),
@@ -472,22 +595,32 @@ def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
         if row["has_mojibake"]
         or row["has_causal_overclaim_lint"]
         or row["invalid_evidence_path_count"]
+        or row["imprecise_evidence_path_count"]
         or not row["has_primary_evidence"]
         or not row["application_data_documented"]
+        or row["status"] == "extracted"
     ]
     actionable_rows.sort(key=lambda row: (
         -sum((
             row["has_mojibake"],
             row["has_causal_overclaim_lint"],
             bool(row["invalid_evidence_path_count"]),
+            bool(row["imprecise_evidence_path_count"]),
             not row["has_primary_evidence"],
             not row["application_data_documented"],
+            row["status"] == "extracted",
         )),
         row["id"],
     ))
     snapshot_dates = [str(record.data["timeline"]["last_verified"]) for record in records]
+    snapshot_date = max(snapshot_dates, default=None)
     report = {
-        "knowledge_snapshot_date": max(snapshot_dates, default=None),
+        "knowledge_snapshot_date": snapshot_date,
+        "knowledge_freshness": {
+            "oldest_record_date": min(snapshot_dates, default=None),
+            "newest_record_date": snapshot_date,
+            "records_at_newest_date": sum(value == snapshot_date for value in snapshot_dates),
+        },
         "repository_health": {
             "status": "error" if audit.errors else "valid",
             "errors": audit.errors,
@@ -505,9 +638,13 @@ def run(write_health: bool) -> tuple[Audit, dict[str, Any]]:
             "method_inspirations": eligibility_counts["method-inspiration"],
             "do_not_recommend": eligibility_counts["do-not-recommend"],
             "stop_bulk_discovery": stop_bulk_discovery,
+            "work_mode": "close-open-loops" if feedback_reasons else "balanced",
+            "feedback_reasons": feedback_reasons,
             "interpretation": "Repository validity is not research readiness. Lead-only and contested records require audit before recommendation.",
         },
         "quality_debt": quality_debt,
+        "canonical_admission_debt_ids": [row["id"] for row in managed_extracted_rows],
+        "promotion_ready_ids": [row["id"] for row in promotion_ready_rows],
         "priority_audit_ids": [row["id"] for row in actionable_rows[:10]],
     }
     if write_health:

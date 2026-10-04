@@ -6,9 +6,9 @@ aliases:
 - Feenstra-Hanson 2005 outsourcing
 - processing-trade property-rights variation
 - China export-processing ownership-control
-status: extracted
+status: grounded
 provenance:
-  task_id: task-e2b4e7527dc4
+  task_id: task-526b4d6a2409
 scope:
   country: China
   regions:
@@ -280,9 +280,9 @@ evidence:
   url: https://doi.org/10.1093/qje/120.2.729
   date: 2005
   supports:
-  - identity
-  - timeline
-  - design
+  - identity.instrument
+  - timeline.local_timing
+  - design.primary_strategy
   verification_status: reported
   access_level: abstract
   locator: QJE article abstract and citation (DOI 10.1093/qje/120.2.729)
@@ -294,13 +294,34 @@ evidence:
   url: https://www.nber.org/system/files/working_papers/w10198/w10198.pdf
   date: 2003
   supports:
-  - identity
-  - timeline
-  - assignment
-  - design
-  - threats
-  - empirical_requirements
-  - design_applications
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.unit
+  - assignment.rule
+  - assignment.intensity
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.assumptions
+  - design.diagnostics
+  - threats.condition
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.required_fields
+  - empirical_requirements.required_identifiers
+  - empirical_requirements.treatment_source
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: verified
   access_level: full-text
   locator: NBER Working Paper 10198 PDF, Sections 2-5 and Tables 1-5
@@ -310,9 +331,9 @@ evidence:
   url: http://www.lawinfochina.com/display.aspx?lib=law&id=811&CGid=
   date: 1990
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: LawInfoChina bilingual entry for the 1990 amended inward processing and assembling
@@ -323,8 +344,8 @@ evidence:
   url: http://jsj.customs.gov.cn/Portals/0/ywdt/1215%E9%99%84%E4%BB%B65%EF%BC%9A%E6%B5%B7%E5%85%B3%E8%A7%84%E7%AB%A0%E7%9B%AE%E5%BD%95.doc
   date: 1988
   supports:
-  - identity
-  - timeline
+  - identity.legal_identifiers
+  - timeline.implementation_start
   verification_status: verified
   access_level: official-document
   locator: Jiangsu Customs list of still-effective customs regulations (entry no. 8)

@@ -1,16 +1,16 @@
 ---
 schema_version: 2
 id: china-misallocation-trade-liberalization
-name: Misallocation under Trade Liberalization — Firm-Level Distortions and Welfare Effects in Chinese Manufacturing
+name: Deprecated — Misallocation under Trade Liberalization Is a Structural Counterfactual, Not a China Variation
 aliases:
 - Bai Jin Lu 2024
 - trade liberalization welfare misallocation
 - distortionary taxes trade China
 - firm-level distortions China trade
 
-status: extracted
+status: deprecated
 provenance:
-  task_id: legacy-untracked
+  task_id: task-f3160acf58ef
 scope:
   country: China
   regions:
@@ -21,58 +21,38 @@ scope:
   - firm-heterogeneity
   - misallocation
   - industrial-organization
-  variation_type: continuous-exposure
+  variation_type: other
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: The paper calibrates a trade model using Chinese manufacturing data, but does not assign an observed Chinese policy exposure; this retained file exists only to prevent that model exercise from being misread as a usable variation.
 identity:
-  instrument: Firm-level exposure to distortionary fiscal policies (subsidies and taxes) interacting with trade cost reductions
-    from trade liberalization, generating variation in the welfare effects of trade across firms and sectors in Chinese manufacturing
-  authority: Chinese government fiscal authorities (tax bureaus and subsidy programs at central and local levels); trade liberalization
-    driven by WTO accession and multilateral trade agreements
+  instrument: '[E1, verified] No observed policy instrument is identified in the paper. It estimates a structural Melitz-style model with model-inferred firm wedges and runs counterfactual changes in iceberg trade costs.'
+  authority: '[E1, verified] Not applicable: the model''s wedges are latent objects intended to summarize distortions, not a dated Chinese tax, subsidy, or regulatory assignment.'
   legal_identifiers:
-  - Chinese WTO accession agreement 2001
-  - corporate income tax law
-  - VAT regulations
-  - local government subsidy programs
-  - tariff schedules
-  implementation_regime: Chinese manufacturing firms face heterogeneous distortionary taxes and subsidies that create wedges
-    between marginal revenue products across firms; trade liberalization (tariff reductions, improved market access) changes
-    the relative profitability of firms operating in different distortion environments
-  assignment_mechanism: Firm-level distortions (tax rates, subsidy receipt, regulatory burdens) vary across firms due to firm
-    characteristics, ownership type, industry, and local government policies; trade cost reductions are applied at the industry
-    level through tariff schedules
+  - 'None: no policy identifier is the paper''s assigned treatment'
+  implementation_regime: '[E1, verified] The 1998 and 2005 Chinese firm distributions parameterize model counterfactuals. The paper does not map a law, tariff schedule, or subsidy program to firm-by-time treatment.'
+  assignment_mechanism: '[E1, verified] None recoverable: model-inferred wedges and trade costs are not observed administrative assignment variables.'
   parent: null
   related_variations:
   - china-growing-like-china
 timeline:
   announcement: null
   effective: null
-  implementation_start: 2005
+  implementation_start: 1998
   implementation_end: 2005
-  local_timing: The core empirical analysis uses cross-sectional variation in firm-level distortions and industry-level trade
-    exposure from Chinese manufacturing data in 2005
-  anticipation: Distortionary policies are persistent features of the economic environment; trade liberalization was anticipated
-    following China's WTO accession in 2001
+  local_timing: '[E1, verified] The paper compares model calibrations based on 1998 and 2005 distributions; these are not implementation dates or treatment cohorts.'
+  anticipation: '[E1, verified] Not an event-study design; anticipation cannot be evaluated as if 1998-2005 were a policy rollout.'
   last_verified: '2026-07-13'
 assignment:
   unit: Firm (Chinese manufacturing firm)
-  treated: Firms facing distortionary taxes or receiving subsidies (measured as firm-level deviations from efficient factor
-    allocation), within a context of varying industry-level exposure to trade liberalization
-  comparison_pool: Variation across firms in the degree of distortion (implicit tax/subsidy wedge) and across industries in
-    the degree of trade cost reduction, allowing comparison of welfare effects of trade under different distortion regimes
-  rule: Firms with larger distortion wedges (greater deviation from marginal revenue product equalization) experience differential
-    welfare effects from trade liberalization compared to less-distorted firms; the aggregate welfare effect of trade depends
-    on the covariance between firm-level distortions and trade exposure
+  treated: '[E1, verified] None: the paper does not define observed treated firms.'
+  comparison_pool: '[E1, verified] No empirical treatment-control comparison. Its comparisons are model counterfactuals holding different parameter groups at 1998 or 2005 values.'
+  rule: '[E1, verified] No observable assignment rule. Revenue-productivity wedges are inferred model primitives and cannot be equated with observed taxes or subsidy receipt.'
   intensity: Continuous — firm-level distortion measure (revenue productivity relative to efficient benchmark, or the gap
     between marginal revenue product of capital/labor and the market price), and industry-level trade cost reduction (tariff
     reductions or trade cost shock)
   exemptions: []
-  compliance: Distortions are a characteristic of the fiscal and regulatory environment, not a treatment; compliance is not
-    applicable
-  exposure_construction: Firm-level distortion wedge measured as the deviation of a firm's marginal revenue product from the
-    efficient level (following Hsieh and Klenow 2009); industry-level trade exposure measured as tariff changes or trade cost
-    shocks; interaction of firm-level distortions with industry-level trade exposure
+  compliance: Not applicable; this is not an intervention or take-up measure.
+  exposure_construction: '[E1, verified] No reusable policy-exposure construction. The model estimates latent trade costs and wedges from distributional moments, then alters parameter values in counterfactual decompositions.'
   required_identifiers:
   - firm identifier
   - industry code
@@ -243,15 +223,42 @@ evidence:
   source_type: paper
   citation: 'Bai, Yan, Keyu Jin, and Dan Lu. 2024. "Misallocation under Trade Liberalization." American Economic Review 114
     (7): 1949–1985.'
+  url: https://www.keyujin.co/pdf/BJL_2023_mainPaper.pdf
+  date: 2024
+  supports:
+  - identity.instrument
+  - identity.authority
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.compliance
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.identifying_variation
+  - design.comparison_logic
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.empirical_design
+  verification_status: verified
+  access_level: full-text
+  locator: 'Author-hosted December 2023 version inspected: pp. 1-3 (model and model-inferred wedges), pp. 18-19 (quantitative exercise), pp. 35-39 (1998-versus-2005 counterfactual decomposition and caveats).'
+- id: E2
+  source_type: other
+  citation: 'Bai, Yan, Keyu Jin, and Dan Lu. 2024. "Misallocation under Trade Liberalization." American Economic Review 114 (7): 1949-1985.'
   url: https://doi.org/10.1257/aer.20200596
   date: 2024
   supports:
-  - identity
-  - assignment
-  - design
-  - threats
-  - empirical_requirements
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
   verification_status: verified
+  access_level: metadata
+  locator: 'AEA article page identifies the published version, journal, pages, and DOI; substantive claims are supported by E1.'
 design_applications:
 - paper: Misallocation under Trade Liberalization
   doi: 10.1257/aer.20200596
@@ -280,13 +287,17 @@ design_applications:
   - external validity via comparison with alternative data periods and specifications
   evidence_refs:
   - E1
+  - E2
 readiness_blockers:
 - Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
   paper.
 - At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+deprecation_reason: 'Audit established that the paper provides structural counterfactuals calibrated to Chinese firm distributions, not an observed Chinese assignment mechanism or reproducible policy exposure. It is retained only to prevent future agents from treating latent wedges as a variation.'
 method_transfer: null
 ---
 ## Institutional Background
+
+**Deprecated serving record.** [E1, verified] Bai, Jin, and Lu (2024) is a structural/quantitative study, not evidence that a Chinese policy assigned firms to a treatment. It estimates latent wedges and iceberg trade costs from firm-distribution moments, then compares model counterfactuals. Do not retrieve it as a variation or treat “subsidized firms” as an observed subsidy-recipient group. Its valid value is methodological background for a separately documented policy or trade-cost design.
 
 China's manufacturing sector has been shaped by extensive government intervention through taxes, subsidies, and regulatory policies that create substantial heterogeneity in the effective fiscal environment facing firms. State-owned enterprises, foreign-invested firms, and private domestic firms face different tax regimes, subsidy programs, and regulatory burdens. These firm-level distortions create misallocation of resources across firms — a well-documented feature of the Chinese economy. At the same time, China has undergone significant trade liberalization, particularly after its WTO accession in 2001, which reduced both Chinese import tariffs and foreign trade barriers against Chinese exports. [E1]
 

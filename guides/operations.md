@@ -4,6 +4,8 @@
 
 From the recorded knowledge alone, an agent must be able to determine whether a variation fits a research idea and explain: what changed and why; who was exposed and when; what comparison the change creates; how treatment can be measured; which designs are plausible; what data are required; and which threats limit causal interpretation.
 
+`guides/mental-model.md` explains this invariant through a complete research decision and is the conceptual entry point for a new maintenance agent. This guide is the lifecycle authority after that mental model is understood.
+
 A smaller collection of decision-sufficient records is better than a large policy list. Health separates the frozen legacy backlog from the managed active pipeline. Bulk-discovery advice is based on active, managed, China-facing work rather than allowing historical leads to freeze the project forever. A user-directed topic or demonstrated coverage gap may override the advice only with an explicit reason recorded in the task lifecycle.
 
 ## Knowledge boundary
@@ -17,6 +19,20 @@ Keep three layers distinct:
 3. **Design applications**: how particular papers encoded and used the variation for particular outcomes and populations.
 
 Exogeneity is never a permanent property of the record. A variation may be useful for one outcome and endogenous for another.
+
+A shared paper DOI normally triggers a duplication audit, because different
+outcomes do not create new variations. Occasionally a paper actually studies
+different implementation and assignment regimes. After inspecting their
+institutions, explain that difference in `state/doi-assignment-audits.jsonl`,
+using `doi`, the exact `record_ids`, the maintenance `task_id`, a connected
+`rationale`, and `evidence_refs` mapping each record ID to its institutional
+evidence IDs. This preserves the shared citation rather than hiding it or
+forcing distinct rules into one case. The validator recognizes only that
+reviewed group and requires verified assignment evidence for each case;
+adding another case reopens the audit. The explanation is a research judgment,
+not an automatic certificate that different titles or wording prove distinctness.
+Revisit the decision when a case's actual assignment changes; a previous audit
+does not authorize reusing its rationale for a different mechanism.
 
 ## China-first collection boundary
 
@@ -63,7 +79,27 @@ Tasks use stages `screen`, `discover`, `resolve`, `ground`, `audit`, and `consol
 
 Completing a retained screen automatically queues its post-screen task. The candidate then moves through `queued`, `in-progress`, and a terminal state (`resolved`, `contested`, `skipped`, or `blocked`) with the linked task. Historical candidates may be reconciled to an existing canonical record without deleting their original source, reason, or screening provenance. Default queue priority favors bounded China-facing post-screen work over overseas method screening; an explicit task priority or user-directed scope may override that order.
 
+Treat the candidate ledger as a staging buffer and `variations/` as the serving layer. Resolve work may end blocked or skipped when the source cannot support canonical admission. A new active canonical file must already satisfy the grounded or design-documented gate; a genuinely disputed identity may enter as contested. Do not publish a new extracted file as a promise that another task will make it useful later. Existing extracted records remain visible for backward compatibility and targeted audit.
+
 Every canonical record names its task in `provenance.task_id`. The fixed `legacy-untracked` baseline includes per-file hashes: an untouched legacy lead may remain frozen, but any edit requires a real claimed task and current quality standards. For new or audited records, set the claimed task ID before validation. Completion rejects undeclared provenance, expired or mismatched claim tokens, imprecise evidence paths, missing evidence locators, and search-snippet claims. The shared worktree supports one mutating claim at a time.
+
+### Screen one source
+
+These commands illustrate the source-to-candidate handoff. Replace the angle-bracket placeholders with the actual source and the IDs returned by the preceding commands. The claim token identifies this particular attempt, so keep it for completion or renewal.
+
+```text
+python scripts/task_queue.py enqueue --stage screen --goal "Triage one CEPI paper" --idempotency-key "doi:<doi>" --source "https://doi.org/<doi>"
+python scripts/task_queue.py claim --id <task-id> --agent <agent-name> --lease-minutes 60
+```
+
+If the inspected source merits follow-up, preserve why it was retained and which decision remains open:
+
+```text
+python scripts/task_queue.py candidate-add --task-id <task-id> --agent <agent-name> --claim-token <token> --name "Candidate variation" --next-stage resolve --reason "Recoverable assignment requires primary-source resolution" --source "https://doi.org/<doi>" --source-fingerprint "doi:<doi>" --knowledge-role china-variation
+python scripts/task_queue.py complete --id <task-id> --agent <agent-name> --claim-token <token> --outcome candidate --candidate <candidate-id> --note "Screened one source; retained for resolution."
+```
+
+Completion runs the release gate and queues the linked follow-up automatically. If the source does not qualify or cannot be inspected, use `skipped` or `blocked` with the reason instead of creating a canonical file. When health advises stopping bulk discovery, an explicitly requested or demonstrated coverage-gap exception is recorded through `claim --override-reason`; it does not change the evidence standard.
 
 ## Evidence discipline
 
@@ -88,7 +124,7 @@ Institutional prose cites evidence IDs such as `[E1]`, labels reported claims as
 
 ## Record actions and states
 
-- `extracted`: a paper or source has been structured, but facts, admissibility, or design details still require audit; never treat it as recommendation-ready;
+- `extracted`: an existing structured lead whose facts, admissibility, or design details still require audit; never treat it as recommendation-ready or as the publication state for a new canonical file;
 - `grounded`: institutional identity and core timing have suitable primary support, and the research application is traceable;
 - `design-documented`: assignment, design opportunities, threats, and data requirements support direct idea matching;
 - `contested`: important evidence conflicts or the common design interpretation is materially disputed;
@@ -112,7 +148,9 @@ For overseas work, `method_transfer` answers: what is portable; how the variable
 
 Econ-Variation states a versioned `empirical_requirements` contract rather than duplicating dataset profiles: observation unit, population, geography, time coverage, minimum frequency, pre/post periods, required fields, treatment source, and join keys. Compatibility is evaluated at runtime; Econ-Variation stores no reciprocal dataset IDs.
 
-`empirical_requirements` remains the default contract. When a variation supports genuinely different empirical designs, optional `design_profiles` provide alternative, complete requirements for each design-unit combination. The matcher evaluates profiles separately and selects the best-fitting one; requirements from different profiles are never unioned into artificial missing-data demands.
+`empirical_requirements` remains the default contract. When a variation supports genuinely different empirical designs, optional `design_profiles` provide alternative, complete requirements for each design-unit combination. Requirements from different profiles are never unioned into artificial missing-data demands. Carry the user's research purpose into `intent.outcome` and optional `intent.design`; for a chosen application, use `design_profile_ids: {variation-id: profile-id}`. The matcher orders recognized outcomes before data convenience, then considers joint compatibility and missing data; ties retain recall order. It evaluates the filtered candidate set before applying the display limit. This is a transparent shortlist, not a causal-validity score or proof of the globally best design.
+
+Intent matching uses the existing record vocabulary, not a semantic model. Translate the question faithfully and inspect the canonical record when terms do not line up. An unspecified application or unrecognized intent remains a manual-review condition; `selection_basis: data-fit-exploration` cannot establish that the selected application answers the question. A correctly selected application with missing data should retain those gaps rather than silently switching outcomes.
 
 For joint reasoning, compare:
 
@@ -154,4 +192,4 @@ External outages justify `blocked`, never weaker evidence. Stop cleanly when sou
 
 ## Release gate
 
-Run the commands in `README.md`. Generated health and router files are outputs. A non-zero result means the repository is not ready for unattended continuation.
+Run the commands in `CONTRIBUTING.md#verification-and-release`. Generated health and router files are outputs. A non-zero result means the repository is not ready for unattended continuation.

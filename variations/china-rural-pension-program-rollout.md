@@ -11,7 +11,7 @@ aliases:
 
 status: grounded
 provenance:
-  task_id: task-d532c7b1a37a
+  task_id: task-531bf9b3afa0
 scope:
   country: China
   regions:
@@ -310,9 +310,16 @@ evidence:
   url: https://www.gov.cn/zhengce/zhengceku/2009-09/04/content_7280.htm
   date: '2009-09-04'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.instrument
+  - identity.authority
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.implementation_start
+  - timeline.local_timing
+  - assignment.unit
+  - assignment.treated
+  - assignment.rule
+  - assignment.exposure_construction
   verification_status: verified
   access_level: official-document
   locator: >
@@ -328,9 +335,11 @@ evidence:
   url: https://doi.org/10.1016/j.jdeveco.2025.103653
   date: 2026
   supports:
-  - design_applications
-  - design
-  - assignment
+  - design.primary_strategy
+  - design.estimand
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
   verification_status: reported
   access_level: abstract
   locator: >
@@ -338,6 +347,32 @@ evidence:
     using the NRPS rollout with National Fixed Point Survey data, finding that
     pensions reallocate land from elderly- to younger-operated households and
     raise agricultural productivity by 9.8%.
+- id: E3
+  source_type: paper
+  citation: 'Gai, Qingen, Naijia Guo, Bingjing Li, Qinghua Shi, and Xiaodong Zhu. 2025. "Rural Pensions, Labor Reallocation, and Aggregate Income: An Empirical and Quantitative Analysis of China." Econometrica 93 (5): 1663–1696.'
+  url: https://doi.org/10.3982/ECTA19699
+  date: 2025
+  supports:
+  - identity.instrument
+  - timeline.implementation_start
+  - timeline.local_timing
+  - assignment.rule
+  - assignment.exposure_construction
+  - design.primary_strategy
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.required_fields
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - threats.condition
+  verification_status: verified
+  access_level: full-text
+  locator: Wiley Econometrica open-access full text, Sections 2–3 and online appendix, DOI 10.3982/ECTA19699
 design_applications:
 - paper: Rural pension, factor reallocation and agricultural productivity
   doi: 10.1016/j.jdeveco.2025.103653
@@ -371,6 +406,36 @@ design_applications:
   - Heterogeneity by operator age and household type
   evidence_refs:
   - E2
+- paper: 'Rural Pensions, Labor Reallocation, and Aggregate Income: An Empirical and Quantitative Analysis of China'
+  doi: 10.3982/ECTA19699
+  journal: Econometrica
+  year: 2025
+  research_question: How does rural pension rollout affect rural-to-urban migration costs, within-household labor allocation, and aggregate income in China?
+  population: Rural households and workers observed in a large panel around county-level NRPS implementation.
+  outcome: Rural and migrant labor supply, migration, household labor allocation, sectoral productivity differences, GDP, and welfare.
+  data_used:
+  - Large household panel used in the Econometrica empirical analysis
+  - County-level NRPS implementation timing
+  - Household labor, migration, and sectoral-income measures
+  treatment_encoding: >
+    County-year exposure to NRPS implementation, with household/worker age and rural status defining the affected margin;
+    keep this application distinct from the policy's formal eligibility rule.
+  comparison: >
+    Households and workers in counties not yet implementing NRPS provide the rollout comparison, with within-household age
+    and sectoral margins used to study labor reallocation.
+  empirical_design: >
+    Reduced-form staggered rollout analysis linked to a structurally estimated general-equilibrium household model; the
+    structural counterfactual is not itself a new assignment mechanism.
+  assumptions:
+  - County rollout timing is conditionally comparable across pre-treatment trends.
+  - The observed rollout exposure identifies the policy effect for affected rural workers rather than merely selection into enrollment.
+  - The structural model's migration and labor-supply mechanisms are disciplined by the reduced-form moments.
+  threats_addressed:
+  - Endogenous county rollout timing and concurrent rural policies
+  - Household enrollment/compliance and age or hukou measurement error
+  - Spillovers through migration and local labor markets
+  evidence_refs:
+  - E3
 readiness_blockers:
 - >
   The exact county-by-year NRPS rollout schedule has not been compiled from

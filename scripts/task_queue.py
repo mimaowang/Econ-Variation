@@ -70,6 +70,68 @@ def canonical_digest() -> str:
     return digest.hexdigest()
 
 
+def canonical_ids() -> list[str]:
+    return sorted(path.stem for path in (ROOT / "variations").glob("*.md") if path.name != "template.md")
+
+
+def is_deepseek_harness_agent(agent: object) -> bool:
+    """Recognize the explicit runtime marker used by DeepSeek Harness workers."""
+    name = str(agent or "").casefold()
+    return name.startswith("dsh-") or "-dsh-" in name or "deepseek-harness" in name
+
+
+def build_task_brief(task: dict, candidate: dict | None = None) -> dict:
+    """Build a compact, non-persistent state estimate for a context-constrained agent."""
+    stage = str(task.get("stage", ""))
+    purpose = {
+        "screen": "Decide whether one source contains recoverable knowledge worth deeper work.",
+        "discover": "Close a demonstrated coverage gap without publishing an ungrounded lead.",
+        "resolve": "Resolve one variation's identity and primary assignment mechanism before extraction.",
+        "ground": "Replace a named knowledge gap with inspected institutional and research evidence.",
+        "audit": "Test whether an existing record is decision-sufficient for a fresh reader.",
+        "consolidate": "Restore one coherent assignment boundary across overlapping records.",
+    }.get(stage, "Complete one bounded knowledge decision.")
+    finish_when = {
+        "screen": "Record candidate, skipped, or blocked; canonical files remain unchanged.",
+        "resolve": "The identity and assignment are resolved; publish only if the canonical admission gate is met.",
+        "ground": "A fresh reader can recover the institutional core, assignment, evidence boundary, and data join.",
+        "audit": "A fresh reader can reconstruct treatment, comparison, data needs, threats, and unresolved limits.",
+        "consolidate": "Each surviving record has one implementation regime and one primary assignment mechanism.",
+    }.get(stage, "The bounded goal is closed with evidence or an explicit blocker.")
+    focus = str(task.get("goal", "")).strip()[:240]
+    if candidate:
+        reason = " ".join(str(candidate.get("reason", "")).split())
+        if reason:
+            focus = f"{focus} Candidate reason: {reason}"[:420]
+    read_first = ["AGENTS.md", "guides/mental-model.md"]
+    if candidate:
+        read_first.append(f"candidate:{candidate.get('id')}")
+    elif task.get("source"):
+        read_first.append(str(task.get("source"))[:180])
+    stop_when = (
+        "If identity or core evidence cannot be recovered, preserve the candidate and finish blocked or skipped; "
+        "do not publish an extracted canonical record."
+    )
+    if stage == "screen":
+        stop_when = "Do not modify canonical records; inaccessible evidence is blocked, not replaced by search prose."
+    if is_deepseek_harness_agent(task.get("claimed_by")):
+        stop_when = (
+            f"{stop_when} Read guides/deepseek-harness.md. After each concrete retrieval route, compare what it added; "
+            "if the same source family returns without a new locator or decision-relevant field, treat the evidence pass "
+            "as saturated, write established/missing/next, and close blocked or preserve the candidate. Continue only for "
+            "a named new route that could close a real gap; do not change query wording merely to prolong the turn. "
+            "At completion use the normal task_queue.py complete path once; if its release gate fails, preserve the "
+            "error and release or fail the task rather than bypassing the gate with a direct Python call."
+        )
+    return {
+        "purpose": purpose,
+        "focus": focus,
+        "read_first": read_first[:3],
+        "finish_when": finish_when,
+        "stop_when": stop_when,
+    }
+
+
 def assert_active_claim(task: dict, agent: str, claim_token: str, action: str) -> None:
     if (
         task.get("status") != "claimed"
@@ -81,6 +143,24 @@ def assert_active_claim(task: dict, agent: str, claim_token: str, action: str) -
     expiry = parse_time(task.get("lease_expires_at"))
     if expiry is None or expiry <= now():
         raise RuntimeError(f"task lease expired; reclaim before attempting to {action}")
+
+
+def assert_canonical_workspace_restored(task: dict, action: str) -> None:
+    """Prevent release-like transitions from normalizing undeclared canonical file changes."""
+    if "canonical_digest_at_claim" in task:
+        if task.get("canonical_digest_at_claim") != canonical_digest():
+            raise RuntimeError(f"restore canonical variation files before attempting to {action}")
+        return
+    if "canonical_ids_at_claim" not in task:
+        return
+    before = set(task.get("canonical_ids_at_claim") or [])
+    after = set(canonical_ids())
+    if before != after:
+        deleted = sorted(before - after)
+        added = sorted(after - before)
+        raise RuntimeError(
+            f"restore canonical file set before attempting to {action}; deleted={deleted}, added={added}"
+        )
 
 
 def recover() -> None:
@@ -259,7 +339,10 @@ def claim(
             task.pop("override_reason", None)
         if task.get("stage") == "screen":
             task["canonical_digest_at_claim"] = canonical_digest()
+        else:
+            task["canonical_ids_at_claim"] = canonical_ids()
         candidate_id = task.get("candidate_id")
+        candidate = None
         if candidate_id:
             candidates = load(CANDIDATES)
             before_candidates = [dict(row) for row in candidates]
@@ -273,7 +356,10 @@ def claim(
             )
         else:
             write_jsonl(TASKS, tasks)
-        return task
+        result = dict(task)
+        result.pop("canonical_ids_at_claim", None)
+        result["task_brief"] = build_task_brief(task, candidate)
+        return result
 
 
 def renew(task_id: str, agent: str, claim_token: str, lease_minutes: int) -> dict:
@@ -299,7 +385,9 @@ def run_gate() -> None:
         [sys.executable, "-m", "ruff", "check", "."],
     ]
     for command in commands:
-        result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, timeout=120, check=False)
+        # 300s: the full pytest suite takes ~120s on slow Windows filesystems,
+        # so a 120s subprocess timeout made the gate fail on passing tests.
+        result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, timeout=300, check=False)
         if result.returncode:
             raise RuntimeError(f"release gate failed: {' '.join(command)}\n{result.stdout}\n{result.stderr}")
 
@@ -400,15 +488,21 @@ def close_candidate(candidate_id: str, status: str, records: list[str], note: st
         return candidate
 
 
-def validate_touched_record(canonical, outcome: str = "updated") -> None:
-    from validate import EVIDENCE_PATH
+def validate_touched_record(canonical, outcome: str = "updated", *, is_new: bool = False) -> None:
+    from validate import EVIDENCE_PATH, is_precise_evidence_path
 
-    safety_demotion = outcome == "contested" and canonical.data.get("status") == "contested"
+    safety_demotion = not is_new and outcome == "contested" and canonical.data.get("status") == "contested"
     for evidence in canonical.data.get("evidence", []):
         invalid_paths = [path for path in evidence.get("supports", []) if not EVIDENCE_PATH.match(str(path))]
         if invalid_paths and not safety_demotion:
             raise RuntimeError(
                 f"{canonical.id}: touched evidence {evidence.get('id')} has non-field support paths {invalid_paths}"
+            )
+        imprecise_paths = [path for path in evidence.get("supports", []) if not is_precise_evidence_path(path)]
+        if imprecise_paths and not safety_demotion:
+            raise RuntimeError(
+                f"{canonical.id}: touched evidence {evidence.get('id')} requires precise field support paths; "
+                f"replace {imprecise_paths} with schema-backed paths such as assignment.rule"
             )
         if evidence.get("verification_status") not in {"verified", "reported"}:
             continue
@@ -457,6 +551,17 @@ def complete(
                 raise RuntimeError("only a screen candidate outcome may name a candidate ID")
             if task.get("canonical_digest_at_claim") != canonical_digest():
                 raise RuntimeError("screen tasks cannot modify canonical variation files")
+        has_canonical_baseline = "canonical_ids_at_claim" in task
+        claimed_ids = set(task.get("canonical_ids_at_claim") or [])
+        current_ids = set(canonical_ids())
+        if has_canonical_baseline:
+            deleted_ids = sorted(claimed_ids - current_ids)
+            if deleted_ids:
+                raise RuntimeError(f"canonical records cannot be deleted during a task: {deleted_ids}")
+        new_ids = current_ids - claimed_ids if has_canonical_baseline else set()
+        undeclared_new_ids = sorted(new_ids - set(records))
+        if undeclared_new_ids:
+            raise RuntimeError(f"new canonical records must be declared at completion: {undeclared_new_ids}")
     missing = [record for record in records if not (ROOT / "variations" / f"{record}.md").exists()]
     if missing:
         raise RuntimeError(f"touched canonical records do not exist: {missing}")
@@ -466,7 +571,18 @@ def complete(
         canonical = read_frontmatter(ROOT / "variations" / f"{record_id}.md")
         if (canonical.data.get("provenance") or {}).get("task_id") != task_id:
             raise RuntimeError(f"{record_id}: canonical provenance must name task {task_id}")
-        validate_touched_record(canonical, outcome)
+        if record_id in new_ids:
+            status = canonical.data.get("status")
+            if status == "contested" and outcome != "contested":
+                raise RuntimeError(f"{record_id}: a new contested record requires outcome contested")
+            if status in {"grounded", "design-documented"} and outcome not in {"created", "consolidated"}:
+                raise RuntimeError(f"{record_id}: a new active canonical record requires outcome created or consolidated")
+            if status not in {"grounded", "design-documented", "contested"}:
+                raise RuntimeError(
+                    f"{record_id}: new canonical records must be grounded or design-documented; "
+                    "keep unresolved knowledge in the linked candidate and finish blocked or skipped"
+                )
+        validate_touched_record(canonical, outcome, is_new=record_id in new_ids)
     if gate:
         run_gate()
     with workspace_lock("task-queue"):
@@ -479,7 +595,9 @@ def complete(
         task.update({"status": "completed", "outcome": outcome, "records_touched": records, "finished_at": timestamp()})
         if candidate_id:
             task["candidate_id"] = candidate_id
-        for key in ("lease_expires_at", "claim_token", "heartbeat_at"):
+        for key in (
+            "lease_expires_at", "claim_token", "heartbeat_at", "canonical_ids_at_claim", "canonical_digest_at_claim",
+        ):
             task.pop(key, None)
         event = {
             "id": f"run-{uuid.uuid4().hex[:12]}", "task_id": task_id, "agent": agent, "stage": task["stage"],
@@ -537,8 +655,11 @@ def fail(task_id: str, agent: str, claim_token: str, reason_code: str, reason: s
         before_candidates = [dict(row) for row in candidates]
         task = find(tasks, task_id)
         assert_active_claim(task, agent, claim_token, "fail")
+        assert_canonical_workspace_restored(task, "fail")
         task.update({"status": "failed", "reason_code": reason_code, "reason": reason, "retryable": retryable, "finished_at": timestamp()})
-        for key in ("lease_expires_at", "claim_token", "heartbeat_at"):
+        for key in (
+            "lease_expires_at", "claim_token", "heartbeat_at", "canonical_ids_at_claim", "canonical_digest_at_claim",
+        ):
             task.pop(key, None)
         runs.append({
             "id": f"run-{uuid.uuid4().hex[:12]}", "task_id": task_id, "agent": agent, "stage": task["stage"],
@@ -562,9 +683,13 @@ def release(task_id: str, agent: str, claim_token: str, note: str | None) -> dic
         before_tasks, before_candidates = [dict(row) for row in tasks], [dict(row) for row in candidates]
         task = find(tasks, task_id)
         assert_active_claim(task, agent, claim_token, "release")
+        assert_canonical_workspace_restored(task, "release")
         task["status"] = "pending"
         task["release_note"] = note
-        for key in ("claimed_by", "claimed_at", "lease_expires_at", "heartbeat_at", "claim_token"):
+        for key in (
+            "claimed_by", "claimed_at", "lease_expires_at", "heartbeat_at", "claim_token",
+            "canonical_ids_at_claim", "canonical_digest_at_claim",
+        ):
             task.pop(key, None)
         candidate = linked_candidate(candidates, task)
         if candidate:
@@ -587,7 +712,7 @@ def retry(task_id: str) -> dict:
         task["status"] = "pending"
         for key in (
             "reason", "reason_code", "retryable", "finished_at", "claimed_by", "claimed_at", "claim_token",
-            "lease_expires_at", "heartbeat_at",
+            "lease_expires_at", "heartbeat_at", "canonical_ids_at_claim", "canonical_digest_at_claim",
         ):
             task.pop(key, None)
         candidate = linked_candidate(candidates, task)
@@ -614,10 +739,14 @@ def reclaim_expired() -> dict:
             expiry = parse_time(task.get("lease_expires_at"))
             if expiry is None or expiry > now():
                 continue
+            assert_canonical_workspace_restored(task, "reclaim")
             task["status"] = "pending"
             task["reclaimed_from"] = task.pop("claimed_by", None)
             task["reclaimed_at"] = timestamp()
-            for key in ("claimed_at", "lease_expires_at", "heartbeat_at", "claim_token"):
+            for key in (
+                "claimed_at", "lease_expires_at", "heartbeat_at", "claim_token",
+                "canonical_ids_at_claim", "canonical_digest_at_claim",
+            ):
                 task.pop(key, None)
             reclaimed.append(task["id"])
             candidate = linked_candidate(candidates, task)

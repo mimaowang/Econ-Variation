@@ -1,18 +1,18 @@
 ---
 schema_version: 2
 id: china-household-responsibility-system-growth
-name: Staggered Province-Level Adoption of the Household Responsibility System and Its Impact on Agricultural Growth in China
-  (1978–1984)
+name: Province-Year Household Responsibility System Conversion Intensity in China's Agricultural Growth Accounting (1970–1987)
 aliases:
 - HRS agricultural growth Lin 1992
 - 家庭联产承包责任制 农业增长
 - decollectivization productivity China
 - Lin rural reforms AER
 - household responsibility system total factor productivity
+- province-year HRS conversion share
 
 status: extracted
 provenance:
-  task_id: legacy-untracked
+  task_id: task-4bb8995b2384
 scope:
   country: China
   regions:
@@ -23,7 +23,7 @@ scope:
   - productivity
   - land
   - structural-transformation
-  variation_type: staggered-rollout
+  variation_type: continuous-exposure
   knowledge_role: china-variation
   china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
     research.
@@ -37,12 +37,8 @@ identity:
   - Central Committee Document No. 1 (1982, 1983, 1984)
   - provincial HRS implementation directives
   - agricultural reform experimental zone approvals
-  implementation_regime: The HRS was initially experimented with in poor agricultural regions (Anhui, Sichuan) starting in
-    1978, then progressively authorized and adopted by provinces across China between 1978 and 1984; adoption timing varied
-    by province based on local political conditions and central authorization
-  assignment_mechanism: Province-level HRS adoption timing was driven by a combination of central authorization, local experimentation,
-    and political bargaining; early-adopting provinces were typically those with poor agricultural performance and strong
-    local leadership willing to experiment with reform
+  implementation_regime: '[E1, reported claim] A small number of production teams began household contracting near the end of 1978, initially against central prohibition; official acceptance followed in late 1981, after which adoption became nearly universal by end-1983.'
+  assignment_mechanism: '[E1, reported claim] The paper uses province-year HRS intensity—the proportion of production teams converted to HRS—as a production-function regressor. It describes the institutional shift as largely spontaneous in response to underlying economic forces; it does not establish a random provincial assignment rule.'
   parent: null
   related_variations:
   - china-land-reform-sex-selection
@@ -52,27 +48,19 @@ timeline:
   effective: null
   implementation_start: 1978
   implementation_end: 1984
-  local_timing: HRS adoption occurred at different times across provinces between 1978 and 1984; the proportion of production
-    teams adopting HRS in each province increased from near zero in 1978 to near 100% by 1984
-  anticipation: The reform direction was not announced in advance; the initial experiments were local and unauthorized; once
-    central authorization was granted in 1980–1982, the pace of adoption accelerated rapidly
+  local_timing: '[E1, reported claim] The panel contains province-year HRS conversion shares from 1970-1987, except that the 1980 province observations are omitted because the number of converted teams by province was unavailable. National HRS prevalence rose from 1 percent in 1979 to 98 percent by end-1983.'
+  anticipation: '[E1, reported claim] The paper reports initial local experimentation while household contracting was prohibited, subsequent central concession with a poor-region restriction, and full official acceptance in late 1981. It does not support a clean no-anticipation assumption.'
   last_verified: '2026-07-13'
 assignment:
   unit: Province or province-year
-  treated: Provinces that adopted HRS in a given year; treatment intensity can be measured as the proportion of production
-    teams (or households) within the province that had adopted HRS
-  comparison_pool: Provinces that had not yet adopted HRS; the pre-reform period in each province; cross-province variation
-    in the timing and pace of adoption
-  rule: A province is treated when the HRS is implemented in its constituent production teams, measured by the share of teams
-    adopting HRS in each province-year; the reform shifted production incentives from collective to household level
+  treated: '[E1, reported claim] There is no binary treated province in the paper''s baseline. Exposure is higher in province-years with a larger share of production teams converted to HRS.'
+  comparison_pool: '[E1, reported claim] The production-function coefficient uses lower versus higher province-year conversion shares, within and across provinces conditional on province dummies and regressors; it is not a designated never-treated or not-yet-treated control group.'
+  rule: '[E1, reported claim] The regression treatment is the share of a province''s production teams converted to HRS, not a clean province-level adoption date; it proxies institutional change from collective-team production to household contracts.'
   intensity: Continuous — the proportion of production teams or households within each province that had adopted HRS in each
     year, from 0 to 1
   exemptions: []
-  compliance: Adoption was top-down once authorized locally; provincial authorities were generally responsive to central directives
-    and household demand for reform, with near-universal adoption achieved by 1984
-  exposure_construction: Code each province-year with the proportion of production teams (or households) that had adopted
-    HRS; the coefficient on this proportion in a production function framework identifies the contribution of decollectivization
-    to agricultural output growth
+  compliance: '[E1, reported claim] HRS diffusion was initially local and later officially accepted; national adoption was about 98 percent of production teams by end-1983. The paper does not establish a uniform top-down compliance process.'
+  exposure_construction: '[E1, reported claim] Use province-year production-team HRS conversion share in the production function. Exclude 1980 or separately source a defensible province-level HRS measure, because the paper omits that year for missing province conversion data.'
   required_identifiers:
   - province code
   - year
@@ -110,64 +98,48 @@ research_compatibility:
   - post-1990 agricultural growth (the HRS effect was largely a one-time productivity improvement)
   - urban or industrial outcomes
 design:
+  claim_type: causal
   affordances:
-  - staggered provincial adoption of HRS
+  - province-year HRS conversion intensity
   - rich province-level panel data on agricultural inputs and outputs
-  - clear pre- and post-reform comparison
-  - well-documented reform timeline across provinces
+  - pre-reform province panel for specification checks
   candidate_designs:
   - production function approach with HRS adoption share as a shift variable
-  - difference-in-differences comparing early-adopting and late-adopting provinces
   - decomposition of output growth into decollectivization effect
   - price effect
   - and input accumulation effect
-  identifying_variation: The staggered adoption of HRS across Chinese provinces between 1978 and 1984, combined with variation
-    in the share of production teams adopting HRS within each province over time; the identifying assumption is that the timing
-    and pace of HRS adoption is uncorrelated with other province-specific shocks to agricultural productivity
+  identifying_variation: '[E1, reported claim] Within the province panel, the HRS-team share changes rapidly during 1979-1983 and enters a production function alongside inputs, national price variables, crop-pattern and cropping-intensity measures, a trend, and province dummies. It is an observational production-function design, not randomized staggered adoption.'
   assumptions:
-  - HRS adoption timing is not driven by factors that also independently affect agricultural output trends
-  - conditional on province fixed effects; the production function model correctly separates the incentive effect of HRS from
-    the effects of input changes and price reforms; there are no other province-specific reforms during 1978–1984 that confound
-    the HRS effect
+  - conditional on province effects and included controls, HRS intensity is not standing in for omitted province-year productivity shocks
+  - the production-function specification separates institutional, price, input, crop-pattern, cropping-intensity, and trend effects sufficiently for the reported decomposition
   diagnostics:
-  - Test for pre-existing output trends in early-adopting vs late-adopting provinces
-  - examine robustness to alternative measures of HRS adoption (proportion of teams vs share of sown area)
-  - compare production function estimates before and after the reform period
-  - test for structural breaks in the output-input relationship around the time of HRS adoption
-  primary_strategy: Province-level production function estimation with HRS adoption share as a shift variable; growth accounting
-    decomposition of output growth into decollectivization effect, price effect, input growth, and residual TFP change
+  - assess sensitivity to alternative input and functional-form specifications reported by the paper
+  - test sensitivity to excluded 1980 province observations and the very short diffusion window
+  - inspect whether national price indices and unobserved contemporaneous changes remain separable from HRS intensity
+  primary_strategy: '[E1, reported claim] Province-level Cobb-Douglas production-function estimation with province dummies, HRS team share, national price measures, crop-pattern and cropping-intensity measures, a time trend, and conventional inputs; the paper uses the fitted components for growth accounting.'
   estimand: The causal effect of the recorded exposure on Gross agricultural output value (constant prices), total factor
     productivity (TFP) in agriculture, output per unit of input, conditional on the stated design assumptions.
-  treatment_variable: Province-year proportion of production teams adopting HRS; separate indicator for the post-1978 price
-    reform period
-  comparison_logic: Pre-reform (1970–1978) vs reform period (1979–1984) within provinces; early-adopting vs late-adopting
-    provinces
-  estimation_notes: Province-level production function estimation with HRS adoption share as a shift variable; growth accounting
-    decomposition of output growth into decollectivization effect, price effect, input growth, and residual TFP change
+  treatment_variable: '[E1, reported claim] Province-year proportion of production teams converted to HRS; price controls are national price ratios rather than a simple post-1978 indicator.'
+  comparison_logic: '[E1, reported claim] The coefficient is identified from within- and between-province variation in HRS team shares in the 1970-1987 panel (with 1980 omitted), conditional on province effects and included regressors; the paper is not framed as an early-versus-late DID.'
+  estimation_notes: '[E1, reported claim] Province-level production function estimation with HRS conversion share as a shift variable; growth accounting decomposes fitted output growth into decollectivization, price, input, and residual components. It is not a staggered-DID estimator.'
 threats:
 - type: endogenous-adoption-timing
-  basis: documented
-  condition: Provinces with poor agricultural performance or strong local reformers adopted HRS earlier; if these provinces
-    had different underlying growth trajectories (regression to the mean), the estimated HRS effect may be biased upward
+  basis: inferred
+  condition: '[E1, reported claim] The paper describes local and largely spontaneous diffusion rather than random assignment. If province-specific conditions both speeded conversion and changed agricultural productivity, the HRS coefficient may combine institutional change with those shocks.'
   evidence_refs:
   - E1
   possible_diagnostics:
-  - control for pre-reform agricultural performance
-  - use instrumental variables for HRS adoption timing (e.g.
-  - political connections to central leadership)
-  - test for convergence effects in the pre-reform period
-  - decomposition of growth into transitional and permanent components
+  - test sensitivity to province-specific trends or alternative modern designs where data permit
+  - examine pre-reform province trajectories and documented adoption determinants
 - type: concurrent-price-reforms
   basis: documented
-  condition: Agricultural procurement prices were also adjusted upward during 1978–1984, and both the HRS and price reforms
-    were implemented simultaneously; separating the contribution of each reform to agricultural growth is empirically challenging
+  condition: '[E1, reported claim] National procurement and market price measures move during the same period as HRS diffusion. Separate regressors aid decomposition but cannot by themselves prove that simultaneous institutional and price changes are fully separable.'
   evidence_refs:
   - E1
   possible_diagnostics:
   - include input prices and procurement prices in the production function framework
-  - exploit within-province variation in the timing of price changes relative to HRS adoption
-  - compare output effects for crops with different price changes
-  - use only the variation in HRS adoption after controlling for price effects
+  - test sensitivity to price specifications and crop composition controls
+  - distinguish national price variation from province-specific HRS intensity in interpretation
 - type: measurement-error
   basis: inferred
   condition: The share of production teams adopting HRS may be measured with error, particularly in provinces where adoption
@@ -209,10 +181,7 @@ empirical_requirements:
   - province code
   - year
   - HRS adoption share (proportion of teams)
-  - post-reform indicator
-  treatment_source: China Statistical Yearbooks (provincial agricultural statistics); Chinese agricultural census; provincial
-    agricultural statistical compilations; Ministry of Agriculture records on HRS adoption by province; provincial yearbooks
-    for agriculture
+  treatment_source: '[E1, reported claim] Province conversion shares: Research Center for Rural Development of the State Council (1981–1982) and China Agricultural Yearbooks (1984/1985 volumes for 1983–1984). The paper treats 1979 as effectively zero and omits 1980 because province shares are unavailable; other agricultural series come from the cited statistical sources.'
   measurement_risks:
   - Provincial agricultural output data may be affected by changes in reporting standards during the reform period
   - input data quality may vary across provinces and over time
@@ -225,13 +194,54 @@ evidence:
   url: https://doi.org/10.2307/2117601
   date: 1992
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - decomposition analysis
-  - productivity measurement
+  - scope.china_relevance
+  - identity.instrument
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - timeline.anticipation
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.rule
+  - assignment.intensity
+  - assignment.compliance
+  - assignment.exposure_construction
+  - design.claim_type
+  - design.primary_strategy
+  - design.identifying_variation
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.estimation_notes
+  - design.assumptions
+  - design.diagnostics
+  - threats.condition
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.time_start
+  - empirical_requirements.time_end
+  - empirical_requirements.required_fields
+  - empirical_requirements.required_identifiers
+  - empirical_requirements.treatment_key
+  - empirical_requirements.treatment_source
+  - empirical_requirements.measurement_risks
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
   verification_status: verified
+  access_level: full-text
+  locator: 'Inspected full text: pp. 34-38 (institutional evolution and national HRS shares), pp. 40-42 (28-province 1970-1987 panel, omitted 1980 HRS observations, variables and production function), pp. 43-48 (estimates and decomposition).'
 design_applications:
 - paper: Rural Reforms and Agricultural Growth in China
   doi: 10.2307/2117601
@@ -244,21 +254,17 @@ design_applications:
     of input
   data_used:
   - China Statistical Yearbooks for provincial agricultural output and inputs
-  - Ministry of Agriculture records on HRS adoption by province
+  - '[E1, reported claim] Research Center for Rural Development of the State Council (province conversion shares for 1981–1982) and China Agricultural Yearbooks (1984 and 1985 volumes, shares for 1983–1984)'
   - Provincial agricultural statistical compilations
   - Agricultural procurement price indices from State Price Bureau
-  treatment_encoding: Province-year proportion of production teams adopting HRS; separate indicator for the post-1978 price
-    reform period
-  comparison: Pre-reform (1970–1978) vs reform period (1979–1984) within provinces; early-adopting vs late-adopting provinces
+  treatment_encoding: '[E1, reported claim] Province-year proportion of production teams converted to HRS; 1980 is excluded because province conversion shares were unavailable. National price ratios enter separately; there is no generic post-1978 treatment indicator.'
+  comparison: '[E1, reported claim] Lower versus higher conversion intensity across the province-year panel, conditional on province effects and production-function controls; not early- versus late-adopter DID.'
   empirical_design: Province-level production function estimation with HRS adoption share as a shift variable; growth accounting
     decomposition of output growth into decollectivization effect, price effect, input growth, and residual TFP change
   assumptions:
-  - HRS adoption is conditionally exogenous to province-specific productivity shocks after controlling for province fixed
-    effects; the production function has constant returns to scale and is correctly specified; input quality and utilization
-    rates are constant over time
+  - '[E1, reported claim] Conditional on province effects and included regressors, HRS conversion intensity is not proxying for omitted province-year productivity shocks; the production function is sufficiently specified for the reported decomposition.'
   threats_addressed:
-  - endogenous adoption via province fixed effects and pre-reform controls; price reform confounding via separate price indices
-    and decomposition; measurement error via sensitivity analysis and alternative input measures
+  - '[E1, reported claim] Province effects, national price measures, crop composition, cropping intensity, and conventional inputs enter the specification; these controls do not independently establish exogeneity of conversion intensity.'
   evidence_refs:
   - E1
 readiness_blockers:
@@ -268,28 +274,28 @@ method_transfer: null
 ---
 ## Institutional Background
 
-Before 1978, Chinese agriculture was organized under the collective farming system, with production teams farming collectively and distributing output according to work points. This system provided weak incentives for individual effort because workers could not claim the residual output from their labor. Agricultural output grew slowly between 1952 and 1978, and per capita food consumption barely increased. The reforms that began in 1978 introduced the Household Responsibility System (HRS), which assigned land use rights to individual households and allowed them to retain the residual output after meeting procurement quotas. This dramatically changed the incentive structure facing China's agricultural producers. [E1]
+[E1, reported claim] Before the reform, the production team was the basic farming unit. Near the end of 1978, some teams began contracting collectively owned land, resources, and output quotas to households despite central prohibition. The paper reports that official acceptance came in late 1981 and that 98 percent of production teams had adopted HRS by the end of 1983. This record has not independently inspected the central directives, so the institutional chronology remains paper-reported.
 
 ## What Changed
 
-The shift from collective to household-based farming between 1978 and 1984 abolished the commune system, assigned land use rights to households, and gave households residual claim on output above the state procurement quota. This reform improved agricultural productivity by aligning individual effort with household reward. Lin (1992) estimates that decollectivization alone accounted for approximately half of the 42.2% growth in agricultural output during 1978–1984 — raising total factor productivity by 20 percentage points through improved incentives alone. Price adjustments accounted for an additional 15–20% of output growth, with the remainder from increased input use. [E1]
+[E1, reported claim] Under HRS, collectively owned land was contracted to households for up to 15 years. In the paper's production-function decomposition, decollectivization accounts for about half of the reported 1978-1984 crop-output growth, while price adjustments also contribute through input response. This is a model-based decomposition, not a direct experimental estimate of a separately randomized policy shock.
 
 ## Implementation and Assignment
 
-The HRS was not implemented nationally on a single date. It began with local experiments in poor counties in Anhui and Sichuan in 1978–1979, was progressively authorized by the central government in 1980–1982, and was rapidly adopted across all provinces by 1984. The paper exploits the resulting cross-province and over-time variation in HRS adoption — measured as the proportion of production teams in each province that had adopted the system — to identify the causal effect of decollectivization on agricultural output. The production function framework includes province fixed effects to absorb time-invariant differences across provinces and year effects to absorb common national shocks. [E1]
+The paper uses 28-province annual observations from 1970-1987 and an HRS variable equal to the province's share of converted production teams. [E1, reported claim] The 1980 province observations are dropped because those conversion counts are unavailable. This is meaningful spatial and temporal intensity variation, but it does not supply a known external assignment rule; province dummies absorb time-invariant differences, while national price variables and a trend address only some concurrent changes.
 
 ## Why This Creates Empirical Variation
 
-The staggered province-level adoption of HRS provides both cross-sectional variation (different provinces adopted at different times) and time-series variation (the share of teams within a province adopting HRS increased from zero to near 100% over 1978–1984). This creates the variation needed to identify the effect of decollectivization separately from other reforms and input changes, within a standard production function framework. The key identifying assumption is that the timing and pace of HRS adoption are not correlated with province-specific productivity shocks — that is, provinces did not adopt HRS precisely because they were expecting faster or slower agricultural growth. [E1; analytical inference]
+The coefficient is recovered from variation in provincial conversion shares after conditioning on inputs, province dummies, national price ratios, crop composition, cropping intensity, and trend. [E1, reported claim] It supports an evidence-bounded causal interpretation only if remaining province-year productivity shocks are not correlated with HRS conversion; the historical account of spontaneous diffusion makes that a substantive assumption, not an institutional fact.
 
 ## Identification Risks
 
-The main identification challenge is that HRS adoption was not random: provinces with worse agricultural performance and stronger reform-oriented leadership adopted earlier. If these provinces had systematically different growth trajectories — for example, poor provinces catching up to rich ones — the estimated HRS effect could be biased. The paper addresses this by controlling for province fixed effects and pre-reform conditions. A second challenge is the simultaneity of HRS with agricultural price reforms, which also raised output by improving terms of trade for agriculture. The paper handles this by including price indices in the production function and by decomposing total output growth into the separate contributions of decollectivization, price adjustment, input growth, and technological change. [E1; analytical inference]
+The main identification challenge is endogenous diffusion: the paper describes HRS as evolving largely in response to underlying economic forces, so a province's conversion share can be correlated with unobserved province-year productivity conditions. [E1, reported claim] Province fixed effects remove time-invariant differences, but do not by themselves resolve time-varying selection. A second challenge is simultaneity with agricultural price reforms and other changes. The paper includes price measures and decomposes fitted output growth, which is useful accounting structure but does not turn the components into separately randomized shocks. [E1; analytical inference]
 
 ## Data Requirements
 
-The analysis uses annual provincial panel data (1970–1987) for 28 Chinese provinces, covering: gross agricultural output value at constant prices, sown area, agricultural labor, fertilizer use (nutrient weight), mechanical power (tractors), draft animal numbers, and the proportion of production teams adopting HRS. Agricultural procurement price indices are used to capture price reform effects. All data come from Chinese statistical yearbooks and provincial agricultural statistical compilations. The key variable is the province-year HRS adoption share, derived from Ministry of Agriculture records. [E1]
+The analysis uses annual provincial panel data (1970–1987) for 28 Chinese provinces, covering gross agricultural output at constant prices, sown area, agricultural labor, fertilizer use, mechanical and draft-animal power, and the proportion of production teams adopting HRS. [E1, reported claim] The paper obtains province conversion shares for 1981–1982 from the State Council's Rural Development Research Center and for 1983–1984 from China Agricultural Yearbooks; it excludes 1980 because province-level conversion information was unavailable. A new application therefore needs a documented province-year intensity series rather than a generic post-reform dummy.
 
 ## Evidence Notes
 
-E1 is the published AER article. It is one of the most influential papers in the empirical literature on Chinese agricultural reform. Its central finding — that decollectivization raised agricultural TFP by approximately 20% and accounted for half of output growth — has been widely cited and confirmed by subsequent research. The paper also found that price adjustments and input growth accounted for the remaining growth, and that once the transitional productivity gains from HRS were realized (by 1984), agricultural output growth slowed and became more dependent on price and technological factors.
+E1 is the published AER article and directly documents its own production-function construction and growth-accounting decomposition. Its reported conclusion is that the fitted decollectivization component accounts for roughly half of 1978–1984 output growth. That number is a model-dependent decomposition, not a transportable treatment effect or independent confirmation that the conversion path was exogenous. The underlying central directives and full province conversion roster have not been independently reconstructed here.

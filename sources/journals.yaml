@@ -4,6 +4,7 @@ families:
   economics_top_five: [American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, Review of Economic Studies]
   business_lists: [UTD24, FT50]
   quality_filters: [ABS 3, ABS 4, SSCI Q1]
+  owner_fallback: SSCI Q2 or above — when tier guidance is unclear for a candidate journal, the owner directs that SSCI Q2-and-above journals are acceptable discovery lanes (recorded 2026-08-14; still a discovery prior, never evidence).
   field_priorities:
     - labor
     - development

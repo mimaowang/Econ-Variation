@@ -20,7 +20,7 @@ Method: EconPapers/RePEc abstract search, IDEAS subject search, and web cross-ch
 
 | # | Citation | Tentative role | Why it may fit | Why it may be skipped |
 |---|---|---|---|---|
-| 1 | **Bloom, Liang, Roberts & Ying (2015, QJE)** — "Does Working from Home Work? Evidence from a Chinese Experiment" | `china-variation` | RCT of work-from-home at Ctrip; clean, randomized assignment; China firm-level. | **Resolved** as `variations/china-ctrip-work-from-home-experiment.md`. Primary institutional evidence remains paper-only. |
+| 1 | **Bloom, Liang, Roberts & Ying (2015, QJE)** — "Does Working from Home Work? Evidence from a Chinese Experiment" | `china-variation` | Ctrip Shanghai WFH eligibility assigned by a public draw selecting birthday parity. | **Grounded, conditional** as `variations/china-ctrip-work-from-home-experiment.md`. Original AEA trial 276 registration recovered 2026-10-03; retrospectively registered in 2017, not prospectively preregistered. |
 | 2 | **Feenstra & Hanson (2005, QJE)** — "Ownership and Control in Outsourcing to China" | `china-variation` | Processing-trade ownership structures across Chinese sectors/regions. | **Resolved** as `variations/china-processing-trade-ownership-control.md`; treated as a structural `other` variation with customs-regime primary evidence. |
 | 3 | **Hsieh & Klenow (2009, QJE)** — "Misallocation and Manufacturing TFP in China and India" | `transferable-method` | Canonical misallocation measurement; widely applied to Chinese plant data. | **Resolved** as `variations/hsieh-klenow-plant-misallocation-method.md`. |
 | 4 | **Jin & Qian (1998, QJE)** — "Public Versus Private Ownership of Firms: Evidence from Rural China" | `china-variation` | Cross-province variation in TVE vs private ownership in rural China. | Older data; institutional assignment mechanism needs careful reconstruction. |
@@ -43,6 +43,24 @@ Method: EconPapers/RePEc abstract search, IDEAS subject search, and web cross-ch
 
 ## Immediate priority
 
+The priority list below is historical. On 2026-10-03, audit task `task-52aecbc523a7`
+recovered the original public AEA trial 276 history (`/trials/276/history/16533`,
+DOI `10.1257/rct.276-1.0`) and re-inspected the published QJE article and author-hosted
+replication script. The archive supports the Shanghai eligibility funnel, public parity
+draw, 131/118 arms and December 6, 2010-August 14, 2011 intervention. Its first
+registration was April 12, 2017; it is not a prospective protocol or an independent
+lottery audit. The existing record, not a duplicate, now has conditional grounded
+status. The audit also removes an invented November 1 announcement date, distinguishes
+ITT from LATE, and narrows the default data contract to the paper's weekly performance
+application. One lottery flipping birthday groups must not be represented as 249
+independent draws; the separate 2021 hybrid-work experiment remains a different variation.
+
 1. Resolve **Bloom et al. (2015)** first: the Ctrip WFH experiment offers a randomized, China-specific treatment with a well-documented assignment mechanism.
 2. Then decide whether **Feenstra & Hanson (2005)** is better recorded as a `china-variation` or as a `transferable-method`.
 3. Relegate purely structural/measurement papers (#3, #7, #9) to method-transfer or skip unless the user explicitly asks for them.
+
+## Disposition update: 2026-08-11
+
+The table above is a discovery ledger, not a live queue. The earlier immediate-priority items have already been reconciled: Bloom et al., Feenstra & Hanson, and Hsieh & Klenow are represented by the files named above; Jin & Qian, Che & Qian, and Groves et al. were screened and skipped because the papers do not expose a recoverable regional assignment under this campaign; and the Nanchang interfirm-network paper (`10.1093/qje/qjx049`) was screened and resolved as blocked because the independently inspected implementation and peer-construction records were not recoverable. The later JPE/QJE sweep also screened and skipped the Investor Memory field-survey paper (`10.1093/qje/qjaf035`), the U.S.–China trade-war structural paper (`10.1093/qje/qjae041`), and the Fractured-Land cross-country paper (`10.1093/qje/qjad003`). These outcomes live in the task and candidate ledgers; no item should be treated as “in progress” merely because its original discovery row still describes a possible fit.
+
+For the Top-5 China regional/urban campaign, the QJE lane is audited through 2026-08-11. Future work should reopen a bounded task only when a new archive endpoint or inspectable source changes the evidence boundary; it should not promote the remaining method-transfer list into China variations by default.

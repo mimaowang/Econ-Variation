@@ -1,287 +1,429 @@
 ---
 schema_version: 2
 id: china-shipbuilding-industrial-subsidies
-name: Detection and Impact of Industrial Subsidies in China's Shipbuilding Industry
+name: Model-Implied Operating-Cost Support for Chinese Handysize Shipyards after 2006
 aliases:
 - Kalouptsidi Chinese shipbuilding subsidies
-- China shipbuilding industrial policy REStud
-
-status: extracted
+- Chinese shipbuilding industry cost wedge
+- 中国造船业产业支持与成本楔子
+status: grounded
 provenance:
-  task_id: legacy-untracked
+  task_id: task-7a479c3cf171
 scope:
   country: China
   regions:
-  - China and global shipbuilding markets; China
-  - Japan
-  - South Korea
-  - and European shipbuilding industries
+  - Mainland Chinese shipyards in a world Handysize bulk-carrier market
+  - Japan, South Korea, and Europe are model comparison producers, not Chinese treatment units
   domains:
   - industrial-policy
   - international-trade
-  - public-economics
   - firm-dynamics
+  - industrial-organization
   variation_type: continuous-exposure
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: >
+    The policy bundle targeted Chinese shipbuilding, and the published paper
+    estimates a post-2006 cost wedge for Chinese Handysize bulk-carrier yards
+    relative to foreign yards. The wedge is China-facing, but is inferred from
+    a structural model rather than observed firm-level subsidy payments.
 identity:
-  instrument: Government subsidies to China's shipbuilding industry, including state-directed lending, export credits, loan
-    guarantees, and direct subsidies that reduced shipyard costs by 13–20% between 2006 and 2012, creating exogenous variation
-    in shipbuilding costs across countries and over time
-  authority: Chinese central government (State Council, National Development and Reform Commission, Ministry of Industry and
-    Information Technology, China Development Bank) and provincial/local governments
+  instrument: >
+    China-specific post-2006 reduction in Handysize bulk-carrier shipyard
+    operating costs, interpreted by Kalouptsidi (2018) as consistent with
+    industrial subsidies. The empirical object is a model-implied production-
+    cost wedge, not a documented grant, loan, or subsidy entitlement for each
+    yard. New Chinese yard capacity is a separate intervention in the same
+    paper's counterfactual and must not be collapsed into the operating-cost wedge.
+  authority: >
+    State Council-approved shipbuilding development plan, drafted by NDRC and
+    COSTIND, with sector support implemented through relevant fiscal, financial,
+    tax, insurance and local bodies. The study does not observe which authority
+    paid an operating subsidy to each sampled yard.
   legal_identifiers:
-  - Shipbuilding Industry Medium and Long-term Development Plan (2006-2015)
-  - Several Opinions on Accelerating the Development of the Shipbuilding Industry (2006)
-  - Ship Industry Adjustment and Revitalization Plan (2009)
-  - Made in China 2025 (2015) – shipbuilding component
-  implementation_regime: Subsidies were implemented through multiple channels including policy bank lending at below-market
-    rates, export credits, loan guarantees, interest rate subsidies, government-directed consolidation, and direct cash subsidies
-    to shipyards; the exact magnitude and form of subsidies varied over time and across firms
-  assignment_mechanism: Subsidy policy was determined at the national level but implemented through state-owned banks and
-    local governments; exposure varies across countries (China vs. competitors), over time (pre- and post-subsidy periods),
-    and across ship types depending on Chinese production specialization
+  - 船舶工业中长期发展规划（2006-2015年）, State Council approved in August 2006; NDRC public edition
+  - 船舶工业调整和振兴规划, NDRC 2009-06-09, a crisis-era successor package rather than the paper's 2006 breakpoint
+  implementation_regime: >
+    The 2006-2015 plan set shipbuilding capacity and product goals, prioritized
+    the Bohai, Yangtze-mouth, and Pearl-mouth bases, specified project approval,
+    and called for fiscal, financial, tax, leasing, insurance, working-capital
+    credit and export-financing support. These instruments were not one common
+    measurable transfer. The separate 2009-2011 revitalization plan increased
+    financing and restructuring support while curbing new dock approvals.
+    The paper treats an aggregate Chinese cost shift from 2006 and a surge of
+    new facilities as two modeled interventions; it does not identify the
+    causal effect or receipt of any individual policy instrument.
+  assignment_mechanism: >
+    The official 2006 plan names priority facilities and types of support,
+    with approved projects and qualified enterprises selectively eligible.
+    Actual operating-cost assistance is not observed at yard level. The
+    published model assigns a China x post-2006 cost-function term to Chinese
+    yards in the studied Handysize market and estimates its magnitude from
+    prices, orders, production choices, capacity and industry dynamics.
+    This is an empirical measurement convention, not a legal subsidy rule.
   parent: null
   related_variations: []
 timeline:
-  announcement: '2006-01-01'
-  effective: '2006-01-01'
+  announcement: '2006-08 (State Council approval of the medium- and long-term plan; exact day not established here)'
+  effective: null
   implementation_start: 2006
   implementation_end: 2012
-  local_timing: Implementation varied across subsidy instruments (policy bank lending, export credits, direct subsidies) and
-    firms; the analysis period covers 2006–2012
-  anticipation: The 2006 government plans signaled intent to support shipbuilding, but the full scale of subsidization only
-    became apparent over time as policy banks extended credit and various subsidy programs were rolled out
-  last_verified: '2026-07-13'
+  local_timing: >
+    The model divides the industry into pre-2006 and post-2006 regimes and
+    observes quarterly yard production from Q1 2001 to Q3 2012. The inferred
+    cost wedge covers 2006-2012; this end date is the analysis window, not a
+    verified policy expiry. The paper examines regional onset proxied by first
+    new dock/berth operation precisely because official local subsidy dates
+    were unavailable. The 2009 plan is a later, different policy package.
+  anticipation: >
+    The structural model assumes an unexpected, one-shot, immediate and
+    permanent change in industry expectations at 2006. The plan and prior
+    investment buildup make this a modeling assumption rather than a verified
+    fact about shipyards or buyers.
+  last_verified: '2026-10-02'
 assignment:
-  unit: Shipyard-country-year or ship-type-country-year
-  treated: Chinese shipyards (relative to foreign competitors) after the introduction of shipbuilding subsidies beginning
-    in 2006
-  comparison_pool: Shipyards in other major shipbuilding countries (Japan, South Korea, European countries) that did not receive
-    Chinese subsidies; pre-subsidy periods for Chinese shipyards; variation across ship types with differential Chinese specialization
-  rule: Chinese shipyards received subsidies that reduced their costs by 13–20%; the extent of subsidization is inferred from
-    a structural model that uses data on ship production, prices, entry, exit, and costs across countries
-  intensity: Continuous — the estimated cost reduction (13–20% subsidy equivalent) varies by ship type and over time depending
-    on the intensity of Chinese industrial policy interventions
-  compliance: High for the Chinese government's policy direction; state-owned banks and local governments generally complied
-    with central government directives to support the shipbuilding industry
-  exposure_construction: Estimate cost subsidies using a dynamic structural model of entry, exit, and production; code post-2006
-    Chinese shipyards as potentially subsidized, with the magnitude of the subsidy inferred from the model as the difference
-    between observed costs and costs predicted under competitive conditions
+  unit: Chinese shipyard-quarter in the world Handysize bulk-carrier market
+  treated: >
+    Chinese Handysize-producing yards in the model's post-2006 regime,
+    including entrants and incumbents. This denotes modeled exposure to a
+    China-specific cost shift; observed subsidy receipt by yard is unknown.
+  comparison_pool: >
+    Pre-2006 Chinese cost choices and contemporaneous Japan, South Korea
+    and Europe yards in the same Handysize market, conditional on the model's
+    demand, state variables and country cost terms. Foreign yards are not
+    untreated units in a published DID design.
+  rule: >
+    For the paper's cost function, China-yard indicator times post-2006
+    indicator enters the linear operating-cost term. The plan's project
+    approval and support provisions do not assign the estimated percentage
+    cost reduction uniformly to all yards or distinguish recipients.
+  intensity: >
+    Estimated rather than observed: a 13-20% Chinese operating-cost
+    reduction across specifications, corresponding to US$1.5-4.5 billion
+    over 2006-2012 at observed production. The study does not give a
+    yard-level subsidy rate suitable for direct microdata merging.
+  exemptions:
+  - The empirical cost estimates focus on Handysize bulk carriers; other vessel types appear in descriptive shares, not the same estimated treatment
+  compliance: >
+    Neither payment take-up nor compliance with each finance and support
+    instrument is observed. The paper's inferred wedge must not be read as
+    universal receipt by every Chinese shipyard.
+  exposure_construction: >
+    Reproduce the published object only with a world Handysize yard-quarter
+    panel, new and used ship prices, shipowner-demand states, steel prices,
+    backlogs, capacity and production. Estimate the dynamic demand and
+    shipyard cost system with a China x post-2006 cost term; simulate a
+    no-cost-support counterfactual separately from a no-new-entrants
+    counterfactual. A simple China x post indicator alone is not the
+    paper's causal estimator.
   required_identifiers:
-  - country
-  - shipyard ID
-  - year
-  - ship type
-  - production quantity
-  - price
-  - entry/exit status
-  exemptions: []
-  spillovers: Chinese subsidies led to substantial reallocation of global ship production, with Japanese shipyards losing
-    significant market share; subsidies also affected world ship prices and may have depressed shipyard profits in competitor
-    countries
+  - shipyard ID and country
+  - quarter
+  - ship type restricted to Handysize bulk carriers for the estimated model
+  - ship/vessel ID and age for price transactions
+  spillovers: >
+    Global substitution is intrinsic to the model: Chinese cost reductions
+    and entry alter ship production, ship prices, Japanese market share,
+    freight rates and cargo-shipper surplus. Foreign yards are affected
+    competitors, not insulated no-interference controls.
 research_compatibility:
   outcome_domains:
-  - industrial output
-  - market share
-  - firm entry and exit
-  - production costs
-  - prices
-  - consumer surplus
-  - welfare
-  - trade patterns
+  - shipyard production and global market share
+  - prices, industry costs, and shipper surplus in structural counterfactuals
+  - strategic industrial support and capacity expansion
   affected_populations:
-  - Chinese shipyards
-  - foreign shipyards (Japan
-  - South Korea
-  - Europe)
-  - ship buyers (shipping companies)
-  - workers in shipbuilding industry
+  - Chinese Handysize shipyards
+  - foreign competing Handysize shipyards
+  - shipowners and cargo shippers through the estimated market equilibrium
   mechanism_channels:
-  - cost reduction
-  - credit access
-  - export promotion
-  - industrial consolidation
-  - state-directed investment
-  - production reallocation
+  - inferred operating-cost support
+  - new Chinese yard entry and capacity expansion, separately modeled
+  - production reallocation through dynamic shipbuilding and shipping demand
   best_for:
-  - Studying the effects of industrial subsidies on production reallocation
-  - estimating subsidy pass-through to prices and output
-  - welfare analysis of industrial policy
+  - Model-based evaluation of the aggregate operating-cost wedge and capacity expansion associated with China's 2006 shipbuilding push
+  - Studying global reallocation and welfare under an explicit dynamic world-market model
   not_good_for:
-  - Short-run causal estimation without structural model
-  - micro-level outcomes lacking shipyard-level data
-  - non-tradable sectors
+  - Treating the plan as a randomized or staggered firm-level subsidy grant
+  - A China-versus-foreign-yard DID that ignores shared world prices and demand shocks
+  - Inferring which individual Chinese shipyard received a loan, cash transfer, or 13-20% cost reduction
+  - Treating 2009 credit and capacity controls as the same 2006 intervention
 design:
+  claim_type: structural
   affordances:
-  - cross-country variation in subsidy exposure
-  - time variation (pre vs. post Chinese policy)
-  - cross-ship-type variation
-  - structural model allowing counterfactual simulations
+  - China-specific 2006 break in modeled Handysize production costs
+  - Quarterly yard choices, capacity, backlogs, and world new/used ship prices
+  - Separate counterfactual removal of cost support and new yard entry
   candidate_designs:
-  - structural estimation of dynamic entry/exit model with subsidy detection
-  - difference-in-differences comparing Chinese vs. foreign shipbuilding outcomes
-  - event study around major policy announcements
-  identifying_variation: Variation across countries (China vs. Japan vs. South Korea vs. Europe), across time (before and
-    after 2006 Chinese industrial policy), and across ship types in Chinese production specialization; the structural model
-    identifies subsidies from discrepancies between observed production patterns and those predicted under undistorted competition
+  - Dynamic demand-and-supply estimation of a China x post-2006 cost term
+  - Structural counterfactuals with versus without the inferred cost wedge and new entrants
+  identifying_variation: >
+    Production decisions and new/used ship prices before and after 2006
+    across China and foreign producers, conditional on shipyard capacity,
+    backlog, time-to-build, steel prices and estimated shipping-demand
+    states. The China-post coefficient represents a residual cost shift
+    consistent with subsidies, not a directly randomized policy contrast.
+  primary_strategy: >
+    Estimate shipowner willingness to pay from new and used ship prices,
+    recover yard cost parameters from observed ordered production choices
+    and dynamic optimality conditions, test the China x post-2006 cost term,
+    then simulate market equilibria under no entrants and no interventions.
+    No published firm-level DID or event-study subsidy effect is used.
+  estimand: >
+    Model-implied post-2006 differential change in Chinese Handysize yard
+    operating costs and simulated effects of that cost wedge plus capacity
+    entry on production, prices, costs and shipper surplus, conditional on
+    the structural model and its counterfactual assumptions.
+  treatment_variable: >
+    China x post-2006 term in the estimated cost function; its coefficient
+    is interpreted as an inferred operating-cost reduction. New yard entry
+    is a distinct counterfactual component.
+  comparison_logic: >
+    Chinese pre/post cost function relative to other producer countries
+    within the same world market, after fitting demand and dynamic production
+    choices. The paper's counterfactual holds observed demand and steel
+    states and changes Chinese cost and entry assumptions.
+  estimation_notes: >
+    Main production panel: 192 Handysize yards, including 119 Chinese,
+    Q1 2001-Q3 2012; the cost sample with capacity data has 4,741
+    yard-quarter observations. Table 6 reports a dynamic China-post
+    cost coefficient; Table 7 separately contrasts baseline, no entrants,
+    and no interventions. Other ship types enter descriptive Table 1 only.
   assumptions:
-  - The dynamic model correctly captures firm behavior (entry
-  - exit
-  - production decisions)
-  - the production technology is correctly specified
-  - unobserved cost shocks are orthogonal to policy timing
-  - the subsidy estimates are identified through the model structure and cross-country variation
+  - The structural demand, production cost, expectation and state-transition specifications are adequate for recovering latent costs
+  - Competing China-specific technology or productivity shifts around 2006 do not fully explain the recovered cost break
+  - The model's unexpected one-shot regime change and counterfactual treatment of entrants approximate actual industry expectations
+  - Global demand and steel-price states capture major contemporaneous shocks, including the financial-crisis period
   diagnostics:
-  - Model fit tests
-  - comparison of model predictions to observed moments
-  - sensitivity analysis to alternative model specifications
-  - placebo tests on periods before major subsidy programs
-  primary_strategy: Structural estimation of a dynamic oligopoly model with endogenous entry, exit, and production; reduced-form
-    event studies and difference-in-differences for validation
-  estimand: The causal effect of the recorded exposure on Production quantity, market share, prices, costs, entry, exit, consumer
-    surplus, conditional on the stated design assumptions.
-  treatment_variable: China indicator interacted with post-2006 indicator; subsidy magnitude estimated from structural model
-  comparison_logic: Chinese vs. foreign shipyards before and after subsidy programs began
-  estimation_notes: Structural estimation of a dynamic oligopoly model with endogenous entry, exit, and production; reduced-form
-    event studies and difference-in-differences for validation
+  - Inspect China-year cost coefficients and Japan-post placebo
+  - Check alternative cost curvature, year trends, state transitions and LASSO approximations
+  - Compare baseline simulated production with observed production
+  - Separate existing-yard results from new-entry effects
 threats:
-- type: model-dependence
+- type: latent-policy-measure
   basis: documented
-  condition: The subsidy estimates and welfare conclusions depend on the structural model assumptions about firm behavior,
-    production technology, and market structure
+  condition: >
+    The 13-20% wedge is estimated from behavior and prices, not from observed
+    subsidy transactions; technology, learning or omitted cost changes could
+    partly produce the same pattern.
   evidence_refs:
   - E1
   possible_diagnostics:
-  - sensitivity analysis to modeling assumptions
-  - alternative estimation approaches
-  - comparison with reduced-form evidence
-  - out-of-sample validation
-- type: confounding-policies
-  basis: inferred
-  condition: China's shipbuilding subsidies were part of a broader industrial policy package that included infrastructure
-    investment, technology transfer requirements, and trade policies that may independently affect shipbuilding outcomes
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - control for other Chinese industrial policies
-  - examine heterogeneous effects across subsidy instruments
-  - test for breaks in outcomes around specific policy announcements
-- type: global-financial-crisis
+  - Compare alternative cost functions, timing and placebo country breaks
+- type: simultaneous-capacity-expansion
   basis: documented
-  condition: The 2008 global financial crisis caused a major contraction in world shipbuilding demand and trade, which differentially
-    affected countries and ship types and coincided with intensified Chinese subsidy programs
+  condition: >
+    New Chinese docks and entrants grew sharply around 2005-2006; confusing
+    capacity support with marginal operating-cost support would distort the
+    mechanism and welfare counterfactual.
   evidence_refs:
   - E1
+  - E2
   possible_diagnostics:
-  - control for global demand shocks
-  - compare Chinese and non-Chinese outcomes controlling for time effects
-  - robustness to excluding crisis years
+  - Report no-entrants and no-interventions counterfactuals separately
+- type: demand-and-crisis
+  basis: documented
+  condition: >
+    World shipping demand and steel prices shifted over the 2001-2012
+    window, and 2009 introduced a separate crisis response. A simple
+    before/after comparison would confound these changes.
+  evidence_refs:
+  - E1
+  - E3
+  possible_diagnostics:
+  - Model shipping-demand and steel-price states; examine alternative time specifications
 empirical_requirements:
   contract_version: 1
-  population: Global shipbuilding industry, 1990–2012
-  observation_unit: Shipyard-year or country-ship type-year
-  geography_level: Country (with shipyard-level data)
-  time_start: 1990
+  population: World Handysize bulk-carrier shipyards, including Chinese, Japanese, South Korean and European yards
+  observation_unit: Shipyard-quarter, linked to new/used ship transaction and world-market quarter data
+  geography_level: Shipyard country in a global market
+  time_start: 2001
   time_end: 2012
-  minimum_frequency: annual
+  minimum_frequency: quarterly
   minimum_pre_periods: 5
-  minimum_post_periods: 3
+  minimum_post_periods: 6
   required_fields:
-  - country
-  - shipyard ID
-  - year
-  - ship type
-  - production quantity
-  - price
-  - entry/exit status
-  - shipyard costs
+  - shipyard ID, country, quarter and Handysize vessel type
+  - yard orders or quarterly production, backlog and delivery time
+  - yard entry date, dock/berth count and maximum dock length
+  - new-ship contract dates and prices
+  - used-ship transaction date, price, age and origin
+  - fleet age distribution, shipping demand and steel-plate prices
   required_identifiers:
-  - shipyard ID
-  - country
-  - year
-  - ship type
+  - shipyard ID and country
+  - quarter
+  - ship or contract ID for prices
   treatment_key:
-  - China indicator
-  - post-2006 indicator
-  - China × post-2006 interaction
-  treatment_source: Lloyd's Register of Ships (ship production data), shipyard capacity and cost data from industry sources,
-    government policy documents, policy bank lending records
+  - Chinese yard x post-2006 model term
+  - separate post-2005 Chinese entrant classification
+  treatment_source: >
+    Clarksons Research world shipbuilding, contracts, transactions, yard
+    characteristics and fleet series; Japanese steel-plate price. The
+    official plans establish sector policy context but supply no
+    yard-level cost-subsidy amount.
   measurement_risks:
-  - measurement of subsidy magnitudes requires structural model inference
-  - shipyard cost data may be incomplete or measured with error
-  - ship production data may miss small yards or non-reporting yards in China
+  - Most new-ship contract prices are missing, motivating used-ship price data
+  - Yard capacity snapshots and entry timing require reconstruction
+  - The estimated subsidy wedge is model-dependent and not a directly joinable field
+  - The paper's 2012 endpoint is sample coverage, not a policy sunset
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Kalouptsidi, Myrto. 2018. "Detection and Impact of Industrial Subsidies: The Case of Chinese Shipbuilding." Review
-    of Economic Studies 85 (2): 1111–1158.'
+  citation: 'Kalouptsidi, Myrto. 2018. "Detection and Impact of Industrial Subsidies: The Case of Chinese Shipbuilding." Review of Economic Studies 85(2): 1111-1158. DOI 10.1093/restud/rdx050.'
   url: https://doi.org/10.1093/restud/rdx050
   date: 2018
   supports:
-  - identity
-  - assignment
-  - design
-  - main estimates
-  - subsidy detection
-  - welfare analysis
-  - production reallocation
+  - scope.china_relevance
+  - identity.instrument
+  - identity.assignment_mechanism
+  - timeline.local_timing
+  - assignment.unit
+  - assignment.treated
+  - assignment.comparison_pool
+  - assignment.intensity
+  - assignment.exemptions
+  - assignment.exposure_construction
+  - design.claim_type
+  - design.identifying_variation
+  - design.primary_strategy
+  - design.estimand
+  - design.treatment_variable
+  - design.comparison_logic
+  - design.estimation_notes
+  - empirical_requirements.population
+  - empirical_requirements.observation_unit
+  - empirical_requirements.required_fields
+  - empirical_requirements.treatment_source
+  - design_applications.empirical_design
+  - design_applications.data_used
   verification_status: verified
+  access_level: full-text
+  locator: 'Published OUP typeset PDF inspected from author research page https://sites.google.com/site/myrtokaloup/research (myrtosubsidies.pdf): pp. 1111-1118 (scope and policy context), 1124-1126 (model and Clarksons data), 1131-1139 (cost estimation and robustness), 1139-1141 (counterfactuals), Tables 1, 2, 4, 6 and 7; publisher DOI metadata verified separately.'
+- id: E2
+  source_type: policy-document
+  citation: 国家发展改革委、国防科工委, 船舶工业中长期发展规划（2006-2015年）, public edition, State Council approved August 2006.
+  url: https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/200710/P020191104623363865929.pdf
+  date: 2006
+  supports:
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - timeline.announcement
+  - timeline.implementation_start
+  - assignment.rule
+  verification_status: verified
+  access_level: official-document
+  locator: 'NDRC public PDF pp. 1, 8-12: plan period and three bases; clauses 25-29 priority capacity projects, 33-40 approval/eligibility and fiscal-financial support, 44-47 working-capital and export credit. It supports policy scope and selective project rules, not actual subsidy receipt or 13-20% yard cost reductions. State Council approval month corroborated by NDRC 2007-12-03 base-progress notice.'
+- id: E3
+  source_type: policy-document
+  citation: 国家发展改革委, 船舶工业调整和振兴规划, issued 2009-06-09.
+  url: https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=251
+  date: '2009-06-09'
+  supports:
+  - identity.implementation_regime
+  - timeline.local_timing
+  - research_compatibility.not_good_for
+  verification_status: verified
+  access_level: official-document
+  locator: 'NDRC webpage header and sections I, IV(1)-(2), IV(6): crisis response for 2009-2011, credit/export buyer financing and temporary bar on new dock approvals outside the earlier plan; successor package, not the observed 2006 cost-shift assignment.'
 design_applications:
 - paper: 'Detection and Impact of Industrial Subsidies: The Case of Chinese Shipbuilding'
   doi: 10.1093/restud/rdx050
   journal: Review of Economic Studies
   year: 2018
-  research_question: How large are Chinese shipbuilding subsidies, and what are their effects on global production reallocation,
-    prices, costs, and welfare?
-  population: Global shipbuilding industry, 1990–2012
-  outcome: Production quantity, market share, prices, costs, entry, exit, consumer surplus
-  data_used: []
-  treatment_encoding: China indicator interacted with post-2006 indicator; subsidy magnitude estimated from structural model
-  comparison: Chinese vs. foreign shipyards before and after subsidy programs began
-  empirical_design: Structural estimation of a dynamic oligopoly model with endogenous entry, exit, and production; reduced-form
-    event studies and difference-in-differences for validation
+  research_question: Is a China-specific operating-cost decline consistent with industrial subsidies after 2006, and how much did inferred cost support and new capacity change world shipbuilding outcomes?
+  population: 192 world Handysize bulk-carrier yards, 119 in China; production observed Q1 2001-Q3 2012
+  outcome: Estimated shipyard operating costs and simulated production shares, ship prices, profits, freight rates and cargo-shipper surplus
+  data_used:
+  - Clarksons Research yard-quarter Handysize orders, backlog and delivery times
+  - Clarksons new-ship and second-hand ship contract prices, vessel age and origin
+  - Clarksons yard capacity, entry and industry fleet/order series
+  - Japanese steel-plate price series
+  treatment_encoding: China x post-2006 term in estimated cost function; newly entered yards removed separately in counterfactuals
+  comparison: Chinese pre/post modeled costs relative to other producer countries in the same world market, not an observed subsidy-recipient versus nonrecipient DID
+  empirical_design: Dynamic industry demand-and-supply estimation; estimate Chinese cost shift from yard choices and ship prices, then simulate no-entrant and no-intervention counterfactuals
   assumptions:
-  - Model correctly captures firm dynamics and production technology
-  - subsidies are the main source of cost differences between China and competitors after 2006
-  - no other major shocks differentially affect Chinese shipbuilding
+  - Demand and yard dynamic optimization adequately recover unobserved costs
+  - No unmodeled China-specific technological break fully mimics the 2006 cost change
+  - Industry participants' expectations and counterfactual states are adequately approximated
   threats_addressed:
-  - measurement of unobserved subsidies via structural model
-  - endogeneity of policy via cross-country and time variation
-  - general equilibrium effects via model counterfactuals
+  - Alternative cost curvature, time controls and Japan-post placebo
+  - Separate role of new yard entry and operating-cost support
+  - Sensitivity to state transitions, existing-yard sample and dynamic approximation
   evidence_refs:
   - E1
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
-- At least one design application does not yet identify the data used and must be grounded from the paper or replication package.
+- Actual yard-by-yard subsidy receipt, transfer amount and local start dates are unobserved. The conditional research use is the published structural China-post cost wedge, not a direct policy-exposure file for firm DID or event studies.
+- The paper models an unexpected immediate 2006 regime shift; the official plan and contemporaneous capacity expansion do not independently establish that expectation timing or isolate the cost effect of one named financing instrument.
 method_transfer: null
 ---
 ## Institutional Background
 
-The global shipbuilding industry has traditionally been dominated by Japan, South Korea, and European countries. Beginning in 2006, China's central government designated shipbuilding as a strategic industry and implemented a comprehensive set of industrial policies to support its development. These included policy bank lending at below-market rates through China Development Bank, export credits, loan guarantees, interest rate subsidies, government-directed consolidation of state-owned shipyards, and direct cash subsidies. The scale of these interventions was not transparently reported, creating the need for model-based detection of subsidy magnitudes. [E1]
+The 2006-2015 development plan sought to expand Chinese shipbuilding, especially
+three coastal bases, through prioritized capacity projects and a menu of fiscal,
+financial, tax, credit and insurance support. The plan sets conditions for large
+projects and preferential categories; it does not publish a national list of
+shipyard operating subsidies or a universal cost reduction. A separate 2009
+crisis-era plan changed finance support and restricted new capacity approvals.
+Those are institutional facts, not the same thing as the paper's estimated
+cost wedge. [E2; E3]
 
 ## What Changed
 
-Between 2006 and 2012, China's shipbuilding subsidies reduced shipyard costs by an estimated 13–20%, equivalent to US$1.5–4.5 billion. This cost advantage triggered a massive reallocation of global ship production toward China, with China's global market share rising dramatically. The subsidies affected entry of new Chinese shipyards, expansion of existing yards, and pricing behavior. The paper detects these subsidies using a structural econometric model that infers the subsidy amount from observed production, pricing, entry, and exit patterns relative to the predictions of an undistorted competitive model. [E1]
+Kalouptsidi's world-market analysis focuses on Handysize bulk carriers. Chinese
+yard entry and docks expanded sharply around 2005-2006. After 2006 the estimated
+cost function of Chinese yards falls relative to its pre-period and other
+producer countries, by 13-20% across reported specifications. The author
+interprets this as strong evidence consistent with operating-cost subsidies;
+the amount is inferred from behavior and prices, not read from government
+ledgers. New facilities are a second, separately modeled intervention. [E1]
 
 ## Implementation and Assignment
 
-Subsidies were implemented through multiple, overlapping channels: state-owned policy banks extended credit to shipyards at below-market rates, government entities provided loan guarantees and export credits, and local governments offered direct subsidies and tax incentives. The assignment of subsidies was not random — the Chinese government targeted the shipbuilding sector as a whole, and specific firms received different levels of support based on their ownership structure (state-owned vs. private), size, and relationship with local governments. The paper's identification strategy relies on comparing Chinese shipbuilding outcomes to those in other countries before and after the policy, combined with a structural model that accounts for industry dynamics. [E1]
+The official plan offers differentiated support to approved projects and
+qualified enterprises, but actual beneficiaries and payment dates are not
+recoverable from the inspected documents. In the paper's model every Chinese
+Handysize yard in the post-2006 regime shares a country-period cost term; this
+is a measurement convention. The paper tests regional onset using the first
+new dock/berth operation as a proxy because official local implementation
+dates were unavailable. That proxy cannot certify a subsidy date for a
+particular yard. [E1; E2]
 
 ## Why This Creates Empirical Variation
 
-The introduction of large-scale shipbuilding subsidies in China after 2006 generates variation across three dimensions: (1) cross-country: Chinese shipyards received subsidies while those in Japan, South Korea, and Europe did not; (2) time series: pre-2006 vs. post-2006 periods; and (3) cross-ship-type: variation in Chinese specialization across different vessel types. The structural model uses this multi-dimensional variation to detect the subsidy magnitude by finding the cost reduction that best rationalizes observed production patterns, entry/exit dynamics, and pricing behavior. [E1; analytical inference]
+The study combines production decisions at 192 Handysize yards with new and
+used ship prices, backlogs, capacity, steel prices and shipping-demand states.
+It uses dynamic optimization to infer latent costs, tests the China-post-2006
+cost term, then simulates what world production and welfare would look like
+without new Chinese yards and without both modeled interventions. This is
+a structural market-equilibrium comparison; a simple China-versus-Japan DID
+would not reproduce it and would treat an affected competitor as an unaffected
+control. [E1]
 
 ## Identification Risks
 
-The main identification challenge is separating the effects of subsidies from other concurrent changes in China's shipbuilding sector, including technological catch-up, infrastructure improvements, labor cost advantages, and broader economic growth. The Chinese shipbuilding policy was also explicitly counter-cyclical, intensifying during the 2008 global financial crisis when world ship demand collapsed, creating a correlation between subsidy timing and demand shocks. The structural model addresses these concerns through modeling assumptions, but the results depend on the credibility of those assumptions. [E1; analytical inference]
+A China-specific productivity or technology change could also lower recovered
+costs; the author tests time trends, other-country breaks, cost curvature and
+existing-yard samples but does not observe subsidy payments. The structural
+counterfactual also depends on demand, cost, dynamic expectations, entry and
+the assumed 2006 regime shift. The 2009 financial-crisis response overlaps the
+later sample years. These limits matter whenever the result is reused outside
+its Handysize market and model. [E1; E3]
 
 ## Data Requirements
 
-Comprehensive panel data on the global shipbuilding industry: ship-level production data (quantity, type, price, delivery date) from Lloyd's Register of Ships; shipyard-level characteristics (capacity, ownership, location); industry cost estimates; government policy documents and budget data; entries and exits of shipyards over time. The structural estimation also requires data on ship buyer characteristics and market structure variables. [E1]
+The published calculation needs quarterly global Handysize yard orders
+(Q1 2001-Q3 2012), backlog, entry and capacity, 417 reported new-ship
+contracts, 2,016 used-ship sale contracts, fleet and demand states, and
+steel-plate prices. Clarksons Research is the main source. It is not
+enough to merge a public policy-date column into firm accounts; reproducing
+the estimated wedge requires the structural system and commercial market
+data. [E1]
 
 ## Evidence Notes
 
-E1 develops a novel methodology for detecting subsidies when their magnitude is not directly observable. The paper finds that Chinese subsidies led to substantial reallocation of production away from Japan, while having more modest effects on South Korea and Europe. The welfare analysis shows that the subsidies generated only small surplus gains for ship buyers relative to their fiscal cost, suggesting significant deadweight loss. The paper's structural approach allows counterfactual simulations of alternative subsidy designs and has been influential in the subsequent industrial policy literature.
+E1 is the published article, inspected in the author-hosted publisher PDF.
+E2 independently establishes the 2006 plan's scope and support menu; E3
+establishes the distinct 2009 successor package. None of these sources
+observes a complete recipient roster, firm-specific subsidy amount, or
+local operating-subsidy start date. The 13-20% estimate is therefore a
+model-based interpretation under stated alternatives, not an official
+subsidy rate. [E1-E3]

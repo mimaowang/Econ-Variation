@@ -8,7 +8,7 @@ aliases:
 - 发改气候〔2010〕1587号
 status: grounded
 provenance:
-  task_id: task-03f4df2571f3
+  task_id: task-58437a0d3ecd
 scope:
   country: China
   regions:
@@ -48,11 +48,13 @@ identity:
     Hubei, Shaanxi, Yunnan) and eight cities (Tianjin, Chongqing, Shenzhen, Xiamen,
     Hangzhou, Nanchang, Guiyang, Baoding) as the first-wave low-carbon pilots in July
     2010. Tianjin and Chongqing are province-level municipalities; the other six city
-    pilots are prefecture-level cities nested in non-pilot provinces (Shenzhen in
-    Guangdong, Xiamen in Fujian, Hangzhou in Zhejiang, Nanchang in Jiangxi, Guiyang
-    in Guizhou, Baoding in Hebei). Province-level pilots expose all prefectures within
-    the province, creating a nesting problem for city-only designs because Guangdong
-    contains both a province pilot and the city pilot Shenzhen. The notice required
+    pilots are prefecture-level cities. Shenzhen is nested in Guangdong, itself a
+    province pilot; the other five are in non-pilot provinces (Xiamen in Fujian,
+    Hangzhou in Zhejiang, Nanchang in Jiangxi, Guiyang in Guizhou, Baoding in Hebei).
+    Province designation and city designation therefore overlap in Shenzhen.
+    A city-only design must specify how provincial designation maps to city exposure;
+    the first-wave list alone does not establish a uniform policy dose for every
+    prefecture within a pilot province. The notice required
     pilot regions to submit implementation plans by 31 August 2010, but actual local
     policies were developed and approved afterwards. Two later waves (2012 with Beijing,
     Shanghai, Hainan and 26 cities; 2017 with 45 cities) expanded the program, so
@@ -86,8 +88,10 @@ timeline:
 assignment:
   unit: Province or prefecture-level city
   treated: The five province-level pilots and eight city-level pilots named in NDRC
-    Climate No. 1587. Province-level pilots expose all prefectures within the province;
-    city-level pilots expose only the named city.
+    Climate No. 1587. A province-designation intention-to-treat measure assigns
+    exposure to prefectures within a pilot province; a city-designation measure
+    identifies the named cities. These measures overlap in Shenzhen and do not
+    by themselves establish the same local implementation or policy intensity.
   comparison_pool: Non-designated provinces or cities not indirectly covered by a
     treated province, subject to later-wave and contamination checks. A clean city-level
     comparison must decide whether to exclude or separately code cities inside the
@@ -123,6 +127,8 @@ research_compatibility:
   - industrial structure
   - firm productivity
   - urban land use
+  - labor earnings
+  - employment
   affected_populations:
   - cities
   - regulated firms
@@ -322,15 +328,24 @@ evidence:
   url: https://www.ndrc.gov.cn/xxgk/zcfb/tz/201008/t20100810_964674.html
   date: '2010-07-19'
   supports:
-  - identity
-  - timeline
-  - assignment
+  - identity.instrument
+  - identity.authority
+  - identity.legal_identifiers
+  - identity.implementation_regime
+  - identity.assignment_mechanism
+  - timeline.announcement
+  - timeline.local_timing
+  - assignment.unit
+  - assignment.treated
+  - assignment.rule
   verification_status: verified
   access_level: official-document
   locator: Full notice; Section II confirms the first-wave list of five provinces
     and eight cities and the selection criteria (local application, work foundations,
     representativeness); Section III lists the five tasks; Section IV requires implementation
-    plans by 31 August 2010
+    plans by 31 August 2010. Section II was rechecked on 2026-09-28 for the joint
+    Guangdong and Shenzhen designations; this focused correction does not reverify
+    local implementation dates or the paper applications.
 - id: E2
   source_type: paper
   citation: 'Wang, Y., Zhang, N., and Li, Y. 2022. "Going Carbon-Neutral in China:
@@ -339,7 +354,11 @@ evidence:
   url: https://doi.org/10.1016/j.spc.2022.07.002
   date: '2022'
   supports:
-  - design_applications
+  - design_applications.population
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
   verification_status: verified
   access_level: full-text
   locator: Sections 2–3 and Table 1; uses 285 Chinese cities 2003–2018 with multi-period
@@ -352,8 +371,10 @@ evidence:
   url: http://www.ncsc.org.cn/SY/dtsdysf/202003/t20200319_769716.shtml
   date: '2012-12-05'
   supports:
-  - timeline
-  - assignment
+  - identity.legal_identifiers
+  - timeline.local_timing
+  - assignment.comparison_pool
+  - assignment.spillovers
   verification_status: verified
   access_level: official-document
   locator: Full notice archived on NCSC; Section II lists the second-wave list (Beijing,
@@ -367,8 +388,12 @@ evidence:
   url: https://doi.org/10.3390/ijerph18073695
   date: '2021'
   supports:
-  - design_applications
-  - research_compatibility
+  - design_applications.population
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - research_compatibility.outcome_domains
   verification_status: verified
   access_level: full-text
   locator: Sections 2–3 and Table 1; uses A-share listed enterprises 2005–2019 with
@@ -382,12 +407,42 @@ evidence:
   url: https://doi.org/10.1016/j.eneco.2021.105125
   date: '2021'
   supports:
-  - design_applications
-  - research_compatibility
+  - design_applications.population
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - research_compatibility.outcome_domains
   verification_status: verified
   access_level: full-text
   locator: Sections 2–3; uses Chinese prefecture-level cities with DID/PSM-DID and
     finds low-carbon city pilots improve carbon emission efficiency
+- id: E6
+  source_type: paper
+  citation: 'Li, Han, and Qian Lu. 2025. "Impact of Climate Policy on Labor
+    Earnings: Evidence From Low-Carbon City Pilot Policy in China." Journal
+    of Regional Science 65 (3): 741–758.'
+  url: https://doi.org/10.1111/jors.12762
+  date: '2025'
+  supports:
+  - design_applications.research_question
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.empirical_design
+  verification_status: verified
+  access_level: abstract
+  locator: Publisher abstract inspected via ADS, EBSCO, and Semantic Scholar
+    metadata. The abstract establishes that the paper uses the Low-Carbon City
+    Pilot program as a quasi-natural experiment combining city-level data with
+    the China Labor Dynamics Survey (CLDS) to study labor earnings and employment,
+    reports a significant positive earnings effect without adverse employment
+    effects, reports distributional effects favoring skilled workers in green
+    industries over low-skilled labor, and attributes the distributional effect
+    to industrial restructuring and technological upgrading through administrative
+    regulations and economic incentives. The abstract does not establish which
+    pilot waves, cities, or adoption years are coded, which CLDS waves are used,
+    or the exact treatment and comparison construction; the full text is
+    paywalled and no open-access copy was located as of 2026-08-14.
 design_applications:
 - paper: 'Going carbon-neutral in China: Does the low-carbon city pilot policy improve
     carbon emission efficiency?'
@@ -464,6 +519,43 @@ design_applications:
   - robustness checks including placebo tests
   evidence_refs:
   - E5
+- paper: 'Impact of Climate Policy on Labor Earnings: Evidence From Low-Carbon
+    City Pilot Policy in China'
+  doi: 10.1111/jors.12762
+  journal: Journal of Regional Science
+  year: 2025
+  research_question: Whether low-carbon city pilot designation affects labor
+    earnings and employment in the aggregate labor market and how the effects
+    are distributed across skill and industry groups
+  population: Chinese urban workers observed in the China Labor Dynamics Survey
+    (CLDS), linked to city-level data; the exact CLDS waves and city sample are
+    not established at abstract access
+  outcome: Labor earnings and employment, with distributional outcomes by skill
+    and industry and household-level distributional effects
+  data_used:
+  - China Labor Dynamics Survey (CLDS) individual labor-market data
+  - city-level data
+  - NDRC low-carbon pilot lists for treatment assignment (wave coding not
+    established at abstract access)
+  treatment_encoding: Low-carbon pilot designation used as a quasi-natural
+    experiment; the exact pilot batches, adoption-year coding, and
+    city-to-individual exposure linkage are not established at abstract access
+    and require full-text inspection
+  comparison: Workers in non-pilot or not-yet-pilot cities; the precise
+    comparison construction is not established at abstract access
+  empirical_design: Quasi-experimental difference-in-differences style design
+    combining city-level pilot treatment with CLDS individual outcomes; whether
+    the estimator is single-shock or staggered is not established at abstract
+    access
+  assumptions:
+  - conditional parallel trends between pilot and comparison cities
+  - pilot designation not driven by unobserved labor-market shocks
+  threats_addressed:
+  - distributional heterogeneity by skill and industry reported in the abstract
+  - mechanism claims (industrial restructuring and technological upgrading)
+    are source-reported from the abstract and remain unverified
+  evidence_refs:
+  - E6
 readiness_blockers:
 - Exact approval dates of first-wave local implementation plans and the actual start
   years of substantive local policies remain to be verified from provincial NDRC documents.
@@ -472,6 +564,10 @@ readiness_blockers:
   primary evidence.
 - Concurrent environmental policies (carbon-trading pilots, eco-cities, smart cities)
   and their overlap with low-carbon pilots are not yet documented in this record.
+- The 2025 JRS labor-earnings application (Li and Lu, doi:10.1111/jors.12762)
+  is documented only at abstract access; which pilot waves, adoption years, CLDS
+  waves, and city-to-individual exposure linkage it codes remain to be verified
+  from the paywalled full text.
 method_transfer: null
 ---
 ## Institutional Background
@@ -506,4 +602,4 @@ A credible design needs annual outcomes with several pre-2010 and post-2010 peri
 
 ## Evidence Notes
 
-E1 verifies the first-wave list, central objectives, application-based selection, and decentralized tasks. E3 verifies the second-wave list and confirms the staggered structure. E2, E4, and E5 verify that the policy has been used in city-panel and firm-panel DID/PSM-DID designs, but they do not establish random assignment or uniform treatment content.
+E1 verifies the first-wave list, central objectives, application-based selection, and decentralized tasks. E3 verifies the second-wave list and confirms the staggered structure. E2, E4, and E5 verify that the policy has been used in city-panel and firm-panel DID/PSM-DID designs, but they do not establish random assignment or uniform treatment content. E6 documents a 2025 Journal of Regional Science labor-earnings application using CLDS at abstract access only; its exact pilot-wave coding, timing, and city-to-individual linkage await full-text verification.

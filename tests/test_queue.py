@@ -48,6 +48,24 @@ def test_claim_can_select_the_requested_task(monkeypatch, tmp_path) -> None:
     assert rows[0]["id"] == first["id"] and rows[0]["status"] == "pending"
 
 
+def test_harness_brief_adds_saturation_cue_only_for_explicit_runtime(monkeypatch, tmp_path) -> None:
+    configure(monkeypatch, tmp_path)
+    task = task_queue.enqueue("resolve", "Resolve one source", "candidate:x", None)
+
+    harness_claim = task_queue.claim("dsh-deepseek-v4-flash", 10, task_id=task["id"])
+    harness_stop = harness_claim["task_brief"]["stop_when"]
+    assert "guides/deepseek-harness.md" in harness_stop
+    assert "saturated" in harness_stop
+    assert "bypassing the gate" in harness_stop
+    assert "task_brief" not in task_queue.load(task_queue.TASKS)[0]
+    task_queue.release(task["id"], "dsh-deepseek-v4-flash", harness_claim["claim_token"], "test")
+
+    ordinary_claim = task_queue.claim("deepseek-v4-flash", 10, task_id=task["id"])
+    ordinary_stop = ordinary_claim["task_brief"]["stop_when"]
+    assert "guides/deepseek-harness.md" not in ordinary_stop
+    assert "saturated" not in ordinary_stop
+
+
 def test_release_fail_retry_and_reclaim(monkeypatch, tmp_path) -> None:
     configure(monkeypatch, tmp_path)
     task = task_queue.enqueue("ground", "Ground a case", "case:x", None)
@@ -197,6 +215,92 @@ def test_touched_record_gate_requires_locators_and_rejects_search_snippets() -> 
     Canonical.body = "Claim [web search]"
     with pytest.raises(RuntimeError, match="search snippets"):
         task_queue.validate_touched_record(Canonical())
+
+
+def test_touched_record_gate_requires_precise_support_paths() -> None:
+    class Canonical:
+        id = "case-x"
+        body = "Clean body"
+        data = {
+            "status": "grounded",
+            "design": {"claim_type": "causal"},
+            "evidence": [{
+                "id": "E1", "verification_status": "verified", "access_level": "official-document",
+                "locator": "Article 3", "supports": ["assignment"],
+            }],
+        }
+
+    with pytest.raises(RuntimeError, match="precise field support paths"):
+        task_queue.validate_touched_record(Canonical())
+    Canonical.data["evidence"][0]["supports"] = ["assignment.rule"]
+    task_queue.validate_touched_record(Canonical())
+
+
+def write_canonical(path, *, record_id: str, task_id: str, status: str = "grounded") -> None:
+    path.write_text(
+        "\n".join((
+            "---", f"id: {record_id}", f"status: {status}", "provenance:", f"  task_id: {task_id}",
+            "design:", "  claim_type: causal", "evidence:", "  - id: E1", "    verification_status: verified",
+            "    access_level: official-document", "    locator: Article 3", "    supports: [assignment.rule]",
+            "---", "Clean body",
+        )),
+        encoding="utf-8",
+    )
+
+
+def test_new_canonical_admission_blocks_half_products_and_protects_existing_files(monkeypatch, tmp_path) -> None:
+    configure(monkeypatch, tmp_path)
+    variations = tmp_path / "variations"
+    variations.mkdir()
+    monkeypatch.setattr(task_queue, "ROOT", tmp_path)
+
+    task = task_queue.enqueue("resolve", "Resolve a candidate", "candidate:x", None)
+    claimed = task_queue.claim("agent-a", 10, task_id=task["id"])
+    assert "task_brief" in claimed
+    assert "task_brief" not in task_queue.load(task_queue.TASKS)[0]
+    write_canonical(variations / "new-case.md", record_id="new-case", task_id=task["id"], status="extracted")
+    with pytest.raises(RuntimeError, match="must be grounded or design-documented"):
+        task_queue.complete(
+            task["id"], "agent-a", claimed["claim_token"], "updated", ["new-case"], None, gate=False,
+        )
+
+    (variations / "new-case.md").unlink()
+    task_queue.release(task["id"], "agent-a", claimed["claim_token"], "retry grounded")
+    claimed = task_queue.claim("agent-a", 10, task_id=task["id"])
+    write_canonical(variations / "new-case.md", record_id="new-case", task_id=task["id"], status="grounded")
+    completed = task_queue.complete(
+        task["id"], "agent-a", claimed["claim_token"], "created", ["new-case"], None, gate=False,
+    )
+    assert completed["status"] == "completed"
+
+    second = task_queue.enqueue("audit", "Protect existing", "audit:x", None)
+    claimed_second = task_queue.claim("agent-a", 10, task_id=second["id"])
+    (variations / "new-case.md").unlink()
+    with pytest.raises(RuntimeError, match="restore canonical file set"):
+        task_queue.release(
+            second["id"], "agent-a", claimed_second["claim_token"], "cannot normalize deletion",
+        )
+    with pytest.raises(RuntimeError, match="cannot be deleted"):
+        task_queue.complete(
+            second["id"], "agent-a", claimed_second["claim_token"], "skipped", [], None, gate=False,
+        )
+
+
+def test_new_contested_record_does_not_receive_existing_record_safety_exemption(monkeypatch, tmp_path) -> None:
+    configure(monkeypatch, tmp_path)
+    variations = tmp_path / "variations"
+    variations.mkdir()
+    monkeypatch.setattr(task_queue, "ROOT", tmp_path)
+    task = task_queue.enqueue("resolve", "Resolve a disputed identity", "candidate:contested", None)
+    claimed = task_queue.claim("agent-a", 10, task_id=task["id"])
+    path = variations / "contested-case.md"
+    write_canonical(path, record_id="contested-case", task_id=task["id"], status="contested")
+    text = path.read_text(encoding="utf-8").replace("supports: [assignment.rule]", "supports: [assignment]")
+    path.write_text(text, encoding="utf-8")
+    with pytest.raises(RuntimeError, match="precise field support paths"):
+        task_queue.complete(
+            task["id"], "agent-a", claimed["claim_token"], "contested", ["contested-case"], None, gate=False,
+        )
 
 
 def test_stale_empty_lock_is_recovered(monkeypatch, tmp_path) -> None:

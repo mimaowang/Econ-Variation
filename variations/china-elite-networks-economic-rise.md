@@ -1,265 +1,208 @@
 ---
 schema_version: 2
 id: china-elite-networks-economic-rise
-name: Historical Elite Networks and Their Role in Shaping China's Post-1978 Economic Growth through Interregional Connectedness
+name: Retired Lead — Misattributed Elite Networks and Reform-Era Economic Growth
 aliases:
 - Bai Jia Yang web of power China
 - 精英网络 经济增长
 - elite networks economic development China
 - political elite connections regional growth
-
-status: extracted
+status: deprecated
 provenance:
-  task_id: legacy-untracked
+  task_id: task-c7ca7d106dd4
 scope:
   country: China
   regions:
-  - All provinces and prefectures
+  - No verified reform-era prefecture or province exposure for the claimed object
   domains:
   - political-economy
-  - growth
-  - networks
-  - history
-  - development
-  variation_type: continuous-exposure
+  - economic-history
+  - regional-economics
+  variation_type: other
   knowledge_role: china-variation
-  china_relevance: The variation occurs in China, assigns exposure to Chinese units, and supports China-focused empirical
-    research.
+  china_relevance: >
+    The citation is to a China historical-political-economy paper, but it does
+    not document the post-1978 regional-growth variation claimed by this
+    legacy record. This file remains only as a correction and search redirect.
 identity:
-  instrument: Variation in prefecture-level connectedness to China's national political elite network, driven by the historical
-    presence of individuals from that prefecture in the Chinese Communist Party's revolutionary and early-governance networks
-    (1920s–1949), which created persistent cross-prefecture differences in access to political power and economic resources
-    in the post-1978 reform era
-  authority: Historical patterns of CCP revolutionary recruitment and elite network formation
-  legal_identifiers:
-  - Historical CCP membership records
-  - revolutionary base area documentation
-  - post-1949 elite appointment records
-  implementation_regime: The CCP elite network formed during the revolutionary period (1920s–1949) and early PRC governance
-    (1949–1978); after the 1978 economic reforms, prefectures with stronger historical connections to this network received
-    disproportionate economic benefits through policy favoritism, investment allocation, and infrastructure placement
-  assignment_mechanism: A prefecture's connectedness to the elite network is determined by whether individuals born in that
-    prefecture held senior positions in the CCP during the revolutionary and early governance periods; this is determined
-    by historical revolutionary geography, not by the prefecture's post-1978 economic potential
+  instrument: >
+    No verified post-1978 economic-growth instrument corresponds to the
+    legacy title or cited DOI. The real paper studies Zeng Guofan's
+    pre-existing elite networks during the 1850-1864 Taiping Rebellion.
+  authority: Not applicable to the retired reform-era growth claim
+  legal_identifiers: []
+  implementation_regime: >
+    The cited QJE paper concerns mid-nineteenth-century army recruitment
+    and postwar Qing political power, not CCP revolutionary recruitment
+    in 1920-1949 or reform-era resource allocation after 1978.
+  assignment_mechanism: >
+    None for the claimed post-1978 prefecture-growth exposure. The actual
+    historical study measures prewar county elite ties to Zeng Guofan,
+    a different object requiring its own screening if later in scope.
   parent: null
-  related_variations:
-  - china-keju-abolition-elite-recruitment
-  - china-political-connections-mortality
+  related_variations: []
 timeline:
   announcement: null
   effective: null
-  implementation_start: 1978
-  implementation_end: 2015
-  local_timing: Elite network effects operate continuously throughout the reform period; connectedness is historically determined
-    and changes slowly
-  anticipation: Prefecture-level connectedness was determined historically before the reform era, making it exogenous to post-1978
-    economic conditions
-  last_verified: '2026-07-13'
+  implementation_start: null
+  implementation_end: null
+  local_timing: >
+    The claimed 1978-2015 treatment period is unsupported. The actual paper's
+    historical event is the Taiping Rebellion of 1850-1864.
+  anticipation: Not applicable to the invalid reform-era claim
+  last_verified: '2026-10-02'
 assignment:
-  unit: Prefecture
-  treated: Prefectures with stronger historical connections to the national CCP elite network (more natives who held senior
-    Party or government positions)
-  comparison_pool: Prefectures with weaker or no elite network connections; within-prefecture comparison before and after
-    the 1978 reforms (though all prefectures are treated after 1978, the intensity varies)
-  rule: Connectedness is measured by the number and seniority of political elites historically originating from each prefecture;
-    this connectedness is a stock variable determined by pre-1949 revolutionary history
-  intensity: Continuous — measures of prefecture-level elite network centrality, number of Politburo members, Central Committee
-    members, or provincial governors born in the prefecture
-  compliance: Elite network effects operate through informal channels of influence, not formal policy mandates; the strength
-    of actual resource flows may vary
+  unit: No valid unit for the claimed reform-era treatment
+  treated: No verified treated prefectures for the claimed post-1978 exposure
+  comparison_pool: No verified comparison pool for that claim
+  rule: No study in the cited paper assigns treatment by CCP revolutionary elite origins to post-1978 prefectures
+  intensity: null
   exemptions: []
-  exposure_construction: Construct prefecture-level measures of historical elite connectedness (count of national-level political
-    elites born in the prefecture, network centrality measures); interact with post-1978 indicator; use historical revolutionary
-    geography (distance to revolutionary base areas, early CCP activity) as instruments
+  compliance: Not applicable
+  exposure_construction: >
+    Do not construct the legacy variable from this citation. A distinct
+    historical study of Zeng's prewar county ties would need its own
+    identity, sample, exposure and evidence review.
   required_identifiers:
-  - prefecture code
-  - year
-  - elite connectedness measures
-  - revolutionary history indicators
-  spillovers: Economic benefits flowing to connected prefectures may create positive spillovers to neighboring areas through
-    trade and labor market linkages; alternatively, resources may be diverted from non-connected to connected prefectures
-    (zero-sum at national level)
+  - none for this retired claim
+  spillovers: Not assessed for the invalid reform-era claim
 research_compatibility:
-  outcome_domains:
-  - economic growth
-  - GDP per capita
-  - infrastructure investment
-  - firm creation
-  - industrial output
-  - educational attainment
-  - public goods
-  affected_populations:
-  - Residents of connected prefectures
-  - residents of non-connected prefectures
-  - political elites
-  - local government officials
-  mechanism_channels:
-  - policy favoritism
-  - infrastructure investment allocation
-  - state-owned enterprise placement
-  - educational resource allocation
-  - intergovernmental transfers
-  - regulatory preferences
+  outcome_domains: []
+  affected_populations: []
+  mechanism_channels: []
   best_for:
-  - Studying how informal elite networks affect economic development
-  - understanding regional inequality in China
-  - analyzing persistence of historical political structures
+  - Recognizing and avoiding the false link between DOI 10.1093/qje/qjac041 and post-1978 Chinese regional growth
   not_good_for:
-  - Individual-level outcomes
-  - short-run fluctuations
-  - identifying specific policy channels
-  - cross-country comparisons
+  - Recommending an elite-network instrument for reform-era prefecture GDP or investment
+  - Treating the actual Taiping-war paper as evidence of modern CCP elite patronage
 design:
-  affordances:
-  - historically determined elite networks predating reforms
-  - cross-prefecture variation in connectedness
-  - rich biographical data on political elites
-  - long panel of regional economic outcomes
-  candidate_designs:
-  - cross-sectional and panel analysis of connectedness and growth
-  - instrumental variables using revolutionary geography
-  - difference-in-differences around leadership changes
-  identifying_variation: Prefecture-level variation in historical elite connectedness (measured before 1978), interacted with
-    the post-reform period; the key insight is that connectedness was determined by pre-1949 revolutionary history, not by
-    post-1978 economic potential
-  assumptions:
-  - Historical elite connectedness is exogenous to post-1978 economic growth potential
-  - revolutionary geography affects post-1978 outcomes only through elite networks
-  - no differential pre-reform economic trends by connectedness
-  diagnostics:
-  - Test for pre-1978 economic differences by connectedness
-  - examine whether effects concentrate after leadership changes
-  - use distance to revolutionary base areas as instrument
-  - test for spatial spillovers to neighboring prefectures
-  primary_strategy: Panel analysis with prefecture and year fixed effects; IV using distance to revolutionary base areas;
-    analysis of mechanism channels (infrastructure, SOE placement, fiscal transfers)
-  estimand: The causal effect of the recorded exposure on GDP per capita, infrastructure investment, firm creation, industrial
-    output, educational outcomes, conditional on the stated design assumptions.
-  treatment_variable: Prefecture-level elite network centrality (count of national-level political elites born in the prefecture);
-    interaction with post-1978 reform period
-  comparison_logic: High-connectedness vs low-connectedness prefectures within the same province; pre-reform vs post-reform
-    within prefectures
-  estimation_notes: Panel analysis with prefecture and year fixed effects; IV using distance to revolutionary base areas;
-    analysis of mechanism channels (infrastructure, SOE placement, fiscal transfers)
+  affordances: []
+  candidate_designs: []
+  identifying_variation: No supported reform-era variation
+  primary_strategy: None; this record is retired
+  estimand: None for post-1978 economic growth in the cited paper
+  treatment_variable: None for the retired claim
+  comparison_logic: No valid treatment-control contrast for the retired claim
+  estimation_notes: >
+    The actual paper examines county prewar ties to Zeng Guofan, soldier
+    deaths after he assumed command, and postwar Qing political power.
+    Those are not a modern regional-growth design.
+  assumptions: []
+  diagnostics: []
 threats:
-- type: omitted-geography
-  basis: inferred
-  condition: Prefectures that produced more revolutionary elites may have geographic characteristics (coastal access, soil
-    quality, historical development) that independently promote post-1978 growth
+- type: citation-identity-failure
+  basis: documented
+  condition: >
+    The legacy citation changed title, third author, page range, time period,
+    treatment, data and outcome. Its citation DOI resolves to a different
+    QJE paper, so no proposed reform-era design can be supported by it.
   evidence_refs:
   - E1
+  - E2
   possible_diagnostics:
-  - control for geographic characteristics
-  - use only revolutionary-base-area variation
-  - compare prefectures with similar geography but different revolutionary histories
-- type: reverse-causality
-  basis: inferred
-  condition: Post-1978 economic success may lead to more natives being appointed to elite positions (the network grows with
-    economic importance), creating reverse causality
-  evidence_refs:
-  - E1
-  possible_diagnostics:
-  - use only pre-1978 elite measures
-  - instrument with pre-1949 revolutionary history
-  - test whether post-1978 elite appointments respond to economic growth
+  - Resolve DOI and read the actual article before screening any proposed replacement
 empirical_requirements:
   contract_version: 1
-  population: Chinese prefectures, ~1978–2015
-  observation_unit: Prefecture-year
-  geography_level: Prefecture
-  time_start: 1978
-  time_end: 2015
-  minimum_frequency: annual
-  minimum_pre_periods: 5
-  minimum_post_periods: 10
-  required_fields:
-  - prefecture code
-  - year
-  - GDP per capita
-  - elite connectedness measures
-  - geographic controls
-  - revolutionary history indicators
-  required_identifiers:
-  - prefecture code
-  - year
-  treatment_key:
-  - prefecture code
-  - elite network centrality score
-  - post-1978 indicator
-  - elite × post-reform interaction
-  treatment_source: Biographical database of Chinese political elites (Politburo, Central Committee, provincial leaders) with
-    birthplace and career history; prefecture-level economic data from statistical yearbooks; GIS data on revolutionary base
-    areas and early CCP activity
+  population: None for the retired reform-era growth claim
+  observation_unit: Not applicable
+  geography_level: Not applicable
+  time_start: null
+  time_end: null
+  minimum_frequency: Not applicable
+  minimum_pre_periods: 0
+  minimum_post_periods: 0
+  required_fields: []
+  required_identifiers: []
+  treatment_key: []
+  treatment_source: No source for the retired treatment
   measurement_risks:
-  - elite birthplace vs actual connection (some elites may not favor their birthplace)
-  - elite network measurement from incomplete biographical records
-  - prefecture boundary changes over time
-  - migration across prefectures
+  - The entire legacy exposure was attributed to the wrong paper
 evidence:
 - id: E1
   source_type: paper
-  citation: 'Bai, Ying, Ruixue Jia, and David Y. Yang. 2023. "Web of Power: How Elite Networks Shaped China''s Economic Rise."
-    Quarterly Journal of Economics 138 (2): 1029–1088.'
+  citation: >
+    Bai, Ying, Ruixue Jia, and Jiaojiao Yang. 2023. "Web of Power:
+    How Elite Networks Shaped War and Politics in China."
+    Quarterly Journal of Economics 138(2): 1067-1108.
+    DOI 10.1093/qje/qjac041.
   url: https://doi.org/10.1093/qje/qjac041
   date: 2023
   supports:
-  - identity
-  - assignment
-  - design
-  - network analysis
-  - regional growth analysis
+  - identity.instrument
+  - identity.implementation_regime
+  - timeline.local_timing
+  - design.estimation_notes
   verification_status: verified
-design_applications:
-- paper: 'Web of Power: How Elite Networks Shaped China''s Economic Rise'
-  doi: 10.1093/qje/qjac041
-  journal: Quarterly Journal of Economics
-  year: 2023
-  research_question: How do historical elite networks affect regional economic development in China's post-1978 reform era?
-  population: Chinese prefectures, 1978–2015
-  outcome: GDP per capita, infrastructure investment, firm creation, industrial output, educational outcomes
-  data_used:
-  - Biographical database of Chinese political elites
-  - Prefecture-level economic statistics
-  - GIS data on revolutionary base areas
-  - Historical CCP membership records
-  treatment_encoding: Prefecture-level elite network centrality (count of national-level political elites born in the prefecture);
-    interaction with post-1978 reform period
-  comparison: High-connectedness vs low-connectedness prefectures within the same province; pre-reform vs post-reform within
-    prefectures
-  empirical_design: Panel analysis with prefecture and year fixed effects; IV using distance to revolutionary base areas;
-    analysis of mechanism channels (infrastructure, SOE placement, fiscal transfers)
-  assumptions:
-  - elite connectedness historically predetermined
-  - revolutionary geography is valid instrument
-  - no differential pre-reform trends by connectedness level
-  threats_addressed:
-  - geographic confounds via controls and instruments
-  - reverse causality via historical measures
-  - spatial dependence via province fixed effects and spatial analysis
-  evidence_refs:
-  - E1
+  access_level: abstract
+  locator: 'Publisher article page: bibliographic header, DOI, authors and abstract. The article explicitly studies Zeng Guofan, Taiping Rebellion 1850-1864, soldier deaths and Qing postwar power; no post-1978 growth application is described.'
+- id: E2
+  source_type: paper
+  citation: Bai, Jia, and Yang, Web of Power, author manuscript dated 2022-08-28.
+  url: https://www.ruixuejia.com/uploads/4/6/3/3/46339953/web_final.pdf
+  date: 2022
+  supports:
+  - identity.instrument
+  - identity.assignment_mechanism
+  - design.estimation_notes
+  verification_status: verified
+  access_level: full-text
+  locator: 'Author manuscript pp. 1-2 abstract/introduction, pp. 7-11 historical setting and exam/kinship network construction, inspected 2026-10-02. The rare mentions of 1978 are references to historian Philip Kuhn (1978), not reform-era treatment years.'
+design_applications: []
 readiness_blockers:
-- Primary institutional evidence has not been independently verified; current institutional grounding relies on the research
-  paper.
+- The claimed paper and research design do not exist under the cited DOI; this file must not be recommended as a variation.
+- Primary institutional evidence for the claimed modern-growth mechanism does not exist in this citation; the file is deprecated, not an active institutional case.
 method_transfer: null
+superseded_by: null
+deprecation_reason: >
+  DOI 10.1093/qje/qjac041 is Bai, Jia, and Jiaojiao Yang's QJE paper
+  on Zeng Guofan's networks, Taiping-war soldier deaths and postwar
+  political power (1850-1864), not Bai, Jia, and David Y. Yang on
+  post-1978 prefecture economic growth. The legacy variation's identity,
+  assignment and outcomes were fabricated by citation conflation.
+  This record is retained as an explicit correction; a genuine historical
+  case would require separate screening rather than silent repurposing.
 ---
 ## Institutional Background
-China's post-1978 economic miracle conceals enormous regional variation: some prefectures grew at double-digit rates for decades while others stagnated. Standard explanations (geography, policy, human capital) leave much variation unexplained. A growing literature points to political connections: prefectures whose natives held power in Beijing may have received preferential treatment in investment allocation, infrastructure placement, and regulatory decisions. [E1]
+
+This file was once presented as a reform-era regional-growth shock attributed
+to a QJE paper. The actual QJE article studies Zeng Guofan's elite network in
+the Taiping Rebellion, a nineteenth-century civil war. It does not establish
+a CCP revolutionary-origin network channel for post-1978 growth. [E1; E2]
 
 ## What Changed
-After 1978, economic decision-making was decentralized, giving political elites substantial discretion over resource allocation. Prefectures connected to powerful elites through birthplace ties could leverage these connections for economic advantage. The key empirical challenge is that connectedness may reflect pre-existing economic conditions — successful prefectures may produce more elites, rather than elites causing success. The paper addresses this by measuring connectedness using pre-reform elite networks rooted in revolutionary history. [E1]
+
+The repository's claim has changed: the earlier reform-era variation is
+withdrawn. No historical policy or modern development event was newly
+validated by this audit. The cited paper itself remains a real study of
+prewar elite ties, wartime soldier deaths and postwar power distribution.
+[E1; E2]
 
 ## Implementation and Assignment
-A prefecture's elite connectedness is measured by the number of national-level political leaders born there, with networks traced through shared revolutionary experiences. Since these networks were formed during the 1920s–1949 revolutionary period — decades before the economic reforms — they are predetermined with respect to post-1978 economic conditions. Revolutionary geography (distance to early CCP base areas) provides an instrument for connectedness. [E1]
+
+There is no credible treatment assignment, geography or date for the former
+post-1978 prefecture-growth claim. The actual paper's prewar county ties
+to Zeng are a different historical exposure and cannot be smuggled into
+this file as a replacement. [E1; E2]
 
 ## Why This Creates Empirical Variation
-Prefectures differ dramatically in their historical connectedness to the national elite network, and this variation was largely determined before the reform era began. Comparing regions with different levels of historical connectedness, before and after the 1978 reforms, identifies the economic value of political connections in China's institutional environment. [E1; analytical inference]
+
+It does not create a usable modern economic-development variation. This
+retired file is a citation correction, not a design recommendation. [E1; E2]
 
 ## Identification Risks
-Prefectures that produced revolutionary elites may have geographic or cultural characteristics that independently promote growth. The use of revolutionary-base-area distance as an instrument and extensive geographic controls helps address this concern. Additionally, post-1978 economic success may cause more natives to rise to elite positions, creating reverse causality — this is addressed by using only historically-determined measures of connectedness. [E1]
+
+The binding problem is identity, not an ordinary parallel-trends or
+instrument-validity concern. Changing controls cannot repair a paper that
+does not use the recorded treatment or outcome. [E1; E2]
 
 ## Data Requirements
-Comprehensive biographical database of Chinese political elites (national and provincial level) including birthplace, career history, and network ties. Prefecture-level economic data (GDP, investment, industry, education) from statistical yearbooks. GIS data on revolutionary base areas and early CCP activity for instrument construction. [E1]
+
+No valid data contract exists for the retired claim. Do not join a fabricated
+elite-origin measure to modern prefecture outcomes on the strength of this DOI.
 
 ## Evidence Notes
-E1 provides systematic evidence that prefectures with stronger historical connections to the CCP elite network experienced significantly faster economic growth after 1978. The paper documents specific mechanism channels through which network connections translated into economic advantage, and uses the historical nature of network formation to address endogeneity concerns. The findings highlight the persistent influence of informal political structures on China's economic geography.
+
+The publisher article page establishes the actual title, authors, pages,
+DOI and abstract. The author's full manuscript confirms the historical
+setting and the role of exam and kinship networks; mentions of Kuhn
+(1978) are bibliography, not a 1978 treatment break. [E1; E2]
