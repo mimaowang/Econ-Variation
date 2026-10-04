@@ -8045,6 +8045,108 @@ diagnostics. The candidate remains blocked pending the complete paper and
 national pre/post roster; this task adds verified local implementation
 evidence, not a ready increment.
 
+### Tariff shocks and mainland firm litigation: application screen — 2026-10-05
+
+Screen `task-4c22d914a897` retains `candidate-6d5486601692`, Bo and Liu,
+*From Trade Protectionism to Legal Protectionism: How the Trump Trade War
+Harms US Firms in China*, JDE182(2026),103829,
+[DOI10.1016/j.jdeveco.2026.103829](https://doi.org/10.1016/j.jdeveco.2026.103829).
+The actual public Elsevier XML for `S0304387826001124` confirms identity
+and June2026 issue metadata; it contains zero body/section/paragraph nodes.
+An HTTP200 metadata response is not a recovered manuscript. The
+[IDEAS abstract](https://ideas.repec.org/a/eee/deveco/v182y2026ics0304387826001124.html)
+was inspected and reports2014–2020 mainland firm litigation and a
+triple-difference application contrasting plaintiff nationality and city
+tariff exposure. Its stated robustness results and judicial-attitude
+interpretation remain abstract-reported, not independently assessed.
+Publisher introduction snippets are discovery leads, not methods evidence.
+
+The author-deposited [Mendeley record](https://data.mendeley.com/datasets/gg6gnrt6nd/1),
+version1 dated May26,2026, DOI `10.17632/gg6gnrt6nd.1`, is a concrete
+recovery route. Its inspected description distinguishes permitted processed
+replication inputs from restricted third-party raw data. The browser-visible
+Files heading supplies no actual inventory; public-file API and direct
+landing retrieval returned403. Neither archive, README nor code was
+inspected. The author's publisher-sharing link also failed; do not store
+its temporary redirect parameters or treat its existence as full-text access.
+
+Retain as a China-facing foreign-origin exposure because Chinese defendants
+and courts in mainland cities are exposed; foreign plaintiff nationality
+does not make this an overseas-only setting. Resolve must recover final
+city-by-time tariff construction, baseline weights and denominators,
+applicable tariff lists/rates/exclusions, firm nationality and court/city
+joins, treatment timing, case-selection and disclosure assumptions. Compare
+`candidate-3f935aa76855` and `candidate-63694eaa0714` at the Section301
+assignment level. A litigation outcome or DDD interaction does not alone
+justify another canonical variation. No canonical changed and ready is
+unchanged; a changed file-access route should precede deeper recovery.
+
+Follow-up `task-9fd3413ccabf` inspected the normal rendered browser page,
+which loads the real file inventory after the initial loading placeholders.
+It lists exactly one archive, `From-Trade-Protectionism-to-Legal-Protectionism_replication.rar`,
+78.2MB, uploaded May24,2026, in the May26 version1 deposit. The stable
+[file detail page](https://data.mendeley.com/datasets/gg6gnrt6nd/1/files/ed9bd8c9-48a8-41ce-bb1f-0abb4a4967a0)
+and the observed public-file preview/download paths identify the actual
+object. This supersedes the earlier inventory-access blocker, not the
+content-access blocker. The browser reports no RAR preview support; its
+download/export operations did not return a readable archive, and direct
+preview/download requests returned403. No archive manifest, README,
+treatment code or data was read, and no successful local download is claimed.
+The publisher's normal browser route requires human verification, which
+was not bypassed. Do not preserve challenge queries or browser telemetry.
+The candidate ends blocked on final methods and actual archive contents;
+recover those through a working lawful file transfer or library/author
+manuscript route, rather than repeat metadata retrieval. No canonical
+admission or ready increment.
+
+### Prefecture-to-city conversion: jurisdiction and timing recovery — 2026-10-05
+
+Resolve `task-7e5f7682c49d` revisits `candidate-58a991e060af`, Bo's
+JUE2020 paper, DOI `10.1016/j.jue.2019.06.005`. Earlier screening and
+resolve already established the paper-used mechanism; do not repeat their
+abstract-only discovery or create a second candidate. The current
+[author page](https://sites.google.com/view/boshiyu/%E9%A6%96%E9%A1%B5),
+publication entry, still points to the publisher rather than a cohort file.
+The publisher's indexed preview exposes the baseline equation with
+prefecture and province-year effects, but is not the complete methods or
+appendix. Crossref supplies no related deposit, and its public Elsevier XML
+route returns a short metadata response rather than the complete paper.
+Neither result resolves the previous cohort/crosswalk gap. In particular,
+the preview's contemporaneous treatment notation must be reconciled with
+the earlier draft's lagged treatment before documenting final coding.
+
+New primary support was inspected in the official
+[Wuchuan gazetteer, 1979–2000](https://www.gdwc.gov.cn/uploadfiles/file/20170103/20170103092444_3521.pdf):
+PDF900–902, printed886–888, text and rendered pages. It reproduces
+State Council approval `国函字〔1983〕269号`, December22,1983, and
+provincial notice `粤传〔1983〕20号`, July27,1983. The former dissolves
+Zhanjiang prefecture but allocates its counties across Zhanjiang, Maoming
+and Jiangmen: Wuchuan belongs to Zhanjiang. The latter requires handover
+by August end and work under new jurisdictions from September1, while
+reserving public announcement until formal central approval. These are
+different administrative clocks, not contradictory dates to silently collapse.
+The following reproduced1994 approvals separately convert Wuchuan county
+to a county-level city with its territory unchanged and delegate it to
+Zhanjiang. This later county-status change is not the1983 prefectural
+centralization. The gazetteer's narrative at PDF27, printed13, also dates
+the local jurisdictional transition to September1,1983. Its2014 preface
+date is not a policy implementation date.
+
+Analytical implication: a national conversion-year list without predecessor
+territories cannot by itself reconstruct prefecture outcomes or firm exposure.
+A dissolved prefecture may be partitioned among successor cities, including
+existing ones; a present-day name join would assign the wrong counties.
+The same-year approval/implementation distinction does not prove a different
+annual cohort here, but matters for exposure interpretation and lag coding.
+This official example is a reconstruction anchor, not proof of the author's
+complete sample or a license to guess other cohorts. Next recover the
+paper's actual conversion roster, predecessor/successor county membership,
+stable prefecture IDs and treatment-year convention, and reconcile final
+versus draft coding. Preserve selection and spillover concerns already
+documented in `task-ca7104820ae3`. No canonical admission; candidate stays
+blocked and ready is unchanged. The official1986 information-directory PDF
+was inaccessible in this task; its search snippet is not inspected legal text.
+
 ### Steel-plant Soviet transfer construction recovery — 2026-10-05
 
 Resolve `task-57f3aa58da98` revisits `candidate-3415fe9ce8ed`, Giorcelli
