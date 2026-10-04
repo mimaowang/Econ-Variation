@@ -7,7 +7,7 @@ aliases:
 - 物权法与改革前地级市私营企业存量占比
 status: grounded
 provenance:
-  task_id: task-d099ce0e0b2b
+  task_id: task-aedbabc941d1
 scope:
   country: China
   regions: [Mainland China; prefecture-level application]
@@ -55,7 +55,7 @@ timeline:
     Section2.1 and footnote3 explain the2006 contrast by drafting expectations.
     That account is source-reported. The2005 baseline and a national annual
     switch do not eliminate earlier anticipation or differential expectations.
-  last_verified: '2026-10-04'
+  last_verified: '2026-10-05'
 assignment:
   unit: Prefecture-year; entry and survival outcomes aggregate firm incorporation cohorts.
   treated: Prefectures with lower2005 private-firm shares have greater hypothesized reform exposure; there is no treated cutoff in the inspected main specification.
@@ -235,6 +235,15 @@ evidence:
   verification_status: verified
   access_level: metadata
   locator: Publisher heading, authors, volume67 issue2 and pages265-294 inspected2026-10-04; issue datedMay2024 and page postedJuly15,2024. No final main-body methods inspected.
+- id: E6
+  source_type: paper
+  citation: Cheng and Gawande, Bringing Dead Capital to Life - Property Rights Security in China, author-uploaded forthcoming manuscript.
+  url: https://www.researchgate.net/publication/382285892_Bringing_Dead_Capital_to_Life_Property_Rights_Security_in_China
+  date: '2024-08-17'
+  supports: [timeline.local_timing, assignment.rule, design.treatment_variable, design.estimation_notes]
+  verification_status: reported
+  access_level: full-text
+  locator: Author upload attribution and forthcoming cover; Sections3.1-3.2 pp10-12, equations1-2/footnote10; Table2 pp22-23. Inspected2026-10-05 through the full-text transcript, not the publisher typeset PDF.
 design_applications:
 - paper: Live Capital in China - Property Rights Security and Firm Births (January2021 manuscript; subsequently Bringing Dead Capital to Life - Property Rights Security in China)
   doi: 10.1086/727444
@@ -322,3 +331,12 @@ reconciliation is needed before reproducing its published estimates. Related
 property-law candidates remain source-version-specific staging records; their
 event/asset/bankruptcy contrasts must be reconciled here or against the existing
 collateral case rather than generating duplicate ready entries.
+
+The later author upload retains the 2005 private-firm share and post-2006
+contrast, but its operational regression is equation 2, not the precursor's
+equation 1. Footnote 10 attributes the early switch to anticipation; Table 2
+retains 4,545 observations. Section 3.2 excludes foreign-invested firms and
+subsidiaries. Do not import the precursor's ownership denominator without
+checking these exclusions. This narrows version uncertainty, but the cover
+still says forthcoming: exact published-version and replication reconciliation
+remain open, and no maturity upgrade follows. [E6, reported]

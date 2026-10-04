@@ -8046,6 +8046,60 @@ A bounded JDE search for recent mainland-China regional-development and environm
 
 Resolve `task-a3ae6d2f002c` inspected the MEE plan's section III(1), PDF pp. 24–25 and its final coverage annex. The plan itself names **47 stricter key-control cities** and says that its key-control area covers the entire jurisdiction in the other cities but only the main urban area of Chongqing. The publisher-indexed introduction explicitly describes its 117-city study frame as 47 stricter versus 70 less-strict cities and the paper's three contrasts as monitoring-station proximity, city stringency and before/after the 2012 announcement. These source facts resolve the basic institutional contrast but not the paper's exact parcel sample, monitoring-site vintage and coordinates, polluting-industry classification, distance/pixel construction, panel period, fixed effects or handling of monitoring-network expansion. The MEE plan itself directs monitoring-network construction, so station changes are a design issue rather than a fixed geographic fact to assume away. Direct SSRN PDF, publisher full text and a browser visit all met access controls; no CAPTCHA was solved and no full-text claim is made. Keep the candidate blocked until an inspectable lawful author manuscript or appendix closes those joins; do not infer them from the search-indexed introduction.
 
+### CJRES local business-environment legislation screen — 2026-10-05
+
+Screen `task-a3dcffd67bcd` adds one article from *Cambridge Journal of
+Regions, Economy and Society*, an adjacent regional-development outlet,
+not a newly audited field-top lane or an SSCI ranking claim. Wang and
+Rodríguez-Pose's [published open-access article](https://academic.oup.com/cjres/article/19/1/173/8303954),
+DOI10.1093/cjres/rsaf039, appears in19(1),173-192(2026), online27October2025.
+The research-context, data/method, Table1 and baseline-result notes were
+inspected as publisher HTML. DOI/mechanism search found no existing case.
+
+The source codes local documents titled “optimising the business environment”
+from PKUlaw, reporting58 adopters among293 cities by June2024. Its panel
+runs2019Q1-2024Q2. Registry entrants are classified using2019 industrial
+relatedness, then aggregated to city-quarter outcomes. CEM retains35
+treated and97 comparison cities. The paper names both Sun-Abraham event
+studies and Callaway-Sant'Anna group-time estimation; methods say city
+clustering, while result notes say province clustering. These are reported
+specifications, not evidence that either discrepancy is resolved.
+
+Retain as `china-variation`, not the national2020 statute alone. Follow-up
+must recover the exact city-document-quarter roster, publication versus
+effective-date coding, local legal-package differences, registry geography
+and industry crosswalks, matched sample and estimator implementation.
+Relatedness categories are outcomes, not separate policy assignments.
+Document timing does not verify enforcement, and matching does not remove
+unobserved adoption selection or differential pandemic shocks. No canonical
+publication follows this screen.
+
+### Guangdong registration candidate: recovered Dongguan plan — 2026-10-05
+
+Resolve `task-043bcc451456` supplements blocked candidate
+`candidate-e08c2aa11434`, preserving its earlier task and disposition.
+The [Trade and Industry Department archival reproduction](https://www.tid.gov.hk/archive/english/aboutus/tradecircular/cic/asia/2012/files/ci2012893a.pdf)
+contains Dongguan's original 东府〔2012〕150号, dated23October2012.
+All six pages were read; pp2/4/5 were rendered and visually checked.
+SectionII(4) distinguishes the earlier Dalang pilot from citywide expansion.
+SectionV(1) starts organizational work in October; SectionIV(2)(1) requires
+citywide business-license issuance by December's end. Neither establishes
+an exact first implementation day or the authors' complete21-city coding.
+
+SectionIII(3), p2, permits zero initial payment for companies with subscribed
+capital no greater than RMB500,000, retains special-sector minimums, and
+requires full contribution within two years (five for investment companies),
+with subsequent verification. This is deferred payment with conditions,
+not universal abolition of capital obligations. SectionIII(1) separates
+registration from licensed operation; III(5) phases in electronic registration.
+The original bundle therefore must not be equated with every later city's
+regime or a single minimum-capital shock.
+
+This closes one official-document access gap, not canonical admission.
+Retain the candidate's full treatment-crosswalk and registry/report-linkage
+gaps. Next recover the paper-used city-month assignment and test its handling
+of subcity pilots and differentiated components against these original rules.
+
 ### Targeted JDE foreign-bank liberalization screen — 2026-10-03
 
 This is a one-paper extension into the financial-development and trade lane, not a JDE archive sweep. Fernandes and Duanmu's *Foreign banks and firms' export dynamics: Evidence from China's banking reform* appeared in *Journal of Development Economics* 174 (2025), DOI `10.1016/j.jdeveco.2025.103474`. The openly available [46-page Exeter working paper](https://exetereconomics.github.io/RePEc/dpapers/DP2304.pdf), Sections 3–5 and its appendix, studies the 2001–2006 city-phased opening of foreign-bank renminbi business. Its empirical contrast combines city-year legal permission with the city-country-year density of foreign banks from each potential export destination; 2000–2006 customs transactions are aggregated to ordinary-exporter firm–destination–year outcomes, principally 2001–2005. The [2001 PBOC market-entry notice](https://tfs.mofcom.gov.cn/fgsjk/flfg/wz/hy/art/2001/art_1a3727189e7c4e7ba94a6088a09d397a.html) explicitly distinguishes Shanghai/Shenzhen's permission from Tianjin/Dalian's ability to apply, while the [2006 national removal](https://www.gov.cn/banshi/2006-12/11/content_466973.htm) ends geographic and client restrictions. That distinction and later cohort dates must be resolved against the paper's coding before canonical admission. Screen `task-e32c0fe2f5be` evaluates this as a China variation, not a generic WTO-accession dummy or exogenous foreign-bank entry. No exact DOI or mechanism duplicate was found in current canonical/task/candidate records; the raw article inventory alone is not a screened record.
