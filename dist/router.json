@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 160,
+  "record_count": 161,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 141,
+    "china-variation": 142,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 107,
+    "conditional-candidate": 108,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -5100,6 +5100,110 @@
       ],
       "blocker_count": 4,
       "source_path": "variations/china-city-county-merger-consolidation.md"
+    },
+    {
+      "id": "china-cnipa-demonstration-city-first-designation",
+      "name": "China CNIPA demonstration-city first-designation exposure",
+      "aliases": [
+        "国家知识产权示范城市",
+        "CNIPA intellectual-property demonstration cities"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "innovation",
+        "firm-behavior",
+        "urban-economics",
+        "intellectual-property"
+      ],
+      "topics": [
+        "firms-innovation",
+        "infrastructure-urban",
+        "law-regulation"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2012,
+        "end": 2016
+      },
+      "assignment": {
+        "unit": "Named local-government jurisdiction at designation; firm-year exposure through registered location in the research application.",
+        "mechanism": "Voluntary local application, provincial screening and national assessment of eligible places with previous pilot or demonstration preparation. Selection depends on existing IP capacity and performance. The 2013 nomination cap was 50 percen…",
+        "treatment": "IP_Protect_it = 1 after first recognition, including the recognition year, using the firm's registered jurisdiction.",
+        "comparison": "Compare the evolution of outcomes for firms in selected jurisdictions with suitable untreated firms, conditioning on common time shocks and firm effects. Selection and prior pilot…",
+        "required_identifiers": [
+          "firm identifier and calendar year",
+          "historical registered-location county or district identifier",
+          "historical parent-prefecture and province identifiers",
+          "designated-entity identifier, administrative level and first-designation year",
+          "patent publication/application identifier and applicant-to-firm crosswalk",
+          "cited and citing patent identifiers with citation year and firm industry"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "patent knowledge flows",
+          "innovation",
+          "knowledge diffusion",
+          "firm cooperation"
+        ],
+        "application_outcomes": [
+          "IHS of incoming plus outgoing same-industry patent citations in the following year."
+        ],
+        "design_families": [
+          "cohort-specific DID",
+          "event study",
+          "the published firm-and-year-FE DID application"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland nonfinancial A-share firms listed by 2012 for the inspected application; other populations require a separate representativeness judgment.",
+        "observation_unit": "firm-year",
+        "geography_level": "Historical registered county/district nested within prefecture or directly administered municipality.",
+        "time_start": 2009,
+        "time_end": 2021,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "registered location with historical county/district and parent jurisdiction",
+          "first designation year and entity administrative level",
+          "same-industry outgoing and incoming patent citation counts at t+1, through 2022",
+          "firm listing date, listing status and industry classification",
+          "patent applicant-to-firm links and authorized-invention patent stock",
+          "firm financial/governance controls and city GDP per capita for the published specification"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registered_jurisdiction_id",
+          "designated_entity_id",
+          "patent_id",
+          "cited_patent_id",
+          "industry_code"
+        ],
+        "treatment_key": [
+          "registered_jurisdiction_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "administrative aggregation error",
+        "bundled and successor institutions",
+        "designation term versus absorbing exposure",
+        "inference and transformed citation outcome",
+        "registration sorting and network interference",
+        "selective designation and prior treatment"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-cnipa-demonstration-city-first-designation.md"
     },
     {
       "id": "china-county-growing-season-rainfall-labor-reallocation",

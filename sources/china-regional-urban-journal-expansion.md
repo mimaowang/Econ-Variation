@@ -8045,6 +8045,69 @@ diagnostics. The candidate remains blocked pending the complete paper and
 national pre/post roster; this task adds verified local implementation
 evidence, not a ready increment.
 
+### Beijing Tongzhou subcenter: timing and spatial-boundary recovery — 2026-10-05
+
+Resolve `task-ba2694f7093c` revisits `candidate-4e21d30dca46` after the earlier
+worker exited without completing its task. Li and Xia's *City subcenter as a
+regional development policy: Impact on the property market*, JRS63(3),643–673,
+[DOI10.1111/jors.12633](https://doi.org/10.1111/jors.12633), has a Crossref
+online-publication date of January5,2023 and a June2023 issue. The actual
+[author institution profile](https://urban.pkusz.edu.cn/info/1013/2982.htm)
+confirms the paper and links the author's personal homepage. It does not supply
+a manuscript attachment. The homepage failed TLS handshakes in both Python and
+system curl with normal certificate checking. Publisher full-HTML, PDF and the
+Crossref-listed full-XML endpoint returned HTTP403 challenge pages, not methods.
+ResearchGate offers a full-text request, not a publicly readable file; OpenAlex
+lists no repository copy. These are bounded access observations, not proof that
+no authorized manuscript exists. No challenge was bypassed or author contacted.
+
+The inspected [publisher-supplied IDEAS abstract](https://ideas.repec.org/a/bla/jregsc/v63y2023i3p643-673.html)
+reports spatial/temporal differencing of micro-property transactions, distance
+from a new administrative center, housing-supply heterogeneity and adjacent-market
+spillovers. It does not establish the sample dates, transaction filtering, precise
+onset, geocoding system, distance formula, buffer thresholds, control areas or
+estimation/clustering specification. HomeLink is an earlier candidate lead, not
+a dataset independently established by the inspected abstract. Do not write those
+missing choices from a plausible Tongzhou DID story.
+
+Official sources recover distinct institutional clocks. The municipal
+[2018 historical press briefing](https://www.beijing.gov.cn/shipin/index.php?dataIndex=1&id=16172&option=newspbjwap%2Cview),
+SectionI.4, reports a2012 subcenter strategy,2015 April30 regional-plan approval,
+July11 municipal implementation decision,2016 further planning and November30,2018
+entry of initial agencies into the administrative office area. The government's
+[relocation announcement](https://www.beijing.gov.cn/ywdt/gzdt/201901/t20190111_1826667.html),
+signed January11,2019, establishes formal government operation at the new Tongzhou
+address. Early planning, initial occupancy and formal relocation are not one date.
+The2012 and2014 public planning history is an anticipation concern for a purported
+unanticipated2015 announcement design; it does not establish which announcement
+the paper actually uses.
+
+The original [detailed-plan approval](https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_61790.html),
+dated December27,2018 and published January3,2019, SectionIV distinguishes a155km²
+subcenter from the approximately906km² Tongzhou district including its expansion
+area. SectionsV/IX link relocation and neighboring Hebei coordination to the
+broader development package. Those areas do not provide a GIS polygon or certify
+the paper's treatment footprint. A district indicator, planning-boundary indicator
+and distance-to-administrative-center exposure must not be substituted for each
+other. The announced street address is not the authors' inspected coordinate.
+
+The original [Tongzhou housing-sales notice](https://www.beijing.gov.cn/zhengce/gfxwj/sj/201905/t20190522_58704.html),
+京建法〔2015〕12号, signed August14,2015, adds Tongzhou-specific household
+eligibility restrictions to existing Beijing limits, effective from the day after
+publication. SectionsI/II condition purchase eligibility on prior ownership,
+Tongzhou hukou or local social-insurance/tax history. Its geographical demand
+restriction differs from the subcenter plan footprint and could change transaction
+composition as well as prices. This is a confounder to recover in the paper's
+design, not another ready variation published from this resolve task.
+
+The candidate remains blocked on actual methods. A readable final manuscript or
+permitted author copy must identify the chosen announcement, exact spatial
+exposure/comparison, outcome versus listing data, geocoding and transaction joins,
+window and inference, and treatment of the contemporaneous purchase restrictions
+and neighboring-market spillovers. The official chronology and distinct spatial
+units are now durable recovery anchors. No canonical file or ready increment is
+created, and the earlier worker-failure history remains preserved.
+
 ### CNIPA demonstration-city designation and firm innovation: bounded screen — 2026-10-05
 
 Screen `task-12343522403d` opens one source in *Statistical Research* /
@@ -8086,6 +8149,48 @@ Do not replace the paper's coding with an automatically absorbing designation
 indicator or treat every listed county as whole-prefecture exposure. Screen
 creates no canonical file or ready increment; the primary notices are recovery
 anchors rather than proof of the paper's entire treatment panel.
+
+Resolve `task-9f93cfa16505` recovered a full alternative application in the
+bounded Chinese economics-journal lane: 解子恒、何祺、张振堃,
+《“闭门造车”还是“同舟共济”：知识产权保护与创新知识流动》,
+*Journal of Finance and Economics* /《财经研究》52(7),154–168,
+[DOI10.16538/j.cnki.jfe.20260414.301](https://doi.org/10.16538/j.cnki.jfe.20260414.301),
+published July3,2026. The actual [publisher full HTML](https://qks.shufe.edu.cn/mv_html/j00001/202607/s8nSWb20-82vx-qbpG-Db8D-LntaYJ03fZGm_WEB.htm)
+was retrieved and read, especially SectionsIII–IV, equations1–2, Tables1–2 and
+footnotes3–9. This is a firm-innovation/knowledge-flow question, not a financial-
+market study or a claim about an SSCI ranking. The 2023 main article remains
+unread; do not transfer the 2026 sample or estimator into that earlier paper.
+
+The full methods establish2009–2021 A-share firm-years, firms listed by2012,
+18,658 observations, registered-city first-recognition exposure, a next-year IHS
+incoming-plus-outgoing same-industry citation outcome and firm/year effects with
+baseline firm clustering. Patent collection runs through2022. The paper reports
+64 designated units, absorbing recognition-year-and-after treatment, imputation
+DID and municipality exclusion. Footnotes6/8 make auxiliary results available
+on request; prose about those checks is not inspected code or numerical replication.
+
+Official evidence now reconstructs all64 first-four-cohort entities: the
+[2015 review notice](https://www.cnipa.gov.cn/art/2017/9/22/art_379_137989.html),
+II(1), verifies the23 April2012 approvals; the original2013 approval supplies18;
+the [Changzhou approval](https://www.cnipa.gov.cn/art/2015/3/3/art_379_137991.html)
+supplies8 with March2015 terms; the [2015 Gazette issue2](https://www.cnipa.gov.cn/transfer/docs/pub/old/gk/jgb/201608/P020160829312534599722.pdf),
+PDF45/printed41, was rendered and visually inspected for Foshan,Zhongshan,Beijing
+Chaoyang and Nanchang, 国知发管函字〔2015〕43号, April13 signature and April2015
+term; the [fourth-cohort approval](https://www.cnipa.gov.cn/art/2016/7/28/art_379_138011.html)
+supplies11 with May2016 terms. The64 count is not64 disjoint prefecture cities.
+The third cohort's2014 proposal is not final approval; web migration dates are
+not legal onset. Term renewal/cancellation differs from absorbing first exposure.
+
+Publish `china-cnipa-demonstration-city-first-designation` as grounded and
+conditional: its jurisdiction-faithful encoding, complete roster, institutional
+selection, time conventions, actual application, data joins and identification
+limits are recoverable. Exact reproduction still needs the authors' administrative
+crosswalk and location history; a current-valid-status question needs renewal/
+cancellation histories. These are explicit use conditions, not silently supplied
+data or a claim that the paper's64-unit join was audited. No second record is
+created for the different2023 outcome, the third cohort'stwo term starts, or
+successor strong-city creation. Ready increases by one without maturity promotion
+to design-documented or weakened evidence requirements.
 
 ### Innovative-city designation and firm digital transformation: alternate application — 2026-10-05
 
