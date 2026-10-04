@@ -6592,6 +6592,46 @@ the paper/appendix, province-level reform chronology, sample rules and treatment
 comparison is the next evidence step. Do not substitute indexed introductory
 prose for inspected full text or conflate enforcement with a statutory-rate change.
 
+### Payroll collection: historical authority and ownership boundary — 2026-10-05
+
+Resolve `task-fe201dd35ddb` follows `candidate-3af0a0233e27`.
+The actual [Shanghai labour bureau reproduction of the original national ordinance](https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388254.html),
+State Council Order 259, January 22, 1999, was inspected in Articles 2–3,
+6, 10–11, 15 and 31. Article 6 lets provincial governments choose tax
+authorities or social-insurance agencies as collectors. Registration,
+assessment and information exchange remain separately specified. The
+ordinance's national commencement is not a province's switch date, and
+choice of collector does not itself change statutory contribution rates.
+
+The actual [Hunan implementing rule, provincial Order 142](https://rst.hunan.gov.cn/rst/szfgz/202211/t20221110_29122291.html),
+signed March 27, 2001 and effective May 1, was inspected in Articles 2,
+5, 12, 21 and 38. Article 5 specifically assigns foreign-invested and
+urban private enterprises' contributions to local tax departments, with
+implementing arrangements to be developed jointly. Its scope is not an
+unqualified all-enterprise provincial switch. The website's November 2022
+publication is not the rule's onset. Articles 12 and 21 preserve information
+exchange with insurance agencies rather than proving that all assessment,
+registration and collection functions moved together.
+
+The [MOFCOM-hosted 2019 revision](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=102439)
+was inspected at the version header and Articles 6 and 8. It still prints
+provincial collector choice and adds synchronized enterprise/insurance
+registration; it cannot retrospectively supply a 1998–2000s treatment roster.
+The [Fudan paper page](https://flcds.fudan.edu.cn/info/1094/3936.htm)
+confirms the JDE185 publication and links an attachment, but the actual
+download leads to a verification form rather than paper text. No sample,
+cohort table or appendix was recovered through this route.
+
+Analytical inference: reconstruct province-year agency changes by insurance
+type, enterprise ownership and collection-versus-assessment function before
+joining firm outcomes; do not code every firm from a provincial headline
+date. Reconcile the paper's claimed early rollout with contemporaneous
+orders, and distinguish later registration and national tax-administration
+reforms. This is an identified institutional boundary, not proof that the
+authors miscoded Hunan. The candidate stays blocked until its actual cohort
+construction, comparison and data joins can be inspected. No new canonical
+record or ready increment follows.
+
 ### JDE government-VC source reopened — 2026-09-29
 
 Task `task-da9612d2c333` revisits DOI `10.1016/j.jdeveco.2025.103599`,
@@ -7971,6 +8011,39 @@ comparison, and version boundary before any canonical admission.
 ### Targeted JDE industrial-land price-floor screen — 2026-10-02
 
 This single-paper lead is within the existing JDE development/land-policy lane, not a complete archive sweep. Tao, Yu and Zhao's *Race-to-the-bottom dynamics in industrial land pricing* (DOI `10.1016/j.jdeveco.2026.103910`, online 2026; assigned to volume 184, January 2027) studies a reported 2009 revision that lowered county industrial-land price floors in some places and raised them in others. The publisher's accessible article page supplies abstract and section excerpts describing a county/parcel DID and 2007–2022 land transactions, but not the full adjustment roster or all identification details. Follow-up located the actual grade-change authority: 国土资发〔2008〕308号, signed 2008-12-31 and effective 2009-01-01, changes land grades to which the 2006 industrial floor schedule is linked; the Yunnan natural-resources department confirms ten affected local units in that province. The separate 国土资发〔2009〕56号 concerns later floor implementation and exceptions and must **not** be substituted for the paper's grade-change treatment. No exact DOI or same 2009 adjustment mechanism was found in canonical or task ledgers. Screen `task-e3de36eb074d` retained `candidate-d5d0dd005391`; resolve needs the complete paper/appendix and pre/post county-grade schedules before canonical admission.
+
+### Industrial-land grade revision: local implementation cross-check — 2026-10-05
+
+Resolve `task-a7a4595e1d66` revisits `candidate-d5d0dd005391` without
+creating a second price-floor record. The actual [Yunnan forwarding notice](https://dnr.yn.gov.cn/html/2009/dijiaxinxi_0323/57.html)
+was recovered through direct HTML retrieval. It confirms January 1, 2009
+application of revised grades to both industrial-land price floors and
+construction-land control indicators. Its linked before/after tables at
+`/web_admin/gpyedit/filemanager/upload/other/200903231672.doc` returned
+404; no ten-county numerical table was inspected.
+
+The actual [Zibo government gazette, 2009 issues 5–6](https://www.zibo.gov.cn/gongkai/site_srmzfbgs/channel_zhengfugongbao/doc_5ff19d41aeb87ecd7b5a1196_042aa94d2e06fd9851b0ef76375ed024.pdf)
+was read in memory, PDF page 53, notice 淄政发〔2009〕54号, signed
+June 17, 2009. It reports Boshan and Zhoucun changing from grade six to
+eight, with statutory industrial floors falling from 336 to 252 yuan/m²;
+Huantai changes from thirteen to twelve, raising its floor from 96 to
+120 yuan/m². The same notice revises Boshan/Zhoucun's local benchmark
+prices from issuance but explicitly leaves Huantai's benchmark unchanged.
+These are distinct objects and dates: a national floor revision does not
+imply that every local benchmark changed simultaneously. Nor does an
+unchanged benchmark prove the national floor was unchanged. The attachment
+shows local benchmark grades, not a replacement national county-grade roster.
+This is textual inspection; no visual PDF-layout audit is claimed.
+
+Analytical inference: grade revisions may also alter investment-intensity
+requirements, so a pure-price exclusion claim needs the paper's controls and
+institutional discussion, not just the floor schedule. Preserve separate
+fields for old/new national grade, statutory floor, local benchmark and
+their effective dates. The final article still returned an access error;
+publisher excerpts do not close county coding, comparison construction or
+diagnostics. The candidate remains blocked pending the complete paper and
+national pre/post roster; this task adds verified local implementation
+evidence, not a ready increment.
 
 ### Targeted JDE county-border industrial-land allocation screen — 2026-10-02
 

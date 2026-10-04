@@ -8,7 +8,7 @@ aliases:
 - 中国1950年代高校院系调整
 status: grounded
 provenance:
-  task_id: task-e6f648e1ff1b
+  task_id: task-45e31d5a9c60
 scope:
   country: China
   regions:
@@ -75,7 +75,7 @@ timeline:
     overlapped with the First Five-Year Plan and other 1950s spatial investments.
     A national 1952 dummy therefore mixes anticipation and heterogeneous
     implementation and is not the preferred treatment encoding.
-  last_verified: '2026-10-02'
+  last_verified: '2026-10-05'
 assignment:
   unit: >
     County–industry cells for the long-run application, with department,
@@ -181,6 +181,11 @@ design:
     pre-program industrial structure where available, and treat neighboring or
     network-connected counties as potentially contaminated.
   estimation_notes: >
+    The December 2025 presentation's slide 19 equation uses log manufacturing
+    outcome and IndustryRelatedRelocation at county–industry level, with both
+    county and industry fixed effects. Slide 24, Table 3, clusters historical
+    selection-check errors by county; this does not verify every final-paper
+    specification or how zero outcomes enter logs.
     The paper reports weak or absent effects during the planned-economy period
     and stronger persistent effects after market reforms, with patent and human-
     capital mechanisms. These are source-reported findings, not independently
@@ -341,12 +346,13 @@ evidence:
   - design.primary_strategy
   - design.estimand
   - design.treatment_variable
+  - design.estimation_notes
   - empirical_requirements.required_fields
   - empirical_requirements.required_identifiers
   - empirical_requirements.treatment_source
   verification_status: reported
   access_level: full-text
-  locator: 'Author presentation slides 2–18 and 36–44: phases, department data, county-industry specification, historical sources, mechanisms, and competing place-based policies.'
+  locator: 'Author presentation slides 2–18 and 36–44: phases, data, mechanisms and competing policies. On 2026-10-05 the embedded equation on slide 19 and Table 3 on slide 24 were visually inspected through their PDF image objects: county/industry fixed effects and county-clustered historical selection checks. This is an author presentation, not visual verification of the final article or a recovered normalization formula.'
 - id: E4
   source_type: paper
   citation: 'Fan, Jianyong, Wei Tang, and Feng Zhang. 2026. “Persistent Effects of Universities on Local Industrial Growth: Evidence from China''s Policy-induced College Relocation in the 1950s.” Journal of Development Economics 179:103628. DOI: 10.1016/j.jdeveco.2025.103628.'
@@ -407,7 +413,7 @@ design_applications:
     Industries in the same county without a related relocated department, with
     controls for historical industrial structure and sensitivity to concurrent
     place-based programs.
-  empirical_design: County fixed effects with within-county cross-industry variation, long-run historical outcomes, and mechanism analyses
+  empirical_design: County–industry contrasts with county and industry fixed effects in the inspected presentation equation; long-run outcomes and mechanism analyses
   assumptions:
   - Department placement is conditionally unrelated to future county–industry growth
   - The field–industry crosswalk measures relevant exposure
