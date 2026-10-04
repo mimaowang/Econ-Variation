@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 162,
+  "record_count": 163,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 143,
+    "china-variation": 144,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 109,
+    "conditional-candidate": 110,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -5681,6 +5681,106 @@
       ],
       "blocker_count": 4,
       "source_path": "variations/china-covid19-community-infection-announcement-housing-market.md"
+    },
+    {
+      "id": "china-cross-border-ecommerce-comprehensive-pilot-city-designation",
+      "name": "China cross-border e-commerce comprehensive pilot city designation",
+      "aliases": [
+        "跨境电子商务综合试验区",
+        "跨境电商综试区",
+        "cross-border e-commerce comprehensive pilot zones"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "development",
+        "digital-trade",
+        "place-based-policy",
+        "industrial-economics"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2015,
+        "end": null
+      },
+      "assignment": {
+        "unit": "City designation; city-pair-year exposure in the inspected published application.",
+        "mechanism": "Named-city administrative approval following government requests. City membership and approval dates are observable; no lottery, binding numerical threshold or random allocation is established by the inspected decisions.",
+        "treatment": "Exactly one member ever designated in the study window, interacted with its post-establishment indicator; two-ever-designated pairs excluded in the inspected baseline.",
+        "comparison": "Pair changes after one member enters versus changes for neither-designated pairs. Already-treated pairs in a pooled staggered regression are not automatically valid controls for l…",
+        "required_identifiers": [
+          "city_i_id",
+          "city_j_id",
+          "year",
+          "historical_city_crosswalk",
+          "cohort_approval_date"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "regional development synchronization",
+          "regional integration",
+          "city trade",
+          "firm trade activity"
+        ],
+        "application_outcomes": [
+          "Transformed bilateral development-synchronization index."
+        ],
+        "design_families": [
+          "cohort-aware city-pair DID",
+          "city-pair event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland city pairs; published coverage is 254 cities after four missing-data exclusions.",
+        "observation_unit": "city-pair-year",
+        "geography_level": "Historical city jurisdiction, preserving county-level versus prefecture-level designations.",
+        "time_start": 2010,
+        "time_end": 2019,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "regional_development_synchronization",
+          "city_population",
+          "city_real_gdp",
+          "city_land_area",
+          "city_administrative_rank",
+          "intercity_distance",
+          "pre_policy_covariates"
+        ],
+        "required_identifiers": [
+          "city_i_id",
+          "city_j_id",
+          "year",
+          "historical_city_crosswalk"
+        ],
+        "treatment_key": [
+          "city_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "administrative selection and local timing",
+        "annual partial exposure and later cohorts",
+        "endogenous pair composition",
+        "interference and dyadic dependence",
+        "policy package is not a single benefit"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-cross-border-ecommerce-comprehensive-pilot-city-designation.md"
     },
     {
       "id": "china-csrc-final-ipo-review-near-miss-exporters",

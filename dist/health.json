@@ -3,37 +3,37 @@
   "knowledge_freshness": {
     "oldest_record_date": "2026-07-13",
     "newest_record_date": "2026-10-05",
-    "records_at_newest_date": 6
+    "records_at_newest_date": 7
   },
   "repository_health": {
     "status": "valid",
     "errors": [],
     "warnings": []
   },
-  "record_count": 162,
+  "record_count": 163,
   "status_counts": {
     "extracted": 24,
-    "grounded": 110,
+    "grounded": 111,
     "design-documented": 10,
     "contested": 11,
     "deprecated": 7
   },
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 143,
+    "china-variation": 144,
     "global-china-variation": 5
   },
   "knowledge_readiness": {
     "eligibility_counts": {
       "method-lead": 13,
-      "conditional-candidate": 109,
+      "conditional-candidate": 110,
       "direct-candidate": 10,
       "do-not-recommend": 18,
       "lead-only": 11,
       "method-inspiration": 1
     },
     "direct_candidates": 10,
-    "conditional_candidates": 109,
+    "conditional_candidates": 110,
     "lead_only": 11,
     "method_leads": 13,
     "method_inspirations": 1,
@@ -59,7 +59,7 @@
       "imprecise_evidence_paths": 45
     },
     "managed_active_pipeline": {
-      "record_count": 129,
+      "record_count": 130,
       "extracted_canonical_records": 9,
       "missing_primary_evidence": 5,
       "missing_primary_institutional_core": 9,

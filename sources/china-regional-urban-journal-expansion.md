@@ -9827,3 +9827,75 @@ city-pair dependence and source-version boundaries. The JFE pair filter's
 time basis/median denominator, exact synchronization implementation and
 dyadic inference remain reproduction conditions; do not fabricate author code.
 Canonical unchanged at screen; ready unchanged.
+
+Resolve `task-dc6464cdc8a9` independently re-read all four approval bodies and
+the JFE2023 methods. It also inspected the
+[Beijing implementation plan](https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_61765.html),
+京政办发〔2018〕48号: signed2018-12-18, posted2018-12-20, issuing paragraph,
+SectionI(4) and SectionII tasks1–10. The plan follows national July approval;
+citywide coordination, parks/platforms and benefit-specific conditions differ
+from uniform firm take-up. These are commitments, not verified completed operations.
+
+Admit `china-cross-border-ecommerce-comprehensive-pilot-city-designation` as
+grounded, conditional national-designation knowledge with the59-city roster.
+The inspected JFE application supplies the actual regional-use anchor. Preserve
+its local-file treatment crosswalk and pair-selection/outcome/inference gaps
+as replication conditions; distinguish an explicit national approval-year ITT
+convention from recovered author code. County-level cities must not inherit
+whole-prefecture membership. The2019 cohort lacks full post years within the
+published window; later rosters require another audit before extending controls.
+The CER plan-month/export application remains unresolved and is not admitted
+as final-paper methods or split into a second mechanism to increase counts.
+
+### Native Customs takeover: final firm-innovation application recovered — 2026-10-05
+
+Audit `task-ae9a40820b94` revisits blocked `candidate-27dd42e96403`, not a
+new variation. Jin and Schulze's *The long-term effect of western customs
+institution on firm innovation in China*, JEBO237:107154(2025),
+[DOI10.1016/j.jebo.2025.107154](https://doi.org/10.1016/j.jebo.2025.107154),
+has a final25-page institutional copy in
+[Freiburg record269027](https://freidok.uni-freiburg.de/data/269027).
+The page reader returned unfilled JavaScript labels. Reading its actual
+public landing-page code identified `/jsonApi/v1/publications`, with
+`publicationId=269027`, `fieldset=lp`, `maxRows=1`, `lang=en`,
+`available=issued`. The returned public file entry leads to this
+[stable download](https://freidok.uni-freiburg.de/files/269027/d4_DcQbO4d4Lsimf/The+long-term+effect+of+western+customs+institution+on+firm+innovation+in+China.pdf).
+It was retrieved in memory, not stored. Do not persist its redirect's expiring
+signed query. Title/DOI/version on PDF1 and methods on PDF3–9 were inspected;
+Tables1–2 on PDF8–9 were also rendered and visually read. AppendixA.1–A.5
+and data availability on PDF22–23 were read; no full station crosswalk appears
+in those tables. Other sections are not claimed as fully audited.
+
+The final paper reports41,987 ASIF2007 firms in114 historical neighboring
+counties, excluding treaty-port counties. New-product output/total output is
+the baseline innovation measure, not patents. Actual county takeover is
+instrumented by county-area share within25-km circles around takeover CMC
+stations; Section3.3 footnote14 explicitly rejects a sharp circle-boundary RD.
+Section2 reports24 main stations plus120 substations; Section3.2 maps36
+transferred stations into16 sample counties. Their aggregation needs a roster,
+not a fabricated reconciliation. CHGISv6 is named. Table2 documents IV,
+CMC-neighborhood/industry effects, province-industry clustering and
+Kleibergen–Paap F14.531 in its full specification. Table1's displayed placebo
+columns are4–5; its note and following prose incorrectly reference3–4.
+Data are available on request; no public assignment/code package was recovered.
+These are source-reported facts, not independently verified historical allocation.
+
+The [February2024 author DP46](https://www.iep.uni-freiburg.de/diskussionspapiere/copy_of_DP46_CMC_and_Innovation.pdf)
+was separately text-inspected at Sections2–3/PDF7–12. It supplies a precursor,
+not the final version. The final copy now closes the previous final-methods
+access gap for the firm application. Historical assignment still requires
+authenticated implementing correspondence, station coordinates and county
+crosswalk. The final paper cites Huang1917, CMC1907, the2003 circular
+collection and Tsai2008; citations do not establish access to those originals.
+The bounded original-source search returned the already inspected CiNii
+catalog and later bibliographic inventories, not a new verified roster.
+
+Analytical inference: the circle instrument is not a substitute for actual
+takeover, and uncorrelated geographic controls do not prove exclusion.
+Long-run growth, migration and sorting can jointly link historical port
+geography to current firms. Province-industry clustering does not by itself
+close historical county/CMC shared-exposure dependence. The count and table
+label issues matter for reconstruction, but do not justify silently correcting
+the author files. Keep the existing candidate blocked on assignment inputs;
+canonical and ready unchanged. Reopen on actual archival or author mapping
+files, not another abstract describing the same instrument.
