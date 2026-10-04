@@ -9481,3 +9481,349 @@ roster notices or authenticated local reproductions; an academic table's
 uninspected city list is a lead, not primary verification. Do not reconstruct
 32 city assignments by expanding provincial addressees, or publish an extracted
 promise. No canonical or ready increment from this resolve.
+
+### Innovative industrial-cluster pilots and firm supply chains — 2026-10-05
+
+This bounded extension adds *Research on Economics and Management*
+(经济与管理研究), published by Capital University of Economics and Business,
+as a Chinese economics/management application source for firm and industrial
+policy gaps. The boundary is one article and its cited institutional program,
+not a journal-wide sweep or a claim that the journal is international field-top.
+Use the [publisher's article page](https://rem.cueb.edu.cn/dqml/0caf0c0b93de4dc69f5498f50d949e21.htm)
+and publisher PDF; the article page timed out in this pass, while direct PDF
+retrieval succeeded. Earlier economics-journal lanes retain their priority.
+
+Screen `task-ca1baf792789` retains Huang Hongbin, Zhang Yueyang and Li Yuanyuan,
+*Can innovative industrial cluster pilot policy improve supply chain resilience?*,
+45(9):39–60 (2024), DOI `10.13502/j.cnki.issn1000-7636.2024.09.003`.
+The [22-page publisher PDF](https://rem.cueb.edu.cn/docs/2024-09/27e2428e7c364dc3a05081a479fefc45.pdf)
+was text-inspected at PDF1–15/printed39–53; PDF7–9 and11/printed45–47 and49
+were also rendered and visually read. The remaining pages were not inspected.
+SectionIV uses registered-city pilot designation from entry year onward in
+2009–2022 nonfinancial A-share firms: 19,282 firm-years before matching and
+14,256 after annual 1:2 nearest-neighbor logit matching. Equation3 includes
+firm/year effects. No clustering convention was located in inspected passages
+or Table4's note. The paper reports 10/22/29 clusters in 2013/2014/2017,
+covering 55 cities. Its resilience measures are entropy-weighted accounting
+and top-five-partner proxies, not observed recovery from a specified external
+disruption. Equation1's variance window, missing partner names, entropy
+normalization and final treatment crosswalk still need code or clarification.
+Tables5–6 show matching, overlapping-policy and specification checks, not
+random assignment or a recovered cohort-robust estimator.
+
+The actual [2013 management-notice landing page](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2013/201303/t20130325_100411.html)
+verifies 国科发火〔2013〕230号, signed February7 and posted March21; its linked
+management attachment was not yet inspected. The actual
+[first-cohort notice](https://www.most.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2013/201307/t20130702_106869.html)
+verifies ten named industrial clusters, 国科发火〔2013〕505号 signed June24,
+posted July2. The [third-cohort notice](https://www.most.gov.cn/tztg/201712/t20171213_136771.html)
+verifies 29 clusters, 国科发火〔2017〕374号 signed December1, posted December13.
+These notice bodies were inspected; their roster attachments and the second
+cohort were not. They designate clusters, not every enterprise in a city.
+
+Analytical inference: registered-city treatment is a geographically broader
+intention-to-treat proxy than membership in the designated industry/park.
+Recover cluster names, industrial scope, host geography and repeated host
+cities before assigning a first city year; do not treat 61 clusters as 61 cities.
+The December2017 cohort also makes full-calendar-year2017 exposure a paper
+coding convention rather than a full year of implementation. Annual matching
+on contemporaneous R&D or firm accounts can condition on policy responses;
+balance and insignificant event-study leads do not close selection, spillovers
+or heterogeneous-treatment TWFE concerns.
+
+Retain as `china-variation`; exact DOI and mechanism searches found no existing
+canonical or candidate. Resolve the original management attachment and three
+cohort rosters, the paper's 55-city crosswalk and firm-location convention,
+outcome construction and inference. A 2026 digital-innovation application
+(DOI `10.13502/j.cnki.issn1000-7636.2026.06.002`) is only a metadata lead here,
+not a second screened source or proof of its methods. Screen creates a candidate
+and separate follow-up only; canonical files and ready counts are unchanged.
+
+Resolve `task-f63a6dc8c6ac` recovered the ministry's original Word attachments
+in memory. Their logical document text was decoded through the Word piece
+table; raw contiguous stream decoding included formatting bytes and was not
+used to certify rows. The
+[management attachment](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2013/201303/W020130321372693909717.doc)
+was read at Articles1–13 and its evaluation framework. Article3 prioritizes
+high-tech parks; Articles5–6 require existing capability, local plans,
+provincial recommendation and ministry expert review. A trial lasts three
+years. Article11 permits confirmation after acceptance, extension or termination.
+Thus first designation and indefinite active status are not identical.
+
+All rows of the [first-cohort attachment](https://www.most.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2013/201307/W020130702392113909162.doc),
+[second-cohort attachment](https://www.most.gov.cn/tztg/201412/W020141222500615151428.doc)
+and [third-cohort attachment](https://www.most.gov.cn/tztg/201712/W020171213525986877817.doc)
+were read: ten,22 and29 clusters respectively, with construction organizations.
+The actual [second notice](https://www.most.gov.cn/tztg/201412/t20141222_117049.html)
+is 国科发火〔2014〕371号, signed December15 and posted December22, not a
+full-year2014 implementation. Preserve host resolution for 江宁,江阴,昆山,
+武进,璧山 and 青海高新区; repeated or nested host geographies require a dated
+crosswalk before deduplicating to the paper's stated55 cities. The original
+cluster lists are now recovered, but the authors'55-city treatment file is not.
+
+The [officially reproduced2021 expansion](https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/t20220408_2669844.html),
+国科火字〔2021〕123号, was read in full. Signed August9, it admits43 clusters
+after application, provincial recommendation and expert video review, under
+the2020/2021 evaluation framework, referencing the2013 rule. Its three-year
+plans were due September30. Its roster attachment remains uninspected here.
+This is a later regime boundary inside the paper's2009–2022 window, not proof
+that its control cities remained unexposed through2022.
+
+The remainder of the publisher paper was text-inspected, with PDF18–19/
+printed56–57 separately recovered after a truncated extraction. No author
+treatment table, variance window, entropy-weight implementation or clustering
+convention was located in the inspected article. Its mechanism uses invention
+application counts and inventory turnover; those are not independently
+identified mediation effects. The named trial cohorts and registered-city
+coding remain attributable to the paper, not verified firm membership.
+
+Analytical inference: a first-designation city indicator can study entry into
+the institutional package without claiming permanent trial funding, but its
+estimand must be stated that way. Reconcile the55-city crosswalk and the later
+expansion, or use a justified pre-expansion window. Separately establish park/
+industry exposure for a membership-based question. Do not automatically add
+2021 to the earlier regime or silently interpret the paper's2017 endpoint as
+the end of the national program. These assignment and sample boundaries are
+more consequential than filling a generic DID label.
+
+Candidate `candidate-1007dc8c87bc` remains blocked at canonical admission.
+Next evidence should be the actual treatment crosswalk/code and handling of
+post2017 cohorts, followed by outcome/inference clarification, or a separately
+inspected application with a closed exposure contract. Do not repeat searches
+for the now-accessible2013–2017 management and roster attachments. No source
+document was saved to the repository, no canonical was created and ready is
+unchanged.
+
+### Innovation vouchers and SME innovation — 2026-10-05
+
+Bounded source boundary: Small Business Economics is added here as a
+specialist enterprise/innovation journal lane, for this one published paper.
+This is not a field-top ranking assertion or a completed journal archive audit.
+Task `task-c3f31b5e3127` screens Xiaoyong Dai and Peichao Guo, "Policy failure
+in public support for small business innovation: the case of innovation
+vouchers in China", DOI `10.1007/s11187-025-01108-0`, volume66,393–421
+(issue2026; online2025-09-27). Exact DOI and innovation-voucher searches found
+no existing canonical case. Role: `china-variation`.
+
+Inspected access, not inferred full-text access:
+
+- https://link.springer.com/article/10.1007/s11187-025-01108-0:
+  subscription preview, publication metadata, Notes and public appendix
+  captions. Figure9 describes city-adoption event time; Figure11 instead uses
+  the first year of firm-disclosed voucher use with matching/reweighting.
+  Table7 is titled staggered adoption, but its rows were not accessible.
+  Data availability is on request. Equations2/3 and full sample construction
+  were not inspected. A direct `/tables/7` request failed; anchor links only
+  returned the preview.
+- https://www.researchgate.net/figure/The-number-of-cities-exposed-to-innovation-voucher-policy-over-time-Notes-The-data-were_fig1_395922226:
+  inspected Figure1 caption attributes city-policy collection to local
+  government and science/technology bureau websites. This establishes the
+  authors' stated source route, not independent verification of city dates.
+- https://www.researchgate.net/figure/The-disclosure-of-innovation-vouchers-by-SMEs-Notes-This-figure-shows-the-number-of_fig7_395922226:
+  inspected Figure7 caption identifies NEEQ SMEs and manual disclosure
+  collection from announcements and financial statements. Its take-up measure
+  is disclosure-based, not a census of all eligible firms or all redemptions.
+- https://www.researchgate.net/publication/395922226_Policy_failure_in_public_support_for_small_business_innovation_the_case_of_innovation_vouchers_in_China:
+  public web rendering exposed the opening page, not the methods; direct
+  request returned403. A "full-text available" label is not body inspection.
+
+Retain the city-policy offer as a candidate for resolution. The inspected
+appendix establishes an actual city-timing research application beyond the
+abstract, but it does not close assignment or data joins. Enterprise receipt,
+first disclosure and service redemption must remain distinct from city-level
+policy availability. Matching on observables does not itself make selection
+into receipt exogenous [analytical inference]. Likewise, city adoption can
+respond to innovation trends; it needs its own selection and comparison audit.
+Neither application is a new canonical record at screen stage.
+
+Next evidence should close the actual city/cohort table and local instrument
+boundary, whether provincial authorization differs from city delivery, the
+eligibility and redemption rules, sample period and firm geography joins,
+Equations2/3, control risk sets, inference and disclosure missingness. Recover
+the main methods through an authorized manuscript or accessible publisher
+copy before treating the city-policy candidate as ready. Keep firm take-up
+as an application/selection issue unless distinct institutional assignment
+is demonstrated. Canonical unchanged; ready unchanged.
+
+#### Local-regime resolution — 2026-10-05
+
+Resolve task `task-1e84783a5aac` recovered two early institutional sources.
+These clarify why city availability cannot be equated with receiving a grant.
+
+Shanghai primary notice:
+https://stcsm.sh.gov.cn/zwgk/tzgs/zhtz/20150401/0016-149211.html,
+"关于试点开展上海市科技创新券工作的通知", sections1–5 fully inspected.
+Page publication2015-04-01 differs from the document's closing date2015-04-02;
+preserve both. Section1 requires local registration/taxation, SME-size status
+and no affiliation with the collaborating provider. Section2 limits eligible
+services and excludes legally mandatory testing. Section3 specifies prior
+application, reimbursement afterwards and an annual RMB100,000 voucher cap.
+Section4 opens applications2015-04-20. Section5 instead permits services with
+invoice dates2015-07-01 through2016-06-30, with redemption applications
+2016-07-01 through2016-09-30. Qualifying expenditure up to RMB50,000 is
+reimbursed50%; the excess at no more than15%, subject to review/publication.
+The dates establish different administrative stages, not one universal
+implementation date. Attachments were not inspected. These are Shanghai2015
+rules only, not evidence for every city's eligibility or later revisions.
+
+Nanjing administrative report hosted by the Ministry of Finance:
+https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/jiangsucaizhengxinxilianbo/201503/t20150327_1208133.htm,
+"江苏南京财政：创新财政扶持方式 实施‘科技创新券’政策",2015-03-27,
+first two substantive paragraphs inspected. It reports a2014 municipal trial,
+firm application and approval, a two-year voucher validity and qualifying
+innovation expenditure at least four times voucher value upon redemption.
+Reported2014 issuance:259firms/RMB70.10million; redemption152firms/
+RMB48.40million. This is an official implementation report, not inspection of
+the underlying management instrument or the paper's city roster.
+
+Analytical implication: local rules demonstrably differ in validity,
+reimbursement and administrative timing. A city-level policy-offer estimand
+can still be meaningful, but its institutional boundary must explain those
+versions and its coding must not claim uniform grants or actual take-up.
+Disclosure can also lag service purchase and payment. The paper's inaccessible
+main equations/cohort rows are therefore consequential, not cosmetic gaps.
+The linked ResearchGate download returned404; exact-title/DOI searches found
+publisher/RePEc/ResearchGate metadata rather than an inspected manuscript.
+
+Candidate `candidate-c735ab3a5457` is blocked at canonical admission pending
+an authorized main-methods copy, exact city/year roster and treatment/code
+bridge. The recovered local notices narrow the next question; do not repeat
+their retrieval or substitute their dates for unseen Table7. No canonical
+record or restricted document was saved; ready unchanged.
+
+### BT-to-VAT alternative-application audit — 2026-10-05
+
+Task `task-47b60c9dac39` revisits blocked candidate
+`candidate-aa5a68ae7d29` with an actually inspectable alternative application,
+not a new policy discovery. Journal of Finance and Economics is already a
+bounded supplementary China enterprise/industry lane in this source map.
+This audit does not replace the JDE2024 paper's unclosed BEA linkage contract
+or split the same tax transition merely to increase record count.
+
+Inspected full publisher HTML:
+https://qks.sufe.edu.cn/mv_html/j00001/201803/af6fb95d-c23f-4a9d-83d7-9c6e8812e241_WEB.htm,
+Wang Guijun and Cao Ping, "‘营改增’对制造业企业自主创新的影响—兼议制造业企业的技术引进",
+JFE44(3),4–19(2018), Sections2–5, Equations2–5 and Tables1,4,8.
+The2008–2013 panel contains238 listed manufacturers/1,270 observations.
+Treatment is Shanghai; comparison provinces are Heilongjiang, Jilin,
+Shaanxi, Sichuan, Chongqing, Guizhou, Yunnan, Gansu, Qinghai and Hainan.
+Post is2012/2013. Patents are applications attributed to their application
+year and eventually granted, log(1+count), collected in2017. Accounting
+comes from CSMAR/RESSET/reports. Table4 clusters by firm and reports separate
+2012/2013 interactions. A construction-firm PSM robustness uses709 observations
+before matching/544 afterwards. Equation5 separately studies service sales,
+coding non-Shanghai starts one year after their actual date. These are
+different applications, not additional shocks. No replication code was read.
+
+Reinspected tax authority primary sources:
+https://www.chinatax.gov.cn/chinatax/n810341/n810765/n812156/201111/c1185787/content.html,
+财税〔2011〕111号, opening implementation paragraph: Shanghai2012-01-01;
+https://fgk.chinatax.gov.cn/zcfgk/c102416/c5204322/content.html,
+财税〔2013〕37号, opening Articles1–3 and Annex1 Articles1–24:
+national transport/selected modern-service conversion starts2013-08-01.
+General/small taxpayers, invoice eligibility, deductible expenditure and
+excluded uses govern actual credits. Manufacturing location alone is not an
+invoice-level deduction measure.
+
+Audit judgment [analytical inference]: the alternative paper removes the need
+for BEA mapping in its regional proxy, but does not provide a clean untreated
+regional pool through2013. The named comparison provinces enter national
+conversion in August2013. Thus the pooled coefficient cannot be described as
+Shanghai exposed versus wholly unexposed controls for both post years. Its
+2013 contrast is early versus later/partial-year availability, with cumulative
+and supply-network exposure. It is not defensible to copy the paper's location
+argument into a permanent exogeneity claim. Cross-region service purchases
+can also expose manufacturing controls before their home province converts.
+
+The2012 interaction is an actual reported contrast, but an annual2012-only
+redesign is our proposed audit route, not a separately inspected estimate.
+Firm clustering does not resolve one selected treated jurisdiction; city or
+province shocks and appropriate small-treated-group inference still need
+attention. Construction firms are not automatically clean indirect-exposure
+controls simply because their own direct conversion is later. PSM does not
+prove away those substantive differences or post-treatment selection.
+
+Keep the existing candidate blocked rather than publish a newly fluent but
+misleading canonical. Reopen with an application that explicitly reconciles
+buyer/supplier eligibility, period-specific control contamination and regional
+inference, or the JDE concordance and consolidated-tax-entity bridge already
+specified above. Newly inspected evidence changes the next action: do not
+reuse the2018 pooled regional comparison as a shortcut to readiness. No
+canonical changed; ready unchanged.
+
+### Cross-border e-commerce comprehensive pilot cities — 2026-10-05
+
+Screen `task-4f556b159d06`: Cheng Shiyu, Song Yaxiang and Tu Yao,
+*Place-based policies, creation and reallocation effects on city exports:
+Insights from China's cross-border E-commerce comprehensive pilot zones*,
+CER93,102479(2025), DOI `10.1016/j.chieco.2025.102479`.
+CER and JFE remain bounded supplementary China regional/enterprise lanes,
+not a new asserted field-top ranking. Exact DOI/policy searches found no
+canonical; national e-commerce demonstration cities are a different program.
+
+The author-institution record confirms publication:
+https://researchworks.creighton.edu/esploro/outputs/journalArticle/Place-based-policies-creation-and-reallocation-effects/991006180425702656.
+Publisher DOI/PII access failed; ResearchGate offers no full body. Do not
+attribute the inspected conference version's methods to the final article.
+
+Actually inspected author AEA2025 poster, Method, Figure3 and outcome labels:
+https://www.aeaweb.org/conference/2025/program/paper/EtARzN8R.
+It uses provincial plan-release month, monthly2005–2021 outcomes and distinguishes
+exporter from domestic-producer location. Its112-city sample includes91
+approved pilot cities,71 with plans by December2021. Same-province nonpilot
+cities form the spillover exposure, not merely physically adjacent cities.
+Equations use lagged exposure and selection-variable/time interactions;
+the seven selection variables are not enumerated in the inspected poster.
+This establishes an actual application, not a closed final replication contract.
+
+Alternative published main body actually inspected:
+https://qks.sufe.edu.cn/mv_html/j00001/202307/1c9cfa3b-2efd-45e5-9ba1-05b9f5bb242a_WEB.htm,
+Zhang Bingbing, Chen Yujia, Zhu Jing and Yan Zhijun, JFE49(7),34–47(2023),
+DOI `10.16538/j.cnki.jfe.20230221.101`, Sections2–4, Equations1–6,
+Table1 and its clustering note. Its2010–2019 city-pair design uses55pilot/
+199nonpilot cities, excludes both-ever-pilot pairs, and retains pairs above
+the gravity-strength median. The59-designation roster excludes Yiwu, Hunchun,
+Suifenhe and Haidong for data gaps. Exactly-one-pilot pairs become exposed
+at pilot establishment; neither-pilot pairs compare. Table1 has153,230
+observations; notes say city clustering without clarifying a dyadic scheme.
+GDP/population/area/rank/distance construct gravity; normalized activity
+differences and a Fisher transformation construct synchronization. City
+yearbooks and CNRDS provide outcomes/controls. Port-distance-times-exchange-rate
+IV is reported, not independently certified as excluded from regional outcomes.
+
+Primary cohort notices fully inspected, including ArticlesI and closing dates:
+
+- https://www.cac.gov.cn/2015-03/16/c_1114657947.htm,
+  国函〔2015〕44号, signed2015-03-07, posted2015-03-16: Hangzhou.
+- https://app.www.gov.cn/govdata/gov/201601/17/364844/article.html,
+  国函〔2016〕17号, signed2016-01-12, posted2016-01-17:
+  Tianjin, Shanghai, Chongqing, Hefei, Zhengzhou, Guangzhou, Chengdu,
+  Dalian, Ningbo, Qingdao, Shenzhen and Suzhou.
+- https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61450.html,
+  国函〔2018〕93号, signed2018-07-24, posted2018-08-08:
+  Beijing, Hohhot, Shenyang, Changchun, Harbin, Nanjing, Nanchang, Wuhan,
+  Changsha, Nanning, Haikou, Guiyang, Kunming, Xi'an, Lanzhou, Xiamen,
+  Tangshan, Wuxi, Weihai, Zhuhai, Dongguan and Yiwu.
+- https://www.cac.gov.cn/2019-12/25/c_1578810490221008.htm,
+  国函〔2019〕137号, signed2019-12-15, posted2019-12-25:
+  Shijiazhuang, Taiyuan, Chifeng, Fushun, Hunchun, Suifenhe, Xuzhou,
+  Nantong, Wenzhou, Shaoxing, Wuhu, Fuzhou, Quanzhou, Ganzhou, Jinan,
+  Yantai, Luoyang, Huangshi, Yueyang, Shantou, Foshan, Luzhou, Haidong
+  and Yinchuan.
+
+These notices delegate local plans to provincial governments and require
+further approval for important policy/construction measures. City designation
+is not uniform firm eligibility, actual platform use, customs park membership
+or a common cash grant. The2019notice ArticleIV explicitly distinguishes
+later consideration for retail-import pilots, conditional on supervision
+capability; comprehensive designation must not be equated with automatic
+retail-import permission.
+
+Retain for identity resolution. Decide whether the designation application is
+decision-sufficient separately from the not-yet-closed plan-month/export
+application. Preserve selected cities, early experimental activity, varying
+local measures, same-province/network spillovers, late2019 partial exposure,
+city-pair dependence and source-version boundaries. The JFE pair filter's
+time basis/median denominator, exact synchronization implementation and
+dyadic inference remain reproduction conditions; do not fabricate author code.
+Canonical unchanged at screen; ready unchanged.
