@@ -8045,6 +8045,45 @@ diagnostics. The candidate remains blocked pending the complete paper and
 national pre/post roster; this task adds verified local implementation
 evidence, not a ready increment.
 
+### Historical railway source recovery — 2026-10-05
+
+Screen `task-0795356851f8` revisits Bo, Chen, Liu and Zhou's JDE182
+article103827 (DOI `10.1016/j.jdeveco.2026.103827`). The July batch
+triage in `state/jde_china_batch_triage.md` skipped it because existing
+transport records had similar identification challenges. That is not an
+assignment-duplication finding. Preserve the old triage as history; this
+screen does not establish a distinct canonical mechanism either.
+
+The actual [Shiyu Bo publication page](https://sites.google.com/view/boshiyu/%E9%A6%96%E9%A1%B5)
+and [Cong Liu research page](https://sites.google.com/view/congliu/research)
+confirm the authors' historical-railway publication, with the earlier title
+*Railroads and Industrial Development in China, 1858–1936*. Bo's link goes
+to ScienceDirect, not an open manuscript; Liu's railway entry has no PDF
+link. The publisher article and abstract routes returned403. Indexed
+section text is a recovery lead only, not inspected full-text evidence.
+
+The actual [Mendeley version1 landing page](https://data.mendeley.com/datasets/z8g82cmktz/1)
+identifies Yan Zhou's replication deposit, DOI `10.17632/z8g82cmktz.1`,
+published May26,2026. Its apparent empty file area is not proof that the
+deposit has no files. Inspecting the page's own JavaScript established the
+public file-list route; the actual response at
+`https://data.mendeley.com/public-api/datasets/z8g82cmktz/files?folder_id=root&version=1`
+lists `BoChenLiuZhou_replicate.zip`,3426490bytes, completed status,
+file ID `e635b21e-150d-489f-87f7-6445f15cb9a3`; the version's folders
+response is empty. Both returned download/view routes encountered403
+challenge pages. No archive contents or executable construction were
+inspected, and no paper or data was saved locally.
+
+The existing Third Front record concerns1964–1978 industrial investment,
+1985 capacity and1962/1980 railway snapshots, not this historical period.
+That rules out treating its title as sufficient grounds to skip this paper,
+but does not verify the historical paper's assignment. Recover the complete
+article/appendix and the identified replication file before deciding on
+retention, exact network construction, historical geography and comparison.
+Avoid another identical access retry unless a new manuscript route or changed
+access is available. This screen ends blocked, with no new candidate or
+canonical admission and no ready increment.
+
 ### Targeted JDE county-border industrial-land allocation screen — 2026-10-02
 
 Tian, Wang and Zhang's *Picking Winners: Local Land Allocation and Bottom-Up Industrial Policy in China* (DOI `10.1016/j.jdeveco.2026.103920`, volume 184 assigned January 2027) is another single-paper source, not a JDE coverage claim. The authors' November 2025, 51-page manuscript is open from Wang's website. It studies parcel-level industrial land discounts below county price floors during 2007–2019, compares nearby transactions in the same industry across county borders, and joins pre-existing county-industry specialization from the 2004/2008 Economic Censuses. The empirical object is discretionary county-industry land allocation revealed at borders, not a fresh 2007 reform treatment nor a randomized industry assignment. Screen `task-0e9245077e04` must decide whether that border contrast is distinct and decision-useful, and whether the exact parcel/border joins and institutional discretion can be grounded before any canonical record.
