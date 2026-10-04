@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 161,
+  "record_count": 162,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 142,
+    "china-variation": 143,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 108,
+    "conditional-candidate": 109,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -7132,6 +7132,109 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-fukushima-nuclear-accident-land-market-risk-perception.md"
+    },
+    {
+      "id": "china-general-market-access-negative-list-provincial-pilot",
+      "name": "China general market-access negative-list provincial pilot exposure",
+      "aliases": [
+        "市场准入负面清单制度试点",
+        "general market-access negative-list pilot"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-behavior",
+        "industrial-economics",
+        "development",
+        "regional-market-integration",
+        "market-entry"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2016,
+        "end": 2018
+      },
+      "assignment": {
+        "unit": "Province-level pilot assignment; firm-year registered-province exposure in the published application.",
+        "mechanism": "Administratively selected provincial cohorts, with firms inheriting pilot exposure through registered province in the inspected application. No random selection, threshold or lottery is established; individual firms' actual relief depends…",
+        "treatment": "Open_it is the registered-province annual pilot indicator with first-cohort onset 2016 and second-cohort onset 2017, retained through 2018 in the published application.",
+        "comparison": "Compare outcome changes for sampled firms in pilot provinces with comparable firms in provinces not yet piloting during the relevant window. Selection, national transition and con…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registered_province_id",
+          "operating_province_id for location sensitivity",
+          "industry_code"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm capacity overhang",
+          "firm investment",
+          "diversification",
+          "market entry",
+          "productivity"
+        ],
+        "application_outcomes": [
+          "Model-based firm capacity overhang under three installed-capital proxies."
+        ],
+        "design_families": [
+          "cohort-specific DID",
+          "event study",
+          "published firm-and-year-FE DID"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland nonfinancial listed firms for the inspected application; other firm populations require their own coverage and selection assessment.",
+        "observation_unit": "firm-year",
+        "geography_level": "Historical registered province or directly administered municipality.",
+        "time_start": 2014,
+        "time_end": 2018,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "historical registered province",
+          "cohort onset year",
+          "firm capacity-overhang outcome or inputs and documented construction",
+          "fixed assets and intangible assets and total assets for published proxy alternatives",
+          "sales and operating/nonoperating costs and volatility and systematic risk and risk-free rate for frontier reconstruction",
+          "firm listing/industry/ST status",
+          "firm size leverage profitability age ownership analyst attention largest-shareholder share and productivity for published controls",
+          "provincial marketization control"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registered_province_id",
+          "industry_code"
+        ],
+        "treatment_key": [
+          "registered_province_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "administrative pilot selection",
+        "capacity measurement and geographic sorting",
+        "exposure is not actual deregulation",
+        "firm clustering versus province assignment",
+        "late-2018 nationwide transition",
+        "market spillovers and policy bundles"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-general-market-access-negative-list-provincial-pilot.md"
     },
     {
       "id": "china-golden-tax-iii-jurisdiction-rollout",

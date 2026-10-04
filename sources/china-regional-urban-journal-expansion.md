@@ -5856,6 +5856,40 @@ director appointment table or replication file, not unchanged abstracts.
 
 ### CER firm-birth tax-collection jurisdiction — 2026-10-03
 
+Follow-up `task-d92cc6f88a9b` on2026-10-05 audits the published
+[Management Science application](https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2021.4191),
+Section5.2.3, Table8 and AppendixA, printed8336–8339. This is a mechanism
+partition, not the missing CER energy-efficiency RD. Table8 PanelA's equality
+tests have reported one-sided p-values0.0543 and0.0584; a significant slope
+in one subgroup and an insignificant slope in the other does not establish
+a5%-significant difference. PanelB's corresponding p-values are0.3449 and
+0.0095 across specifications. Preserve that variation rather than saying the
+bureau contrast passes every specification. PanelA uses year/industry/city
+effects or industry-year/city effects, city-clustered inference and matched
+firm characteristics; matching is not evidence that actual collector equals
+the establishment-year proxy. Neither these tables nor AppendixA inspect
+firm-by-firm legal exceptions or validate an energy outcome.
+
+The missing2003 supplement was pursued through bounded official-domain and
+exact-title searches. No official full text was recovered. The inspected
+[tax-firm reproduction](https://www.lxtax.com/FristRoot/ALLList/Show?doc=750)
+of 国税发[2003]76号 is explicitly truncated in SectionI(4). It reports
+June25,2003 issuance and continuity of collection for surviving acquired
+firms, absorbing mergers and partnership conversions without outside
+investment, but its metadata gives January7 effectiveness; these are
+secondary-source leads, not certified national provisions or timing.
+[A Beijing forwarding-notice reproduction](https://m.110.com/fagui/116964.html)
+reports September27,2003 local implementation qualifications but does not
+display the attached national text. Neither page closes the missing original.
+Do not infer a universal bureau reassignment from a corporate registration
+event, or replace the original by inconsistent secondary metadata.
+
+The next useful evidence is the complete2003 notice and the published
+application's actual bureau/exception coding, or a readable CER main text
+and appendix. Repeating the available Management Science placebo tables
+cannot close those gaps. This audit creates no new canonical record or ready
+increment; `candidate-6e045d8fc891` remains blocked.
+
 Screen `task-360cf6139c2a` evaluates one source in the existing China
 Economic Review expansion: Xing, Li and Xu, *The impact of tax enforcement
 on corporate energy efficiency: Evidence from a tax collection reform in
@@ -9070,3 +9104,380 @@ does not increase.
 This is a one-paper extension into the financial-development and trade lane, not a JDE archive sweep. Fernandes and Duanmu's *Foreign banks and firms' export dynamics: Evidence from China's banking reform* appeared in *Journal of Development Economics* 174 (2025), DOI `10.1016/j.jdeveco.2025.103474`. The openly available [46-page Exeter working paper](https://exetereconomics.github.io/RePEc/dpapers/DP2304.pdf), Sections 3–5 and its appendix, studies the 2001–2006 city-phased opening of foreign-bank renminbi business. Its empirical contrast combines city-year legal permission with the city-country-year density of foreign banks from each potential export destination; 2000–2006 customs transactions are aggregated to ordinary-exporter firm–destination–year outcomes, principally 2001–2005. The [2001 PBOC market-entry notice](https://tfs.mofcom.gov.cn/fgsjk/flfg/wz/hy/art/2001/art_1a3727189e7c4e7ba94a6088a09d397a.html) explicitly distinguishes Shanghai/Shenzhen's permission from Tianjin/Dalian's ability to apply, while the [2006 national removal](https://www.gov.cn/banshi/2006-12/11/content_466973.htm) ends geographic and client restrictions. That distinction and later cohort dates must be resolved against the paper's coding before canonical admission. Screen `task-e32c0fe2f5be` evaluates this as a China variation, not a generic WTO-accession dummy or exogenous foreign-bank entry. No exact DOI or mechanism duplicate was found in current canonical/task/candidate records; the raw article inventory alone is not a screened record.
 
 Resolution found a material client-scope boundary. The [government's account of WTO banking commitments](https://www.gov.cn/banshi/2005-10/20/content_80208.htm) says renminbi services to Chinese enterprises would be allowed within two years of accession, while the [Shanghai financial authority](https://jrj.sh.gov.cn/JGGK193/20150713/0031-104622.html) dates its first four foreign banks' licenses for non-foreign-invested enterprise RMB corporate business to 2004. Thus a city's initial RMB-business opening, foreign-enterprise RMB business, approval to serve domestic firms, and an individual bank's actual license are not the same exposure. The working paper's broad description of four opened cities in 2001 cannot by itself prove that ordinary domestic exporters there could then borrow RMB from foreign banks. The author-linked final appendix was listed but its Google Drive file could not be inspected in this pass. Keep resolve candidate `candidate-2b8663e0eb6a` blocked pending paper coding/code or author clarification that distinguishes city permission, client category and bank license by year; do not turn foreign-bank branch density into assigned credit access. The later national removal in 2006 and Beijing's documented 2004 opening remain useful institutional anchors, not substitutes for that missing join.
+
+### National historic-cultural city title: original selection and spatial obligations — 2026-10-05
+
+Resolve `task-b183efa4bf77` revisits `candidate-9f2602cef045`. Crossref's actual
+DOI response confirms Liu, Yan and Zhang's *Does historic preservation affect
+firms' output? Evidence from the awarding of the Historic City title in China*,
+*China Economic Review*85,102156, June2024,
+[DOI10.1016/j.chieco.2024.102156](https://doi.org/10.1016/j.chieco.2024.102156).
+The earlier screen goal's2025 label is not the publication year. The candidate's
+1998–2013 industrial-firm panel remains a previous publisher-preview lead, not
+newly inspected full methods. This is a urban-land/firm-production application;
+the presence of pollution-related heterogeneity does not make this a new
+environmental-policy collection task.
+
+The actual [1986 State Council Gazette issue35](https://www.gov.cn/gongbao/shuju/1986/gwyb198635.pdf)
+was retrieved and PDF3–5/printed1075–1077 rendered and visually read. The
+December8,1986 approval is 国发〔1986〕104号, distinct from the underlying
+April24 report. Provinces recommended more than80 cities; expert review and
+field investigation selected38. The report distinguishes nationally approved
+titles from provincial/local titles, and named heritage sites from a city's
+preserved layout. Protection plans enter master planning; local regulations
+define protected objects, boundaries and construction-control belts. The
+38-entry roster mixes jurisdictions, including 常熟, 歙县, 寿县, 商丘（县）
+and 平遥. It is not a list of38 disjoint current prefectures.
+
+The actual [1994 Gazette issue1](https://www.gov.cn/gongbao/shuju/1994/gwyb199401.pdf),
+PDF15–18/printed15–18, was likewise rendered and read. 国发〔1994〕3号 is
+signed January4,1994; the attached June10,1993 report describes nominations
+starting in1991 and expert selection of37 cities. PDF18 contains the complete
+roster, including 临淄, 海康 and 琼山 under contemporary names. The report
+requires third-cohort protection plans by end1994, allows revocation for lost
+qualifications and individual subsequent additions, and distinguishes heritage
+protection ranges from construction-control belts. The approval year is neither
+the nomination year nor proof of a particular local plan's implementation.
+
+The [original2008 regulation](https://jsj.yueyang.gov.cn/54027/54028/54042/content_1396353.html),
+岳阳市住建局's May9,2008 reproduction of 国务院令第524号, was read in full.
+It takes effect July1,2008. Articles7–10 set heritage criteria, provincial
+applications, expert review and national approval for city titles; town/village
+approval differs. Articles13–18 require a plan within one year, provincial
+approval and publication. Articles23–24 restrict construction and specified
+industrial activities within the protection range; Article28's stronger
+new-building rule concerns core areas of streets, towns and villages, not every
+parcel in a titled prefecture. The inspected MOJ version incorporates2017
+amendments, so it is not substituted for the original sample-period text.
+Analytical inference: title exposure, actual protected-area exposure and plan
+enforcement timing answer different questions; do not backdate2008 provisions
+to every1982–1994 award or assert a citywide industrial ban.
+
+Publisher HTML currently returns403. The Crossref-linked Elsevier XML endpoint
+returns200 but contains no article body; OpenAlex supplies no repository full
+text, and the inspected author institution profile has no manuscript link.
+These observations do not establish that an authorized copy cannot be obtained.
+The two original cohort rosters and operative legal boundaries are now recovery
+anchors, not a complete treatment panel. The1986/1994 cohorts predate the
+candidate's1998 sample start: recover the paper's handling of already-treated
+cities, sample-period individual awards, jurisdiction changes, firm-address
+joins, comparison and staggered estimator from the actual methods/code.
+Remaining first-cohort and post1994 notices, exact paper coding and inference
+remain unverified. No canonical record is admitted; the candidate stays blocked
+and ready is unchanged.
+
+### County electronic-government disclosure pilot and firm innovation — 2026-10-05
+
+Screen `task-b892a3eded14` retains Zhang Ming'ang, Lu Shuling, Shao Xiaokuai
+and Bai Yanfeng, *Government information disclosure, firms' deterministic
+expectation, and innovation performance*, **财经研究**49(4),94–108(2023),
+[DOI10.16538/j.cnki.jfe.20230115.304](https://doi.org/10.16538/j.cnki.jfe.20230115.304).
+This is a targeted firm/governance gap within the existing Chinese economics
+journal lane, not an archive sweep or an asserted international journal ranking.
+Exact DOI and disclosure-mechanism searches found no canonical/candidate match.
+
+The [publisher's full HTML](https://qks.sufe.edu.cn/mv_html/j00001/202304/6f8ec7e7-3fc4-4237-9ebe-ec4cd2e12186_WEB.htm)
+was actually read at SectionsII,IV–V, Tables1–2 and the footnotes. The paper
+uses the2012 county electronic-government pilot, not the2017 standardized
+disclosure pilot. Its2006–2013 industrial-firm/patent panel links by firm name;
+unmatched patent observations become zeros. It excludes2010,2011, four
+municipalities and Tibet, retaining965,421 observations. Treatment is pilot
+county membership interacted with year>=2012; comparison is nonpilot counties.
+Equation7 includes firm/year effects, firm controls and2010 regional covariates
+interacted with cubic time trends; baseline clustering is by firm. Selection
+is explicitly nonrandom. Table2's event study omits2006 and reports2007–2009
+and2012–2013. Additional clustering, placebo and institutional details are
+deferred to a working paper, not inspected here. The listed-company robustness
+sample is separate from the main industrial-firm sample.
+
+The [NRTA official reproduction](https://www.nrta.gov.cn/art/2017/11/7/art_2083_37438.html)
+of 国办函〔2011〕99号 was fetched. Its September13,2011 signature must not
+be replaced by the website's2017 repost date. Sections5–10 establish100 national
+pilot counties/districts, provincial selection and filing by endOctober2011,
+prior electronic-government capacity, public catalogs by endFebruary2012 and
+evaluation aroundAugust2012. Provinces may expand their own pilots. The reform
+combines disclosure, administrative-service processing and electronic oversight;
+it is not a pure information-only treatment. Appendix1 gives provincial quotas,
+not the selected jurisdictions. The paper names 国预办发〔2012〕1号,
+January4,2012, as its roster source, but that full original roster has not yet
+been inspected in this screen.
+
+Analytical inference: retain as `china-variation` for resolution, not publication.
+Recover the national100-unit roster and historical county identifiers; distinguish
+additional provincial pilots that could contaminate controls. Establish how firm
+addresses inherit county exposure, including relocations and boundary changes.
+Preserve2011 anticipation, the short2012–2013 postwindow, selection on prior
+digital capacity, county-level dependence and unmatched-patent measurement as
+conditions rather than calling assignment exogenous. Do not treat the paper's
+reported1.1% effect as a universal percentage increase: the dependent variable
+is log(1+applications). Next resolve task should use the actual roster, local
+implementation evidence where needed and available paper coding; no canonical
+file or ready increment is justified by screening alone.
+
+Resolve `task-d258eb220eac` recovered the [publisher-hosted working paper
+WP2023-0015](https://qks.sufe.edu.cn/WorkingPaper/Full/WP2023-0015.pdf), a30-page
+image-only PDF. Pages3–4,13–15,25–28 and30 were rendered and visually read;
+these are inspected passages, not a claim to have inspected every page. Page4
+describes bundled disclosure, services and oversight. Pages13–14/Table5 show
+industry-level clustered errors, an earlier2008 placebo and municipality
+inclusion. Industry clustering is not county-assignment clustering. The patent
+transformation shown there uses a square root; the published HTML's replacement
+formula has an apparent rendering problem and must not be transcribed literally.
+Appendix Table3, pages27–28, gives selected implementation examples rather than
+a complete treatment roster; its Inner Mongolia example is 额尔济纳旗.
+It supplies no firm-address/treatment crosswalk in the inspected passages.
+
+The [Guomai notice reproduction](https://www.echinagov.com/news/17819.htm)
+now returned200 and was read directly, rather than relying on search excerpts.
+It attributes the notice to the national prevention-of-corruption website and
+prints the January4,2012 signature. However, its31 displayed provincial totals
+sum to101, with four Yunnan entries against the original framework's quota of
+three. It prints the questionable name 合山市江源区 and includes 东莞市大朗镇.
+These are properties of this reproduction, not verified corrections to the
+national roster. Its Inner Mongolia entries do not include the working paper's
+appendix example. Do not silently choose one list or remove a unit to force100.
+
+The actual [Dongguan2013 Gazette, issue3](https://www.dg.gov.cn/attachment/0/389/389510/3948436.pdf)
+was retrieved; PDF11–12/printed8–9 rendered and read. 东府办〔2013〕26号,
+March7,2013, SectionI(5), explicitly identifies 大朗镇 as the national
+electronic-government pilot. Thus the town entry is not safely dismissed as a
+typographical error or expanded to all Dongguan. The previously read
+[Yuexiu2013 annual report](https://www.yuexiu.gov.cn/gzyxbgs/gkmlpt/content/5/5347/post_5347644.html),
+overview, independently confirms that district's national membership, but cannot
+authenticate the other entries.
+
+Analytical inference: core exposure resolution remains open, not merely a missing
+robustness detail. Recover the original 国预办发〔2012〕1号 attachment or
+authenticated administrative reproductions, then the paper's actual treatment
+list/code. Reconcile the101-versus100 discrepancy, national versus provincial
+examples and Dalang's subcounty mapping without inventing exposure. Historical
+firm-address identifiers must support the assigned boundary; matching a town to
+its parent city is not equivalent. The working-paper PDF is accessible but not
+text-searchable, so unread pages remain a concrete follow-up, not an access
+blocker. Candidate `candidate-bf7f2d9d3b31` stays blocked on roster and join
+reconciliation; no new canonical file or ready increment is admitted.
+
+### Market-access negative-list pilot and interprovincial integration — 2026-10-05
+
+Screen `task-a8c056bcb978` retains Kao Xiumei and Xie Shenxiang's *The market
+integration effect of institutional opening-up*, **财经研究**51(1),19–32,93
+(2025), [DOI10.16538/j.cnki.jfe.20240808.101](https://doi.org/10.16538/j.cnki.jfe.20240808.101).
+This targeted regional-market/firm-entry gap stays in the established Chinese
+economics journal lane. Exact DOI and market-access-mechanism searches found
+no canonical/candidate duplicate; foreign-investment lists are not this regime.
+
+The [published full HTML](https://qks.sufe.edu.cn/mv_html/j00001/202501/NM8xN8KK-I2By-Mf80-Z5AM-HQLuRiihhRjU_WEB.htm)
+was read at SectionsII–IV, SectionV's bilateral-policy application, Tables1–2,6
+and footnotes8–9. The paper uses2010–2018 ordered province-pair–year data:
+31×30×9=8,370 observations, not8,370 independent provinces. For focal province
+i, baseline treatment follows counterpart j's pilot adoption; pair/year effects
+and pair-clustered errors are used. Equation8 distinguishes neither, one and
+both endpoints treated. Thirteen retail-price categories construct integration;
+the outcome is standardized, not a trade-volume measure. Footnote9 says
+robustness results are available on request; listed exercises are not inspected
+results. The written price-index transformation and Table1 wording require
+formula/code reconciliation before reproducing the outcome. The paper reports
+four2016 pilots, eleven2017 additions and national rollout inDecember2018.
+
+The actual [2016 national notice](https://www.ndrc.gov.cn/xxgk/zcfb/tz/201604/t20160411_963018.html),
+发改经体〔2016〕442号, is signed March2,2016 and reposted April11.
+Paragraphs4,7 require provincial proposals and State Council approval before
+implementation; they identify Tianjin, Shanghai, Fujian and Guangdong. The
+[2015 framework](https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/201510/t20151019_1510192.htm),
+国发〔2015〕55号, paragraph8 distinguishes general market access from
+foreign-investor-specific restrictions; paragraph11's2015–2017 pilot window
+is a planned sequence, not each province's observed start date.
+
+The [NDRC-hosted January2019 interpretation](https://www.ndrc.gov.cn/fggz/tzgg/sczrfmqd/zcjd/201901/t20190107_1022310_ext.html),
+by Li Jianwei of the Shanghai Academy of Social Sciences, reports2017 additions
+of Liaoning, Jilin, Heilongjiang, Zhejiang, Henan, Hubei, Hunan, Chongqing,
+Sichuan, Guizhou and Shaanxi and national implementation inDecember2018.
+This is an attributed interpretation, not the original cohort approval.
+
+Analytical inference: resolve provincial operative dates and the paper's annual
+coding, especially how late2018 national exposure affects remaining controls.
+Ordered dyads share provinces and symmetric price outcomes; pair clustering
+does not remove all cross-dyad dependence. Preserve selection, anticipation,
+overlapping free-trade/approval reforms and spillovers. Do not collapse the
+counterpart-only comparison into a generic either-endpoint dummy, or create
+separate canonical records merely for bilateral and unilateral applications.
+Retain as `china-variation`; no canonical record is admitted at screen.
+
+Resolve `task-a98dccb262da` inspected a contemporaneous primary source rather
+than relying on the 2019 interpretation: the [NDRC reply to CPPCC proposal0517](https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=15459),
+index000013039-2017-00554, dated August31,2017, SectionI(4), confirms that
+the four original provinces started piloting in2016 and the eleven named
+additions joined in June2017. It explicitly describes15 regions testing the
+same draft. This closes the second cohort's roster, year and month; it does
+not establish each province's approval day or implementation intensity.
+
+The [national2018 notice](https://www.ndrc.gov.cn/xxgk/zcfb/tz/201812/t20181228_962356_ext.html),
+发改经体〔2018〕1892号, was inspected in full. Its signature is December21,2018;
+this website posts it on December28. SectionII(1) requires equal entry outside
+the list and SectionII(2) bars independently issued local market-access lists.
+The paper's December25 publication date is a reported announcement date,
+not the signature date. The national regime ends a genuinely untreated
+nonpilot comparison; its last days of2018 do not justify automatically coding
+the whole calendar year as a full year of national exposure.
+
+A numerical consistency check narrows the unresolved annual coding. Under the
+reported balanced ordered-pair panel, four counterparts treated in2016 and
+fifteen in each of2017 and2018 give (4+15+15)*30/8370=0.121864, matching
+Table1's rounded Neglist mean0.122. Treating all31 counterparts in2018 instead
+gives (4+15+31)*30/8370=0.179211, which does not match. This is an analytical
+inference about pilot-only coding, not an inspected treatment file. Recover
+the actual2018 convention before interpreting its controls as never exposed.
+Reinspection of SectionIII confirms the outcome's variance-versus-standard-
+deviation/inverse wording is unresolved; z-standardization alone does not
+identify which price-dispersion transformation was used.
+
+An alternative application was inspected at SectionIII, including the model
+and variable definitions, of the publisher's [2021 paper, 市场准入管制放松与供给侧去产能](https://qks.sufe.edu.cn/mv_html/j00001/202107/a17542be-e520-46c2-a756-c00d96823898_WEB.htm).
+It explicitly codes registered-location firms in the four provinces from2016
+and the eleven additions from2017, otherwise zero, in a2014–2018 panel with
+11,872 retained firm-years and firm/year effects. Its reported November17,2016
+and June5,2017 daily dates are not independently verified. This confirms an
+actual firm application, but does not supply the2025 dyadic coding or resolve
+the nationwide boundary. Do not create another variation simply for this
+outcome. Later sections, capacity-estimation details and inference diagnostics
+of the2021 paper remain unread, so this is a follow-up route, not a substitute
+completed application.
+
+Candidate `candidate-dec4c3254df2` remains blocked at canonical admission for
+the targeted2025 application: retrieve its treatment file or explicit annual
+coding clarification and the final outcome formula/code. The institutional
+cohort roster no longer needs rediscovery. If this application cannot be
+closed, inspect the2021 firm's complete design and capacity construction as
+an alternative application of the same provincial pilot mechanism; preserve
+the late2018 national transition in either case. No canonical or ready count
+is added by this resolve task.
+
+Ground follow-up `task-73769b07dae2` inspected the2021 paper's SectionIV(1),
+Tables3–4, IV(2) identification, selection and remaining robustness discussion,
+and footnotes2–3. The paper's DOI is10.16538/j.cnki.jfe.20210416.403. Firm
+clustering is explicit; event-study data start in2010 with17,396 observations,
+not the11,872 baseline. The paper acknowledges that the province indicator
+cannot establish which activities' entry restrictions actually changed.
+Operating-location, matching and alternative-cluster checks are described,
+but their tables are on request; none independently closes province-level
+inference or selection. Capacity estimation is model-dependent and exact code
+was not obtained. These are visible application limits, not permission to
+declare a firm-specific deregulation treatment.
+
+The annual provincial mechanism is now served by
+`china-general-market-access-negative-list-provincial-pilot`, grounded with
+conditional-use requirements. Primary notices and the contemporaneous reply
+close its roster and annual cohort timing; the2021 full text explicitly closes
+registered-firm coding. Exact daily dates, industry-specific restriction relief
+and exact capacity replication are not certified. The2025 dyadic application
+retains its separate formula/coding gap and is not admitted as a ready design
+profile. Reconcile the historical candidate to this same mechanism rather than
+create another candidate or another variation for a second outcome. The earlier
+blocked resolve remains an accurate history of that targeted application.
+The terminal candidate ledger entry stays blocked: `candidate-close` preserves
+terminal history rather than reopening it. This source-level cross-reference
+links the grounded provincial mechanism without claiming that the2025
+application or its candidate status has been resolved.
+
+### Logistics-standardization city pilots and market integration — 2026-10-05
+
+Screen `task-dbc7808c919b` retains Li Lanbing and Lu Haiyong's *Construction
+of the unified national market: how does logistics standardization promote
+domestic market integration?*, **财经研究**50(9):19–33 (2024),
+[DOI10.16538/j.cnki.jfe.20240615.401](https://doi.org/10.16538/j.cnki.jfe.20240615.401).
+Exact DOI and logistics-standardization searches found no prior canonical or
+candidate. This stays in the established Chinese economics journal expansion
+lane: a mainland regional-market and firm-logistics application, not agriculture
+or an environmental outcome merely because related papers study those topics.
+
+The [published full HTML](https://qks.sufe.edu.cn/mv_html/j00001/202409/F0as3vNR-2JCx-rdCH-3Vy6-Ra9dN5YgBvyp_WEB.htm)
+was inspected at SectionIII, SectionIV baseline/robustness/endogeneity passages,
+Tables1–4 and footnotes2–5. The paper actually uses city-designation onset in
+2014,2015,2016 with absorbing Lss=1 from entry year, reporting32 pilots.
+Its baseline is city/year-FE DID, not a randomized standard adoption. Relative
+price dispersion from16 retail categories, pair demeaning, city aggregation
+and an inverse/square-root transformation measure integration, not observed
+trade volumes. A seven-category CPI and inverse-distance-weighted alternative
+are reported. Exact transformation order and city-price crosswalk need code
+or formula reconciliation. No explicit clustering convention was located in
+the inspected HTML; do not invent city-clustered inference.
+
+There is a concrete sample discrepancy: SectionIII says2011–2019 and152 cities,
+yet Tables1–2 report1,520 observations, equal to152*10 rather than152*9=1,368.
+Elsewhere price construction says2010–2019. CPI robustness has1,340 observations.
+Determine which baseline years and missing-city rules were actually used before
+encoding the empirical contract; do not silently replace one statement with
+the arithmetic. Complete-case price-category coverage selects the city sample.
+
+SectionIV(3) actually uses Qin-road node status interacted with year dummies
+and, separately,1984 per-capita postal business interacted with year dummies
+to instrument pilot exposure. Table4 reports first stages and KP statistics.
+The exact interaction/reference-year construction and historical-node roster
+remain unrecovered. Analytical inference: persistent transport geography,
+historical development and differential market trends can violate exclusion;
+the age of an instrument and a large first-stage statistic do not establish
+exogeneity. Do not publish either IV as a separate shock or substitute it for
+an institutional cohort roster.
+
+The actual [Beijing implementation notice](https://www.beijing.gov.cn/zhengce/gfxwj/201905/t20190522_60100.html),
+京商务物流字〔2017〕3号, signed April11,2017, was read in full. It cites
+财办建〔2016〕85号, specifies a January2016–August2017 local cycle, and
+supports standard-pallet/box reuse, compatible equipment and information
+systems. SectionsIV–V select registered applicant enterprises/projects through
+review and acceptance-linked funding. Thus city designation and receipt of
+project support are different exposure layers. This local continuation document
+does not establish Beijing's first national pilot year or the other31 cities.
+
+The MOFCOM October9,2016 briefing was located, but web access returned502 and
+a separate requests retrieval failed SSL; its search excerpt is not inspected
+evidence. Its [dated URL](https://dcj.mofcom.gov.cn/article/xwfb/xwlxfbh/201610/20161001405287.shtml)
+and the [official monitoring-report PDF lead](https://www.mofcom.gov.cn/cms_files/oldfile/ltfzs/201806/20180612161628047.pdf)
+remain follow-up routes, not verified roster support.
+
+Retain as `china-variation`. Resolve the original2014–2016 notices and dated
+city roster, selection regime, first designation versus renewed funding,
+city/firm geography joins, sample years, price-outcome construction and spatial
+inference. Preserve selection, network spillovers and overlapping e-commerce
+programs. Screen adds a candidate and a separate resolve task only; no canonical
+or ready increment.
+
+Resolve `task-b2fdc56979aa` retrieved the actual national2016 notice,
+财办建〔2016〕85号, from the [Hunan Finance Department's official scanned copy](https://czt.hunan.gov.cn/czt/sqczzczc/202111/21027004/files/4596179ba9cb4e78a7c09e82c7c70544.pdf).
+The PDF has16 pages; printed/PDF1–8 were rendered and visually read, not OCR
+guessed. Pages1–5 establish regional expansion around the three economic
+clusters and the Yangtze belt,1200*1000mm pallet reuse, compatible equipment,
+information platforms and fiscal support. Page6 requires project selection,
+acceptance and enterprise registration within three months of notice receipt.
+The notice's July2016 signature and July20 printing are not a September
+effective date. Pages9–16 performance attachments remain unread; the inspected
+notice body does not enumerate the full18-city new cohort. Province addressees
+are not a city treatment roster. The initial default TLS fetch failed, but a
+certificate-verifying connection using a supported elliptic curve retrieved the
+PDF; this primary source is now accessible, not an unresolved access blocker.
+
+The [Hubei2016 city solicitation](https://swt.hubei.gov.cn/stdt/tzgg/201910/t20191025_4709.shtml),
+signed May20,2016, was read at SectionsI–III and the implementation-plan
+outline. Eligible applicants are prefecture-level or higher cities with strong
+administrative mechanisms and existing foundations; Yangtze-belt cities receive
+priority. Provincial expert competition selects two cities for national filing
+by May27. Plans can jointly cover several cities. This primary evidence closes
+the selective, capacity-based nomination mechanism for Hubei, not the names of
+its final winners or an invariant quota for every province.
+
+The [Beijing2015 implementation notice](https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_58624.html),
+京商务物流字〔2015〕6号, signed July6,2015, was read in full. It cites the2014
+central notice and sets annual project solicitation, expert review and
+acceptance-linked funding. Combined with the already inspected2017 notice,
+it establishes continuing enterprise support inside an existing city pilot,
+not Beijing newly entering in2015 or2016. Preserve geography and spillovers
+when a city's supported projects extend into surrounding regions.
+
+Candidate `candidate-2f081f5fb6f2` remains blocked for the targeted application:
+obtain authenticated first-city rosters for all three cohorts and reconcile
+the152-city baseline period and final price transformation. National2016
+implementation content and Hubei selection are no longer generic unknowns.
+Inspect the remaining official attachments and locate the national2014/2015
+roster notices or authenticated local reproductions; an academic table's
+uninspected city list is a lead, not primary verification. Do not reconstruct
+32 city assignments by expanding provincial addressees, or publish an extracted
+promise. No canonical or ready increment from this resolve.
