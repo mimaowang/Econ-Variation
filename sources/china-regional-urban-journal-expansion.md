@@ -8160,6 +8160,169 @@ Retain the candidate's full treatment-crosswalk and registry/report-linkage
 gaps. Next recover the paper-used city-month assignment and test its handling
 of subcity pilots and differentiated components against these original rules.
 
+### CER corporate bribery: tax-bureau cohort boundary — 2026-10-05
+
+Resolve `task-d9ae9c8580c6` revisits historical blocked
+`candidate-6e045d8fc891` through Cao, Li and Xia's *The complicit role of local
+government authorities in corporate bribery: Evidence from a tax collection
+reform in China*, CER 65 (2021), article 101578,
+DOI `10.1016/j.chieco.2020.101578`. The [publisher page](https://www.sciencedirect.com/science/article/pii/S1043951X20301759)
+could not be opened as full text; the [RePEc entry](https://ideas.repec.org/a/eee/chieco/v65y2021ics1043951x20301759.html)
+provides metadata and abstract, with subscriber-only full-text access.
+Bounded exact-title and author-repository searches did not recover a lawful
+body or appendix. The abstract reports greater bribery under local-bureau
+collection and lower tax burdens for those firms. These are reported claims,
+not inspected measures, estimates or identification diagnostics. Neither a
+later paper's citation nor its entertainment/travel-expense formula verifies
+this paper's outcome construction. Sample years, bureau measurement,
+establishment-date precision, estimator, comparison window and data joins
+remain unknown.
+
+Three actual official HTML texts sharpen the institutional boundary without
+replacing that missing application. [国税发[2002]120号](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n812203/200207/c1208494/content.html),
+signed 12 September 2002, was inspected in Sections II–V. It directs bureaus
+to stop unauthorized local income-tax concessions, coordinate tax-base and
+assessed-tax treatment, and escalate disputes over registration categories.
+Section V acknowledges inconsistent registration interpretations in practice.
+This supports a compliance concern, not a measured noncompliance rate or a
+universal direction of enforcement. Cohort eligibility, actual collector and
+effective tax burden must remain separate variables.
+
+[财税[2006]1号](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200602/t286452.html),
+signed 9 January 2006, was inspected in Sections I–IV. Its new-enterprise
+standard combines establishment registration with a generally at-most-25%
+nonmonetary-capital contribution; the denominator is registered paid-in
+capital or share capital. Section III applies the standard to bureau
+jurisdiction from issuance, preserving previously established actual
+jurisdiction. The page's February upload date is not the policy date.
+This is a later regime boundary, not a rule to backdate to January 2002.
+
+[国税发〔2006〕103号](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200608/t286503.html),
+signed 13 July 2006, was inspected in Sections I–VII. It extends the standard
+to all domestic enterprises, whether or not receiving tax holidays. Section
+II assigns registered firms failing that standard according to investors'
+national- versus local-bureau equity shares; ties and all-natural-person
+investors go to the local bureau. Section III ties nonlegal-person branches
+to the existing enterprise's collector. Section IV includes purchase,
+leasing and free use of related investors' nonmonetary assets in the
+cumulative 25% test, linking failure to Section II jurisdiction. The archive
+marks this notice repealed from 4 January 2011; that does not erase its
+historical application. Its reference to the base notice's publication
+requires preserving the January and July documents together, not assigning
+every firm a July-only switch.
+
+The 2003 supplementary notice `国税发[2003]76号` remains a primary-source
+retrieval lead in this pass; do not confuse it with `国税发[2003]24号` or
+silently infer its provisions from secondary summaries. Analytical inference:
+if the CER sample includes later entrants, a single post-2001 establishment
+dummy need not reproduce actual collector assignment. That is not evidence
+that the authors miscoded firms: recover their sample and treatment coding
+before deciding. The CER bribery application, the NBER innovation working
+paper and the CER energy application remain different source uses of the
+same candidate mechanism, not three ready variations. Keep the historical
+candidate blocked pending full application evidence; no canonical was added.
+
+### ReStud SOE restructuring: final paper and executable exposure recipe — 2026-10-05
+
+Resolve `task-d7fa8d2355ae` reopens historical blocked
+`candidate-182bc9807ee8` without replacing its earlier disposition.
+Brandt, Kambourov and Storesletten's article is *Review of Economic Studies*
+93(1), 286–326 (2026), DOI `10.1093/restud/rdaf029`, first published online
+10 June 2025. The [author's publication page](https://sites.google.com/site/gtkambourov/research)
+links an [author-hosted typeset PDF](https://drive.google.com/file/d/1FRM5mvy_cFMx1f2qQsQOfcO2EGWVWHiI/view).
+The 41-page PDF was inspected in memory: Section 2.1, printed p. 290;
+Sections 7.1–7.2, pp. 312–316; footnotes 28–34 and Table 9. Pages 315–316
+were also rendered and visually checked. This closes final-body access;
+the separately published final appendix was not recovered. No paper or
+microdata was stored in the repository.
+
+The [author-deposited replication package](https://zenodo.org/records/14872511)
+was opened in memory, not executed. Its January 7, 2025 README, pp. 2–4
+and the Table 9 instructions, identifies restricted CIC inputs and explains
+that lawful NBS or university access is needed. The code file
+`MS28536_data/3_figures_tables/9_Table_9/Table_9.do` makes the variation
+recoverable. For industry k, let g_k be national SOE employment in 2004
+divided by its 1995 level, minus one. For prefecture p, let w_pk be 1995 SOE
+employment in industry k divided by ALL local industrial employment.
+The instrument is Z_p = sum_k(w_pk * g_k), equivalently the 1995 local SOE
+share times the weighted average of industry shifts within its SOE sector.
+The second, within-SOE-only weighting is computed too, but the Table 9
+regressions use `soe_change_iv_bartik12004`, the first weighting. National
+shifts include the prefecture's own employment; this is not leave-one-out.
+
+The endogenous variable `var2004` is the 2004-minus-1995 SOE employment
+SHARE, not percentage growth in the number of SOE workers. Table 9's
+outcome is the change in the MODEL-INFERRED log gross entry term
+`log_onemphi2004 - log_onemphi1995`, not observed permits or firm-entry
+counts. A rise in log(1-psi) corresponds to a lower entry distortion in the
+paper's model. The code applies 2SLS with and without the change in fiscal
+revenue per government worker, not a staggered-adoption DID. Its supplied
+log reports 277 and 232 observations and first-stage coefficients 0.6104
+and 0.6416; these agree with the inspected printed Table 9. Reading an
+author-supplied log is not an independently executed replication. Section
+7.2 also uses this instrument for regional NSOE growth outcomes; the
+authors explicitly do not extend the same IV to 2004–2008.
+
+The [Shanghai Party-history office's reproduction of the Fifteenth Congress report](https://www.ccphistory.org.cn/shds/zggcddswcqgdbdh/content/82f2c485-9b0a-480d-b27b-baa75bb63b56.html)
+was read as actual HTML, Sections V(1)–V(2). It supports strategic retention
+in key sectors and multiple reform paths for smaller enterprises, alongside
+mergers, bankruptcy, workforce reduction and reemployment. Its webpage is
+dated 14 November 2014, not the original reform date. The text does not
+assign a numerical prefecture shock, certify the national employment shifts
+as policy-only, or establish random baseline industry composition. The
+paper's historical-composition orthogonality argument remains an identifying
+assumption; sectoral demand, trade and technology changes over 1995–2004
+can affect both shifts and private-sector outcomes. First-stage relevance
+does not establish exclusion.
+
+A specific population boundary still needs reconciliation before admission.
+The article describes manufacturing, while the inspected preparation code
+`2_data_main/create_main_file_1.do`, lines 294–375, defines 39 industrial
+groups including mining and utilities. The 1995/2004 construction scripts
+define `manuInd` from concordance matches; `1_data_CIC/6_aggInd92950408.do`
+retains both 0 and 1. The inspected Table 9 script has no explicit
+manufacturing-only filter. These facts do not prove that restricted inputs
+contain mining or utility observations in the estimation sample. Recover
+the final appendix or a data-supported industry-universe explanation that
+settles which rows enter BOTH national shifts and local denominators; do
+not silently impose a new filter or assume that the 39 labels are all
+populated. Ownership also requires the supplied mapping: `soe_rev` includes
+1995 code 60 and 2004 code 160 in addition to restrictive SOE codes; a
+state-registration dummy would change exposure.
+
+The mechanism is distinct from downward government-oversight reassignment
+in `china-soe-decentralization` and the worker-sector comparison in
+`china-soe-restructuring-worker-job-risk`. That does not authorize a second
+generic "1997 SOE reform" record. Preserve this candidate's exact
+prefecture–industry shift-share identity, verified access and remaining
+population/assignment reconciliation; no new canonical or ready increment
+follows this bounded resolution.
+
+### JRS Shenzhen science-park boundary screen — 2026-10-05
+
+Bounded screen `task-188493eabfb6` adds one older regional/firm source,
+not an archive-completion claim: Koster, Cheng, Gerritse and van Oort,
+JRS 59(2), 187–213 (2019), DOI `10.1111/jors.12415`. The
+[institutional repository](https://repub.eur.nl/pub/112277/) supplies a
+[27-page typeset early-online paper](https://repub.eur.nl/pub/112277/Repub_112277_O-A.pdf)
+dated 2018; Sections 3–4 were inspected. Exposure is prior-year neighborhood
+park coverage, not exact firm coordinates. Mixed-coverage neighborhoods are
+excluded. Nearby-border weighting and firm-neighborhood effects address
+location and sorting; causal interpretation still requires compatible trends.
+Sample years are 1998, 1999, 2001, 2004, 2006 and 2007. Figure 2 was not
+visually verified because rendering timed out. Resolve candidate
+`candidate-92927e3028dd` needs primary approvals, historical polygons, opening
+dates and appendix diagnostics before admission.
+
+No exact DOI or title duplicate was found. Mechanism overlap nevertheless
+requires resolution: `china-industrial-parks-edge-city-spillovers` includes
+Shenzhen in an eight-city park sample, while the political-connection record
+centers on leader rotation and the 2006 approval record on a national cohort.
+A different paper, city or outcome is not sufficient for a new variation.
+Compare the actual park regimes and assignment boundaries; an additional
+application of an existing case is preferable if those are the same.
+No canonical file changed during screening.
+
 ### Targeted JDE foreign-bank liberalization screen — 2026-10-03
 
 This is a one-paper extension into the financial-development and trade lane, not a JDE archive sweep. Fernandes and Duanmu's *Foreign banks and firms' export dynamics: Evidence from China's banking reform* appeared in *Journal of Development Economics* 174 (2025), DOI `10.1016/j.jdeveco.2025.103474`. The openly available [46-page Exeter working paper](https://exetereconomics.github.io/RePEc/dpapers/DP2304.pdf), Sections 3–5 and its appendix, studies the 2001–2006 city-phased opening of foreign-bank renminbi business. Its empirical contrast combines city-year legal permission with the city-country-year density of foreign banks from each potential export destination; 2000–2006 customs transactions are aggregated to ordinary-exporter firm–destination–year outcomes, principally 2001–2005. The [2001 PBOC market-entry notice](https://tfs.mofcom.gov.cn/fgsjk/flfg/wz/hy/art/2001/art_1a3727189e7c4e7ba94a6088a09d397a.html) explicitly distinguishes Shanghai/Shenzhen's permission from Tianjin/Dalian's ability to apply, while the [2006 national removal](https://www.gov.cn/banshi/2006-12/11/content_466973.htm) ends geographic and client restrictions. That distinction and later cohort dates must be resolved against the paper's coding before canonical admission. Screen `task-e32c0fe2f5be` evaluates this as a China variation, not a generic WTO-accession dummy or exogenous foreign-bank entry. No exact DOI or mechanism duplicate was found in current canonical/task/candidate records; the raw article inventory alone is not a screened record.

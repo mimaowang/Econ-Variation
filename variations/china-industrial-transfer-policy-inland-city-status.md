@@ -9,7 +9,7 @@ aliases:
 - 中西部地区承接产业转移
 status: grounded
 provenance:
-  task_id: task-557577ed4915
+  task_id: task-cd56873b5cd8
 scope:
   country: China
   regions:
@@ -84,13 +84,17 @@ timeline:
     2013; and Ningxia (Yinchuan, Shizuishan), January 2014. These are 29
     prefecture-level cities. Three Hunan cities received status in 2018 and five
     cities in Inner Mongolia and Jilin in 2023, outside the paper's migration
-    window and not part of this treatment panel.
+    window and not part of this treatment panel. Baiyin Municipal Archives'
+    retrospective 2013 chronology independently reports NDRC approval on
+    March 12, 2013 for the Lanzhou-Baiyin zone, covering the two cities'
+    administrative territories [E6, reported claim]. This agrees with the
+    working paper's March cohort; it does not establish every later zone date.
   anticipation: >
     Local governments and industrial parks advertised the status and prepared
     investment plans before or around announcement. A status date is therefore
     an administrative exposure clock, not necessarily the first date on which
     firms, migrants, subsidies, or construction responded.
-  last_verified: '2026-08-12'
+  last_verified: '2026-10-05'
 assignment:
   unit: >
     Destination prefecture-level city by year for policy exposure; bilateral
@@ -130,7 +134,10 @@ assignment:
     Status conferred eligibility and administrative priority, not guaranteed
     receipt of a fixed subsidy or industrial relocation. The paper notes that
     the exact costs and city-level implementation of the package are not
-    uniformly public.
+    uniformly public. The Lanzhou-Baiyin archive distinguishes its two-city
+    planning territory from investment concentration in Lanzhou New Area,
+    Lanzhou's main urban area and Baiyin Industrial Concentration Area
+    [E6, reported claim]. City status is not uniform within-city project take-up.
   exposure_construction: >
     Maintain a zone-level source table with announcement month, the complete
     city list, Chinese names and stable codes, then expand to city-year active
@@ -196,7 +203,7 @@ design:
     matching on pre-policy observable assignment predictors plus fixed effects
     removes the remaining differential time-varying migration shock.
   primary_strategy: >
-    The published application first predicts ever-treatment with a 2009 city-level
+    The inspected 2024 working-paper application first predicts ever-treatment with a 2009 city-level
     logit using GDP per capita, wages, secondary-sector share, employment,
     tertiary-sector size, distance to coast, and eight-sector employment shares.
     Each treated city is paired to the closest propensity city. A pseudo-Poisson
@@ -384,6 +391,17 @@ evidence:
   verification_status: reported
   access_level: full-text
   locator: 'Sections 3 and 4, Figure 1, Table 2, and Appendices B, C, E, K, and L: ten-zone announcement list, 29 treated cities, CMDS flow construction, 2009 propensity matching, event-time pseudo-Poisson specification, and supplementary city/firm outcomes.'
+- id: E6
+  source_type: archive
+  citation: 'Baiyin Municipal Archives, Luo Chongju. Baiyin City 2013 Chronology (白银市2013年大事记), published December 12, 2022.'
+  url: https://by.cngsda.net/daby/44825.jhtml
+  date: 2022
+  supports:
+  - timeline.local_timing
+  - assignment.compliance
+  verification_status: reported
+  access_level: full-text
+  locator: 'Actual UTF-8 HTML: title and publication byline; March section, March 12 entry on NDRC approval of the Lanzhou-Baiyin industrial-transfer zone. Reports the two-city administrative territory and one-belt/three-area investment layout; retrospective account, not the original approval instrument.'
 - id: E4
   source_type: paper
   citation: 'Erasmus University Rotterdam Pure record for the published Journal of Urban Economics article, published January 2026.'
@@ -471,6 +489,8 @@ The change is a national industrial-transfer model-zone status attached to a sel
 
 Between 2010 and 2014, ten zones covering 29 inland prefecture-level cities were announced in staggered phases. The paper lists each zone, city group, and announcement month in Figure 1 and distinguishes later 2018 Hunan and 2023 Inner Mongolia/Jilin additions from the study window [E3]. No complete official assignment formula was published. The authors therefore model selection using pre-policy development and sectoral characteristics and match each treated city to a never-treated city with a similar propensity. That comparison is useful, but it does not turn the policy into a random experiment.
 
+Baiyin's municipal archival chronology reports approval of the Lanzhou-Baiyin zone on March 12, 2013 and a planning territory covering both cities' administrative areas. It separately describes concentrated development in Lanzhou New Area, Lanzhou's main urban area and Baiyin Industrial Concentration Area [E6, reported claim]. The city-level status comparison therefore differs from a parcel- or firm-level measure of actual investment receipt; project concentration cannot be treated as another city assignment rule [analytical inference].
+
 ## Why This Creates Empirical Variation
 
 The policy creates city-level and event-time variation: treated destinations enter the status in different years, while matched cities do not receive status during the 2010–2014 panel. The CMDS supplies origin-destination-year migration flows, allowing origin-year and origin-destination fixed effects to separate destination-status timing from common origin shocks and stable accessibility [E3]. The most credible interpretation is a conditional, matched-city policy effect under the stated no-differential-time-varying-selection assumption.
@@ -486,3 +506,5 @@ A replication needs the ten-zone announcement list with Chinese city names, stab
 ## Evidence Notes
 
 E1 establishes the national policy mandate and its regional-development objectives; it does not publish the complete 29-city treatment panel. E2 independently establishes the first Wanjiang demonstration-zone plan and its national planning authority; it does not by itself verify every later zone. E3 is an inspectable author version of the paper and establishes the ten-zone list, announcement months, 29 treated cities, CMDS construction, matched-city design, and reported limitations; it is not a machine-readable official status register or independent replication. E4 confirms the final 2026 Journal of Urban Economics publication and the high-level China place-based-policy question. The record is grounded in the institutional status and reported application while keeping the complete official city-list reconstruction and final-publication reconciliation open.
+
+E6 adds an official archival account for the Gansu cohort only. Its 2022 webpage date is not the 2013 approval date, and its retrospective text does not replace the original NDRC approval or a full ten-zone crosswalk. The October 2026 audit confirmed the author's final-publication link, but the publisher body returned 403 and the Erasmus final record exposed no deposited manuscript or appendix. The accessible 2024 working paper remains the design source; final-version agreement has not been established. An indexed Yinchuan commission page was not used as evidence because its actual endpoint returned 404.

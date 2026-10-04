@@ -3,7 +3,7 @@
   "knowledge_freshness": {
     "oldest_record_date": "2026-07-13",
     "newest_record_date": "2026-10-05",
-    "records_at_newest_date": 2
+    "records_at_newest_date": 3
   },
   "repository_health": {
     "status": "valid",
