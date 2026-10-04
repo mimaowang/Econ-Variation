@@ -8045,6 +8045,79 @@ diagnostics. The candidate remains blocked pending the complete paper and
 national pre/post roster; this task adds verified local implementation
 evidence, not a ready increment.
 
+### CNIPA demonstration-city designation and firm innovation: bounded screen — 2026-10-05
+
+Screen `task-12343522403d` opens one source in *Statistical Research* /
+《统计研究》, not an archive-wide audit or an SSCI ranking claim. The
+[publisher article page](https://tjyj.cbpt.cnki.net/portal/journal/portal/client/paper/d7e73641b0992eb0dc5ae7878495b054)
+identifies 张晶、陈志龙,《城市知识产权治理与企业创新》,
+2023,40(8):110-121, DOI `10.19343/j.cnki.11-1302/c.2023.08.009`.
+Its abstract reports a2007-2019 listed-manufacturing-company DID application
+of national IP demonstration-city designation. The actual main methods were
+not recovered; the Xiamen University publication entry confirms identity but
+its blank body does not supply a manuscript. No exact DOI or designation
+mechanism duplicate was found in canonical/candidate recall.
+
+The publisher-hosted one-page [figure supplement](https://publishmedia.cbpt.cnki.net/portal/minio/webs/tjyj/media/web/2024/07/03/%E5%BC%A0%E6%99%B6%20%20%E9%99%88%E5%BF%97%E9%BE%99%EF%BC%9A%E5%9F%8E%E5%B8%82%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E6%B2%BB%E7%90%86%E4%B8%8E%E4%BC%81%E4%B8%9A%E5%88%9B%E6%96%B0.pdf)
+was retrieved and rendered in memory, with both figures visually inspected.
+Figure1 plots relative policy years from-4 through5+ with95% confidence
+intervals; Figure2 shows a placebo density. Neither figure supplies the
+cohort roster, reference-period convention, estimator or placebo recipe.
+Pre-period intervals overlapping zero do not establish unconfounded selection.
+No source PDF was stored or copied into the repository.
+
+Original CNIPA [2013 nomination notice](https://www.cnipa.gov.cn/art/2013/4/12/art_379_138024.html),
+SectionsI-IV, signed February18 and posted April12, limits eligible applicants
+to specified prior pilot/demonstration statuses. Provincial recommendations
+are capped at50% of eligible cities; assessment includes prior enforcement,
+resources and patent performance. Selection is not random. Its original
+[approval notice](https://www.cnipa.gov.cn/art/2013/10/25/art_379_137931.html),
+signed September17 and posted October25, designates18 units for September2013
+through August2016. They include Changji autonomous prefecture and county-level
+Changshu/Kunshan, not only prefecture cities. Local work plans require provincial
+review and national filing. Posting date, designation term and operational
+implementation must remain separate; this package is not an IP tribunal opening
+or the NDRC/MOST innovative-city regime.
+
+Retain `candidate-24d0a6cccbb8` as `china-variation`. Resolve the full research article, actual
+city-year exposure and renewal/expiration treatment, designated-unit versus
+firm-location join, patent outcomes, comparisons and inference before admission.
+Do not replace the paper's coding with an automatically absorbing designation
+indicator or treat every listed county as whole-prefecture exposure. Screen
+creates no canonical file or ready increment; the primary notices are recovery
+anchors rather than proof of the paper's entire treatment panel.
+
+### Innovative-city designation and firm digital transformation: alternate application — 2026-10-05
+
+Screen `task-820fe602c060` examines Liu, Li, Liu and Hou,
+*Does urban innovation policy accelerate the digital transformation of enterprises?
+Evidence based on the innovative City pilot policy*, CER85(2024),102167,
+[DOI10.1016/j.chieco.2024.102167](https://doi.org/10.1016/j.chieco.2024.102167).
+Crossref and the actual public Elsevier XML establish the title, journal and
+June2024 issue. The XML returns HTTP200 and1879bytes but no body, section or
+paragraph nodes; its text-mining link is not evidence of readable full methods.
+Crossref's relation field is empty, which does not prove no deposit exists.
+The publisher's full and abstract page requests did not recover article text.
+
+The inspected [publisher-supplied IDEAS abstract](https://ideas.repec.org/a/eee/chieco/v85y2024ics1043951x24000567.html),
+Abstract section, reports a2003-2021 Chinese A-share company sample and a DID
+application linking innovative-city policy to enterprise digital transformation.
+Its exogeneity and mechanism claims remain reported, not verified. No treatment
+roster, digital-transformation measure, final estimation specification, appendix
+or replication code was inspected; references to heterogeneous-DID methods do
+not establish which estimator the authors actually implement.
+
+This is a firm-outcome recovery lead for `candidate-636b8a0cf760`, not a second
+assignment merely because the outcome differs. A readable final manuscript or
+author supplement must recover the actual city-designation years and agency
+regime, district-to-city aggregation, firm-location convention and relocations,
+outcome construction, comparison and inference. Then compare its assignment
+with the already inspected CPE application and official NDRC/MOST chronology.
+Do not guess those bridges from the common policy label or reopen the already
+resolved2010 guidance-attachment access gap. The screen is blocked on methods
+access; no redundant candidate or canonical record is created, and ready is
+unchanged. The existing candidate retains its current disposition.
+
 ### Tariff shocks and mainland firm litigation: application screen — 2026-10-05
 
 Screen `task-4c22d914a897` retains `candidate-6d5486601692`, Bo and Liu,
@@ -8856,6 +8929,36 @@ Alibaba microdata alone is not the admission blocker; a lawful-access data
 contract can be conditional. Here the unfinished assignment-to-estimation
 mapping still changes which pairs form treatment and comparison. No new
 canonical file, maturity promotion or ready increment follows this task.
+
+Follow-up `task-fb5d8097eedf` recovers the actual publisher-linked
+[replication landing form](https://services.informs.org/dataset/download.php?doi=mksc.2023.0214),
+which redirects to `/dataset/mksc/download.php` with the same DOI. System
+curl retrieves the HTML with certificate validation; Python certificate
+failure does not establish that the service is unavailable. The inspected
+Marketing Science Replication Files form requires an email and affirmative
+agreement. Its terms limit downloaded files to checking the original paper's
+replicability using its data/models and require explicit permission for other
+uses. No agreement or personal information was submitted, no archive was
+downloaded, and no code was inspected. This supersedes the earlier generic
+link-failure account: the next route is authorized original-study replication
+or separately permitted author documentation, not repeated network retries.
+Do not retain ephemeral form tokens or session cookies as source URLs.
+
+The published main text, Sections3.2 and4, and supplement TableA.4 were
+rechecked for the construction gap. Section4 imposes a within-province,
+maximum-pairwise-distance bandwidth, but does not specify a unique clustering
+algorithm or tie resolution. Analytical inference: nearby chains must not be
+treated as a single connected component when their end-to-end distance exceeds
+the bandwidth; knowing the diameter bound alone does not recover the authors'
+partition. Nor do all segment pairs identify treatment: a cell with only a
+single city at both ends supplies no within-cell partnership contrast.
+Section3.2 attributes missing concentration ratios to zero trade, while the
+reported log-trade/deal regressions keep the full directed pair-month count.
+That combination does not reveal their transformation of zeros. Request the
+segment-ID recipe, research-universe crosswalk and exact log-zero convention
+before reconstructing this application. No synthetic reproduction or failure
+of the authors' results is claimed; the candidate remains blocked and ready
+does not increase.
 
 ### Targeted JDE foreign-bank liberalization screen — 2026-10-03
 
