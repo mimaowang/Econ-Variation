@@ -6503,6 +6503,7 @@ The five field-top lanes remain the first completion boundary: JUE, RSUE, JRS, J
 | Economics-2 | *Journal of Development Economics* | Development policies, infrastructure, migration, and local institutions when the design has a real spatial margin. | [ScienceDirect](https://www.sciencedirect.com/journal/journal-of-development-economics) | Crossref ISSN plus Crossref/IDEAS and development-policy citation search. | Planned; first bounded sweep not yet recorded |
 | Economics-2 | *World Development* | Development interventions and regional shocks; keep only papers with a decision-useful spatial assignment. | [ScienceDirect](https://www.sciencedirect.com/journal/world-development) | Crossref ISSN plus IDEAS/RePEc and development/China search. | Planned; first bounded sweep not yet recorded |
 | Economics-2 | *Journal of Housing Economics* | Housing, land, and urban policy experiments or boundary designs in China. | [ScienceDirect](https://www.sciencedirect.com/journal/journal-of-housing-economics) | Crossref ISSN plus IDEAS/RePEc and housing-policy citation search. | Planned; first bounded sweep not yet recorded |
+| Adjacent-economics | *Marketing Science* | Selective quantitative market and platform research only when the paper actually studies a mainland-China regional, development or firm exposure; not a substitute for the economics field-top lanes. | [INFORMS journal archive](https://pubsonline.informs.org/journal/mksc) | Institutional repositories plus IDEAS/RePEc and exact-title citation recall. | One targeted 2026 regional-development article screened on 2026-10-05; no journal-wide coverage claim or ranking assertion |
 | Economics-2 | *Journal of Environmental Economics and Management* | Environmental regulation and spatial exposure when the regional/urban mechanism is central rather than incidental. | [ScienceDirect](https://www.sciencedirect.com/journal/jeem) | Crossref ISSN plus IDEAS/RePEc and environmental-policy/spatial search. | Planned; first bounded sweep not yet recorded |
 
 This order is deliberately a queue, not a promise to exhaust every journal indexed by SSCI. SSCI membership, impact metrics, and business-school lists such as UTD can change and may not measure the field value relevant to a variation library. When a journal is added, record the official archive, ISSN, index or scope evidence available on the search date, the publication-year boundary, and the independent recall source. Do not write an unverified ranking into a task or canonical record.
@@ -8322,6 +8323,126 @@ A different paper, city or outcome is not sufficient for a new variation.
 Compare the actual park regimes and assignment boundaries; an additional
 application of an existing case is preferable if those are the same.
 No canonical file changed during screening.
+
+### JRS Shenzhen science parks: legal scope and admission gap — 2026-10-05
+
+Resolve `task-6420dd0b93d1` resumes `candidate-92927e3028dd`.
+The actual [1998 municipal Order 76](https://www.sz.gov.cn/zfgb/1998/gb150/content/post_10126396.html)
+was inspected: signed August 26, effective on issuance, not the September 30
+gazette upload. Article 2 defines areas proposed by the city and approved by
+the responsible State Council authority. Articles 11 and 14–16 require
+planning compatibility, funding and high-tech recognition, qualification
+review and an entry agreement; existing nonqualifying firms face correction
+and eventual exit. Articles 17–19 require planning approval and land-use
+review. These are verified legal requirements, not observed enforcement or
+proof that every paper-coded park was covered.
+
+The actual [2001 ordinance](https://www.sz.gov.cn/zfgb/2001/gb219/content/post_5018486.html)
+was adopted March 22, announced April 5 and effective May 1. Articles 2–3
+cover the nationally approved Shenzhen Bay park and other city-delineated
+areas, with unified city management. Articles 33–34 and 37 distinguish
+qualification/application from an admission decision; Articles 41–42 govern
+exit and transitional correction. Article 60 repeals the 1998 regulation.
+These dates establish a legal-regime transition, not fifteen simultaneous
+park openings or uniform receipt of incentives. Neither document supplies
+the paper's full historical polygon/opening crosswalk.
+
+The actual [July 25, 2001 Party committee decision, 深发[2001]16号](https://www.sz.gov.cn/zfgb/2001/gb231/content/post_5015635.html)
+was inspected in paragraphs 2–5 and 22. It proposes phased development and
+coordinated incentives across a belt spanning Nanshan, Bao'an and Longgang;
+paragraph 22 calls for legal procedures to extend the ordinance to its
+component areas. Analytical inference: a belt planning designation cannot
+automatically establish that all its parcels already shared the ordinance's
+legal coverage. Reconcile each paper-used park's approval and coverage date
+rather than backdating the later regime.
+
+The [publisher full HTML](https://onlinelibrary.wiley.com/doi/10.1111/jors.12415)
+now exposes the final body. Section 5.1/Table 2 specifies a 2.5-km boundary
+window and neighborhood-clustered standard errors. Section 6 identifies
+C.7 as the tax-regime check, C.8 as spatial-assumption sensitivity and C.10
+as anticipation/adjustment. The online supplement link
+`jors12415-sup-0001-Online_supplement.pdf` returned 403; those diagnostics
+were not inspected in their appendix. The repository PDF Table 2 footnote,
+printed p. 15, independently supplies the 2.5-km window; no new visual
+verification of Figure 2 is claimed.
+
+Keep this candidate blocked, not skipped: legal grounding improved, but the
+fifteen parks' historical approvals/polygons, stable neighborhood joins and
+their mapping to the existing national/provincial industrial-park case remain
+unresolved. Recover that crosswalk and the supplement before deciding
+whether this is a distinct municipal regime or another application of
+`china-industrial-parks-edge-city-spillovers`. Firm-neighborhood effects and
+a different productivity outcome do not themselves create a new assignment
+mechanism. No canonical or ready increment follows this resolution.
+
+### East-West partnership and intercity e-commerce: targeted screen — 2026-10-05
+
+Bounded `task-a868530c31fb` opens one adjacent-journal lane, not a new
+business-journal collection quota. DOI `10.1287/mksc.2023.0214`, Zhong,
+Zhou, Li and Li, is *Marketing Science* 45(1), 15–33 (2026), online May 23,
+2024; the [UCL record](https://discovery.ucl.ac.uk/id/eprint/10222244/)
+and [publisher body](https://pubsonline.informs.org/doi/10.1287/mksc.2023.0214)
+establish publication and access. No exact DOI, title or partnership mechanism
+match was found in canonical/candidate/source recall.
+
+Inspected Sections 2.2, 3.1–3.3 and 4: city partnerships come from the 2018
+poverty-alleviation yearbook, remain fixed in the January 2017–December 2021
+sample, and join directed city-pair-month Taobao/Tmall trade. The spatial
+comparison uses within-province city segments with a 100-km maximum diameter,
+exporter/importer-month and segment-pair effects; errors cluster by city pair.
+This is not a policy-before/after DID. Proximity does not itself establish
+unconfounded bilateral demand. Outcomes include multiple merchandise
+categories, not solely agricultural production. Retain as `china-variation`
+for regional development and market access, pending official pairing rules,
+Appendix A.1 roster, exact clustering/zero-trade handling and lawful proprietary
+data joins. Screen changes no canonical file.
+
+### East-West partnership: roster recovered, encoding still open — 2026-10-05
+
+Resolve `task-c0cd5d55f7db` follows `candidate-5bf8625718cd`.
+The [published 43-page supplement](https://pubsonline.informs.org/doi/suppl/10.1287/mksc.2023.0214/suppl_file/mksc.2023.0214.sm1.pdf)
+is accessible as text. Table A.1, printed pp. 1–4, lists 128 east–west
+relationships and cites the 2018 poverty-alleviation yearbook, pp. 768–777.
+The roster includes prefectures, autonomous prefectures, leagues and direct
+municipalities; an all-prefecture numeric-code assumption would lose units.
+Table A.4, p. 7, reports 130 city segments at 100 km, including 81 singletons.
+Table A.6, p. 10, checks observed distance/GDP/population balance; it does not
+test unobserved bilateral preferences. No visual audit of the roster or map
+was established by the screenshot calls. The [supplement landing page](https://pubsonline.informs.org/doi/suppl/10.1287/mksc.2023.0214)
+links replication files through INFORMS services, but that link failed and
+direct HTML retrieval met an access challenge. No code or trade data was
+inspected, downloaded into the repository or executed.
+
+The actual [Hunan government reproduction of the central guidance](https://www.hunan.gov.cn/zqt/zcsd/201612/t20161207_13535896.html)
+was inspected in Sections II–IV. Its page labels December 7, 2016; this is
+the public-release date, not an established effective date for every local
+pair. Section II(4) adjusts provincial/city relationships and prioritizes
+deep-poverty and autonomous-prefecture coverage; II(5) separately directs
+county-level partnerships and possible township/village extension.
+III(7)–(10) calls for industry, labor, personnel and budget support, while
+IV(14) evaluates those components and poverty reduction. The instrument is
+a heterogeneous cooperation package, not a uniform e-commerce subsidy.
+This text verifies authorities and program structure, not all 128 research
+pairs or each pair's onset. The previously retrieved Yongzhou endpoint now
+returned navigation without the policy body and was not used as evidence;
+the central government endpoint returned 403.
+
+The publisher's main Table 1 explicitly disguises monetary/count summary
+values with random-coefficient linear transformations; published descriptive
+values therefore cannot reconstruct the confidential transaction panel.
+Section 3.2 mentions zero-trade concentration-ratio omissions, but the
+inspected methods do not close log-outcome zero handling or supply exact
+segment-construction code. Analytical inference: single-city membership and
+pair membership must remain separate, and the same bilateral assignment can
+be expanded into two trade directions without creating two variations.
+
+Retain blocked pending a stable Chinese-name/code crosswalk for A.1, the
+complete research city universe, reconciled local assignment sources and the
+replication recipe for clustering and outcome encoding. Lack of public
+Alibaba microdata alone is not the admission blocker; a lawful-access data
+contract can be conditional. Here the unfinished assignment-to-estimation
+mapping still changes which pairs form treatment and comparison. No new
+canonical file, maturity promotion or ready increment follows this task.
 
 ### Targeted JDE foreign-bank liberalization screen — 2026-10-03
 
