@@ -11,7 +11,7 @@ aliases:
 
 status: extracted
 provenance:
-  task_id: task-6ea1cb373890
+  task_id: task-5d358bdce231
 scope:
   country: China
   regions:
@@ -42,7 +42,7 @@ timeline:
   implementation_end: 2007
   local_timing: '[E4, reported claim] Ministry issuance in 1993 is not a county-level treatment date. [E1, reported claim] Segments are classified as opening before mid-1997, mid-1997 through end-2003, or after 2003; treatment is connection by end-2003. [E5, verified] National substantial connection in 2007 coexisted with finishing work scheduled for 2008; neither supplies county opening dates.'
   anticipation: '[E1, reported claim] The paper documents that connected peripheral counties were initially larger, richer, more urbanized, and more industrialized, so it does not assume actual route placement was random.'
-  last_verified: '2026-10-02'
+  last_verified: '2026-10-05'
 assignment:
   unit: Historically consistent county-level administrative unit
   treated: '[E1, reported claim] Non-targeted peripheral county with any part within 10 km of an NTHS segment opened to traffic by end-2003.'
@@ -256,6 +256,24 @@ evidence:
   verification_status: verified
   access_level: official-document
   locator: 'Ministry information-disclosure text inspected 2026-10-02: Li Shenglin report I(2) describes end-2007 substantial connection of roughly 35,000 km; III(2) schedules finishing work in 2008. These passages support the aggregate completion boundary, not county treatment assignment or a segment-opening inventory.'
+- id: E6
+  source_type: implementation-document
+  citation: 'National Bureau of Statistics. 2009. 系列报告之十四：多种方式的综合运输网络基本形成.'
+  url: https://www.stats.gov.cn/zt_18555/ztfx/qzxzgcl60zn/202303/t20230301_1920393.html
+  date: '2009-09-23'
+  supports: [identity.implementation_regime]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Section II, highway-network paragraph beginning with 五纵七横; page heading dated September 23, 2009 despite the migrated 2023 URL. Inspected October 5, 2026 through actual HTML. Reports realized aggregate route and city coverage, not original target-node selection or county opening dates.'
+- id: E7
+  source_type: policy-document
+  citation: '1997—2010年全国土地利用总体规划纲要, official text reproduced by Guangxi Natural Resources Department.'
+  url: https://dnr.gxzf.gov.cn/zfxxgk/fdzdgknr/ghjh/ghjh/t16025741.shtml
+  date: '2007-12-19'
+  supports: [identity.implementation_regime]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Part III(2), item 2 on industrial/transport/water-project land, transport paragraph listing the five vertical and seven horizontal corridors and prioritizing infrastructure land. Inspected actual HTML October 5, 2026. The webpage dates its Ministry of Land Resources reproduction December 19, 2007; this is not original adoption or effectiveness. Planning horizon is not publication, effective or county treatment date.'
 design_applications:
 - paper: 'Trade Integration, Market Size, and Industrialization: Evidence from China''s National Trunk Highway System'
   doi: 10.1093/restud/rdu010
@@ -317,3 +335,13 @@ To reproduce the documented design, a researcher needs historically consistent c
 ## Evidence Notes
 
 The 2026-10-02 audit (task-6ea1cb373890) re-inspected the author manuscript's background, data and exposure construction, NDRC's answer, the transport-bureau reprint and a newly located contemporaneous Ministry report. E1 is a dated manuscript, not independently checked publisher typesetting; its substantive claims remain attributed to that version. E2 identifies the final article. E3 provides primary plan-identity evidence; E4 is secondary history despite its government URL; E5 establishes substantial connection, not complete segment-level opening. The record remains extracted because primary assignment evidence is still missing, not because all institutional knowledge is merely paper-reported. No restricted data or copyrighted paper was stored, and no replication was executed.
+
+The October 5 audit adds two official sources without promoting maturity.
+NBS's 2009 report describes realized connection of every city above one million
+people and 90% of cities above 500,000, across more than 200 cities. Its account
+does not establish that every above-500,000 city was an original target or fix
+the population measure and baseline used for node selection. [E6, verified]
+The land-use outline names the twelve corridors and prioritizes land for their
+construction, but supplies neither county opening cohorts nor a complete target
+node list. [E7, verified] These sources strengthen implementation context;
+the original node-selection and paper-used county-exposure gaps remain.

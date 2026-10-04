@@ -8046,6 +8046,32 @@ A bounded JDE search for recent mainland-China regional-development and environm
 
 Resolve `task-a3ae6d2f002c` inspected the MEE plan's section III(1), PDF pp. 24–25 and its final coverage annex. The plan itself names **47 stricter key-control cities** and says that its key-control area covers the entire jurisdiction in the other cities but only the main urban area of Chongqing. The publisher-indexed introduction explicitly describes its 117-city study frame as 47 stricter versus 70 less-strict cities and the paper's three contrasts as monitoring-station proximity, city stringency and before/after the 2012 announcement. These source facts resolve the basic institutional contrast but not the paper's exact parcel sample, monitoring-site vintage and coordinates, polluting-industry classification, distance/pixel construction, panel period, fixed effects or handling of monitoring-network expansion. The MEE plan itself directs monitoring-network construction, so station changes are a design issue rather than a fixed geographic fact to assume away. Direct SSRN PDF, publisher full text and a browser visit all met access controls; no CAPTCHA was solved and no full-text claim is made. Keep the candidate blocked until an inspectable lawful author manuscript or appendix closes those joins; do not infer them from the search-indexed introduction.
 
+### JRS development zones: recovered author version — 2026-10-05
+
+Resolve `task-b9ad2b96a0d9` revisits blocked `candidate-d03ab2059198`.
+The [public author-uploaded manuscript](https://www.researchgate.net/publication/335746220_Heterogeneous_impacts_of_China%27s_economic_and_development_zone_program)
+is attributed to Anthony Howell, uploaded 5 April 2020. Sections 3–4,
+printed pp. 10–17, and Appendix A, pp. 26–29, were read as full-text
+transcription. Wiley supplied metadata only; the linked PDF did not resolve.
+This is author-version evidence, not a visually audited final article.
+
+The source reports 121,643 incumbent manufacturing firms and 792,733
+firm-years, 1998–2007. Its assignment combines six ASIF address fields'
+zone keywords with official-report postal codes, not a polygon boundary.
+It separates ETDZ and HTDZ from overlapping zone types. Appendix A uses
+lagged covariates, multinomial propensity scores, common support, and
+Gaussian matching within two-digit industry-years. Section 4 compares
+zone types with uncovered firms and each other over post-years 0–5,
+with industry-year and matched-pair effects. Matching is not randomization.
+
+Full-text access is no longer the central blocker. Still recover the
+named policy-report/postal roster, exact type-specific keyword mapping,
+and first-coverage year versus legal establishment, relabelling or relocation.
+Incumbent eligibility and official regime/level must be reconciled before
+any split or admission. Do not substitute a modern national-zone list,
+city-wide designation or inferred first address match for those unresolved
+objects. Preserve the historical candidate; no new canonical follows.
+
 ### CJRES local business-environment legislation screen — 2026-10-05
 
 Screen `task-a3dcffd67bcd` adds one article from *Cambridge Journal of
@@ -8073,6 +8099,40 @@ Relatedness categories are outcomes, not separate policy assignments.
 Document timing does not verify enforcement, and matching does not remove
 unobserved adoption selection or differential pandemic shocks. No canonical
 publication follows this screen.
+
+### CJRES local regulation resolution: appendix and legal timing — 2026-10-05
+
+Resolve `task-bffcb9a4514d` inspected the publisher's
+[supplementary document](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/cjres/19/1/10.1093_cjres_rsaf039/1/rsaf039_supplemental_file.docx)
+through its article-linked public delivery URL, in memory. The saved locator
+omits the transient delivery query. Tables A1–A2 report selection regressions
+for 293 cities; A3 reports 2,904 observations; A4 names registry, PKUlaw,
+city yearbooks and OxCGRT sources. Figure captions identify a 2019 index
+map and an event study excluding never-treated groups. No city-document-quarter
+roster, matching bins/weights or replication code appears in the extracted
+appendix text or tables. Embedded plots were not visually audited; this is
+not verification of their estimates. The article's links and a bounded
+DOI/title repository search yielded no inspectable replication package.
+
+Primary legal texts establish why recovering that roster matters. The
+[national regulation](https://fgk.chinatax.gov.cn/zcfgk/c100010/c5212279/content.html),
+State Council Order 722, was promulgated on 22 October 2019 and took effect
+on 1 January 2020 (heading and Article 72). Article 7 allows differentiated
+local measures. It is a national institutional background, not the article's
+city-specific assignment. The [Beijing original regulation](https://zwfwj.beijing.gov.cn/zwgk/2024zcwj/202404/t20240416_3620108.html)
+was adopted and promulgated on 27 March 2020, but took effect on 28 April
+2020 (announcement and Article 83); Article 1 links it to the national law.
+Those dates fall in different quarters. Beijing is an inspected timing
+example, not a verified member of the authors' matched treatment sample.
+
+Keep `candidate-8241ba86ef7e` blocked rather than publish a national-2020
+dummy or infer city cohorts from document titles. Reopening requires the
+paper-used city/legal-document/first-treatment-quarter crosswalk, its handling
+of issuance versus effectiveness and province/subcity instruments, and the
+registry location/industry mapping. Then resolve matched-sample construction,
+the estimator/clustering discrepancy and the geographic level of pandemic
+controls. Primary legal access is now established; missing empirical
+assignment and joins, not legal-document access, prevent admission.
 
 ### Guangdong registration candidate: recovered Dongguan plan — 2026-10-05
 
