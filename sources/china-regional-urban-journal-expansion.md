@@ -8045,6 +8045,169 @@ diagnostics. The candidate remains blocked pending the complete paper and
 national pre/post roster; this task adds verified local implementation
 evidence, not a ready increment.
 
+### Steel-plant Soviet transfer construction recovery — 2026-10-05
+
+Resolve `task-57f3aa58da98` revisits `candidate-3415fe9ce8ed`, Giorcelli
+and Li, *Technology Transfer and Early Industrial Development: Evidence from
+the Sino-Soviet Alliance*, ReStud2026, DOI `10.1093/restud/rdag047`.
+The prior abstract-only blocker is no longer an accurate description of
+available evidence; retain its historical disposition and use this recovery
+when deciding the next task.
+
+The actual [final publisher body](https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag047/8688845)
+was inspected at Sections2.3,3.1–3.2 and4, equation1 and footnote18. The
+application follows304 steel plants in20 projects, not156 independent
+factories:98 received equipment and training,91 equipment only,115 neither.
+All operated with domestic equipment before the July1960 interruption.
+Event time uses actual or planned transfer year, not a common1960 treatment
+switch. Outcomes span1949–2000, with plant/year effects and cluster-level
+bootstrap inference. Equation1 describes the training coefficient as
+incremental to equipment. Assignment depends on delivery/expert delays,
+not county airbase siting. Pre-trends and balance support the authors'
+interpretation but do not prove random receipt or eliminate spillovers.
+
+The30-page [formal appendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/restud/PAP/10.1093_restud_rdag047/2/rdag047_supplementary_data.pdf)
+was inspected in text at B.1–B.2 and C.1–C.2, PDF pages21–22 and25.
+Restricted Chinese agreements and Russian economic-archive accident/travel
+records supply the authors' plant-specific receipt and delay histories.
+Name, location, county and province connect plants to performance reports.
+Nine partially trained plants, with32–35 of36 intended months, are included
+among the98 training recipients; excluding them is a sensitivity check.
+Accident and expert-delay indicators instrument receipt in an auxiliary
+specification, requiring exclusion through receipt alone. These archival
+records were reported by the authors, not independently inspected here.
+
+The actual [Ministry of Foreign Affairs chronology](https://www.fmprc.gov.cn/web/ziliao_674904/historytoday_674971/200305/t20030515_7949065.shtml),
+May15 entry, confirms the1953 agreement for91 additional projects and
+the First Five-Year Plan's156-project framework. It does not verify the
+304-plant receipt vector. The [CWIHP primary-document translation](https://www.wilsoncenter.org/sites/default/files/media/documents/publication/ACF197.pdf),
+printed pages249–250, reproduces the Soviet Embassy's withdrawal note;
+page250 was also visually inspected, including the recall instruction and
+archival attribution. The edition dates the note July18,1960, but expressly
+says the surviving Russian copy is undated and its date comes from other
+sources. The note establishes a recall decision, not plant-specific random
+delays, equal exposure or absence of earlier anticipation. Political
+justifications in the note are attributed statements, not neutral facts.
+
+The actual [Zenodo concept deposit](https://zenodo.org/records/19175275)
+resolves to version record19175276, with `Replication_Package_260506.zip`
+(51235086bytes), deposit date May5,2026. The archive was inspected in memory,
+without executing code or saving data. Its8-page `readme.pdf`, dated
+April22,2026, distinguishes restricted originals from synthetic data calibrated
+to published coefficients and significance. Pre-period balance in those
+synthetic data is constructed, not new validation of the identifying
+assumption. Public executability therefore does not establish independent
+replication of confidential findings. README folder labels differ from the
+actual `original_replication/` and `synthetic_replication/` member paths;
+follow the actual manifest. Actual identifiers and receipt histories must
+come through lawful original-data access, not simulated observations.
+
+In the ZIP's `original_replication/Original DoFiles/Figure4.do`, lines15–20,
+`tab treatment, gen(t_)` makes mutually exclusive indicators, renamed
+`know_how`, `capital`, and `no_transfers`. Lines26–35 interact these groups
+with `year - treatment_year`; lines93–96 regress outcomes on separate
+training-group and equipment-only interactions with plant/year effects and
+1000 cluster bootstrap repetitions. `Table3.do`, lines15–35 and71–75,
+uses the same exclusive construction. `FigureC2.do`, lines41–45,
+constructs accident/expert-delay event interactions for the IV application.
+These selected files were re-read through byte ranges at their exact members;
+none was run.
+
+Analytical implication: with this exclusive coding, the training-group
+coefficient is relative to the no-transfer group, not automatically the
+incremental training effect relative to equipment only; that contrast requires
+subtracting the equipment-group coefficient, with its joint uncertainty.
+This conflicts with the final equation1 interpretation unless another
+transformation or intended overlapping indicator can be recovered. Do not
+silently reinterpret published effect magnitudes, repair the authors' code,
+or treat a synthetic calibration as resolving the difference. Inspect the
+original treatment dictionary and result construction, a corrected deposit,
+or an author clarification before recommending the incremental design.
+
+This is distinct from county initial siting in `10.1093/restud/rdag078`
+and from later Third Front allocation: receipt within planned steel projects
+creates a different assignment. It is not yet a canonical admission.
+Resolve ends blocked on the precise coefficient/encoding reconciliation,
+with original archival access retained as a separate limitation; ready is
+unchanged. Future recovery should not repeat the now-solved full-text search.
+
+### Million-Rouble Plants final construction recovery — 2026-10-05
+
+Resolve `task-5e654c31f3ad` revisits blocked `candidate-60b92ef7c983`,
+DOI `10.1093/restud/rdag078`. The final publisher title is *Industrial
+Clusters in the Long Run: Evidence from Million-Rouble Plants in China*;
+retain earlier title variants as discovery history, not different papers.
+
+The actual [publisher body](https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag078/8737903),
+Sections 2.2–3.2, Figure 1 and Section 4.1, was inspected. It reports149
+plants and98 treated counties; economically suitable controls are matched
+one-to-one, yielding196 counties. This is a researcher-constructed control
+group, not a recovered planner shortlist or randomized allocation. The
+instrument models1953 enemy-airbase flying costs, with allied interception
+protection;1964 vulnerability and own-airfield proximity enter as controls.
+It is not actual bombing exposure. Cross-sectional1982/2010 TSLS includes
+matched-pair effects and34 spatial400km cells. Treatment encompasses initial
+investment and subsequent command-economy resource allocation, not an isolated
+1953 announcement. Geographic growth trends, later policies and SOE decline
+remain substantive identification concerns. Figure1 describes factories
+within25km of county borders; that wording needs reconciliation with the
+deposited construction below.
+
+The formal [Online Appendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/restud/PAP/10.1093_restud_rdag078/3/rdag078_supplementary_data.pdf)
+was retrieved and its text inspected; no claim of visual figure verification
+or computational replication is made. Pages16–19, B.1–B.3, distinguish
+agreements, gazetteer confirmation and geolocation:150 agreed plants include
+one unlocated plant, leaving149 for analysis. Outcomes are harmonized to2010
+county boundaries using historical maps and area-based allocation, not current
+county names. Pages27–36, C.1–C.2, describe economic suitability, matching
+and modelled airbase protection. FigureC5 uses an exclusion radius of half
+the206.96km distance threshold, approximately103.48km; do not mistake206.96km
+for the exclusion radius. FigureC8 repeats the county-border wording.
+Archival sources are cited, not independently inspected in this task.
+
+The actual [Zenodo deposit](https://zenodo.org/records/20671189),
+DOI `10.5281/zenodo.20671189`, version1 dated July8,2026, and its53-page
+[README](https://zenodo.org/api/records/20671189/files/README.pdf/content)
+were inspected. README Tables1 and10 distinguish provided factory-location
+spreadsheets from omitted airbase and administrative GIS inputs. Census,
+firm and patent data have separate access requirements; a public package is
+not evidence that these assets can be redistributed. The pipeline requires
+ArcGIS/Spatial Analyst and Stata and was not executed. The source roster and
+construction code are recovery inputs, not independently verified historical
+siting authority. Cross-repository data work should follow the paper DOI;
+do not copy data assets or restricted material into this repository.
+
+Selected members of the public ZIP were read through HTTP byte ranges and
+decompressed in memory, without downloading the full1.05GB archive or running
+its code. In `Code/Cleaning/Python/GIS_variables.py`, lines446–450,
+the `Original` sheet's X/Y factory points are spatially joined to counties,
+while `GenerateNearTable` measures county-centroid-to-factory geodesic
+distances. `Code/Cleaning/Cleaning.do`, lines627–638, takes the minimum
+distance by `id_3`, deriving that ID from `IN_FID + 1`.
+`Code/Cleaning/Merge.do`, lines142–146, defines `prox_factory0` as
+`distance_factories < 25000` OR a factory inside the county. This is not
+generally equivalent to an external25km county-border buffer. The files were
+re-read at these exact locators during recovery; this is source-code evidence,
+not proof of which observations differ in the published sample.
+
+Matching code excludes near controls using half the threshold and performs
+common-support nearest-odds matching without replacement. Preparation joins
+through county IDs and matched pairs; analysis uses the normalized1953
+vulnerability instrument. These details narrow the earlier abstract-only
+gap but do not settle the treatment discrepancy. A subsequent task should
+reconcile the deposited sample/treatment vector with both geographic
+definitions, or recover an author clarification or corrected version.
+It must also inspect suitable historical institutional support before
+canonical admission. Do not silently choose one definition or call the paper
+erroneous without that reconciliation.
+
+The county-level initial-siting mechanism differs from the separate156-projects
+plant-level receipt of technology/know-how interrupted by the1960 split
+(`10.1093/restud/rdag047`), and from1964–1978 Third Front siting; shared
+industrial history alone neither merges them nor establishes a new case.
+This resolve ends blocked with specific recovered evidence and a concrete
+construction conflict, no canonical admission and no ready increment.
+
 ### Historical railway source recovery — 2026-10-05
 
 Screen `task-0795356851f8` revisits Bo, Chen, Liu and Zhou's JDE182
@@ -8402,6 +8565,42 @@ not silently impose a new filter or assume that the 39 labels are all
 populated. Ownership also requires the supplied mapping: `soe_rev` includes
 1995 code 60 and 2004 code 160 in addition to restrictive SOE codes; a
 state-registration dummy would change exposure.
+
+Follow-up resolve `task-14078db66c72` inspected the [World Bank-hosted
+April2020 paper with appended Online Appendix](https://thedocs.worldbank.org/en/doc/f0d20e17b162301d53759bb17d5630d0-0050022022/original/Barriers-to-Entry-and-Regional-Economic-Growth.pdf),
+PDF page37, Appendix A.1–A.2 and footnotes36–38. The48-page file includes
+both paper and appendix; it is not a standalone final appendix despite the
+search index's label. It describes manufacturing coverage and ownership
+concordances, while noting records cover upwards of90% of industrial
+activity. This dated draft does not settle the final instrument's industry
+denominator. Final publisher routes redirected to an inaccessible minimal
+article; the author publication page still links only the final-body PDF.
+
+The actual5.2MB Zenodo ZIP was re-inspected in memory, without executing
+code or saving microdata. Its complete file inventory has no
+`BKS_main_data_file_92_95_04_08.dta`, which `Table_9.do`, line13, requires,
+and no computed Table9 industry-employment input. Provided wedge and fiscal
+files cannot establish the missing industry employment counts. The
+`cic1995UniqueBK.dta` and `cic2004UniqueBK.dta` files contain only two industry
+crosswalk columns (`cic_adj`, `cic`), not employment:536 and482 rows.
+`new_concordance_submit.dta` is administrative geography, not an industry
+sample or plant receipt roster; its columns were inspected, not personal
+identifiers published.
+
+The source of the population discrepancy is now narrower than an absent
+filter search. `1_data_CIC/2_constructInd95.do`, lines87–98, explicitly
+retains non-manufacturing concordance nonmatches, marks them `manuInd=0`,
+and drops using-only crosswalk rows. `3_constructInd04.do`, lines206–217,
+does likewise. `2_data_main/create_main_file_1.do`, lines127–139, falls
+back to original industry codes for nonmatches and drops only using-only
+rows; lines153–165 explicitly harmonize mining codes. Together with
+`6_aggInd92950408.do`, line64, retaining both indicators, this confirms
+nonmatching rows are not automatically filtered by the supplied crosswalk.
+It still does not establish nonzero mining employment in restricted inputs
+or the final estimation sample. Request a documented industry-universe
+statement or lawful aggregate counts used in both shifts and denominators,
+rather than repeating the same search for a hidden manufacturing filter.
+The candidate remains blocked; no canonical or ready increment.
 
 The mechanism is distinct from downward government-oversight reassignment
 in `china-soe-decentralization` and the worker-sector comparison in
