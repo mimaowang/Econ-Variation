@@ -10239,3 +10239,147 @@ the original park/city/date table with source locators, the first/multiple-
 park and conversion convention, and the patent-industry mapping. A future
 local institutional notice can verify a row but cannot stand in for the
 whole author sample. No canonical publication; ready unchanged.
+
+### 2026-10-05 — Fair-competition review, administrative-monopoly industry exposure
+
+Screen `task-8988a8d40057` inspected Yang Xingquan and Zhang Kexin,
+《公平竞争审查制度能否促进企业创新？——基于规制行政垄断的视角》,
+*Journal of Finance and Economics*49(1):63–78(2023),
+DOI10.16538/j.cnki.jfe.20220915.101. The page reader timed out, but direct
+retrieval returned the actual [publisher full HTML](https://qks.sufe.edu.cn/mv_html/j00001/202301/efdc8eab-6f04-4007-96a8-6ac03e4f5fb5_WEB.htm).
+SectionsII–IV, Tables1–5 and footnotes4–9 were inspected; no PDF was stored.
+This is a bounded domestic-journal firm/industrial-policy extension, not a
+claim about an international journal ranking or a financial-policy shock.
+
+Reported application: SectionIII uses2012–2020 nonfinancial A-share firms,
+23,784 initial observations and23,506 in Tables1–2. Treatment combines a
+named18-industry administrative-monopoly classification with year>=2016;
+footnote4 specifies CSRC2012 two-digit industries. Firm/year fixed effects
+and firm-clustered errors are reported. Financial controls use CSMAR/Wind;
+patents use CNRDS. Outcomes are log(1+applications in t+1), separately
+invention and non-invention patents. The methods do not state whether
+changing firm industries are frozen before reform. Footnote5 justifies2016
+against2017 rules. Table3 reports insignificant leads; additional2016
+exclusion and steel/coal exclusions are described without displayed results.
+Table4's separate-group Post regressions also label year fixed effects as
+included: this needs clarification because a common Post is then absorbed.
+
+Verified institutional boundary: the [NDRC reproduction of 国发〔2016〕34号](https://www.ndrc.gov.cn/xwdt/ztzl/jdstjjqycb/zccs/201705/t20170517_1028533.html),
+signed2016-06-01, SectionsIII–IV and signature inspected, requires policy
+makers to review measures rather than assign firms licenses. Central and
+provincial bodies start in July2016; provinces guide gradual city/county
+extension from2017. SectionIV(2) distinguishes new measures from phased
+cleanup of existing measures, preserves transition periods for contractual
+benefits, and does not retrospectively revoke benefits already delivered.
+SectionIII(4) retains specified public-interest exceptions. The2017-05-17
+republication date is not reform onset. Industry membership is the paper's
+relative exposure proxy, not a legally exclusive treated-sector list.
+
+Analytical inference: the comparison is differential industry exposure to
+a national reform, not treated firms versus firms legally outside the
+system. Common industry shocks, including2016 capacity reduction, and
+industry-level dependence require scrutiny beyond firm clustering.
+Insignificant leads do not prove parallel counterfactual trends. Preserve
+the paper's t versus t+1 alignment;2020 regressors need2021 patent coverage.
+Resolve the exact18-industry code crosswalk, prepolicy membership rule,
+geography, patent/group joins and baseline inference before admission.
+Do not turn the Table4 reporting ambiguity into an assertion that the
+baseline firm/year model is unidentified. Retain a China-facing candidate;
+canonical and ready unchanged at screen.
+
+Resolve `task-47ffa7746cd8` recovered the actual CSRC official bulletin2012
+issue10 through [its public PDF](https://www.csrc.gov.cn/csrc/c100024/c1492226/1492226/files/5f2288e304bf41bc9238c19bcfbdd0af.pdf).
+The Word attachment returned403; the189-page bulletin returned200. Its
+embedded text is garbled, so printedpp55–63/PDFpp66–74 were visually
+inspected under the PDF-reading workflow. Section7 closes the name/code
+crosswalk: B06,B07,B08,B09,B11,C25,C31,C32,C37,D44,D45,D46,G53,G54,G55,G56,
+I63,N78. Section2 classifies by business revenue; Sections6.1–6.3 permit
+periodic classification changes. This is an official code derivation from
+the paper's names, not recovered author code or a frozen firm roster.
+
+The source gap is narrowed, not erased. Grounded admission serves only
+the inspected national industry-relative proxy. A new use must supply
+prepolicy industry histories and document freezing or a stable-industry
+restriction; neither is attributed to the authors. Exact author replication,
+industry switchers without a coding convention, municipal repeal timing
+and uninspected patent/group joins are not served as closed. These limits
+remain explicit in `china-2016-fair-competition-review-industry-exposure`.
+The18-code exposure is distinct from a local staggered adoption design and
+from individual antitrust actions; no extra records are created for the
+same paper's invention versus non-invention outcomes.
+
+The final16-page publisher PDF also returned200 in memory. Table4 on
+printedp70/PDFp8 was text and visually inspected: separate-group Post
+coefficients and the included firm/year-effects row are both printed.
+The ambiguity is present in the final table, not merely HTML rendering.
+It remains an auxiliary reporting limitation, not a claim that the baseline
+interaction lacks variation. No original paper PDF is persisted.
+
+### 2026-10-05 — National new areas and town-level firm location
+
+Screen `task-ea0937d71a7a` retains a bounded *Economic Research Journal*
+regional/firm-location source. The [author's university publication list](https://dafi.sufe.edu.cn/74/19/c12600a226329/page.htm),
+directly retrieved200 and the Chinese-publications entry inspected, names
+Guo Feng, Cao Youbin, Xiong Yunjun and Lv Bin and2023 issue8 under the title
+《国家级新区设立对企业进入和空间布局的影响——来自镇级面板数据的经验证据》.
+The [abstract-only catalog](https://www.sjzkz.com/DRCNet.Mirror.Documents.Web/DocSummary.aspx?DocID=7199685&leafID=22315)
+uses《国家级新区设立与企业空间布局：基于镇级面板数据的分析》and the
+same authors/issue. It describes town-level maps and firm entry, but supplies
+no inspected estimator, cohort roster, treatment crosswalk or sample window.
+Published citations point to58(8):191–208; original pagination and DOI are
+not yet independently inspected. Do not invent a DOI or infer that the title
+variant alone proves a separate paper or a particular prepublication version.
+
+The catalog's observed full-text link redirects to login. The author mobile
+publication page timed out both in the page reader and direct TLS connection;
+no body or public attachment was recovered. Search snippets and citing papers
+remain discovery material, not access to this paper's methods. No original
+paper, login token or private contact details are stored.
+
+Institutional source inspected: [发改地区〔2015〕778号](https://www.ndrc.gov.cn/xxgk/zcfb/tz/201504/t20150423_963808_ext.html),
+signed2015-04-15, posted2015-04-23, opening definition and clauses2,9,19–24.
+It defines State-Council-approved comprehensive functional areas, calls for
+planning-led development, permits reliance on existing development/high-tech
+zones, allows province-delegated management powers and subsequent
+administrative adjustments, and retains approval oversight. It does not
+supply the study's town roster or establish one uniform tax/subsidy regime.
+Its2015 date is a guidance date, not all new areas' designation year.
+
+Analytical inference: a boundary-level firm-location study cannot be served
+by a whole-host-city dummy without changing the empirical object. Recover
+the final body/appendix, original approval and later expansion polygons,
+town-boundary vintage, approval versus construction/operation onset,
+treated/comparison-town selection, historical firm-address geocoding and
+assignment-level inference. Separate administrative district status from
+functional-area recognition; preserve pre-existing parks and nearby-town
+spillovers rather than call every new firm a directly subsidized entrant.
+Retain a China-facing resolve candidate with these exact recovery targets;
+canonical and ready unchanged at screen.
+
+Resolve `task-6c84da2396c1` checked the author's observed university-linked
+personal domain through both transports. HTTPS publication access timed
+out; HTTP home and `/col.jsp?id=105` returned200 but explicitly displayed
+a domain-for-sale page, not the scholar's publications. Do not interpret200
+as recovered article access or keep retrying the obsolete personal site.
+The university profile still verifies the publication entry, but exposes
+no paper attachment. Bounded exact-title/author searches recovered citing
+papers rather than the final body or author town/date roster.
+
+An actual original designation is now inspected independently: the
+[State Council Xiangjiang approval reproduced by MOST](https://www.most.gov.cn/szyw/yw/201504/t20150427_119140.html),
+Sections1–4 and signature2015-04-08; reposted2015-04-27. It covers490 square
+kilometres including parts of Yuelu, Wangcheng and Ningxiang, not all
+Changsha. It responds to the province's2013 request and explicitly cites
+existing locational, innovation and industrial advantages. It requires
+planning and separate approval of important policies/projects. These facts
+verify a selected subcity recognition, not immediate uniform treatment,
+a township polygon, a construction-completion date or the paper's coding.
+The approval supports retaining preparation and selection concerns.
+
+No final methods, original cohort/polygon-to-town table or historical firm
+geocoding convention has been inspected. Preserve this candidate as blocked
+for a public author/university deposit, accessible final publisher body or
+appendix. Do not replace its town-level question with an unrelated host-city
+growth paper, manufacture a local boundary from current administrative names,
+or promote a plausible policy contrast as an actual inspected design.
+Canonical and ready remain unchanged.

@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 164,
+  "record_count": 165,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 145,
+    "china-variation": 146,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 111,
+    "conditional-candidate": 112,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -2300,6 +2300,101 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-2015-local-government-debt-swap-credit-reallocation.md"
+    },
+    {
+      "id": "china-2016-fair-competition-review-industry-exposure",
+      "name": "China fair-competition review reform and administrative-monopoly industry exposure",
+      "aliases": [
+        "公平竞争审查制度行业差异暴露",
+        "administrative-monopoly regulation"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "industrial-economics",
+        "firm-economics",
+        "development",
+        "innovation",
+        "market-integration"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 2016,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Industry-relative firm exposure to national policy-review reform.",
+        "mechanism": "The study distinguishes18 administrative-monopoly industries from other industries around the national reform. The industry list is a research proxy, not statutory exclusive eligibility.",
+        "treatment": "monopoly_industry times post2016, with the membership convention explicit.",
+        "comparison": "Compare changes rather than levels; justify counterfactual industry trends and account for nonzero reform exposure in the comparison pool.",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "industry_code",
+          "industry_classification_version"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm innovation",
+          "patent applications",
+          "industrial productivity",
+          "market competition"
+        ],
+        "application_outcomes": [
+          "log(1+next-year patent applications), including invention and non-invention outcomes."
+        ],
+        "design_families": [
+          "firm-panel differential-exposure DID",
+          "event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland nonfinancial listed firms with auditable industry histories; a stable-industry restriction is a proposed reuse convention, not the reported author sam…",
+        "observation_unit": "firm-year",
+        "geography_level": "national with firm geography audited",
+        "time_start": 2012,
+        "time_end": 2021,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "industry_code",
+          "industry_history",
+          "patent_applications",
+          "invention_applications",
+          "financial_controls",
+          "sample_exclusion_flags"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "industry_classification_version"
+        ],
+        "treatment_key": [
+          "industry_code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "concurrent-industry-shocks",
+        "dependence",
+        "industry-switching",
+        "legal-proxy-gap"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2016-fair-competition-review-industry-exposure.md"
     },
     {
       "id": "china-2017-industrial-transformation-demonstration-first-cohort",
