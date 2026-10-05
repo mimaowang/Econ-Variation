@@ -10949,3 +10949,187 @@ Finish blocked: the legal before/after contrast is recoverable, but the
 growth-year/group-freezing rule, exact sample selection, estimator, inference
 and long-run regime handling still require actual Sections2–4/appendix or
 replication. Resume only with such material evidence; leave ready unchanged.
+
+### Product-level manufacturing FDI opening, accepted-version bridge — 2026-10-05
+
+Resolve `task-cfe5098c61e7` revisits the2002 catalogue mechanism associated
+with blocked `candidate-f17857cc4f7b`, rather than counting a new DOI as
+a new shock. Eppinger and Ma's [author research list](https://sites.google.com/site/petereppinger/research)
+identifies ReStat108(3),817–832,2026, DOI10.1162/rest_a_01431.
+The60-page [CESifo10551 revision](https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp10551.pdf)
+was accessible through the web PDF reader despite failed direct retrieval.
+Its February20,2024 title page explicitly declares the accepted,
+peer-reviewed version. Inspected printedpp5–19 Sections2–4.3,
+Equations1–2, Tables1–2, AppendixA.1 ppI–V and B.1–B.2 ppXII–XIV.
+This differs from the59-page June2023 [EconStor manuscript](https://www.econstor.eu/bitstream/10419/279301/1/cesifo1_wp10551.pdf)
+previously read. The2024 version includes relative-magnitude parallel-trend
+sensitivity in Section4.3. Screenshot calls did not return inspectable
+pixels; text/table inspection is not represented as a visual audit.
+
+The missing original list was recovered in the SAT's
+[1997No37 Appendix1](https://fgk.chinatax.gov.cn/zcfgk/c102440/c5211626/content.html):
+all encouraged, restrictedA/B and prohibited lists were read, particularly
+restrictedB mechanical items1–2 requiring Chinese control for vehicles and
+engines. The [2002 NDRC body and attachment](https://www.ndrc.gov.cn/xxgk/zcfb/fzggwl/200507/t20050707_960602_ext.html)
+retain a complete-vehicle50percent cap but list engine manufacture as
+encouraged without that clause. The two are not one industry-wide opening.
+MOFCOM's [Order346 full reproduction](https://tfs.mofcom.gov.cn/swfg/dwtzhwstz/art/2011/art_5fbbb861c1a945a5b369838f683cdd7e.html)
+was read Articles1–17; Articles4,8,10–12,16–17 establish category/ownership
+separation, aggregate versus relative control, approved export/region relief,
+project procedures, HMT-investor coverage and April1 effect.
+
+The accepted paper supplies a recoverable firm-product assignment rather
+than an industry-category substitute: up to three ASIP products, semantic
+matching within22 broad sectors, preferred0.8 cutoff plus manual correction
+and location exceptions;2001 baseline products determine all-restrictions
+removal and Post begins2002. Ownership comparison is still-restricted firms.
+Performance comparison is never-regulated firms also acquired into full
+foreign ownership after2001, with neither group fully foreign-owned in the
+observed1998–2001 pre-period. That post-policy acquisition restriction is
+not a policy assignment and requires selection reasoning. Separate profiles
+serve these applications without creating two variation records.
+
+Author link identifies replication DOI10.7910/DVN/OXZ0SD, explicitly labeled
+including FDI policy data. Its landing page/JSON endpoints were inaccessible
+via reader and direct retrieval, and the Dropbox final download failed.
+No file inventory, corrected lookup or code was inspected. Preserve the
+public DOI and stable author page, not signed download URLs. Recovery of
+that lookup or an auditable reconstruction is a concrete data-use condition.
+Likewise, the manuscript's cited engine commitment upon WTO accession was
+not independently inspected; the2002 research clock does not certify each
+product's earliest statutory opening. Later revisions need a control audit.
+
+Grounded admission `china-2002-manufacturing-fdi-restriction-removal` now
+rests on inspected before/after legal activity lists, the actual accepted
+design and explicit matching procedure. The prior core institutional gap
+has closed; unread executable mapping remains a conditional-use limit,
+not a reason to invent fully reproduced treatment. This admits one shared
+manufacturing removal contrast, not encouragement alone. The RIE2025
+industry-export application retains its unresolved Sheng-Yang crosswalk
+and entry definition in the earlier audit; the new product-level application
+does not silently certify it. The old terminal blocked candidate is retained
+as historical provenance, with this section supplying the new canonical link.
+No copyrighted paper or microdata stored. Expected ready increase is one
+conditional case, subject to completion gate.
+
+Outcome-routing audit `task-8e0378a6b66d` adds the inspected Equation1
+ownership outcomes and Equation2 production/productivity outcomes to their
+respective profile vocabularies. The narrative and separate data contracts
+already distinguished them, but empty profile outcome lists left automatic
+matching to data convenience and manual review. This supplies that missing
+intent bridge without changing assignment, maturity or ready count. An
+ownership query must retain the ownership comparison; a productivity query
+must retain the acquired-firm profile and its selection/data conditions,
+even when ownership data are easier to obtain. Vocabulary recognition is
+not evidence that those conditions are satisfied.
+
+### SME rebate-delay application: source triage — 2026-10-05
+
+Screen `task-107fcd5dca45` retains `candidate-e4059d7c6f2f` for
+CER94(2025)102561, [DOI](https://doi.org/10.1016/j.chieco.2025.102561).
+The inspected [Hong Ma research page](https://mahong.weebly.com/research.html),
+publication34, confirms the title, authors and journal/year; it supplies no
+paper link. Publisher-indexed introduction and section previews are leads,
+not inspected full methods: they describe2007–2014 tax-survey/customs firms,
+rebate delays and a fiscal-pressure instrument involving local industrial
+structure. Direct publisher full/abstract pages returned access errors.
+
+Do not convert that description into another statutory rebate-rate shock
+or claim an unchanged original2004 payment regime. Existing
+`china-2004-export-vat-refund-local-financing` already documents the2005
+central-payment redesign. The candidate must establish the later regime
+and actual IV construction before deciding between a separate mechanism
+and an additional application. A new employment outcome is not a new shock.
+
+Recover the actual formula, arrears measurement clock, geographic level,
+SME definition, sample and zero-refund handling, inference and exclusion
+diagnostics. A public [PKU-hosted Lu-Ma2024 Chinese export paper](https://nsd.pku.edu.cn/docs/20240221144541422655.pdf)
+surfaced as a related recovery route but timed out; it is not the CER2025
+employment paper and no methods were inspected or transferred from it.
+A subsequent direct request recovered a17-page PDF in memory, but both
+pypdf and PyMuPDF text extraction returned unreadable font mappings.
+Visual reading is the next concrete recovery step; neither successful
+download nor garbled extracted text counts as method inspection. No PDF
+was saved. Candidate only; canonical files and ready remain unchanged.
+
+Resolve `task-4e6a05a37233` recovered and visually inspected the related
+17-page Chinese paper, Lu and Ma, *China Economic Quarterly*24(1),67–83,
+2024, DOI10.13821/j.cnki.ceq.2024.01.05. Direct in-memory rendering overcame
+unreadable font mappings; printedpp67,69–75 were inspected, including
+SectionIII, Equations1–2 and Table2. This is actual related-paper evidence,
+not CER2025 methods and not an inspected JPubE2023 manuscript.
+
+The Chinese application uses2007–2011 manufacturing exporters in the
+National Tax Survey;2011 industry codes are recoded to match earlier years.
+Reported customs matching uses names, postal codes and phone numbers,
+then8-digit HS product rates;93percent matched is source-reported. Its delay
+ratio is year-end outstanding rebates divided by rebates due that year,
+not the earlier canonical's reconstructed effective-rate proxy. The IV is
+provincial administrative expenditure divided by business-tax revenue,
+multiplied by inverse city upstreamness. Upstreamness uses2002 China IO
+industry measures with2006 city export shares fixed before the panel.
+This is not the old case's deficit/expenditure formula. Equations1–2 use
+firm and industry-year effects; printedp73 says standard errors cluster by
+firm. Table2's baseline sample has96,413 observations and a reported
+first-stage KP statistic58.22; sample count does not establish exclusion.
+
+The related paper acknowledges the local share fell to7.5percent in2005
+(printedp69 footnote), but its payment story alone does not reconcile the
+central-treasury redesign established in the existing canonical's official
+2005 notice. Administrative delay, financing liability and actual treasury
+payment must remain separate. Fiscal spending and city industrial structure
+can affect exports directly; controlling provincial infrastructure does not
+prove those channels absent [analytical inference]. Whether the application
+belongs in an expanded existing case or a distinct later implementation
+requires identity review; an added interaction instrument is not itself
+proof of a new policy shock.
+
+The CER employment candidate remains blocked on its own full methods:
+do not transfer the Chinese paper's2007–2011 sample, fiscal formula,
+2006 shares, clustering or exporter definition into a2007–2014 SME study.
+Retain the recovered related source for a separately scoped screen/identity
+review. No canonical admission, maturity change, paper storage or ready gain.
+
+Screen `task-ac9016671983` retains the actual CEQ2024 application for
+identity review, rather than treating it as evidence about CER2025. Further
+visual reading covered printedpp76–77, Table3: processing-trade placebo,
+2005–2006 city export-growth/year interactions, alternative instrument
+using provincial fiscal ratio times2006 consumer-goods export share, and
+other firm tax/subsidy controls. These address specific concerns but do not
+establish generic fiscal exclusion. Related export, employment and delay
+outcomes remain applications, not additional variation counts.
+
+The [MOF2005No438 full text](https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/2005zcfb/200805/t20080519_22509.htm)
+was reinspected SectionsI–V: the approved base stays fixed; above-base
+liability changes to92.5/7.5 fromJanuary1 by approval date; central treasury
+cash refunds startSeptember1; local liabilities are remitted annually.
+This distinguishes legal financing from payment and approval. The follow-up
+must resolve whether the later administrative-delay application can extend
+the existing original2004 case without mixing regimes, or whether a
+separately grounded successor is justified. Neither a city-industry
+interaction nor a new paper alone establishes distinct variation identity.
+Canonical unchanged at screen; evidence and remaining judgment retained.
+
+Additional primary bridge: the full [Liaoning2005No31 notice](https://www.ln.gov.cn/web/zwgkx/zfwj/szfwj/zfwj2005/C97C857B6CF141E5B98A828849F3079D/index.shtml)
+was inspected SectionsI–IV and September30 signature. It allocates the
+above-base local7.5percent as province3/cities4.5, with Dalian bearing7.5;
+central treasury pays and province/city liabilities are remitted annually.
+Cities retain fiscal responsibility, but this does not verify their ability
+to withhold a central cash payment. The [Shanghai fiscal-history section4](https://czj.sh.gov.cn/zss/zfxx/czls/czz/shcsswz/dypczgltz/dyzzydshsczgltz/dsjcktsfdjz/)
+also explicitly distinguishes central payments from city/district fiscal
+adjustment. These are implementation examples, not a nationwide province
+roster. Direct State Council2005No25 access returned403; no independent
+full-text inspection of that page is claimed.
+
+Resolve `task-74c14040be70` admits the later implementation as
+`china-post2005-export-vat-delay-fiscal-upstreamness`, conditional on the
+stated IV and data requirements. Identity is not justified by a new title,
+outcome or interaction alone: MOF438 and Liaoning31 change the original
+local cash-payment procedure to central payment with annual local settlement,
+which the old canonical explicitly excludes. The old case remains unchanged;
+its2004 contrast is not silently broadened into this2007–2011 application.
+The later record explains the instrument as paper-defined exposure, not a
+statutory assignment or exogenous fiscal shock. Legal incentives are grounded;
+the precise approval-delay pathway and direct fiscal/industrial exclusion
+remain research conditions, not verified results. No generic reform DID,
+uninspected CER/JPubE application or fully reproduced treatment is admitted.

@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 166,
+  "record_count": 168,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 147,
+    "china-variation": 149,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 113,
+    "conditional-candidate": 115,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -577,6 +577,208 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-2001-income-tax-protected-base-incentive.md"
+    },
+    {
+      "id": "china-2002-manufacturing-fdi-restriction-removal",
+      "name": "China 2002 manufacturing FDI restriction removal using baseline firm products",
+      "aliases": [
+        "外商投资产业指导目录2002年修订",
+        "manufacturing foreign ownership liberalization",
+        "product-specific FDI restriction removal"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-economics",
+        "industrial-organization",
+        "development",
+        "foreign-direct-investment",
+        "trade",
+        "productivity"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "trade-globalization"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2002,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Manufacturing product activity, inherited by a firm through its pre-reform product basket; annual firm outcomes.",
+        "mechanism": "Baseline product activities determine whether a firm initially faces a restricted/prohibited category or explicit ownership condition and whether every such restriction disappears in2002. These provisions form one author-defined liberaliza…",
+        "treatment": "Fixed liberalized_i from2001 products times I(year>=2002). The performance sample's treated_i uses the same removal rule but a never-regulated comparison and a post-policy full-ac…",
+        "comparison": "Preserve the ownership application's still-restricted control separately from the performance application's acquired never-regulated control. Both acquisition groups have ownershi…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "baseline_product_description",
+          "catalogue_product_clause",
+          "province_or_location",
+          "historical_industry_code",
+          "HS6_for_trade_controls"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "foreign ownership share",
+          "full foreign ownership",
+          "firm output",
+          "total factor productivity",
+          "ownership restructuring",
+          "firm innovation",
+          "exporting"
+        ],
+        "application_outcomes": [
+          "Foreign ownership share and ownership-threshold indicators; log output and chain-linked Tornqvist TFP, plus reported supplementary outcomes."
+        ],
+        "design_families": [
+          "firm-panel difference-in-differences",
+          "inverse-probability-weighted difference-in-differences",
+          "event study around the policy clock"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland manufacturing firms initially facing catalogue restrictions on their2001 products; the default application studies ownership without requiring subsequ…",
+        "observation_unit": "firm-year",
+        "geography_level": "mainland firm location with province-specific policy checks",
+        "time_start": 1998,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "foreign paid-in-capital and total paid-in-capital",
+          "baseline main-product descriptions",
+          "historical catalogue category and ownership clauses",
+          "firm location",
+          "industry",
+          "year",
+          "baseline output employment wage age export-sales share and import-input share for published IPW",
+          "product-linked initial tariff and uncertainty controls"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "baseline_product_description",
+          "province_or_location"
+        ],
+        "treatment_key": [
+          "baseline_product_description",
+          "province_or_location",
+          "year"
+        ]
+      },
+      "design_profiles": [
+        {
+          "id": "ownership",
+          "label": "Liberalization and foreign ownership among initially restricted firms",
+          "design_families": [
+            "difference-in-differences",
+            "event-study"
+          ],
+          "when_to_use": "The idea asks whether relaxed investment constraints change foreign ownership. Do not require or select firms on subsequent full acquisition for this profile.",
+          "outcome_domains": [
+            "foreign ownership share",
+            "full foreign ownership",
+            "majority foreign ownership"
+          ],
+          "data_fit": {
+            "population": "Mainland manufacturing firms restricted on at least one2001 product, with liberalized and still-restricted comparison firms.",
+            "observation_unit": "firm-year",
+            "geography_level": "mainland firm location",
+            "time_start": 1998,
+            "time_end": 2007,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 3,
+            "minimum_post_periods": 2,
+            "required_fields": [
+              "foreign paid-in-capital share",
+              "baseline product descriptions",
+              "pre-post catalogue restrictions",
+              "location",
+              "industry",
+              "year",
+              "2000 propensity covariates and product-level trade controls"
+            ],
+            "required_identifiers": [
+              "firm_id",
+              "year",
+              "baseline_product_description",
+              "province_or_location"
+            ],
+            "treatment_key": [
+              "baseline_product_description",
+              "province_or_location",
+              "year"
+            ]
+          }
+        },
+        {
+          "id": "acquired-firm-performance",
+          "label": "Ownership reoptimization and performance among subsequently acquired firms",
+          "design_families": [
+            "difference-in-differences",
+            "event-study"
+          ],
+          "when_to_use": "The idea concerns production or productivity after ownership reoptimization and can explicitly defend selection into subsequent full acquisition. This profile does not estimate the effect for all producers.",
+          "outcome_domains": [
+            "firm output",
+            "total factor productivity",
+            "ownership restructuring"
+          ],
+          "data_fit": {
+            "population": "Firms never fully foreign-owned1998–2001 but fully foreign-owned after2001; liberalized firms compared with acquired firms never subject to any FDI policy over…",
+            "observation_unit": "firm-year",
+            "geography_level": "mainland firm location",
+            "time_start": 1998,
+            "time_end": 2007,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 3,
+            "minimum_post_periods": 2,
+            "required_fields": [
+              "firm output or total factor productivity",
+              "annual foreign paid-in-capital share",
+              "baseline product descriptions",
+              "pre-post catalogue restrictions",
+              "all-year never-regulated status",
+              "location",
+              "four-digit industry",
+              "year",
+              "2000 propensity covariates and product-level trade controls",
+              "labor capital and material inputs plus deflators for the paper's TFP outcome"
+            ],
+            "required_identifiers": [
+              "firm_id",
+              "year",
+              "baseline_product_description",
+              "province_or_location"
+            ],
+            "treatment_key": [
+              "baseline_product_description",
+              "province_or_location",
+              "year"
+            ]
+          }
+        }
+      ],
+      "threat_types": [
+        "inference-and-interference",
+        "legal-versus-research-clock",
+        "post-policy-acquisition-selection",
+        "product-assignment-error",
+        "selected-liberalization-and-overlap"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 4,
+      "source_path": "variations/china-2002-manufacturing-fdi-restriction-removal.md"
     },
     {
       "id": "china-2004-2005-fiscal-province-managing-county-rollout",
@@ -12982,6 +13184,113 @@
       "blocker_codes": [],
       "blocker_count": 0,
       "source_path": "variations/china-pollution-information-disclosure.md"
+    },
+    {
+      "id": "china-post2005-export-vat-delay-fiscal-upstreamness",
+      "name": "China post2005 export VAT rebate delays and fiscal-upstreamness exposure",
+      "aliases": [
+        "出口退税效率与企业出口绩效",
+        "post2005 refund delay instrument",
+        "fiscal pressure times inverse city upstreamness"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-economics",
+        "international-trade",
+        "development",
+        "regional-economics",
+        "public-finance"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban",
+        "public-finance",
+        "trade-globalization"
+      ],
+      "variation_type": "continuous-exposure",
+      "time": {
+        "start": 2005,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Province-year fiscal pressure interacted with fixed city structure, attached to firm-year rebate accounts.",
+        "mechanism": "Paper-defined province-year fiscal pressure times inverse city upstreamness fixed before the firm panel predicts differing refund delays. Legal liability supports the regional incentive context, not random assignment or a verified right to…",
+        "treatment": "Firm-year outstanding/due rebate ratio; excluded instrument equals province-year administrative expenditure/business-tax revenue times inverse city upstreamness.",
+        "comparison": "Identify from continuous regional exposure among observed exporters, rather than a never-treated reform group. Firm effects remove fixed differences, not time-varying fiscal or in…",
+        "required_identifiers": [
+          "firm_id",
+          "city_code",
+          "province_code",
+          "year",
+          "harmonized_industry_code",
+          "HS8_product_code"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm export value",
+          "export participation",
+          "exporter liquidity",
+          "firm sales"
+        ],
+        "application_outcomes": [
+          "Log firm export value"
+        ],
+        "design_families": [
+          "firm-panel instrumental variables with explicit exclusion and regime checks"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Mainland manufacturing exporters observed in the National Tax Survey; no SME restriction is verified for this application.",
+        "observation_unit": "firm-year",
+        "geography_level": "firm city linked to province",
+        "time_start": 2007,
+        "time_end": 2011,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 0,
+        "minimum_post_periods": 0,
+        "required_fields": [
+          "firm export value",
+          "year-end outstanding export VAT rebates",
+          "export VAT rebates due that year",
+          "provincial administrative expenditure",
+          "provincial business-tax revenue",
+          "2006 city industry export shares",
+          "2002 IO-based industry upstreamness",
+          "statutory HS8 rebate rates",
+          "firm employment capital productivity controls",
+          "provincial infrastructure investment"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "city_code",
+          "province_code",
+          "year",
+          "harmonized_industry_code",
+          "HS8_product_code"
+        ],
+        "treatment_key": [
+          "province_code",
+          "city_code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "common-shock-inference",
+        "financing-versus-payment",
+        "fiscal-and-industrial-exclusion",
+        "measurement-and-selection"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-post2005-export-vat-delay-fiscal-upstreamness.md"
     },
     {
       "id": "china-processing-trade-ownership-control",
