@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 163,
+  "record_count": 164,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 144,
+    "china-variation": 145,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 110,
+    "conditional-candidate": 111,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -2300,6 +2300,102 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-2015-local-government-debt-swap-credit-reallocation.md"
+    },
+    {
+      "id": "china-2017-industrial-transformation-demonstration-first-cohort",
+      "name": "China first-cohort industrial transformation demonstration-zone city exposure",
+      "aliases": [
+        "首批产业转型升级示范区",
+        "old-industrial and resource-city transformation pilots"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "urban-economics",
+        "industrial-economics",
+        "development",
+        "industrial-upgrading",
+        "innovation"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "infrastructure-urban"
+      ],
+      "variation_type": "pilot-assignment",
+      "time": {
+        "start": 2017,
+        "end": null
+      },
+      "assignment": {
+        "unit": "National city/economic-region designation; prefecture-level city-year proxy in the inspected application.",
+        "mechanism": "Provincial recommendations and national administrative selection favor previously capable old-industrial/resource cities; the published application maps designated economic regions to21 prefecture-level units. That mapping is a reported ag…",
+        "treatment": "did_ct = first_cohort_author_city_c times indicator(year>=2017), through2018.",
+        "comparison": "Require comparable counterfactual trends within the selected old-industrial/resource-city pool; account for preparation and co-assigned clusters. Differences in levels need not in…",
+        "required_identifiers": [
+          "city_id",
+          "year",
+          "historical_city_name",
+          "boundary_version"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "industrial structure upgrading",
+          "industrial structure rationalization",
+          "city innovation",
+          "regional investment"
+        ],
+        "application_outcomes": [
+          "Sector-weighted normalized labor-productivity upgrading and negative weighted productivity-deviation rationalization."
+        ],
+        "design_families": [
+          "city-year difference-in-differences",
+          "event-study with boundary sensitivity"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland prefecture-level old-industrial/resource cities comparable to the paper's159-city pool.",
+        "observation_unit": "city-year",
+        "geography_level": "prefecture-level city",
+        "time_start": 2003,
+        "time_end": 2018,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "city-year research outcome",
+          "first_cohort_author_city",
+          "historical city boundary",
+          "sector value added and employment for paper industrial-structure measures",
+          "price deflators for monetary fields",
+          "population GDP budget expenditure utilized FDI retail sales highway length and area for published controls"
+        ],
+        "required_identifiers": [
+          "city_id",
+          "year"
+        ],
+        "treatment_key": [
+          "city_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "geographic-measurement",
+        "inference-and-spillovers",
+        "policy-overlap",
+        "selection"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2017-industrial-transformation-demonstration-first-cohort.md"
     },
     {
       "id": "china-2018-asset-management-regulation-ownership-credit-exposure",

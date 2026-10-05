@@ -9899,3 +9899,343 @@ label issues matter for reconstruction, but do not justify silently correcting
 the author files. Keep the existing candidate blocked on assignment inputs;
 canonical and ready unchanged. Reopen on actual archival or author mapping
 files, not another abstract describing the same instrument.
+
+### Industrial-internet project designation and firm productivity — 2026-10-05
+
+Screen `task-76c4fbba9772` opens a bounded domestic industrial-economics
+application lane in *Business and Management Journal* (经济管理), publisher
+`jjgl.ajcass.com`, for Chao Xiaojing, Zhou Wenhui and Liu Yaying2024,
+46(7):5–19, DOI10.19616/j.cnki.bmj.2024.07.001. This is one identified
+paper, not a journal inventory or an unsupported field-top/SSCI ranking.
+The [publisher final PDF](https://jjgl.ajcass.com/UploadFile/Issue/201605310004/2024/9/20240911021251WU_FILE_0.pdf)
+returned403 to the page reader but200 to direct retrieval. Its15 pages
+were accessed in memory, not stored. Title/version and printedpp8–13,
+SectionIII, Tables1–5 and robustness were text-inspected; printedp9/Table1
+was also rendered and visually inspected. No full-article audit is claimed.
+
+Source-reported application:2013–2022 manufacturing listed firms; named
+project applicants are manually joined to listed companies. Designation
+switches firm treatment from0 to1. The paper describes2017–2022 batches,
+excludes2022 new entrants and reports68 treated firms. LP productivity
+is baseline, OP/ACF alternatives; Table2 uses firm/year/city effects,
+firm-clustered errors and15,598 controlled observations. PSM is annual
+1:1 nearest-neighbor matching with replacement. The author roster,
+parent/subsidiary crosswalk and treatment-year file were not recovered.
+
+Primary evidence changes the next action. The inspected
+[2018 national designation notice](https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2020/art_9ee8e0571fcf4d46b544762608e7c2a2.html),
+工信厅信管函〔2018〕410号, signed2018-12-17 and posted2018-12-25,
+documents voluntary applications, local recommendations, expert review,
+site checks and publicity, not random assignment. The
+[2019 recommendation rules](https://www.cac.gov.cn/2019-11/05/c_1574488240850433.htm),
+工信厅信管函〔2019〕238号, signed2019-10-31, SectionsII(1–4)/III(1–3),
+require capable domestic legal entities and demonstrated results; unfinished
+projects and previously designated projects cannot apply. Recommendation
+quotas and ordered priorities differ for provinces, separately planned
+cities and centrally administered units. The demonstration period is two
+years; these rules do not establish indefinite support or a uniform subsidy.
+
+The inspected [2017 publicity notice](https://www.miit.gov.cn/ztzl/rdzt/tdzzyyhlwsdrhfzjkjstggyhlwpt/gzdt/art/2020/art_eec9b612c797440d940a64b51269c8f8.html)
+instead names 制造业与互联网融合发展试点示范项目 under
+工信厅信软函〔2017〕92号; it is not proof that the paper's2017 cohort
+belongs to the later 信息通信管理局 industrial-internet program.
+The [2021 designation notice and displayed roster](https://xzca.miit.gov.cn/zwgk/zcwj/wjfb/art/2022/art_5d3fcd5e855f45f09c37fb4c7fc5210d.html),
+工信厅信管函〔2022〕22号, signed2022-02-08, establishes that nominal
+cohort year and public designation year can differ. Displayed entries
+include subsidiary legal entities as well as listed companies; parent
+exposure cannot be assigned solely by similar names or the same city.
+
+Analytical inference: recognition of completed successful applications
+cannot identify the onset of digital adoption. An explicit recognition
+effect might be studied, but requires its own comparison and anticipation
+argument. PSM and insignificant pre-trends do not remove selection on
+previous productivity gains. Retain a China-facing firm/industry candidate
+for identity resolution, not canonical admission. Resolve the2017 program
+boundary, nominal/public/effective dates and project-to-listed-entity
+crosswalk before specifying a single regime. Do not count project types,
+alternative outcomes or annual batches as separate variations. Ready unchanged.
+
+Resolve `task-80017688a85c` found a within-paper boundary discrepancy:
+the BMJ final PDF's English abstract/printedp19 says the ministry selected
+industrial-internet projects in2018, whereas SectionIII/printedpp8–9
+describes a2017 first cohort. Printedpp18–19 were text-inspected; they
+contain references and the English abstract, not the missing firm roster;
+the PDF has no embedded files. Do not silently change the paper's cohort
+coding. The [2019 final national notice](https://www.miit.gov.cn/ztzl/rdzt/gyhlw/wjfb/art/2020/art_a39e450ba8144ce08ed0fb034ca4bf47.html),
+工信厅信管函〔2020〕26号, issuing paragraph/signature inspected, is
+signed2020-02-19 and posted2020-02-25. Its attachment is a2019 cohort
+list, not a notice issued in2019; the attachment page reader failed.
+
+A separate identified application in *Journal of Shanghai University of
+Finance and Economics*, publisher `qks.shufe.edu.cn`, supplies an
+alternative methods check, not a new variation or a field-top claim:
+Zhong, Geng, Ding and Wei2026,28(4):105–121,
+DOI10.16538/j.cnki.jsufe.2026.04.008, [final HTML](https://qks.shufe.edu.cn/mv_html/j00003/202604/GOwVL6yd-hHl1-6oSh-jKru-mekfXIItVXj6_WEB.htm),
+SectionsII–III and IV(2), Tables1–2 inspected. It uses2018–2022
+designations in a2013–2023 listed-firm panel with5,587 observations,
+includes listed parents of designated subsidiaries and assigns treatment
+from first inclusion. Controls must have zero relevant annual-report
+keywords in every sample year. Firm/year effects and firm clustering
+are reported. The outcome is an entropy composite, not directly observed
+disruption recovery. SectionIV(2) distinguishes the manufacturing/internet
+fusion program as another policy. This does not reconstruct BMJ's68 firms.
+
+Analytical inference: conditioning controls on future disclosures can
+select firms by post-treatment information and create a different comparison
+from the BMJ design. Subsidiary inclusion is an explicit application choice,
+not a legal rule exposing all members of a corporate group. The alternative
+paper narrows the program identity but does not close cohort-year coding,
+the author crosswalk or prior completed-project adoption. Preserve the
+candidate as blocked pending an actual firm/year roster with original
+program identifiers and public-designation dates. A recognition-based
+application can reopen on those inputs; do not publish a generic adoption
+shock by combining the two papers' samples. Canonical and ready unchanged.
+
+### National digital-economy innovation pilot zones — 2026-10-05
+
+Screen `task-fc7adda6487b` adds one nonfinancial firm-transformation
+application in *Pacific-Basin Finance Journal*, publisher ScienceDirect,
+as a bounded source, not an archive sweep or a field-top ranking claim.
+Yang Peng, Jiao Yong, Feng Yiqiang and Mu Manning,
+*Digital economy policies and enterprise digital transformation: A
+quasi-natural experiment of digital economy pilot zones*,95:102979(2026),
+DOI10.1016/j.pacfin.2025.102979, is a regional digital/industrial-policy
+lead, not a financial shock. [Publisher page](https://www.sciencedirect.com/science/article/pii/S0927538X25003166)
+was inaccessible via page and direct retrieval. The observed Crossref
+link to the publisher article API returned200 but only bibliographic XML:
+no sections, methods or full text. A successful HTTP status is not paper
+access. Crossref names January2026; the DOI's2025 component is not its
+issue year. Abstract-level claims remain discovery, not inspected methods.
+No author copy or replication package was recovered in the bounded search.
+
+The [NDRC launch report](https://www.ndrc.gov.cn/fggz/cxhgjsfz/dfjz/201910/t20191022_1195514.html),
+issuing paragraphs inspected, verifies a2019-10-20 launch, posted10-22,
+covering Zhejiang, Hebei(Xiongan New Area), Fujian, Guangdong, Chongqing
+and Sichuan. It does not designate all of Hebei. The
+[NDRC questions and answers](https://www.ndrc.gov.cn/xwdt/xwfb/201911/t20191106_1198149_ext.html),
+geographic-selection and implementation answers inspected, describes
+selection for existing digital foundations and prior progress, differentiated
+regional tasks, province-level coordination, locally drafted plans,
+successive implementation as plans mature and annual reform tasks.
+Objectives include data circulation, industrial digitization, governance
+and infrastructure; a shared label does not imply one universal subsidy.
+The linked launch page reports an implementation plan but supplies no
+inspectable plan attachment in this pass. Announcement, local tasks and
+firm take-up therefore remain separate evidence objects.
+
+A search lead for Zeng Hao2023, *Collected Essays on Finance and Economics*
+(财经论丛),39(4):3–13, [publisher metadata](https://cjlc.zufe.edu.cn/CN/Y2023/V39/I4/3),
+is abstract-only here: its PDF link returned the metadata page, not a PDF.
+Do not impute its treatment code to the2026 paper. The institution-hosted
+Li Jianpei, Wei Dongming and Gu Naihua2024 paper,
+DOI10.13653/j.cnki.jqte.20240905.001, was separately accessed through
+[its institutional landing page](https://giis.gdufs.edu.cn/info/1603/16106.htm)'s
+actual attachment link. Title/printedp155 and robustness/printedp169
+were text-inspected in memory. Its DID check names 国家大数据综合试验区,
+not the2019 digital-economy innovation pilot; it cannot close this candidate.
+No file, author contact details or transient attachment query were stored.
+
+Analytical inference: a nationwide-post2019 DID requires the paper's
+actual geographic boundary and address convention, enough pre-periods,
+late2019 exposure handling and inference for few assigned regions.
+Province-wide coding cannot be substituted for Xiongan membership.
+Development advantages that helped win designation can also drive digital
+outcomes; firm-level clustering or matched observables alone do not settle
+that problem. Retain a China-facing candidate with a resolve task for
+actual final methods, geo/time encoding, digital-outcome construction and
+the local implementation bridge. Canonical unchanged; ready unchanged.
+
+Resolve `task-72d7df9c4646` recovered a separate application by Li Junrui,
+Mai Sheng and Liu Lei2024, *Science & Technology Progress and Policy*
+(科技进步与对策),41(13):45–56, DOI10.6049/kjjbydc.2022120057.
+This is an identified regional/firm-innovation source, not evidence of
+the inaccessible PBFJ paper's coding or a journal-ranking claim. Its
+[publisher PDF](https://www.kjjb.org/EN/PDF/10.6049/kjjbydc.2022120057)
+returned200 and an actual12-page PDF despite its octet-stream content
+type. Printedpp45 and47–50, Section2, equation1, Tables1–4 and the
+geography/address/inference passages were text-inspected in memory;
+printedp48/Tables1–2 and treatment timing were also visually inspected.
+The full paper was not stored and no full-article audit is claimed.
+
+The paper reports a2016–2021 A-share sample, excluding ST/*ST,
+financial/insurance firms and missing variables, with1% tail winsorization
+and13,324 observations. Sources are CSMAR, CNRDS, Wind and EPS.
+Section2.2 assigns pilot firms to treatment and other-region firms to
+comparison. Its post variable is0 before2019,0.1667 in2019 (the authors'
+two-month convention) and1 afterwards; this is not a binary2019 switch
+or independently verified local implementation exposure. Equation1 and
+Table3 use year, industry and city effects, not firm effects. The inspected
+methods and table notes do not specify a clustering level. Section2.2
+describes total patent applications as the baseline and invention
+applications as an alternative, but Table1 labels the baseline Innovation
+as log(invention applications+1). Preserve this outcome discrepancy rather
+than choosing whichever definition suits a query.
+
+Printedp45 names Hebei(Xiongan), but Section2 supplies no firm roster,
+Xiongan county/address crosswalk or registered-versus-operating-location
+rule. The inspected geographic passages do not establish that the empirical
+coding excludes the rest of Hebei. Section3.4.2 reports an insignificant
+lagged firm-innovation coefficient in a designation regression; this does
+not establish absence of region-level selection. Nearest-neighbor PSM and
+randomized-label placebo exercises likewise do not recover the missing
+geographic coding or inference at the assignment level.
+
+Analytical inference: the alternative closes one timing/application detail
+but cannot substitute for the original paper's digital-transformation
+methods. Neither article currently supplies inspected, reproducible
+Xiongan membership and firm-location joins. Keep the candidate blocked
+pending the PBFJ final methods or an author-supported treatment file and
+an explicit location/outcome convention for an alternative application.
+The policy is not rejected; its core research-decision chain remains
+incomplete. Do not publish province-wide Hebei exposure or assert an
+exogenous innovation shock from these gaps. Canonical and ready unchanged.
+
+### Industrial transformation/upgrading demonstration-zone designation — 2026-10-05
+
+Screen `task-de7a2bb9ee11` identifies Tong Menghua, Li Hui and Zhang
+Guojian2022, 区位导向性政策的创新驱动效应——基于产业转型升级示范区的证据,
+*Business and Management Journal* (经济管理),2022(4):63–79. The
+[author's institutional publication list](https://infr.dufe.edu.cn/content_86647.html),
+representative publications item3 inspected, confirms title, authors,
+journal and issue. This is one domestic regional-development/firm-innovation
+application, not a journal sweep or an asserted field-top ranking.
+The search-indexed [publisher PDF](https://jjgl.ajcass.com/UploadFile/Issue/201605310004/2022/5/20220508101100WU_FILE_0.pdf)
+returns403 to the page reader and404 HTML to direct retrieval, including
+the HTTP-to-HTTPS redirect. The indexed abstract's2010–2019 listed-firm
+DID is discovery only; no empirical methods, firm crosswalk, treatment
+roster, clustering or spillover estimates have been inspected. No DOI
+was verified in this bounded search.
+
+The [actual first-cohort notice](https://www.ndrc.gov.cn/xxgk/zcfb/tz/201704/t20170421_962949.html),
+发改振兴〔2017〕671号, opening designation, SectionsI–IV and signature
+inspected, was signed2017-04-13 and posted2017-04-21. It designates12
+cities/economic regions, including several multi-city groups and special
+territories such as Chongqing's surrounding urban area and Shizuishan–
+Ningdong; it does not designate12 whole provinces. Provincial approval
+of revised local construction plans, phased tasks, park-centered platforms
+and differentiated support follow designation. Annual evaluations allow
+extra support for progress and removal after three consecutive slow years.
+The [NDRC first-cohort explanation](https://www.ndrc.gov.cn/fzggw/jgsj/zxs/sjdt/201704/t20170421_1193676.html),
+selection paragraph inspected, describes provincial recommendations from
+specified old-industrial/resource-city plans and selection for relatively
+strong foundations and prior reform achievements. These are documented
+selection conditions, not random or mechanically exogenous assignment.
+
+Analytical inference: city/economic-region recognition, designated parks
+and specific supported projects create different exposure objects. A firm
+location mapping must resolve the special territories and specify which
+object the paper actually uses. Neither the2017 notice nor an abstract
+establishes the paper's later-cohort coding or a clean untreated comparison.
+Retain a China-facing candidate for final-body recovery, cohort/geographic
+identity and firm-address joins. Do not equate this program with industrial
+transfer demonstration zones, new-type industrialization bases or ordinary
+industrial parks. Canonical and ready unchanged.
+
+Resolve `task-2bbde75956b0` recovered an alternative same-policy
+application in a bounded domestic economics-journal lane: Peng Fei and
+Jin Huiqing2021, *Industrial Economics Research* (产业经济研究),
+(3):99–111, DOI10.13269/j.cnki.ier.2021.03.008. The
+[actual publisher PDF](https://bjb.nufe.edu.cn/dfiles/1/20210308.pdf)
+returned200/13 pages; title/version and printedpp99–109, SectionIII,
+Tables2/6/9, robustness and footnotes6–9 were text-inspected in memory.
+Printedp109/footnote6 was rendered and visually inspected. The PDF was
+not stored. This is a verified alternative application, not recovered
+BMJ2022 methods or an invented ranking.
+
+Its2003–2018 city panel explicitly maps the first12 economic regions to21
+cities in footnote6, with138 other old-industrial/resource cities as
+comparison. Exposure switches on in2017; city/year effects and city
+clustering are reported. The footnote includes Shizuishan, Wuzhong and
+Yinchuan and whole Chongqing; preserve that reported aggregate proxy
+separately from the official Shizuishan–Ningdong and surrounding-urban-area
+territories. SectionIII documents sector value-added/employment industrial
+structure measures; exact normalization still needs author code. The
+firm-mechanism table does not establish historical firm-address mapping.
+
+Analytical inference: this closes the core annual city-recognition application
+without claiming direct park/project receipt or exact-territory treatment.
+Publish `china-2017-industrial-transformation-demonstration-first-cohort`
+as grounded, conditional city-level use, retaining selection, regional
+dependence, aggregation and short-post-window limits. The unavailable
+BMJ2022 firm-innovation application is not offered as ready. Neither
+later cohorts nor alternative outcomes create additional variations.
+
+### Industrial robot park establishment and manufacturing innovation — 2026-10-05
+
+Screen `task-9e245adde66a` opens one *Economic Science* (经济科学)
+application, Sha Xuekang and Zhu Kaidi2023,45(5):30–54,
+DOI10.12088/PKU.jjkx.2023.05.02, in the domestic regional/industrial
+innovation lane. No field-top ranking or journal-wide coverage is asserted.
+The [publisher article page](https://ccj.pku.edu.cn/Article/info?aid=365403441)
+works by direct retrieval; the similarly indexed `jypl` host redirects to
+an unrelated journal homepage and cannot verify article metadata. Its actual
+linked [final PDF](https://ccj.pku.edu.cn/Article/DownLoad?id=365403441&type=ArticleFile)
+returned200/25 pages. Title, printedpp33–38 and41–43, SectionsIII–IV,
+Tables1–5, treatment construction and IV discussion were text-inspected
+in memory; printedp36/method and patent geography were visually inspected.
+No source PDF or author contact data was stored.
+
+Source-reported application:2005–2016 city/two-digit manufacturing-industry
+patent panel, city-industry and industry-year effects, city-clustered errors,
+and2005 employment/R&D interacted with higher-order time terms. The
+treatment becomes1 in a city's robot-park establishment year and afterwards.
+SectionIV(2) instead describes collecting park completion dates from the
+2019 robot-industry report, commercial park inventories, park websites,
+local documents and news. These words do not establish that authorization,
+construction and operation dates coincide. The final body reports43 parks
+completed by2020, not43 parks exposed within the2005–2016 estimation window.
+No name/city/year treatment roster was recovered. Patent applicant addresses
+locate cities, but the inspected paragraphs do not supply a complete
+patent-to-two-digit-industry crosswalk. Firm robot adoption is a different
+exposure from city park presence.
+
+The actual publisher page supplies a one-page
+[author appendix](https://ccj.pku.edu.cn/Article/DownLoadFile?fid=511825333014597),
+returned200 and text-inspected, TableA1: simultaneous innovation-city,
+high-tech-zone and economic-zone controls; a DIDM alternative reports0.069,
+confidence interval[0.021,0.118] and44,319 observations. Its fixed-effect
+rows differ from the71,079-observation baseline. It contains no treatment
+roster or date-source inventory; do not label it a replication package or
+claim the alternate estimator holds every baseline feature constant.
+
+Analytical inference: the paper itself acknowledges nonrandom siting.
+Its same-province park-count instrument can inherit province innovation
+policies and intercity spillovers, and the inspected discussion does not
+establish a leave-own-city-out construction. Reported first-stage F1509.686
+addresses relevance, not exclusion. PSM and random-city placebos do not
+verify the institutional assignment. Retain a China-facing candidate for
+the author roster, local authorization/completion/operation evidence,
+first-versus-multiple-park rule, compatible implementation boundary and
+patent-industry crosswalk. Canonical and ready unchanged at screen.
+
+Resolve `task-7c443fa58e6f` inspected the publisher's actual
+[supplement inventory](https://ccj.pku.edu.cn/Article/File?aid=365403441)
+by direct retrieval: it lists only `02.pdf`, the already inspected one-page
+TableA1. No park roster or data/code file is exposed there. This is a
+statement about that inventory, not proof that author files do not exist.
+An attempted report-compiler page at CISTE timed out in the page reader
+and failed TLS verification in direct retrieval; it supplied no inspected
+book contents or park inventory. Same-title reports are not interchangeable:
+the paper explicitly cites the Shandong institute/CISTE2020 blue book,
+not automatically the Chinese Institute of Electronics2019 conference report.
+The bounded search did not recover an author name/city/year table.
+
+One actual local institutional example clarifies the missing timing object.
+The [Baoshan economic commission plan](https://xxgk.shbsq.gov.cn/article.html?infoid=cdb5c198-3403-48e6-b7fb-fb655fd177ca),
+宝经委〔2015〕31号, publicly dated2015-06-05, title/metadata and
+SectionVI(3)(2) inspected, describes transforming the existing Gucun
+industrial park into the Shanghai robot park and reaching scale by2016.
+This is a planned conversion target, not a verified completion day or
+the paper's Shanghai treatment year. Its existence cannot identify which
+park triggered the paper's city indicator, or how multiple parks in a city
+were consolidated. Do not impute2015 publication,2016 target or an earlier
+tenant arrival as the author onset.
+
+Analytical inference: the actual body gives an estimable generic formula
+but not the assignment inputs needed to reproduce this particular exposure.
+Pooling local projects under the robot label does not yet establish a
+common implementation regime. Preserve the candidate as blocked pending
+the original park/city/date table with source locators, the first/multiple-
+park and conversion convention, and the patent-industry mapping. A future
+local institutional notice can verify a row but cannot stand in for the
+whole author sample. No canonical publication; ready unchanged.
