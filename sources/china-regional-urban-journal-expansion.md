@@ -10846,3 +10846,106 @@ is a current manuscript/replication package establishing which exposure
 survived and how it maps to local replacement obligations; another older
 draft cannot certify that bridge. No paper file, personal contact details
 or canonical record saved; ready unchanged.
+
+### R&D growth eligibility removal, not the HNTE rate notch — 2026-10-05
+
+Screen `task-8d9830d2b573` retains Tian, Yu, Chen and Ye (2020),
+*Tax incentive, R&D investment and firm innovation: Evidence from China*,
+JAE71,101245, [DOI](https://doi.org/10.1016/j.asieco.2020.101245).
+This uses the already established specialist Asian-economy journal lane,
+not a new ranking claim. Exact DOI and mechanism searches found no existing
+case. The candidate concerns mainland firm innovation, not financial markets.
+
+The [publisher preview](https://www.sciencedirect.com/science/article/pii/S1049007820301251)
+was accessible through publisher-indexed abstract/introduction text; direct
+body access returned403. It reports a2006 removal of a10percent R&D-growth
+eligibility criterion, comparing newly eligible firms below it with previously
+eligible firms above it. The introduction describes positive R&D in2005–2007,
+a neighborhood around the cutoff, and industrial-survey/patent linkage using
+names and addresses. Main methods, appendix and replication were not inspected.
+The indexed university publication announcement identifies the same application;
+its direct page was inaccessible. It cannot substitute for the paper body.
+
+The [MOF original notice](https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/2006zcfb/200805/t20080524_34888.htm),
+财税〔2006〕88号, was read in full: SectionI covers domestic/foreign entities
+with sound accounting and assessed taxation, provides an additional50percent
+deduction on qualifying development expenses and up to five-year carryforward.
+The signature is September8,2006; the closing provision applies retrospectively
+from January1,2006. The webpage's May2008 publication date is not treatment
+onset. SectionsII–IV also change training, depreciation and high-tech incentives;
+the notice is not a single isolated R&D instrument. No predecessor text was
+inspected in this screen, so abolition of the old growth condition remains
+paper-reported rather than independently reconstructed from both regimes.
+
+Identity differs from `china-rd-tax-notch` (certification/R&D-intensity CIT
+rate notch) and candidate `candidate-c755d9ff7fbb` (2013/2016 expense/activity
+expansion). The same2006 notice also underlies the training-cap candidate;
+shared legislation does not make those assignment rules identical.
+
+Resolve should recover the actual baseline growth year and denominator,
+fixed versus annually recoded groups, bandwidth, equation and inference,
+firm-survival/nonzero-R&D restrictions and patent follow-up. Positive2007 R&D
+could select on a policy response [analytical inference]; do not invent a
+pre-policy cohort definition to remove that concern. Eligibility is not
+deduction receipt, and deductible expenditure is not a tax credit. Long-run
+comparisons must address2008 reform and concurrent incentives rather than
+attribute every later patent difference to2006. Preserve this as a candidate
+until those links close; no canonical or ready increase from screening.
+
+#### Predecessor and successor bridge — 2026-10-05
+
+Resolve `task-f2cc103687c5` follows `candidate-9123ea96152a`.
+The institutional bridge is now stronger, but the actual paper's baseline
+assignment and estimation remain unavailable. Do not repeat abstract searches
+as if they recovered those fields.
+
+The Shanghai tax authority's [1999No49 body](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200803/t286008.html)
+was inspected, especially ArticlesIV–VII andXVII: the historical rule covers
+specified state/collective industrial enterprises, uses year-on-year development
+expense growth of at least10percent, and excludes unused excess deductions
+and loss-making firms from the extra deduction. Its current annotation marks
+several provisions invalid under2006No62; that annotation is not itself the
+2006 paper's complete pre-reform eligibility regime.
+
+The [1999No173 body](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200402/t286907.html),
+ClausesI–IV, separately establishes the foreign-invested/foreign-enterprise
+rule from January2000: qualifying domestic development expenditure,10percent
+growth, approval and an additional50percent deduction limited by taxable
+income, without carryforward of unused excess. Purchased technology and
+ordinary technology-service business costs are excluded. These distinctions
+matter if survey R&D is treated as tax-eligible expenditure.
+
+The [Liaoning finance authority's2003No244 reproduction](https://czt.ln.gov.cn/czt/zwgkzdgz/zcfg/czzc/EB2E857D2D224C1FA1306E7C4F6F24FB/index.shtml)
+returned HTTP200 through direct retrieval after the web reader timed out;
+all four clauses and signature were read. It expands the profitable-industrial
+enterprise rule to all ownership types with sound accounting and assessed
+income taxation, retaining the10percent condition. Covered industries include
+mining, manufacturing and utility production/supply. Signed November27,2003,
+it applies from January1,2003. Thus the1999 ownership list alone cannot define
+the2005 comparison population.
+
+The [national2004No82 body](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n812193/200407/c1202792/content.html),
+SectionI(III), removes prior approval in favor of taxpayer self-declaration,
+while retaining the growth condition, accounting/documentation requirements
+and subsequent examination. Its signature is June30,2004. A2006 design must
+not attribute this earlier administrative change to removal of the growth
+threshold. Formal eligibility still does not verify actual receipt.
+
+The [national2008No116 body](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193998/content.html)
+was inspected, ArticlesII–IV,VII,IX–X andXX. From January2008, it specifies
+resident-enterprise accounting, designated technological activities, eligible
+expenses, separate project accounts and documentation; expensed and capitalized
+R&D receive different deduction/amortization treatment. The December2008
+signature does not replace its retrospective start. This is a concrete
+successor-regime issue for any patent follow-up extending beyond2007, not
+proof that the paper failed to address it [analytical inference].
+
+Access audit: [Ye's publication page](https://sites.google.com/site/jingjingye115/research),
+Publication[7], links only to the publisher, not an author manuscript.
+[ResearchGate's article entry](https://www.researchgate.net/publication/346885202_Tax_incentive_RD_investment_and_firm_innovation_Evidence_from_China)
+explicitly has no full text; its citing-paper passages are not this paper's
+methods. No author was contacted and no copyrighted document stored.
+Finish blocked: the legal before/after contrast is recoverable, but the
+growth-year/group-freezing rule, exact sample selection, estimator, inference
+and long-run regime handling still require actual Sections2–4/appendix or
+replication. Resume only with such material evidence; leave ready unchanged.
