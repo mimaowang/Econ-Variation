@@ -10383,3 +10383,407 @@ appendix. Do not replace its town-level question with an unrelated host-city
 growth paper, manufacture a local boundary from current administrative names,
 or promote a plausible policy contrast as an actual inspected design.
 Canonical and ready remain unchanged.
+
+## Yangtze River Delta council enlargement and firm employment: JFE2025 screen
+
+Screen task `task-51b8c7e38e8c` inspected Qi Yingfei and Guan Xin,
+市场统一如何促进企业吸纳就业？——基于长三角一体化的准自然实验,
+Journal of Finance and Economics51(1),33–47(2025),
+DOI `10.16538/j.cnki.jfe.20241116.301`. Actual publisher full HTML:
+https://qks.sufe.edu.cn/mv_html/j00001/202501/mV23LAoG-oxi2-ubfy-BrGN-Hde7PejYpyN3_WEB.htm.
+SectionsII–IV, Tables1–4 and footnotes7–8 were inspected, not just the
+abstract. Retain as `china-variation`: municipal cooperation and market
+integration are the assignment under study; employment is a firm outcome,
+not a reason to collect a separate financial or environmental shock.
+
+The authors report six2010 joining cities: Yancheng, Huai'an, Jinhua,
+Quzhou, Hefei and Ma'anshan. Their eight2013 joining cities are Wuhu,
+Lianyungang, Xuzhou, Chuzhou, Huainan, Lishui, Suqian and Wenzhou.
+These are paper-reported cohorts pending original admission verification.
+Do not replace this municipal council membership with the2016 urban
+agglomeration plan,2018 national-strategy announcement or2019 full-province
+integration outline. Membership exposes firms to a cooperation bundle;
+it does not certify that every firm received every component on that date.
+
+SectionIII specifies2010-cohort firms as treated and2013-cohort firms as
+comparisons, with Post=1 from2010. The available tax-survey data span
+2007–2015, while the displayed event study describes2007–2012. An explicit
+baseline end-year restriction was not recovered in the inspected HTML.
+This is consequential: after2013 the stated comparison cities also belong
+to the council. Resolve the actual baseline window before interpreting
+the coefficient as treatment against untreated cities; do not silently
+infer a2012 cutoff from the event plot. The robustness text describes a
+different staggered specification with2010/2013 cohorts and cities not
+joining by2015. Footnote8 says robustness tables were omitted and can be
+requested, so that text is reported methodology, not inspected estimates.
+
+The baseline uses National Tax Survey firm-year observations, log annual
+average employment, firm/city/year fixed effects and2007 city characteristics
+interacted with time trends. Table2 reports79,258 observations in columns1–3.
+The approximately700,000 firms surveyed annually describes the national
+source frame, not the estimation sample. Firm-level clustering is reported;
+footnote7 explains six treated/eight comparison cities and substitutes
+industry clustering in robustness. Analytical inference: neither firm nor
+industry clustering resolves common city-level assignment dependence;
+few-city inference and selection remain conditions for a new application.
+Figure2 prose says90% intervals while its caption says95%; preserve the
+discrepancy until checking the final PDF or underlying output.
+
+Resolve next: inspect original admission decisions and dates, final PDF
+sample window and supplementary output, historical city-code/firm-address
+joins, relocation treatment conventions and inference. Keep the separate
+CMDS extension distinct from the tax-survey firm panel. Duplicate search
+found no matching DOI or council-assignment canonical record. Discovery
+also located the publisher's final PDF URL, not yet inspected:
+https://qks.sufe.edu.cn/J/PDFFullDown/A0mV23LAoG-oxi2-ubfy-BrGN-Hde7PejYpyN3?lang=cn.
+Canonical unchanged at screen; no ready increase is claimed.
+
+Resolve `task-2f1edc26d58f` inspected the actual final15-page PDF through
+direct HTTP200, in memory. Printed pp38–40 (PDF6–8), Equation1, Table2,
+the clustering footnote and Figures2–3 repeat the HTML specification.
+The baseline data description remains2007–2015, without an explicit
+2007–2012 restriction; the event-study description and horizontal axis
+cover only2007–2012. Visual inspection of printed p40 confirms the90%
+prose/95% Figure2-caption discrepancy in the final PDF, not an HTML
+conversion artifact. Neither the figure nor the reported observation
+count establishes the baseline window. Do not declare the regression
+definitely contaminated either: the missing restriction must be recovered
+from author code, supplementary output or a documented clarification.
+
+One inspected municipal source provides narrower institutional
+support. [Suzhou DRC,2010-12-14](https://fg.suzhou.gov.cn/szfgw/csjyth/201012/cf46cf90f8e34875997b2fa67293baeb.shtml),
+the two body paragraphs, confirms that park co-construction was a2010
+council cooperation topic and describes a recently established alliance
+of30-plus parks/business groups, including Hefei High-tech Zone. It also
+describes earlier provincial/cross-provincial cooperation. This verifies
+a phased implementation component, not all-city admission dates or a
+uniform enterprise entitlement from March2010.
+[Yancheng government 盐政发〔2011〕90号](https://wap.yancheng.gov.cn/art/2011/6/9/art_23769_3618773.html)
+was recovered at header/table-of-contents level, with signature2011-04-21.
+Search indexing suggested a council-entry statement in Chapter1, but
+focused body recovery failed: web re-open timed out, direct mobile access
+did not recover that passage and the desktop alternative returned403.
+Treat the membership statement as an unverified lead, not inspected
+institutional evidence. The task completion note's shorthand reference
+to this source must be read with this narrower access boundary. It does
+not verify the six/eight-city admission roster, exact entry date or author
+city-code crosswalk. Website metadata must not replace the signed date.
+
+Retain the candidate blocked for the exact baseline risk-set/window and
+primary admission roster, historical firm location/city-code convention
+and assignment-level inference. Recovering these from the council
+secretariat/municipal archives or an accessible author supplement would
+change the decision; rerunning broad title searches would not. An older
+direct study of this same mechanism is a bounded alternative source:
+张学良、李培鑫、李丽霞, 政府合作、市场整合与城市群经济绩效——基于长三角城市经济协调会的实证检验,
+经济学（季刊）2017(4):1563–1582, identified in the inspected2025 reference
+list, but its own methods are not yet inspected. It is a lead for closing
+this identity, not another canonical variation or evidence of an actual
+alternative coding. No copyrighted PDF or personal contact data saved;
+canonical and ready unchanged.
+
+## Council membership: recovered CEQ2017 direct application
+
+Screen `task-175e397ba9da` inspected Zhang Xueliang, Li Peixin and Li Lixia,
+政府合作、市场整合与城市群经济绩效——基于长三角城市经济协调会的实证检验,
+China Economic Quarterly16(4):1563–1582, July2017,
+DOI `10.13821/j.cnki.ceq.2017.03.13`. The actual20-page publisher PDF
+returned200 at https://ccj.pku.edu.cn/Article/DownLoad?id=214765971&type=ArticleFile.
+The Shanghai Academy mirror discovered by search returned404 (a one-page
+error PDF), so it is not the inspected article. Printed pp1566–1577,
+SectionsII–IV, Equation1, Tables1–6 and footnotes19–22 were read;
+p1569 including footnote22 was visually inspected.
+
+This application provides a recoverable historical contrast, not a new
+policy merely because its outcome differs from the2025 firm study.
+The paper reports15 founding cities in1997 and Taizhou台州 entry in2003.
+Its indicator begins in the year AFTER joining:1997 cities from1998,
+Taizhou from2004. The baseline1993–2010 panel therefore treats2010 and
+later entrants as comparisons throughout. This timing explicitly closes
+the older paper's baseline risk-set question; it does NOT establish an
+unreported cutoff or lag convention for the2025 study.
+
+The baseline contains131 units across25 prefecture-level cities in
+Jiangsu, Zhejiang and Shanghai: all urban districts of each prefecture
+are aggregated into one unit, each subordinate county/county-level city
+is separate. Footnote19 says all inherit the parent city's membership
+and administrative changes were adjusted, without supplying the exact
+historical crosswalk. The panel has2,358 observations. Outcome is log
+real GDP per worker, GDP deflated to1993 prices; controls include labor-
+normalized capital, schooling proxy, employment, fiscal spending/GDP and
+secondary-sector share. Annual national/provincial/city statistical
+yearbooks supply data; missing observations were interpolated. Equation1
+uses unit/year fixed effects. Tables label robust standard errors without
+establishing city-level clustering.
+
+Printed pp1575–1576 separately extend the sample to2014, when all sampled
+areas eventually enter. Preserve that as a reported TWFE extension, not
+a permanent untreated comparison. Printed p1577 uses a different
+city-pair market-segmentation application:23 cities,253 pairs and eight
+retail-price categories; pair exposure requires BOTH cities to belong.
+It excludes Suqian and Yangzhou for unavailable price indexes. A pair
+application needs its own data requirements and dependence assessment,
+not a union with the131-unit productivity contract.
+
+Analytical inference: selected founding cities, preparation before1997,
+city-level assignment shared by county units, interpolated outcomes,
+neighbor spillovers and heterogeneous staggered effects remain concerns.
+Insignificant pretrend coefficients do not prove exogeneity. Resolve the
+membership regime and original roster jointly with existing candidate
+`candidate-801ba7c88ac6`; distinguish early formation from later expansion
+only if institutional evidence warrants that boundary. Recover primary
+1997/2003 entries, the historical131-unit crosswalk and annual join dates.
+The paper exposes a specific municipal-archive lead in footnote17:
+http://xzb.sh.gov.cn/node2/node4/n1021/n1024/n1123/u1ai105800.html
+(not yet accessed). Retain this source for resolution; do not publish a
+second council canonical or count another outcome as another ready case.
+
+Resolve `task-f7003149bca9` inspected three additional institutional
+accounts rather than treating their search snippets as admission decisions.
+The paper's old `xzb.sh.gov.cn` archive could not be recovered: the web
+reader returned an internal error and direct HTTP closed the connection.
+No charter or original admission attachment was obtained there.
+
+[Shanghai cooperation office's historical account](https://www.ccphistory.org.cn/shds/19922002/content/3b6653f2-0932-4d3b-8e64-2d43d7d63af5.html),
+published2016-08-05, SectionI(5), identifies the1992 departmental
+coordination precursor and1997 upgrade to the council. The passage lists
+14 names, including Jiangsu Taizhou but not Yangzhou, rather than the
+paper's15 founding cities. This is a government-office retrospective,
+not the signed1997 membership instrument; do not silently complete its
+list from the paper or convert its1992 names into historical membership.
+
+[Shanghai Academy's2008 government-commissioned project report](https://www.sass.org.cn/2008/0811/c1282a35826/page.htm),
+opening commission/fieldwork description and findings1–4, independently
+reports2003 Taizhou entry and16 members by2008. Its own narrative says
+14 cities formed the council in1997, again without explaining the count.
+It explicitly distinguishes subsequent Anhui observers from members,
+describes topic-specific cooperation and weak implementation obligations,
+and reports disagreements over benefit sharing. Treat it as a firsthand
+project account of2008 coordination, not an original eligibility rule.
+Observer status must not be coded as full membership merely because
+an observer attended a meeting.
+
+[Shanghai Justice Bureau-hosted study](https://sfj.sh.gov.cn/ztzl_xsqk/20211221/379ce41250d64d4aba9fdf1e76b6e8ec.html),
+SectionI opening history, I(1) and I(5), was inspected through the web
+reader (direct HTTP403). It distinguishes1996 organizational initiation
+from the first1997 mayoral meeting. Its analysis of2016–2021 agreements
+describes weak legal force and missing implementation clauses; that is
+later institutional analysis, not proof of every original charter term.
+The council charter is named but not reproduced as the inspected original.
+
+The accumulated evidence clarifies voluntary municipal coordination and
+its prehistory, but does not close the original15-city roster/count,
+foundation versus first-meeting onset,2003 admission instrument or the
+author's historical131-unit crosswalk. Preserve these explicit gaps and
+the paper's following-year coding without changing it to1996 or calling
+the institution uniformly effective in1998. Candidate remains blocked
+pending an actual founding/admission record or documented city roster
+and implementation history. The accessible2022 Journal of World Economy
+article and its advertised supplementary material are an alternative
+direct source to inspect, not yet proof of a recovered charter:
+https://sjjj.magtech.com.cn/CN/Y2022/V45/I4/187.
+No canonical admission, duplicate case or ready increase from this audit.
+
+## Council membership and innovation partners: JWE2022 direct screen
+
+Screen `task-400db7dd8515` inspected Li Jiancheng, Cheng Ling and Wu
+Mingqin, 政府协调下的市场整合与企业创新伙伴选择, The Journal of World
+Economy45(4):187–216(2022). Publisher page:
+https://sjjj.magtech.com.cn/CN/Y2022/V45/I4/187.
+The article's public metadata identifies PDF782; actual30-page full PDF
+HTTP200 at https://sjjj.magtech.com.cn/CN/PDF/782 was inspected in memory.
+Printed pp191–198 and202, SectionsIII–V, Equations1–5 and Tables1–3
+were read; p195's equations and timing explanation were visually checked.
+The apparent full-text icon link points to an image, not the article.
+
+The body separates national regional planning from voluntary municipal
+council cooperation, reports1992 departmental coordination and1997
+renaming with Jiangsu Taizhou admitted, and refers to member expansion
+dates/cities in the journal attachment. Equation1 marks both cities as
+members; Equation2 marks exactly one as a member. Equation3 uses BOTH
+and ONE lagged TWO years, explicitly allowing implementation delay.
+This is a paired-city exposure application of the existing council
+identity, not two new policies or evidence for adopting the same lag
+in the2017 county or2025 employment applications.
+
+CNIPA joint invention-patent GRANTS for2000–2015 are matched with the2008
+second economic census and checked against enterprise addresses.
+Co-owners are assigned to cities; city-pair total collaborative patents,
+number of collaborating firm pairs and average patents per active pair
+measure total/extensive/intensive margins, logged after adding one.
+The body directs exact patent/census cleaning and matching to the journal
+attachment. Preserve single2008 census coverage, historical relocation,
+owner matching and grant-versus-application timing as recovery targets;
+do not treat the census as annual firm histories or generic patent totals
+as joint cooperation outcomes. Within-city and industry/ownership
+extensions require distinct aggregation, not one unioned data contract.
+
+The baseline controls city endpoints/year fixed effects and transport,
+economic and innovation characteristics; endpoint-by-year effects and
+negative-binomial models are separately reported. Table3 has23,698
+regression observations and states city-PAIR clustered standard errors.
+Analytical inference: pair clustering need not absorb dependence between
+different pairs sharing a city. Few admission cohorts, selection,
+pre-existing coordination and diversion away from nonmember partners
+remain identification concerns, not evidence that membership is random.
+
+The paper explicitly points to downloadable cohort and data-match
+attachments at printed p193. Search indexing advertises a328KB attachment,
+but the current directly inspected HTML and public component scripts
+did not expose its file URL; the attachment has NOT been inspected.
+No inferred filename, login bypass or metadata-only claim is used.
+Retain a China-facing resolve source jointly with candidates
+`candidate-75aaa72fad5c` and `candidate-801ba7c88ac6` to recover the
+supplement and primary roster without duplicate canonical admission.
+No ready increase at screening.
+
+Resolve `task-fbe44e8a707c` recovered the advertised attachment through the
+publisher's actual public component endpoint:
+https://sjjj.magtech.com.cn/CN/article/showArticleSuppls.do?articleId=782.
+The returned attachment URL is
+https://sjjj.magtech.com.cn/fileup/1002-9621/SUPPL/20220418013040.pdf.
+Direct HTTP200 returned a four-page PDF; all four pages were inspected in
+memory. This supersedes the preceding screen's attachment-access gap.
+The file supplies matching instructions and supplementary tables, not
+executable replication code or individual census/patent observations.
+
+Appendix A,p1 reports name normalization, removal of company suffixes,
+name matching and address verification. A mismatch at district level or
+above triggers a search for a nearby address and similar company name,
+followed by correction and rematching. Subsidiary patents are not all
+aggregated to their parent. Joint ownership is identified by repeated
+patent publication numbers across owners, with each firm appearing at
+most once per patent number; sole-owner observations are dropped. The
+reported pair structure links the patent number to both owner records
+and uses the patent's grant year. This closes the stated matching procedure,
+not its realized error rate or historical relocation convention. Removing
+company suffixes does not by itself establish unique firm identities.
+
+Appendix C,Table1,p3 reports fifteen1997 founders: Shanghai, Wuxi,
+Ningbo, Zhoushan, Suzhou, Yangzhou, Hangzhou, Shaoxing, Nanjing, Nantong,
+Jiangsu Taizhou泰州, Changzhou, Huzhou, Jiaxing and Zhenjiang. Zhejiang
+Taizhou台州 enters in August2003; Hefei, Yancheng, Ma'anshan, Jinhua,
+Huai'an and Quzhou in March2010; Xuzhou, Wuhu, Chuzhou, Huainan, Lishui,
+Wenzhou, Suqian and Lianyungang in April2013. These are inspected
+author-reported assignments, not independently verified admission decisions.
+The same table lists April2018 and October2019 expansions, outside the
+paper's2000–2015 outcome panel. Do not treat those as in-sample events or
+move the already-treated founders' onset to the panel's first year.
+
+Appendix C,Table2,p3 reports12,180 observations after resetting comparisons
+and city-pair clustered standard errors. Tables3 and5,p4 distinguish
+industry/spatial and Shanghai/crisis subsamples; their observation counts
+are not the baseline sample size. Neither the supplement nor a different
+paper establishes the2025 employment study's missing baseline cutoff.
+
+The supplement materially closes the2022 paper's cohort and matching
+documentation gaps. Original admission/charter evidence remains missing,
+including reconciliation of the archival14-city narratives with the
+reported15-city founding roster. Historical firm/city-code changes,
+relocation and shared-city dependence remain application conditions.
+Retain this candidate with the two existing council candidates rather
+than publishing another outcome as a new shock. The next useful step is
+an actual council/municipal admission record or documented membership
+history, not another retry of the now-recovered attachment. No canonical
+record or ready increase is claimed from this resolve task.
+
+## Council admission: municipal evidence audit
+
+Resolve `task-52fd1ceb8291` inspected the full body of the Yancheng
+government's2011-12-07 policy explanation,
+十二五规划解读之：抢抓战略机遇 打造发展新引擎:
+https://wap.yancheng.gov.cn/art/2011/12/7/art_25892_3599873.html.
+The section 全面融入长三角 states that Yancheng joined the council in
+March of the preceding year, establishing March2010 for that municipality.
+It separately describes inclusion under the2008 regional policy. This
+distinction supports treating council admission and national planning as
+different institutional objects. The passage is direct municipal evidence
+for Yancheng, not an admission decision for the other five2010 cities.
+
+The full municipal meeting account 安徽宣城等四市加入长三角,
+dated2018-04-13, was also inspected:
+https://www.xuancheng.gov.cn/News/show/249438.html.
+Its paragraphs on attendance and the April12 internal mayoral meeting list
+the existing thirty member cities and report approval of proposals admitting
+Tongling, Anqing, Chizhou and Xuancheng, taking membership to34. The thirty
+names agree with the JWE2022 supplement's accumulated1997–2013 membership.
+This verifies a2018 membership snapshot and the later admission procedure,
+not every earlier city's entry date, a uniform enterprise benefit or an
+in-sample2018 event in the2000–2015 patent application.
+
+Changzhou's justice website supplies a government legal-office author's
+institutional analysis, 试论长三角区域地方联合立法, dated2009-10-26:
+https://sfj.changzhou.gov.cn/index.php?a=show&c=index&catid=13314&id=14274&m=content.
+SectionI reports fifteen cities establishing the council in Yangzhou in1997
+and signing its charter. SectionsI(1)–I(2) describe cooperation through
+administrative agreements with weak binding force and locally dependent
+execution. These are the author's institutional/legal assessments, not the
+original charter or a definitive finding that all cooperation was ineffective.
+They reinforce the distinction between formal membership and realized
+implementation, while the original founding roster remains unrecovered.
+
+A Wenzhou2014 yearbook lead points to printed p137 and April2013 admission:
+https://wzszw.wenzhou.gov.cn/picture/0/UploadFile/201507/20150720031545023.pdf.
+Direct access redirects to a migrated storage URL returning404. Its search
+excerpt is therefore not inspected primary evidence. The accessible DRC
+2013 half-year report at
+https://wzrd.wenzhou.gov.cn/art/2013/8/23/art_1382198_12316152.html
+did not recover a council passage and cannot substitute for the yearbook.
+The2013 People's Daily link supplied by the paper also failed retrieval.
+
+This audit closes Yancheng's entry month and independently confirms the
+accumulated thirty-city roster, without closing the full historical admission
+series or founding-count discrepancy. Keep the three paper candidates as
+one unresolved council identity. A recovered admission resolution, meeting
+minutes or accessible official yearbook can change that decision; repeated
+general histories cannot. No canonical admission or ready increase.
+
+Ground `task-21bf3d5f9591` reconsidered admission after the supplement and
+municipal body evidence were recovered. The earlier blocked decisions were
+made before a reconstructible reported cohort/matching contract and direct
+municipal membership/timing facts were jointly available. Those historical
+decisions are preserved, not rewritten. The new canonical case
+`china-yangtze-delta-city-council-membership` serves the actual2022 paired-city
+application conditionally, with author-reported cohort status explicit.
+Primary Yancheng evidence grounds the institution and one entry month;
+Xuancheng's meeting record independently confirms accumulated membership
+and municipal admission procedure. Neither is stretched to certify every
+historical admission date. Unresolved founding documents affect a founding-
+event application, which is not offered as ready; the2000–2015 application
+keeps its reported founders already treated before the panel.
+
+This is an admission judgment about decision-sufficient conditional knowledge,
+not an exemption from evidence standards. The file preserves selected entry,
+project timing, owner/location joins, shared-city dependence and the patent
+control-label discrepancy. Both and One are states of one institution, not
+two shocks. The2017 and2025 candidate designs remain separately documented;
+the2025 employment sample restriction is still unresolved and not promoted.
+
+## Registered-capital accepted-version access boundary
+
+Resolve `task-2c7f8ee40a3d` checked a newly identified public delivery route
+for the existing capital-reform candidate `candidate-d6dc696f6ab6`:
+https://papers.ssrn.com/sol3/Delivery.cfm/3914483.pdf?abstractid=3914483.
+The SSRN indexed landing information identifies91 pages and revision on
+2026-08-21, with Journal of Law and Economics forthcoming status. Direct
+HTTP and the web reader both return403; the direct response is HTML, not
+a PDF. No accepted-version methods or appendix were inspected through it.
+Do not relabel the older63/67-page conference manuscripts as this91-page
+version or infer unchanged estimates/design from a shared title.
+
+The accessible UBC deposit page at
+https://commons.allard.ubc.ca/fac_pubs/2844/
+and author profile at https://allard.ubc.ca/about-us/our-people/wei-cui
+confirm the forthcoming citation, not final journal issue/date or empirical
+details. Their abstract does not resolve the anonymous jurisdiction's actual
+implementation date, organizational-type mapping, exempt sectors or the
+quarterly-versus-March1 entry clock described in the earlier resolution.
+No repeated attempt at the already failed UBC download was made, and no
+restricted documents, contact details or API credentials were stored.
+
+The candidate remains blocked at its documented empirical exposure bridge,
+not because national legal background is absent. A publicly accessible new
+manuscript/supplement or author clarification of timing and legal scope would
+change admission; another abstract-only version search would not. Continue
+other accessible mainland firm/development sources. No canonical or ready
+increment from this bounded access audit.

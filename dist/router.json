@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 165,
+  "record_count": 166,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 146,
+    "china-variation": 147,
     "global-china-variation": 5
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 112,
+    "conditional-candidate": 113,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -17620,6 +17620,110 @@
       ],
       "blocker_count": 2,
       "source_path": "variations/china-wto-accession-firm-performance.md"
+    },
+    {
+      "id": "china-yangtze-delta-city-council-membership",
+      "name": "China Yangtze River Delta city council membership and intercity cooperation exposure",
+      "aliases": [
+        "长三角城市经济协调会",
+        "长江三角洲城市经济协调会",
+        "council membership market integration"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "urban-economics",
+        "development",
+        "firm-innovation",
+        "market-integration",
+        "intercity-cooperation"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 1997,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Municipality membership; two-city pair-year exposure in the served application.",
+        "mechanism": "Municipal admission to the council changes membership status. The inspected research assigns cities by reported admission cohorts and constructs exposure for pairs with both or exactly one endpoint belonging; these are two states of one me…",
+        "treatment": "Both_ij,t-2 and One_ij,t-2, not a single city-level dummy nor two different policies.",
+        "comparison": "Recover changes across membership states without assuming One is untreated. Baseline endpoint effects are not pair fixed effects; do not silently describe the published model as a…",
+        "required_identifiers": [
+          "city_i",
+          "city_j",
+          "year",
+          "firm_owner_id",
+          "patent_publication_number",
+          "historical_city_code"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "intercity collaborative innovation",
+          "joint invention patent grants",
+          "innovation partner matching",
+          "regional market integration"
+        ],
+        "application_outcomes": [
+          "Joint invention-patent grants, collaborating firm-pair count and average grants per active firm pair, each logged after adding one."
+        ],
+        "design_families": [
+          "paired-city panel comparisons",
+          "admission-cohort event studies with interference assessment"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Firms in the reported Jiangsu-Zhejiang-Anhui-Shanghai city-pair sample with matched patent co-owner and2008 census information.",
+        "observation_unit": "city-pair-year",
+        "geography_level": "pair of prefecture-level municipalities",
+        "time_start": 2000,
+        "time_end": 2015,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "city-pair research outcome",
+          "council entry cohort for both endpoints",
+          "patent publication number and distinct corporate co-owners for published innovation outcomes",
+          "grant year",
+          "firm names and checked addresses",
+          "census industry and ownership for extensions",
+          "historical location convention",
+          "city controls and pair transport links for published specification"
+        ],
+        "required_identifiers": [
+          "city_i",
+          "city_j",
+          "year",
+          "firm_owner_id",
+          "patent_publication_number"
+        ],
+        "treatment_key": [
+          "city_i",
+          "city_j",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "implementation-and-overlap",
+        "network-interference-and-inference",
+        "owner-and-location-measurement",
+        "selection-and-anticipation"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 4,
+      "source_path": "variations/china-yangtze-delta-city-council-membership.md"
     },
     {
       "id": "dell-boundary-discontinuity-method",
