@@ -10787,3 +10787,62 @@ manuscript/supplement or author clarification of timing and legal scope would
 change admission; another abstract-only version search would not. Continue
 other accessible mainland firm/development sources. No canonical or ready
 increment from this bounded access audit.
+
+### Urban land-conversion exposure: older manuscript is not a coding substitute — 2026-10-05
+
+Screen `task-8d02dc1732b1` reconciles JUE2026 DOI
+`10.1016/j.jue.2026.103908` to existing blocked
+`candidate-4e26f8391c4d`. The candidate registry returned that existing
+identity; no second candidate or canonical case is created. The urban-growth
+application remains within the regional/development lane, not an extension
+into agricultural production. This pass found a concrete version difference,
+not new evidence that closes the earlier institutional blocker.
+
+The [Columbia-hosted November24,2019 manuscript](https://econ.columbia.edu/wp-content/uploads/sites/18/2019/09/Yu_JMP_2019.pdf)
+returned HTTP200 and contains110 pages. Printed/PDF pp1–17 and102–107
+were read in memory; p12 and Equation1 were rendered and visually checked.
+The cover's latest-version hyperlink points back to Columbia's older hosting
+infrastructure, not a demonstrably current accepted manuscript. The author's
+[current publication page](https://sites.google.com/view/yue-yu/home),
+publication title and citation, identifies JUE155,103908(2026).
+The final publisher body returned403. Do not label the inspected2019
+appendix as the published2026 appendix.
+
+In this2019 version, Section4.1 and AppendixB.4 define the conversion barrier
+as **predicted fringe farmland density multiplied by boundary-region
+ruggedness**. Soil predictors are averaged in a two-kilometre outward buffer
+around the largest1995 built-up area, joining blocks within one mile.
+The density regression is fitted to actual land conversions during2002–2015;
+88 of631 jurisdictions lack that dependent variable and are omitted from
+the prediction regression. Ruggedness is the share of grids with slope at
+least15 degrees in a five-kilometre inward administrative-border buffer,
+excluding existing/projected urban land. Equation1 interacts the resulting
+barrier with post1998, with jurisdiction/year effects and baseline controls
+interacted with years; errors cluster by jurisdiction.
+
+This differs from the already inspected2021 draft's terrain-only exposure.
+Preserve both as version-reported specifications, not two distinct policies.
+Predetermined soil grids do not make coefficients fitted on post-policy
+conversions predetermined [analytical inference]. A new application needs
+to reproduce the intended fitting sample and weights, and assess whether
+the fitting step incorporates endogenous policy responses. Do not silently
+multiply the2021 terrain measure by a2019 density prediction, or use raw
+observed farmland share in place of either construction.
+
+AppendixB.3 distinguishes annual land/GDP outcomes from census-frequency
+population/employment. It harmonizes jurisdiction mergers to2010, removes
+post-merger observations for some later mergers, and acknowledges that9%
+of jurisdictions incorporating neighboring counties lack fully harmonized
+annual histories; census population is adjusted separately. Jurisdictions
+are therefore not interchangeable with an unadjusted prefecture panel or
+annual hukou population. These are inspected2019 conventions, not verified
+final joins. Structural welfare counterfactuals remain separate from the
+continuous-DID estimates.
+
+Disposition: skipped as duplicate admission, preserving this version audit
+with the existing candidate. The earlier fee, provincial-transfer and actual
+local replacement-boundary gaps remain unresolved. The next useful source
+is a current manuscript/replication package establishing which exposure
+survived and how it maps to local replacement obligations; another older
+draft cannot certify that bridge. No paper file, personal contact details
+or canonical record saved; ready unchanged.
