@@ -8,6 +8,11 @@
 > For present work, start with `AGENTS.md` and the user's task. The owner's live
 > collection scope is in `sources/fieldtop-china-regional-urban-coverage.md`.
 
+> Verification update, October 2026: daily collection now uses the operational
+> knowledge gate through `task_queue.py complete`. Historical pytest instructions
+> below apply to code development in the full source, not routine collection in
+> the lightweight runtime; GitHub CI runs code tests, benchmarks and style checks.
+
 This note is for Kimi K3 running through Kimi Code when it takes over the
 supervisory and maintenance role that was previously handled by Codex. It is a
 handoff of intent and working judgment, not a second set of repository rules.

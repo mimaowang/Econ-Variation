@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml"><img alt="CI" src="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="guides/mental-model.md"><img alt="Guide" src="https://img.shields.io/badge/Guide-mental%20model-0969da"></a>
+  <a href="guides/mental-model.md">理解项目</a>
   <a href="requirements.txt"><img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
@@ -21,7 +21,7 @@
 
 ## 快速开始
 
-1. 下载本项目并解压，或克隆仓库。
+1. 普通使用优先下载[自动检查通过后的轻量运行包](https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml)：打开最新成功的运行，在 Artifacts 下载 `Econ-Variation-runtime`，解压其中的 ZIP。下载此附件需要登录 GitHub。开发者也可克隆完整仓库。
 2. 在 Codex、Claude Code 等工具中，用你的 agent 打开项目文件夹。
 3. 告诉 agent 你的研究 idea，让它匹配 variation；或指定研究方向，让它查证并积累知识。
 
@@ -97,16 +97,15 @@
 
 ## 使用工具与参与维护
 
-运行工具需要 Python 3.10+。在项目根目录执行：
+运行工具需要 Python 3.10+。在解压后的项目根目录用一条命令完成配置：
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python scripts/doctor.py
+python scripts/setup.py
 ```
 
-macOS 或 Linux 用 `source .venv/bin/activate` 激活环境。doctor 是只读检查，用于发现记录无效、生成索引过期或任务未结束等具体问题。若你的工具不会自动加载 `AGENTS.md`，像上面的提示词一样明确请 agent 阅读即可。
+这会创建 `.venv`，只安装两个运行依赖，再运行只读 doctor 检查；不安装测试、benchmark、代码风格工具或模型。后续命令使用该环境的 Python：Windows 可用 `.\.venv\Scripts\Activate.ps1` 激活，macOS/Linux 用 `source .venv/bin/activate`；也可直接调用其中的 Python，无需更改 PowerShell 执行策略。doctor 用于发现记录无效、生成索引过期或任务未结束等具体问题。若你的工具不会自动加载 `AGENTS.md`，像上面的提示词一样明确请 agent 阅读即可。
+
+如果已克隆完整 Git 仓库，可用 `python scripts/setup.py --destination ../Econ-Variation-runtime` 一次导出并配置纯运行目录，再让 agent 打开新目录。目标必须是新建或空目录，已有文件不会被覆盖。运行包保留全部知识、来源与任务接续记录，但不包含测试、benchmark、开发配置和历史设计文档；日常使用与收集不需要 Git。完整源码仍保留开发材料。
 
 <details>
 <summary>展开：命令行检索与匹配示例</summary>
@@ -155,13 +154,15 @@ python scripts/match.py --query query.yaml
 
 想补充知识或参与维护，先理解项目目的，再按[收集流程](guides/operations.md#collection-loop)完成一个明确任务。筛选只保留候选、跳过或受阻的理由；候选另经身份解析和证据核验，才进入正式记录。这样下一位 agent 能接着解决问题，不必接手被包装成成品的半成品。
 
-维护需安装开发依赖：
+日常知识收集与维护只需要上述运行配置。任务完成时检查记录结构、证据准入、任务状态和生成索引；代码回归测试、benchmark 与风格检查由完整源码的 GitHub CI 执行。benchmark 是检索与匹配的固定测试案例，不是使用知识库的前提，也不是模型理解能力的认证。
+
+只有修改程序或开发测试时，才在完整源码中安装开发依赖：
 
 ```sh
 python -m pip install -r requirements-dev.txt
 ```
 
-随后遵循[贡献与验证说明](CONTRIBUTING.md#verification-and-release)。索引和健康快照由记录及任务状态生成，不需要手工维护另一份知识。软件检查通过说明结构与行为一致，不证明每条研究陈述都正确或每个 agent 的表现都相同。
+随后遵循[贡献与验证说明](https://github.com/mimaowang/Econ-Variation/blob/main/CONTRIBUTING.md#verification-and-release)。索引和健康快照由记录及任务状态生成，不需要手工维护另一份知识。软件检查通过说明结构与行为一致，不证明每条研究陈述都正确或每个 agent 的表现都相同。
 
 ## 项目导览与许可
 
@@ -172,9 +173,9 @@ python -m pip install -r requirements-dev.txt
 | [检索](scripts/search.py) → [匹配](scripts/match.py) | 找到候选，检查研究目的与数据条件 |
 | [维护流程](guides/operations.md) → [state/](state/) | 任务、候选、运行记录与接续状态 |
 | [sources/](sources/) → [schema/](schema/) | 来源范围、记录结构及双语主题词汇 |
-| [benchmarks/](benchmarks/) → [dist/health.json](dist/health.json) | 可执行行为案例与当前质量快照 |
+| [dist/health.json](dist/health.json) | 当前知识与任务的质量快照 |
 
-代码与原创仓库内容采用 [Apache 2.0](LICENSE)。链接的论文、政府文件和第三方数据保留各自权利；不要提交 API Key、受限数据、受版权保护的论文全文、个人数据或敏感链接。贡献与问题报告见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [SECURITY.md](SECURITY.md)。
+代码与原创仓库内容采用 [Apache 2.0](LICENSE)。链接的论文、政府文件和第三方数据保留各自权利；不要提交 API Key、受限数据、受版权保护的论文全文、个人数据或敏感链接。贡献与问题报告见[完整源码的贡献说明](https://github.com/mimaowang/Econ-Variation/blob/main/CONTRIBUTING.md)和 [SECURITY.md](SECURITY.md)。
 
 ## English
 
@@ -188,7 +189,7 @@ A **variation is a change that affects people, firms or places differently, crea
 
 ### Quick start
 
-1. Download and extract the project, or clone the repository.
+1. For ordinary use, download the [CI-checked lightweight runtime](https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml): open the latest successful run, download `Econ-Variation-runtime` under Artifacts (GitHub sign-in required), and extract the ZIP inside. Developers may clone the full repository.
 2. Open its folder in your coding agent.
 3. Describe a research idea to match variations, or a research area to verify and accumulate knowledge about.
 
@@ -264,16 +265,15 @@ The projects **work independently and do not require joint installation**. Neith
 
 ### Tools and maintenance
 
-Tools require Python 3.10+. From the repository root:
+Tools require Python 3.10+. Configure an extracted runtime folder with one command:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python scripts/doctor.py
+python scripts/setup.py
 ```
 
-On macOS or Linux, activate with `source .venv/bin/activate`. The doctor is read-only and identifies invalid records, stale generated views or unfinished tasks. If your runtime does not load `AGENTS.md` automatically, name it explicitly in your prompt.
+This creates `.venv`, installs only the two runtime dependencies and runs the read-only doctor. It installs no tests, benchmark tools, linters or models. Use that environment for subsequent commands: activate with `.\.venv\Scripts\Activate.ps1` on Windows or `source .venv/bin/activate` on macOS/Linux, or call its Python directly without changing PowerShell execution policy. Doctor identifies invalid records, stale generated views or unfinished tasks. If your agent does not load `AGENTS.md` automatically, name it explicitly in your prompt.
+
+Prefer the [CI-checked runtime artifact](https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml): open the latest successful run, download `Econ-Variation-runtime` under Artifacts (GitHub sign-in required), and extract the ZIP inside. From a full Git checkout, `python scripts/setup.py --destination ../Econ-Variation-runtime` exports and configures a fresh runtime-only folder in one command. Existing populated destinations are not overwritten. All knowledge, sources and recovery state remain; tests, benchmarks, developer configuration and historical design documents do not. Daily use and collection require no Git. Developers keep the full source checkout.
 
 <details>
 <summary>Command-line search and matching examples</summary>
@@ -322,13 +322,15 @@ Default search excludes immature leads. `--include-leads` is for audit explorati
 
 For contributions, understand the purpose and complete a bounded task through the [collection workflow](guides/operations.md#collection-loop). Screening retains a candidate or a skip/block reason. A separate task resolves identity and evidence before canonical publication, so the next agent inherits an explicit problem rather than a half-finished record disguised as a product.
 
-Install development dependencies for maintenance:
+Daily knowledge maintenance needs only the runtime setup. Task completion validates records, evidence admission, task state and generated views; GitHub CI runs code regressions, benchmarks and lint in the full source. Benchmarks are fixed retrieval/matching test cases, not a prerequisite for use or a certificate of model understanding.
+
+Only when changing code or developing tests, install development dependencies in the full source:
 
 ```sh
 python -m pip install -r requirements-dev.txt
 ```
 
-Then follow [contribution and verification instructions](CONTRIBUTING.md#verification-and-release). Indexes and health snapshots are generated from records and durable state, not maintained as a second knowledge base. Passing tests establishes consistency, not the truth of every claim or the performance of every agent.
+Then follow [contribution and verification instructions](https://github.com/mimaowang/Econ-Variation/blob/main/CONTRIBUTING.md#verification-and-release). Indexes and health snapshots are generated from records and durable state, not maintained as a second knowledge base. Passing tests establishes consistency, not the truth of every claim or the performance of every agent.
 
 ### Repository guide and license
 
@@ -339,6 +341,6 @@ Then follow [contribution and verification instructions](CONTRIBUTING.md#verific
 | [Search](scripts/search.py) → [match](scripts/match.py) | Candidate recall and intent/data-fit checks |
 | [Operations](guides/operations.md) → [state/](state/) | Tasks, candidates, runs and durable recovery state |
 | [sources/](sources/) → [schema/](schema/) | Source boundaries, record structure and bilingual topics |
-| [benchmarks/](benchmarks/) → [dist/health.json](dist/health.json) | Executable behavior cases and current quality snapshot |
+| [dist/health.json](dist/health.json) | Current knowledge and task quality snapshot |
 
-Code and original repository content are licensed under [Apache 2.0](LICENSE). Linked papers, government documents and third-party data retain their own rights. Do not contribute credentials, restricted datasets, copyrighted full-text papers, personal data or sensitive URLs. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+Code and original repository content are licensed under [Apache 2.0](LICENSE). Linked papers, government documents and third-party data retain their own rights. Do not contribute credentials, restricted datasets, copyrighted full-text papers, personal data or sensitive URLs. See [contribution instructions in the full source](https://github.com/mimaowang/Econ-Variation/blob/main/CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).

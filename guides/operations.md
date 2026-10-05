@@ -99,7 +99,7 @@ python scripts/task_queue.py candidate-add --task-id <task-id> --agent <agent-na
 python scripts/task_queue.py complete --id <task-id> --agent <agent-name> --claim-token <token> --outcome candidate --candidate <candidate-id> --note "Screened one source; retained for resolution."
 ```
 
-Completion runs the release gate and queues the linked follow-up automatically. If the source does not qualify or cannot be inspected, use `skipped` or `blocked` with the reason instead of creating a canonical file. When health advises stopping bulk discovery, an explicitly requested or demonstrated coverage-gap exception is recorded through `claim --override-reason`; it does not change the evidence standard.
+Completion runs the knowledge gate (record and task validation, router rebuild, and generated-state check) and queues the linked follow-up automatically. These operational checks preserve evidence admission and file/state consistency without developer dependencies. Code regression tests, routing benchmarks and style checks belong to GitHub CI in the full source repository, not each collection task. If the source does not qualify or cannot be inspected, use `skipped` or `blocked` with the reason instead of creating a canonical file. When health advises stopping bulk discovery, an explicitly requested or demonstrated coverage-gap exception is recorded through `claim --override-reason`; it does not change the evidence standard.
 
 ## Evidence discipline
 
@@ -190,6 +190,14 @@ Search in two lanes. First retrieve `china-variation` and `global-china-variatio
 
 External outages justify `blocked`, never weaker evidence. Stop cleanly when source quality, rate limits, or context deteriorate.
 
-## Release gate
+## Knowledge gate and code release
 
-Run the commands in `CONTRIBUTING.md#verification-and-release`. Generated health and router files are outputs. A non-zero result means the repository is not ready for unattended continuation.
+Normal task completion runs these operational checks without developer tools:
+
+```text
+python scripts/validate.py --write-health
+python scripts/build_router.py
+python scripts/check_generated.py
+```
+
+Generated health and router files are outputs. A non-zero result means the repository is not ready for unattended continuation. For code changes, use the full source checkout and its `CONTRIBUTING.md#verification-and-release`; GitHub CI additionally runs regressions, benchmarks and lint. A runtime-only folder intentionally omits those developer files, not the knowledge gate.

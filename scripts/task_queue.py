@@ -120,7 +120,7 @@ def build_task_brief(task: dict, candidate: dict | None = None) -> dict:
             "if the same source family returns without a new locator or decision-relevant field, treat the evidence pass "
             "as saturated, write established/missing/next, and close blocked or preserve the candidate. Continue only for "
             "a named new route that could close a real gap; do not change query wording merely to prolong the turn. "
-            "At completion use the normal task_queue.py complete path once; if its release gate fails, preserve the "
+            "At completion use the normal task_queue.py complete path once; if its knowledge gate fails, preserve the "
             "error and release or fail the task rather than bypassing the gate with a direct Python call."
         )
     return {
@@ -381,15 +381,12 @@ def run_gate() -> None:
         [sys.executable, "scripts/validate.py", "--write-health"],
         [sys.executable, "scripts/build_router.py"],
         [sys.executable, "scripts/check_generated.py"],
-        [sys.executable, "-m", "pytest", "-q"],
-        [sys.executable, "-m", "ruff", "check", "."],
     ]
     for command in commands:
-        # 300s: the full pytest suite takes ~120s on slow Windows filesystems,
-        # so a 120s subprocess timeout made the gate fail on passing tests.
+        # Daily knowledge checks; code regressions, benchmarks and lint run in CI.
         result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, timeout=300, check=False)
         if result.returncode:
-            raise RuntimeError(f"release gate failed: {' '.join(command)}\n{result.stdout}\n{result.stderr}")
+            raise RuntimeError(f"knowledge gate failed: {' '.join(command)}\n{result.stdout}\n{result.stderr}")
 
 
 def run_generated_check() -> None:

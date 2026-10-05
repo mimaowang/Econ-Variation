@@ -8,6 +8,8 @@ On first use, read `guides/mental-model.md` to understand why the repository is 
 
 Run `python scripts/doctor.py` first. If it reports invalid or stale generated state, follow its safe action before writing.
 
+The lightweight runtime has all knowledge, sources, task state and operational checks, but intentionally has no tests or benchmarks. Configure it with `python scripts/setup.py` and use its `.venv` Python. Daily completion checks knowledge and generated state; full code regressions, benchmarks and style checks run in GitHub CI. Do not install developer tools merely to collect knowledge. Code changes belong in the full source checkout, where `CONTRIBUTING.md` explains verification.
+
 For **idea matching**, do not read the task history or full operations guide. Use `scripts/search.py` for compact recall, `scripts/match.py` for deterministic data-fit, and open only the best canonical records. Keep China shocks, China-facing global variation, and overseas method inspiration in separate lanes. Report `compatible`, `conditional`, `incompatible`, `method-only`, or `gap`; explain treatment, comparison, join keys, missing data, assumptions, and threats. A lead is never promoted by keyword similarity.
 
 Carry the user's outcome into the match query's `intent.outcome`, using the record's vocabulary without changing the question. Optional `intent.design` describes the intended design. If a case has distinct applications, read their labels and `when_to_use`; `design_profile_ids: {variation-id: profile-id}` locks the intended application. A data-fit exploration is not a recommendation: do not replace a missing patent outcome with an available GDP outcome. Intent vocabulary matches still need institutional and substantive judgment.

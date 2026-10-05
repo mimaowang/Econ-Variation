@@ -31,3 +31,17 @@ jobs:
       - run: python -m ruff check .
       - name: Verify generated artifacts are committed
         run: git diff --exit-code -- dist
+
+  runtime-bundle:
+    needs: quality-gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/runtime_bundle.py --output Econ-Variation-runtime.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Econ-Variation-runtime
+          path: Econ-Variation-runtime.zip
