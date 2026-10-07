@@ -1,4 +1,4 @@
-# How to Think About Econ-Variation
+# Understanding Econ-Variation
 
 ## The decision this repository exists to support
 

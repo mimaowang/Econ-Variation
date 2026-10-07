@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml"><img alt="CI" src="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="guides/mental-model.md"><img alt="Guide: Mental Model" src="https://img.shields.io/badge/Guide-Mental%20Model-6f42c1"></a>
+  <a href="guides/mental-model.md"><img alt="Guide: Understand the Project" src="https://img.shields.io/badge/Guide-Understand%20the%20Project-6f42c1"></a>
   <a href="requirements.txt"><img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
@@ -187,7 +187,7 @@ python -m pip install -r requirements-dev.txt
 
 <p align="center">
   <a href="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml"><img alt="CI" src="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="guides/mental-model.md"><img alt="Guide: Mental Model" src="https://img.shields.io/badge/Guide-Mental%20Model-6f42c1"></a>
+  <a href="guides/mental-model.md"><img alt="Guide: Understand the Project" src="https://img.shields.io/badge/Guide-Understand%20the%20Project-6f42c1"></a>
   <a href="requirements.txt"><img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
@@ -256,7 +256,7 @@ The [collection map](sources/fieldtop-china-regional-urban-coverage.md) records 
 
 AI-native means agents can both use and maintain the knowledge. Connected prose preserves institutional meaning and judgment; structured fields make that same knowledge searchable and comparable. A canonical record follows one specific change and its primary assignment mechanism. Distinct research applications keep separate requirements instead of turning every possible variable into a universal prerequisite.
 
-[AGENTS.md](AGENTS.md) is the entry point, and the [mental model](guides/mental-model.md) explains why the reasoning matters. Tasks, candidates and source notes let a fresh agent—or one recovering after context compaction—resume the actual decision gap. Discovery retains leads; core evidence is resolved before publication. Inaccessible or conflicting evidence leaves a reason and next step, not a confidently completed guess.
+[AGENTS.md](AGENTS.md) is the entry point, and the [project guide](guides/mental-model.md) explains why the reasoning matters. Tasks, candidates and source notes let a fresh agent—or one recovering after context compaction—resume the actual decision gap. Discovery retains leads; core evidence is resolved before publication. Inaccessible or conflicting evidence leaves a reason and next step, not a confidently completed guess.
 
 Readable local files hold the knowledge and tools, without bundled datasets, models or a database service. You can copy the project, inspect changes and switch agents. Checks help detect structural and workflow failures; they do not replace research judgment or guarantee unattended performance from every model.
 
@@ -351,7 +351,7 @@ Then follow [contribution and verification instructions](https://github.com/mima
 
 | Entry point | What it gives you |
 |---|---|
-| [AGENTS.md](AGENTS.md) → [mental model](guides/mental-model.md) | Purpose and reasoning a new agent should understand |
+| [AGENTS.md](AGENTS.md) → [Understand the project](guides/mental-model.md) | Purpose and reasoning a new agent should understand |
 | [variations/](variations/) | Canonical knowledge, evidence, limits and writing template |
 | [Search](scripts/search.py) → [match](scripts/match.py) | Candidate recall and intent/data-fit checks |
 | [Operations](guides/operations.md) → [state/](state/) | Tasks, candidates, runs and durable recovery state |
