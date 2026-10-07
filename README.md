@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml"><img alt="CI" src="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml/badge.svg"></a>
-  <a href="guides/mental-model.md">理解项目</a>
+  <a href="guides/mental-model.md"><img alt="Guide: Mental Model" src="https://img.shields.io/badge/Guide-Mental%20Model-6f42c1"></a>
   <a href="requirements.txt"><img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
@@ -57,13 +57,17 @@
 
 ## 目前有哪些内容？
 
-现有记录以中国相关研究为主，涵盖区域与城市、发展、企业与创新、基础设施、贸易、公共政策等方向，也保留其他领域的历史积累。下面三条记录展示不同的研究机会和使用边界；它们不是可以直接套用的选题承诺。
+现有记录以中国相关研究为主，涵盖区域与城市、发展、企业与创新、基础设施、贸易、公共政策等方向，也保留其他领域的历史积累。截至 **2026 年 10 月 7 日，共有 185 条知识记录，其中 142 条可进入匹配比较（10 条直接候选、132 条条件候选）**；这不是 142 个已经验证、可以直接套用的因果设计。
+
+下面五条记录展示重要研究主题中需要认真查证的变化。难点不只是找到政策名称，而是把历史资料、实施规则和论文用法接起来，让下一次研究不必从头整理：
 
 | 知识记录 | 可以先判断什么 | 容易忽略的条件 |
 |---|---|---|
-| [宽带中国示范城市认定](variations/china-broadband-china-pilot-city-designation.md) | 分批认定与城市创新、企业进入或经济增长的关系 | 名单实体到城市代码的映射、选择性入选，以及不同结果变量各自的数据要求 |
-| [2004—2005 年财政省直管县改革](variations/china-2004-2005-fiscal-province-managing-county-rollout.md) | 财政管理变化与县域发展；如何区分整省推进和分批试点 | 试点选择、相邻县影响和同期改革；相关论文的证据访问边界不能混同 |
-| [中关村创新基金年度评分门槛](variations/china-innofund-zgc-annual-score-cutoff.md) | 门槛附近的资助机会能否用于研究企业创新与存续 | 获资助名单不够，还需要申请评分、逐年门槛、实际资助与未获资助申请者；内部数据不由本项目提供 |
+| [三线建设：工业积累与早期铁路可达性](variations/china-third-front-industrial-capacity-early-rail-access.md) | 历史工业布局与内陆地区长期发展、企业进入和产业集聚 | 历史工厂、人口与铁路网络要对应到统一地理边界；工业遗产不是纯三线工厂名单，早期铁路工具变量仍需排除限制 |
+| [撤县设区与市县整合（2011—2018 年应用）](variations/china-city-county-merger-consolidation.md) | 行政区划调整与城市扩张、市场整合及企业和劳动市场变化 | 批复、实施和论文年度编码可能不是同一个时点；区划转换与辖区整合不能混为一个处理，选择性改革和提前反应需要判断 |
+| [WTO 入世时期的行业关税调整](variations/china-wto-accession-firm-performance.md) | 贸易开放与企业生产率、加成及投入成本 | 区分产出关税与投入关税、承诺上限与实际税率；产品到行业的映射、投入产出权重和分类变更决定企业暴露，不能只用入世后虚拟变量 |
+| [2002 年所得税分享改革与县级财政依赖](variations/china-2002-income-tax-sharing-county-dependence.md) | 全国改革下，不同财政结构的县如何受到不同影响 | 需要可比的改革前财政口径和县级标识；省以下分成与基数保护影响实际暴露，不能假定各县统一损失一半收入 |
+| [八七扶贫计划的国家级贫困县资格门槛](variations/china-8-7-poverty-county-threshold.md) | 扶贫资格与县域发展，门槛附近能否形成可信比较 | 1992 年收入、历史资格和 1994 年名单需要连接；400 元准入与 700 元退出规则不同，实际资格不是收入机械决定的清晰断点 |
 
 从[知识记录目录](variations/)查看具体内容，从[带日期的健康快照](dist/health.json)查看当前数量和成熟度。**总记录数不等于可直接开展研究的数量**；部分记录仍是待审计线索，默认检索不会把它们当作推荐。项目也不声称已经覆盖所有中国研究或所有政策。
 
@@ -179,7 +183,14 @@ python -m pip install -r requirements-dev.txt
 
 ## English
 
-> **Let your agent continually build knowledge of exogenous and policy shocks in economics within this project, and match your research idea to the most suitable variation.**
+<h2 align="center">Let your agent continually build knowledge of exogenous and policy shocks in economics within this project, and match your research idea to the most suitable variation.</h2>
+
+<p align="center">
+  <a href="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml"><img alt="CI" src="https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml/badge.svg"></a>
+  <a href="guides/mental-model.md"><img alt="Guide: Mental Model" src="https://img.shields.io/badge/Guide-Mental%20Model-6f42c1"></a>
+  <a href="requirements.txt"><img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white"></a>
+  <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
+</p>
 
 Econ-Variation is an open knowledge base for economics researchers and students. Your agent can verify and accumulate knowledge of exogenous and policy shocks used in economics research, then compare which variations fit a specific research idea. Download the repository, open its folder in Codex, Claude Code or another coding agent, and describe your question and available data—or the research area you want to build knowledge about.
 
@@ -187,7 +198,7 @@ A **variation is a change that affects people, firms or places differently, crea
 
 [Get started](#quick-start) · [Browse records](variations/) · [See an example](#what-can-it-help-you-do) · [Use the companion data project](#using-econ-data-know-how-together)
 
-### Quick start
+## Quick start
 
 1. For ordinary use, download the [CI-checked lightweight runtime](https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml): open the latest successful run, download `Econ-Variation-runtime` under Artifacts (GitHub sign-in required), and extract the ZIP inside. Developers may clone the full repository.
 2. Open its folder in your coding agent.
@@ -203,7 +214,7 @@ A **variation is a change that affects people, firms or places differently, crea
 
 Use your already-configured agent: **the repository requires no additional API key and no particular model**. Reading records requires no Python installation; the search, matching and maintenance tools need the [setup below](#tools-and-maintenance). Continuous runs and scheduled wakeups belong to your runtime, not a background service supplied by this repository. Agent costs depend on your tool and model.
 
-### What can it help you do?
+## What can it help you do?
 
 Suppose you ask:
 
@@ -223,21 +234,25 @@ The project aims to reduce the cost of selecting a promising shock and later dis
 - **Connect institutions to encodable treatment and comparison.** Preserve assignment, timing, boundaries and identifiers rather than only a DID or IV label.
 - **Keep verification useful beyond one conversation.** Sources, paper uses, requirements and unresolved questions remain with the record.
 
-### What is in the collection?
+## What is in the collection?
 
-China-related records cover regional and urban economics, development, firms and innovation, infrastructure, trade and public policy, alongside historical work in other fields. These examples illustrate opportunities and limits, not ready-made paper ideas:
+China-related records cover regional and urban economics, development, firms and innovation, infrastructure, trade and public policy, alongside historical work in other fields. As of **October 7, 2026, the collection contains 185 knowledge records, including 142 eligible for matching and comparison (10 direct candidates and 132 conditional candidates)**. These are not 142 validated, ready-to-estimate causal designs.
+
+The five records below illustrate important research topics where the hard work goes beyond finding a policy name: connecting historical sources, implementation rules and actual paper applications so the next study does not have to start from scratch.
 
 | Record | What you can assess | Conditions that matter |
 |---|---|---|
-| [Broadband China designations](variations/china-broadband-china-pilot-city-designation.md) | Cohort designation and city innovation, firm entry or growth | Geographic crosswalks, selected participation and outcome-specific data requirements |
-| [Fiscal province-managing-county reform, 2004–2005](variations/china-2004-2005-fiscal-province-managing-county-rollout.md) | Fiscal administration and county development; province-wide versus phased adoption | Pilot selection, spillovers, concurrent reforms and distinct paper-access boundaries |
-| [Zhongguancun Innofund annual score cutoffs](variations/china-innofund-zgc-annual-score-cutoff.md) | Near-cutoff funding opportunities and firm innovation or survival | Scores, annual cutoffs, actual awards and rejected applicants—not just winner lists; internal data are not supplied here |
+| [Third Front industrial capacity and early railway access](variations/china-third-front-industrial-capacity-early-rail-access.md) | Historical industrial placement, long-run inland development, firm entry and agglomeration | Match historical plants, population and railway networks to consistent geography; industrial legacy is not an exclusive Third Front plant roster, and the early-rail instrument still needs an exclusion restriction |
+| [County-to-district reform and city–county consolidation: the 2011–2018 application](variations/china-city-county-merger-consolidation.md) | Administrative changes, urban expansion, market integration, firms and labor markets | Approval, implementation and annual paper coding may use different clocks; district conversion and jurisdictional consolidation are not interchangeable treatments, and selection and anticipation need assessment |
+| [WTO-accession-era industry tariff changes](variations/china-wto-accession-firm-performance.md) | Trade liberalization, firm productivity, markups and input costs | Separate output from input tariffs and negotiated ceilings from actual rates; product–industry mappings, input–output weights and classification changes determine firm exposure, not a simple post-accession dummy |
+| [2002 income-tax sharing and county fiscal dependence](variations/china-2002-income-tax-sharing-county-dependence.md) | How a nationwide reform affects counties with different fiscal structures | Comparable pre-reform fiscal categories and county identifiers are essential; subprovincial sharing and protected revenue bases affect exposure, rather than a uniform 50% county revenue loss |
+| [National poverty-county eligibility under the 8-7 Plan](variations/china-8-7-poverty-county-threshold.md) | Poverty-program eligibility, county development and credible near-cutoff comparisons | Join 1992 income, historical designation and the 1994 roster; the 400-yuan entry and 700-yuan exit rules differ, and actual designation does not follow a mechanically sharp income cutoff |
 
 Browse [variations/](variations/) and the dated [health snapshot](dist/health.json) for current content and maturity. **Total records are not a count of ready-to-estimate designs.** Some remain audit leads and are excluded from default recommendations. The collection does not claim exhaustive coverage of China research or policies.
 
 The [collection map](sources/fieldtop-china-regional-urban-coverage.md) records current priorities and journal scope. Publication quality helps discovery, not evidence certification. The author's campaign does not require every user to repeat it or remove existing knowledge outside its focus.
 
-### Why is it suited to agents and continued accumulation?
+## Why is it suited to agents and continued accumulation?
 
 AI-native means agents can both use and maintain the knowledge. Connected prose preserves institutional meaning and judgment; structured fields make that same knowledge searchable and comparable. A canonical record follows one specific change and its primary assignment mechanism. Distinct research applications keep separate requirements instead of turning every possible variable into a universal prerequisite.
 
@@ -245,7 +260,7 @@ AI-native means agents can both use and maintain the knowledge. Connected prose 
 
 Readable local files hold the knowledge and tools, without bundled datasets, models or a database service. You can copy the project, inspect changes and switch agents. Checks help detect structural and workflow failures; they do not replace research judgment or guarantee unattended performance from every model.
 
-### Recommendation and evidence limits
+## Recommendation and evidence limits
 
 **No policy is intrinsically exogenous.** Causal usefulness depends on the question, exposure, selection, comparison and assumptions. Records distinguish verified facts, source-reported applications and analytical inference. Titles, abstracts and policy announcements cannot substitute for empirical sections or implementation evidence.
 
@@ -255,7 +270,7 @@ Readable local files hold the knowledge and tools, without bundled datasets, mod
 
 A useful answer may be conditional, incompatible or a knowledge gap. An explicit limitation is better than a forced recommendation.
 
-### Using Econ Data Know-How together
+## Using Econ Data Know-How together
 
 [Econ Data Know-How (Econ-DataKnowhow)](https://github.com/mimaowang/Econ-DataKnowhow) is a complementary project by the same author. **Econ-Variation explains which change could support a study; Econ Data Know-How explains which data to choose, why, and how to obtain or construct them.** The companion stores data knowledge and practical guidance, not the underlying datasets.
 
@@ -263,7 +278,7 @@ After selecting a city policy, this project specifies the necessary years, outco
 
 The projects **work independently and do not require joint installation**. Neither automatically imports the other or maintains a fixed one-to-one binding or duplicate catalog. Compatibility is assessed for the current question, not assumed from a shared paper title.
 
-### Tools and maintenance
+## Tools and maintenance
 
 Tools require Python 3.10+. Configure an extracted runtime folder with one command:
 
@@ -273,7 +288,7 @@ python scripts/setup.py
 
 This creates `.venv`, installs only the two runtime dependencies and runs the read-only doctor. It installs no tests, benchmark tools, linters or models. Use that environment for subsequent commands: activate with `.\.venv\Scripts\Activate.ps1` on Windows or `source .venv/bin/activate` on macOS/Linux, or call its Python directly without changing PowerShell execution policy. Doctor identifies invalid records, stale generated views or unfinished tasks. If your agent does not load `AGENTS.md` automatically, name it explicitly in your prompt.
 
-Prefer the [CI-checked runtime artifact](https://github.com/mimaowang/Econ-Variation/actions/workflows/validate.yml): open the latest successful run, download `Econ-Variation-runtime` under Artifacts (GitHub sign-in required), and extract the ZIP inside. From a full Git checkout, `python scripts/setup.py --destination ../Econ-Variation-runtime` exports and configures a fresh runtime-only folder in one command. Existing populated destinations are not overwritten. All knowledge, sources and recovery state remain; tests, benchmarks, developer configuration and historical design documents do not. Daily use and collection require no Git. Developers keep the full source checkout.
+From a full Git checkout, `python scripts/setup.py --destination ../Econ-Variation-runtime` exports and configures a fresh runtime-only folder in one command. Existing populated destinations are not overwritten. All knowledge, sources and recovery state remain; tests, benchmarks, developer configuration and historical design documents do not. Daily use and collection require no Git. Developers keep the full source checkout.
 
 <details>
 <summary>Command-line search and matching examples</summary>
@@ -332,7 +347,7 @@ python -m pip install -r requirements-dev.txt
 
 Then follow [contribution and verification instructions](https://github.com/mimaowang/Econ-Variation/blob/main/CONTRIBUTING.md#verification-and-release). Indexes and health snapshots are generated from records and durable state, not maintained as a second knowledge base. Passing tests establishes consistency, not the truth of every claim or the performance of every agent.
 
-### Repository guide and license
+## Repository guide and license
 
 | Entry point | What it gives you |
 |---|---|
