@@ -995,6 +995,115 @@ and access to the survey/replication materials before canonical admission. Do no
 convert the nationwide2006 rollout into the experiment or lending take-up into
 random assignment. No canonical changed; ready116.
 
+### JoEG development-zone timing and persistence: retained screen — 2026-10-07
+
+Screen `task-ec475482c5d8` follows the existing JoEG regional/firm lane.
+Chen, Huang and Xie, *Place-based policies: first-mover advantage and
+persistence*, DOI `10.1093/jeg/lbaf001`, is published in25(4),539–567,
+July2025, online January17,2025. The [publisher abstract](https://academic.oup.com/joeg/article-abstract/25/4/539/7959813)
+was inspected as metadata/abstract through its minimal article page; the
+ordinary full-article request returned403. The [lead author's research page](https://yingnehc.com/research/)
+and [coauthor publication list](https://xiexiaochen.weebly.com/research.html)
+independently identify this publication. Their current links point to the
+publisher, not a separately recovered manuscript. Targeted title/DOI searches
+did not yield an inspected public PDF or appendix.
+
+The inspected abstract concerns early versus late Chinese national
+development zones, archival evidence, and differences in firm entry,
+innovation and labor pooling. That establishes China/regional/firm scope,
+not an encodable treatment or exclusion-valid instrument. Author explanatory
+prose about timing and agglomeration is not independent proof of randomly
+assigned zone establishment. No canonical/task/candidate DOI or exact-title
+match was found, but institutional duplication remains unresolved.
+
+Retain one china-variation candidate for identity resolution. Recover the
+body and supplement, zone approval/operational dates and cohort boundaries,
+historical geography and firm-location joins, exact exposure/IV and comparison,
+data window, clustering, support and identification threats. Reconcile with
+`china-industrial-parks-edge-city-spillovers` and other development-zone
+records: an early-versus-late outcome comparison is not automatically a new
+assignment. No national cohort year, unit, estimator or primary legal source
+is inferred from the inaccessible body. Ready net0, cumulative126.
+
+### JoEG NDZ timing: primary directory boundary, resolve blocked — 2026-10-07
+
+Resolve `task-c826068deef2` follows `candidate-5435fb47a62f`. The
+[Xiamen institutional publication entry](https://econpub.xmu.edu.cn/research/index.php?p_id=5125&ser_id=2)
+was inspected: publication identity and July2025 issue date, no downloadable
+paper link. The publisher full-body route remained inaccessible, including
+the publicly indexed author-access route. No access parameters are stored.
+The inspected abstract and current author pages cannot supply the treatment,
+instrument, sample or empirical equations; do not reconstruct them from
+search excerpts or theorized first-mover effects.
+
+Useful primary evidence was recovered independently. The
+[six-department2018 announcement](https://www.ndrc.gov.cn/xxgk/zcfb/gg/201803/t20180302_961203.html)
+is dated February26,2018, posted March2, and includes the directory attachment.
+The [NDRC explanation](https://www.ndrc.gov.cn/fggz/lywzjw/201803/t20180302_1370820_ext.html),
+sectionsI–III, explicitly documents expansion, adjustment, upgrading,
+transformation, consolidation and revocation since the2006 directory. Inclusion
+is reviewed for planning, industry and land conditions, not random assignment.
+The2018 inventory covers552 national zones across categories, not552 economic-
+technological zones; boundaries are to be published separately. Present area
+and a retained name cannot establish an early geographic treatment polygon.
+
+The [government-hosted53-page attachment](https://www.gov.cn/zhengce/zhengceku/2018-12/31/5434045/files/6eea5e4b78a645c1a27c231b152792ef.pdf)
+was decoded in memory. Header and selected national economic-technological
+rows on printedpp1–3 were inspected as text, not table pixels: this category
+has219 zones. Rows give codes, names, approval month, approved area and lead
+industries. Examples actually read include Tianjin1984.12, Dalian1984.09,
+Hongqiao/Minhang1986.08, Caohejing1988.06 and Fuzhou1985.01. These are the
+directory's approval labels, not inspected operating dates or the paper's
+early/late cohort definition. They show why a blanket1984 start inferred from
+historical summaries is insufficient. No full219-row inventory or study roster
+is asserted, and no copyrighted paper or private dataset was stored.
+
+Disposition remains blocked on actual body/supplement, study cohort and zone
+roster, approval-versus-operation clock, historical polygons/city mapping,
+assignment/IV and comparison construction, and firm-entry/innovation joins.
+This resolves the public administrative-source boundary but not the research
+identity: it could be a distinct national-approval regime or another application
+of existing park exposure. Recover the final supplement/manuscript, then compare
+with existing park records before adding a canonical. Ready net0, cumulative126.
+
+### Trading-rights audit: local scope and successor clock — 2026-10-07
+
+Audit `task-eb1f04b7bde1` revisits `candidate-fddda24415dd` without another
+screen or canonical. The [Shenzhen original gazette](https://www.sz.gov.cn/zfgb/2001/gb209/content/post_5019992.html)
+was inspected in full: 深府〔2001〕9号, dated January18,2001, sectionsI–IV.
+Its approval regime applies to Shenzhen-registered domestic enterprises,
+normally capital>=RMB3million, but allowsRMB2million for specified mainland
+large-firm subsidiaries or local producers already holding self-trade rights.
+Applicants receive a certificate and subsequently complete business/customs/
+tax/foreign-exchange procedures; annual review and disqualification remain.
+This is not proof that every Shenzhen manufacturing firm faced the national
+eastern self-trade threshold. A numerical300 match does not erase differences
+in authorization scope or pre-existing rights.
+
+The previously recovered [final REStat body](https://www.pbcsf.tsinghua.edu.cn/__local/F/CA/E9/BFA1FE7EFA23409795988C47234_2327CA2F_16C3FA.pdf)
+was reopened only at printedp1278/Table1 and notes. It groups SEZ firms under
+lower historical thresholds and explicitly includes Shenzhen, Zhuhai, Shantou,
+Xiamen and Hainan; Pudong has its own2002–August2003 exception. The Shenzhen
+instrument above concerns a specific approval scope and must not overwrite
+this paper-reported table or be presented as reconciled proof of it. Exact
+sample exclusions and distinct authorization definitions still need AppendixA/B
+or the public preprocessing material.
+
+The [original MOFCOM Order14](https://www.mofcom.gov.cn/zcfb/blgg/art/2013/art_2b3d6fa1de384ae6b265770c602eec8f.html)
+was inspected in full. Signed June25,2004, effective July1, articles2,5–8,14,16
+establish filing and customs linkage, a five-day filing period, subsequent
+departmental procedures and a grandfathering distinction for existing rights
+within their prior scope. This verifies the successor's clock and why a2002
+capital assignment cannot be carried forward as permanent unchanged eligibility;
+it does not prove every firm's practical registration or trade take-up.
+
+One targeted retry of the known Dataverse metadata endpoint for
+`doi:10.7910/DVN/TVHSON` returned403. No missing appendix or code contents
+are inferred. Admission remains blocked on exact exception filters, unmatched
+customs joins and production-function construction. Next recovery should inspect
+that known supplement/deposit, not repeat paper-title discovery. New primary
+scope/timing knowledge is retained; ready net0, cumulative126.
+
 ### Trading-rights supplement recovery: replication deposit located — 2026-10-04
 
 Resolve `task-68a972a4550f` follows blocked candidate-fddda24415dd, not a
@@ -1925,6 +2034,44 @@ Reconcile `candidate-3f935aa76855` at the Section301 mechanism level: a new
 export outcome does not itself justify a second canonical variation. Screen
 does not publish a record or change ready counts.
 
+### Migration-network final-body audit: weight normalization and cohort mismatch — 2026-10-07
+
+Audit `task-5d5d2c249284` revisits `candidate-598eeecc4fe2` using the
+[author-hosted published article](https://hanzhezhang.github.io/research/2501YoungWomenInCitiesJDE.pdf),
+printed p4 footnote3, p7 Section4.2 and footnotes11-12, and p8 Section4.2
+continuation. These inspected passages close several construction details.
+The matrix uses origin-province rows and destination-province columns.
+Off-diagonal entries count 1995 inter-provincial migrants; diagonal entries
+count within-province, cross-county migrants. Every row is divided by the
+total number of people from that origin province who moved across counties
+in1995. Thus the weights are migration destination shares, not province
+population shares or a county-pair matrix. The shock vector counts counties
+first receiving a zone during1996-2000. For an origin county itself first
+treated during that window, remove one from its province's shock count
+before applying the weights. This is why exposures can differ between
+counties in the same province.
+
+The published p4 footnote3 reports106 zones mapping to86 counties present
+in the2000 census. The earlier July2023 appendix used87 early-treated
+counties; do not silently substitute that older simulation population.
+The published p8 continuation adds518 shocks during2001-06 to construct
+the counterfactual pool and refers to AppendixA for the draw algorithm.
+The paper's identifying claim is exchangeability of earlier versus later
+establishment within this pool, conditional on expected pull exposure;
+neither predetermined weights nor an official directory proves that claim.
+The final text does not, by itself, establish the appendix draw count,
+sampling restrictions or a reconciled eligible-county roster.
+
+Current [Zhang homepage](https://hanzhezhang.github.io/) and
+[Koh homepage](https://sites.google.com/site/yumikohecon/) were inspected
+as author HTML. Zhang links the same final article; Koh links its
+[publisher landing](https://www.sciencedirect.com/science/article/pii/S0304387824001275),
+which returned403. Koh's separate Appendix link belongs to the subway
+paper, not this migration paper, and was not reused. No final-aligned
+supplement was recovered. Preserve the candidate as blocked until the
+eligible-county construction, directory/date reconciliation and final
+simulation are recoverable; this sharper methods memory adds no ready case.
+
 ### Migration-network candidate: directory survival and version boundary — 2026-10-04
 
 Resolve `task-066021331ca0` inspects
@@ -1989,6 +2136,29 @@ Retain as `china-variation` in staging pending directory membership, historical
 county joins, approval versus operation dates and exposure identity. No
 canonical is published. The failed UBC download for the older accelerated-
 depreciation candidate returned403 and did not resolve its missing flags.
+
+### Offshore-service body recovery: reject a mismatched conference PDF — 2026-10-07
+
+Audit `task-da77b83e4efa` checks a newly discovered
+[SED2018 PDF](https://red-files-public.s3.amazonaws.com/meetpapers/2018/paper_943.pdf)
+before using it for `candidate-ae514e6ac971`. The file returned HTTP200;
+its cover and printed pp2-3 were inspected in memory. It is Baris Kaymak
+and Immo Schott's February2018 preliminary *Corporate Tax Cuts and the
+Decline of the Labor Share*, not Li, Liu and Sun's Chinese offshore-service
+RD paper. Its abstract and introduction concern OECD manufacturing and a
+US-calibrated industry model. Similar titles and subject matter do not
+establish manuscript identity. Exclude this PDF from the Chinese candidate's
+evidence; do not import its sample, estimates or model into that record.
+
+[Liu's current publication page](https://changliuchina.weebly.com/research.html),
+publication6, independently links the Chinese JDE150 article102624 only
+to SSRN3709901. Following that source returned403 again; no accessible
+replacement methods passage was recovered. The existing statutory evidence
+remains useful but does not close the paper's running-variable measurement,
+park exclusions, recognition first stage or benefit-bundle interpretation.
+Keep the Chinese candidate blocked and reopen only with its own body,
+appendix or replication material. This audit adds no canonical or ready
+record and avoids repeating the false conference-PDF lead.
 
 ### Offshore-service qualification: legal bundle and park exception — 2026-10-04
 
@@ -3329,6 +3499,36 @@ designation exposure from subsequent local expenditure and implementation.
 This screen changes only source/candidate state and creates no canonical or ready
 increment. The study is urban innovation, not agriculture-centred merely because
 one control uses the non-agricultural output share.
+
+### Registered-capital audit: registration authority and foreign-control exposure — 2026-10-07
+
+Audit `task-f2b234e1ce0d` revisits blocked `candidate-d6dc696f6ab6`.
+The [Allard deposit landing page](https://commons.allard.ubc.ca/fac_pubs/2844/)
+remains accessible and identifies a2026 working paper forthcoming in JLE.
+Its observed download link, article3851 in the faculty-publications collection,
+returned HTTP403 on an ordinary direct request. No latest manuscript text,
+equations or appendix were inspected; the earlier AEA version remains distinct.
+
+The [original SAIC Order64 on SAMR's site](https://www.samr.gov.cn/fgs/zcfg/art/2023/art_0df3948120ba4cda95d4665d37611b0f.html)
+was inspected in full, particularly Articles2,9,14,22–23 and the signature.
+Signed February20,2014, it takes effect March1. LLC capital is subscribed;
+publicly subscribed joint-stock capital and special paid-in regimes differ.
+Charters govern contributions, with filing obligations for changes. Article22
+expressly applies the rules to foreign-invested companies unless another law
+provides otherwise. Thus foreign ownership alone cannot establish legal
+non-treatment. Article23 repeals three preceding registration instruments.
+The page's2023 URL is not an enactment year. These are verified historical
+provisions, not a claim about the currently applicable Company Law.
+
+This closes a registration-authority and foreign-control legal-scope gap,
+not the empirical assignment gap. The anonymous province's pre-March exposure,
+the organizational-type mapping and the application-specific entry clock
+remain unresolved. The observed foreign-control interpretation must be a
+behavioral comparison requiring assumptions, not a statutory exemption.
+Keep the existing candidate blocked; do not create a second capital shock
+or reuse the abstract's33% result as inspected final methods. Resume only
+with an accessible updated body/supplement or a source that resolves those
+particular assignment questions. No canonical or ready count changes.
 
 ### Registered-capital resolution: statutory scope and a revised application — 2026-10-04
 
@@ -5188,6 +5388,64 @@ The institution and research comparison are now recoverable without pretending
 that the final paper independently verifies every draw or all exclusions.
 
 
+### Xin County anti-poverty relocation: published-body screen — 2026-10-07
+
+Screen `task-23e470332421` retains Zhang, Xie and Zheng's *Across a few
+prohibitive miles*, DOI `10.1016/j.jdeveco.2022.102945`, through the existing
+JDE development/urban-mobility lane. The [RUC-hosted final paper](https://ae.ruc.edu.cn/docs/2022-08/bf84e6e9712f4f72910cabbca5965855.pdf)
+was inspected in memory: pp1–5,8–10,15; Eq1–2 on p8 were also visually
+checked. The header identifies volume160(2023); July22,2022 is online
+availability, not the issue year reported incorrectly in some university metadata.
+
+The study concerns Xin County, Xinyang, Henan, not all Chinese relocation.
+Application is voluntary and administratively screened among registered poor
+households. Actual moves in2016/2017 create household exposure, distinct
+from national authorization, apartment allocation lotteries and the county's
+poverty designation. Public housing and vouchers are selected modalities
+within the same approval program, not two newly discovered shocks.
+The unbalanced NPADIS panel spans2014–2018. Baseline household/year DID
+uses entropy balancing and village clusters; Eq1 defines exposure from the
+household's actual relocation year. Paper-reported phase-in comparisons use
+construction/township timing but do not prove randomized relocation dates.
+Nonparticipants, simultaneous programs, post-baseline register changes and
+selective mode choice require explicit conditions. The authors cannot share
+data; public geography alone cannot recreate household treatment.
+
+Resolve local/national primary scope and execution, the supplement's sample
+and balancing details and restricted joins before canonical publication.
+This is spatial access and development, not an agricultural production
+study. No matching canonical or candidate was found; screen itself creates
+only `candidate-9c87306f846a`, with no ready increment.
+
+### Xin County relocation: conditional admission — 2026-10-07
+
+Resolve `task-1e8b26c1b578` closes the core baseline contrast and admits
+`china-xin-county-antipoverty-relocation-participation` as grounded, conditional.
+The [actual national plan](https://www.gov.cn/xinwen/2016-10/31/5126509/files/86e8eb65acf44596bf21b2747aec6b48.pdf)
+returned200 via ordinary HTTP despite the browser-reader403. Its cover and
+printed pp6–8,11,13,23,29 were inspected: voluntary registered-poor targeting,
+local review, housing standards and national2016–2020 implementation. It is
+a September2016 planning document, not the2015 announcement or a local roster.
+The [county fiscal report](https://www.hnxx.gov.cn/2017/09-06/147982.html),
+presented2017-08-29 and posted2017-09-06, I(三)3 confirms local2016 execution.
+ItsCNY260million covers multiple projects, not relocation alone. The
+[NDRC2015 announcement](https://www.ndrc.gov.cn/xwdt/xwfb/201512/t20151208_955833.html)
+confirms the earlier national policy framework and delegation.
+
+The final body's pp3–5,8–10,15 provide actual household participation,
+move-year coding, untreated registered-poor comparisons, weights/FE/inference
+and restricted access. The [RUC2019 report](https://ae.ruc.edu.cn/docs/2019-08/4632c8c5c4154e84ae03a432bc5e981a.pdf)
+pp80–81/Table15 agrees on1865 households and1421/444 modalities but reports7583
+people versus the final paper's7676; no guessed reconciliation is made.
+The source and outcome changes do not create more than one variation.
+
+Admission is decision-sufficient knowledge, not numerical replication.
+The baseline household-income rule and joins are recoverable; AppendixC/E.1,
+weights/cleaning/zero-income implementation and TableE7 remain uninspected,
+and authorized microdata access, residual selection and staggered comparisons
+remain conditions. No apartment-lottery identification, nationwide treatment,
+complete voucher geography or causal certificate is asserted. Ready net+1.
+
 ### Service-sector business-tax-to-VAT rollout — 2026-10-04
 
 Screen `task-4f1de28e989b` retains Xing, Bilicka, Hou and Raei,
@@ -6108,6 +6366,40 @@ lists the15 non-paired damaged counties; Table2, printedp34, defines
 neighboring exposure by bordering at least one paired county without
 earthquake damage. Published-version boundaries and the precise damaged
 sample selection remain unresolved.
+
+### Guangdong registration audit: newer author version, still no city-date table — 2026-10-07
+
+Audit `task-a86e471cc1d5` recovers a newer accessible author revision for
+`candidate-e08c2aa11434`: the [Chen-hosted89-page manuscript](https://lc929.github.io/workingpaper/BCLZ_Entry_Reform_China.pdf)
+has a December2024 cover, compared with the previously inspected August
+version. Cover, PDF8-12/printed7-11 and PDF68-69/AppendixA21-A22 were
+text-inspected; FigureA1 on PDF68 was separately rendered and visually
+inspected. Its eight dated color classes remain September/December2012,
+March/October/November/December2013 and January/March2014. The map does
+not label cities. FigureA2 names the twelve early cities and orders pilots,
+but is not an explicit city-month table. Do not convert approximate map
+recognition into an audited21-city assignment crosswalk.
+
+Section2.2 reports using official implementation dates and local news,
+with agreement where news was available. Footnote15 links older Shenzhen
+and Zhuhai announcement pages and distinguishes announcement from execution;
+both specific links were inaccessible in this pass. The earlier recovered
+Shenzhen gazette and Dongguan plan remain the inspected primary evidence,
+not these unavailable links. The December cover does not certify equivalence
+to final publisher text, and this task does not claim to have compared all
+89 pages or all appendix estimates with the August version.
+
+Section2.3 and footnote16 preserve separate reporting coverage: Zhuhai is
+used for entry but excluded from exit/size/productivity; employment starts
+in2013; revoked licenses become unreliable in2014-15, so report disappearance
+and rectified2017-18 legal exits are different measures. These inspected
+passages confirm that a later manuscript does not remove those data limits.
+A focused text search found no explicit registry-number/unique-identifier
+merge description; that negative search is not proof the identifiers do
+not exist. Actual treatment code or a readable dated city table remains
+the useful next source, followed by registry/report linkage documentation.
+Preserve the candidate as blocked, with this newer-version route available
+for a future code-aligned audit; no canonical or ready increment is made.
 
 ### REStat Guangdong business-registration pilot — 2026-10-03
 
@@ -9482,6 +9774,142 @@ uninspected city list is a lead, not primary verification. Do not reconstruct
 32 city assignments by expanding provincial addressees, or publish an extracted
 promise. No canonical or ready increment from this resolve.
 
+### County travel-access resolve: changing permit regimes — 2026-10-07
+
+Resolve `task-a1a9251829a1` inspects two primary institutional texts for
+`candidate-6f8258f6d45b`. The [Justice Ministry administrative-law database](https://xzfg.moj.gov.cn/front/law/detail?LawID=60&Query=),
+*关于外国人在我国旅行管理的规定*, October9,1982 approval header and
+SectionsI-IX/XI, establishes a selected, security-screened regime. Provincial
+governments consult military-region authorities and seek State Council
+approval; the Public Security Ministry processes and publishes opening or
+closure decisions. Tourism/exchange value, transport, reception capacity
+and non-military status are conditions, not random assignment. ClassA's
+29 named cities/counties require no travel permit or advance notice;
+ClassB remains permit-required, normally approvable. ClassesC/D retain
+additional restrictions; military sites within A/B are excluded. Foreign
+ethnic-Chinese visits have a separately referenced1980 arrangement.
+The HTML annex's multi-column layout was not visually verified as a
+county roster and is not transcribed into treatment dates.
+
+The [State Council's full reproduction of国办发〔1985〕90号](https://www.gov.cn/zhengce/content/2012-08/08/content_6868.htm),
+December23,1985 forwarding notice and appended November23 request,
+abolishes the A/B labels but does not automatically grant every B area
+unrestricted access. B areas meeting former A conditions become open
+without travel permits; others remain controlled-open. Provinces and
+military regions should settle changes and file them before January25,1986;
+the Public Security Ministry should publish the resulting list before
+February1. Subsequent applications follow the open-area procedure rather
+than a B category. Website posting in2012 is not implementation timing.
+These passages verify the national rule transition, not fulfillment of
+every deadline or the paper's1985-1991 county cohorts.
+
+Analytical consequence: retain the distinction between designated access,
+permit-free travel and actual foreign visits. Earlier B membership cannot
+be silently equated to earlier A status. Closure, military-site exclusions,
+county-boundary changes and the1986 reclassification must be reconciled
+against the paper's treatment measure. Open-to-foreign-travel permission
+is also not, by itself, an SEZ designation or blanket foreign-investment
+authorization. Original provincial approvals and published rosters would
+help establish exposure, but no paper-aligned cohort inventory or methods
+has yet been recovered. Keep the candidate blocked pending body/appendix,
+sample/control definitions, historical county joins, concurrent reforms and
+inference. This task adds primary regime evidence without publishing a
+canonical or increasing ready counts.
+
+### County travel liberalization and industrial growth: bounded ETIC screen — 2026-10-07
+
+Screen `task-45fb4225f657` adds one article in *Economics of Transition and
+Institutional Change* as a specialist transition/development journal source.
+This extends the source boundary for a demonstrated regional-development
+gap; it is not a field-top ranking claim or a journal-wide archive audit.
+Liu and Zhou's *Does international travel cause economic growth? Evidence
+from China's removal of travel restrictions on foreigners* has DOI
+`10.1111/ecot.12294`. The inspected
+[publisher landing](https://onlinelibrary.wiley.com/doi/10.1111/ecot.12294)
+identifies first publication June16,2021 and the April2022 issue30(2),
+337-355. Keep those dates separate. Its abstract reports county-by-county
+Open-to-Foreigners-County designation and industrial output in1985-1991.
+This is a mainland-China institutional exposure, not foreign-country
+variation or an agricultural production study. The abstract supplies a
+research lead, not a treatment roster, valid comparison or inspected estimate.
+
+[Liu's author publication page](https://changliuchina.weebly.com/research.html),
+publication8, links SSRN3435340; following the paper source failed to expose
+text. The publisher's Read full text link also failed. A search-returned
+[UIBE-hosted issue PDF](https://ciwto.uibe.edu.cn/docs/2022-07/c02c7b0a43c248cabc673305fd51863c.pdf)
+returned HTTP200 with27 pages. Its inspected contents page lists this
+article, but that does not establish that this PDF contains its body;
+no target-paper methods were inspected from that file. Do not count a
+table-of-contents listing as full-paper access.
+
+Exact DOI and travel-liberalization keyword searches found no existing
+canonical or candidate. Retain `china-variation` in staging. Resolve the
+historical travel-permit regime, designation authority and official county
+cohorts; distinguish travel access from SEZ/coastal opening or investment
+permissions. Recover body/appendix treatment onset, county-boundary vintage,
+treated/comparison sample, industrial outcome data and joins, concurrent
+opening reforms, selection/anticipation and inference. Do not infer these
+from the title, effect-size abstract or general1980s reform narrative.
+Screen leaves canonical records and ready counts unchanged.
+
+### Industrial-cluster later-cohort audit: all43 roster rows recovered — 2026-10-07
+
+Audit `task-8037e714053a` closes a missing institutional source for
+`candidate-1007dc8c87bc`. The [Fuzhou science bureau's2021-08-23 publication](https://www.fuzhou.gov.cn/zgfzzt/skjj/kjzl/ztzl/fsqgjzzcxsfq/tpxw/202108/t20210823_4167417.htm)
+reproduces the2021 roster as three scanned tables. All43 numbered rows,
+cluster names, construction bodies and recommending authorities were
+visually inspected from the linked images, fetched HTTP200 in memory:
+[rows1-13](https://www.fuzhou.gov.cn/zgfzzt/skjj/kjzl/ztzl/fsqgjzzcxsfq/tpxw/202108/W020210823334433206176.jpg),
+[rows14-29](https://www.fuzhou.gov.cn/zgfzzt/skjj/kjzl/ztzl/fsqgjzzcxsfq/tpxw/202108/W020210823334435122786.jpg),
+[rows30-43](https://www.fuzhou.gov.cn/zgfzzt/skjj/kjzl/ztzl/fsqgjzzcxsfq/tpxw/202108/W020210823334436030150.jpg).
+The notice's Beijing-hosted DOCX returned403, but these official images
+recover the roster without relying on an unauthenticated mirror.
+
+Compact transcription of host/industry labels, in original row order
+(not a prefecture-city treatment crosswalk):
+
+- 1-7: 天津市细胞产业 (天津市滨海新区人民政府); 燕郊高新区新型电子元器件及设备制造;
+  太原高新区核心电子器件及应用; 长治高新区紫外半导体光电; 营口高新区生物降解材料及制品;
+  吉林高新区电子信息; 松江G60科创走廊数字经济 (松江区科委、张江高新区松江园管委会).
+- 8-13: 徐州高新区安全应急装备; 常熟新能源汽车核心零部件 (常熟高新区);
+  盐城高新区新型电子元器件及设备制造; 宁波高新区工业互联网 (新材料科技城);
+  阜阳界首高新区铝基复合材料; 福州高新区光电.
+- 14-21: 吉安数字视听 (吉安高新区); 鹰潭高新区移动物联网; 威海高新区高端医疗器械;
+  枣庄锂电 (枣庄高新区); 莱芜高新区智能制造装备; 淄博高新区生物医药与生物医学工程;
+  许昌智能电力装备制造 (许昌高新区); 新华高新区生物医药.
+- 22-29: 随州移动应急装备 (随州高新区); 仙桃高新区非织造布; 黄石先进电子元器件
+  (黄石高新区); 孝感高新区高端装备制造; 岳阳临港高新区智能制造装备;
+  常德重大成套设备制造 (常德高新区); 湘潭风能产业 (湘潭高新区);
+  娄底建筑工程机械制造 (娄底高新区).
+- 30-36: 佛山智能家居 (佛山高新区); 肇庆高新区智能网联新能源汽车;
+  河源市高新区信息终端设备制造; 汕头高新区新兴软件和新型信息技术服务;
+  永川汽摩智造 (永川高新区); 成都高新区医药健康; 绵阳新型显示 (绵阳高新区).
+- 37-43: 安顺高新区新型建材; 玉溪高新区生物医药; 楚雄高新区现代中药和民族药(彝族药);
+  榆林高新区煤化工; 渭南高新区智能制造装备; 安康高新区富硒;
+  石河子新材料 (石河子高新区; recommending authority新疆生产建设兵团科技局).
+
+Unless otherwise noted, the construction body is the named high-tech-zone
+management committee. Row21 prints **新华高新区** in both cluster and
+construction-body cells, under河南; preserve that spelling pending a
+historical-geography check rather than silently correcting it to新余.
+District/county labels and high-tech-zone bodies are not automatically
+prefecture-city assignments. The Fuzhou page independently identifies its
+photonic cluster as Fujian's only2021 admission; the
+[MOST-hosted Hubei science department report](https://www.most.gov.cn/dfkj/hub/zxdt/202108/t20210826_176599.html),
+2021-08-26 opening paragraph, independently confirms the four new hosts
+黄石、随州、仙桃、孝感. These confirmations do not date each firm's receipt
+of benefits or resolve historical registered-address joins.
+
+Analytical consequence: the2021 expansion is now an inspected roster, not
+a generic warning about possible later policy. Compare these hosts and
+their industries with the author's55-city exposure file before treating
+2009-2022 comparison observations as unexposed. The notice separately
+adjusts directions for湘潭、佛山、绵阳; a fresh direction is not necessarily
+a first city admission. No overlap or coding error is asserted without
+the author's crosswalk. That crosswalk, treatment of later cohorts and
+outcome/inference construction remain unresolved, so no canonical or
+ready increment follows this institutional audit.
+
 ### Innovative industrial-cluster pilots and firm supply chains — 2026-10-05
 
 This bounded extension adds *Research on Economics and Management*
@@ -11133,3 +11561,5268 @@ statutory assignment or exogenous fiscal shock. Legal incentives are grounded;
 the precise approval-delay pathway and direct fiscal/industrial exclusion
 remain research conditions, not verified results. No generic reform DID,
 uninspected CER/JPubE application or fully reproduced treatment is admitted.
+
+### Patent-subsidy audit: municipal eligibility is not provincial availability — 2026-10-07
+
+Audit `task-3cadf91bd6a7` follows candidate `candidate-fb52aff12898` and
+the CER2021 application above. The [Shenzhen government gazette](https://www.sz.gov.cn/zfgb/2003/gb325/content/post_5001310.html)
+was inspected in full, notice and Articles1–20. It prints 深财企〔2002〕3号
+but explicitly takes effect April1,2003; the identifier year is not onset.
+Articles2,5–7 condition support on applicant status, local industrial
+priorities, first-applicant eligibility and patent stage. Inventions may
+receive2200yuan after substantive-examination payment,1500 after grant and
+1700 for agency use; utility models require grant and the local high-tech
+catalogue. Foreign inventions require grant. Articles11–12 require review,
+fiscal payment and no other same-type government support. Articles14–15
+identify applicants rather than agents as beneficiaries and constrain the
+annual budget. This verifies municipal conditional reimbursement, not
+automatic subsidies for every Guangdong patent. [Verified institutional facts]
+
+The inference for the provincial application is narrower: municipality-level
+eligibility, patent stage and funding overlap need a mapping to the paper's
+province-year indicator. This source cannot establish Guangdong's first
+provincial launch or that Shenzhen residents were untreated before2003.
+Nor does the existence of a different municipal rule warrant another canonical
+record without a traced paper application. [Analytical inference]
+
+The Shanghai2005 agency archive at
+`https://sipa.sh.gov.cn/xxgkml/20191130/0005-23366.html` returned403 with
+an administrator-block message; its title and linked retrospective references
+are leads, not inspected historical provisions. Search results for the old
+economic-commission page display inconsistent publication metadata and a
+2007-effective text. They do not repair the earlier page-not-found inspection
+or establish1999 rules. Do not substitute the indexed text for source access.
+
+Candidate remains blocked: original launch/version coding across the paper's
+thirty provinces, Beijing's grant-bonus classification, renewal cohorts and
+patent-number joins remain unresolved. The new primary evidence tightens the
+eligibility and overlap boundary but does not close admission. No canonical
+or readiness change; follow-up needs the historical coding archive or original
+launch documents, not more descriptions of later subsidy policies.
+
+### Chinese first-US-patent exposure: replication dependency bridge — 2026-10-07
+
+Audit `task-620ab48c9f63` follows candidate `candidate-409fcecdc7f1`.
+The [public replication README](https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/95f643b3-489f-4183-8325-e0c962e444c2)
+returned200 and was read in memory, all seven pages; the p5 program/data
+mapping was also visually inspected. Its May2025 cover identifies the same
+authors and paper. This supersedes the earlier README-access blocker,
+not the uninspected-script boundary.
+
+The author documentation distinguishes public PatEx and restricted CCTS/ASIE.
+Pages2–3 identify three construction scripts in `code/sample creation`:
+`1_create_CHN_application_sample.do`, `2_create_first_stage_sample.do`,
+and `3_create_main_sample.do`. Reportedly public `first_stage.dta` supplies
+first-applicant outcomes and instruments; `hand_match.dta` and
+`hand_match_asie.dta` bridge assignee names to customs and industrial IDs.
+The main CCTS, ASIE and firm-HS6-destination files are withheld. Page5 maps
+Table4 to `Table4.do` and the main CCTS/ASIE files. File availability is
+reported by this document; contents were not inspected. [Author-reported]
+
+The README does not specify annualization, export-survival selection or
+the examiner-history cutoff. Next inspect the three construction scripts
+and `Table4.do`, rather than treating a public first-stage dataset as the
+restricted outcome panel. Their names are known; download access remains
+unresolved. The landing page returned403 through ordinary HTTP retrieval
+despite browser-indexed metadata access. No code was executed, no restricted
+data obtained and no numerical reproduction claimed. Retain blocked status
+until the paper's conflicting endpoint rules and instrument timing are
+resolved; ready unchanged.
+
+### Chinese first-US-patent exposure: construction code recovered — 2026-10-07
+
+Audit `task-64413339d38f` recovered the three public construction scripts
+through the visible Mendeley file controls, despite ordinary HTTP403.
+All three were read as text; none was executed or copied into the repository.
+The browser downloads are public code, not the confidential customs panel.
+This supersedes the earlier statement that code contents were uninspected.
+
+**Application construction:**
+[`1_create_CHN_application_sample.do`](https://data.mendeley.com/public-files/datasets/wbvtd6ykfg/files/55c5dd4e-da2d-49a1-b9fa-ea49b9084fa1/file_downloaded),
+lines3–13,17–72, takes each application's minimum transaction recorded date,
+drops multiple distinct events tied at that date, and restricts Chinese
+assignee records while excluding names/cities containing Taiwan/Hong Kong.
+It saves both `application_chn` and a narrower `first_application_chn`.
+The latter filters regular, nonpending utility applications and earliest
+observed action by cleaned assignee name. These are code definitions, not
+independent certification of applicant residence or first-ever patenting.
+
+**Examiner history and matching:**
+[`2_create_first_stage_sample.do`](https://data.mendeley.com/public-files/datasets/wbvtd6ykfg/files/b9a9685a-6992-4adf-bc2f-e441dcd43856/file_downloaded),
+lines2–76, sequences completed regular utility applications within examiner/
+art unit by `fdate` (grant or abandonment), then excludes the target from
+cumulative approval counts. It residualizes by art unit/first-action year;
+keeps `seq>=5`, filing year>=2001 and first-action year<=2013. Lines82–110
+select the matched customs firm's earliest recorded action; same-day ties
+prefer an approval, then the largest approval-rate instrument.
+
+Two substantive boundaries follow directly. The routine loads
+`application_chn`, not the narrower first-application file; and its historical
+count is ordered by **final disposal**, not the target's first action.
+No inspected line restricts all contributing decisions to before that first
+action. The code therefore does not establish the paper's claimed ex-ante
+history at the export-growth baseline. This is a temporal/selection question
+requiring author clarification or corrected historical construction, not
+proof that published estimates are biased. [Analytical inference]
+
+**Outcome construction:**
+[`3_create_main_sample.do`](https://data.mendeley.com/public-files/datasets/wbvtd6ykfg/files/39856afc-969c-46b2-8068-2b798fa1f375/file_downloaded),
+lines269–318,374–435, confirms CCTS growth
+`2*(value[t+3]-value[t])/(value[t+3]+value[t])/3`; the ASIE branch applies
+the same division after constructing the unannualized measure. Thus the
+annualization blocker is closed. `cont` requires nonzero baseline and
+nonzero/nonmissing t+3 exports, rather than any export in intervening years.
+The customs outcome is merged to `hand_match_fs` by company/year before
+year is changed to filing year for other joins; retain `ryear` for exposure.
+This verifies the variable construction, not every baseline regression filter.
+
+`Table4.do` is visibly listed with file identifier
+`dcee3b31-fe6c-4a34-a94b-3e691f331663`, but two browser download observations
+timed out and no completed local file was found. Its contents and actual
+`cont` restriction remain uninspected. No numerical replication, execution
+failure or complete sample count is claimed. Candidate remains blocked:
+recover Table4's filters and reconcile the disposal-date history and same-day
+selection with the paper's quasi-random assignment argument before admission.
+Ready unchanged; next work is specific code/author clarification, not another
+abstract or README retrieval.
+
+### Drinking-water access and inclusive development: bounded screen — 2026-10-07
+
+Screen `task-f4a7dca5b35d` extends the development lane with Li, Xi and
+Zhou, World Development174(2024),106428,
+[DOI](https://doi.org/10.1016/j.worlddev.2023.106428). The
+[author-hosted final article](https://www.xitianyang.com/uploads/1/8/7/3/18733898/drinking_water_facilities_lxz.pdf)
+was read at Sections3–5 and Table2, pp2–6. Its1989–2011 CHNS application
+uses3,488 households/123 villages in nine provinces. Village exposure starts
+with over80percent household access in the initial wave, or a subsequent
+increase exceeding20 percentage points **per year between waves**, then
+persists. Access includes indoor/courtyard taps and pressurized courtyard
+wells. Equation1 uses village and county-year effects; Table2 clusters
+by village. [Paper-reported]
+
+Retain for development/nonfarm income, not irrigation or pollution regulation.
+The survey proxy is not an official opening date or randomized20-percent
+eligibility rule. Resolve original implementation regime, interval coding,
+questionnaire identifiers, baseline-treated comparisons and appendix TWFE
+checks. Government provision alone does not remove village-level changing
+demand or concurrent projects. No exact DOI/mechanism match was found;
+existing water-diversion and urban-cleanup cases are distinct. Screen admits
+only a candidate; no canonical or readiness change.
+
+### Drinking-water resolution: planned investment versus observed access — 2026-10-07
+
+Resolve `task-a6fb9b52cf8c` follows `candidate-076186bf59ba`.
+The [NDRC/MWR/Ministry of Health notice 发改农经〔2005〕920号](https://www.ndrc.gov.cn/fggz/nyncjj/tzzn/200507/t20050719_1098591.html)
+was fully inspected, SectionsI–II(1–5), signature May30,2005. It describes
+earlier2000–2004 investment and the2005–2006 emergency plan, not a common
+launch for all1989–2011 observations. II(1) prioritizes urgency and requires
+approved plans/project procedures. II(3) differentiates town-network extensions,
+centralized or household wells, dispersed hillside supply, rainwater storage
+and temporary facilities at possible relocation sites. It requires village/
+household beneficiary rosters, disclosure, county-level electronic archives,
+acceptance and follow-up monitoring. II(4) includes local matching funds and
+beneficiaries' labor/material/financial contributions; provision is not an
+observed zero-cost uniform entitlement. [Verified institutional facts]
+
+This supplies a concrete verification route: local approved projects,
+beneficiary rosters and acceptance records could distinguish public construction
+from a survey-share change. It does not identify which CHNS villages correspond
+to those projects, or prove that every courtyard well in earlier waves arose
+under that regime. Nor is the paper's20-percentage-point annualized jump a
+statutory assignment threshold. [Analytical inference]
+
+The indexed CHNS1993 questionnaire lead identifies L1 as acquisition method
+and L3 as water source, but actual retrieval of
+`https://www.cpc.unc.edu/projects/china/data/questionnaires/c93hh.1098.pdf`
+returned404; no questionnaire inspection or across-wave harmonization is
+claimed. Publisher body retrieval returned403, and an inspectable supplement
+or sample code was not recovered. AppendixA12's heterogeneous-DID discussion
+remains reported by the main text, not directly read.
+
+Candidate remains blocked pending the historical project/proxy bridge,
+survey-vintage coding and denominator/interval treatment reconstruction.
+Missing project records do not justify substituting a2005 national DID for
+the paper's staggered village contrast. Keep baseline-treated villages,
+time-varying selection and the uninspected appendix explicit. No canonical
+admitted; no readiness increase or microdata storage.
+
+## Province-level zone education exposure: approval versus catalogue year — 2026-10-07
+
+Task `task-2a3009aa63f0` revisits blocked candidate `candidate-9039d94f23ec`
+(Hu, Huang, Wu and Zhang, *China Economic Review*, 2024,
+DOI `10.1016/j.chieco.2024.102163`). This is a bounded institutional audit,
+not a new screen or a claim to have recovered the paper's full cohort design.
+
+The [original NDRC notice](https://www.ndrc.gov.cn/xxgk/zcfb/gg/200704/t20070406_961289_ext.html)
+was read in full. Announcement 2007 No.18 is signed March27,2007 and releases
+the 2006-edition directory after the cleanup and establishment review begun
+following the July2003 approval suspension. Its final substantive paragraph
+continues the suspension of new or expanded province-level zones and prohibits
+unannounced zones from marketing themselves as development zones. This source
+establishes an approval/review regime, not a universal2006 opening date.
+
+The [official directory PDF](https://www.ndrc.gov.cn/xxgk/zcfb/gg/200704/W020190905487497735524.pdf)
+was retrieved successfully (104 PDF pages). Printed pp14–15 (PDF pp15–16)
+were read; printed p15's table was also inspected visually. The table separates
+approval date from announcement number and retains former names. Beijing
+Liangxiang (S117002) has approval2000.12 but announcement2006No16; Yongle
+(S117005) has approval1992.09 but announcement2006No23. Fangshan (S117003)
+has approval2006.03 and announcement2006No37. These examples prove that a2006
+announcement does not imply a2006 initial approval. They do not establish
+which zones or counties Hu et al. actually retained, or when activity began.
+Only these pages were audited; no claim of a complete zone/county crosswalk.
+
+The publisher body request returned403 in this task. Searchable publisher
+excerpts remain discovery material, not new evidence for the age cutoff,
+census vintage, migration exclusions or comparison cohorts. The candidate
+therefore stays blocked. The next useful source is the paper's data/strategy
+sections and its sample roster or code: recover whether2006 means initial
+provincial approval, reviewed recognition, or a restricted cohort selected
+from the directory, then link zone names and historical counties to census
+individuals. Do not substitute all1346 province-approved directory entries
+as newly treated, or transfer another zone paper's treatment coding. No
+canonical admitted and no ready increase.
+
+## China-facing export controls: author-body screen — 2026-10-07
+
+Screen `task-5bccd08b2edf` fills the firm-input/innovation gap. No corresponding
+canonical or candidate was found. [Wen's author page](https://jayawen.com/research.html)
+links the [53-page manuscript](https://drive.google.com/file/d/1vu1w1cGs5ySposZtAbhkSHESokusFU9m/view)
+by Xueyue Liu, Yu Liu, Alexey Makarin and Jaya Wen. The PDF is dated
+September12,2025 despite the site's2026 label. The authors describe a JIE
+resubmission; this is not a published JIE article. The HBS copy returned403;
+the author's Drive download succeeded and was read in memory, not stored.
+
+Inspected pp7–12, Sections2–3.1, Eq1–2 and footnotes11,16–19:
+the2007 military-end-use rule's final goods are compared with goods excluded
+from its2006 proposal. Treatment is any pre2007 controlled-HS6 import;
+controls imported left-out goods and no controlled goods. The firm-year DID
+uses firm and county-year effects, baseline characteristics/year interactions,
+firm clustering and2006 event-study baseline. The2000–2013 sample omits2010;
+R&D coverage starts2001 and omits2004. Customs/ASIP/patents are name-linked;
+ECCN–HS and IPC–ECCN mappings are distinct. VEU exceptions and broad HS
+mapping explain incomplete import cessation. These are manuscript-reported
+constructions, not independent legal verification.
+
+Retain only as `global-china-variation`. Resolve the original proposal/final
+rule, military-end-use and VEU boundaries, product crosswalks, matched sample
+and appendices before admission. Product selection was not random; innovation
+parallel trends and the2006 anticipation window need scrutiny. Do not relabel
+this as a blanket Chinese import ban or substitute later Entity Lists.
+
+### Export-control resolution: primary scope and measurement boundary — 2026-10-07
+
+Resolve `task-f0c579cf9143`, candidate `candidate-c585a80048a0`, recovered
+the [original June19,2007 Federal Register issue](https://www.govinfo.gov/content/pkg/FR-2007-06-19/pdf/FR-2007-06-19.pdf)
+in memory. Printed pp33646,33648,33657–33660 (PDF pp17,19,28–31) were read.
+RIN0694–AD75 is effective June19,2007. Section744.21(a) conditions licensing
+on known military end-use or BIS notification; (c) retains the specified GOV
+exception, (e) requires case-specific review and (f) defines military end-use.
+Supplement2 lists technical limits within ECCNs rather than blanket HS6 bans.
+Section748.15 requires approved end-users and eligible items; denial of VEU
+status does not itself introduce a new license requirement or forbid ordinary
+license approval. The preamble explains selection on military applicability,
+commercial exports and foreign availability, and reduction from47 to31 full
+or partial ECCNs. This verifies a selected licensing regime, not random goods
+assignment. The2006 proposal is identified in the final rule, not separately
+read. These historical provisions must not be replaced by today's expanded
+military-end-user rules.
+
+The manuscript was additionally read at pp14–16 and AppendixB–D, PDF pp36–38.
+AppendixB describes enriched IPC labels, PatentBERT embeddings, similarity
+threshold6 and manual match review. Its resulting crosswalk is not reproduced
+as code/data. TableA3 (PDFp43, printedA13) was fully read and visually checked:
+18 left-out HS6 codes, with import-share notes averaging2000–2007, not the
+pre-policy assignment period. AppendixD clusters the product-firm exercise at
+HS6 (77 clusters), unlike the main firm-clustered regressions. The matched
+sample loses significant R&D results; SDID uses balanced panels and weakens
+several innovation results. Do not call every robustness result significant.
+
+Admission remains blocked on the exposure/data bridge, not lack of legal
+identity. Eq1 says pre2007 imports without explicitly restricting origin in
+its assignment definition; a U.S.-only flag must not be silently assumed.
+The manuscript cites a2023 EU ECCN–HS correspondence for a2007 regime,
+without the inspected passages establishing historical code-version alignment
+or resolution of partial-ECCN technical coverage. Recover its mapping and
+preprocessing material, origin/period filters and matched-sample construction;
+distinguish paper exposure from transaction-level legal liability. This is not
+proof of author miscoding. No new canonical or ready increment; no copyrighted
+PDF or restricted microdata retained.
+
+### Chongqing hierarchy reform: replication recovery — 2026-10-07
+
+Audit `task-3b464e5927d1` revisited blocked
+`candidate-2c0c07f336e2`, Jia, Liang and Ma's JPubE study
+(DOI `10.1016/j.jpubeco.2020.104352`). Ma's
+[publication list](https://grongma.weebly.com/publications.html) identifies
+the article but provides no paper link for it. A newly recovered
+[Mendeley deposit](https://data.mendeley.com/datasets/4d94gw97c2/1), DOI
+`10.17632/4d94gw97c2.1`, is titled *Data for Political Hierarchy and Regional
+Economic Developmen20191010*. Its inspected landing-page metadata names
+Guangrong Ma, version 1, April 26, 2021, and CC BY 4.0. The contributor
+describes Stata data files for replicating tables and figures; this is a
+repository description, not verification of the files or their construction.
+
+Ordinary HTTP requests returned 403, and the browser landing page remained
+at its loading state without usable file controls. The archive and paper
+body were not recovered. The deposit improves the next recovery route but
+does not establish the town sample, boundary bandwidth, exposure coding,
+night-light growth definition or separation of administrative promotion
+from concurrent Three Gorges and other policy changes. Keep the candidate
+blocked; revisit through actual file access or an author manuscript rather
+than repeat abstract screening. No canonical file was admitted, and no
+paper or microdata was retained.
+
+### MLSA migration RD: correction resolved, body still missing — 2026-10-07
+
+Audit `task-7bfdd5e3a965` revisited `candidate-aaa6f51b64f0`. The
+[publisher erratum](https://academic.oup.com/joeg/article/23/1/23/6547867),
+DOI `10.1093/jeg/lbac004`, published March 12, 2022, was read in full.
+It corrects the author's surname from Howel to Howell; it reports no change
+to the sample, estimator or results. This closes the correction question,
+not the research-design questions.
+
+The original JoEG article, DOI `10.1093/jeg/lbac001`, appeared online
+February 10, 2022 and in January 2023, 23(1):1–21. Its current publisher
+response exposes metadata and the abstract only; the author homepage
+does not provide a manuscript link for this paper. The original screening
+run's statement about an open PDF cannot substitute for inspected methods.
+Keep the migration candidate blocked pending the actual income measure,
+local threshold and survey year/geography, benefit-receipt first stage,
+bandwidth, manipulation tests, household migration measure and data joins.
+The abstract's income-eligibility instrument is not a nationwide common
+cutoff, and eligibility must not be equated with transfer receipt. No
+canonical record or ready increment was produced.
+
+### Road stimulus cost-share exemption: bounded JDE screen — 2026-10-07
+
+Screen `task-3d20137884e3` covers Anthony Howell, *Rural road stimulus
+and the role of matching mandates on economic recovery in China*, JDE
+166 (2024):103211, DOI `10.1016/j.jdeveco.2023.103211`. This continues
+the existing development-journal lane, not a new ranking claim. DOI/title
+search found no corresponding candidate or canonical. The existing rural
+road-access record does not establish identity with a cost-sharing exemption.
+
+The [author's October 30, 2024 explanation](https://www.voxchina.org/show-3-380.html),
+policy background, methods paragraph and Figure 1 caption, was read.
+It describes suspension of local matching requirements during the 2009–2010
+stimulus, staggered DID with village-level inference, and comparisons among
+road-upgrade villages. Development and nonfarm entrepreneurship, rather
+than agricultural productivity, motivate retention. This is an author
+commentary, not inspected article methods or independent legal support.
+
+Publisher metadata identifies a [2025 corrigendum](https://www.sciencedirect.com/science/article/pii/S0304387824001494),
+DOI `10.1016/j.jdeveco.2024.103400`, JDE 172:103400. Neither article body
+nor correction text was recovered: publisher requests returned 403 and
+the browser displayed a human-verification challenge, which was not solved.
+OpenAlex's inspected locations expose no repository manuscript. The
+author's linked CV routes to publisher DOI pages, not a downloadable copy.
+Do not infer the correction's substance from its repeated abstract.
+
+Retain a `china-variation` candidate. Resolve the actual funding instrument,
+province/project eligibility, exemption versus approval/completion dates,
+village cohorts and comparison, survey join keys and outcome construction,
+estimator and correction before publication. Check concurrent road upgrades,
+project selection, local fiscal capacity and return migration; no claim of
+random assignment or a universally exempt rural-road program is supported.
+No canonical file or source document was stored.
+
+Resolve `task-31400577de87` inspected the full official
+[2009 local-government bond project-management notice](https://jsz.mof.gov.cn/zhengcefagui/200904/t20090421_135301.htm),
+MOF 财建〔2009〕121号, signed March 18, 2009, effective on issuance;
+April 21 is this page's publication date. Articles 5, 7 and 14 authorize
+bond funding for local matching of central public investment, explicitly
+include rural-road construction/rehabilitation, prioritize matching before
+locally initiated projects, and require proportional funding arrival for
+projects using bonds as the match. This is the broader financing framework,
+not the sought exemption instrument. Its continued matching provisions mean
+the author commentary cannot be generalized into abolition of every level's
+contribution for all rural-road projects. It does not disprove a narrower
+project or lower-government-level exemption.
+
+The existing `china-rural-village-road-accessibility-1995-2018` was read:
+its exposure is a long-difference change in distance to paved roads, not
+local matching-cost exemption. The candidate is therefore not resolved by
+redirecting to that record. Admission remains blocked on the actual exemption
+decision, level of government bearing the remaining cost, treated project
+roster and event clock, inspectable article methods and correction. A general
+stimulus announcement or road-funding budget cannot close these gaps. No
+canonical admission; preserve the new primary-financing boundary for a future
+body/code-led recovery instead of repeating the policy summary.
+
+### Pharmaceutical review capacity: author-body screen — 2026-10-07
+
+Screen `task-74f42589a66f` fills a firm-innovation/regulatory-capacity gap.
+DOI/title and institutional searches found no corresponding canonical or
+candidate. Jia's [working-paper page](https://www.ruixuejia.com/working-papers.html)
+links the [August 5, 2026 draft](https://www.ruixuejia.com/uploads/4/6/3/3/46339953/medical_reform_in_china__3_.pdf)
+by Ruixue Jia, Xiao Ma, Jianan Yang and Yiran Zhang, and labels it R&R at
+AEJ: Economic Policy. It is not a published AEJ article. NBER working paper
+31976 is a separate earlier version, not the source of current coding.
+The initial October 2025 URL timed out; the author-linked 77-page version
+was downloaded and read in memory without retaining a PDF.
+
+Main printed pp6–11 and14–16 plus Appendix A1–2/B4–8 were inspected.
+The reform is a national review-capacity and backlog-clearance package;
+the paper uses continuous therapeutic-category declines in mean IND decision
+duration, not a binary priority-review lottery or province pilot. Main exposure
+compares 2012–2014 with2015–2017 submission cohorts. The retained category-year
+panel has positive filings in both windows and includes zero-filing years.
+Applicant/ingredient and historical firm-name joins are documented separately
+from category assignment. Post-measured intensity, selective filing and
+decision completion, gradual implementation and contemporaneous policies
+need explicit limits before admission. The appendix also uses inconsistent
+descriptions of multiple-applicant weighting; do not silently reconcile them.
+
+Retain only a `china-variation` candidate. Resolve the primary national reform
+and later permission clock, restrict the reusable application to the fully
+documented category design, and identify what provider coding or replication
+material remains necessary. A working paper can supply actual use, but its
+publication status must remain explicit. Screen does not modify canonical.
+
+### Pharmaceutical review capacity: national institution resolved — 2026-10-07
+
+Resolve `task-3734bd55748a` admits
+`china-2015-drug-review-capacity-category-delay` as grounded and conditional,
+not design-documented. National institution, category intensity, cohort windows,
+comparison and category-year data join are recovered; exact reproduction and
+causal validity remain conditions, not reasons to fabricate code or assignment.
+
+The signed2015 State Council opinion was inspected in its full contemporaneous
+[government-attributed Xinhua reprint](https://www.xinhuanet.com/politics/2015-08/18/c_128140289.htm).
+Its backlog targets, professional review capacity, quality enforcement and
+selective priority procedures ground the reform; it does not supply a numerical
+60-day IND deadline. The full [2017 government opinion](https://app.www.gov.cn/govdata/gov/201710/08/413100/article.html)
+and [2018No50 agency-document reprint](https://www.yjsds.com/web/article/1184822779404685312/web/content_1184822779404685312.html)
+distinguish later deemed permission and the60-working-day procedure. The latter
+document is dated July24; its reprint posting does not authenticate the original
+effective day. Linked attachments were not inspected.
+
+Further author-body inspection covers printedpp14–20 and AppendixD19–25;
+Eq2–3, TablesB2a–c and construction text were reread directly. The exposure uses
+post-period realized duration, so it is not a predetermined random instrument.
+Preserve109 retained category panels, annual zero counts, ATC classification
+level four rather than literal four-character strings, and IND-cohort trial
+joins. Backlog is an alternative treatment, not an asserted2SLS instrument.
+Inconsistent co-applicant descriptions and227 versus228.45-day scaling remain
+explicit code/data conditions. No firm-specific or international-trial design
+is silently certified by the category contract. No paper PDF was retained;
+no GitHub publication or push was performed.
+
+### Young-firm selling-expense deduction: author-version screen — 2026-10-07
+
+Screen `task-bce1f282e033` examines Jiang and Zhang's *Marketing and the Growth
+of Young Manufacturing Firms: Evidence from a Tax Incentive Policy*. The
+[Jiang author page](https://yatingjiang.weebly.com/research.html), working-paper
+entry and associated abstract, identifies a November2022 job-market version;
+the [Zhang author page](https://hongsongzhang.weebly.com/research.html),
+working-paper entry, identifies2026. Both explicitly say available upon request.
+Neither supplies a manuscript link for this title. PDF links next to other
+papers are not versions of this paper, and a search extract merging neighboring
+entries does not establish its publication or a publicly downloadable draft.
+
+The actual author abstract describes a Chinese pretax deduction reform for
+selling expenses of qualified young manufacturing firms and studies demand,
+profitability and R&D using reduced-form and structural analysis. This is a
+firm-development lead, not evidence of the age cutoff, industry exemptions,
+policy year, treatment coding, estimator or identification assumptions. Do not
+equate selling expenses with legally deductible advertising expenses without
+the methods and institution.
+
+The [HKU thesis record](https://hub.hku.hk/handle/10722/328935), metadata and
+chapter summaries, confirms Jiang's2023 thesis includes this research as its
+second chapter. Its direct FullText.pdf link returned403 in both web retrieval
+and a normal HTTP request; no thesis body or tables were inspected or retained.
+The thesis is a precursor, not a substitute for an unseen2026 revision.
+Title/marketing/deduction searches against canonical and candidate ledgers
+found no corresponding assignment already recorded. Preserve a China-facing
+candidate; admission needs the actual legal provision, eligible cohorts,
+age/incorporation clocks, sample/expense definitions, treatment comparison,
+firm-data joins and concurrent corporate-tax changes. Abstract results do not
+close those gaps. No canonical change at screen and no GitHub push.
+
+### Young-firm deduction: related legal boundary, not paper identity — 2026-10-07
+
+Resolve `task-4187fb3ada43` inspected the full official Shanghai tax-bureau
+archive of [国税发〔2001〕89号](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200609/t285916.html),
+issued2001-08-05, clauses1–5. Clause1 raises advertising deductions to8% of
+sales from2001-01-01 for named industries with carryforward; clause2 allows
+actual advertising deductions for specified high-tech/internet/venture-capital
+enterprises within five tax years from registration, subject to local tax
+review. Clause3 concerns special market-development periods and national tax
+approval, including newly growing firms. This is not an automatic unlimited
+deduction for every firm younger than five years, and advertising expenses are
+not all selling expenses. The archive posts the text in2006 and marks formal
+repeal2011-01-04; neither date alone identifies the paper's exposure or the
+transition under the later unified income-tax regime.
+
+This legal source is a related recovery lead, not verified identification of
+Jiang and Zhang's unseen policy. Independent exact-title and author/expense
+searches recovered CVs and the known thesis metadata, not methods or a public
+paper version. No author communication was initiated. Leave the candidate
+blocked until a legitimate manuscript or thesis body establishes which
+provision was actually used, eligible industries/cohorts and age clock,
+comparison, sample dates, expense fields and joins, and estimator. Do not
+publish a plausible five-year discontinuity inferred by combining an abstract
+with a law. The newly inspected legal distinction changes the next action:
+recover paper methods before constructing treatment, rather than extending a
+generic young-firm flag. No canonical admission or push.
+
+### SASAC monitoring and oversight distance: actual-method screen — 2026-10-07
+
+Screen `task-bbe1445c9080` inspected Li and Zhang's author-linked
+[July8,2021 manuscript](https://hongsongzhang.weebly.com/uploads/1/3/4/7/13473383/external_monitoring.pdf)
+in memory, not saved as a PDF. The [publisher record](https://doi.org/10.1093/ej/ueab048)
+establishes *Economic Journal*132(642),2022,675–708, online June8,2021;
+the accessible author version is distinguished from final typeset publication.
+Read main printedpp7–16,19,21,23–24,27–29,31–34: institutional Sections2.2–2.3,
+data and structural measurement in3.1–3.2, Eq22 and spatial Eq24/26–27.
+Do not infer unread appendix details from a robustness label.
+
+The national SASAC regime begins institutionally in2003, but Eq22 explicitly
+codes SASAC_t from2004 because provincial bodies phase in through early2004.
+Baseline SOE is annual state ownership above30%, not the alternative above50%
+or registered-state definition. The outcome price/productivity measures are
+structurally estimated from ASIP1998–2007 inputs, not observed procurement
+prices or directly documented corruption. Main baseline uses industry,
+province and year effects; firm effects appear as robustness, not silently
+inserted into Eq22. Pre-productivity trends are explicitly non-flat in the
+paper, unlike its reported input-price and traditional-TFP comparisons.
+
+Spatial analysis adds logged firm-to-oversight-government spherical distance
+and its SOE/post interactions. County/township affiliations are mapped to
+prefecture supervision; ambiguous other affiliations are dropped. Recorded
+distance changes for some firms through relocation or decentralization, so
+it is not automatically a fixed pre-policy instrument. The road-distance
+extension uses a2009 network, after the sample, not a contemporaneous road
+opening shock. The existing `china-soe-decentralization` instead models actual
+downward affiliation transfers; identical distance vocabulary does not make
+the mechanisms duplicates. National monitoring reform and its distance
+heterogeneity belong to one case, not separate records for each regression.
+
+Retain a China firm/industrial-development candidate. Resolve original
+2003Decree378 and the real supervised-enterprise scope versus broad ownership
+proxy, national/local phase-in, ownership/geographic joins, appendix cleaning
+and structural-outcome conditions, concurrent restructuring/WTO trends and
+interference. Primary law must not be inferred from the paper's description
+of SASAC as legal owner. No canonical changes at screen; no push.
+
+### SASAC reform: institution and conditional ownership comparison resolved — 2026-10-07
+
+Resolve `task-1c021e8ec230` admits
+`china-2003-sasac-monitoring-ownership-exposure` as grounded/conditional.
+The original47-article [Decree378 official Suzhou reprint](https://guozw.suzhou.gov.cn/gzw/gzjgdcc/200505/26b33174290840d8af7b59f6d7f504b0.shtml)
+was read, including promulgation and Arts2,4–7,10–14,17–18,22,34–37,47.
+It grounds authorized investor responsibilities and designated-enterprise
+supervision, not SASAC ownership of all assets or a legal30% cutoff. The
+[NDRC formation report](https://www.ndrc.gov.cn/fggz/tzgg/ggkx/200702/t20070227_1032347_ext.html)
+was read in full: all provincial bodies plus XPCC by June2004, prefecture
+formation largely complete at2007 reporting. That differs from the paper's
+early2004 completion wording and prevents a uniform local opening assertion.
+
+Further actual author-PDF inspection read main printedpp10/17/25 and
+AppendixA1–3, G1p18, G6–G12pp22–25/PDF64–67. Table3 gives873,414 full-control
+firm-years, affiliation effects and firm clustering. Preferred input prices
+and productivity are industry-specific structural estimates. AppendixG6
+explicitly detrends separate ownership-group outcomes using pre2003 data;
+the continuation assumption, ownership switching, changing survey coverage
+and WTO sensitivity remain conditions. AppendixG10 excludes2003, not a
+verified city-by-city rollout. No author code or final typeset body was read.
+
+The default category is a firm-year ownership-by-post comparison, with optional
+oversight-distance heterogeneity in the same regime. Default use does not
+require a road network or invented geocoding; spatial replication needs
+affiliation/geography and distance conventions recovered independently. Keep
+conditional legal-roster/proxy fit and causality limits; do not split national
+reform, distance interactions and firm outcomes to increase record count.
+No existing knowledge removed and no GitHub push.
+
+### SARS manufacturing market-power exposure: body-screened candidate — 2026-10-07
+
+Screen `task-f9e7f531800c` inspected Jiang and Zhang's
+[June 12, 2025 author manuscript](https://hongsongzhang.weebly.com/uploads/1/3/4/7/13473383/sarsinventory_conditionalacceptance.pdf),
+PDF pp1–16,20–35 and Appendix Figure A4/A5 on PDF p68. The
+[Renmin University publication notice](https://econ.ruc.edu.cn/kxyj/kycg/xslw/c031048ed9934d1f8e52d20f1a78bf51.htm)
+dated May 21, 2026 confirms online publication in The Review of Economics
+and Statistics; it is publication metadata, not verification that the
+inspected 2025 manuscript equals the final article. DOI 10.1162/REST.a.1769
+is a discovery lead still requiring primary bibliographic confirmation.
+
+Retain a mainland-China firm/industrial-development variation, not a generic
+health-policy catalog entry. Section5 Eq14 assigns firms in Beijing,
+Guangdong, Shanxi and Inner Mongolia to the severely affected group, versus
+firms in other mainland provinces. Its post indicator begins in2002 for
+Guangdong and2003 elsewhere; uniform2003 timing is a separate robustness
+specification, not the baseline. Section2.2 reports ASIE1998–2007, all SOEs
+plus non-SOEs with annual sales at least RMB5million, provincial WHO epidemic
+data and CEIC city controls. Baseline fixed effects are city, four-digit
+industry and year; firm effects appear in Section8 robustness. The estimated
+contrast includes both epidemic disruption and associated prevention measures
+(intro footnote3), not an isolated biological infection or pure demand effect.
+
+Section5 rejects unadjusted common markup trends (F9.64,p<0.001), driven by
+Guangdong. The authors subtract province-group pre-period trends and assume
+their continuation absent SARS. FigureA5 and this correction must remain
+visible in any ready record. Section6 Eq16 uses absolute provincial cases in
+hundreds, not infection rates; it is the same epidemic regime, not a second
+canonical instrument. Section7 reports gains in neighboring provinces, so
+controls are not demonstrably unexposed and the estimate is relative
+redistribution rather than a national aggregate effect. Section8 extends the
+treated set with Hebei and Tianjin, tests uniform2003 timing, firm effects and
+finished-goods inventory. These are applications/checks within one case.
+
+The preferred markup is inventory-adjusted via Eq10, using output value
+rather than sales for raw output/cost ratios and an industry-level probit
+non-stockout estimate in Section4. It is not an directly observed price-cost
+margin. Total inventory includes intermediates, work in process and finished
+goods; finished inventory is a robustness measure. Causal-steps inventory
+mediation is explicitly suggestive (footnote22), not separately identified.
+
+No matching SARS manufacturing case was found in canonical/candidate searches;
+existing2020 COVID community disclosure and city lockdown cases have different
+events, units and assignment. Resolve must inspect primary epidemic chronology
+and provincial case totals, clarify WHO attribution versus the actual
+provincial series, and avoid importing the manuscript's internally questionable
+global/mainland shares in Section2.1 as verified facts. Recover appendix
+sample cleaning, stockout coding, weighting/clustering, pre-trend fit period
+and location stability, plus final metadata before admission. Provincial
+case severity is realized exposure tied to mobility/reporting/control capacity,
+not randomized provincial assignment. Core joins are firm-year to province
+exposure and city controls; inventory/markup reconstruction is application-
+specific, not mandatory for every alternative firm outcome. No canonical
+record was created at screen and no files were deleted or pushed.
+
+### SARS binary firm exposure resolved with numerical-series limits — 2026-10-07
+
+Resolve `task-63c2f1a4c4fc` adds
+`china-2002-2003-sars-province-firm-exposure` as a grounded, conditional
+binary province comparison. Actual additional inspection read AppendixB
+PDF48–49 (1999–2002 trend fit; Guangdong inventory/uncertainty use the
+pre2002 slope, unlike markup), Tables2–5 PDF42–45 (city-industry-year
+clustering for firms, separate PPI weights/clustering), AppendixE/TableA2
+PDF57 (finished-goods inventory>0 codes non-stockout) and TablesA4–A8
+PDF59–62 (measurement alternatives and neighbor-control exclusion).
+Complete provider cleaning/code was not available in these inspected passages.
+
+Primary [WHO March28 report](https://www.who.int/emergencies/disease-outbreak-news/item/2003_03_28-en)
+establishes November16,2002 Guangdong onset and evolving national electronic
+reporting. The [official May30 Ministry briefing reprint](https://is.china-embassy.gov.cn/chn/zbgx/200405/t20040509_10122097.htm)
+grounds northern spread and joint transport/prevention responses; display2004
+is archive metadata, not event date. The [WHO final probable-case table](https://www.who.int/publications/m/item/summary-of-probable-sars-cases-with-onset-of-illness-from-1-november-2002-to-31-july-2003)
+was read with all footnotes: mainland5327 cases/349 deaths versus global8096/774.
+Those facts contradict the manuscript's mainland/global shares. The source
+behind its Beijing2772/Guangdong1520/Shanxi475/InnerMongolia317 counts remains
+unreconciled; neither severity replication nor precise neighbor-case thresholds
+are certified. This does not require inventing a dose series to preserve the
+explicit four-province binary comparison.
+
+Publisher-deposited Crossref metadata at
+`https://api.crossref.org/works/10.1162/REST.a.1769` confirms title, journal,
+DOI and online2026-05-14. The DOI landing page was inaccessible, while the
+university May21 notice corroborates online publication. Final2026 methods
+cannot be presumed identical to the inspected2025 body. Conditional use retains
+raw pretrend rejection, trend-continuation assumptions, interference, regional
+inference, survey/location selection and generated-outcome requirements. No
+separate case for severity, inventories or neighbor regressions, and no push.
+
+### Capital/intermediate tariff application: body-screened, reconcile WTO case — 2026-10-07
+
+Screen `task-ba374177508f` inspected Mo, Qiu, Zhang and Dong's
+[May2021 author manuscript](https://hongsongzhang.weebly.com/uploads/1/3/4/7/13473383/capitl_import_jde.pdf),
+66pages, especially Section2 PDF6–8, Section4.3 PDF21–22, AppendixA2/A3
+PDF35, product tablesA1/A2 PDF56–57, first-stage/exclusion tablesA5/A6
+PDF61–62 and Table8 PDF46. Author research metadata identifies JDE152,
+September2021; DOI lead10.1016/j.jdeveco.2021.102677 must be independently
+matched at resolve. This is China firm/development/innovation knowledge.
+
+Actual IVs are four-digit industry capital- and intermediate-good tariff
+changes since2000, plus lagged import statuses and lagged R&D for the relevant
+endogenous terms. WITS HS6 rates are joined to customs transactions and
+averaged separately using import-value weights. These are not Brandt et al.'s
+unweighted HS8 output averages or2002 IO-weighted input tariffs in existing
+`china-wto-accession-firm-performance`, nor its negotiated-bound-rate IV.
+Both papers nevertheless draw on the same annual Chinese tariff liberalization
+regime. Different weighting/classification, endogenous variables and outcomes
+justify an additional application/profile, not automatically a new instrument
+or a net ready increase. Resolve that identity before editing canonical.
+
+Section2 classifies capital by BEC41/521 and intermediates by
+111/121/21/22/31/322/42/53, with HS96 concordance before2002 and HS02 afterward.
+Automobile products receive manual classification and require the actual table
+or code, not just the generic BEC bridge. Firm customs/ASIE IDs differ; authors
+match by contact information and report17% ASIE linkage. Industrial coverage
+is all SOEs and non-SOEs with sales>=RMB5million, accounting-inconsistent rows
+and firms with fewer than8 employees are removed. Analysis2000–2006 includes
+both importers and non-importers, but IV tables exclude firms importing only
+through processing trade. Unmatched customs firms are not automatically verified
+non-importers. Keep data-access/entity-resolution conditions without copying
+any private firm contacts into this repository.
+
+The benchmark identifies import effects through a dynamic production model
+and a one-period-ahead decision assumption; tariff IVs are robustness, not the
+sole baseline design. Table8 and first stages use tariff changes since2000;
+the counterfactual uses changes since2001 and must not be confused with that
+IV reference year. Contemporary import-value weights can respond to liberalization.
+The authors motivate exclusion by arguing industry tariffs are unlikely to be
+correlated with firm productivity, and report insignificant direct tariff coefficients
+conditional on imports; this is not proof of the exclusion restriction, because
+domestic input costs/competition can change without direct firm importing.
+AppendixA5 reports relevance but not a complete weak-instrument certification.
+Generated revenue productivity, import timing, nonlinear instrumented terms,
+R&D endogeneity and firm-customs selection remain substantive conditions.
+
+Retain a candidate for resolving into the existing tariff case if evidence
+supports a compact, separate application/data contract. Do not overwrite its
+original default exposure, expand mandatory inputs for every user, call observed
+capital import exogenous, or turn simulated15-year gains into observed policy
+effects. Canonical files remain unchanged at screen; no push.
+
+### Capital/intermediate tariff application reconciled without duplicate count — 2026-10-07
+
+Resolve `task-624f27bb21bb` adds the Mo et al. application to existing
+`china-wto-accession-firm-performance`, preserving the default Brandt assignment,
+corrected deflator and data contract. Two explicit profiles keep the original
+performance contract available alongside the customs/BEC import/R&D contract;
+their requirements are alternatives, not a union. The common annual tariff
+regime remains one variation. DOI/title/journal/year were confirmed through
+publisher-deposited Crossref metadata; final typeset methods remain uninspected.
+
+Section4.3 PDF21–22 was reread completely: changes since2000 plus lagged import
+and R&D statuses instrument endogenous polynomial terms, followed by the
+baseline second step. The manuscript's awkward one-period-ahead wording is
+interpreted with its explicit t-1 notation, not shifted to future decisions.
+The screen-note exclusion summary was tightened to the authors' actual argument;
+WTO negotiation or province nondiscrimination is not an independently inspected
+proof. Counterfactuals use a different2001 reference. Classification/manual-auto
+mapping, undeclared executable weight-vintage choices, customs linkage,
+non-importer classification, lagged-IV validity and domestic input-price channels
+remain conditional. Adding the application improves research matching without
+raising ready count or certifying simulation as observed treatment effects.
+
+### Catalogue import-interest subsidy: published-body screen — 2026-10-07
+
+Screen `task-726a7a1d8c16` inspected Li, Lu and Wu,
+*Imports of key capital goods and quality upgrading: Evidence from China's
+import subsidy policy*, CER80(2023)101988,
+[29-page published PDF on RUC](https://ae.ruc.edu.cn/docs/2023-05/8fb028ac23be48368586a981cc46b43a.pdf),
+pp1–10, especially institutionalpp4–5, Eq1 p5–6, quality/share constructionp6,
+Eq2/pretrendsp8 and samplep9–10. DOI10.1016/j.chieco.2023.101988 appears
+on the typeset cover, online2023-05-09. No existing import-interest-subsidy
+candidate/canonical was found. It is a mainland firm-development/industrial
+upgrading mechanism, not a new banking/finance collection lane or a duplicate
+of WTO tariff cuts.
+
+The application holds the2008 catalogue PartB constant (reported147 HS8
+equipment lines, six intermediate lines excluded via BEC), uses Post>=2008
+through2013 and estimates two coherent margins within one subsidy regime.
+Eq1 compares subsidized/non-subsidized HS6 imports within firms, with
+firm-year and firm-product effects. Eq2 uses the mean of each annual2005–2007
+ratio of eligible capital imports to all capital imports, not a pooled total
+ratio and not the share of total imports. It joins fixed firm exposure to
+firm-HS6-destination-year export quality, with firm-product-destination and
+product-destination-year effects. Both cluster at firm and product levels.
+The quality outcome is CES demand-residual based, not observed physical quality.
+The author's zero convention for firms with only intermediate/consumption
+imports does not establish missing-denominator treatment in every year.
+
+The export sample has53,676 firms across219 CIC3 industries/296 prefectures:
+pre2005–2007 imports and exports both before/after2008, ordinary exports.
+The import specification requires pre/post firm-product cells (51,887 firms).
+Matched ASIF/customs IDs differ and require audited entity linkage; sample
+retention and the2011 survey threshold change can select the comparisons.
+High prepolicy equipment shares can proxy trends;2007 announcement creates
+anticipation in the share window;2008 crisis/high-tech certification/tax and
+export-rebate changes require outcome-specific checks. A subsidy eligibility
+proxy is not verified fund receipt or an automatic IV for equipment quantity.
+
+Retain for primary legal/assignment resolution. Official MOF source surfaced
+for 财企〔2007〕205号, signed2007-09-22:
+`https://www.mof.gov.cn/gkml/caizhengwengao/caizhengbuwengao2007/caizhengbuwengao200712/200805/t20080519_28777.htm`.
+Its full text has not yet been read; legal effective date, imports eligible
+for the first funding round, catalogue revisions, application thresholds,
+caps and rate definition must be checked rather than imported from the paper.
+The manuscript calls its rate LPR even for early years; resolve the original
+one-year benchmark lending-rate language. Recover2008 catalogue and HS8→HS6
+any/all collapse and technical-condition coverage; footnote7 has inconsistent
+code/product descriptions, so do not reproduce its six-line exclusion blindly.
+No canonical edits at screen, no file deletion and no push.
+
+### Import-interest subsidy: primary-law resolution blocked — 2026-10-07
+
+Resolve `task-3a32c5483268`, candidate `candidate-4ad027de866d`, inspected
+the full [2007 MOF Measures](https://www.mof.gov.cn/gkml/caizhengwengao/caizhengbuwengao2007/caizhengbuwengao200712/200805/t20080519_28777.htm),
+signed2007-09-22, especially Arts2,5–6,8–13 and18. Article18 makes the
+measure effective upon publication, not explicitly2008-01-01; the website's
+2008-05-19 display date is not the signing date. Ordinary-trade imports of
+new catalogue products are eligible subject to clean compliance history,
+applicant/consignee identity, no overlapping interest-support plan and
+additional PartC project conditions. Application, review and payment follow
+the imports; catalogue membership alone does not establish receipt. Article6
+uses the latest PBOC one-year lending rate at settlement and a budget-dependent
+coefficient, not LPR. It does not state a RMB30m cap.
+
+The [MOFCOM interview](https://interview.mofcom.gov.cn/detail/201605/1376.html)
+was inspected through its full HTML, not the search excerpt: Zhang Ji's
+2009-02-18 17:46:39 reply to Liang Yunpeng says the2007 annual import-support
+review and disbursement had been completed at the end of the preceding year,
+while the2008 round was being studied. This distinguishes import/reference
+year from funding year and contradicts treating2007 as unquestionably
+unexposed. It does not by itself recover the exact first-round eligible dates.
+
+The full [2012 revised Measures](https://www.mof.gov.cn/gp/xxgkml/zcgls/201211/t20121125_2500876.htm),
+财企〔2012〕142号, signed2012-06-11 (page metadata2012-07-03),
+Arts5–6,9–14 and19, explicitly replace the2007 rules upon issuance.
+Article6(4) states the RMB30m enterprise cap; its existence here does not
+prove the same cap applied in2008. Article19 rules out simply retaining the
+2007 legal regime until2014 as the paper's footnote5 suggests.
+The full [2013 application notice](https://www.mof.gov.cn/gkml/caizhengwengao/wg2013/wg201305/201310/t20131025_1003642.htm),
+signed2013-03-26, 财企〔2013〕35号, sectionsI–III, uses the2012
+Measures and2011 catalogue for2012 imports. SectionII(3)(2) requires product
+name/code/technical-parameter checks, permits name/function classification
+when codes are absent and treats disaggregated complete equipment specially.
+Thus a fixed HS6 flag is a paper exposure proxy, not verified annual legal
+eligibility. Annual catalogue changes and the revision fall inside the
+paper's2002–2013 window.
+
+Do not publish a canonical or add ready count yet. Recover the original
+catalogue underlying the paper's "2008"147-line PartB definition, its dated
+successors, HS8-to-HS6 aggregation and BEC exclusions, plus the first funding
+round and author replication choices. Resolve whether Post2008 represents
+fund receipt, implementation or the paper's chosen coding despite earlier
+eligibility; preserve2007 anticipation in the2005–2007 exposure window.
+The differing dates, rate and legal revisions are specific evidence conflicts,
+not grounds to discard a potentially useful industrial-upgrading variation.
+Firm/year zero denominators, ASIF/customs linkage and selected pre/post samples
+remain conditional data issues; they cannot repair the unresolved treatment
+identity. Candidate retained blocked with these reopening conditions. No
+canonical content removed, no files moved and no GitHub push.
+
+### Public-procurement local favoritism: bounded screen blocked — 2026-10-07
+
+Screen `task-f3ca71840f77` inspected the publisher's indexed Introduction
+and metadata for Tang, Wang and Wu, *Local favoritism in China's public
+procurement: Information frictions or incentive distortion?*, JUE145(2025)
+103716, [DOI](https://doi.org/10.1016/j.jue.2024.103716).
+The accessible introduction describes local/nonlocal bidders in the same
+auction with auction and firm effects. Mayor predicted promotion prospects,
+growth pressures and ages58–59 are explanatory comparisons; do not convert
+them into a verified retirement-cutoff experiment. Central inspections and
+leader corruption investigations appear as additional tests, not a newly
+verified procurement reform. Full institutional/data/specification sections
+and appendix were not inspected. The core comparison is mainland regional
+procurement, but local bidder status alone is not an assigned exogenous shock.
+
+The author-deposited [replication metadata](https://data.mendeley.com/datasets/nw6tjvzk33/1)
+identify version1, published2024-10-25, DOI10.17632/nw6tjvzk33.1, and a
+data/code package. Its file listing was not accessible: direct page and
+public-API requests returned403, while the browser-readable metadata did not
+expose files. No executable code, threshold rule or treatment table was read.
+Reopen on an accessible final body/appendix or replication file manifest and
+inspect the career measure and inspection timing before deciding whether
+there is a distinct assignment or only an application of existing inspection
+variation. No canonical publication, no ready gain and no push; this is an
+access/evidence disposition, not a claim that the full paper has no shock.
+
+### Mainland earthquake occurrence and regional growth: screen — 2026-10-07
+
+Within the existing Economics-2 *World Development* development/regional-shock
+lane, screen `task-54002222fe65` inspected the publisher-indexed Introduction
+of Huang, Liu and Tang, *Long-term economic impact of disasters: Evidence
+from multiple earthquakes in China*, WD174(2024)106446,
+[publisher](https://www.sciencedirect.com/science/article/pii/S0305750X23002644),
+[DOI](https://doi.org/10.1016/j.worlddev.2023.106446).
+No DOI/mechanism match was found in the candidate or canonical collection.
+This is a mainland regional-growth shock, not environmental regulation,
+agricultural production or a new reconstruction-aid regime. The earlier
+Wenchuan reconstruction source concerns a different assignment.
+
+The inspected Introduction describes prefecture panels restricted to seismic
+provinces, comparing earthquake occurrences since1990 with no occurrences.
+It separates short-run effects within three years from longer effects and
+describes alternative controls with comparable seismic risks, seismic-belt
+locations, or nearby but nonadjacent geography. These are source-reported
+design choices; exact province lists and spatial rules were not inspected.
+The paper-used shock is worth retaining, but natural timing does not remove
+baseline geological-risk sorting, migration, reconstruction or spillovers.
+
+Direct publisher access returned403. The indexed preview does not expose
+Section3's complete estimator, catalogue, magnitude thresholds, panel endpoint,
+event-to-prefecture mapping or repeated-event handling. Retain for resolve:
+obtain body/appendix and identify the primary earthquake catalogue, magnitude
+scale/threshold and affected-area rule, first versus repeated shocks, annual
+timing, historical geography and GDP/innovation joins. Inspect pretrends,
+staggered-treatment comparisons, inference and reconstruction-aid confounding.
+Do not substitute generic USGS events or invent an absorbing first-event
+treatment. This screen leaves canonical unchanged; publication requires a
+recoverable exposure, comparison and evidence boundary, not an earthquake
+title or the paper's estimated growth loss. Local accumulation only; no push.
+
+Resolve `task-93ff1c076468` checked DOI-level OpenAlex locations on2026-10-07:
+it lists the publisher and RePEc only, with no OA URL or repository full text.
+That is a discovery observation, not proof that no author copy exists. The
+Shandong seminar lead names coauthor Qiannan Liu but describes a firm-level
+project, not an inspectable copy of this prefecture paper. The accessible
+2026 Sheng–He–Hu disaster-geography article uses lagged GDIS event counts
+and customs export-product entry, a different application; its coding cannot
+be substituted for the WD paper's missing magnitude/episode construction.
+Core mapping and repeated-event treatment remain unresolved. Retain blocked
+until the actual WD body/appendix or author replication supplies those items;
+no generic earthquake record is published from these non-equivalent sources.
+
+### The World Economy: bounded Tianjin policy screen — 2026-10-07
+
+Screen `task-9b4a7a18e06d` opens a one-paper secondary economics-journal
+boundary: **The World Economy**, Du, Ge, Li, Pei and Zhou (2025),
+*Special Economic Zone and Local Economic Performance in China: Evidence
+From Tianjin*, 48(5),1060–1071, DOI10.1111/twec.13669. The
+[publisher article page](https://onlinelibrary.wiley.com/doi/10.1111/twec.13669)
+establishes journal identity, authors, pagination and first publication on
+February21,2025; [RePEc metadata](https://ideas.repec.org/a/bla/worlde/v48y2025i5p1060-1071.html)
+independently cross-checks the citation. This is targeted regional-development
+coverage outside the field-top lane, not a claimed SSCI/quartile ranking or
+a completed journal-wide search. No other article is covered by this boundary.
+
+The publisher Abstract was inspected, not the body. It reports a2006
+Tianjin policy application using other provinces to predict a counterfactual,
+with GDP, investment, employment and exports as outcomes. References name
+State Council document国发〔2006〕20号. Retain as `china-variation`:
+the potential object is a national place-based development package faced by
+mainland Tianjin, not another outcome for the generic SEZ establishment
+record. The exact municipality-versus-Binhai exposure and package boundary
+remain a resolve decision. Neither a synthetic-control label nor a DID
+specification is established by the Abstract or the cited methodological papers.
+
+The [Dongjiang authority's reproduction](https://www.dongjiang.gov.cn/contents/26/4462.html)
+of国发〔2006〕20号 was inspected in full, metadata and sectionsI–IV.
+It dates the document to May26,2006, distinct from the webpage's2015 upload.
+SectionI defines Binhai through named districts/zones and parts of Dongli and
+Jinnan; sectionIII authorizes a comprehensive reform experiment, openness,
+land and differentiated fiscal support. SectionIV requires further plans and
+implementation measures. Thus a2006 authorization is not proof that every
+instrument started simultaneously or that every Tianjin firm qualified.
+As an analytical implication, a whole-Tianjin estimate needs an explicit
+bridge to this narrower legal geography and cannot isolate one package
+component without further evidence. No separate finance variation is opened.
+
+The publisher's Data Availability Statement says data are available upon
+reasonable request, not that an inspected public replication archive exists.
+The body/appendix has not been inspected. Follow-up must recover sample years,
+donor exclusions, outcome definitions and statistical vintages, estimation and
+pre-policy fit, annual intervention coding, historical province identifiers,
+anticipation, spillovers and overlapping development policies. The old
+author research page's2015 differently titled/four-author project is a lead,
+not a verified version of this five-author publication. RePEc's unrestricted
+download label does not establish actual full-text access. Leave canonical
+unchanged until assignment, comparison and joins are recoverable; local only.
+
+Resolve `task-f2b12bb893f4` followed the publisher's full-text link without
+recovering the body; the PDF endpoint returned403 on2026-10-07. The inspected
+[current Fudan author profile](https://econ.fudan.edu.cn/info/1028/17176.htm)
+supplies biography/CV links, not an identified manuscript download. Prior
+DOI-level OpenAlex discovery listed no OA copy. These observations delimit
+this attempt, not all possible lawful author/library access. The official
+authorization is recoverable, but the paper's province donor selection,
+pre/post sample, intervention encoding and outcome/statistical-vintage joins
+are not. End blocked rather than turn an abstract-level counterfactual into
+a ready design. Reopen when an actual body/appendix or replication source
+becomes available; do not repeat the same failed endpoints without a new lead.
+
+### Chinese manufacturing relocation: descriptive winners are not assignment — 2026-10-07
+
+Screen `task-2df7b1f14a3a` follows the established JDE firm/trade lane.
+Garred and Yuan (2025), *Relocation from China (with Chinese characteristics)*,
+JDE176:103510, DOI10.1016/j.jdeveco.2025.103510, is independently linked
+to the final journal citation by [RePEc](https://ideas.repec.org/a/eee/deveco/v176y2025ics0304387825000616.html).
+The inspected [author manuscript](https://jasongarred.org/GarredYuan2025_relocation.pdf)
+is dated March30,2025, not labelled the publisher version. Relevant body
+sections2–5, printedpp5–8 and12–18, were inspected.
+
+Its baseline exposure weights2018–2022 country/product US import-share
+changes by a Chinese business group's2016 US-export mix. Sections3.2 and4.2
+explicitly describe noncausal evidence. Affiliate entry is analysed with
+firm/country fixed effects and PPML; the parts-export exercise uses OLS.
+Section5 equation4 instead uses Bown's2018–2019 tariff increases, weighted
+by baseline US-product exports divided by **total exports**, to split samples
+above/below median. That denominator differs from the baseline winner weight.
+The firm baseline is2016; goods-category exposure uses2017. This is a
+heterogeneity check, not a tariff IV for winner status. Section3.1 joins
+CSMAR mainland business-group names to customs by exact names and tracks
+affiliate names/locations; section4 links parts/downstream HS categories.
+
+Disposition: skip a **new variation candidate**, not the research topic.
+Ex-post winner status does not establish an external assignment, and the
+tariff grouping points to the existing China-facing US-tariff candidate
+`candidate-7542bdbb5d68`, whose institutional/code bridge remains blocked.
+No separate mechanism is justified by a different relocation outcome.
+Retain this paper as an application lead for that candidate when its core
+evidence closes; a later audit must verify the final version and exact code
+before adding a design profile. A new ready entry based on descriptive
+comovement would misstate the estimand. No canonical change, new overseas
+method record, source PDF deposit or GitHub push is made.
+
+### Treaty-port openings and modern firm entry: new development candidate — 2026-10-07
+
+Screen `task-ef0ddae67d40` follows the established JDE development/regional
+lane. Duan and Zhang, *Awakening latent human capital: Economic opening up
+and entrepreneurship in19th century China*, JDE179(February2026):103659,
+DOI10.1016/j.jdeveco.2025.103659, is identified by the
+[HKU publication page](https://www.cqh.hku.hk/research/awakening-latent-human-capital-the-opening-up-and-entrepreneurship-in-19th-century-china-2/)
+and [independent RePEc citation](https://ideas.repec.org/a/eee/deveco/v179y2026ics030438782500210x.html).
+The accessible [HKU working paper](https://www.cqh.hku.hk/wp-content/uploads/2025/04/Awakening-Latent-Human-Capital-The-Opening-up-and-Entrepreneurship-in-19th-Century-China.pdf)
+contains body and appendix, despite the search preview labelling it only an
+appendix. Its cover identifies April2025, not the final published version.
+
+Inspected Section2.2, printedpp9–12, describes strategic, nonrandom port
+selection and a91-prefecture matched subsample. Section3.2, pp18–20,
+uses absorbing prefecture opening exposure interacted with pre1840 book
+density; this is not simply an average port-opening effect. AppendixC.6,
+pp38–39, supplies34 treated prefectures in18 cohorts, including Taiwan府.
+The roster codes Quanzhou1845 and Chongqing1891; the narrative's broad wave
+dates are not a substitute for those rows. Figure2 includes concessions too.
+The relevant sample spans1840–1904, with modern firm entry as the outcome.
+These are working-paper-reported constructions, not independently verified
+treaty dates or proof of random exposure.
+
+Retain `china-variation` for the **mainland prefecture** application of
+forced port opening. Scope reconciliation must not silently copy the full
+historical sample or call Taiwan a mainland observation. This assignment is
+different from the1902 Native Customs takeover candidate and the existing
+1905 keju abolition case; book/intellectual heterogeneity is not another
+shock. Resolve must inspect the final body/appendix, distinguish legal treaty
+signing from operational opening and earlier Canton trade, recover the
+historical prefecture crosswalk and firm-entry sources, and assess book-stock
+interactions, selection, anticipation and staggered comparisons. Priority is
+regional industrial development, not collection of an examination-policy
+variation. Canonical remains unchanged; no PDF deposit or GitHub push.
+
+Resolve `task-34092086f7c3` inspected the same working paper's printedpp15–16
+and AppendixC.1, pp31–32, including the complete TableC12 source key. Firm
+entry combines Zhang's ownership-specific historical compilations and Du1991;
+private-firm coverage is weaker and the paper adds the latter source. Port
+exposure comes from Yan2012, while book and population construction use
+separate historical catalogues and Cao2000. These source names do not supply
+an inspectable machine-readable firm-year/prefecture crosswalk. The geographical
+controls' cited earlier study is not documentation of that crosswalk.
+
+An inspected [official Xiamen historical account](https://xm.fjdsfzw.org.cn/2024-09-05/content_151781.html),
+“明清时期,” attributes its text to Xiamen municipal government and dates
+Xiamen's opening to November2,1843. This differs from the working-paper
+TableC14's Quanzhou1845 row. Preserve both: city-to-historical-prefecture
+mapping, full-year treatment conventions and different events could matter;
+the difference is not itself an established paper error. Do not silently
+rewrite the author-coded year or call1845 an independently verified opening.
+Treaty signing, operational opening, concessions and customs takeover are
+different clocks. The source already shows why one broad Opium-War date
+would erase the paper's assignment.
+
+The [coauthor publication page](https://xiaoming-zhang.wixsite.com/academics/publications)
+links the publisher rather than an accessible final manuscript. Its
+[Data page](https://xiaoming-zhang.wixsite.com/academics/about) explicitly labels
+the offered download for《历史社会学研究与定量方法》, not this JDE paper;
+no unrelated archive was downloaded. Final publisher body access failed.
+End blocked with the useful April2025 application retained: reopen on an
+actual final body/appendix or roster/code explaining the year convention,
+mainland subset and historical unit joins. No new canonical record or ready
+promotion follows from this partially resolved chain; no source PDF is stored.
+
+### Technology-transfer centers and firm entry: identity before city treatment — 2026-10-07
+
+Screen `task-58e45d987875` follows the already opened China & World Economy
+secondary China-economics lane, with a one-paper boundary rather than a
+journal-wide completion claim. Li, Huang and Wang (2025), *Impact of National
+Technology Transfer Markets on Entrepreneurship in China*,33(3):76–108,
+DOI10.1111/cwe.12590, is identified by the
+[publisher metadata/Abstract](https://onlinelibrary.wiley.com/doi/10.1111/cwe.12590)
+and [independent RePEc record](https://ideas.repec.org/a/bla/chinae/v33y2025i3p76-108.html).
+The publisher dates first publication to May15,2025. Its Abstract reports
+center establishment as staggered exposure and business registrations as the
+entrepreneurship data. Retain `china-variation` as a regional innovation/firm
+entry lead, not a finance variation merely because finance appears among
+reported heterogeneity variables.
+
+The publisher full-text route redirects to an Abstract/reference page; body,
+appendix, actual city list and assignment dates have not been inspected.
+Neither the title's “markets” nor the Abstract's “centers” identifies which
+official program supplies the treatment. The inspected
+[MOST2017 technology-market plan](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2017/201706/t20170622_133693.html)
+distinguishes regional centers, demonstration institutions and innovation
+stations in sectionsIII(II)(2) andIII(IV)(3). It explains institutional
+context, not this paper's roster or dates.
+Do not combine regional-center approvals, university-center pilots,
+institution certification and international centers into one exposure.
+
+Resolve should recover the actual instrument and official name, establishment
+versus recognition dates, host versus served cities and branches, cohort list,
+selection rationale, sample years, registration outcome denominators and
+historical city/business joins. Distinguish national recognition of an
+existing institution from creation of a new local market, and examine
+spillovers, anticipation, other innovation pilots and staggered comparisons.
+Source claims of successful robustness tests are not independently verified
+causal validity. No canonical file is created from the Abstract; no journal
+ranking, public data archive or ready-count increase is asserted. Local only.
+
+Resolve `task-3d54b3e714d5` inspected the complete
+[MOST/MOE university-transfer opinion](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2020/202005/t20200519_154180.html),
+国科发区〔2020〕133号, signed May13,2020 and posted May19.
+SectionII(1) permits several university organizational forms; sectionIII(2)
+builds pilots on already recognized institutions and university bases, with
+selection emphasizing institutional innovation and demonstrated transfer
+performance. SectionI(2)'s approximately100 centers is a development target,
+not a realized city roster. Thus the same center terminology can describe
+institution-level recognition or reorganization, not necessarily a new
+city-level service market [analytical inference]. This document establishes
+that boundary risk, not which regime Li, Huang and Wang actually used.
+
+An exact-title search yielded no inspectable manuscript or replication
+archive; the publisher ePDF route was inaccessible. Existing metadata and
+Abstract do not reveal the paper's roster, cohort years, sample interval,
+host-versus-service geography or registration/city joins. End blocked rather
+than converting the2020 opinion or2017 plan into the paper's assignment.
+Reopen with an actual body/appendix and treatment roster sufficient to bridge
+the official regime to city-year exposure. Preserve the candidate and sources;
+no new canonical record, ready promotion or GitHub operation.
+
+### Drug procurement and firm innovation: procurement eligibility is not headquarters exposure — 2026-10-07
+
+Screen `task-a89a894f81d0` uses the existing Economic Analysis and Policy
+secondary lane, bounded to one paper. Zhang, Huang and Luo,89(2026):421–441,
+DOI10.1016/j.eap.2025.12.013, is independently indexed by
+[RePEc](https://ideas.repec.org/a/eee/ecanpo/v89y2026icp421-441.html).
+The direct publisher page returned403, but the
+[author-uploaded typeset body](https://www.researchgate.net/publication/398506958_Industry_Regulation_and_Firm_Innovation_Evidence_from_National_Centralized_Drug_Procurement_Policy_in_China)
+was inspected in sections2,4.1–4.3, Table1 and footnotes6–8, pp422–426.
+It dates online availability to December9,2025. The2015–2020 listed-firm
+sample has1234 firm-years; data sources include CSMAR, Wind and Shanghai
+Sunshine procurement records. The outcome is R&D/assets. The application
+interacts Western-medicine firm status versus traditional-Chinese-medicine
+firms with headquarters-region exposure from2018/2019/2020, based on
+selected-result years rather than notice dates. The authors acknowledge
+nonpilot bidders and use proximity, not legal exclusion, to justify geography.
+Retain as `china-variation`; no exact DOI/mechanism match was found.
+
+The complete [State Council pilot plan](https://app.www.gov.cn/govdata/gov/201901/17/434233/article.html),
+国办发〔2019〕2号, signed January1,2019, independently verifies11 purchaser
+cities in I(1). II(1–4) permits eligible mainland-marketed product producers
+to participate irrespective of headquarters, with product-quality and supply
+requirements and different selection procedures according to bidder counts.
+III(1–2) defines volume commitments and institution use; VI states early2019
+execution. Consequently2018 paper exposure is a results/anticipation clock,
+not a verified full-year procurement implementation date [analytical inference].
+
+Resolve must recover product and firm classification, roster/result dates,
+expansion versus new-product batches, headquarters identifiers and location
+changes, comparison support after nationwide coverage, and data joins.
+Read the relevant appendices before attributing diagnostics; examine
+nonpilot suppliers, product mix, concurrent consistency evaluation and
+heterogeneous rollout. Winning is endogenous and not a new external
+assignment by itself. No canonical admission or ready increase at screen;
+no full-text file stored and no GitHub operation.
+
+Resolve `task-ca0833ac48de` inspected AppendixA/TableA.1, AppendixB's
+caption, AppendixC/TableC.1 and sections5.2.3–5.2.5, pp427–431,438–439,
+in the same author-uploaded body. TableC.1 repeats the binary drug-type rule
+without a firm classification crosswalk or mixed-product rule. Random-label
+placebos in5.2.3 do not establish absence of TCM spillovers [analytical
+inference]. Section5.2.4 reports alternative staggered estimators, not
+independent verification of their implementation. AppendixB's caption does
+not reveal the bidder-to-headquarters matching procedure; its figure was
+not visually inspected. Retain these access limits.
+
+The complete [NHSA expansion opinion](https://www.nhsa.gov.cn/art/2019/9/30/art_104_6460.html),
+医保发〔2019〕56号, signed September25,2019 and posted September30,
+verifies a purchaser-side regional expansion of the initial25 generic names
+(II(1)), not simply the introduction of new products in2020. II(8) excludes
+the four municipalities and provinces that had already followed the pilot,
+while participating provinces and Xinjiang Production and Construction
+Corps form the alliance voluntarily. III(1) excludes initial pilot cities
+from submitted quantities. II(6–7) allows up to three winners and1–3-year
+agreements, changing the initial selection/contract regime. This is suitable
+institutional evidence, not a verification that the paper's Table1 accounts
+for every earlier local follow-on or supplier market.
+
+The [association-hosted Joint Procurement Office result notice](https://www.phirda.com/artilce_18938.html)
+is explicitly a reproduced notice, signed December17,2018 and posted the
+following day. Its operative paragraph states that execution would be
+announced separately. Its linked original-platform roster was inaccessible;
+do not claim the attachment inspected. It corroborates a results clock
+distinct from physical procurement, not a full-year2018 implementation.
+
+End blocked for the unresolved bridge from actual purchaser/product rollout
+to the paper's headquarters-by-drug-type exposure: obtain the firm class
+mapping and mixed-product convention, geographic crosswalk and early-adopter
+handling, and results/implementation calendar. Headquarters and procurement
+participants require separate identifiers; a current corporate address or
+winning status cannot substitute. Nationwide coverage removes untreated
+regions but not the drug-type comparison, whose differential trends and
+spillovers still require assessment [analytical inference]. The inspected
+sources support a real firm/industry policy lead, not a canonical-ready
+assignment yet. No new record or maturity downgrade; local only.
+
+### Pilot free-trade zones and firm performance: recover the spatial treatment — 2026-10-07
+
+Screen `task-5af42bcfa921` opens a bounded Economic Inquiry secondary
+general-economics lane for one paper, not a ranking or journal-wide audit.
+The [publisher metadata and Abstract](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecin.70062)
+and [independent RePEc citation](https://ideas.repec.org/a/bla/ecinqu/v64y2026i3p931-954.html)
+identify Zhang and Zhao(2026), *Free market initiatives: Benefits and
+distortions from political power*,64(3):931–954, DOI10.1111/ecin.70062,
+first published April18. The Abstract reports actual FTZ implementation
+used in two staggered-DID settings for mainland firm productivity and exports;
+political power is heterogeneity, not a separate external assignment.
+Retain `china-variation` for regional openness and firm development, not a
+finance-policy case merely because financing expenses appear as a mechanism.
+No exact DOI or active FTZ canonical/candidate match was found.
+
+The full route redirects to Abstract/references; the supporting appendix
+link failed. The data statement points to DOI10.3886/E239716V7. The
+[archive route](https://www.openicpsr.org/openicpsr/project/239716/version/V7/view)
+now redirects to an ICPSR page returning only an iframe through this tool.
+Search indexing exposes code/data/output folders and `readme_260310.pdf`,
+but their content, access conditions and treatment construction have not
+been inspected. This is a concrete resolve lead, not proof of usable files
+or reproduced results. ResearchGate offers a request, not an open body.
+
+Resolve should inspect that README, code and paper to distinguish firms
+inside dated zone boundaries from firms anywhere in a host city/province;
+recover both empirical settings, historical firm addresses/IDs, sample
+years and outcome joins. Initial Shanghai's four pre-existing customs
+areas, subsequent within-zone expansion and later provincial cohorts must
+not become a single universal treatment rule. The Shanghai tax-agency plan
+route returned a timeout; its search preview is a lead only. Do not conflate
+pilot FTZs with export-processing or bonded zones, or the existing general
+market-access negative-list provincial pilot. No canonical admission,
+new ready record, downloaded archive or GitHub operation at screen.
+
+Resolve `task-5738d7c39fff` recovered the live archive through browser
+rendering rather than the text-only iframe response. The inspected
+[ICPSR study page](https://www.icpsr.umich.edu/sites/weai/view/studies/239716/versions/V7)
+identifies DOI10.3886/E239716V7, a self-published public deposit and MIT
+license metadata, with V7.0 published March11,2026 and V7.1 metadata
+migration dated March14. The depositors describe two source datasets and
+seven main Stata scripts; that description is reported, not a rerun.
+The [Data & documentation directory](https://www.icpsr.umich.edu/sites/weai/view/studies/239716/versions/V7/data-documentation)
+actually lists `readme_260310.pdf` and code/data/output folders. Inspected
+code filenames include `data_clean_syn_260120.do`, `ftz_reg_1020.do`,
+`ftz_exo_TableA2_1020.do` and `run_all_260120.do`; the data directory lists
+`merge_policy_var.dta`, `ftz_1020_reg.dta`, `ftz_1020_reg_syn.dta`,
+`gyqy_raw_0120_syn.dta` and `ssgs_raw_0120.dta`, among other files.
+Filenames establish neither variable meanings nor authentic-data availability;
+in particular `syn` is a reason to inspect documentation, not proof of
+synthetic content. The README download control redirected to an ICPSR
+sign-in page; no credentials entered, account created, file downloaded or
+code executed. ICPSR explicitly says it has not checked or processed this
+self-published material. Do not infer verified replication from the listing.
+
+The inspected [Shanghai management measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/node92/201310/t404844.html),
+上海市人民政府令第7号, were promulgated September29,2013 and effective
+October1(Article39). Article2 limits the initial regime to four existing
+customs-supervised areas totaling28.78square kilometers. Article5 transfers
+their previous administrative functions to the new committee; Articles10–14
+describe service-opening, foreign-investment negative-list filing and
+enterprise-registration changes. This independently verifies a geographically
+limited institutional reform, not treatment of every Shanghai firm. The
+tax-agency page reproduces the city's measures, not a paper assignment file.
+
+End blocked at the paper-to-institution bridge: the two empirical settings,
+firm location rule, years/cohorts, comparisons and identifiers remain
+unrecoverable from the Abstract and filenames. Reopen on accessible paper/
+appendix or README and the listed cleaning/policy/regression code. Inspect
+the distinction between actual versus synthetic data and historical versus
+current addresses before claiming a reproducible treatment. No canonical
+record or ready promotion; source knowledge and candidate preserved locally.
+
+### ROIE pilot FTZ and new firm entry — full-body screen, 2026-10-07
+
+Screen `task-714d3c034663` retained `candidate-48e99f9e05e7` from
+Jiang, Lu and Yang, *Pilot Free Trade Zone Establishment and New Firm Entry:
+Evidence from China*, Review of International Economics33(2):335–351 (2025),
+DOI10.1111/roie.12778, first published2024-11-13. The
+[publisher full text](https://onlinelibrary.wiley.com/doi/full/10.1111/roie.12778)
+actually rendered in the browser; inspected access is body, tables and
+endnotes, not search snippets or Abstract. This is an existing secondary
+journal lane, not a new journal-ranking claim.
+
+Sections3.1–3.3 report SAIC registration records aggregated to288 prefectures,
+2003–2020,5167 observations, and new registrations per100 residents.
+Treatment begins in the host prefecture's FTZ establishment year and persists.
+State Council overall plans supply names, years and host prefectures. This is
+regional exposure, not proof that every firm receives inside-zone benefits.
+Selection is explicitly nonrandom;2012 determinants interacted with year
+effects address observed selection, not unobserved counterfactual trends.
+Table3 includes an imputation-estimator robustness exercise; section6.2 uses
+distance rings and reports nearby spillovers, so untreated neighbours cannot
+automatically serve as unexposed controls. Section6.1.2 uses a2022–2023
+innovation index after the outcome window, not a predetermined instrument.
+
+Resolve the cohort geography before admission: section3.1.2 reports51
+prefectures through2020, while section2.1's2023 overview also reports51 plus
+Hainan and endnote6 excludes Xinjiang2023. Preserve this discrepancy rather
+than constructing an unsupported roster. Data availability is author-request
+only. Reconcile the shared policy family with candidate2bc5cc93f059; different
+outcomes alone do not justify separate canonical variations. Screen makes no
+canonical change or ready increment.
+
+### FTZ host-prefecture resolution — expansion clock recovered, 2026-10-07
+
+Resolve `task-fa1e23336f6d` independently inspected
+[the Shanghai overall plan reproduced by MOFCOM](https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=63285),
+国发〔2013〕38号,2013-09-18. SectionI(3) names four existing customs
+areas; SectionII(5) distinguishes the2013-10-01 temporary administrative
+approval adjustment. The appendix explicitly restricts its opening measures
+to enterprises registered inside the zone. Annual host-city exposure remains
+an aggregate research application, not an expansion of that legal eligibility.
+The page attributes its legal text to a third-party provider; its metadata
+implementation date is not substituted for the operative clause.
+
+[国发〔2020〕10号,2020-08-30](https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2020/art_87e8466e0c334e66a7e235d04925597a.html)
+was inspected as actual full official text: Zhejiang expansion SectionII(1)
+adds Ningbo46km2, Hangzhou37.51km2 and Jinyi35.99km2. These are new host
+locations in an existing provincial FTZ, not necessarily exposed from its
+original establishment. The notification separately introduces Beijing,
+Hunan and Anhui; it does not designate all residents of those provinces.
+
+The [CIIE-hosted ten-year development report](https://www.ciie.org/resource/upload/zbh/202403/28142607hwcd.pdf)
+was inspected through extracted text, printedpp167–168 and175. It distinguishes
+central approval of seven zones in2016 from the paper's2017 establishment
+cohort, and confirms the2020 expansion instrument. PDF screenshot retrieval
+failed; no visual table inspection is claimed. This report is an institutional
+chronology, not the author's51-prefecture treatment table.
+
+The policy family and paper's aggregate assignment are identified. Admission
+remains blocked specifically on the host/cohort crosswalk: recover the author's
+city-year file or an appendix mapping expansion hosts, Hainan's island-wide
+regime and the reported51-prefecture sample. Do not reset existing-host clocks
+at expansion, backdate new hosts to provincial approval, or silently correct
+the paper's count. Raw registration microdata need not be public to ground a
+variation; the missing item is the encoded exposure, not a demand to rerun the
+entire paper. Candidate2bc5cc93f059 remains a related FTZ paper, not a second
+admitted mechanism. No canonical change or ready increment.
+
+### Binhai development package — publisher body recovered, 2026-10-07
+
+Resolve `task-b75376fd84be` supersedes the Abstract-only access limitation
+of `candidate-b8acaf4118fd` without removing its blocked history. The actual
+[publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/twec.13669)
+was inspected through Sections1–4.4, Tables1–10, endnotes and data statement.
+The [official Dongjiang reproduction](https://www.dongjiang.gov.cn/contents/26/4462.html)
+was re-read in full. The national package designates Binhai; the paper
+observes Tianjin's province-equivalent aggregate rather than every firm's
+legal eligibility. No exact Binhai/DOI canonical match was found.
+
+Admission serves the explicit GDP contrast: fit2000Q1–2006Q2, evaluate
+2006Q3–2012Q2 (Section4.1/Table2), CEIC GDP and CPI with province/quarter
+joins. The20-province eligible pool is recorded in full, together with
+Bohai-neighbour, similar-policy, earthquake and other exclusions. GDP's
+selected subset is Shanxi, Jilin, Jiangsu, Fujian, Hubei and Hainan. The
+adjusted-R2/AICC search leads to OLS with an intercept and signed weights,
+not convex synthetic control or DID. No code or coefficients were rerun.
+
+Retain source conflicts: Section3 instead calls2006Q2 the first treated
+quarter; the nearby end2012 sentence differs from Table2; employment prose
+says Guangzhou whereas Table5 says Guizhou. Table1's high prefit is not
+validation of unconfounded postpolicy prediction. Monthly investment has
+a different time contract (2004M1–2006M5 fitting,2006M6–2012M4 evaluation);
+export/import evaluate through2012Q4. These applications do not add mechanisms
+or silently inherit the GDP contract. Figure captions were read, not images.
+The new grounded record preserves conditional macro use, timing sensitivities,
+donor contamination, deflator/vintage concerns and aggregate-versus-direct
+eligibility. Local accumulation only; no GitHub operation.
+
+### OFC industrial development — actual methods recovered, 2026-10-07
+
+Resolve `task-9c1aa712bae4` revisits `candidate-6f8258f6d45b` with newly
+accessible [publisher full text](https://onlinelibrary.wiley.com/doi/full/10.1111/ecot.12294).
+Inspected Sections2–5.2, Tables1–5, AppendixA/TablesA1–A2 and endnotes.
+The body now establishes the actual application: announcements before
+June30 count that year, later announcements the following year; sensitivity
+cutoffs March31/September30 are request-only (note12). The main1985–1991
+panel uses1985 county boundaries, excluding city districts and Tibet.
+County and province-year effects, geography-by-year controls and county
+clusters are reported. Table2 baseline has13661 county-years/1992 clusters,
+not the entire2048-county assembled dataset. Yearbook industrial output
+is population-scaled and deflated to1985 with provincial GDP deflators.
+No county treatment inventory or historical crosswalk is displayed.
+
+AppendixA1's never-open-by1998 value2000 is a timing-regression convention,
+not an actual designation. A2's1985–1998 estimate is0.012(0.018), not the
+main-period result. Census1995 founding years backcast surviving firms and
+equipment, assuming equipment existed at founding; that is not observed
+annual equipment installation. Mechanism/FDI-control exercises do not prove
+exclusive knowledge transmission or absent mediation. Figures were read
+through captions/prose, not visually verified or reproduced.
+
+Primary verification re-read the full
+[1982 Guangdong gazette reproduction](https://www.gd.gov.cn/zwgk/gongbao/1982/4/content/post_3354034.html)
+and [Justice Ministry text](https://xzfg.moj.gov.cn/front/law/detail?LawID=60&Query=),
+SectionsI–IV/XI: approval depends on exchange/tourism value, reception,
+transport and military security, with provincial recommendation and
+military consultation. A is permit-free; B is open but permit-required.
+The [1985 State Council transition](https://www.gov.cn/zhengce/content/2012-08/08/content_6868.htm)
+was read in full again: only qualifying B areas upgrade, with a1986 filing/
+publication timetable. Thus “military dominated” does not establish random
+assignment, and an open-area label alone does not establish permit-free
+exposure [analytical inference].
+
+End blocked on a narrower bridge, not on inaccessible methods or unavailable
+outcome microdata: recover dated A/permit-free versus B/controlled-open
+county status through1985–1986 and the author-aligned1985-boundary cohort
+crosswalk. The paper's binary description does not explain how this
+transition or partially open sites enter its roster. Mainland historical
+industrial-development scope remains appropriate; no generic SEZ, FDI or
+agricultural variation is published. Author-request date sensitivity and
+survivor-biased census reconstruction remain explicit. Preserve candidate
+history, no canonical admission or ready increment; local only.
+
+### National-zone land prices and productivity — body recovered, 2026-10-07
+
+Standalone resolve `task-494c6782d306` revisits terminal blocked
+`candidate-4017fa034155` without rewriting its screening history. Lin Mei and
+Qiangmin Xi, *Impact of Place-Based Policy on Land Lease Price and Its
+Productivity Premium: Evidence From China's Development Zone Program*,
+JRS 66(4), 1122–1139 (2026), DOI `10.1111/jors.70064`, was inspected in the
+[publisher HTML body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.70064):
+Sections 2–3, 4.1–4.2, 4.5, 5–6, Tables 1–2 and 8–10, Appendix A/Table A1,
+endnotes and data statement. Figure captions were read, not figure pixels;
+no replication was performed. This is mainland regional/firm development
+research, not an environmental or financial extension.
+
+The reported construction joins land transactions and ASIF addresses to
+380 national economic/technological and high-tech zones with 838 blocks,
+using 2018 boundary descriptions and geocoding for a 2007–2012 sample.
+Sections 3.2–3.3 and equation 6 define inside-block membership interacted
+with whether the zone exists in a year. The baseline comparison is the
+7–10 km outside ring, not an adjacent symmetric boundary window; Table 2
+changes the treatment and control bands. Section 5 uses OP productivity
+and the same exposure coding. High/low realized land-price groups are
+heterogeneity comparisons, not an independently assigned land-price shock.
+The data statement offers author-request access, not an inspected public
+replication package [reported application].
+
+The paper's endnote 2 leads to the
+[official four-boundary announcement](https://www.gov.cn/zhengce/zhengceku/2019-10/14/content_5439616.htm),
+whose complete main text and metadata were inspected. Natural Resources
+and Housing/Urban-Rural Development Announcement 2018 No.15, dated
+2018-06-22, verifies the 2018 national-zone boundary publication and
+separate provincial publication authority. Its linked XLS was not inspected.
+The main text does not certify those polygons as historical 2007–2012
+boundaries. The inspected paper does not supply a block-version/year
+crosswalk, a recoverable establishment-date roster, or a resolution of
+national upgrading versus earlier park establishment. Equation 6's prose
+uses “null” for the pre-establishment value; missing versus binary-zero
+coding cannot be silently inferred from that wording.
+
+The admission blocker is now this historical exposure bridge, not body
+access. Recover the author-aligned zone/block roster, date convention and
+boundary-change treatment, including whether expansion or national
+upgrading occurs after observations. Stable contemporaneous sub-blocks
+could support a narrower application if verified; do not infer that all
+2018 polygons existed under national status throughout the earlier sample.
+This is a core assignment uncertainty, distinct from needing outcome
+microdata to rerun estimates [analytical inference].
+
+The comparison also needs within-block versus distant-ring comparability,
+location sorting and spillover assessment; the paper's BD label and
+commuting-distance rationale do not establish random assignment or SUTVA.
+Its pre-policy level test is not a parallel-trend certificate. Compare
+`china-2006-provincial-development-zone-approval-village-exposure` (a
+provincial approval cohort and village/boundary DID) and
+`china-industrial-parks-edge-city-spillovers` (eight-city park openings and
+distance spillovers). Different outcomes alone do not justify another
+canonical zone case; resolve the national designation and historical
+boundary regime before deciding separate admission or an application
+update. End blocked with durable recovered methods and a precise next
+evidence step; no new canonical, no ready increment, local only.
+
+### City-chief turnover — actual assignment and IV checks recovered, 2026-10-07
+
+Resolve `task-0e375f69782d` revisits `candidate-d75119f03fb0`; its old
+terminal history remains intact. Shen, Wu and Wu (2022), JRS 62(5),
+1296–1328, DOI `10.1111/jors.12598`, now has an inspectable
+[publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12598).
+Read Sections 2–3, 4.2–4.3, 5–7, Tables 1–2 and 5–6, Appendix C and
+endnote 18. Figures were read through captions rather than visually
+verified. The author-unit attachment page had a certificate error; no
+warning was bypassed, no attachment was inspected. The publisher's initial
+automatic verification subsequently loaded normally without interaction.
+
+The paper-reported treatment is an annual pulse for **municipal Party
+secretary turnover**, not mayor turnover, a permanent post dummy, or a
+measured change in industrial policy. Its roster comprises 1,023 secretaries
+in 282 cities, 2007–2017. Endnote 18 retains only cases in which predecessor
+departure and successor appointment occur in the same year; an
+appointment-only sensitivity is available on request. Do not silently fill
+cross-year vacancies as untreated or infer a June cutoff.
+
+The baseline dependent variable is township-level GCI: rank industrial land
+supplied per township administrative area within each city-year, then take
+the Euclidean distance between consecutive rank vectors divided by the
+number of towns (equation 2), with 2% winsorization. It is not the existing
+district PC rank-reversal measure. Section 3.1 reports 432,367 raw parcels,
+364,138 after cleaning and 355,256 successfully geocoded; three map services
+and a 1 km agreement rule retain coordinates. Equation 3 relates GCI to
+last-year turnover, with city/year/province-year effects and city-clustered
+errors; Table 1 column 2 has 2,756 observations. No-turnover city-years form
+the comparison, not a randomized succession cohort. Township geography,
+rank ties/zero supply, personnel vacancy cases and historical identifier
+joins still require an author-aligned reconstruction.
+
+Section 4.3/Table 2 uses 2008/2011/2013/2016 turnover years, above-median
+province-year turnover rates (27%), and predecessors completing five years
+as selected subsamples. Its three DWH instruments are lagged provincial
+turnover rate, its above-median indicator, and turnover predicted from
+province-year effects. Panel C controls city/year effects, not the baseline
+province-year effects. First-stage F statistics and nonrejection of DWH or
+the one-lead strict-exogeneity test do not establish the exclusion restriction.
+Provincial personnel and policy cycles can jointly alter land allocation;
+the provincial rate includes the focal city's turnover unless a leave-one-out
+rule is supplied. An alternative specification absorbing province-year
+effects would absorb these common instruments as well [analytical inference].
+
+Section 5 distinguishes newly emerging and fading Gi* hot spots from
+administratively designated zones. Section 6 expressly estimates a
+conditional correlation between GCI and manufacturing-output growth;
+Table 6's lagged result is not an instrumented causal effect of churn.
+Neither statistically insignificant leads nor nonindustrial land placebos
+turn the endogenous personnel and land choices into random shocks.
+
+Reconciliation: `china-industrial-land-supply-target-area-churn` describes
+the 2026 district-PC/productivity application, whereas this paper's
+secretary-turnover pulse is the explanatory exposure and township GCI is
+an outcome. Do not attach this as another outcome of that same treatment,
+nor replace its PC formula with GCI. A separate personnel case needs
+traceable appointment/exit evidence and an explicit credible scope for
+quasi-exogenous turnover, rather than publication on the basis of DWH
+nonrejection alone. The data statement reports author-request access with
+privacy/ethical restrictions; no personnel microdata or restricted data are
+stored here. End blocked on personnel/coding provenance and causal-use
+conditions, not unavailable methods; no canonical admission or ready gain.
+
+### First subway construction and firm tax burden — actual body recovered, 2026-10-07
+
+Ground task `task-118540dcafd9` revisits blocked
+`candidate-7a050d79fafb`, preserving its previous screening and harness
+attempts. Cai, Xie, Shen and Zou, *The Unintended Consequence of Infrastructure
+on Firms: Evidence From the Construction of Subway in China*, JRS,
+DOI `10.1111/jors.70079`, first published 2026-07-06, is an online version
+of record, not an assigned print issue in the inspected metadata. The
+[actual publisher HTML](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.70079)
+was read in Sections 2–3, 4.1–4.2, 4.3.1/4.3.5/4.3.8–4.3.9, 5–8,
+Tables 1–4 and 7–11, Appendix Table A1, endnotes and data statement.
+Figures were read through captions, not image inspection or numeric reruns.
+
+Section 3.1.2 defines a city indicator turning on at its **first subway
+construction start**, shifted to the next year when start is after June.
+It does not use first passenger service, station distance or national plan
+approval as onset. Nonmoving listed firms inherit exposure from registered
+city, not every plant's operating address. The 2008–2020 sample excludes
+financial firms, ST/*ST/PT/delisted firms and registered-location changers;
+continuous variables are 1% winsorized. It contains 2,629 firms and 18,812
+observations. Equation 1 has firm and province-year effects, with province
+clusters. Event time bins -4/+7 and omits -1; Table 4 reports Callaway–Sant'Anna
+and Sun–Abraham checks, but the inspected table does not specify their exact
+never-treated versus not-yet-treated comparison option [reported application].
+
+ETR uses cash income tax divided by total profits. Endnote 4 constructs cash
+tax from income-tax expense minus deferred expense plus beginning payable
+minus ending payable. Preserve denominator/zero-or-loss handling as an
+unresolved replication detail. diff_TR is nominal minus effective tax rate;
+its negative mean does not alone prove evasion. Section 6.1 uses nonforeign
+pre-2018 firms grouped by incorporation before/after January 2002; this is
+a heterogeneity classification, not a new subway treatment or a sharp-RD
+estimate of tax-bureau assignment. Table 10 Panel A displays signs opposite
+to the surrounding explanation for the LTB ETR/diff_TR columns; do not
+silently swap signs or label the mechanism independently verified.
+
+The [2003 State Council notice in the Fujian official gazette](https://zfgb.fujian.gov.cn/6914)
+was read in full, Sections I–VI: national review of city plans, subsequent
+project approval and financing-capacity restrictions are institutional
+selection, not automatic random entry. The
+[2018 successor, 国办发〔2018〕52号](https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_61250.html)
+was read in full, signature 2018-06-28, especially clauses 3–8 and the
+closing repeal of 国办发〔2003〕81号. It separates first-plan approval,
+project approval and implementation, and adds financing/debt constraints.
+Do not treat 2018 criteria as an unchanged rule for all earlier starts or
+make the approval standards an untested regression discontinuity.
+
+A concrete clock check read the operator's complete
+[2019-06-28 Nanchang announcement](https://www.ncmtr.com/topic_detail_4/313.html),
+paragraph headed 建设工期符合行业标准: line 1 construction is dated May 2011,
+opening December 2015. Other search leads refer to earlier 2009 beginnings;
+their linked disclosures were not inspected here and do not establish a
+verified alternative date. The paper displays neither its city/date roster
+nor its convention for groundbreaking, enabling works and full construction.
+The original source-access blocker is therefore narrowed to the
+author-aligned first-construction roster and phase convention, including
+the June shift and pre-2008 already-treated cities. Appendix A1 says it
+retains observations through first-line completion although the main
+indicator starts at construction; preserve that distinction pending code.
+
+Identification remains conditional on city growth/fiscal selection,
+anticipation during approval and land assembly, contemporaneous programs,
+province-level inference and spillovers. Section 4.3.9 drops adjacent cities
+and studies neighbour exposure; these checks are not proof of no spillovers.
+Fiscal/tax-enforcement mechanism tests do not isolate tax enforcement from
+the infrastructure bundle. Section 7's city exit rate uses survival at t+2
+from registration records through 2022, unlike the listed-firm tax contract;
+the 2012 World Bank cross-section is not another DID panel.
+
+The prospective citywide construction-onset case differs from
+`china-beijing-subway-grid-pair-connectivity` and the Beijing car-restriction
+subway premium: neither route connectivity nor car-restriction assignment
+can supply its missing city construction clock. Author-request data are not
+claimed public. End blocked until the core historical treatment roster and
+start convention can be recovered; no extracted canonical or ready gain.
+This is urban infrastructure and firm policy exposure, not new collection
+of financial variation. All changes remain local.
+
+### Western development and county tax effort — body recovered, 2026-10-07
+
+Task `task-a9aeb39d3fc7` inspected Wang, Xie and Chen's actual publisher
+[JRS body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.70036),
+DOI 10.1111/jors.70036, issue year 2026, first online 2025-11-26.
+Sections 4-5, 6.2, 6.4-6.5, Tables 1 and 3-8, endnotes 10-16 and the data
+statement establish a reported county-adjacency application of the existing
+western eligibility mechanism. It is added to
+`china-western-development-program-boundary-exposure`, not counted twice
+because the outcome differs. Original blocked candidate `candidate-6ebdad42e9a2`
+is preserved; source access is no longer its substantive unresolved issue.
+
+The sample excludes Chongqing and missing/discontinuous series and describes
+225 counties, 66 prefectures and 13 provinces in 1998-2009, 2700 balanced
+county-years; baseline Table 3 instead has 1512 observations. Tax-handle effort
+uses actual/predicted revenue shares from a county/year tax-capacity fit,
+not an observed enforcement action or firm tax rate. Budget revenue includes
+transfers (endnote 15), while fiscal stress is the expenditure-revenue gap
+divided by expenditure. Final county spellings (endnote 12) are not a
+verified historical boundary crosswalk. Data are available by author request.
+
+Section 5.2 literally assigns post if time is after 2001, whereas the
+introduction and event discussion identify 2001. Section 6.5.1 also labels
+1998-2006 pretreatment. Preserve these conflicts, rather than guessing a
+corrected clock. More importantly, the text and Table 3 column 3 report
+prefecture-city-year effects. With constant western eligibility inside
+ordinary prefectures, these effects absorb eligibility times common post
+exactly [analytical inference]. Column 2 reports county/year effects alone.
+Clarification of actual FE grouping, code and residual treatment is needed;
+no fiscal matcher profile is added on the strength of reported significance.
+
+Table 1 official turnover uses 2000-2001 versus 2000-2003 in Section 6.4.3.
+Transfer heterogeneity uses total 1998-2009 receipts, not a predetermined
+baseline. Registration displacement uses prefecture counts; endnote 16's
+growth is log count minus log 2000 count, not year-to-year new-entry growth.
+Spatial exclusion moves one county layer, not a kilometre bandwidth.
+Robustness-table clustering changes between county and prefecture. None of
+these checks independently establishes random assignment or no spillovers.
+The existing grounded spatial application remains available, the unresolved
+fiscal specification stays visibly qualified, and ready count does not change.
+
+### Tongzhou subcenter — publisher methods recovered and admitted, 2026-10-07
+
+Ground `task-dc05db12cc76` recovered Li and Xia's actual
+[JRS publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12633),
+Sections2-4.1,5.1-5.2,6-8, Tables2-5 and7-8, and the data statement.
+It closes the methods-access gap from the October5 audit of
+`candidate-4e21d30dca46`; the original worker-failure history remains intact.
+The publisher labels first publication December26,2022, while the earlier
+Crossref date was January5,2023; issue year2023 remains the citation year.
+
+Table2 explicitly assigns Tongzhou district complexes times transactions
+afterMay2015. Its baseline is June2014-May2016,114863 private-resale
+transactions;5/3/1km bands contain27364/17442/5860. Section4.1's final sample
+sentence reverses the endpoint months relative to that note. Preserve the
+discrepancy rather than shift the treatment clock. Exclusions cover regulated
+public homes, missing attributes, prices below100000yuan and area outside
+10-500m2. Equation2 uses complex and year/month effects, hedonic controls,
+and complex clusters. The log outcome is total price, not an interchangeable
+per-square-metre price. Minimum border distance and centre distance have
+different roles; the latter is heterogeneity of the same program, not a
+separate variation. Optional population data2015/2018 do not become necessary
+for the transaction comparison.
+
+Official execution report,2018 plan approval,2019 relocation announcement
+and original2015 purchase restriction were re-read at the sources preserved
+in the new record. They distinguish district/core, development/relocation
+and legal household conditions. June2015 remains the paper's announcement
+convention, not independently verified first public revelation. Table4 and
+Section5.1 admit early border price movements; short and long windows overlap
+restrictions and neighbour responses. These are substantive conditions, not
+reasons to claim a surprise or unaffected controls. No appendix or historical
+HomeLink download is claimed inspected.
+
+Admitted `china-2015-tongzhou-subcenter-announcement-district-exposure` as one
+grounded conditional case, distinct from industrial parks or the broader
+noncapital-function relief candidate. District polygons and geocode versions
+are application requirements, not silently supplied data. No core-plan
+polygon is substituted for the observed district assignment. Ready net+1;
+all changes remain local.
+
+### Beijing relief recipients — publisher methods recovered and admitted, 2026-10-07
+
+Ground `task-1d505b0cda43` recovered Yuan, Jing and Liu's
+[JRS publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12684),
+Sections2.2,3.1-3.2,4.1-4.2,5-6, Tables1-8 and endnotes. This closes
+the methods-access gap for `candidate-5b11b69d9c74`, whose blocked history
+is retained. No author-request data/code, town roster or digitized figure
+coefficients are claimed inspected.
+
+The actual recipient exposure selects Hebei/Tianjin town polygons intersecting
+the20km outward Beijing buffer. Controls intersect the20km outward buffer of
+the entire Beijing-Tianjin-Hebei region in five other provinces. They are not
+opposite sides of one shared boundary. Table2 reports6530 town-years over
+2010-2019, town/year effects, county controls, town clusters and a Conley
+alternative; its bandwidth was not established. The primary outcome is
+PANDA annual mean light, not directly measured GDP. Registered firm entry
+does not identify origin in Beijing or actual production. Table1's Manu_Entry
+label and the manufacturing prose conflict and remain explicitly qualified.
+
+The paper's2014 annual policy convention is distinct from its description
+of formal implementation a year after the proposal. Exact post syntax was
+not recovered. The original2015 Beijing catalogue notice confirms replacement
+of2014 rules, heterogeneous legal scope and exceptions; its attached industry
+tables were not inspected. The official NDRC2021 reply confirms coordinated
+relief activity since2014, not a legal20km entitlement or actual recipient
+receipt. Policy-year transition sensitivity, historical polygon construction,
+counterfactual trends and overlapping regional projects remain use conditions.
+
+Admitted `china-2014-beijing-noncapital-relief-recipient-town-buffer` as a
+grounded conditional variation. Its optional firm-entry profile has a separate
+data contract rather than requiring population and TFP inputs. This is distinct
+from the Tongzhou district housing announcement. Ready net+1; local only.
+
+### Regional innovation poles — actual design screened out, 2026-10-07
+
+Screen `task-d6117bc0db57` inspected Zheng, Collins and Yao's JRS64(3):671-699
+[publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12687),
+especially Sections4.2-4.5 and5, Equations26-28 and Tables5-6/9.
+The2005-2018 panel contains284 cities. The authors choose12 innovation poles
+using a2020 central-city index, then construct distance indicators at150,
+250,350 and400km. These are analytical classifications, not inspected legal
+eligibility cutoffs or a treatment rollout. Pole estimates use random effects
+because the fixed distance indicators are collinear with city effects.
+Patents and student shares enter as measured innovation/absorption variables.
+
+Disposition: skipped for shock collection, not inaccessible. Neither spatial
+lags, significance nor the label innovation pole supplies an external change.
+The2022 Wuhan policy appears in the conclusions, outside the estimation
+period; it is not a policy actually used by this paper. Do not turn that
+recommendation into a canonical shock, or interpret the table abbreviation
+IV as an inspected instrumental-variable design. This decision concerns this
+paper's actual construction, not whether other innovation policies qualify.
+No canonical edit; ready net0.
+
+### Income-tax sharing — county exposure body recovered, 2026-10-07
+
+Ground `task-4649ac178487` recovered JRS12700's
+[publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12700),
+Sections2-3,4.1-4.2,5.1.1-5.2.2, Tables6-9 and endnotes. The blocked history
+of `candidate-ca0a107d2ee3` remains intact. Re-read the original MOF-hosted
+Guofa2001No37 scheme; national sharing starts January1,2002, with protected
+base settlement and provincial adjustment. No uniform county retained share
+is supplied.
+
+Admitted `china-2002-income-tax-sharing-county-dependence`: actual exposure is
+post2002 times the mean1994-1997 corporate-revenue/expenditure ratio. Corporate
+revenue combines tax and SOE profits, not personal tax or total revenue. This
+is distinct from the2001 base-setting incentive. Table6 VFI response is the
+default contract; a separate profile preserves the centered GDP-volatility
+application and its additional spatial government-size IV. Historical joins,
+fiscal categories, provincial pass-through, exclusion and weak-IV conditions
+remain explicit. Exact IV scaling and interaction-instrument sets require
+appendix/code clarification; neither was inspected. Ready net+1; local only.
+
+### Political tournaments — neighbor-death construction recovered, 2026-10-07
+
+Ground `task-f550c3205012` reopened the evidence gap in
+`candidate-7524d1be0fa6`. Bai and Li2022, JRS62(5):1358-1385,
+[publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12607),
+firstonline June1, is inspectable. Sections3.1.1-3.1.4,5.3,5.5 and
+endnotes12-15/25-26 were read. The panel is272 prefectures in23 provinces,
+2006-2015. The endogenous regressor counts same-province contiguous
+prefectures with neither secretary nor mayor turnover. The binary adjacency
+matrix is not row-normalized; changing it to an average changes the scale.
+
+The instrument counts neighboring chiefs' death-induced turnover, including
+accidents and acute illness. Only six underlying deaths generate36 nonzero
+neighbor-year cells. These are not36 independent events. Endnote26 additionally
+instruments own turnover with own death. The paper's promotion-effectiveness
+interpretation is not an independently verified assignment rule. The introduction
+calls successor entry tenure zero while Section3.1.2 says one; preserve the
+annual turnover clock and recover the code convention before replication.
+
+The link to Supporting Information was expanded; it lists
+`jors12607-sup-0001-Online_Appendices.docx`, including the cited event roster
+TableA.2. Its observed download route is
+`https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fjors.12607&file=jors12607-sup-0001-Online_Appendices.docx`.
+The browser download operation timed out without returning a file or live
+handle. Appendix contents and individual death sources are not claimed read.
+No repeated download or guessed event list was substituted.
+
+Disposition: still blocked for canonical admission, but no longer solely a
+body-access problem. Recover TableA.2 and public original event notices;
+verify office/date, illness versus accident, death-to-successor timing and
+which neighboring jurisdictions inherit exposure. Earthquake deaths can share
+a regional disaster that directly changes neighboring growth/investment;
+acute illnesses can correlate with prior health or workload. These are
+exclusion concerns [analytical inference], not established failures of any
+specific event. Reconstruct the small-event first stage and leave-event-out
+inference before describing this as reliable growth-policy variation. Preserve
+the old candidate history; no canonical or ready addition.
+
+### HSR and patent agencies — directed-service evidence recovered, 2026-10-07
+
+Ground `task-6eea94fd2c8a` investigated the source behind historical blocked
+`candidate-2631f88559ae`. Xiaokang Wu and Jinping Yu,2025, *Bridging Innovation
+Distances: High-Speed Rail and Patent Agency Utilization in China*,
+JRS65(2):446-470, DOI10.1111/jors.12750, firstonline2024-12-16.
+The [publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12750)
+was inspected at Sections4,5.1,5.2,6.2.3,8.3, Endnotes and inline AppendixA.
+The middle robustness subsections were not all inspected. No restricted
+patent records or paper copy was retained.
+
+The main observation is a directed applicant-city to agency-city year,
+2003-2019; reversing the cities changes the patent-agency outcome even when
+rail service is shared. Section5.1 starts from9,004,153 invention applications,
+excludes non-mainland/missing applicant addresses, absent/non-mainland agencies,
+within-city agency use and cross-city co-applications, leaving2,348,416
+applications. Applicant cities come from addresses; agency cities come from
+agency names and manual lookup, not an automatically available agency-address
+column. It reports290 applicant and164 agency cities, zero-filling pairs,
+then excluding same-city pairs, years without agencies and pairs with no
+agency relationship anywhere in the sample. That last restriction selects on
+the outcome over the whole period; it is not an innocuous geography filter.
+Section5.1 reports166,760 regression observations, whereas main/IV and several
+appendix tables use164,500. The missing sample bridge remains unresolved.
+
+Section5.2 uses passenger timetables2003-2016, JiPin timetable software and
+CNRDS line/station opening information. C/D/G services are classified as HSR;
+stations are mapped to cities and actual direct services define a connection.
+Indirect transfer access is not the baseline. A July-to-June timetable window
+determines annual onset, but the rendered mathematical year subscripts were
+not recovered in this inspection. Do not invent whether that window straddles
+t-1/t or t/t+1, or replace it with calendar-year station opening. Section4
+uses city-pair, applicant-city-by-year, agency-city-by-year and province-pair-
+by-year fixed effects; inference clusters by province pair. These fixed
+effects do not establish random service allocation or eliminate network
+spillovers.
+
+Section6.2.3 describes two actual instruments: historical1934 rail connection
+interacted with annual national operating HSR mileage; and proximity within
+100km to the four-vertical/four-horizontal main corridors, varying with their
+operation. The precise pair combination in the second instrument's displayed
+formula was not recovered. The historical-rail source is described as1934
+but cited Hong1930; this discrepancy needs source clarification. Table3
+reports first-stage F statistics39.155/123.251/78.935 and an overidentification
+p-value0.563, while its prose gives0.347. Neither diagnostic establishes the
+exclusion restriction. Historical industrial geography and corridor-directed
+development can directly affect patent-service demand [analytical inference].
+
+Other unresolved encoding conflicts matter for reuse: Section4 and AppendixA2
+label a log(1+count) outcome, Endnote7 names log(0.1+count), and AppendixA2
+reports a negative mean despite the former transformation. AppendixA7's
+three-column table has notes describing a different five-column exercise.
+Do not silently choose a formula or estimator. Agency headquarters can stand
+in for branch or subsidiary locations, producing apparent cross-city use
+without cross-city travel. The data-availability statement requires CNIPA
+permission for author-provided licensed data; this is not a public download.
+
+Identity assessment: this is not the recentered market-access construction
+in `china-high-speed-rail-recentered-market-access`. Direct-service pair timing
+and historical/corridor IV exposure are substantively different constructions,
+not merely a different patent outcome. Nevertheless, that distinction alone
+does not justify another canonical count. Resolve the exact pair-time rule,
+instrument pair formula and source-to-data crosswalk, then decide whether a
+separate assignment record or an explicitly bounded application is warranted.
+Disposition: evidence recovered, canonical admission still blocked; preserve
+the earlier candidate history. Ready net0. Local only, no GitHub update.
+
+### Collective construction-land rights — access route audited, 2026-10-07
+
+Screen `task-17c1a3591ece` rediscovered JDE178(2026),103609,
+DOI10.1016/j.jdeveco.2025.103609. The candidate registry returned existing
+`candidate-3e629ed36d73`, so no duplicate was created. Its earlier legal and
+publisher inspection remains the starting point; this screen does not replace
+that evidence with today's weaker access.
+
+The [author publication page](https://xinlin-me.com/publications/) confirms
+Lin, Hui, Cong and Shen's publication. The
+[CityU institutional record](https://scholars.cityu.edu.hk/en/publications/solving-coordination-failures-collective-land-transfer-rights-and/)
+supplies the Abstract, online date2025-08-09 and issue dateJanuary2026.
+The subject is collective construction-land transfer to enterprises and
+nonfarm firm formation, not agricultural output. The postprint350602604.pdf
+is listed as embargoed until2028, without an accessible file link. The
+publisher browser route stopped at human verification; no challenge was
+solved or bypassed. An unauthenticated third-party upload was not used.
+
+Disposition: duplicate discovery skipped, with a new access finding attached
+here for future resolve. Obtain a lawful body/appendix or author copy, recover
+the paper's pilot-county cohort/annual coding and firm/survey joins, and keep
+legal eligibility separate from realized land transactions. Do not attempt the
+institutional embargoed file as though it were a public replication package.
+The old candidate remains blocked; no canonical change or ready increment.
+
+### Export-control proposal — partial coverage matters, 2026-10-07
+
+Ground `task-080e315afb17` closes the previously unread proposal route for
+`candidate-c585a80048a0`. The original
+[July6,2006 proposal](https://www.govinfo.gov/content/pkg/FR-2006-07-06/pdf/E6-10504.pdf)
+was read at printed pp38313-38314 and38318-38319: it solicits comments,
+not an effective ban, and proposes technical subcategories in Supplement2.
+Category1 includes1B999 equipment and1C995 mixtures. The proposed4A994
+computer threshold is0.1 Weighted TeraFLOPS. Do not call2006 an untreated,
+unannounced year merely because the final rule came later.
+
+The [June19,2007 final rule](https://www.govinfo.gov/content/pkg/FR-2007-06-19/pdf/E7-11588.pdf)
+was compared at pp33648,33655 and33658-33659. Category1 no longer lists
+1B999 equipment or1C995 mixtures as standalone entries, while1D999 software
+referencing1B999.e remains with narrowed prepreg coverage. Retained4A994
+computers have a0.5 threshold. Thus an unchanged ECCN label need not mean
+unchanged technical exposure. The saving clause permits qualifying already-
+in-transit shipments under old eligibility before July19,2007. Product
+retention reflects foreign availability, commercial exports and military
+applicability; it is not a lottery.
+
+These inspected examples establish why the legal-to-paper bridge matters
+[analytical inference]. They are not a complete ECCN set-difference or the
+authors' HS6 crosswalk. Recover the historical mapping, partial-item decisions,
+origin filters and prepolicy import window before constructing the firm's
+controlled/left-out flags. Preserve ordinary licensing and VEU distinctions.
+The earlier TableA3 and manuscript evidence remain separate; no uninspected
+HS6-to-ECCN pairing is inferred from this comparison. The proposal-access gap
+is closed, but canonical admission still awaits exposure coding. Ready net0;
+only local source provenance changed.
+
+### Central land inspection — firm/input-market candidate, 2026-10-07
+
+Screen `task-bcd0e859e58e` retained `candidate-aca860dfe7fe`:
+Kong, Wang and Ye, *Deregulating the Input Market by Central Inspection:
+Lessons from China's Primary Land Market*, JEBO220(2024):732-755,
+DOI10.1016/j.jebo.2024.02.039. The
+[author research page](https://sites.google.com/view/naideye/home/),
+Organizational and Political Economics section, was actually inspected.
+Its Abstract identifies a DID using central inspectorates' supervision of
+industrial land transactions and studies land prices, entrant quality and
+industrial firm productivity. This is a firm-development/input-market lead,
+not an environmental inspection merely because it supervises land.
+
+The author link points to the publisher, not a manuscript file. Kong's
+[selected publications](https://dmkong.weebly.com/publications.html) was also
+inspected and offers no copy of this item. Search-indexed publisher preview
+identified DOI/issue and introductory context, not inspected full methods.
+No causal magnitude or deployment year is admitted on that basis.
+
+Resolve the exact SIL institution and official scope, inspectorate deployment
+unit and dates, treated versus comparison places, land/firm joins, sample and
+estimation. Distinguish the national land-supervision system, selected local
+inspection visits and2012 anticorruption inspections. Do not infer staggered
+assignment from the generic DID label or copy all regions' national legal
+start into a treatment column. No canonical or ready addition at screening.
+
+### Central land inspection — national institution recovered, 2026-10-07
+
+Resolve `task-9b989a6b5a56` adds primary institutional evidence for
+`candidate-aca860dfe7fe`. The
+[Wuhan authority's reproduction of 国办发〔2006〕50号](https://zrzyhgh.wuhan.gov.cn/zwgk_18/zcfgyjd/gtzyl/202001/t20200107_590171.shtml)
+was read through SectionsI-IV and its signature dated2006-07-13; the webpage
+date2006-07-28 is not the issuance date. Nine dispatched bureaus have named
+regional jurisdictions, spanning provinces and separately planned cities.
+SectionII permits later dispatch of commissioners as needed. SectionIV
+retains local administrative licensing/penalty powers; inspectors supervise
+rather than directly adjudicate cases. Failed correction can lead to a
+rectification period suspending acceptance/approval of specified land conversion
+and acquisition applications. This is a supervision and corrective regime,
+not a universal transfer of land-approval authority to the central inspectors.
+
+The paper's publisher route remained inaccessible through the web reader.
+The available author Abstract establishes actual use of a land-inspection DID,
+but not whether its exposure is bureau siting, jurisdiction coverage, visits,
+rectification or another operational event. These are materially different
+assignments [analytical inference]; the national notice does not choose among
+them. No bureau seat is assigned treatment here merely because it is named.
+
+Admission remains blocked on the paper-to-event bridge. Obtain Section2 and
+Section3 plus the appendix/code; recover the actual treatment flag, first year,
+unit, comparison, sample, land-transaction filtering and firm linkage. Then
+match that event to contemporaneous deployment or implementation evidence.
+Do not impose2006 on all jurisdictions, infer random timing from central
+authority, or substitute anticorruption/environmental inspection. The precise
+legal family is now supported, while the research exposure remains unresolved.
+Ready net0; no canonical admission, deletion or GitHub operation.
+
+### HSR direct-service formulas — rendered evidence recovery, 2026-10-07
+
+Ground `task-f0b76a7f0b08` revisited
+[JRS12750 publisher body](https://onlinelibrary.wiley.com/doi/full/10.1111/jors.12750).
+The initial accessibility representation displayed Section5.2's year subscripts:
+direct C/D/G service during July(t-1) through June(t) sets HSR_ijt=1 from t.
+This closes the former unread-year gap; it does not resolve how discontinued
+service is coded. The prose calls this a six-month window despite the stated
+endpoints spanning twelve months. Preserve the endpoints, not that shorthand.
+
+Section6.2.3 was brought into view and its formulas visually inspected:
+IV1_ijt = Railconnection_ij,1934 times HSR_Mileage_t;
+IV2_ijt = MHSR_it times MHSR_jt. MHSR is the city-level100km proximity
+indicator for operating main corridors in year t. The second IV requires
+both cities' proximity; it is not their sum, either city's indicator or
+bilateral distance below100km. This is the paper's construction, not a
+statutory entitlement. National mileage and historical railway/corridor maps
+still require an explicit station/city/historical-geography crosswalk.
+
+Section6.2.5 was newly read in full. It identifies AppendixA7 column1 as
+inverse-hyperbolic-sine outcome estimation and columns2/3 as PPML and
+bias-corrected PPML. Thus the table's unrelated five-column notes are not
+the only estimator description. However, its reported standard errors in
+prose differ from the table. Neither this recovery nor the alternative
+estimators resolves the baseline log-offset or166,760-versus164,500 sample
+bridge. A7 should be cited with these source conflicts rather than relabeled
+as a clean replication instruction.
+
+Other newly inspected diagnostics have their own scope:2023 direct-flight
+and road-travel measures interact with year effects to proxy older transport,
+not actually observed2003-2019 connectivity; the travel-time regression uses
+66,502 observations rather than the baseline164,500. Selection on ever having
+patent-agency links remains a substantive concern even when the paper checks
+an expanded zero-filled sample. Future-year transport controls do not become
+predetermined merely because interacted with year indicators [analytical
+inference].
+
+The [NRA planning account](https://www.nra.gov.cn/ztzl/hy/gsgt/zgtl/fzgh/201602/t20160216_146043.shtml)
+was independently re-read: heading dated2014-03-11; it distinguishes2004
+approval and2008 adjustment and identifies four-vertical/four-horizontal
+passenger corridors. It supports institutional identity, not the author's
+28-node geometry,100km buffer,1934 map or direct-service onset inventory.
+
+Disposition: two precise coding gaps closed without a new ready count. The
+candidate's residual admission question is no longer an unread formula:
+reconcile actual timetable inputs and the baseline sample/outcome conflicts,
+then decide assignment identity against the existing recentered-network record.
+Do not demand publication of licensed patent microdata; the needed bridge is
+exposure construction and sample/transform documentation. This update narrows
+the blocker but does not claim successful replication or independent proof of
+route exogeneity. Existing source history retained, local only.
+
+### County e-government pilot — provincial control exposure recovered, 2026-10-07
+
+Ground `task-4c256448c47d` revisits candidate `candidate-bf7f2d9d3b31`
+without replacing its earlier blocked history. Actual full text of the
+[Hunan discipline-inspection commission's reproduced Yunnan report](https://www.sxfj.gov.cn/abb992/28c41710914458.shtml)
+was inspected, body paragraphs1–4. It attributes reporting to Yunnan Daily
+and names five provincial pilots: 安宁市、曲靖市麒麟区、腾冲县、丽江市古城区、瑞丽市.
+Its implementation window is November2011–July2012. The webpage's2016-10-18
+reposting date is not an exposure onset. This is official-hosted attributed
+reporting, not the original provincial implementation instrument or proof
+that all five were national pilots.
+
+This changes the next evidence request. Yunnan's national quota of three,
+the previously inspected national-list reproduction's four names, and the
+province's five named pilots are different objects; trimming a list to100
+cannot reconcile them. A national-pilot indicator can leave provincial
+participants in its comparison group. Recover both national membership and
+provincial implementation before interpreting that comparison as no reform.
+The actual paper's treatment file must establish what its county indicator
+includes; this report cannot substitute for author coding.
+
+The [Qingshen official implementation notice](https://www.scqs.gov.cn/info/1396/7793.htm)
+is a concrete primary follow-up: search discovery identifies a May15,2012
+signed notice and February2012 provincial designation under 川办函〔2012〕19号.
+Direct page inspection failed twice in the web reader and returned403 through
+an ordinary HTTP request. Its indexed passage is therefore a lead only,
+not verified institutional evidence. Search also located a four-national/
+eighteen-provincial Sichuan split in a newspaper report; recover the original
+provincial notice rather than admit that roster from snippets.
+
+Disposition: no canonical admission. Provincial control exposure is now a
+specific, source-reported assignment issue rather than a generic warning;
+the national roster conflict and firm-to-historical-county/town join remain
+open. Preserve Dalang's subcounty boundary and the working paper's conflicting
+Inner Mongolia example. Next work should recover author treatment coding or
+original roster attachments, not repeat general digital-government history.
+
+### Import-interest subsidy — catalogue and payment clocks, 2026-10-07
+
+Ground `task-7de7526bea1c` continues candidate `candidate-4ad027de866d`.
+This supplements the published-body screen and primary-law resolution above;
+it does not replace their evidence or create a second policy case.
+
+The actual [2011 catalogue notification](https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/201105/t20110517_549896.htm),
+operative paragraphs and signature, identifies 发改产业〔2011〕937号,
+signed April29,2011 and posted May17. It takes effect upon publication and
+expressly replaces the 2009 catalogue attached to 发改产业〔2009〕1926号.
+The signed date, posting date, and publication-effective wording are retained
+separately; neither date is silently made a January1 treatment onset.
+This is a verified within-panel catalogue revision, not evidence that the
+paper updates its fixed baseline exposure every year.
+
+The notification's actual [13-page attachment](https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/201105/P020110517527632454521.pdf)
+was inspected at printed pages6–7, PartB entries B1–B41. Entries mix code
+lengths, multiple codes per equipment entry, and equipment-specific technical
+requirements. For example, B1 and B2 both show 845710 but describe different
+machinery and qualifications; B3 lists two eight-digit codes. B26 has an
+equipment description without a displayed commodity code. Thus a catalogue
+entry count is not a tax-line count, and an HS6 membership flag alone cannot
+establish legal entitlement [analytical inference]. This successor catalogue
+must not substitute for the paper's original147-line list or resolve its
+HS8-to-HS6 aggregation choice. No full-paper file was saved.
+
+An actual [MOF-hosted Wuhan report](https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/hubeicaizhengxinxilianbo/201012/t20101228_391922.htm),
+dated December28,2010, body paragraphs1–2, reports nine firms receiving
+RMB84.8million for 2008 imports after applying in 2009; Wuhan Xinxin received
+RMB78.07million. These are attributed administrative news figures, not
+individual payment vouchers or a complete national payment schedule. They
+independently illustrate that import, application, and payment clocks differ,
+and reinforce why the 2012 RMB30million cap cannot be backcast to early
+receipts. A 2008 post indicator is not automatically an indicator of funds
+received in that year.
+
+Search located 财企〔2008〕21号 as a possible first-round application notice
+and 发改工业〔2007〕2515号 as the original catalogue instrument, but original
+operational text and attachment were not recovered in this task. These remain
+retrieval leads, not verified first-round eligibility or a reconstructed
+baseline list. The bounded search therefore stops rather than repeatedly
+substituting later policy descriptions.
+
+Disposition: blocked, no canonical admission or ready increment. Remaining
+work is specific: recover the original list and first-round import window,
+and reconcile the author's fixed147-line/BEC/HS6 construction with the 2007
+announcement and 2008 post clock. Do not require disclosure of licensed
+customs microdata; do not describe an eligibility-proxy design as realized
+subsidy receipt. These newly inspected sources narrow interpretation and
+prevent a misdated treatment without claiming that the admission gaps closed.
+
+### Guangdong business registration — original local package boundaries, 2026-10-07
+
+Ground `task-96d00cfa6ee9` revisits `candidate-e08c2aa11434`, REStat
+`10.1162/rest_a_01549`. Earlier actual manuscript methods remain the research
+anchor. New primary evidence narrows local scope and dates; it does not
+replace the missing author treatment table with a guessed rollout inventory.
+
+The actual [Dongguan 2012 issue5 gazette](https://www.dg.gov.cn/attachment/0/387/387488/4492767.pdf)
+was inspected at PDF pages99–101, printed96–98. Its cover and running headers
+identify 2012 issue5 despite a stale extracted document title. It reproduces
+东府办〔2012〕66号, signed May16,2012. The opening and basic-principles
+clauses explicitly select 大朗镇 as the pilot, not all Dongguan. SectionIII
+separates business registration from permission to conduct licensed activity,
+provides LLC capital subscription without mandatory verification on entry,
+and introduces annual filing. Licenses are still required before conducting
+licensed operations. A May signature alone does not verify a citywide start
+or the day that pilot registrations actually began. A city-level December
+switch can consequently include partially exposed pre-period observations
+[analytical inference]; the paper's early-city exclusion should be read in
+that light, not as evidence that all Dongguan was untreated before December.
+
+The actual [Hong Kong Trade and Industry Department-hosted original Dongguan scheme](https://www.tid.gov.hk/archive/english/aboutus/tradecircular/cic/asia/2012/files/ci2012893a.pdf)
+was inspected at PDF pages1–5: 东府〔2012〕150号, signed October23,2012.
+SectionII(4) expands the evaluated Dalang experiment citywide. SectionIII(3)
+permits zero initial capital for companies with registered capital no greater
+than RMB500,000, retains sector-specific minima, and requires full payment
+within two years (five for investment companies), with later verification.
+This is not universal abolition of minimum capital or a permanent exemption
+from paying subscribed capital. SectionIV requires citywide reformed licenses
+and supporting arrangements by December end; SectionV describes October
+as the organizational launch. Neither clause establishes an exact December3
+first-issuance date. Distinguish administrative launch, statutory financing
+conditions, and operational registration exposure. Preserve the May pilot
+and October expansion as stages of this local package rather than inflating
+them into two ready cases before paper assignment is reconciled.
+
+The actual [Guangzhou registration authority's 2014 departmental final accounts](https://www.gz.gov.cn/attachment/7/7867/7867675/2856590.pdf)
+were inspected at PDF page36, printed35, PartIV SectionI. The authority
+reports citywide implementation from January1,2014, alongside reduction
+of pre-registration approvals and a shared registration information system.
+This is inspected administrative reporting of operation, not merely a later
+webpage date. The original government-rule page retrieved only its heading
+and page furniture in the web reader: its search-indexed June1 effective
+date is not admitted as verified operative text here. Recover the earlier
+implementation notice rather than conflating a subsequent rule with rollout.
+
+Access boundary: an ordinary direct request to Harvard Dataverse's public
+dataset API for `doi:10.7910/DVN/XSVITM` again returned403. No file inventory,
+README or treatment code was inspected. The author-hosted VoxDev summary
+was read but supplies no replacement for the precise manuscript/coding
+bridge; results and methods are not re-extracted from its shorter description.
+
+Disposition: blocked, ready unchanged. Two institutional uncertainties now
+have concrete answers: Dongguan's early subcity exposure and conditional
+capital package, and Guangzhou's reported January2014 operational month.
+Remaining admission work is the complete paper-aligned city-month inventory,
+registry-to-report identifiers and historical geography, final-version
+reconciliation, and local bundle exceptions. No licensed firm data rerun is
+required simply to document those joins. Preserve the existing event-study,
+reporting/exit and few-city assignment limitations recorded in the screen.
+
+### Guangdong registration reform — CER resource-allocation application screen, 2026-10-07
+
+Screen `task-3ec8dc02b315` retains one additional paper for reconciliation,
+not a new mechanism: Xiaoying Yang, Bo Jiang, Ye Bai, Liang Fu and Bozhen Liu,
+*Misallocation in China: Evidence from China's business registration reform*,
+China Economic Review93,102452(2025), DOI `10.1016/j.chieco.2025.102452`.
+CER is already a bounded supplementary China enterprise/industry source lane;
+this does not expand a journal ranking or certify an archive sweep.
+
+Actually inspected [Crossref metadata](https://api.crossref.org/works/10.1016/j.chieco.2025.102452)
+and the [coauthor university publication record](https://scholar.xjtlu.edu.cn/en/publications/misallocation-in-china-evidence-from-chinas-business-registration/)
+confirm authors, article number, volume and October2025 issue date. A search
+snapshot describes an earlier in-press status, whereas the opened institutional
+record reports published; use the inspected record. The publisher's public
+XML response identifies the same DOI and October cover date but contains
+only1823bytes of metadata, no methods, abstract or appendix. HTTP200 here is
+not full-text access. Both main and abstract ScienceDirect routes returned403.
+
+The actual [IDEAS abstract](https://ideas.repec.org/a/eee/chieco/v93y2025ics1043951x25001105.html),
+Abstract and Suggested Citation sections, reports an application of Guangdong
+registration pilots using staggered DID and relative capital/labor responses
+for high- versus low-productivity industries and firms. This supplies a
+China-facing enterprise-development screening reason, not inspected treatment
+coding or independently verified effects. No numerical result is extracted
+as canonical evidence. Productivity-group interactions are not automatically
+an independently assigned shock [analytical inference].
+
+Identity question: reconcile with `candidate-e08c2aa11434` (REStat regional
+pilot package), the JDE minimum-capital source `10.1016/j.jdeveco.2024.103304`,
+and national-law candidate `candidate-d6dc696f6ab6`. Different outcomes or a
+new DOI do not warrant a second canonical policy. The useful follow-up is
+actual final methods/appendix or author code: city-month rollout, local bundle
+and subcity pilots, baseline productivity construction/group freezing,
+industry/firm sample and identifier linkage, comparison eligibility through
+national expansion, and inference at the assignment level. Determine whether
+the paper resolves any existing gap before adding an application.
+
+No canonical file changed. Retain the source in the candidate layer for
+bounded resolve; inaccessible body is recorded rather than supplied from
+publisher search snippets or another paper's methods. Ready unchanged, local
+only; no author contacted or restricted document saved.
+
+### CER registration application — author-access resolution, 2026-10-07
+
+Resolve `task-8b63c3e8340d` inspected the ordinary HTTP response from
+[Bo Jiang's research page](https://www.bo-jiang.com/research). Its publication
+list confirms the CER article and coauthors, but the inspected anchors offer
+no manuscript, appendix or replication link for this paper. This succeeds
+where the web reader timed out; it does not supply the missing methods.
+
+An older economics CV indexed a personal site for coauthor Bozhen Liu.
+The current response from that address is unrelated sports-registration
+content, not an economics author page. It is not a usable publication source;
+do not follow its outbound registration links or infer author endorsement.
+A similarly named computer-science author is not this paper's coauthor.
+
+Disposition: blocked at the candidate layer, with no canonical edit or ready
+increase. Paper identity is sufficiently resolved to retain the source, but
+identity of its actual assignment relative to the other registration papers
+is not. A final manuscript, appendix or author deposit containing the rollout,
+productivity-group construction and sample linkage would reopen this task.
+The abstract alone cannot close those gaps or establish a distinct variation.
+
+### Urban-rural integration pilot — regional allocation screen, 2026-10-07
+
+Screen `task-a7154f0a71a1` uses the existing supplementary domestic-economics
+lane, not a new ranking: Duan, Wang, Zheng and Chi, *How does Urban-Rural
+Integration Correct Resource Misallocation?*, JFE51(8),21-35(2025),
+DOI `10.16538/j.cnki.jfe.20250318.402`.
+
+The [publisher body](https://qks.sufe.edu.cn/mv_html/j00001/202508/vCYzEsWe-r73I-7GBH-G0E9-WjJjanZIqnQo_WEB.htm)
+was inspected at SectionsII(a),III(a-b), Tables2-4 and footnotes3-6.
+Reported application: prefecture presence of a pilot interacted with a
+post-2020 indicator; annual2011-2022 panel; baseline controls within11
+participating provinces. Table2 has1452 observations,1440 without Chongqing,
+and city-clustered errors. Outcomes measure regional capital/labor allocation,
+not farm output. Its forest and SDID applications do not establish random
+selection [analytical inference]; the paper acknowledges favorable reform
+conditions among selected places. Entropy integration scores are not policy
+assignment. Prior pilots and potential spatial displacement remain relevant.
+
+Retain for resolve: verify original zone boundaries, prefecture aggregation
+and whether2020 itself is included; inspect attached treatment data/code,
+city identifiers, outcome construction and omitted diagnostics. The
+[publisher attachment inventory](https://qks.sufe.edu.cn/J/CJYJ/Article/Details/A0vCYzEsWe-r73I-7GBH-G0E9-WjJjanZIqnQo)
+lists treatment data, code and appendix; listing is not file inspection.
+No canonical or ready addition at screen.
+
+### Urban-rural integration — treatment attachment and legal geography, 2026-10-07
+
+Resolve `task-3ab4bd46eddb` retrieved the publisher's actual
+[treatment workbook](https://qks.sufe.edu.cn/mv_upload/att/202510/ATT251013000003V1Y.xlsx)
+in memory, without modifying or retaining the source file. Sheet1 contains
+headers at rows1-5 and3360 city-year observations in A6:F3365; Sheet2/Sheet3
+are empty. Columns are year, cityid, city, prov, treat and prov_sd. There are
+280 distinct city codes and no duplicate city-year keys. Every city is0
+through2019; exactly20 are1 in each of2020-2022. This closes whether2020
+is included: it is included in the deposited exposure series.
+
+The2020 treated observations are Changchun, Jilin, Nanjing, Wuxi, Changzhou,
+Jiaxing, Huzhou, Fuzhou, Ningde, Yingtan, Jinan, Qingdao, Zibo, Xuchang,
+Guangzhou, Qingyuan, Chongqing, Chengdu, Xi'an and Weinan. These are reported
+host-city indicators, not evidence that every part of each city received
+the reform. Preserve six-digit cityid and year for joins; the workbook does
+not establish historical boundary harmonization. The individual attached
+workbook also does not identify which rows entered the estimation sample.
+
+The original [NDRC notice and attached roster](https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=16669),
+发改规划〔2019〕1947号, was inspected at the signature, SectionsIV(a),V(c)
+and all11 roster entries. Issuance is2019-12-19. Selection favors reform
+capacity, willingness and previous experimentation; provincial approval
+of local implementation plans remains necessary. The national designation
+is not a verified common date of all component policies. Some zones cover
+whole cities, others specified districts/counties; the Shaanxi entry names
+Xi'an areas, Fuping and several Xianyang county-level areas. The deposited
+host-city series sets Xianyang610400 to0 in2020 (Sheet1 row2781), while
+Xi'an610100 and Weinan610500 are1 (rows2778/2782). This is an unresolved
+official-roster-to-paper-exposure discrepancy, not justification to silently
+rewrite the author's treatment or copy a full-city eligibility rule.
+
+Further sample caution: prov_sd is0 throughout Shaanxi despite its treated
+cities; Guangdong contains both0 and1. Its header describes pilot-city
+status, but the values are not identical to treat or a uniform participating-
+province flag. Resolve how the code uses this variable before reconstructing
+the claimed within-province comparison [analytical inference].
+
+The actual [code archive](https://qks.sufe.edu.cn/mv_upload/att/202510/ATT251013000006LsO.rar)
+was retrieved (1899804bytes, RAR5 signature). The available native tar reader
+failed to decode its headers; no code was inspected or executed. Do not call
+an archive download a code review. Reopen using a supported reader and the
+publisher's appendix, then reconcile the Xianyang mapping, prov_sd filter,
+estimation city sample and local timing. Disposition blocked, no canonical
+admission: institutional family and deposited clock are now concrete, but
+their geographic/sample bridge still needs an explanation. Ready unchanged.
+
+### Urban-rural pilot — replication access and actual risk set, 2026-10-07
+
+Ground `task-263fb136d8f7` closes the RAR-access gap using an isolated
+`node-unrar-js` in-memory reader. No repository dependency was installed,
+author analysis executed, or deposited file rewritten. The previous tar
+failure is superseded by actual inspection of the same publisher archive.
+
+Inspected `A01reeg.do`, baseline and SDID blocks, `A02event.do`, event blocks,
+and Python files `mlpj/cusalfore.py`, `moretable.py`, `robustcheck.py` and
+`checkM.py`. They restrict main analyses to `prov_sd==1`. The public
+`data/working_data/input.dta` contains3360rows/91columns; that filter selects
+1452rows,121cities and18treated cities, matching the baseline table count.
+It includes10 provincial jurisdictions, excludes Shaanxi entirely and
+selects17 Guangdong cities. Treatment equals `treated*post`, with post1
+from2020. Removing Chongqing gives1440rows. The baseline absorbs city/year
+and, in the expanded model, province-year effects; SDID uses bootstrap.
+
+This materially narrows the earlier Xianyang concern: it is not a baseline
+untreated comparator under the deposited filter. Its workbook coding still
+fails to describe the complete official host roster, relevant to extending
+the design [analytical inference]. Preserve the observed121-city risk set,
+not an invented all-city comparison across11 provinces.
+
+Another unresolved application boundary is concrete: `cusalfore.py` uses
+`zycp`, while baseline/SDID use `abstaul` and `abstauk`. In the deposited
+data, zycp is identical to neither outcome. No inspected preprocessing maps
+that variable to the published forest result. Alternative Python files do
+name the misallocation outcomes, but do not resolve which supplied run
+produced that result. Treat the code as inspected application evidence, not
+an independently reproduced effect or automatic resolution of the body/code
+discrepancy.
+
+Admission remains blocked pending the documented sample rationale, complete
+zone-to-host mapping and outcome/preprocessing bridge. Future work should
+start from these recovered code/data facts rather than repeat the RAR probe.
+The author's deposited geography should not silently redefine legal scope;
+nor should the absent Shaanxi risk set be repaired without an explanation.
+Ready unchanged; all existing knowledge and user modifications preserved.
+
+### Self-strengthening military investment and civilian industry: screen — 2026-10-07
+
+`task-9984341ea59b` retains `candidate-be5352194152` in the established JDE
+development/industrial lane. Bo, Liu and Zhou, *Military investment and the
+rise of industrial clusters: Evidence from China's self-strengthening
+movement*, JDE161(2023):103015, DOI10.1016/j.jdeveco.2022.103015, is identified
+by the [publisher](https://www.sciencedirect.com/science/article/pii/S0304387822001572)
+and [RePEc citation](https://ideas.repec.org/a/eee/deveco/v161y2023ics0304387822001572.html).
+Publisher introduction and section snippets report county military investment
+in1861–1894, firm-entry panels in1858–1937 and1933 civilian industrial output.
+The paper uses factory placement in a panel design and prior governor
+correspondence about Western technology as an instrument for investment in
+the cross-sectional application. These are reported applications, not a
+verification of the instrument's exclusion restriction. Private-entry
+deregulation also matters to the paper's timing argument.
+
+The inspected [coauthor research page](https://sites.google.com/view/congliu/research)
+lists an alternative title under the same journal/article number and links
+`BoLiuZhou_SSM_Final.pdf` through public Dropbox. That route is the next body
+lead; its preview yielded no text. An institutional PDF route at Chung-Ang
+University returned502. Neither failed preview establishes missing evidence
+in the paper itself. No complete body or appendix has been inspected during
+screening.
+
+Retain `china-variation` for mainland industrial development, not banking
+merely because banks appear among mechanisms. Resolve the factory roster,
+investment definition and timing, county comparison set, historical boundary
+joins, firm/output sources and correspondence instrument before admission.
+Military-factory investment is not treaty-port opening; book stocks, industrial
+linkages and alternative outcomes do not justify duplicate shocks. Canonical
+unchanged; no paper deposited and no GitHub operation.
+
+Resolve `task-9c88d6b229ad` recovered the actual19-page final journal PDF from
+the coauthor's public Dropbox link and the17-page publisher supplement at
+`https://ars.els-cdn.com/content/image/1-s2.0-S0304387822001572-mmc1.pdf`.
+Read finalpp2–12 and16–17, especially Sections2–4, Tables1–5 and Eqs4.1–4.4;
+read supplementPDFpp1–8/printed54–61 and visually inspect complete TableA1.
+The supplement's older title is not evidence of a different instrument: its
+publisher PII and factory/application content match the final article.
+
+The actual research population is1432 counties harmonized to1911 boundaries
+in15 core provinces, with16 host counties. TableA1 stars23 sampled factories;
+the national34-factory inventory includes unstarred Taiwan/Tainan and other
+unsampled places. The appendix defines entry-source capital thresholds,
+absent exits,1933 census exclusions and investment measurement. AppendixC
+closes the instrument's letter years, keyword classification and governor
+selection; Eq4.4 supplies the residence-distance weighting. The two applications
+need different data contracts, not duplicate policy entries.
+
+The inspected National Museum collection account and Fuzhou gazetteer extract
+corroborate establishment examples and approval-versus-construction timing;
+they do not independently certify the entire roster. Publish
+`china-self-strengthening-munitions-investment` as grounded with conditional
+historical use, two design profiles and explicit selection/exclusion threats.
+Source books, author microdata and executable county crosswalks were not
+inspected: the Shandong label and relocated factories require that reconstruction
+before estimation. These are transparent data conditions, not an unresolved
+instrument identity or a substitute causal-validity claim. No paper stored,
+existing knowledge deleted or GitHub operation performed.
+
+### 1929 tariff autonomy and local industrial demand: screen — 2026-10-07
+
+`task-231a62172362` retains `candidate-85262cccd089` within the existing
+Journal of Comparative Economics lane. Bo, Chen and Liu (2022), *Trade shocks,
+industrial growth, and electrification in early20th-century China*,50(3):732–749,
+DOI10.1016/j.jce.2022.02.001, is identified by the
+[publisher](https://www.sciencedirect.com/science/article/abs/pii/S0147596722000166)
+and [coauthor research page](https://sites.google.com/view/congliu/research).
+The latter's public Dropbox `Electricity_Published.pdf` was fetched in memory:
+18 pages with matching DOI and authors, but its running header still has
+`xxx (xxxx) xxx`; preserve that early typesetting state rather than claiming
+the issue pagination is printed on this copy.
+
+InspectedPDFpp6–8, Sections3.4–4.1, defines electricity-sector expansion as
+the outcome and tariff-driven import exposure as the candidate treatment.
+Equation1 links each county to its nearest major treaty port through estimated
+travel costs; the narrative uses initial port commodity shares and commodity
+electricity intensity. Thus neither a generic1929 treated-China dummy nor
+electricity adoption itself reproduces the paper's assignment. This is a
+mainland regional/industrial-development application, not an environmental
+policy or finance variation merely because energy and bank controls appear.
+
+The author page also links the actual publisher appendix
+`https://ars.els-cdn.com/content/image/1-s2.0-S0147596722000166-mmc1.docx`.
+The browser reader cannot interpret its Word content; it has not yet been
+read. Resolve the instrument formula, fixed-share year, commodity/industry
+concordance, county coverage and historical joins,1929 tariff timing and
+identifying restrictions from the remaining body and appendix. This mechanism
+differs from treaty-port opening and military-factory placement; port access
+is an exposure weight, not a new port-opening shock. No canonical admission,
+paper deposit, deletion or GitHub operation during screen.
+
+Resolve `task-c956a8b001cb` read the actual author-linked typeset copy's
+PDFpp3–5 and8–12, plus16–17. The body closes much of the construction:
+five imports (textile goods, cotton yarn, kerosene, flour and sugar),1912
+port shares, six major ports (Tianjin, Shanghai, Hankou, Xiamen, Mengzi and
+Guangzhou),1912 rail/road/water travel hours, and the corresponding1929
+US census industry labels in footnote14. Trade access uses
+`(1+0.004*travel_hours^0.8)^(-12.86)`. Equation3 multiplies this by the
+sum of commodity national imports weighted by initial port shares and
+electricity intensity. Equation4 is a first-difference capacity regression
+on lagged first-difference exposure, with province-year effects. Equations5–6
+predict imports using log(1+commodity tariff), commodity/year effects, then
+reconstruct predicted exposure for2SLS. Tables2–4 report1643 counties and
+36146 observations, with port/prefecture two-way clustering. These are
+paper-reported applications; a large first-stage statistic is not independent
+verification of exclusion or reliable six-port-cluster inference.
+
+The actual Word supplement was read in memory as its complete paragraph and
+table text. It is a data appendix: I power plants, II US manufacturing census,
+III Chinese industrial census, IV population, TablesA1–A3 and FigureA1.
+It is **not** the tariff discussion promised by the body at Section3.2 as
+“Appendix II”; the same body footnote15 correctly refers to II for the US
+census. Do not invent a missing tariff table from that cross-reference.
+The body says these commodities face specific duties, with effective tariff
+rates varying with prices, but the inspected material does not identify the
+price denominator/annual conversion used in Eq5. That affects whether the
+instrument incorporates endogenous commodity prices. Likewise Section3.3
+defines electricity intensity with motor capacity, while Section4.1 describes
+the motor number; the actual census variables or author construction should
+resolve this rather than silently selecting one. National imports, sector
+weights and the logged-prediction-to-level conversion need their actual
+construction before presenting a reconstructible tariff-exposure contract.
+
+The inspected [US treaty text and ratification footnote](https://history.state.gov/historicaldocuments/frus1928v02/d443)
+date signature to July25,1928 and exchange of ratifications to February20,1929.
+ArticleI makes January1 effectiveness conditional on prior exchange, otherwise
+four months after exchange. These are bilateral legal dates, not the domestic
+tariff schedule's operative date. The body narrative's July1927 US agreement
+and January1929 tariff change should remain attributed, not independently
+verified or overwritten from this treaty alone. The inspected
+[December5,1928 Hansard response](https://hansard.parliament.uk/Commons/1928-12-05/debates/6bd70518-e396-45dc-abf6-081a824846bf/TariffMatters)
+still describes British treaty negotiations as ongoing and does not confirm
+January1 tariff exercise. Anticipation and negotiation therefore require
+their own timing evidence; a generic unexpected national date is insufficient.
+
+Keep `candidate-85262cccd089` blocked for the correct tariff construction,
+intensity definition and actual county-risk-set bridge. The body footnote2
+restricts analysis to Chinese plants/cities without concessions, while Table1
+retains a nonzero concession indicator and Table8 uses1709 observations rather
+than the baseline1643 counties; recover the author sample convention instead
+of assuming identical populations. This is a source-construction gap, not a
+requirement to independently reproduce every coefficient. Reopen on the final
+issue body, corrected tariff appendix or actual construction data/code; start
+from these recovered formulas, not another abstract search or Word-access
+probe. No canonical file, maturity promotion, paper deposit or GitHub action.
+
+### WWI textile trade interruption: actual-body screen — 2026-10-07
+
+`task-1747eaae048f` retains `candidate-7ea2f2a6b77f` in the explicitly bounded
+JEH historical-industrial extension recorded in the live coverage map.
+Cong Liu, *The Effects of World War I on the Chinese Textile Industry:
+Was the World's Trouble China's Opportunity?*, JEH80(1),246–285(2020),
+DOI10.1017/S0022050719000858, is verified by the
+[Cambridge article record](https://www.cambridge.org/core/journals/journal-of-economic-history/article/abs/effects-of-world-war-i-on-the-chinese-textile-industry-was-the-worlds-trouble-chinas-opportunity/00B9FF855DE6B320FBB20345C5105B9B).
+The online date is December26,2019; use2020 for issue year. The coauthor-site
+entry's volume88 is not copied: the actual publisher and final PDF say80.
+
+The [author research page](https://sites.google.com/view/congliu/research)
+links public Dropbox `Liu_WWIFinal.pdf` and `Liu_WWI_OnlineAppendix.docx`.
+The final40-page PDF was inspected in memory at cover and printedpp253–260,
+especially measures pp256–260. The1907–1925 window avoids the earlier1905
+New Policies surge and1926 large-scale warfare. Yan2011 traces entry,
+operation, acquisition/merger and exit of99 mills; the baseline aggregates
+operating mills, not a flow of new entrants alone. Du1991's109-firm entry
+source lacks exits and is an alternative measure. This distinction matters
+for matching a stock-versus-entry idea.
+
+The prewar transport network combines rivers,1913 railways, courier roads
+and access links; shortest travel time to ports generates spatial exposure.
+Baseline speeds are1200/150/75/40km per day for rail/river/major/access roads.
+National cotton-yarn import quantity and value are used for unit-value prices.
+Major yarn ports named onp260 are Jiaozhou, Shanghai, Hankou, Guangzhou,
+Chongqing and Mengzi, not the later JCE application's six-port definition.
+Treat these as reported constructions, not universally correct trade routes.
+
+Retain `global-china-variation`: an external war changes import conditions
+actually faced by mainland textile producers. Bank variables and cotton
+suitability are complements/controls, not finance or agriculture shocks to
+add. Resolve the actual interaction/instrument, comparison population,
+transport appendix and mainland historical joins before canonical admission;
+do not mistake the war for a new port-opening or1929 tariff regime.
+The paper cites replication DOI10.3886/E115822V1, with
+`Liu_JEH2020_ICPSR.zip` on the repository landing lead. Browser access redirects
+to an inaccessible ICPSR route; the package itself has not been read.
+Neither that access failure nor a metadata listing proves that code is absent.
+No canonical file, paper deposit, deletion or GitHub action during screen.
+
+### WWI textile exposure: resolved conditional application—2026-10-07
+
+Task `task-534839cd5ae0` resolves `candidate-7ea2f2a6b77f` to
+`china-wwi-textile-import-disruption-port-access`. Actual final-bodypp267–277
+close the assignment and estimating equations: tau=log(1+prewar shortest travel
+days), WWI1914–1919, postwar1920–1925, county/year effects and province-clustered
+inference. Table3 reports1789 counties/33991 rows; excluding Shanghai gives
+1788/33972. Eq2 substitutes logged national yarn import unit value interacted
+with tau, not an IV. Its narrative national aggregation differs from Table4's
+port-level wording; the price variant requires code verification, whereas Eq1
+is explicitly specified. Do not redefine the war window to1914–1918 or count
+the price encoding as another variation.
+
+Bodypp256–260 distinguish operating-mill stock with merger/exit histories from
+Du1991's new-firm initial-capital flow. Bodypp272–275 documents machinery-order
+and delivery delays;pp276–277 explicitly labels financial-complement evidence
+suggestive. These are limits/channels of an industrial-development application,
+not grounds for adding finance or agriculture shocks.
+
+New primary support is the original US Department of Commerce1915 government
+scan, https://archive.org/details/supplementto52191510unit,32pages.
+Readpp1–2 and27–28 in memory; visually inspectedp27. It documents local wartime
+shipping disruption and substitution, not a uniform county exposure rule or
+every historical join. The record preserves this narrow evidentiary role.
+The author-linked DOCX appendix's prose supports transport assumptions; math
+objects/table layouts were not independently verified. No restricted paper or
+dataset was stored. ICPSR DOI10.3886/E115822V1 redirects to a JS-shell landing;
+`Liu_JEH2020_ICPSR.zip` remains uninspected, not declared absent. Historical
+county membership and mill/network joins remain conditional reconstruction
+needs. One global-China case is admitted, without inventing binary treatment
+or random port placement. All work remains local, with no GitHub action.
+
+### Logistics pilot cohort recovery — 2026-10-07
+
+Ground task `task-cc782bf0a22a` revisits blocked
+`candidate-2f081f5fb6f2` (JFE DOI10.16538/j.cnki.jfe.20240615.401).
+The official 2016 monitoring report was recovered and read in memory:
+https://www.mofcom.gov.cn/cms_files/oldfile/ltfzs/201707/20170710135009382.pdf.
+Its imprint names MOFCOM's circulation-development department, its research
+institute and the standardization alliance, June2017. PDFp2/printedp1 footnote2
+was also visually inspected: Beijing belongs to both the first and third
+pilot batches. Thus the third batch's19 designations are not19 new first
+treatments; Beijing's renewed designation must not reset its initial year.
+This resolves the apparent conflict with32 distinct national pilot cities,
+without supplying an independently verified complete cohort roster.
+
+The official 2017 report, May2018, PDFp4/printedp1 also confirms32 cities:
+https://www.mofcom.gov.cn/cms_files/oldfile/ltfzs/201806/20180612161628047.pdf.
+The 2016 report PDFp17/printedp16 permits eligible Wuhan-enterprise projects
+outside the host city within its city circle. City designation, enterprise
+eligibility, project location and payment therefore need separate joins;
+the monitoring reports' descriptive benefits are not causal estimates.
+
+The actual MOFCOM speech dated2015-10-28 confirms Beijing, Shanghai and
+Guangzhou in2014 and11 cities including Tianjin in2015, not all11 names:
+https://fangaiqing.mofcom.gov.cn/article/new/201512/20151201203778.shtml.
+The actual MOF Wuxi notice dated2016-09-19 confirms third-batch designation
+while projects were still being prepared:
+https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/jiangsucaizhengxinxilianbo/201609/t20160919_2421545.htm.
+These are designation evidence, not enterprise receipt dates.
+
+Re-read the published JFE body SectionsIII–IV and Tables1–4 at
+https://qks.sufe.edu.cn/mv_html/j00001/202409/F0as3vNR-2JCx-rdCH-3Vy6-Ra9dN5YgBvyp_WEB.htm.
+It still gives2011–2019 for the152-city sample but2010–2019 for retail-price
+construction and1520 baseline observations. CPI years likewise differ between
+measurement and robustness prose. The inverse/square-root construction order,
+complete original city roster and actual sample membership cannot be filled
+in from totals or secondary tables. No verified code attachment was located
+on the inspected page; this is not proof that none exists elsewhere.
+Keep the candidate blocked rather than publish a reconstructed treatment
+contract. No canonical added, no paper deposited, and no GitHub action.
+
+### Government procurement law and manufacturing allocation — 2026-10-07
+
+Screen `task-587379415679`, candidate `candidate-1983ce876c72`:
+Hang and Zhan, JEBO216(2023):568–589,
+DOI10.1016/j.jebo.2023.10.014. The author's research page
+https://zhanchaoqun.github.io/research.html actually links
+https://zhanchaoqun.github.io/files/government-procurement-misallocation-jebo2023.pdf;
+the22-page final body was read in memory, not deposited. Sections4.1–4.3,
+printedpp577–578, establish the national2003 reform interacted with an
+above-median industry procurement-share indicator. It is based on2005 CICS
+answers about2004 sales, aggregated at two-digit industry with sales weights
+and assigned to four-digit industries under GB/T4754-2002. Do not rename
+this baseline exposure as a pre-reform share or individual contract receipt.
+The methods specify1998–2007, whereas the introduction says1998–2008.
+Retain for resolve of legal coverage,2002 anticipation, appendix industry
+membership, sample clock and post-law share diagnostics before publication.
+Publisher/SSRN direct requests returned403; the independently linked author
+copy succeeded. The SYSU research explanation dated2024-05-03 was also opened
+at https://lingnan.sysu.edu.cn/article/2778, but is not a replacement for
+the inspected published methods. No canonical changed during screen.
+
+Resolve `task-160278660df6` recovered the final body Sections2,4 and5,
+printedpp571,577–586, plus AppendixA TableA1 p587. The detailed methods,
+1998-base event-study window and Table7 all specify1998–2007; retain the
+introduction's1998–2008 discrepancy rather than extending the sample. The
+main industry treatment rule closes: sales-weighted2004 government sales,
+two-digit median classification, GB/T4754-2002 four-digit mapping and common
+post2003. TableA1 lists30 two-digit industries. Table3 reports4295 baseline
+observations,4180 after tariff controls and four-digit industry clustering.
+The share is measured after reform; p582 explicitly discusses this concern.
+The2003 survey's2002 comparison has only six manufacturing sectors, not the
+same fine-industry assignment. The2002 IO alternative's p583 body uses
+positive PASO purchases but Table4 note says above-median purchases; TableA4
+was not recovered. This alternative remains a code-verification condition,
+not an invented independent shock. Assignment shared by two-digit parents
+motivates new-application inference sensitivity despite reported finer
+clustering. These methodological concerns are recorded, not declared cured
+by robustness results.
+
+Read the original-law reproduction on the tax authority's official site:
+https://guangdong.chinatax.gov.cn/gdsw/dgsw_zfcgzd/2008-04/15/content_b831d7e1493e4ef787776965b7a16b3d.shtml.
+Order68 header and Articles2–8,22–27,84–88 establish2002-06-29 adoption,
+2003-01-01 start, fiscal/catalogue/threshold scope, supplier qualifications,
+public-tender priority and special regimes. Ordinary SOE purchasing is not
+the covered government-sales exposure; construction tendering has a separate
+statutory boundary. Final p586 says the authors lack permission to share
+data. The conditional canonical records that access/reconstruction burden,
+not a verified downloadable replication. No paper or restricted data stored,
+no GitHub action. Main-body reconstruction supports admission of one case;
+IO sensitivity, firm mechanisms and alternative outcomes do not increase count.
+
+### Ownership-based2003 R&D deduction expansion — 2026-10-07
+
+Screen `task-f9c24e7174b9`: Liu, Qiu, Wei and Zhan,
+The (dis)connection between R&D and productivity in China: Policy implications
+of R&D tax credits, JCE52(2024):297–320,
+DOI10.1016/j.jce.2023.11.004. Author research page actually links
+https://zhanchaoqun.github.io/files/rd-productivity-china-jce2024.pdf;
+the final24-page body was read in memory, especiallypp299,301–302.
+Section2 distinguishes1996 prior state/collective eligibility from2003
+ownership expansion under 财税〔2003〕244号. The announcement is November27,
+with whole-year coverage. Calling all2003 observations unanticipated physical
+investment responses would distort the paper's relabeling argument.
+
+Actual Section2.2 uses domestic manufacturing ASIF firms2001–2007, excludes
+FIEs,2004 observations with unavailable R&D, ownership switchers and firms
+without observations before or after reform; it reports about80000 firms,
+346000 observations and478 four-digit industries. The ownership comparison
+is not the2008 HNTE R&D/sales notch. The earlier2006 candidate's predecessor
+audit here already recovered the original244 policy; reuse that locator,
+not the earlier candidate's still-unavailable paper methods. Resolve must
+read Section4's exact treated/control registration mapping and inference,
+the10percent growth/profit/accounting conditions,2006 successor timing and
+the retrospective-versus-prospective response distinction. No new canonical
+at screen; no paper stored or GitHub action.
+
+Two other author-linked final bodies were inspected for recall, not admitted:
+JDE2024 DOI10.1016/j.jdeveco.2024.103293 uses2002 catalogue encouragement at
+industry level as an IV for horizontal FDI in export-quality analysis
+(pp5–8). It must not be counted as another policy merely because its industry
+encoding differs from the existing product-specific restriction-removal case;
+mapping or consolidation requires its own bounded task. JEBO2025
+DOI10.1016/j.jebo.2025.107012,pp4–5,9–11, principally uses endogenous
+shareholder-origin corruption indices and entertainment-cost associations.
+Those inspected passages do not establish an independently assigned shock;
+no canonical follows from title or empirical sophistication alone. This is
+a narrow inspected-source boundary, not an audit of its uninspected later
+anti-corruption section.
+
+Resolve `task-01ce3f25723d` inspected actual JCE Sections4.1–4.4,
+printedpp304–308, and embedded AppendixA1–A4 pp314–316. AppendixA1 reports
+79639 firms,345891 observations and478 industries, with no2004 observations.
+AppendixA3 provides the registration-category table; Section4.2 uses a
+25percent state/collective-capital proxy for joint-stock/joint-operation
+control, with50percent sensitivity. Preserve that research proxy and exact
+complex-category lookup, not a blanket private-versus-SOE label. The stable
+ownership-group filter does not imply every registration code is constant;
+footnote22 reports changes within groups.
+
+Eq1's outcome is asinh(R&D), although labeled ln(R&D). Tables3–4 cluster
+by industry-ownership; the full-control baseline has263272 observations.
+The event study has2001 base and only2002 as an observed prelead. Eq1 prose
+says post is after2003, while AppendixA4 explicitly uses2003<=year<2006
+and year>=2006. The legal2003 start is verified; exact baseline code needs
+confirmation and must not be silently replaced with a2004 clock.
+
+Read all four clauses/signature of the official244 reproduction again.
+It requires qualifying profitable industrial enterprises, sound accounting,
+assessed taxation and year-on-year expenditure growth>=10percent; the extra
+50percent deducts taxable income, not tax payable. Read the original1999No49
+management body at https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200803/t286008.html,
+especially ArticlesIII–VII andXVII. These establish expense scope,
+state/collective-controlled categories, prior-year growth, approvals and
+taxable-income limits; current invalidation notes do not replace the original.
+Read Ministry of Finance2006No88 actual body SectionI and final clause at
+https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/2006zcfb/200805/t20080524_34888.htm.
+Signed2006-09-08, effective2006-01-01; it changes the growth regime and
+permits five-year carryforward. Other innovation-tax provisions also change.
+The sample's later years therefore do not retain an invariant2003 regime.
+
+Admit one grounded conditional ownership-expansion record, retaining exact
+lookup/code verification, retrospective reporting, survivor selection,
+missing2004 and successor separation. The productive-return discussion is
+about model-estimated revenue productivity; it does not transform reported
+expenses into observed physical innovation or prove tax receipt. No restricted
+data, full paper or GitHub action; no duplication of HNTE or2006 mechanisms.
+
+### JCE2019 corporate tax-base innovation screen — 2026-10-07
+
+Task task-90cf21d84969 screens Shao and Xiao2019,
+DOI10.1016/j.jce.2019.02.005, Journal of Comparative Economics47(2):470–486.
+Read the Nanjing University author publication page, item7, at
+https://nubs.nju.edu.cn/39/02/c8928a538882/pagem10.htm. It confirms the paper's
+identity, not its empirical design. Read the abstract and download restriction
+on https://ideas.repec.org/a/eee/jcecon/v47y2019i2p470-486.html. Its abstract
+reports a mainland2006 corporate-tax-base reform application to patenting,
+with foreign-invested and state/collective-controlled firms. This is a
+screening lead only; treatment codes, post clock and patent linkage remain
+uninspected. Do not equate those groups with every private firm versus SOE.
+
+Direct publisher article and abstract endpoints return403 through both web
+access and requests. The university page has no linked manuscript for this
+item; bounded title/author searches found no accessible author version.
+Indexed publisher search prose suggests a wage-deduction ceiling mechanism,
+but that prose is not inspected body evidence. Resolve needs the actual
+institutional and methods sections, legal change and effective date,
+ownership/profit/wage eligibility, observation window, patent match and
+clustering. Distinguish it from2003 ownership-based R&D deduction extension,
+the2006 R&D growth-condition change and2008 HNTE eligibility. Search of
+canonical records and candidate/source ledgers found no matching DOI or
+wage-deduction case. No canonical admission and no ready increment.
+
+Resolve task task-35b6c0c5913f checked public-full-text routes rather than
+repeating publisher retries. The OpenAlex work endpoint for this DOI returns
+closed access, no best OA location and no repository full text; these are
+index signals, not proof that no manuscript exists anywhere. Read the
+author's English university page at https://nubs.nju.edu.cn/syc_en/listm.htm;
+no manuscript link for this paper was found. Read ResearchGate's publication
+page331402257, whose full-text section explicitly reports no full text
+available. Title/DOI/author searches returned citations and a conference
+program, not an accessible manuscript. Publisher403 remains the direct
+access result. Finish blocked, retaining the candidate and all core gaps.
+Reopen when an author/institutional manuscript or lawful publisher body is
+available; neither an institutional notice alone nor another paper's account
+can recover this paper's treatment coding and patent construction.
+
+### Eachnet centralized feedback and market reach — 2026-10-07
+
+Screen task-803efe81813f inspects Cai, Jin, Liu and Zhou2014,
+DOI10.1016/j.ijindorg.2014.03.002, IJIO34:51–65. The author publication
+page links the15-page final paper at
+https://chongliu.weebly.com/uploads/1/2/0/9/12099391/seller_reputation_from_word-of-mouth_to_centralized_feedback.pdf.
+Read Sections2 and4.1–4.4, Tables1–4, and Sections4.6,5–6 in memory;
+no paper or restricted platform data was saved. This supplies inspected
+body evidence, not an abstract-derived policy list. DOI/title/platform
+searches found no matching canonical or candidate.
+
+Section2 reports centralized feedback introduced in May2001, buyer
+protection in October2001 and trader warnings in February2002. Feedback
+is voluntary, solicited3–30days after completion and publicized together
+one month after closing. Scores combine buying and selling, without volume
+weights. Online completion is an agreement, not observed payment/delivery.
+The125135-seller random sample follows listing history to April2003;
+the analysis summary instead ends March2003 and describes20pre months,
+where Section2 says21. Recover the exact window rather than harmonizing
+these statements silently. The reported1853168 unique listings produce
+2132751 seller-product-listing-buyer/closing records; multiple buyers per
+listing are treated separately. Buyer history outside sampled sellers is
+missing. Region codes and mainland-only coverage need confirmation.
+
+The actual contrast is after-May2001 times log(1+prior completed listings),
+not randomized reputation or treated versus untreated platforms. Seller-month
+specifications use previous-month successes; completed-listing specifications
+use successes just before listing. Include year-month and seller/cohort
+effects and prior unique buyers. Early-seller exercises use entry by
+April2000 and fixed successes at April2000. Starting buyer regions/product
+categories derive from each seller's first three months, which are excluded
+when conditioning on those sets. Tables3–4 report seller-clustered errors.
+Market expansion means buyer-region/product-category reach, not observed
+firm investment or physical shipment. Section4.6 excludes post-October2001
+observations and restricts accumulated successes to200 in robustness checks.
+
+Retain a China-facing candidate for institutional resolution. Platform-wide
+timing has no never-treated control; historical successes are endogenous,
+and seller entry, accumulated clientele, market growth and dynamic behavior
+can alter slopes. Seller fixed effects do not remove time-varying confounding.
+Section6 explicitly leaves strategic reputation accumulation unresolved.
+Resolve original platform/date documentation or other suitable primary
+corroboration, mainland region mapping, exact sample clock, data access/joins
+and the distinction between feedback and later protection. Do not infer
+exogeneity from a successful replication of the reported correlations.
+
+Resolve task-eaf0943d94a2 read Section2 and footnotes1–2 of the final
+IJIO paper again: product categories use669 third-level codes; seller region
+is reported for98.7percent but the geographic dictionary and mainland-only
+filter are not supplied there. Government-issued identity checks do not
+establish that every sample account is a mainland resident. The transaction
+definition remains an online agreement, with payment/delivery arranged
+offline. Do not recast it as independently observed trade fulfillment.
+
+Read the actual Ministry of Commerce Shanghai representative-office
+investigation dated2006-05-19 at
+https://shtb.mofcom.gov.cn/dyyzh/art/2006/art_61a9409da585403290b75227718ffaf2.html,
+SectionsI(1),(4),(5) andIII(1)–(3). It reports natural-person/small-business
+participation, broad provincial reach and some international transactions,
+and positive/neutral/negative feedback scored+1/0/-1. This corroborates a
+later platform institution, not the May2001 launch or the earlier sample's
+geographic dictionary. Its third-party payment services and seller
+authentication alternatives describe2006, not the1999–2003 regime.
+
+Read NBER working paper18961 in memory from
+https://www.nber.org/system/files/working_papers/w18961/w18961.pdf,
+PDF pages6 and16, printed4 and14. The companion same-author study also
+reports May2001 feedback introduction, but is not independent platform
+documentation. Its buyer-protection sample June2001–March2003,76607sellers
+and second-level market categories differs from IJIO's sample. Do not import
+that clock, classification or deduplication into the feedback application.
+Neither source supplies the mainland geography crosswalk. Bounded Chinese
+and English launch searches found later descriptions and same-author accounts,
+not the original operational notice or codebook.
+
+Finish blocked on institutional/time and mainland-population reconciliation,
+not on a requirement to disclose private microdata. Preserve the body-derived
+construction and joins already recorded. Reopen when a platform archival
+rule/date source or responsible data documentation resolves those boundaries;
+do not lower the gate by counting reputation accumulation as random exposure.
+
+### Export-share model DOI reconciliation — 2026-10-07
+
+Screen task-436366c97066 resolves the older title Protectionism Through
+Exporting to the published JDE2017 title Subsidies with Export Share
+Requirements in China, DOI10.1016/j.jdeveco.2016.12.003. Crossref confirms
+that identity. Reinspection of the author-hosted54-page forthcoming version,
+PDF pages1–7 and9–13, confirms the prior task-6a95d765806b exclusion; it is
+not newly discovered empirical evidence. The author file is a forthcoming
+manuscript, not publisher typesetting. Its8.7percent sales subsidy is a
+modeled profit-equivalent policy experiment. Section2 discusses several
+different tax, zone, ownership and processing regimes rather than one
+observed assignment. Maintain skipped for empirical shock collection and
+preserve the existing institutional bibliography. Future retrieval should
+check both titles and the DOI to avoid another duplicate screen.
+
+### Existing-railway county bypass — 2026-10-07
+
+Screen task-7012c9c6d6bb: Yu Qin, JoEG2017,17(3):489–520,
+DOI10.1093/jeg/lbw013. Author identity: https://qinyurain.github.io/.
+Actual public author-uploaded body inspected at
+https://www.researchgate.net/publication/304191294_'No_county_left_behind'_The_distributional_impact_of_high-speed_rail_upgrades_in_China,
+Sections2.1,3.1–3.3 and4 robustness; HTML body, not downloaded PDF.
+The advance-access version is dated2016; retain the2017 issue year.
+
+Paper uses2004/2007 existing-line upgrades: counties with stations on
+upgraded lines versus counties with stations only on unaffected lines;
+urban districts excluded. Outcomes include GDP and fixed-asset investment.
+Retain candidate, distinct from dedicated-new-line market access.
+Resolve official regime dates, line/cohort coding, county joins and
+the pre1996/pre2002 rail-access wording against the new-access robustness
+sample. Route selection and spatial spillovers remain identification threats,
+not proof of random treatment. Do not equate exposure with station closure
+or accept the paper's speed threshold without institutional corroboration.
+
+Resolve task-469147055584 inspected the same actual body, printed pages4–5,
+6–14,17–18, Equation1, footnote10 and Table4 discussion. The atlas2008
+supplies station/line membership; yearbooks1996–2007 supply opening years;
+annual timetables1996–2009 and the2003 station encyclopedia supply stop joins.
+County outcomes come from CNKI yearbooks. Estimation uses2002–2009;
+the2007-only window is2005–2009. Specifications include county and
+province-year effects and county-clustered errors, with optional2000
+covariates interacted with time trends. Treatment is line membership,
+not observed closure. Section3.3 says pre2002 access; Section4.1 says pre1996,
+while the Table4 discussion removes32 newly connected1997–2001 controls.
+Do not silently merge these sample definitions.
+
+Inspected the actual NDRC notice 发改办运行[2007]1030号, opening paragraph
+and SectionIV, at
+https://www.ndrc.gov.cn/xxgk/zcfb/tz/200909/t20090930_965389.html.
+It corroborates April18 sixth-round implementation and increased train
+density/level-crossing closures, not station abandonment or county treatment.
+The page displays2007/05/11 but its signature displays2009/09/30; preserve
+that archive discrepancy rather than treating either as the announcement date.
+The historical Ministry press-conference URL
+https://www.gov.cn/zhibo34/content_445685.htm returned404; its indexed
+freight-product description is only a follow-up lead, not inspected evidence.
+
+Bounded resolution remains blocked on exact upgraded segment/cohort mapping
+and the estimation-population reconciliation. The paper explicitly describes
+partial2004 corridors, so assigning every county on those corridors would
+overstate treatment. Obtain readable Figures3–4 with institutional segment
+documentation or responsible author coding; reconcile the sample restrictions
+and2004 train-speed classification. This does not require public release of
+restricted outcomes. Preserve the recovered data construction for reopening;
+do not publish a vague national high-speed-rail shock to increase ready count.
+
+### Border revitalization and firm exports: retained screen — 2026-10-07
+
+Screen task-22c52632f666: Sui, Hongguang, Md Shariful Islam, Xiaoxue Du
+and Shihua Zhang2025, Southern Economic Journal92(2):527–560,
+DOI10.1002/soej.12766. Actual publisher metadata/abstract inspected at
+https://onlinelibrary.wiley.com/doi/10.1002/soej.12766;
+online March3,2025, issue October2025. Publisher correction September13
+changes the second author's name; use its corrected spelling. The actual
+lead-author university publication list independently confirms publication:
+https://faculty.sdu.edu.cn/suihongguang/en/lwcg/13771/list/index.htm.
+
+The abstract identifies paper-used 兴边富民 exposure and firm export
+competitiveness in Chinese border regions. Retain china-variation candidate,
+not an assertion that every border firm received support. The full-text
+publisher link failed; targeted title/DOI searches found no inspected
+manuscript or supplement. ResearchGate's exact publication entry labels
+full text unavailable. Citing-page excerpts are not the actual article body.
+
+Resolve paper-specific policy phase, county/project eligibility and timing,
+firm location and product/destination joins, comparison, sample, estimator
+and threats. Distinguish geographic border status, designation and actual
+funding; national program history cannot substitute for the paper's exposure.
+Do not infer a start year, threshold or clean external assignment from the
+abstract's DID label. No canonical changed.
+
+Resolve task-90271efa8e36 inspected the actual State Ethnic Affairs
+Commission text 民委发〔2004〕1号, SectionsI,III,IV,VII:
+https://www.neac.gov.cn/seac/c103601/200501/1079354.shtml.
+It reports9 national pilot counties in2000 and17 in2001, followed by
+37 national key counties from2004. Provincial quotas reflect border,
+poverty and ethnic-population conditions; provinces nominate and central
+authorities approve. Dynamic adjustment and provincial additional support
+mean selection and receipt are not a geographic-border dummy. Its page
+posting date2005-01-12 is not the2004 regime's effective date.
+
+Inspected actual 民委发[2004]163号, SectionsI–V, at
+https://www.neac.gov.cn/seac/c103601/200408/1079356.shtml.
+The notice lists37 counties, channels central support through minority
+development funds, and requires provincial project-level allocation rather
+than subprovincial block grants. It restricts uses and permits adjustments
+for poor administration. Signature June4,2004 differs from August16 page
+posting; neither establishes first firm exposure or project expenditure.
+These documents explain selection and implementation, but are not verified
+as the precise cohort used by the SEJ paper.
+
+The direct publisher full-body request returned403 with a browser challenge;
+the linked author university entry was unavailable through the web reader,
+and the exact ResearchGate entry returned429. Existing publisher abstract
+and author publication metadata remain available, not body evidence.
+Finish blocked pending lawful paper/appendix access and its treatment
+crosswalk. Recover phase/county coding and historical firm-location joins,
+sample and comparison before using the official list. Do not infer2000 or
+2004 as this paper's event year, or replace firm-export evidence with a
+related regional-growth paper. No canonical changed.
+
+### SPC circuit tribunals and regional integration: body screen — 2026-10-07
+
+Screen task-77d558bbcdcf inspected the38-page accepted manuscript in memory:
+https://eprints.lse.ac.uk/115925/1/Guo_judicial_institutions_accepted.pdf.
+PDF page1 identifies CER75(2022), DOI10.1016/j.chieco.2022.101829 and
+accepted-version status; do not claim publisher-final coding. Actual body
+PDF pages8–17, Sections2–4, and pages18–22, Tables1–3, were read.
+No copyrighted file or individual case data stored.
+
+The instrument is Supreme People's Court circuit jurisdiction, not local
+judges' fiscal-management transfer. Section2.2 reports2015 and late2016
+openings; Section4 codes the later cohort as treated from2017, not2016.
+Case analysis uses2013–2019 commercial judgments,3513 observations,
+first-named litigants and province-clustered errors. Province exposure is
+described relative to the plaintiff; actual jurisdiction and defendant-side
+venue must be reconciled rather than assumed identical. Footnote23 includes
+the five Beijing-headquarters jurisdictions in treatment after2017, despite
+their lack of a new circuit seat. Preserve this consequential coding issue.
+
+Sources named by the paper are China Judgments Online, Qichacha enterprise
+attributes and China Statistical Yearbook retail price indices. The paper's
+description of Qichacha as organized by SAMR is source-reported, not verified
+provider ownership. Distinguish case-number/stage links, litigant identities
+and historical provinces from firm social-credit-code matching. Claims-based
+plaintiff wins involve manual judgment; award/claim and cost shares are
+alternative outcomes, not error-free judicial-quality measures.
+
+Retain a china-variation candidate. Resolve original SPC jurisdiction
+provisions and amendment cohorts, effective versus inauguration dates,
+case-type/exemption scope, province coding including footnote23, market
+segmentation appendix/sample and lawful access. Final retrial cases are
+selected; the reform itself changes appeal composition. Shared circuit,
+same-province and cross-circuit comparisons are applications of one
+institution, not extra variations. Province clustering, overlapping judicial
+reforms, heterogeneous staggered effects and post-treatment composition
+remain substantive identification questions. No canonical changed.
+
+### SPC circuit jurisdiction: original rules and coding gap — 2026-10-07
+
+Resolve task-45a0526afa73, candidate-148476956493, inspected the original
+SPC provisions and amendment, not a retrospective jurisdiction summary.
+https://www.court.gov.cn/zixun/xiangqing/13148.html,
+announcement and Articles1–4,6–8: judicial interpretation2015 No3 took
+effect2015-02-01. The first circuit covered Guangdong, Guangxi and Hainan;
+the second covered Liaoning, Jilin and Heilongjiang. Hunan was not in the
+original first-circuit jurisdiction. Appeals/retrial applications concern
+eligible high-court decisions; intellectual-property, foreign commercial,
+maritime and specified other matters remained at headquarters. SPC could
+retain or take back cases with important law-unification implications.
+
+https://www.court.gov.cn/fabu/xiangqing/33872.html,
+2016 No30 announcement, amendment and republished Article1, effective
+2016-12-28: first circuit adds Hunan; third covers Jiangsu, Shanghai,
+Zhejiang, Fujian and Jiangxi; fourth Henan, Shanxi, Hubei and Anhui; fifth
+Chongqing, Sichuan, Guizhou, Yunnan and Tibet; sixth Shaanxi, Gansu,
+Qinghai, Ningxia and Xinjiang. Second-circuit coverage is unchanged. Beijing,
+Tianjin, Hebei, Shandong and Inner Mongolia remain directly served by SPC
+headquarters. The official explanatory report at
+https://www.court.gov.cn/zixun/xiangqing/34072.html distinguishes2015
+inaugurations from the later expansion. Seat opening, legal effective date
+and an annual paper treatment convention are different clocks.
+
+The LSE accepted manuscript was read through PDF pages23–38 as well as
+the earlier institutional/data/design sections. Section6.3, pages24–25,
+grounds home-court bias in defendant-side initial venue; Section4 nevertheless
+describes province exposure using the plaintiff's province. Its footnote23
+also treats headquarters jurisdictions after2017 as equivalent to circuits.
+The inspected official amendment does not establish a new headquarters
+jurisdiction shock in2017. These statements cannot be silently repaired by
+substituting a defendant-province treatment or five never-treated provinces.
+Nor can Hunan be assigned to2015 merely because its eventual court opened
+then. Need final-version treatment crosswalk or implementation code to
+establish what the authors actually did and how it maps to legal exposure.
+
+AppendixA, PDF pages36–37, constructs neighboring-province relative
+log-inflation differences by retail-good category, takes absolute differences,
+removes the common good/time price component and uses cross-good residual
+variance as segmentation. The body reports China Statistical Yearbook retail
+indices and966 observations in the baseline Table3 application. The inspected
+appendix does not provide the exact province-pair/category panel or the
+province-to-pair treatment aggregation needed to reproduce that application.
+Preserve these as unresolved joins rather than inventing all-pair treatment.
+
+Section6.8/Table11, pages28–29, reports that the matched-case estimates
+lose statistical significance; the authors attribute the baseline change to
+retrial composition. This is not evidence that judges improve outcomes for a
+fixed population of cases. Section6.9/Table12 instead uses948247 lower-court
+observations in Guangdong and Zhejiang for appeal outcomes, a distinct
+application and sample, not another instrument. Non-significant timing
+predictors or pretrends do not prove random assignment; seat selection is
+related to development and case burden in Section6.5/Table9. Neither a
+mechanical causal percentage from log-distance coefficients nor the authors'
+lower-bound assertion is adopted as established knowledge.
+
+Outcome: blocked at the candidate layer because core paper exposure and
+comparison coding remain unresolved, not because the institution is unknown.
+Next step is lawful publisher-final/replication access clarifying plaintiff
+versus original-court province, Hunan's cohort, headquarters treatment and
+pair exposure. Do not repeat the original-rule lookup as if it were missing,
+or publish a generic staggered-circuit record from the abstract. No canonical,
+copyrighted paper or personal case data added; ready count remains138.
+
+### Airport management transfer and firm performance: screen — 2026-10-07
+
+Task-71628927f3f2 screened Liang and Zou, Journal of Asian Economics90
+(2024):101681, DOI10.1016/j.asieco.2023.101681. Publisher preview at
+https://www.sciencedirect.com/science/article/abs/pii/S104900782300101X
+identifies the actual mainland firm/regional application; introduction is
+accessible, not final Sections3–4. Do not treat preview conclusions as
+verification of the treatment dictionary. Existing airport-network access
+canonical represents construction/connectivity, not control-right transfer.
+
+Author-uploaded March2020 preprint body was inspected through rendered HTML:
+https://www.researchgate.net/publication/339687145_Flying_High_in_the_Sky_the_Airports_Decentralization_Reform_and_Regional_Economic_Development_in_China.
+Sections3–4, manuscript pages7–11: transfer of CAAC airport assets, debts and
+personnel to provinces; airport DID compares33 transferred with28 previously
+local airports after matching within200km. Manufacturing DDD uses ASIF2000–
+2007, geocoded firm addresses,25km exposure to94 transferred airports and
+three-digit high/low-skill industries. Formula uses firm/year fixed effects;
+time-invariant industry-by-distance term is absorbed. Airport and firm
+analyses have different samples and clustering. Post is described as after
+2004; reconcile inclusive year coding with final version. Twenty-five
+kilometers is an application cutoff, not legal assignment. Retain one
+china-variation candidate, not separate cases for inventory/productivity.
+
+CAAC official historical body inspected at
+https://www.caac.gov.cn/ZTZL/RDZT/2021BNWY/GGKF/202107/t20210707_208310.html,
+section on the third civil-aviation reform:2002-03-03 national reform
+authorization, airport transfers March2003–July2004,87 directly managed
+airports with Capital/Tibet exceptions; Gansu transfer2004-07-08 marks
+completion. This institutional count differs from the paper's94 and needs
+a roster/scope reconciliation, not an assumed typographical correction.
+Accompanying airline regrouping, administrative and police reform mean
+the airport transfer was part of a broader package, not a standalone random
+intervention. Official government link cited in preprint footnote4,
+https://www.gov.cn/zhengce/content/2008-03/28/content_3302.htm,
+was unavailable through the web reader in this attempt.
+
+Resolve next: inspect original2003 implementation provisions and airport
+transfer/exception roster, lawful final body or code, three-digit skill
+crosswalk and industry stability, nearest-airport/address reference year,
+post-year convention, control geography and spillovers. Author preprint
+claims about constant airport numbers are not adopted as verified history.
+Airport siting, ownership selection, firm sorting, WTO industry trends,
+SARS and concurrent airline restructuring require substantive assessment.
+No canonical changed, no paper or personal firm data saved; ready138.
+
+### Airport transfer: original implementation annex recovered — 2026-10-07
+
+Resolve task-d3f02a140df7, candidate-ff7ba55541b1, recovered the full
+government body by a direct read-only HTTP request200 at
+https://www.gov.cn/zhengce/content/2008-03/28/content_3302.htm.
+The earlier web-reader failure is not continuing source unavailability.
+Metadata establishes Guohan2003 No97, signed2003-09-04;2008-03-28 is
+web publication, not a reform start. The full approval, implementation
+SectionsI–VI and attached airport roster were read. No document saved.
+
+SectionII.1 distinguishes17 provincial bureaus plus Urumqi, four regional
+administration provinces and five already-separated provincial systems.
+SectionII.2 retains Civil Aviation Flight University airports, Capital
+Airport Group airports including Tianjin Binhai, and Tibet airports under
+their stated arrangements. SectionII.4 makes signed airport handover
+documents the legal basis of transfer and responsibility, not a common
+national announcement date. Shares and the civilian terminal component of
+military/civilian airports are expressly qualified in the roster's final note.
+The regional roster headings sum to93 entries (12+15+17+15+12+12+10),
+including a general-aviation entry and suspended airports. That is not
+automatically the paper's94 operating/commercial airport exposure sample,
+nor a crosswalk proving all94 transferred in2003–2004.
+
+SectionIV.1 uses audited2002 accounts to allocate assets and liabilities;
+IV.5 requires land-use division agreements before handover. SectionV.1
+retains central industry regulation while assigning provincial leadership
+and airport-management direct responsibility from transfer. SectionsV.4–6
+preserve interim construction-fee arrangements, loss subsidies during the
+Tenth Five-Year Plan and approved construction financing. The preprint's
+simple fee-sharing description is not a substitute for these provisions.
+SectionVI aims for end2003 completion; distinguish that target from actual
+completion in2004. A legal transfer of control is neither privatization
+nor withdrawal of central regulation/funding.
+
+CAAC's2007 chronology body at
+https://www.caac.gov.cn/PHONE/XWZX/MHYW/200710/t20071022_11658.html,
+2004 entries March18 and July8, independently records the Gansu handover
+and completion, reporting90 directly managed airports; it also records
+domestic aviation fare reform effective2004-04-20. This adds a contemporaneous
+industry shock requiring assessment rather than proving the DDD invalid.
+The official93 roster, retrospective87 count, chronology90 and paper94
+remain different source-defined universes pending reconciliation.
+
+Publisher-final body request returned403. Targeted author/title/full-text
+search did not recover final treatment/code; a related Chinese2019 paper
+and2020 Chinese publication are leads, not yet inspected body evidence or
+verified substitutes for JAE2024. Finish blocked on the treatment crosswalk:
+recover the paper airport IDs and ownership histories, post2004 inclusion,
+firm address reference time and industry skill dictionary. The institution
+and legal roster are no longer missing; do not restart generic policy
+discovery or mechanically replace the94-airport application with93 entries.
+No canonical modified; ready138, local accumulation only.
+
+### Tutoring-industry restriction and city demand exposure — 2026-10-07
+
+Screen task-5b5e44a4caf7 inspects Huang, Liu, Ma and Yang, “Biting the
+hand that teaches: Unraveling the economic impact of banning private tutoring
+in China,” Journal of Comparative Economics53(2025):954–976,
+DOI10.1016/j.jce.2025.07.002. JCE is an existing supplementary enterprise
+and development lane, not a new ranking claim. This is a firm-dynamics and
+industry-regulation application, not exam attainment or a financial shock.
+Exact DOI/title search found no existing candidate or canonical record.
+
+The actual23-page author-hosted final PDF was read in memory:
+https://www.zibinhuang.com/_files/ugd/b5c11e_dad268f2842549bfb7563d01c0f81f3d.pdf .
+Inspected printedpp957–959,962–963,966–967 and971–972: Sections2.3,
+3.1–3.2,5.1,5.3 and spillover/ownership discussions. PDF text extraction
+does not establish visual inspection of plotted coefficients. No PDF,
+microdata or code was stored.
+
+Section5.1's actual exposure design interacts post with city2020 census
+children aged5–14, measured in thousands. July2021 is not assigned to the
+treated period in the baseline; August is the first post month. It compares
+higher versus lower continuous demand exposure under one national policy,
+not pilot cities versus legally unaffected cities. City, year-month and
+city-calendar-month effects and city COVID cases enter. Children are a
+predetermined demand proxy, not a statutory eligibility threshold; parallel
+differential trends and absence of child-population-correlated shocks remain
+assumptions. The paper notes market anticipation around May2021 and tests
+an earlier policy clock in a separate appendix, not yet inspected here.
+
+Main job postings span January2016–November2021 across six platforms;
+education-related filtering yields13,368,933 positions in337 cities. Registry
+data include branches/subsidiaries, names, scope, location, registration and
+cancellation status, with431,459 education-related firms through2022.
+Main outcomes are levels of recruitment, entry and cancellation, not logs.
+Dictionary classification and ownership relationships distinguish academic
+tutoring from arts/sports and other services. Untargeted arts/sports show
+spillovers and cannot automatically be clean controls. Job vacancies are not
+observed layoffs; cancellation dates are not verified cessation of activity.
+Later2022–2025 recruitment data are explicitly not directly comparable to the
+main source (footnote8); do not splice them into an unchanged panel.
+
+Retain one china-variation candidate for resolve. Recover the original
+July24 policy linked in footnote7:
+http://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202107/t20210724_546576.html .
+Verify compulsory-education academic-training rules rather than copying the
+paper's broad “all private tutoring” wording. Inspect appendix dictionaries,
+city/sample windows, child count versus population-share robustness, inference
+and anticipation before admission. Keep restrictions on approval, nonprofit
+registration and time limits distinct from complete cessation or privatization.
+Screen changes no canonical; ready139, local accumulation only.
+
+### Tutoring restriction resolution: national rule versus pilot enhancements — 2026-10-07
+
+Resolve task-e45281b8cd16 recovered the complete original text at
+https://www.gov.cn/zhengce/2021-07/24/content_5627132.htm through ordinary
+requests200, after the paper-linked MOE endpoint403. Clauses13–15 establish
+national academic-training restrictions; Clause23 names nine pilot cities
+only for24–26's additional measures. The closing paragraph separately covers
+preschool and high-school training. The paper's broad private-tutoring wording
+does not replace these legal activity/stage boundaries. Local/provincial
+approval duties also qualify its summary of centrally supervised approval.
+
+Final-body reinspection pp962–967 confirms city-month continuous exposure,
+2020 children5–14 in thousands, post after July and June2021 event-study
+base. July not being treated does not prove it was dropped from the panel.
+Table6's28008 registry observations and Table3's23720 recruitment observations
+serve different data contracts. Table notes do not disclose clustering, which
+remains an inference/code condition rather than an invented city-cluster claim.
+Section5.9 explicitly imputes one opening when recruitment counts are missing;
+advertisement-count robustness is different. Registration cancellation and
+vacancies do not directly measure economic closure or actual layoffs.
+
+The current author research page was inspected and links the23-page final
+PDF plus a March16,2024 draft at
+https://www.zibinhuang.com/_files/ugd/b5c11e_1fa8358197fe454981fcc7a003055ad1.pdf .
+The54-page draft was inspected for version/supplement recovery, not used as
+the final appendix. Its A5 is a July-clock robustness table whereas final
+body A5 identifies large firms; labels and coefficients must not be blended.
+No final dictionary/code or separate final supplement was recovered here.
+
+Admission is one grounded conditional record for the national regime with
+the published child-demand gradient, defaulting to registry firm dynamics.
+Final dictionary/sample/code, July handling and clustering remain explicit
+reuse/replication conditions. Legal/business identity, common clock, comparison,
+city joins and measured outcomes are recoverable; access to private microdata
+is not claimed. No split by spillover outcome or nine-city pilot is counted.
+Local accumulation only; no PDF or microdata stored.
+
+### Generation unbundling: final article and original reform plan — 2026-10-07
+
+Gao and Van Biesebroeck, Journal of Industrial Economics62(1):41–76,
+DOI10.1111/joie.12034, studies China's fossil-fuel generation firms rather
+than environmental outcomes. The final article body at
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4809436/ was inspected, particularly
+SectionsII, III(iii)–(iv), IV and V(ii), TablesII–IV. The author PDF endpoint
+returned502 HTML and was not treated as an inspected PDF. This source fits
+firm/industrial development and is distinct from electricity scarcity
+instruments and general SASAC monitoring changes.
+
+The benchmark exposure fixes ownership at2002: registration codes110 or151
+define369 treated firms versus654 other firms among1023 active that year.
+This is an ownership proxy, not a verified SPC asset-transfer roster.
+Alternative Big Five affiliation/capital defines228 treated firms; majority
+state capital defines447. These definitions are not interchangeable: the
+Big Five labor coefficient in TableIV changes sign relative to the benchmark.
+Keep all three within one paper application rather than inventing three
+independent policy shocks. Annual interactions and the late2004–2007 post
+window document adjustment; precise early-post coding still needs resolution.
+
+The1998–2007 NBS industrial-firm panel uses CIC4411, firm identifiers and
+name/birthdate/postal-code matching when identifiers change. Around10percent
+change identifiers during restructuring, so naive ID disappearance is not
+firm exit. Outcomes are employment and material expenditure conditional on
+revenue, wages and capital, not directly observed physical productivity.
+Manufacturing output/employment in the same six-digit diqu instrument
+revenue, not policy assignment; local-demand exclusion requires scrutiny.
+Ownership imbalance, price heterogeneity, coal-price reforms, concurrent
+SASAC changes and entry/exit remain causal interpretation boundaries.
+
+The original State Council reform plan, 国发[2002]5号, signed2002-02-10,
+was read in the NEA reproduction:
+https://www.nea.gov.cn/2011-08/17/c_131054253.htm . The2011 portal date is
+not the reform date. Clauses7–12 describe SPC asset separation and also
+local/other-department enterprises; portfolio allocation depends on geography
+and asset quality, not random assignment. Grid companies retain specified
+emergency/peaking or pumped-storage assets and may temporarily manage pending
+units. Clauses17–22 propose phased markets and preserve transitional
+contracts, not universal competitive pricing from2002. Clause25's formation
+deadline is a target, not proof of every firm's realized transfer date.
+
+Screen disposition: candidate for resolve. Before admission, reconcile the
+paper's policy clock, benchmark ownership proxy and alternatives, and state
+what comparison identifies despite reforms affecting non-SOE controls too.
+No canonical published at screen; ready remains138. Local accumulation only.
+
+### Development-zone rectification: inaccessible application — 2026-10-07
+
+Task `task-e210699d3e6f` screened Luo, Liu, Wu, Zhu and Jin2015,
+*Does development zone have spillover effect in China?*, Journal of the
+Asia Pacific Economy20(3):489–516, DOI10.1080/13547860.2015.1054171.
+Publisher-indexed metadata identifies the publication and its rectification
+discussion, but it does not establish the treatment construction. Direct
+requests to the publisher full article returned403. The SSRN April2015
+36-page version2593268 delivery URL and the publication-linked version2669146
+also returned403; the browser fetch of the former landing page returned429.
+No paper body, appendix or replication data were inspected in this task.
+
+The indexed publisher notes offer concrete recovery leads: 发改外资[2003]591号,
+国发明电[2003]7号, 国办发[2003]70号 and 发改外资[2003]2343号; they also mention
+Guangdong-only illegal-zone information. These are retrieval leads, not verified
+legal provisions or evidence that a national removed-zone roster was used.
+Before canonical admission, inspect the actual rectification specification,
+removed/surviving-zone universe, timing, geographic exposure construction and
+comparison sample. Check whether illegal-zone omissions change selection;
+do not substitute a surviving-zone2006 catalog for pre-cleanup boundaries.
+Administrative withdrawal does not by itself imply factories physically closed.
+
+An auxiliary lead is Chen, Lu, Timmins and Xiang2019, NBER working paper26148,
+DOI10.3386/w26148, *Spatial Misallocation: Evaluating Place-Based Policies Using
+a Natural Experiment in China*. Its landing-page abstract describes closure
+exposure, but the body was not inspected here. It is a different paper, remains
+a working-paper lead, and cannot fill the JAPE article's missing design by
+association. Next useful action is lawful body recovery from SSRN or an author
+repository, followed by inspection of the institutional-to-data bridge; repeated
+generic searches for the policy name would not close this gap.
+
+Disposition: blocked screen; no new canonical record or readiness promotion.
+Ready remains140. Preserve the lead locally without GitHub publication.
+
+### Zone withdrawal: recovered NBER body and proxy boundary — 2026-10-07
+
+Task `task-37f9941a3ff0`, candidate `candidate-4ea1736bca62`, inspected the
+actual42-page August2019 NBER working paper26148 in memory:
+https://www.nber.org/system/files/working_papers/w26148/w26148.pdf . Browser
+fetch403 was not terminal: an ordinary direct request returned200. No journal
+publication was established; retain working-paper status explicitly.
+
+SectionsII–III, pp9–16, identify ASIF2000–2007 exposure through17 keywords in
+six address fields. Treatment requires zone status in2003, its absence in2004,
+and unchanged location. Post covers2004–2007. Observations are truncated around
+zone entry/reentry; footnote5 reports substantial2006 reentry. The preferred
+comparison remains zoned; never-zoned and combined controls are alternatives.
+Table1 includes matching and within-city support restrictions, not additional
+variations. SectionIII's capital appendix is available on request, not inspected.
+Tables2–4 separate subsidy, lending proxies, scale and short-window checks;
+interest expenditure indicates borrowing, not loan amount. Address disappearance
+is a paper-used proxy, not a verified legal withdrawal. Missing field-level
+implementation, firm-ID continuity, exact location-stability test and inference
+code remain reconstruction conditions. Distance from city halls to three ports
+is a heterogeneity measure, not another assigned policy.
+
+The full NDRC2007 Q&A was actually read via200 response:
+https://www.ndrc.gov.cn/xxgk/jd/jd/200704/t20070429_1183053.html . It documents
+theJuly2003 start, June2004 compression,2005 planning review and2006 approval
+and boundary completion. It also describes renaming, adjacent-zone integration,
+roughly one retained zone per county and conditional regional leniency.
+Thus a changed address label can reflect administrative reorganization as well
+as loss of zone privileges; national totals do not validate firm-level labels.
+
+The full Wuhan notice 武政[2004]22号, signed2004-04-01, including its49-entry
+district-organized removal/delisting list, was read via200 response:
+https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/szfwj/202003/t20200316_973445.shtml .
+It distinguishes撤消 from摘牌 and instructs continued management/service of
+completed and ongoing projects. The portal's2020 path is not the policy date.
+This local primary roster contradicts a literal universal reading of the
+paper's statement that closed zones cannot be traced to official documentation;
+it does not supply a national roster or establish coverage of the paper sample.
+One rendered Hongshan name is corrupted and must not be silently normalized.
+
+Retain for identity resolution: test the address proxy against legal withdrawal,
+merger and renaming, without equating label loss with factory shutdown or a
+verified termination of every privilege. Preserve this source independently
+of the inaccessible JAPE2015 article. No canonical admission at screen;
+ready remains140, with local provenance only.
+
+### Zone withdrawal resolution: assignment bridge remains open — 2026-10-07
+
+Task `task-a3196e48efec` continued candidate `candidate-4ea1736bca62` by reading
+the NBER body's remaining identification checks and discussion, pp22–26 and
+32–39. Table5 reports pre-trend tests with2003 as reference; this does not verify
+the underlying address labels. SectionV explicitly reports differing inland
+pre-trends. Its500km split is motivated by the fitted heterogeneity turning
+point, not a statutory treatment threshold or an RD assignment.
+
+SectionVI and Table10 establish only some reported mechanism evidence:
+subsidy amounts decline, but subsidy receipt, borrowing incidence and income-tax
+burden do not show significant changes. Cheap land and government services are
+not observed. These checks cannot establish that each label-losing firm actually
+lost the full privilege bundle. Tables13–14 also find changes among non-zone
+firms using the2003 treated-firm share of county/district–two-digit-industry
+cells. This is aggregation of the same underlying proxy, not a separate
+assignment mechanism, and cautions against treating never-zoned firms as an
+unaffected comparison for every outcome.
+
+The decision gap is now specific: there is no inspected firm-to-zone withdrawal
+crosswalk or validation that separates removal/delisting from renaming, merger
+and reporting-field changes. National count similarity, common trends and a
+subsidy regression do not supply that bridge. The already-read Wuhan roster
+offers a lawful local validation route; it is not evidence that the paper matched
+its firms to that list. Recover exact address/location-stability code and test
+its2003–2004 labels against dated local decisions, retaining partial reductions,
+mergers and reentry separately. A national legal genealogy alone would not
+resolve this empirical exposure problem.
+
+Outcome: blocked candidate, not an invalidated policy or paper. No new canonical
+half-product; ready remains140. Other high-value collection can continue while
+this source awaits the missing bridge. No GitHub operation performed.
+
+### Payroll relief: benefit simulation is not post-policy identification — 2026-10-07
+
+Task `task-10b97971039f` inspected the final HTML body at
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9362103/ , direct200 response, especially
+Sections2,3.2.1 and3.3. Cui, Hicks and Norton2022, International Tax and Public
+Finance29:1321–1347, DOI10.1007/s10797-022-09746-w, is a Policy Watch article.
+It uses2016 tax-registered firms from one unnamed province to simulate2020
+contribution relief, rather than observe a firm-level post-policy treatment
+effect. Predicted cash-flow loss uses imported industry-size revenue shocks;
+neither this merge nor non-participation creates a randomly assigned control.
+The paper distinguishes mandatory social-insurance relief from discretionary
+medical-insurance reductions and discusses employer-incidence assumptions.
+
+Disposition: skipped as a standalone causal-variation admission source, not as
+poor research or evidence that the policy did not exist. Its benefit-accounting
+analysis is useful institutional context for a future actual policy evaluation.
+Do not reinterpret simulated liquidity as observed survival, employment or
+productivity effects, or label contribution non-participants untreated controls
+without selection reasoning. Footnote5 cites Chen et al.2020 survey evidence
+as a follow-up lead; that source's own design has not been inspected here.
+Restricted microdata are not publicly available; a code-availability statement
+does not verify a current downloadable package. No canonical file created;
+ready remains140, local accumulation only.
+
+### Selective industrial support and overcapacity: retained lead — 2026-10-07
+
+Task `task-0d639347f827`, candidate `candidate-bf6b8fc044e3`, retains
+Ge, Zhu, Chen and Huang2024, *Selective industrial policy and overcapacity:
+Evidence from a quasi-natural experiment in China*, Economic Systems48(3),
+101191, DOI10.1016/j.ecosys.2024.101191. The actual author university page
+https://mbaedp.nwu.edu.cn/info/1024/3614.htm returned200 and lists the article;
+it provides no manuscript/attachment link. Publisher indexed preview identifies
+the2009 Revitalization Plans of Ten Industries and an A-share DID application.
+Direct publisher body retrieval returned403; no methods, appendix or code were
+inspected. Preview statements are retention leads, not verified treatment rules.
+
+Resolve exact supported industry/activity membership, corporate classification
+year and switching, sample period,2009 implementation/anticipation, controls,
+capacity-utilization construction, estimator and inference. Recover the original
+plans and decide whether their instruments and assignment form one coherent
+regime; do not create ten cases from ten labels or blend materially different
+programs. Distinguish the existing2006 shipbuilding-subsidy record and its2009
+successor discussion, as well as the2008 crisis stimulus and2016 coal restrictions.
+Subsidy changes and zombie-firm outcomes are not separate policy assignments.
+
+The initial coal-source branch recovered a different11-page PKU-hosted paper,
+DOI10.1016/j.jclepro.2020.120472, *A permit trading scheme for facilitating
+energy transition*. Pages1–3 explicitly describe a proposed trading scheme and
+simulation. It supplies neither this application's body nor an observed permit-
+assignment experiment; its energy-transition focus is outside current priority.
+Do not substitute it because it cites the same capacity-control policy family.
+
+Screen outcome: candidate for resolve, no canonical record. Ready remains140;
+all work remains local without GitHub publication.
+
+### Industrial revitalization resolution: legal bundle is not firm assignment — 2026-10-07
+
+Resolve task `task-976f08eaeb9e` follows candidate `candidate-bf6b8fc044e3`.
+Inspected the complete NDRC equipment-manufacturing plan at
+https://www.ndrc.gov.cn/xxgk/zcfb/ghwb/201402/t20140221_962096.html ,
+introductory paragraphs and SectionsIII-V. Its displayed publication date is
+2009-05-12, despite the2014 URL; that date is not an independently recovered
+firm-level effective date. The plan covers2009-2011 and explicitly follows
+the2006 equipment initiative. It combines project procurement, eligible-product
+catalogues, first-equipment support and locally developed implementation.
+SectionIII links equipment demand to other revitalized industries, including
+shipbuilding. SectionIV also invokes VAT conversion. These inspected provisions
+establish a policy bundle and overlapping exposure channels, not a uniform
+subsidy automatically assigned to every firm in a broad industry code.
+
+The complete NDRC implementation summary, dated2009-03-13, at
+https://www.ndrc.gov.cn/xwdt/gdzt/2008gmjj2009gmjj/gy2009jjsh/200903/t20090313_1198547.html
+lists the ten industry families and calls for subsequent detailed measures.
+Its opening paragraph and three implementation paragraphs verify the common
+campaign, but do not supply a CSRC concordance, firm membership or an untreated
+industry counterfactual. Analytical implication: non-designated industries may
+still face procurement demand, credit or tax changes; a broad supported-industry
+DID requires the paper's precise encoding and comparison reasoning.
+
+No lawful open body was recovered by the bounded exact-title/author search.
+OpenAlex's DOI record returned200 and reports closed access, no repository
+full text, and only DOI/publisher locations; this is an access lead, not proof
+that no manuscript exists anywhere. Publisher opening remained unavailable;
+indexed previews and other papers citing it cannot establish its methods.
+No methods, appendix or code were inspected. The existing shipbuilding record
+uses a2006 model-implied cost breakpoint; its2009 successor citation does not
+resolve this application's supported-industry assignment.
+
+Disposition: blocked, no canonical admission. Reopen when the final body or
+author manuscript and treatment table/code recover industry classification,
+baseline membership and switching, treatment clock, sample exclusions and
+capacity-utilization construction. Then reconcile those rules with the plans
+and distinguish crisis exposure from policy exposure. Do not reconstruct the
+missing paper from plan labels or split the bundle into ten counted variations.
+Ready remains140; evidence and task history are retained locally, without push.
+
+### Provincial preferred-industry plans: inspected draft application — 2026-10-07
+
+Screen `task-30e4d473a8d5` retains Wu, Zhu and Groenewold2019,
+CER53:225-242, DOI10.1016/j.chieco.2018.09.010. UWA journal metadata confirms
+publication; its separate discussion-paper page supplies the2016 version:
+https://api.research-repository.uwa.edu.au/ws/portalfiles/portal/96622345/DP16.21_Wuetal..pdf .
+Actual200 PDF inspected,51 pages; printed pp5-6 and14-20 identify provincial
+plan-text preference mapped to four-digit industries, a31-province panel,
+plan-endpoint DID, matching and national-preference IV. This is actual policy
+exposure, not merely an abstract proposal, but the draft is not the final paper.
+Preference is selected; first-stage diagnostics do not establish exclusion.
+
+Resolve final-version differences, original provincial texts, classification
+crosswalk, treatment histories and support implementation. Distinguish plan
+designation from receipt of each listed benefit, and national support from
+provincial assignment. Differencing does not eliminate counterfactual-trend
+assumptions. Retain as a candidate, not a new ready file; no canonical edits.
+Current ready140; local accumulation only.
+
+### Preferred-industry resolution: designation and instruments remain separate — 2026-10-07
+
+Resolve `task-e415552c8249`, candidate `candidate-5997fec7f76c`, inspected
+the original national11th-plan body via a direct200 request at
+https://www.gov.cn/gongbao/content/2006/content_268766.htm . Browser retrieval
+failed403, but that failure did not prevent actual reading. Chapters10-11
+name high-tech and equipment priorities; Chapters46-47 distinguish market
+guidance from government commitments and provide tax, investment and industrial
+support channels. The separately inspected State Council work-allocation notice,
+国发〔2006〕29号, dated2006-08-24, SectionsI andII(2), is reproduced at
+https://www.mee.gov.cn/zcwj/gwywj/201811/t20181129_676415.shtml . It allocates
+central responsibilities and industrial projects, not provincial four-digit
+industry eligibility. Neither source guarantees that textual preference delivers
+the same benefit to every firm or expires completely at a plan boundary.
+
+Analytical implication: national preference can influence output through central
+projects and policy channels, not only provincial designation. A first-stage
+association with provincial preference cannot establish the proposed IV's
+exclusion restriction. This is a threat to be assessed, not proof that every
+provincial-policy design is unusable. Public planning also leaves anticipation
+open; nominal2006 commencement does not prove unexpected treatment.
+
+The previously inspected2016 draft's printed pp15-20 use2000/2005/2010 endpoints,
+distinguish repeated, one-plan and never-preferred groups, and separately examine
+withdrawn preference. Its coding is designation, not subsidy receipts. Broad
+industry names are expanded to constituent four-digit industries. Recover the
+original province-plan text inventory and its code concordance before treating
+the composite preference as one encodable assignment. Preserve this draft's
+actual group histories rather than imposing an absorbing staggered-adoption DID.
+
+OpenAlex DOI metadata200 supplies no final PDF, and the bounded search recovered
+no final methods. The2016 PDF is a discussion-paper version even where repository
+metadata calls its file a final published version. No final-version reconciliation
+or province-level implementation bridge was established. A national plan is not
+a substitute for those missing sources; absence of public microdata alone is not
+the blocker.
+
+Disposition: blocked pending a final or author-confirmed application and original
+provincial designation/crosswalk evidence sufficient to define the case boundary.
+No canonical creation or maturity change. Ready140; local evidence retained.
+
+### National Little-Giant certification: retained firm-development source — 2026-10-07
+
+Screen `task-f274ede88acb` retains Wang and Wei, *How certification programs
+boost SME productivity*, SCED76(2026):152-170,
+DOI10.1016/j.strueco.2025.12.005. Publisher indexed introduction identifies
+certification-year treatment, a2017-2023 listed-firm application and a
+province-industry quota IV. These are reported leads, not inspected methods.
+Direct article opening returned403; no complete body, appendix or code was
+recovered. Resolve actual market/sample selection, roster-to-firm join,
+certification clock, renewals and quota provenance before admission.
+
+Inspected complete MIIT2018No381, SectionsII-IV:
+https://www.miit.gov.cn/jgsj/qyj/gzdt/art/2020/art_dbb5685c77744605bf865ccdfba7f4a8.html .
+It sets eligibility, local recommendations, central review and a three-year
+validity with reapplication or revocation. Recommendation quotas depend on
+existing provincial SRDI counts; the linked quota annex was not inspected.
+Initial quantitative criteria include prior-year revenue RMB100-400million,
+two-year revenue/profit growth at least10percent, debt/assets at most70percent
+and innovation requirements. Do not apply these2018 criteria to later cohorts
+without reading their notices.
+
+Inspected the official reproduction of2019No153 at
+https://jxt.hubei.gov.cn/bmdt/ztzl/zjtx/zcwj/202210/t20221001_4331153.shtml ,
+opening, implementation paragraphs and signature. It names248 first-batch
+firms after recommendation, expert review and publicity; signed2019-06-05,
+published2019-06-13. The linked WPS roster was not inspected. Thus2018
+invitation is not verified first certification. National and provincial
+titles are distinct; neither notice promises universal subsidy receipt.
+
+Analytical implications: selection depends on prior performance and local
+screening; an absorbing treatment needs renewal/revocation reasoning.
+Recover the paper's province-industry quota construction rather than assuming
+the original province-only recommendation rule validates it. Separate later
+funded key-Little-Giant selection from the certificate itself. Candidate only,
+no canonical edits; ready140, local accumulation without GitHub publication.
+
+### Little-Giant resolution: certification, renewal and funding differ — 2026-10-07
+
+Resolve `task-771d979ea624`, candidate `candidate-8076f4d76959`, inspected
+the official first-roster HTML reproduction at
+https://www.ncsti.gov.cn/kjdt/tzgg/201906/t20190613_3307.html .
+Access: notice, signature, table headings, rows1-49 and183-248, and roster notes;
+not an independent audit of every row. It reproduces MIIT2019No153, signed
+2019-06-05 and published2019-06-13. The roster provides enterprise legal names
+and main products, not stock codes or unified social credit identifiers.
+Its notes say location orders the list, not a ranking; main products are
+enterprise-reported niche products, not a verified industry-code crosswalk.
+Thus the listed-firm application still needs entity/name-history linkage;
+subsidiary certification cannot simply be assigned to a listed parent.
+
+Inspected MIIT2022No133, SectionsII(5) andIII(1)-(3), signed2022-06-15:
+https://www.miit.gov.cn/jgsj/qyj/wjfb/art/2022/art_9d88f62a3c5d47bd8698e84d7a486274.html .
+The first cohort may apply for renewal; absent renewal or continued eligibility,
+certification is revoked. SectionIII(3) preserves its old title until the
+renewed list is published, then replaces it with the renewed-list status.
+Analytical implication: neither an exactly-three-year expiration from the
+2019 award date nor an absorbing post indicator beyond2022 follows without
+the transition and renewal histories. The renewed roster was not inspected.
+Fourth-cohort criteria refer to2022 rules and must not be imposed backward.
+
+Inspected the official MIIT/MOF2021 funding interpretation, SectionsIII-VII:
+https://www.miit.gov.cn/zwgk/zcjd/art/2021/art_456ef30df73345ccba8852dea5c016d0.html .
+Funded key-Little-Giant enterprises are a selected subset, with applications,
+local recommendation, national selection and annual performance review.
+SectionIV excludes applicants already listed on mainland exchanges or abroad.
+SectionV describes2021 first funding and performance-linked allocations,
+not an equal automatic payment to every certification holder. This distinction
+matters for a listed-firm productivity study: certificate exposure is not
+verified central-program receipt; IPO timing and legal-entity linkage would
+need investigation before claiming otherwise.
+
+The official author faculty page confirms the2026 paper citation but offers
+no recovered paper attachment:
+https://ae.ruc.edu.cn/szdw/qzjs/apypx/W/wbk11/index.htm .
+Publisher indexed preview reports ChiNext/STAR firms and a province-industry
+quota IV, but the final sample definition, treatment construction, equation,
+quota annex and diagnostics remain uninspected. The2018 province-level
+recommendation rule does not itself verify that IV or its exclusion restriction.
+No claim that the paper's design is invalid is established by these gaps.
+
+Disposition: blocked until the paper's actual application and assignment/data
+bridge can be recovered. Primary institutional evidence is retained for reuse;
+no canonical admission, maturity change or GitHub publication. Ready remains140.
+
+### Official retirement prospects and firm investment: suggestive application — 2026-10-07
+
+Screen `task-327f8733daa9` inspected publisher HTML Sections2.1-2.3,
+Tables1-2 and Notes for Weijia Li, *Rotation, Performance Rewards and
+Property Rights*, Economic Journal, DOI10.1093/ej/ueaf126:
+https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueaf126/8346011 .
+Online2025-11-27; typeset2026-07-28. It joins city official histories
+to2000-2007 ASIF firms and uses anticipated vacancies, not actual randomly
+assigned rotation. Rotation prospects use other same-province mayors' age;
+promotion prospects use the city's secretary's age; their interaction enters
+a firm/year-fixed-effects regression of fixed assets relative to total assets.
+Table1's retirement-window check and Table2's expectation proxies use different
+age constructions; neither establishes an age56 sharp treatment rule.
+
+Section2.1 expressly labels the empirical exercise suggestive and leaves
+rigorous causal evidence to future work. Analytical judgment: this supports
+an institutional hypothesis, not a ready exogenous firm-investment shock.
+Skip canonical collection for this purpose without declaring the theory
+invalid or fabricating a reform date. No new candidate or canonical record.
+The paper names replication DOI10.5281/zenodo.16678723 and restricted-data
+exemptions; package contents were not inspected. Do not conflate these proxies
+with political-death events or industrial-park manager rotation.
+Ready unchanged140; local only.
+
+### IP tribunals: jurisdiction is not the hosting city — 2026-10-07
+
+Screen `task-d93596ee081c` retains Zhang, Wang and He2024, *Can IP tribunals
+increase firm patent applications?*, CER87:102240,
+DOI10.1016/j.chieco.2024.102240. Actual Kyushu University publication page,
+Abstract and citation inspected:
+https://kyushu-u.elsevierpure.com/en/publications/can-ip-tribunals-increase-firm-patent-applicationsempirical-evide/ .
+It reports a China DID patent-application study; methods, sample and treatment
+coding remain unread. Publisher full/abstract opens failed; author institution
+page links DOI only. The indexed2023 SSRN predecessor is a recovery lead,
+not an inspected or version-confirmed manuscript.
+
+Actual MOST/ Jiangsu Science Department notice, dated2017-01-24, paragraphs1-5:
+https://www.most.gov.cn/dfkj/js/zxdt/201701/t20170123_130728.html .
+Approval2017-01-04 differs from opening2017-01-19. The two new tribunals are
+built from existing intermediate-court chambers, not two new standalone courts.
+Nanjing covers nine named Jiangsu cities; Suzhou covers four. Technical first-
+instance civil cases, ordinary IP civil cases above RMB3million and administrative
+IP cases have specified coverage. A host-city dummy cannot establish actual
+judicial access for all firms or case types.
+
+Inspected SPC first-instance patent-court table and note:
+https://ipc.court.gov.cn/zh-cn/news/view-50.html .
+The note confirms starred tribunals are intermediate-court internal organs with
+cross-administrative technical-case jurisdiction. The displayed2018 timestamp
+does not certify a frozen2018 roster: its current table also names the Hainan
+Free Trade Port IP Court. Recover dated approvals, not retrospective backfilling.
+
+Existing `china-intellectual-property-courts-reform` combines2014 courts and
+later tribunals. Resolve whether the paper warrants an application update or
+an evidenced regime split; the source DOI alone proves neither. Preserve
+full-paper access, jurisdiction-year inventory, firm-location joins, comparison
+and patent measurement as admission gaps. Candidate only, no canonical edits;
+ready140, local accumulation.
+
+### IP tribunal resolution: historical scope recovered, application still missing — 2026-10-07
+
+Resolve `task-72c99e140483` inspected SPC's2017 judicial-protection report,
+SectionII(1)-(2), at
+https://enipc.court.gov.cn/zh-cn/news/view-75.html .
+It distinguishes three standalone courts from eleven cross-region specialized
+institutions approved in2017 and operating by year-end: Nanjing, Suzhou, Wuhan,
+Chengdu, Hangzhou, Ningbo, Hefei, Fuzhou, Jinan, Qingdao and Shenzhen.
+This retrospective report establishes a historical cohort, not each city's
+exact opening day or every covered jurisdiction. MOST's already inspected
+Jiangsu notice also explains that all thirteen intermediate courts previously
+had IP chambers. Analytical implication: the2017 centralization must not be
+described as first-ever local patent adjudication or coded as host-city-only
+access merely from the new institution's name.
+
+A newly identified manuscript lead is DOI10.2139/ssrn.4509199, the2023
+43-page predecessor catalogued by EconBiz. The actual SSRN request returned403;
+no body/version equivalence was inspected. Actual OpenAlex work response
+labels the DOI green/open but supplies no PDF URL beyond the SSRN landing page:
+https://api.openalex.org/works/https://doi.org/10.2139/ssrn.4509199 .
+An open-access metadata label does not close an access gap. Publisher indexed
+regional-protectionism/data sections are leads only, not substituted body evidence.
+
+Disposition: blocked pending the full application, dated jurisdiction-year
+crosswalk, exact firm sample and treatment/control encoding. Retain both DOI
+identities rather than silently merging versions; reconcile with the existing
+court record before an application update or evidenced split. No canonical
+admission or maturity change. Ready140, local only.
+
+### Cultural-system reform and regional FDI: screening boundary — 2026-10-07
+
+Task `task-817eba292f29` screens Liu, Kang and Zhang2021, Journal of Asian
+Economics76:101365, DOI10.1016/j.asieco.2021.101365. The actual IDEAS
+Abstract and citation were inspected:
+https://ideas.repec.org/a/eee/asieco/v76y2021ics1049007821000944.html .
+They report a DID application to283 mainland prefecture cities,1994–2017,
+using cultural-system reform to study regional FDI. This establishes a
+China-facing regional-development lead, not inspected empirical coding.
+IDEAS lists subscription-restricted publisher access; the DOI web opening
+failed. Indexed publisher section previews are discovery leads only. No full
+methods, appendix, treatment roster or replication file was inspected.
+
+The actual MCT-hosted Xinhua report dated2005-08-08 (dispatch August4),
+https://www.mct.gov.cn/whzx/whyw/201112/t20111201_707449.htm , paragraphs
+on permitted/prohibited investments and approval, summarizes
+《关于文化领域引进外资的若干意见》. It distinguishes activities open to
+foreign investment, activities requiring Chinese control, and prohibited
+media/cultural activities. This is an agency-hosted report, not the signed
+original instrument. Analytical implication: domestic restructuring or pilot
+designation cannot be treated as blanket foreign-entry liberalization.
+
+The actual NOPSS-hosted retrospective by Li He,2013-03-07,
+https://www.nopss.gov.cn/n/2013/0307/c357402-20712653.html , SectionI,
+second episode, and SectionII opening, describes2003 pilots and later
+expansion, with enterprise conversion rather than universal privatization.
+Its mixed province/city list announces nine regions but enumerates only
+eight names; it is not a complete treatment roster or an original designation
+notice. Do not repair that inconsistency by guessing the missing name or
+assigning every prefecture in a pilot province.
+
+Disposition: retain a candidate for identity resolution. Recover the final
+paper's pilot-to-prefecture crosswalk, wave dates, comparison construction,
+FDI measure and city-year joins; establish how later national expansion affects
+the comparison. Verify original designation and institutional instruments,
+and distinguish regional outcomes from foreign cultural-sector eligibility.
+No canonical admission or ready increase; local accumulation only.
+
+### Cultural-system resolution: mixed administrative scope remains open — 2026-10-07
+
+Resolve task `task-b2961f3d349e`, candidate `candidate-bc13a7d17825`,
+inspected the actual NOPSS-hosted People's Daily report dated2011-10-27:
+https://www.nopss.gov.cn/GB/219468/16034916.html . The first page's
+paragraph beginning with the nine-year reform account reports nine pilot
+regions and35 units in2003, followed by89 newly designated regions and170
+units in March2006, and subsequent wider rollout. It gives aggregate
+chronology, not the original designation schedule, prefecture-level crosswalk
+or an untreated-city inventory. Administrative pilot regions and individual
+pilot units cannot be added together to construct city treatment.
+
+The direct ScienceDirect request for PII S1049007821000944 returned403;
+the web opening also failed. An exact-title search did not recover an author
+manuscript or appendix. The older government interview URL
+https://www.gov.cn/gzdt/2012-04/17/content_2115408.htm returned404 on
+direct inspection; its indexed text is not substituted for a read source.
+Publisher-indexed identification snippets mention2003/2006 waves and a
+city count, but do not close the missing city-year encoding or comparison.
+
+Disposition: blocked, not rejected as invalid research. Reopen with an
+accessible final methods/appendix or author manuscript plus original pilot
+designations. Resolve province-to-prefecture mapping, separate regional
+designation from unit conversion, recover FDI measurement and city-year
+joins, and establish the comparison after wider rollout. Preserve the2005
+foreign-entry restrictions documented in the screen rather than describing
+all reform exposure as universal foreign investment permission. No canonical
+file changed; ready140 remains unchanged, local only.
+
+### Resource-exhausted-city industrial transformation source — 2026-10-07
+
+Screen `task-fc2f5806c351` inspected the publisher Abstract, citation and
+Data Availability Statement for Li, Hong, Ma and Yang2025, Kyklos78(4):
+1293–1315, DOI10.1111/kykl.12467:
+https://onlinelibrary.wiley.com/doi/abs/10.1111/kykl.12467 .
+The paper reports a2006–2012 prefecture panel and time-varying DID for
+resource-exhausted-city support, with GDP per capita and tertiary-industry
+share outcomes. This is industrial transformation and regional development,
+not an environmental-outcome collection despite the sustainability title.
+Data are available upon reasonable request; no public replication was inspected.
+The full-text link returned403, and the nominal PDF route returned Abstract
+HTML. Neither supplies actual sample mapping or treatment coding.
+
+Actual NDRC notice 发改厅[2008]712号,2008-03-17, body and attachment:
+https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=811 .
+The first12 designations include five earlier transformation-pilot cities,
+county-level Gejiu and Daye, and Daxing'anling region. The notice requires
+local plans and appropriate use of central fiscal support, with detailed fiscal
+rules to follow. Thus designation is not a universal prefecture-wide start of
+an identical payment, nor first-ever support for every listed place.
+
+Actual NDRC announcement,2011-11-15, paragraphs1–3:
+https://www.ndrc.gov.cn/fggz/dqzx/zyxdqzxfz/201111/t20111115_1083991.html .
+It reports third-wave25 designations and a separate nine county-level forestry
+units receiving analogous transfer treatment; cumulative totals are69 plus
+nine analogous units, not78 homogeneous cities. It also describes local
+planning and cadre evaluation alongside fiscal support. This establishes an
+institutional boundary, not the paper's selection or coding.
+
+Disposition: retain a China-facing candidate. Resolve all wave rosters, prior
+pilot support, the paper's county/district-to-prefecture mapping, timing of
+designation versus receipts, exact sample/comparison and outcome joins.
+Resource depletion and government selection are threats to assess, not grounds
+for calling designation intrinsically exogenous. Do not blend the separate
+2013 resource-based-city development plan or2017 industrial-transformation
+demonstration regime into this application. No canonical change or ready
+increase; local only.
+
+### County e-commerce demonstration and entrepreneurship source — 2026-10-07
+
+Screen `task-135edca81860` inspected the publisher Abstract and citation for
+Yao, Sun and Yi2026, "The Entrepreneurial Effects of a Place-based E-commerce
+Policy," China & World Economy34(2):249–280, DOI10.1111/cwe.70018,
+published2026-03-16:
+https://onlinelibrary.wiley.com/doi/10.1111/cwe.70018 .
+It reports use of the National Rural E-commerce Comprehensive Demonstration
+policy for county startup and household business/employment outcomes.
+This entrepreneurial-development question is retained rather than treating
+all rural populations as agriculture-led research. The full-text link returned
+Abstract HTML, not methods; exact panel period, treatment coding, household
+sample and comparison are not inspected. Reported long-term survival/enterprise
+upgrading evidence is limited; do not describe the policy as proven upgrading.
+
+Actual MOFCOM publication,2015-07-14, introductory selection paragraph and
+both complete HTML tables:
+https://ltfzs.mofcom.gov.cn/ncsytxjs/zcfb/art/2015/art_1ce745a2fb7844c5acdc4b11c25c1aa6.html .
+It describes local competitive selection and lists56 units for2014 and200
+for2015. The2015 list includes Xinjiang Production and Construction Corps
+divisions alongside named counties/county-level cities. Designation scope is
+not a universal prefecture or firm treatment, and designation year does not
+establish service rollout. These lists are not the complete later-wave universe.
+
+Disposition: retain a China-facing candidate for resolution. Recover final
+methods/appendix, required cohort notices and original funding rules, treatment
+dates, county identifier history, household joins, comparison and selection/
+spillover threats. Keep separate from national e-commerce demonstration
+cities, cross-border pilot zones and private-platform village randomization.
+The2016 performance-evaluation URL returned502 and is only an uninspected
+lead: https://dcj.mofcom.gov.cn/article/gztz/201604/20160401290380.shtml .
+No canonical change or ready increase; local only.
+
+### County e-commerce resolution: designation is not household take-up — 2026-10-07
+
+Resolve `task-b1ed57b747fa`, candidate `candidate-803d0ec97f8d`, inspected
+the actual MOFCOM-hosted reproduction of 江西省2015年电子商务进农村综合示范
+工作方案, dated2015-08-18, introductory notice and SectionsIII–IV:
+https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=14159 .
+The page identifies PKU Law as its supplier and asks readers to check formal
+texts. Treat this as an inspected reproduction, not independent verification
+of the original signed provincial instrument or nationwide practice.
+
+The text assigns implementation responsibility to15 selected counties, with
+local plans, project ledgers, service centers, logistics and training. Eligible
+projects begin after2015-01-01 and should pass acceptance by end-October2016;
+noncompliance can cancel designation and recover subsidies. It prohibits
+central funds for transaction-platform construction or traffic purchases.
+Analytical implication: county designation, project operation, household access
+and take-up are distinct. Local timing and terms cannot be extrapolated to all
+national waves or used to manufacture the paper's treatment definition.
+
+The first-wave evaluation notice remained unread: web502, followed by a direct
+request failing during TLS connection. The Guangdong implementation-page
+opening timed out. An exact manuscript/author search did not recover the final
+methods; publisher access remains Abstract-only as documented in screening.
+
+Disposition: blocked pending actual methods/appendix or replication, original
+national cohort/funding instruments and the required later lists. Recover
+county-year exposure, firm registration and household sample joins, comparison
+and rollout/selection/spillover handling. The institutional material recovered
+here does not close the missing paper application. No canonical edit or
+maturity change; ready140 unchanged, local only.
+
+### JoEG strategic coupling: comparative cases are not assigned treatment — 2026-10-07
+
+Screen `task-c26b7f8702a1` inspected actual publisher HTML, metadata,
+Section3 (Research context and methods), Table2 and Section7 for Lim and
+Fu2026, "Regional development through simultaneous strategic coupling:
+the uneven formation and matching of regional assets with global production
+networks," Journal of Economic Geography, DOI10.1093/jeg/lbag018,
+published2026-03-15:
+https://academic.oup.com/joeg/advance-article/doi/10.1093/jeg/lbag018/8524232 .
+
+Foshan and Jieyang are comparative industrial-park cases. The evidence comes
+from2014–2016 consulting ethnography, access to22 member firms, interviews,
+workshops and later follow-up, triangulated with reports. The authors discuss
+access-based sampling and evolving case selection. Table2 describes different
+governance and industrial paths; it does not assign otherwise comparable units
+to treatment. Policy endorsements and lobbying explain development processes,
+not an encoded quasi-experimental contrast.
+
+Disposition: skipped for this variation campaign, not a judgment against
+qualitative research. Mainland regional relevance and recent field-top
+publication do not establish a paper-used exogenous exposure. No candidate
+or canonical created; do not turn referenced agreements, park establishment
+or leadership into new shocks from this case study. Ready140, local only.
+
+### Resource-exhausted-city resolution: designation differs from fiscal exposure — 2026-10-07
+
+Resolve `task-0abeaef959be`, candidate `candidate-381d011da0b2`, inspected
+the remaining original NDRC wave notices and their complete HTML attachments.
+Second wave 发改东北[2009]588号,2009-03-02:
+https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=807 . The32 entries comprise
+nine prefecture-treated units (including Chongqing's Wansheng district),17
+county-level units and six districts/development areas. Third wave
+发改东北〔2011〕2420号,2011-11-11:
+https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=19540 . Its25 entries comprise
+eight prefecture-category units (including Nanchuan district),five county-level
+cities,seven mining districts and five counties. The original lists verify
+designations, not a paper's whole-prefecture treatment. District reorganization,
+multiple designated subunits within one prefecture and earlier pilots require
+a dated geographic crosswalk rather than name matching.
+
+Actual NEA reproduction of MOF's 财预[2012]305号, signed2012-06-14,
+https://www.nea.gov.cn/2012-07/26/c_131739466.htm , Articles2–8, was read.
+It covers approved and analogous recipients. Initial support lasts four years;
+evaluation then determines five-year extension or a three-year75/50/25-percent
+taper. Article5 distinguishes fixed and factor subsidies; analogous recipients
+temporarily lack the factor component. Article6 sends central funds through
+provinces, which can formulate downstream allocation within the recipient
+boundary. Article7 defines general transfers with historical-liability and
+public-service uses, not uniform industrial grants. Analytical implication:
+designation, local receipt, amount and continued entitlement are different
+exposures. These2012 provisions cannot establish every earlier year's rule or
+receipt date without contemporary evidence.
+
+No accessible methods or author manuscript emerged from the exact DOI/author
+search; publisher full-text403 and Abstract-only PDF routing remain the access
+limits recorded in screening. Disposition: blocked pending the paper's exact
+sample and roster-to-prefecture construction, treatment/control dates and
+outcome-data joins. Primary institutional boundaries are now recoverable, but
+they do not supply the uninspected research application. Reopen when methods
+or replication become accessible; do not restart identical access attempts or
+publish an extracted placeholder. No canonical change; ready140, local only.
+
+### Village e-commerce access experiment — 2026-10-07
+
+Screen task `task-e256bc3ac2ce`: Couture, Faber, Gu and Liu (2021),
+*Connecting the Countryside via E-Commerce: Evidence from China*, AER: Insights
+3(1):35–50, DOI10.1257/aeri.20190382. Retain as `china-variation` for
+development, market access and household consumption, not agricultural policy.
+The author-hosted [published paper and appendix](https://www.lizhiliu.com/uploads/6/0/9/8/60987819/ecommerce_cfgl.pdf)
+is accessible; the publisher landing returned403. No matching DOI, authors or
+trial identifier was found in canonical/candidate records during this screen.
+
+Inspected SectionI, pp.38–40, SectionIIA and AppendixF.3, pp.25–27:
+100 villages in eight counties, drawn from432 eligible candidates, were assigned
+60 treatment/40 control. Actual opening occurred in38 assigned-treatment and
+five assigned-control villages; four lacked endline observations. Baseline
+timing differs by province (December2015–January2016 versus April–May2016),
+with endline12 months later. Assignment is village access, not county
+demonstration designation. The selected pool is not representative of all rural
+China. Household replacement and additions prevent assuming a balanced panel.
+
+Disposition: candidate for separate resolution. Inspect remaining appendix,
+trial registration AEARCTR-0001582 and replication117506V2; recover assignment
+identifiers, opening dates and outcome joins before canonical admission. Preserve
+ITT versus instrumented actual opening, spillovers and restricted platform-data
+access. Screen makes no canonical changes; ready remains140.
+
+### Village e-commerce experiment resolution — 2026-10-07
+
+Resolve task `task-e0f42c61f7bb`, candidate `candidate-476a57baec65`.
+The [trial registry](https://www.socialscienceregistry.org/trials/1582) was
+successfully read using direct HTTP200 after the web reader's403. It archives
+the investigators' protocol, verifies computer randomization and the candidate
+pool, and describes the platform-specific logistics/terminal intervention.
+It is not a government designation instrument or independent opening audit.
+Its initial registration is2016-10-06, after its listed2015-12-21 trial start
+and2016-01-14 intervention start. Do not infer universal ex-ante specification
+from the paper's preregistration statement or the page's old status fields.
+
+Read the published body's analysis and AppendixB/C/F in memory. Preserve the
+assigned-access ITT versus assignment-instrumented village-opening distinction,
+interference, positive operational selection, missing villages and replaced or
+added households. The appendix assigns village-zone baseline means to added
+or replaced endline respondents; it does not create individual panel baselines.
+TableA.15 numerical cells were not used because extraction was garbled.
+
+The [replication deposit](https://www.openicpsr.org/openicpsr/project/117506/version/V2/view)
+and Data/Code listings verify that village, survey, retail and analysis files
+exist. README download redirects to authentication; no variable columns,
+code, data or external geographic crosswalk were inspected. The registry's
+old public-data answer does not disprove the later deposit. These are explicit
+data-access/implementation conditions rather than grounds for inventing joins.
+
+Publish `china-2016-village-ecommerce-access-randomization` as grounded,
+conditionally usable for the survey assignment design, not exact replication
+or a national county policy design. Logical contract field names are not
+presented as actual deposited variable names. This is one assignment, with
+retail and income applications not separate count increments. No restricted
+or copyrighted files were stored; local accumulation only.
+
+### Economic zones and manufacturing markups — 2026-10-07
+
+Screen `task-4e2562e105aa`: Lyu, Wenyi, Jian Yang and Leng Yu (2025),
+*Place-based policies, pro-competitive effects, and allocative efficiency:
+Evidence from China's economic zones*, World Development191:106971,
+[DOI](https://doi.org/10.1016/j.worlddev.2025.106971).
+The inspected [IDEAS abstract and metadata](https://ideas.repec.org/a/eee/wdevel/v191y2025ics0305750x25000567.html)
+report geo-coded firm/administrative data, economic-zone establishment and
+manufacturing markups, entrants and incumbents. This establishes a promising
+China enterprise/industrial-development source, not its causal validity.
+
+The [author's Shanghai University page](https://soe.shu.edu.cn/info/3211/43344.htm)
+confirms title, authors and outlet and links a personal research page. No
+ranking/impact-factor claim from that biography is adopted here. The publisher
+article returned an access error; the author Google Sites link was inaccessible
+through the web reader. No full paper, appendix or coding was inspected.
+
+Retain `china-variation` for resolution of zone type, approval versus operation,
+geographic boundary, dates, treated/control coding, markup inputs and firm-ID
+joins. Reconcile with existing edge-city parks, provincial approvals and
+political-connection park cases. A different outcome does not create a new
+assignment. No exact DOI matched existing canonical/candidate records. Only
+a distinct evidenced regime warrants another record; otherwise extend an
+existing application under a separate task. Screen changes no canonical;
+ready remains141, local only.
+
+### Economic-zone markup resolution: manuscript and duplicate boundary — 2026-10-07
+
+Resolve `task-e770d45c9b79` follows `candidate-6baa14f887da`.
+The author's [homepage](https://sites.google.com/view/wenyilyu/) and
+[research page](https://sites.google.com/view/wenyilyu/research) both returned
+HTTP200 through direct requests and were read, despite the web reader's access
+error. The research page lists the published article but links only to
+ScienceDirect; it exposes no manuscript attachment for this paper. Do not
+continue treating the author page itself as unread or retry its old failure.
+
+Crossref title retrieval locates the earlier manuscript *Place-Based Policies,
+Firm Markup, and Allocative Efficiency: Evidence from China's Economic Zones*,
+DOI10.2139/ssrn.4763743. This is a version lead, not verified equivalence of
+methods to the published article. The actual [SSRN page](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4763743)
+returned403 with a JavaScript/cookie challenge; no body was read. Search-index
+descriptions of boundary geocoding are not adopted as inspected method evidence.
+
+Compared institutional boundaries of existing
+`china-industrial-parks-edge-city-spillovers` (national/provincial parks in
+eight cities, inside/near-boundary exposure) and
+`china-2006-provincial-development-zone-approval-village-exposure` (specific
+provincial approval cohort). The new paper's abstract cannot determine which
+of these regimes it overlaps or whether establishment differs from approval
+or operation. Neither a markup outcome nor a larger sample proves a distinct
+variation. A full-text application could augment an existing case instead.
+
+Disposition: blocked until published/author manuscript and appendix establish
+zone roster/type, boundary vintages, treatment dates, controls and firm/markup
+data links. Reopen on newly accessible manuscript or lawful subscription
+access, not another abstract search. No canonical changes or copied papers;
+ready141, local only.
+
+### Return-migrant entrepreneurship and county firms — 2026-10-07
+
+Screen `task-66493183c33a`: Zhang, Chunyan, Zuda Wei, Lu Zhang and Biliang
+Luo (2026), *Policy support and urban migrant workers' return entrepreneurship
+in China: A dual perspective of entrepreneurial quantity and quality*, Journal
+of Asian Economics105:102225,
+[DOI](https://doi.org/10.1016/j.asieco.2026.102225).
+The inspected [IDEAS metadata and abstract](https://ideas.repec.org/a/eee/asieco/v105y2026ics1049007826001120.html)
+identify business registry/accounting data2000–2022 and a county-level
+return-entrepreneurship support policy application. Enterprise entry and
+survival, including service and industrial sectors, make this a development
+and firm source, not agriculture-led merely because workers return rurally.
+
+The publisher endpoint was inaccessible; exact title/author searches located
+no inspected manuscript. Abstract-described land, services and tax channels
+are hypotheses/reported findings, not independently verified components or
+receipts. No exact DOI or named policy matched canonical/candidate records.
+
+Retain as `china-variation`. Resolve the paper's exact policy instrument,
+county roster and wave timing, local implementation versus designation,
+entry/survival definitions, comparison windows and business-ID/location joins.
+Do not assume MRESP equals every national return-entrepreneurship pilot or
+that registrations identify returned migrants. A county policy effect need
+not be an individual returnee treatment effect. No canonical changes;
+ready141, local only.
+
+### Return-entrepreneurship resolution: selection and termination — 2026-10-07
+
+Resolve `task-48070a58f247` follows `candidate-2f1b37260149`.
+The following primary notices were inspected as full HTML. They establish
+the national pilot framework, not that the paper's MRESP variable uses it.
+
+The [2015 framework](https://www.ndrc.gov.cn/xxgk/zcfb/tz/201512/t20151203_963513.html),
+发改就业〔2015〕2811号, was signed November30 and posted December3.
+Sections III–IV prescribe rolling annual county-level pilots, resource
+integration and infrastructure/service support. Provincial nominations of
+2–3 areas were due December25, followed by central review. Prior local
+return-entrepreneurship policies and reform capacity were selection conditions;
+existing urbanization and small-city reform pilots received priority.
+This is an application framework, not a designated-county roster or proof
+that treatment started in2015. Support is a locally implemented package,
+not a uniform cash transfer to every enterprise.
+
+The [second-batch application notice](https://www.ndrc.gov.cn/fzggw/jgsj/jys/sjdt/201608/t20160824_1123075.html),
+发改办就业〔2016〕1869号, was signed August18 and posted August24.
+Sections II–V include counties, county-level cities, municipal districts and
+banners, but exclude industrial/development parks as applicant units.
+Provinces nominate3–5; local voluntary applications pass provincial nomination
+and central review. Applications were due September20. Prior policy/work
+capacity remains a condition, with an explicit tilt toward steel/coal
+overcapacity-adjustment areas. Application dates do not establish approval
+or actual implementation dates. Selection and overlapping restructuring
+policies require analysis rather than an assertion of exogeneity.
+
+The inspected [2021 experience-promotion notice](https://www.ndrc.gov.cn/fzggw/jgsj/zys/sjdt/202109/t20210929_1298432.html)
+(posted September29), introduction and closing paragraph, reports341 pilot
+counties/cities/districts across three batches. It explicitly ends the national
+pilot and repeals related documents while encouraging continued local
+innovation. This does not prove that local services stopped or benefits
+vanished. For a2000–2022 panel, an absorbing post-designation indicator
+therefore needs a paper-specific interpretation; do not invent a uniform
+2021 treatment reversal either. Local examples demonstrate heterogeneous
+support rather than identical receipt by all county firms.
+
+Search located official first-, second- and third-batch roster attachments,
+but those PDFs were not inspected in this task. The government-site
+second-batch approval-page lead returned403; neither its indexed text nor
+roster totals are used as verified county assignments. Prior publisher
+access failure and absence of an inspected author manuscript remain open.
+
+Disposition: blocked. Primary policy boundaries are clearer, but the exact
+paper instrument, approved cohorts, county crosswalk, treatment-year coding,
+comparison construction, entry/survival definitions and registry/accounting
+joins remain unverified. Reopen when the manuscript/appendix or replication
+materials become accessible, then inspect linked approval rosters as needed.
+Do not infer individual returnee status from county registrations, or equate
+pilot designation with firm receipt. No canonical published; ready141,
+local only.
+
+### Historical railroad access and industrial entry — 2026-10-07
+
+Screen `task-871511cd7a34`: Bo, Shiyu, Ting Chen, Cong Liu and Yan Zhou
+(2026), *On the right track? Railroads, industrial development, and
+distributional effects in historical China*, Journal of Development
+Economics182:103827, [DOI](https://doi.org/10.1016/j.jdeveco.2026.103827).
+The inspected [HKBU publication page](https://scholars.hkbu.edu.hk/en/publications/on-the-right-track-railroads-industrial-development-and-distribut/),
+abstract and bibliographic fields, dates online publication to June2,2026.
+It reports1858–1936 industrial entry,1933 industrial output and digitized
+railway expansion, using hypothetical-network distances as instruments.
+Its main industrial/development question is within owner scope; a historical
+agricultural economy does not make industrial entry agriculture-led.
+
+The publisher page reader failed. Search-index introduction and equation
+snippets are leads, not inspected full methods. The inspected
+[faculty page](https://aef.hkbu.edu.hk/faculty-members/ting-chen.html),
+Selected Publications, lists the same authors/article but no manuscript.
+Cong Liu's inspected [homepage](https://sites.google.com/view/congliu)
+has a CV link only; Ting Chen's working-papers page returned429. The older
+title *Railroads and Industrial Development in China,1858–1936* is a
+manuscript search lead, not verified version equivalence.
+
+No exact DOI or title duplicate was found in canonical/candidate records.
+Retain `candidate-17e881861d0e` as `china-variation`; distinguish historical
+Chinese rail exposure from modern railway/highway cases and the US railroad
+method record. Resolve original construction versus operation cohorts,
+hypothetical node selection, county boundary/geocoding, distance timing,
+firm-entry source/coverage, comparison and data joins, first stage and
+exclusion, and war/port overlap. Neither hypothetical geometry nor a
+localized reported effect independently proves random assignment.
+Screen publishes no canonical; ready141, local only.
+
+### Historical railway resolution: manuscript-access boundary — 2026-10-07
+
+Resolve `task-1878705c574f` follows `candidate-17e881861d0e`.
+The actual [HKBU working-paper metadata](https://scholars.hkbu.edu.hk/en/publications/railroads-and-industrial-development-in-china-1858-1936/)
+confirms a June2025 submitted version under the earlier title with the
+same four authors. It offers no manuscript attachment. This identifies a
+version lead, not equivalence of the final methods or data. The inspected
+[Jinan faculty page](https://iesr.jnu.edu.cn/2019/0813/c17118a648721/page.htm)
+contains publication listings but no railway manuscript link.
+
+A direct HTTP request to the publisher returned403, independently of the
+web reader's earlier error. Ting Chen's working-papers route returned504
+through direct requests after the reader's429; no paper body was read from
+that route. Exact published/earlier-title and author searches did not yield
+an inspected author or institutional full manuscript or replication deposit.
+Indexed publisher methods and third-party uploads are not used to fill the
+missing application. No PDF was saved or full text claimed.
+
+Disposition: blocked on full methods and institutional/data linkage, not
+rejected as an uninteresting or non-China topic. Reopen with newly accessible
+author/publisher manuscript, appendix or lawful library access. Establish
+original operational line chronology and county concordance, hypothetical
+node selection versus actual placement, firm-entry universe and zero coding,
+distance timing, comparison/exclusion and conflict/port controls before
+canonical admission. Preserve this historical regime separately from modern
+railways; hypothetical-network geometry is an IV construction, not proof
+of random actual railway placement. No canonical changes; ready141,
+local only.
+
+### AI pilot designation and manufacturing upgrading: screen — 2026-10-07
+
+Screen `task-f55d69e71277`: Yu Zhang and Qi Shen (2026), *Can artificial
+intelligence pilot zones promote firms' intelligent upgrading? Evidence
+from Chinese listed firms*, Economic Analysis and Policy93:1768–1782,
+[DOI](https://doi.org/10.1016/j.eap.2026.08.068).
+Inspected [IDEAS metadata/abstract](https://ideas.repec.org/a/eee/ecanpo/v93y2026icp1768-1782.html)
+describe a2014–2024 mainland listed-manufacturing-firm DID application
+of national AI innovation-development pilot designation. Crossref DOI
+metadata independently identify the authors, journal, pages and September2026
+issue. This fits the existing EAP expansion's firm/innovation lane, not
+the environmental-outcome papers also using AI policy. It is an article
+pass, not a journal ranking or archive-completion claim.
+
+Publisher `S0313592626003760` returned403. Exact title/author searches
+found no inspected lawful manuscript; abstracts establish a follow-up
+candidate, not completed treatment/comparison or data requirements.
+No exact DOI, title or named AI pilot mechanism was found in canonical
+and candidate ledgers. Resolve policy authority, approved geography/waves,
+2019 versus revised2020 selection regime, date coding, firm-location joins,
+upgrading measurement, comparison and overlap before admission. Distinguish
+MOST innovation-development designation from other agencies' application
+pilot zones, national2017 strategy, and actual firm AI adoption.
+No canonical publication; ready141, local only.
+
+### AI pilot resolution: selective designation, dates and nested geography — 2026-10-07
+
+Resolve `task-549c1c75b3c9`, candidate `candidate-62d43241904a`,
+DOI `10.1016/j.eap.2026.08.068`. The following official HTML documents
+were read in full. They establish institutional boundaries, not the
+paper's implemented treatment coding.
+
+The [2019 MOST guideline](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2019/201909/t20190905_148663.html),
+国科发规〔2019〕298号, was signed August 29 and posted September 5.
+Sections III–IV primarily admit cities, with an exception for strong
+counties. Eligibility emphasizes existing research and industrial capacity,
+in principle cities with national innovation demonstration or high-tech
+zones, core AI industry above RMB5 billion and related industry above
+RMB20 billion, platforms, a local plan, dedicated support and coordination.
+Local applications undergo provincial review, expert appraisal and MOST
+approval considering spatial layout and plan maturity. This is selective
+designation, not random assignment. The approximately twenty zones by2023
+are a planning target, not a verified treatment roster. Sections I–II
+describe a research, infrastructure, application and policy-testing bundle,
+not a uniform firm-level subsidy or measured AI adoption.
+
+The [revised2020 guideline](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2020/202012/t20201224_171987.html),
+国科发规〔2020〕254号, was signed September29 and has metadata publication
+date October29; the December URL is not its effective date. It takes effect
+upon issuance and repeals the2019 guideline. Sections III–IV retain the
+city/county distinction, prior-capacity criteria, industry thresholds and
+review process, while expressing support through talent, funding, projects
+and facilities rather than the earlier specific organizational formulation.
+Implementation and annual reporting follow approval. Eligibility thresholds
+alone do not establish a sharp regression-discontinuity design. A revision
+also does not by itself justify a second canonical variation: any distinct
+allocation mechanism would need evidence of its actual operation and use.
+
+Three city letters and one county letter make timing and geography concrete:
+
+- [Beijing](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2019/201902/t20190221_145133.html),
+  国科函规〔2019〕27号, signed February20, posted February21, responds to
+  京政函〔2019〕11号 under the national AI plan. Its approval precedes the
+  August guideline; the latter cannot be applied retroactively as the
+  origin of every2019 designation.
+- [Shenzhen](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2019/201910/t20191018_149418.html),
+  国科函规〔2019〕183号, signed October17, posted October18, responds to
+  粤府函〔2019〕311号 and cites the2019 guideline. It also links the AI
+  initiative to the city's existing demonstration-zone opportunity,
+  highlighting potentially overlapping policy exposure.
+- [Suzhou](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2021/202103/t20210324_173509.html),
+  国科函规〔2021〕63号, signed March19, posted March24, responds to a2020
+  provincial application and cites the revised guideline. Application year
+  is not approval year. Manufacturing applications are emphasized, but
+  the letter does not verify individual firms' receipts or adoption.
+- [Deqing](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2019/201911/t20191105_149777.html),
+  国科函规〔2019〕194号, signed November2, posted November5, responds to
+  a joint Hangzhou/Deqing provincial proposal but approves Deqing County.
+  That letter neither designates all Huzhou nor independently approves
+  Hangzhou. A prefecture-level firm join could incorrectly expand treatment.
+
+These are inspected examples, not an exhaustive national roster. Approval,
+website publication, local implementation and firm uptake remain different
+events. Registered headquarters and production location also cannot be
+treated as interchangeable without the paper's linkage specification.
+
+Access check: the public Elsevier XML endpoint for `S0313592626003760`
+returned HTTP200 but contained no body, sections or paragraphs. It supplied
+metadata, not a full manuscript. Publisher access returned403; exact-title
+and author searches yielded no inspected lawful paper body. No restricted
+copy was saved and no indexed methods snippet was substituted for reading.
+
+Disposition: blocked at the candidate layer pending the final paper or
+usable manuscript/appendix. Reopening should close the actual designation
+roster, instrument identity, cohort/date coding, geographic joins,
+intelligent-upgrading measure, comparison groups, data connection and
+overlapping policies. Official letters support institutional understanding,
+but cannot establish which implementation the authors used. No canonical
+admission or maturity change; ready141, local only.
+
+### Provincial plan targeting: inspected productivity application — 2026-10-07
+
+Screen `task-8912c2c4feba`, candidate `candidate-b9cea751502f`:
+Chen, Feng and Zhou2022, Contemporary Economic Policy40(1):138–161,
+[DOI](https://doi.org/10.1111/coep.12555).
+The [publisher full HTML](https://onlinelibrary.wiley.com/doi/full/10.1111/coep.12555)
+was accessible despite failure of the shorter DOI route. Sections2.2/3.1/3.2
+were inspected: ninth–twelfth provincial plans for29 provinces define
+two-digit encouraged sectors, used as a proxy for city-sector policies.
+The application joins ASIF manufacturing observations for1998–2013 and
+uses city-sector/year effects plus firm effects. Designation is not observed
+receipt of individual benefits. Time-varying selection remains a concern
+despite fixed effects [analytical inference].
+
+Reconcile with `candidate-5997fec7f76c`, the provincial preferred-industry
+plan case, before any distinct count. Different productivity outcomes or
+sector aggregation do not themselves create another mechanism. Recover
+primary provincial texts, concordance, actual treatment histories and the
+designation-to-implementation boundary. No canonical admission from screen.
+This is an article-level extension in the firm/development lane, not a
+field-top ranking or journal-wide audit. Ready141; local only.
+
+### Provincial targeting resolution: proxy assignment and missing crosswalk — 2026-10-07
+
+Resolve `task-eb9039ff11c8`, candidate `candidate-b9cea751502f`.
+The inspected [final publisher HTML](https://onlinelibrary.wiley.com/doi/full/10.1111/coep.12555)
+Sections2.2/3.1/3.2,4.4 and endnotes6–12 clarify the application:
+plan periods1996–2000,2001–2005,2006–2010 and2011–2015;
+29 provinces excluding Tibet and Xinjiang; targeted manufacturing sectors
+harmonized to GB/T4754-2002 despite classification changes. Provincial
+preference proxies city-sector encouragement, not observed receipt.
+The paper checks reverse causality with later-period outcomes and baseline
+productivity, and reclassifies exposure using secondary products.
+These checks do not eliminate time-varying policy selection [analytical
+inference]. Endnote12 says2008–2013 intermediate inputs are estimated,
+with the reconstruction in Appendix S3. Thus productivity construction
+cannot simply assume those fields are observed throughout. Section5 explicitly
+does not distinguish the bundled instruments. The publisher appendix link
+`coep12555-sup-0002-Appendix.docx` failed in the reader and returned403
+on direct request; its contents were not inspected.
+
+Primary institutional example, not a substitute for the province inventory:
+the [Yiwu industrial/advanced-manufacturing eleventh-plan text](https://www.yw.gov.cn/art/2007/10/10/art_1229629687_3961934.html)
+was inspected in Sections1.3,1.5–1.6,7.2 and8.1. It covers local
+manufacturing during2006–2010, using2004 as the baseline. Sector priorities
+explicitly respond to market demand, existing comparative advantages and
+prospective growth; designated subareas emphasize different industries.
+Implementation includes organizational coordination, infrastructure and
+public support. The web metadata date2007-10-10 does not independently
+prove an original2006 adoption or a synchronized benefit start. This is
+a city-specific sectoral plan, not the29-province paper treatment table.
+
+The [Luqiao district eleventh-plan text](https://www.lqrd.gov.cn/InfoPub/ArticleView.aspx?ID=218504),
+opening and institutional-background paragraphs inspected, states2006–2010
+coverage and was posted2006-06-09. It derives from the district Party
+committee's proposal and frames priorities against prior industrial and
+urban development. This supports local institutional discretion, not
+equivalence of every district's treatment with its provincial plan or
+proof that this particular district entered the paper's coding inventory.
+
+Identity judgment: this source is closely related to
+`candidate-5997fec7f76c`'s provincial preferred-industry designation.
+The two-digit productivity application does not establish a new allocation
+mechanism relative to a four-digit provincial preference application.
+Retain both source histories for reconciliation, without double counting.
+National plans previously inspected for that candidate cannot replace
+original province-plan texts and their coding concordance here.
+
+Disposition: blocked pending the provincial text/code inventory, appendix
+and reconciliation of designation histories and implementation boundaries.
+The accessible final body improves the research application; it does not
+close those remaining links. Do not turn a plan-content proxy into a
+uniform subsidy, an absorbing adoption indicator, or intrinsically
+exogenous exposure. No canonical or maturity change; ready141; local only.
+
+### Unified tax administration and entry: access-limited screen — 2026-10-07
+
+Screen `task-30e895083091`, DOI `10.1016/j.eap.2026.09.019`.
+Crossref metadata inspected directly identify Liu, Yu and Zhu,
+*Unified tax administration and firm entry: evidence from China*,
+Economic Analysis and Policy94:863–875, December2026 issue metadata.
+This date is not proof of current issue availability. No exact DOI or
+bureau-merger entry case was found in canonical/candidate ledgers.
+The bounded source belongs to the firm/development lane, not a new
+financial-markets collection lane or journal-wide coverage claim.
+
+The actual [SAT transition notice](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/201806/t440163.html),
+税总发〔2018〕68号, signed2018-06-12 and postedJune20, was inspected
+in its complete operative body. Its opening defines the transition from
+new-bureau inauguration to implementation of organizational provisions:
+old bureaus initially cooperate under their preceding responsibilities.
+SectionI(2),(4),(6),(9) covers integrated registration, coordinated
+inspections, unified enforcement criteria and continued separate accounting
+with unified external reporting. SectionII(12)–(13) requires unified service
+and reduced duplicate submissions; SectionIII(17) requires Golden Tax III
+configuration upgrades. These are formal transitional requirements, not
+observed compliance or a city's paper-coded treatment intensity.
+Analytical inference: organizational inauguration cannot be equated with
+completed operational integration, and a systems upgrade is not first
+Golden Tax III adoption. Preserve this instrument separately from earlier
+tax-sharing and software-rollout records.
+
+Publisher full and abstract routes failed through the reader. Public
+Elsevier XML returned200 but contained no body or inspected abstract.
+The publisher's indexed entry/exposure description is a search lead only;
+it does not support a verified median cutoff, baseline-year denominator,
+sample or outcome join. Plausible IDEAS routes were inaccessible. No
+manuscript, appendix or restricted copy was saved.
+
+Disposition: screen blocked, no canonical publication. Reopen with an
+inspectable paper body or abstract and then resolve original baseline
+exposure construction, jurisdiction accounting, national timing versus
+relative intensity, firm/subsidiary joins and comparison threats.
+The official transition notice closes an institutional distinction but
+does not supply the authors' empirical design. Ready141; local only.
+
+### Platform entrepreneurship training: version and publication boundary — 2026-10-07
+
+Screen `task-376b812fc5a6`. The current [author research page](https://www.yizhoujin.com/),
+Working Papers section, identifies Jin and Sun's *Entrepreneurial Training
+at Platform Scale: Evidence from a Large E-Commerce Experiment*, previously
+*AI Training for Online Entrepreneurs*, and reports712,118 new sellers.
+It links SSRN4334216. That page does not list this study among published
+or accepted papers. Early two-million-seller titles cannot establish the
+new version's analysis population. SSRN and the linked NBER conference
+reader routes returned403; no latest manuscript body was inspected.
+
+The [original trial registry](https://www.socialscienceregistry.org/trials/6725)
+was actually read through a direct HTTP200 request, despite browser failure.
+AEARCTR-0006725, version DOI10.1257/rct.6725-1.0, names China and both
+authors. Experimental Design records seller-level algorithmic randomization
+at registration, not clustering, with25% assigned training access.
+Interventions describe customized daily tasks, tutorials and temporary
+tool access earned upon completion; assignment is not course completion.
+The registered intervention window is2019-05-01 to2020-12-31; initial
+registration was2020-11-10 and IRB approval listed2019-05-30. Do not call
+this prospectively registered before treatment from the site's generic
+Pre-Trial heading. Administrative seller outcomes include revenue, traffic,
+conversion and ratings. The registry says public data are unavailable and
+retains an ongoing status; that historical entry is not current completion
+verification or a published paper's realized sample.
+
+Disposition: screen blocked pending a confirmed qualifying publication
+and inspectable current manuscript/appendix. Preserve this precise future
+lead rather than promote it or label it an unrelated foreign method.
+Resolve final population, cohort/timing, realized randomization, platform
+account joins, spillovers and data access if reopened. Do not infer the
+platform's identity or merge this seller-training intervention with village
+e-commerce access randomization. No canonical admission; ready141;
+local accumulation only.
+
+### EU antidumping and Chinese exporters: recoverable assignment — 2026-10-07
+
+Screen `task-c2f1c579cb3b`; Jabbour, Tao, Vanino and Zhang,
+*The good, the bad and the ugly*, JIE117 (2019),1–20,
+[DOI](https://doi.org/10.1016/j.jinteco.2018.12.004).
+The [Birmingham manuscript](https://pure-oai.bham.ac.uk/ws/portalfiles/portal/56099604/Jabbouretal_FV.pdf)
+is labelled peer-reviewed, not publisher typeset. Sections2–3,4.3–4.4
+and AppendixA2 were read; A2 was also visually inspected in memory.
+
+Role: `global-china-variation`. Chinese treatment is prior-year EU export
+of targeted products, not European producer/importer exposure. Customs
+and ASIF cover2000–2006; controls export other products in the sameHS4.
+The paper uses matched DID, not random assignment. Industry petitions,
+approval selection, conditional trends, trade diversion and survivor
+conditioning remain substantive threats.
+
+A2 identifies36 approved cases, initiation/final/revocation dates and
+Official Journal references. For multi-product cases it prints only the
+highest-shareHS6, not the complete product list. Preserve that distinction.
+Resolve the full GAD2015 product-case crosswalk, historical legal scope,
+operative duty timing versus investigation/final dates, EU membership,
+repeat exposure and customs-to-ASIF linkage before canonical admission.
+Keep European applications separate; do not infer free data access.
+
+Disposition: retained candidate for resolve, no canonical publication.
+Ready141; local accumulation only. No paper copy retained.
+
+### EU antidumping resolution: product bridge recovered, exposure boundary open — 2026-10-07
+
+Resolve `task-b21993d47649`, candidate `candidate-f8e265a2b7e5`.
+The [database author page](https://www.chadpbown.com/global-antidumping-database/)
+dates the last release June2016, covering2015Q4; this is not an independently
+verified copy of the paper's2015 vintage.
+
+The public [TTBD archive](https://www.chadpbown.com/wp-content/uploads/2019/02/TTBD_2016.zip)
+was read in memory. `GAD/GAD-EUN.xls`: Master, Products and Foreign-Firms
+sheets inspected. All36 A2 case IDs match Chinese investigations. Products
+has118 finalCN8 rows. Restore eight-digit width before takingHS6: numeric
+08111011 otherwise loses its zero. Correct aggregation yields67 distinct
+case–HS6 pairs; the initial unpadded68 was an extraction error, not a source
+conflict. Do not use that erroneous count.
+
+The archive's June2012 manual, Sections2.1–2.4 and3.10, printed16–19,37–38,
+distinguishes preliminary/final measures, missing values and revocation;
+EU reviews are incomplete. Table3.10.1 was visually inspected. Master duty
+is a maximum where rates vary, not each exporter's rate. `CN_F_ex` means
+only part of a code is covered. EUN-AD-413's Foreign-Firms row is missing,
+so that sheet does not recover firm identities or actual paid duties.
+
+Historical law was independently read rather than substituted with2016
+codification. [Commission Regulation362/1999](https://www.tid.gov.hk/archive/english/aboutus/tradecircular/cic/eu/1999/files/ci2699a.pdf),
+recitals1–2,7,13,16, traces petitions, limited product scope, analogue-country
+valuation and rejected individual treatment. The [official contemporaneous
+circular](https://www.tid.gov.hk/archive/english/aboutus/tradecircular/cic/eu/1999/ci2699.html)
+reports74.8% provisional duty effective19February1999, secured on release
+for free circulation.
+
+[Adopted Regulation1796/1999](https://www.legislation.gov.uk/eur/1999/1796/pdfs/eur_19991796_adopted_en.pdf)
+was actually read at OJ L217/1,10–12; Article1's rate table visually checked.
+It specifies60.4% for all PRC companies, listed ex-CN/TARIC product subsets,
+and definitive collection of provisional security under Article3.
+Article5 makes entry into force the day after17August publication:
+18August1999, not12August signature. GAD records12August as final date.
+The same distinction matters even where annual coding gives the same year.
+This case verifies the distinction, not all36 cases' legal implementation.
+
+Disposition: retain blocked at resolve, not a new canonical. The product
+bridge is now recoverable; remaining work is authors' realized Chinese
+case/window selection within2000–2006, overlapping firm exposures and
+operative timing, ex-product measurement atHS6, and customs–ASIF identifier
+linkage. Reopen with implementation/replication documentation or a source
+that closes those specific links, not another abstract. No archive, workbook
+or paper copy retained; ready141 unchanged; local only.
+
+### US antidumping investigation stages: monthly China exporter lead — 2026-10-07
+
+Screen `task-41d2316467a8`; Lu, Tao and Zhang, JIE91(2),290–300 (2013),
+[DOI](https://doi.org/10.1016/j.jinteco.2013.08.005), publication identity
+cross-checked against [IDEAS](https://ideas.repec.org/a/eee/inecon/v91y2013i2p290-300.html).
+The [MPRA38790 manuscript](https://mpra.ub.uni-muenchen.de/38790/1/MPRA_paper_38790.pdf)
+was accessed directly despite reader timeout: May2012,44pages, not the
+published2013 version. Sections2–4, printed6–11, actually inspected;
+equations2–4 and the control definition on printed8 visually checked.
+
+Role: `global-china-variation`. Monthly2000–2006 customs transactions join
+US case products atHS6. The manuscript defines disjoint intervals from
+initiation to preliminaryITC, preliminaryITC to finalITC, and after finalITC;
+these are not three cumulative post dummies. DOC dumping decisions and
+ITC injury decisions are different, and preliminaryITC is not itself the
+cash-deposit date. Controls are unaffected products withinHS4 or a separately
+constructed propensity-based product pool. Main analysis selects28 successful
+cases after endpoint/overlap exclusions; unsuccessful and withdrawn cases
+enter robustness work. That selection does not establish random investigation.
+
+Retain for resolve: reconcile published-version definitions, original US
+proceedings and stage dates, complete case/product bridge, name-based exporter
+classification and repeated exposure. Do not split stages into separate
+canonical variations merely to increase counts. EU duties are a distinct
+institutional regime, not an additional outcome of this US application.
+No canonical admission or PDF retained; ready141; local only.
+
+### US antidumping stages: identity and 2013 application resolved — 2026-10-07
+
+Resolve `task-d49671cd452b`, candidate `candidate-d28d5b32c2c4`.
+The full [October 2013 HKIMR manuscript](https://www.aof.org.hk/uploads/publication/364/wp-no-19_2013-final-.pdf)
+was inspected, printed pp.3–8,15–17 and Appendix A2 p.31; equation1 p.5
+was visually checked. This is not the publisher's typeset article.
+Unlike the May2012 screening version, equation1 uses preliminary and final
+duties interacted with the second and third disjoint ITC-based intervals;
+firm-product final duties replace product duties. Preserve that change.
+
+Historical 2006 USC sections
+[1673b](https://www.govinfo.gov/content/pkg/USCODE-2006-title19/html/USCODE-2006-title19-chap4-subtitleIV-partII-sec1673b.htm),
+[1673d](https://www.govinfo.gov/content/pkg/USCODE-2006-title19/html/USCODE-2006-title19-chap4-subtitleIV-partII-sec1673d.htm)
+and [1673e](https://www.govinfo.gov/content/pkg/USCODE-2006-title19/html/USCODE-2006-title19-chap4-subtitleIV-partII-sec1673e.htm)
+were actually read: Commerce dumping and ITC injury are separate;
+preliminary ITC does not itself trigger deposits. The
+[original furniture order](https://www.govinfo.gov/content/pkg/FR-2005-01-04/html/E4-3926.htm)
+was read, pp.329–333: June2004 provisional measure, December injury
+notification, January2005 order, provisional-measure lapse, named de minimis
+exclusion and written scope. These qualify the paper's coarse stage labels.
+
+The later public TTBD2016 archive's USA master, products and foreign-firm
+sheets were inspected in memory, including China2000–2006 rows and
+USA-AD-1058. They expose case IDs, HS10 precision and firm final rates,
+but do not reproduce the authors'2010 vintage or original rate aggregation.
+Some dates are chronologically inconsistent; later diamond-sawblade outcomes
+also differ from the original-period snapshot. Do not silently repair or
+substitute this archive for the paper's treatment matrix.
+
+Created grounded `china-us-antidumping-investigation-stages-2000-2006`:
+one China-facing investigation mechanism, not one record per stage/case.
+Institution, assignment, comparison and data joins are recoverable;
+lawful Customs access, original rate aggregation, exact selected-case matrix
+and name-rate reconstruction remain explicit application conditions.
+Industrial research must declare removal of agricultural cases from the
+paper's mixed sample. No restricted microdata or paper/archive copy retained;
+local accumulation only, no GitHub operation.
+
+### NTHS target-node evidence audit — 2026-10-07
+
+Audit `task-a7f56c1796ad` updates existing
+`china-highway-network-expansion`, with no duplicate record or promotion.
+Actually inspected the [2001 Ministry development plan reproduction](https://info.chineseshipping.com.cn/cninfo/LawsRule/LandTransportation/200111/t20011119_1161990.shtml),
+notice July6, website November19. Sections I(1),III(3),IV(1)(1) distinguish
+completed network stock, future construction targets and priority corridors.
+These support implementation context, not the original targeted-node rule
+or realized 2003 county exposure. A court-hosted three-stage plan lead at
+lawdb.cncourt.org/show.php?fid=81578 was inaccessible through web reader and
+direct HTTPS (certificate hostname mismatch); snippets were not admitted.
+The 2004 expressway successor and later realized city coverage were not
+substituted for the original NTHS node set. Original1992/1993 provisions or
+a documented original node inventory remain needed. Ready net0, total142;
+local only.
+
+### Provincial roads and manufacturing competition screen — 2026-10-07
+
+Screen `task-dfbaa46eee55`; candidate `candidate-53b765a8033b`.
+[IDEAS abstract/publication entry](https://ideas.repec.org/a/eee/deveco/v162y2023ics0304387823000056.html)
+actually inspected: Wu, Yu and Zhang, JDE162(2023),
+DOI10.1016/j.jdeveco.2023.103050. Mainland manufacturing1998–2007;
+provincial road exposure, industry transport dependence and endogenous
+construction timing merit follow-up. Publisher full/abstract routes returned
+403; no full methods inspected. Search excerpts and teaching slides are
+pointers, not verified assignment. Resolve the full timing/transport-reliance
+construction, markup data joins and relationship to existing road mechanisms.
+Candidate only; no canonical admission or ready increase; local only.
+
+### Provincial-road candidate full-methods access resolution — 2026-10-07
+
+Resolve `task-4cec196410cf`, candidate `candidate-53b765a8033b`:
+retain blocked, not canonical. The [author research page](https://mingqinwu.weebly.com/research.html)
+was actually inspected; its paper link goes to Google Scholar, not a manuscript.
+The unauthenticated publisher API
+`https://api.elsevier.com/content/article/pii/S0304387823000056`
+returned HTTP200 XML with bibliographic coredata only and no article body.
+Its openaccessArticle flag was false; OpenAlex's hybrid/OA flag therefore
+does not prove accessible methods. The publisher PDF route did not return
+an inspectable paper. No rate/budget algorithm or markup code was inferred
+from third-party teaching slides. Reopen with an author manuscript, actual
+appendix or lawful full-text access; resolve the industry dependence and
+road-timing construction and existing-mechanism boundary then. Ready142
+unchanged, no paper copy retained, no GitHub writes.
+
+### County incorporation, growth and firm reallocation application — 2026-10-07
+
+Screen `task-edbccc061592` inspects Han and Wu, JDE167(2024),
+DOI10.1016/j.jdeveco.2023.103197. Publication identity was checked against
+[IDEAS](https://ideas.repec.org/a/eee/deveco/v167y2024ics0304387823001530.html).
+The [RUC-hosted author manuscript](https://ae.ruc.edu.cn/docs/2023-12/33ca4602cba3404398a13f9691466d83.pdf)
+was actually read in memory, especially pp.11–20 and28–31. The reform is
+county-to-district incorporation, not a new province-direct-county regime.
+Existing `china-city-county-merger-consolidation` covers a later2011–2018
+application; an earlier window and different outcomes do not alone justify
+a second canonical identity.
+
+The manuscript reports a1995–2013 county panel with74 incorporated and185
+proposed-but-unapproved counties. Its control proposals were hand-collected
+from332 planning books; first application dates cannot be determined.
+Baseline fixed effects are county and **province-by-year**, not prefecture-
+by-year. The alternative stacks current incorporations against counties
+incorporated more than five years later, using event years−5 to5; preserve
+this manuscript convention and check source coding before equating it with
+the looser narrative phrase “five years later.” These are reported empirical
+choices, not proof that approvals or timing are exogenous.
+
+The1998–2007 industrial survey application offers useful firm mechanisms,
+but p.28 documents entry already rising one year before formal announcement.
+SOE exit is defined by disappearance in the next year and all later survey
+years; non-state disappearance cannot distinguish exit from falling below
+the RMB5million coverage threshold, so exit analysis is SOE-only. Registered
+population is not workplace population or observed migration. These limits
+must accompany any application update, rather than importing abstract claims
+of unrestricted firm exit or eliminated labor barriers.
+
+Retain for resolve: audit the relationship to the existing regime, obtain the
+named treatment/proposal matrix and historical geography, and add a coherent
+growth/firm application only when its data join and evidence boundary close.
+No canonical changed at screening; ready142 unchanged; local accumulation only.
+
+### County-incorporation identity resolution and bounded evidence update — 2026-10-07
+
+Resolve `task-6d8b35c712b3`, candidate `candidate-9304ef98e1fa`:
+the institution is the existing county-to-district change, not another shock.
+Updated `china-city-county-merger-consolidation` with reported E7 evidence
+and application limits; no new record, time-range expansion or design profile.
+Read the institutional/data/method/mechanism sections and visually inspected
+Table9(p.53) directly from the author manuscript in memory. The table retains
+the pre-announcement entry indicator and county/province-by-year effects.
+The complete earlier treatment/proposal matrix and historical geography were
+not supplied by the inspected manuscript/appendix; keep that application as
+a follow-up lead, not an admitted earlier-period recommendation. Existing
+2011–2018 Bo–Wang coding is not a substitute. Ready net0,total142; local only.
+
+### Government-office relocation: methods access screen — 2026-10-07
+
+Screen `task-eb01caff6f42`, Economic Analysis and Policy,
+[DOI10.1016/j.eap.2026.08.062](https://doi.org/10.1016/j.eap.2026.08.062):
+blocked at access, not canonical. The actual public publisher API
+`https://api.elsevier.com/content/article/pii/S0313592626003735`
+returned HTTP200 XML confirming title, DOI and journal, but no abstract or
+article body; openaccessArticle=false. Its coverDate is2026-12-31 and must
+not be substituted for the source's online date or any treatment date.
+Both full and abstract publisher HTML routes returned403 through the reader.
+Search-index excerpts identify a potentially relevant urban relocation study,
+but are pointers rather than inspected methods or evidence of assignment.
+
+The inspected Fudan author profile contains no manuscript link and its current
+readout does not include this paper; a richer search excerpt was not treated
+as the actual page. No exact DOI or general government-office relocation
+case was found in canonical/candidate records. Before admitting a source,
+recover full methods and distinguish announced relocation, approved seat
+change, actual office operation and any move-in/move-out geography. Existing
+Tongzhou subcenter and Beijing noncapital-function relief records cannot be
+substituted for a national relocation cohort ledger. Any composite efficiency
+outcome must be checked for environmental components against the owner's
+current scope, rather than relabelled automatically as urban development.
+No assignment or causal effect was inferred; reopen on actual author/publisher
+body or replication availability. Ready142 unchanged; local only.
+
+### Anti-Monopoly Law and firm human capital: source screen — 2026-10-07
+
+Screen `task-622e1cd2dba5`, candidate `candidate-136ec79f962a`.
+Actually inspected [IDEAS publication entry and abstract](https://ideas.repec.org/a/eee/asieco/v102y2026ics1049007825002106.html):
+Li, Liang, Ye and Chen, Journal of Asian Economics102(2026),
+DOI10.1016/j.asieco.2025.102086. The abstract reports a DID around the2008
+Anti-Monopoly Law with high-monopoly firms and skilled hiring/productivity
+outcomes. It establishes a paper-used lead, not the definition or vintage of
+monopoly status, the sample period, firm join or causal validity. No exact
+DOI or2008 AML mechanism was found in canonical/candidate records.
+
+This differs institutionally from `china-2016-fair-competition-review-industry-exposure`,
+which concerns review and cleanup of government policy measures. Do not reuse
+that record's18-industry classification for this study. National statutory
+coverage also does not imply only the high-monopoly research group was treated.
+Resolve the actual firm's exposure rule and distinguish enactment, effective
+date and case-specific enforcement; lower-monopoly firms may be relative
+comparisons rather than legally exempt observations.
+
+Publisher body could not be inspected. The original2007 law page at
+`https://www.gov.cn/zhengce/2007-08/30/content_2602204.htm` is a primary-source
+pointer but returned inaccessible through the reader. Its search excerpt was
+not admitted as inspected law. The original NPC Gazette PDF and actual full
+methods remain follow-up routes; do not substitute the2022 amended text for
+sample-period provisions. Candidate only, no canonical change, ready142;
+local accumulation and no GitHub write.
+
+### Anti-Monopoly Law: original-text boundary resolution — 2026-10-07
+
+Resolve `task-88f99a7a2e69`, candidate `candidate-136ec79f962a`:
+blocked at research assignment, not canonical. Actually inspected the
+[Australian government public-record exhibit of the original Chinese law](https://www.industry.gov.au/sites/default/files/adc/public-record/exhibit_b2.20_-_anti-monopoly_law.pdf)
+through parsed PDF text, pp.1–8 and19. This is a bilingual exhibit reproduction,
+not independent proof of case enforcement; screenshots returned cache-miss
+and direct download timed out, so no visual inspection is claimed.
+The text gives promulgation2007-08-30 and effectiveness2008-08-01(Article57).
+Its generic “valid” metadata label is not a statement that the2007 version
+remains the current law after amendments.
+
+Articles2–3 distinguish domestic/China-facing restrictive conduct, agreements,
+abuse of dominance and concentrations. Article6 prohibits abuse, not merely
+possessing market power. Article12 defines relevant product/geographic markets;
+Articles18–19 provide multiple dominance factors and rebuttable share presumptions
+(one-half for one operator, two-thirds for two, three-quarters for three),
+with the under-one-tenth qualification and possibility of rebuttal. Do not
+turn these provisions into an industry-HHI or firm-markup treatment group
+without the paper's actual method. Article7 is not a blanket SOE exemption.
+Articles15 and55 contain qualified exceptions; the agricultural collaboration
+exception in Article56 does not broaden the owner's deferred agricultural lane.
+
+The original NPC PDF route failed due to an expired certificate; the gov.cn
+HTML route returned404 directly. The publisher API for S1049007825002106
+returned200 metadata only, no article body, openaccessArticle=false.
+No actual author manuscript or appendix was found through the bounded search.
+Therefore prepolicy monopoly construction, its threshold/vintage, firm sample,
+skill outcome definition, treatment joins and annual transition coding remain
+unresolved. The effective date alone cannot close them, and financial-crisis
+coincidence must not be presented as removed by the statutory chronology.
+Preserve this specific full-methods reopening condition; ready142 unchanged,
+no canonical or file deletion, local only.
+
+### Guangdong registration pilot: Guangzhou's within-city phase-in — 2026-10-07
+
+Ground `task-452f01c244f6` supplies new primary evidence for blocked
+`candidate-e08c2aa11434` (REStat DOI10.1162/rest_a_01549), rather than
+re-screening the paper or creating another variation. The replication API
+for DOI10.7910/DVN/XSVITM still returned403; no treatment code was read.
+
+Guangzhou's [original implementation measure](https://www.gz.gov.cn/gkmlpt/content/5/5444/post_5444939.html),
+穗府办函〔2013〕119号, was read as HTML, particularly Articles2,16,
+18-23,26,30-36 and54-58. Issued30September2013, it applies to specified
+pilot areas, not the whole city: the Guangzhou Economic and Technological
+Development Zone and its listed nested zones, Nansha New Area, Zengcheng
+Economic and Technological Development Zone, Sino-Singapore Guangzhou
+Knowledge City, Guangzhou International Bio Island and Tianhe CBD's
+Zhujiang New Town area. Article58 takes effect on publication, with a
+one-year validity period, and recognizes registrations from1September2013
+under 穗府函〔2013〕62号. That retrospective clause does not make
+1September a verified citywide start or prove the day every component operated.
+
+The [July2013 plan](https://www.tid.gov.hk/archive/english/aboutus/tradecircular/cic/asia/2013/files/ci2013596a.pdf)
+was actually read in memory, all six pages. This is a Hong Kong Trade and
+Industry Department reproduction of the Guangzhou notice, dated2July2013,
+not the original Guangzhou web page. SectionIV on p3 explicitly describes
+selected-area pilots followed by citywide implementation. SectionsIV(2-3)
+on p3 distinguish subscribed capital at registration from paid-in capital
+filing after contribution, and the registered headquarters from operating
+premises. The plan's proposed two-year old-license transition on p6 differs
+from Article54's one-year requirement in the later implementation measure;
+do not merge their versions into one timeless rule.
+
+The registration package is not unconditional removal of verification or
+permission to operate. Article20 still requires a verification report within
+30days of actual contribution. Article16 retains prior approvals for specified
+special sectors and foreign-invested establishment, and subsequent operating
+licenses for other licensed activities. Article23 limits same-address sharing
+to investment-related firms or qualifying parks. Articles26/31 distinguish
+the license issue date from first annual reporting in the following year;
+Articles35-36 allow abnormal-list firms to continue operating. These provisions
+explain why license entry, report appearance and economic or legal exit cannot
+be interchanged, and why registered location is not automatically plant location.
+
+Guangzhou AIC's [2014 departmental accounts](https://www.gz.gov.cn/attachment/7/7867/7867675/2856590.pdf),
+PartIV(1), printed p35 (PDF page36), explicitly report citywide rollout
+from1January2014. This is an inspected administrative retrospective, not the
+original December2013 rollout notice or a causal estimate. The web tool's
+parsed PDF was read; its screenshot failed, while direct retrieval returned403.
+No visual inspection of this accounts PDF is claimed. An independent commercial
+reproduction of 穗工商综〔2013〕387号 remains a lead, not primary support.
+
+The resulting assignment issue is substantive: a monthly city-level indicator
+must reconcile pre-citywide exposure in selected areas with the January2014
+expansion. Do not infer the paper's coded Guangzhou month from a policy-title
+date, silently replace its code, or declare a discrepancy resolved without
+reading the actual city-month crosswalk. Obtain that crosswalk/code, geographic
+pilot boundaries if using firm exposure, the remaining cities' local rules and
+registry/report linkage documentation. Candidate admission remains blocked;
+this task closes Guangzhou's legal-phase distinction but not the full21-city
+decision chain. No canonical, ready increment, document storage or GitHub push.
+
+### Housing privatization: recover the AER application's accessible manuscript — 2026-10-07
+
+Resolve `task-02bf4b23efa8` revisits `candidate-19670874707c`. The
+[AEA article page](https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2081)
+confirms Wang's AER101(5),2081-2107, August2011 identity. Its full-text link
+offers member/institutional access, not an inspected open published PDF.
+The old NYU DRI PDF URL returned404. The migrated DRI article page links
+another Squarespace asset, which also returned404; cached search text was
+not used as a replacement for actual inspection.
+
+The lawful [AEA conference manuscript](https://www.aeaweb.org/conference/2011/retrieve.php?pdfid=142)
+returned an actual37-page PDF with September2010 cover. Institutional,
+data and empirical sections were read in memory; Table6 p28 was rendered
+and visually checked. E4 and the existing canonical record's Evidence Notes
+preserve the recovered province-mismatch price application without replacing
+its tenant-employment entrepreneurship design. No additional variation is
+counted. The earlier manuscript does not establish the final published coding,
+and its title-rights claim cannot supersede the inspected national law.
+
+The publisher-linked [replication deposit](https://doi.org/10.3886/E112454V1)
+and its `aer_wang_data_files` folder were inspected as file inventories:
+summary and tables .do files, `data_aersubmit.dta`, and `readme.pdf` exist.
+The tables-code download redirected to ICPSR login; the README download
+failed in the web tool. No code, README contents or microdata were read,
+downloaded or executed. Thus an inventory is not a verified executable join
+or a replication result. Reopen the final housing-price profile on an actual
+published body and lawful code/README access, preserving the generated
+mismatch and province-level inference rather than silently reusing the default
+person-level treatment. The related candidate remains blocked; canonical
+evidence updated, maturity unchanged, ready net0. Local only.
+
+### Existing-rail upgrades: recover the speed-tier distinction — 2026-10-07
+
+Resolve task-37915da610ca revisits candidate-cbd9e3c5db53, Qin2017,
+DOI10.1093/jeg/lbw013, on newly inspectable institutional reporting.
+The old author submission URL
+https://qinyurain.weebly.com/uploads/4/7/2/8/47280099/qinyu_submitversion.pdf
+returned actual404 HTML, not a PDF. No manuscript or figures were read there.
+
+Actual HTML inspected: the Hunan government department's March19,2007
+reproduction of a March16 Xinhua report, headline, main report and previous-
+round timeline:
+https://gxt.hunan.gov.cn/xxgk_71033/gzdt/jxyw/200703/t20070319_2059419.html.
+It corroborates April18,2007 implementation and April18,2004 fifth-round
+timing; its named200km/h corridors are not a county treatment roster.
+
+Actual HTML inspected: the November17,2006 Ministry press-conference
+statement attributed to Hu Yadong, reproduced from China.org.cn by Sina:
+https://news.sina.com.cn/c/2006-11-17/172311546386.shtml,
+opening and SectionII (transport resources and capacity). This is a
+reproduced official statement, not an original operational map. It separates
+120km/h-and-above coverage from160km/h-and-above and200km/h coverage.
+The160km/h list includes Jingjiu, Lanxin and Xuanhang, while the200km/h
+list instead includes Jiaoji among eight named corridors;250km/h applies
+only to portions of Jingha, Jingguang, Jinghu and Jiaoji. Thus a broad
+sixth-round corridor list cannot substitute for the paper's relevant
+speed-tier and segment assignment. The statement also describes joint
+changes to frequency, freight capacity and routing, not speed alone.
+
+These sources close date and regime-context gaps but do not identify the
+county-by-cohort exposure, partial2004 sections or reconcile the paper's
+pre1996/pre2002 access samples. Keep the candidate blocked, not an extracted
+canonical. The next useful evidence is a readable paper map with segment
+endpoints or author coding, not another national announcement. No duplicate
+variation or ready increment; no GitHub push.
+
+### SPC circuit-court oversight and enterprise litigation — 2026-10-07
+
+Screen task-6522ec8d715f retains candidate-ee07ffbb167b, Cai, Hongbin,
+Heng Chen, Yuyu Chen and Sisi Zhang2026, Journal of Public Economics257,
+105615, DOI10.1016/j.jpubeco.2026.105615. Actual author publication page
+https://www.heng-henry-chen.com/research/ and HKU metadata
+https://hub.hku.hk/handle/10722/372093 confirm publication. The latter lists
+March19 online issuance; issue month is May. Publisher article access
+returned403; no final-body equivalence is assumed.
+
+Actual200 PDF inspected in memory, not deposited:
+https://www.heng-henry-chen.com/files/cronies.pdf, cover February3,2026,
+58 PDF pages. Sections2.2,3 and5.1, printed pp.8–12,22–26; Equation2,
+Table4; AppendixA.1/TableA1, printed pp.1–2; AppendixB,pp.4–5;
+TablesA8–A11,pp.13–15. TableA1 was also rendered and visually read.
+The manuscript analyzes2014–2019 enterprise litigation, joining the
+adjudicating court's jurisdiction and trial timing to officials' histories.
+Circuit is court-quarter coverage, not the plaintiff's registered-city
+designation. The main comparison is connected versus unconnected nonlocal
+plaintiffs against local defendants; the interaction captures changes in
+favoritism, not every firm's productivity effect. Table4 clusters by court
+and plaintiff city. Its rollout table puts Hunan under the first court's
+January2015 row. This cannot itself establish Hunan's historical treatment.
+
+Actual SPC news explanation inspected, December29,2016, rollout paragraphs:
+https://www.court.gov.cn/zixun/xiangqing/34072.html.
+It explicitly says Hunan was added to the previous Guangdong/Guangxi/Hainan
+first-circuit jurisdiction. It also records January28/31,2015 establishment
+of courts1/2 and nonrandom planning considerations. Actual linked judicial
+interpretation read, opening, amendment and Articles1–4,9–10:
+https://www.court.gov.cn/fabu/xiangqing/33872.html,
+法释〔2016〕30号, signedDecember27, effectiveDecember28,2016.
+It provides six geographic circuits, while Beijing, Tianjin, Hebei, Shandong
+and Inner Mongolia remain with SPC headquarters. Article2 makes circuit
+judgments SPC judgments; Article3 limits direct acceptance to specified
+SPC-level cases and includes petitions. Article4 reserves IP and certain
+other matters to headquarters. Geographic oversight exposure is therefore
+not direct circuit adjudication of every local commercial case.
+
+Resolve the Hunan discrepancy using the final published appendix or responsible
+coding; do not assume the table proves an error in the regressions. Recover
+the court-province-date roster and the convention for lateDecember2016
+within quarterly treatment. This is a distinct SPC oversight instrument,
+not local-court personnel/finance centralization, administrative-case
+cross-jurisdiction reassignment or automatic national IP jurisdiction.
+Keep official dates separate from the reported application. Nonrandom
+rollout, litigation selection, missing judgments and changing political
+connections require design-specific assessment. No canonical at screening.
+
+Resolve task-4e2acbdba437 inspected the actual original2015 judicial
+interpretation, opening and Articles1–4,9–10:
+https://www.court.gov.cn/zixun/xiangqing/13148.html,
+法释〔2015〕3号, signedJanuary28, effectiveFebruary1,2015. Article1
+assigns Guangdong/Guangxi/Hainan, without Hunan, to circuit1, and
+Liaoning/Jilin/Heilongjiang to circuit2. Preserve inauguration dates versus
+the interpretation's effective date rather than silently equating them.
+Together with the original2016 amendment, the legal exposure is recoverable;
+the manuscript's collapsed first-circuit row is not a dated historical roster.
+
+No responsible treatment code or final-version corrected appendix was found
+through the author's publication page, institutional record and targeted
+replication search. Do not request private data or contact authors without
+authorization. Candidate blocked specifically on reconciliation of Hunan and
+the lateDecember quarterly convention, not on unread methods, generic law
+availability or a demand for unrestricted microdata. A final coding table,
+lawful code access or an independent paper with traceable correct jurisdiction
+coding can reopen grounding. Source identity is resolved, canonical admission
+is not; ready net0,142 total. No files deleted or GitHub operation.
+
+### First-US-patent baseline-filter access follow-up — 2026-10-07
+
+Audit `task-d972205a8571` follows `candidate-409fcecdc7f1` and targets
+only the still-uninspected `Table4.do` filters. The public Mendeley page
+opened successfully; `code/tables_and_figures` visibly lists the file as
+2.69 KB with identifier `dcee3b31-fe6c-4a34-a94b-3e691f331663`.
+Its view control produced no code preview. Ordinary HTTP retrieval timed
+out connecting, and the single-file browser download produced no completed
+download within the 45-second observation window. This is an access failure,
+not evidence that the file is absent or that its regressions failed.
+
+No new filter or sample claim is established. Preserve the construction-code
+findings above: growth annualization and endpoint-based `cont` are recovered,
+but actual baseline restrictions and the disposal-date instrument history
+remain unresolved. Reopen on a completed public Table4 file or traceable
+author clarification, not another abstract/README pass. No script executed,
+restricted data acquired, canonical admission or readiness change.
+
+### Circuit-jurisdiction reconciliation: JCE2026 source boundary — 2026-10-07
+
+Audit `task-866cfa2b2c57` tested whether Zhang, Yano, Shiraishi and Xu's
+2026 *Loosen the ties that bind: interprovincial circuit tribunals, political
+interference, and judicial independence*,
+[DOI10.1016/j.jce.2026.07.005](https://doi.org/10.1016/j.jce.2026.07.005),
+can resolve the dated jurisdiction coding in `candidate-148476956493`
+(CER2022) and `candidate-ee07ffbb167b` (JPubE2026).
+The [author publication page](https://sites.google.com/view/yimeng-zhang),
+Publications section, actually opened and confirms the title, coauthors and
+Journal of Comparative Economics forthcoming status. It exposes no manuscript
+link for this item. Publication identity is confirmed; methods are not.
+
+Publisher retrieval returned403; the ordinary browser page showed a human-
+verification challenge, not the article. No challenge was completed and no
+body, appendix or treatment roster was inspected. Indexed descriptions are
+only discovery pointers. This paper is therefore a potential application of
+the existing circuit-jurisdiction family, not an independently verified new
+assignment or a source that closes the Hunan/quarter-coding discrepancy.
+Do not count it separately on its title or create a canonical from snippets.
+The next useful evidence is an accessible author/institution manuscript or
+public replication coding; repeated publisher access is not the next task.
+The two existing candidates remain blocked, with their earlier legal and
+paper-body findings preserved. No new candidate or canonical was published.
+
+### Rural e-commerce county exposure: implementation lag and cohort selection — 2026-10-07
+
+Resolve `task-4ce2c28aa8d3` follows `candidate-803d0ec97f8d` with an
+alternative CER83(2024) application: Zhao, Liu and Wang, *Place-based polices
+and e-commerce development in rural China*, DOI10.1016/j.chieco.2023.102085.
+The [IDEAS identity/abstract](https://ideas.repec.org/a/eee/chieco/v83y2024ics1043951x23001700.html)
+was inspected; it reports online-business entry/survival under county
+designation, not randomized village access. Publisher body returned403 and
+the exact title/author search recovered no accessible manuscript. This
+alternative application does not yet establish sample years, county joins,
+comparison or survival coding. It is not a second canonical instrument.
+
+The original [MOFCOM letter 商建区域函〔2015〕362号](https://scjss.mofcom.gov.cn/cms_files/oldfile/scjss/201507/20150702110346470.pdf)
+was visually read, both scanned pages; signed/printed2015-07-01. It states
+that the2014 demonstration had run nearly a year but overall progress was
+slow. Provinces were asked to report implementation/fund disbursement, publish
+plans byJuly31, accelerate work and supply subsidized-project transaction
+information. The planned third-party assessment could inform later funding
+and recover central allocations from failing cases. This verifies documented
+implementation delay and conditional funding, not any county's opening date.
+
+The original [2017 notice 财办建〔2017〕30号](https://www.mof.gov.cn/gp/xxgkml/jjjss/201705/t20170516_2601684.htm)
+was read at SectionsII–VI; signedMay3, metadataMay9. SectionIII excludes
+already-supported counties and targets national poor counties plus eligible
+old revolutionary-base counties; whole-prefecture organization still directs
+central funds only to eligible unsupported counties. SectionV uses voluntary
+county application, provincial selection and centrally reviewed provincial
+quotas, considering prior progress and performance. Funding is then disbursed
+through provinces. SectionIV prioritizes outward product/logistics services,
+with at least50percent for that purpose and at most15percent for public-service
+centers. These are2017 rules, not retrospectively verified2014 criteria.
+[Verified institutional facts]
+
+Analytical implication: recover designation cohorts separately from operating
+dates and funding receipt; poverty status, provincial quotas and prior
+performance can predict selection. Village service access or household
+take-up is not assigned simply by county listing. The alternative CER source
+still lacks inspected methods; retain the existing candidate as blocked
+rather than treating institutional closure alone as paper-design closure.
+An additional MOFCOM-hosted scanned PDF was inspected only at its cover and
+editorial page: *中国电子商务报告2024*, by 中国国际电子商务中心,
+https://dzswgf.mofcom.gov.cn/news_attachments/edaa82d0267dff264ea2269bf1260712ce54e3ae.pdf .
+It was not a verified historical cohort roster; no claim is made about its
+unread interior. No paper or restricted data was stored in the repository.
+Next obtain actual CER/CWE methods or lawful replication, retaining these
+selection and implementation distinctions. Ready unchanged.
+
+### Second-class-road toll abolition and logistics reallocation — 2026-10-07
+
+Screen `task-cdbe7e7bb8e1` inspected the [PKU journal record](https://ccj.pku.edu.cn/article/info?id=253820566),
+title/authors/citation and Abstract, for Wan Wei and Long Xiaoning2020,
+*经济增长“绕道”而行了吗?——二级公路收费取消的影响研究*,
+经济学（季刊）, issue3, pp897–912. The [author university listing](https://soe.xmu.edu.cn/info/6491/1040885.htm)
+also confirms the publication title/journal; its page-update date is not a
+publication or policy date. No DOI was established from these sources.
+
+The abstract reports an application of government-repayment second-class-road
+toll abolition to freight turnover, mean haul distance and tonnage; its
+interpretation distinguishes detouring off expressways from mode substitution.
+These are paper-reported results, not independently replicated effects or a
+verified treatment matrix. The opened journal page supplied no methods and
+the exact title/author search recovered no accessible full text. Retain as a
+mainland regional/transport-development candidate, not agriculture or finance.
+No exact mechanism match was found in canonical/candidate text search.
+
+Resolve needs actual methods, historical provincial implementation dates and
+covered road/debt categories, comparison provinces and sampling, freight
+statistics definitions and province-year joins, anticipatory rerouting,
+concurrent fuel-tax/fee reform and highway changes. Do not infer a universal
+2009 treatment or equate government-repayment second-class roads with all
+non-expressways, privately operated roads, construction exposure or2020 border-
+booth removal. No canonical or ready increase at screening.
+
+### Toll abolition resolution: recover provincial clocks and exceptions — 2026-10-07
+
+Resolve `task-33ab33b48bc7`, candidate `candidate-deb4e7d75d48`, read
+the actual [MOT2009-05-05 briefing](https://xxgk.mot.gov.cn/jigou/zcyjs/202006/t20200623_3307419.html),
+sections on phased cancellation, regional scope and implementation milestones.
+The URL's2020 archive path is not the event date. It confirms first-wave
+cessation: Fujian/Jiangxi2009-02-21 00:00; ShandongFeb28 00:00;
+Jiangsu/AnhuiFeb28 24:00. Second-wave cessation: Jilin/HebeiApr30 00:00,
+HenanApr30 12:00, Heilongjiang/Hubei/Hunan/LiaoningApr30 24:00.
+Daily coding must preserve24:00 versus the following day's00:00.
+
+The same briefing states provincial timing could be simultaneous or phased;
+western participation was discretionary, while Guangdong/Shanxi/Zhejiang
+were still developing phased plans. Existing privately operated second-class
+roads could continue under contracts. Road-network maturity, fiscal capacity
+and debt burden explain sequencing. These are verified administrative facts,
+not random assignment or the paper's selected control provinces.
+
+The actual [State Council notice 国发〔2008〕37号](https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2009/art_1abc2679296d47aa8d724baa33019315.html),
+signed2008-12-18, was read at SectionsII(a)1–3,II(e),III(c).
+It distinguishes nationwide abolition of six transport fees at2009-01-01
+from phased government-repayment-road toll cancellation, alongside fuel
+consumption-tax increases. This is a contemporaneous bundled-reform threat,
+not a reason to assign every road the same treatment date.
+
+The Jiangsu MOF reproduction timed out and was not inspected; its indexed
+station counts are not adopted. The two national sources establish core
+scope and early clocks but not later provincial road rosters or the CEQ
+article's exact application. Actual methods remain unavailable from the
+opened publisher and author-institution pages. Retain blocked until sample,
+comparison, statistic definitions, provincial treatment coding and joins are
+recoverable from body/appendix or lawful replication. No canonical placeholder
+and no claim that higher freight turnover proves higher economic growth.
+
+### Twins legacy audit: sample and version boundary — 2026-10-07
+
+Audit `task-6fcbf1ca6d52` inspected [IZA DP2082, April2006](https://repec.iza.org/dp2082.pdf),
+Section2, printed pp.16–19, Table2, and the identification discussion at
+pp.5–6 and29–30. PDF pages19 and44 were also visually inspected.
+This is a working paper, not verified inspection of the2009 ReStud version
+(DOI10.1111/j.1467-937X.2009.00563.x).
+
+The working paper uses CCTS in Kunming, surveyed late2002/early2003,
+children aged7–18. The2000 census locates potential twin households;
+singleton comparisons are recruited nearby, not randomized households.
+It reports1300 first-birth-twin and394 second-birth-twin households.
+Urban non-exempt and rural exempt samples must remain separate:
+Table2 first-birth-twin fertility coefficients are0.961 and0.662,
+respectively. A universal extra-child first stage is unsupported.
+Birthweight deficits and inter-child allocation confound naive twin-IV
+interpretation; birth-order-specific adjusted effects are not a blanket
+point-identified policy effect.
+
+The existing `china-one-child-policy-twins-iv` remains lead-only.
+Its national geography,1979–2005 application window, CHNS data,
+policy-intensity interaction and generic parity claims are not established
+by this inspected version. Before rewriting canonical, recover the published
+methods and reconcile the urban/rural assignment boundary and signed
+bounds: the working-paper introduction and results use potentially
+confusing upper/lower-bound language. Retain explicit blockers rather
+than transfer working-paper details into final-publication claims.
+No new canonical case or ready increase.
+
+### Route fare caps and intermodal competition — 2026-10-07
+
+Screen `task-b46e9352eee2` inspected the publisher's full scanned
+*行业间竞争与价格市场化:来自中国民航业改革的证据*, 万威, 龙小宁,
+庞东亮, 世界经济42(3),2019,168–192:
+[article380](https://sjjj.magtech.com.cn/CN/Y2019/V42/I3/168).
+Use the public full-text control; do not preserve its temporary access token
+or copyrighted PDF. Visually read pp.168–171 and176–179.
+
+The study treats route fare-cap removal as an outcome of regulatory choice,
+not randomly assigned deregulation. Equations12–13 use direct HSR connection
+and changes relative to2004 with route/time effects; OLS is accompanied by
+Logit robustness. It separates G/D/C services from G-only and D-only access.
+The timetable snapshots are2004-10,2013-07,2014-10,2016-06.
+The full 1–4-route catalogue counts each direction separately, yielding365,
+939,1317,1430 routes; the main policy contrast uses categories1–3 versus4.
+Price observations from2007-10,2014-10,2016-06 are a separate dataset,
+not a synchronized four-wave panel.
+
+Retain for firm/industrial and regional competition. Resolve original CAAC
+and NDRC instruments, cap-list membership versus removal dates, route/city
+keys, changing route universe and HSR timing. Reconcile existing HSR cases:
+another outcome does not create another variation. JEBO2019
+DOI10.1016/j.jebo.2019.03.019 examines related regulatory selection,
+not independently verified causal reform effects. No canonical at screen.
+
+### Fare-cap resolution: legal rosters and observation clocks — 2026-10-07
+
+Resolve `task-32fd18b9fb83`, candidate `candidate-8edc51d362ae`, read
+the actual [CAAC/NDRC 民航发〔2013〕85号](https://www.caac.gov.cn/XXGK/XXGK/ZFGW/201801/t20180110_48470.html),
+complete operative paragraphs and signature: signed2013-10-09,
+effective2013-10-20. Its2018 archive URL is not the policy date.
+The reform removes the downward fare limit on government-guided domestic
+routes while retaining the25% upward limit; separately, specified routes
+facing ground-transport competition and served by at least two airlines
+move to market pricing. These are different changes, not universal cap
+abolition. The
+[one-page annex](https://www.caac.gov.cn/XXGK/XXGK/ZFGW/201801/P020180110391489992478.pdf)
+contains31 route-code/name pairs; complete text and the page image inspected.
+Lists are revised annually; fares require seven-day public notice.
+
+The actual [民航发〔2014〕107号](https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/SYZCFBJD/201603/t20160308_29509.html),
+SectionsI–III and signature, is signed2014-11-25 and effective2014-12-15.
+It adds selected neighboring-province short passenger routes, liberalizes
+domestic cargo rates and changes guided passenger baseline-price setting
+to airline determination subject to attached rules. Cargo deregulation is
+outside the candidate's passenger-route exposure. The
+[three-page Annex1](https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/SYZCFBJD/201603/P020160308411288553878.pdf)
+has101 route pairs; all text and last page image inspected. Original codes
+include city-level conventions such as SIA: do not silently substitute
+current airport identifiers or infer direction-specific coverage.
+
+The original [NDRC/CAAC2004 announcement18](https://www.ndrc.gov.cn/xxgk/zcfb/gg/200506/t20050613_961542.html),
+SectionsIII(7)–(11), signed2004-03-17 and effective2004-04-20, establishes
+the earlier guided-price baseline,25% upward limit and differentiated
+downward limits. Its short-route market-pricing criterion already refers
+to alternative transport competition; the underlying selection is not
+newly randomized in2013.
+
+Keep blocked before canonical admission. Paper policy-group snapshots and
+actual reform effective dates need an explicit concordance, especially
+around2014; legal rosters alone do not prove the paper's observation clock.
+Recover the earlier category4 roster, published route-level treatment/HSR
+crosswalk and comparison histories. Then decide whether the reusable
+object is a coherent fare-policy regime or an application of existing HSR
+exposure. No independent mechanism count from a policy-dependent variable,
+and no assumption that selection on competition validates exogeneity.

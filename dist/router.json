@@ -2,15 +2,15 @@
   "schema_version": 4,
   "purpose": "Compact recall index. Knowledge eligibility is a static gate; query-specific compatibility must be evaluated separately.",
   "empirical_requirements_contract_version": 1,
-  "record_count": 168,
+  "record_count": 185,
   "knowledge_role_counts": {
     "transferable-method": 14,
-    "china-variation": 149,
-    "global-china-variation": 5
+    "china-variation": 164,
+    "global-china-variation": 7
   },
   "recommendation_eligibility_counts": {
     "method-lead": 13,
-    "conditional-candidate": 115,
+    "conditional-candidate": 132,
     "direct-candidate": 10,
     "do-not-recommend": 18,
     "lead-only": 11,
@@ -579,6 +579,351 @@
       "source_path": "variations/china-2001-income-tax-protected-base-incentive.md"
     },
     {
+      "id": "china-2002-2003-sars-province-firm-exposure",
+      "name": "China 2002–2003 SARS provincial exposure and manufacturing redistribution",
+      "aliases": [
+        "非典省级企业暴露",
+        "SARS inventory and market power",
+        "Jiang Zhang SARS manufacturing"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-performance",
+        "industrial-economics",
+        "regional-economics",
+        "development",
+        "market-power",
+        "inventory"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "event-shock",
+      "time": {
+        "start": 2002,
+        "end": 2003
+      },
+      "assignment": {
+        "unit": "Province-location exposure joined to firm-year observations.",
+        "mechanism": "Provincial location maps firms into different epidemic exposure; severity is realized through transmission and reporting rather than randomized assignment. The inspected application selects four heavily affected provinces and uses province…",
+        "treatment": "Four-province indicator interacted with Guangdong post2002 or other-province post2003; alternative common2003 and six-province definitions are sensitivity specifications.",
+        "comparison": "Assess treated-versus-other-province outcome trajectories while accounting for pre-trends, trade/industry composition and interference. Do not interpret untreated labeling as abse…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "province_code",
+          "city_code",
+          "industry_code"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "manufacturing markup",
+          "inventory",
+          "demand uncertainty",
+          "firm market share",
+          "firm performance"
+        ],
+        "application_outcomes": [
+          "Inventory-adjusted markup, raw/alternative markup, inventory ratio and generated city-industry-year demand uncertainty; market share and provincial PPI validate different aggregation margins."
+        ],
+        "design_families": [
+          "province-exposure DID with conditional detrending",
+          "outcome-specific event study",
+          "province-case intensity only after data reconciliation"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland manufacturing firms with recoverable province location and pre/post observations; industrial survey coverage is all SOEs and non-SOEs above the stated…",
+        "observation_unit": "firm-year",
+        "geography_level": "Province exposure with city controls and firm identifiers.",
+        "time_start": 1998,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "declared firm outcome",
+          "firm location history",
+          "sales revenue and export status",
+          "capital stock",
+          "city GDP per capita population density and export share",
+          "ownership and firm age",
+          "survey inclusion and retention history"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "province_code",
+          "city_code",
+          "industry_code"
+        ],
+        "treatment_key": [
+          "province_code",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "common regional shocks and concurrent changes",
+        "epidemic selection and reporting vintage",
+        "generated outcome and mediation",
+        "rejected raw pre-trends and detrending assumption",
+        "spillovers and relative redistribution"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 4,
+      "source_path": "variations/china-2002-2003-sars-province-firm-exposure.md"
+    },
+    {
+      "id": "china-2002-generation-unbundling-baseline-ownership",
+      "name": "China's2002 generation unbundling with baseline state-ownership exposure",
+      "aliases": [
+        "厂网分开2002",
+        "国发〔2002〕5号发电企业重组",
+        "Gao-VanBiesebroeck generation restructuring"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm",
+        "industrial-economics",
+        "development",
+        "electricity-generation"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2002,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Fossil-fuel electricity generation firm-year.",
+        "mechanism": "The legal restructuring applies to SPC generation/grid assets and relevant local or other-department enterprises. The paper fixes2002 registration types110 and151 as the more directly affected group; alternative Big Five affiliation and ma…",
+        "treatment": "Fixed2002 registration110/151 indicator interacted with annual indicators or the delayed2004–2007 post window.",
+        "comparison": "Absent restructuring, baseline ownership groups must have comparable conditional input-demand trends after accounting for prices and demand. Industry-wide changes can affect both…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registration_type_2002",
+          "industry_code",
+          "diqu_code",
+          "province_code"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "employment input demand",
+          "material expenditure",
+          "conditional operating efficiency"
+        ],
+        "application_outcomes": [
+          "Log employment and log material expenditure conditional on revenue and price controls."
+        ],
+        "design_families": [
+          "firm-panel DID",
+          "ownership-group event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "NBS industrial survey fossil-fuel electricity generators, CIC4411,1998–2007; all SOEs and other firms above RMB5million annual sales. The authors infer near-un…",
+        "observation_unit": "firm-year",
+        "geography_level": "Mainland firm and six-digit diqu region within province.",
+        "time_start": 1998,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "employment",
+          "material expenditure including fuel and nonfuel",
+          "electricity revenue",
+          "total labor compensation",
+          "fixed assets",
+          "establishment year",
+          "state capital share",
+          "baseline2002 ownership registration",
+          "regional manufacturing output and employment"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "industry_code",
+          "registration_type_2002",
+          "diqu_code",
+          "province_code"
+        ],
+        "treatment_key": [
+          "firm_id",
+          "registration_type_2002",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "assignment-proxy",
+        "concurrent-reforms",
+        "endogenous-output-and-prices",
+        "panel-selection"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt",
+        "transfer-not-audited"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2002-generation-unbundling-baseline-ownership.md"
+    },
+    {
+      "id": "china-2002-income-tax-sharing-county-dependence",
+      "name": "China 2002 Income-Tax Sharing and County Fiscal Dependence",
+      "aliases": [
+        "2002所得税分享改革县级财政暴露",
+        "Pre-reform income-tax dependence"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "development-economics",
+        "public-finance",
+        "local-government"
+      ],
+      "topics": [
+        "development-poverty",
+        "governance-politics",
+        "infrastructure-urban",
+        "public-finance"
+      ],
+      "variation_type": "continuous-exposure",
+      "time": {
+        "start": 2002,
+        "end": null
+      },
+      "assignment": {
+        "unit": "County fiscal jurisdiction by year",
+        "mechanism": "Common national onset interacted with predetermined county income-tax dependence; dependence is a paper-defined proxy, not legal random assignment or a binary county pilot.",
+        "treatment": "1(year>=2002) times mean1994-1997 corporate-revenue/annual-expenditure ratio",
+        "comparison": "Compare higher and lower fixed fiscal dependence over time; both face the national reform. County industry/SOE structure and provincial allocation can generate differential trends.",
+        "required_identifiers": [
+          "county_id",
+          "prefecture_id",
+          "province_id",
+          "year"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "County vertical fiscal imbalance",
+          "Local fiscal capacity",
+          "Regional economic volatility"
+        ],
+        "application_outcomes": [
+          "Log standard deviation of real per-capita GDP growth over centered t-1 through t+1, with supplementary county VFI response"
+        ],
+        "design_families": [
+          "Continuous-exposure difference-in-differences"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Historically stable counties and county-level cities with comparable fiscal series",
+        "observation_unit": "county-year",
+        "geography_level": "county",
+        "time_start": 1994,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 4,
+        "minimum_post_periods": 4,
+        "required_fields": [
+          "Corporate revenue1994-1997 including original SOE-profit category",
+          "Annual fiscal expenditure",
+          "Annual own revenue",
+          "Year",
+          "Province/prefecture membership",
+          "Historical boundary changes",
+          "County and provincial controls for the reported controlled specification"
+        ],
+        "required_identifiers": [
+          "county_id",
+          "prefecture_id",
+          "province_id",
+          "year"
+        ],
+        "treatment_key": [
+          "county_id",
+          "year"
+        ]
+      },
+      "design_profiles": [
+        {
+          "id": "county-output-volatility",
+          "label": "Fiscal dependence and government-size stabilization",
+          "design_families": [
+            "Continuous-exposure DID-IV"
+          ],
+          "when_to_use": "For the published stabilization question only after reconstructing the government-size IV and instruments for its interaction; the baseline fiscal-imbalance contrast does not require this additional IV.",
+          "outcome_domains": [
+            "Regional economic volatility"
+          ],
+          "data_fit": {
+            "population": "Stable sample counties and county-level cities, excluding urban districts/Tibet/direct-controlled municipalities",
+            "observation_unit": "county-year with centered growth windows",
+            "geography_level": "county",
+            "time_start": 1994,
+            "time_end": 2007,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 4,
+            "minimum_post_periods": 4,
+            "required_fields": [
+              "Fixed1994-1997 fiscal dependence",
+              "Annual real GDP and population with adjacent-year coverage",
+              "Annual fiscal expenditure",
+              "1997 county expenditure",
+              "Annual and1997 province-wide government expenditure",
+              "County centroids and pairwise distance",
+              "County/prefecture/province crosswalk",
+              "Openness/urbanization/specialization/inflation-volatility controls"
+            ],
+            "required_identifiers": [
+              "county_id",
+              "prefecture_id",
+              "province_id",
+              "year"
+            ],
+            "treatment_key": [
+              "county_id",
+              "year"
+            ]
+          }
+        }
+      ],
+      "threat_types": [
+        "national-concurrent-change",
+        "proxy-and-pass-through",
+        "stabilization-iv-and-window"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2002-income-tax-sharing-county-dependence.md"
+    },
+    {
       "id": "china-2002-manufacturing-fdi-restriction-removal",
       "name": "China 2002 manufacturing FDI restriction removal using baseline firm products",
       "aliases": [
@@ -779,6 +1124,319 @@
       ],
       "blocker_count": 4,
       "source_path": "variations/china-2002-manufacturing-fdi-restriction-removal.md"
+    },
+    {
+      "id": "china-2003-government-procurement-law-industry-reliance",
+      "name": "China's2003 government procurement law and industry procurement-reliance exposure",
+      "aliases": [
+        "政府采购法与行业政府订单依赖",
+        "Hang-Zhan procurement regulation",
+        "procurement allocation and manufacturing productivity"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm",
+        "industrial-economics",
+        "development",
+        "public-economics",
+        "resource-allocation"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "public-finance"
+      ],
+      "variation_type": "continuous-exposure",
+      "time": {
+        "start": 2003,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Four-digit manufacturing industry-year; exposure is shared within its two-digit parent industry.",
+        "mechanism": "A common national reform interacts with heterogeneous industry demand from government. The paper constructs dependence from2005 CICS responses about2004 sales, aggregates with sales weights at two-digit manufacturing industry, divides at t…",
+        "treatment": "gs_i*1(year>=2003); gs_i is constructed from2004 sales in CICS2005, not measured treatment take-up.",
+        "comparison": "Requires the industry distribution of government demand to represent persistent public-service needs rather than an endogenous response to reform. Concurrent WTO, ownership and in…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "two_digit_industry_code",
+          "four_digit_industry_code",
+          "industry_crosswalk_version"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "manufacturing allocative efficiency",
+          "firm size-productivity allocation",
+          "manufacturing firm sales and productivity"
+        ],
+        "application_outcomes": [
+          "Within-industry employment-share/log-productivity covariance; robustness uses productivity dispersion."
+        ],
+        "design_families": [
+          "industry-year DID",
+          "exposure event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland manufacturing firms in ASIF1998–2007, all SOEs and non-SOEs above RMB5million annual sales, with usable firm accounts. CICS2005 samples12400 firms acr…",
+        "observation_unit": "Four-digit manufacturing industry-year.",
+        "geography_level": "National manufacturing industries; city/province identifiers are needed for survey coverage and geographic mechanism checks, not city assignment.",
+        "time_start": 1998,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 4,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "firm_id",
+          "year",
+          "industry codes and historical crosswalk",
+          "sales",
+          "government_sales_percentage_2004",
+          "employment",
+          "capital and investment inputs for productivity estimation",
+          "material inputs for robustness",
+          "ownership",
+          "industry tariff and policy controls"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "two_digit_industry_code",
+          "four_digit_industry_code"
+        ],
+        "treatment_key": [
+          "two_digit_industry_code",
+          "national reform year2003"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "assignment-level-inference",
+        "concurrent-reform",
+        "measurement-and-access",
+        "post-treatment-exposure"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2003-government-procurement-law-industry-reliance.md"
+    },
+    {
+      "id": "china-2003-rd-deduction-ownership-expansion",
+      "name": "China's2003 ownership expansion of additional R&D expense deduction",
+      "aliases": [
+        "财税〔2003〕244号",
+        "研发加计扣除所有制扩围",
+        "Liu-Qiu-Wei-Zhan2003 R&D reform"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm",
+        "innovation",
+        "development",
+        "industrial-economics",
+        "public-economics"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "public-finance"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2003,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Domestic manufacturing firm-year, assigned through prior ownership eligibility.",
+        "mechanism": "Previously covered registration and state/collective-control categories form the paper's comparison; other domestic manufacturing ownership categories are newly covered. For joint-stock/joint-operation categories the authors use at least25…",
+        "treatment": "Fixed newly-covered ownership indicator times post2003; annual interactions preserve retrospective2003 and later successor years.",
+        "comparison": "Requires comparable conditional changes across ownership groups absent expansion, despite restructuring and differing incentives. There is only one observed pre-reform lead relati…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registration_type",
+          "industry_code",
+          "state_and_collective_capital_components"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "reported R&D expenditure",
+          "R&D intensity",
+          "R&D participation",
+          "expense relabeling",
+          "revenue productivity"
+        ],
+        "application_outcomes": [
+          "Asinh reported R&D; intensity and participation alternatives, revenue-productivity and relabeling analyses."
+        ],
+        "design_families": [
+          "firm-panel DID",
+          "ownership-group event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Domestic ASIF manufacturing firms2001–2007, all surveyed SOEs and non-SOEs above RMB5million annual sales; filtered for accounting quality, at least eight work…",
+        "observation_unit": "firm-year",
+        "geography_level": "Mainland firm location; assignment is ownership-based rather than city designation.",
+        "time_start": 2001,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "reported R&D and its units",
+          "registration_type",
+          "state_and_collective_capital_components",
+          "total capital",
+          "employment",
+          "capital-labor ratio",
+          "foreign capital share",
+          "export value",
+          "establishment year",
+          "lagged firm covariates",
+          "industry",
+          "profit and taxable-income capacity for take-up analysis"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "registration_type",
+          "industry_code"
+        ],
+        "treatment_key": [
+          "prior ownership eligibility",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "assignment-proxy",
+        "changing-regime",
+        "ownership-selection",
+        "retrospective-reporting"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2003-rd-deduction-ownership-expansion.md"
+    },
+    {
+      "id": "china-2003-sasac-monitoring-ownership-exposure",
+      "name": "China SASAC monitoring reform and ownership-based exposure from 2004",
+      "aliases": [
+        "国资委监管体制改革所有制暴露",
+        "Li Zhang external government monitoring of SOEs"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-performance",
+        "industrial-economics",
+        "development",
+        "state-owned-enterprises",
+        "regional-monitoring-costs"
+      ],
+      "topics": [
+        "development-poverty"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2003,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Firm-year ownership exposure; additional spatial heterogeneity uses firm-to-affiliated-government distance.",
+        "mechanism": "The paper interacts annual state ownership above30% with a common post2004 indicator. This is an observational proxy for differential exposure to national governance reform, not random ownership, a statutory threshold experiment, or a veri…",
+        "treatment": "Annual SOE_jt*1(year>=2004), with SOE_jt based on state share>30%. Geographic specification additionally includes SOE*Post*log(oversight distance) and lower-order terms.",
+        "comparison": "Compare pre/post ownership-group trajectories conditional on controls and sample coverage. National law alone cannot eliminate differential restructuring, WTO exposure or ownershi…",
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "industry_code",
+          "province_code",
+          "registration_affiliation_type"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm productivity",
+          "quality-adjusted material input prices",
+          "manufacturing performance",
+          "corporate governance"
+        ],
+        "application_outcomes": [
+          "Structurally estimated quality-adjusted material prices and productivity; traditional LP productivity as an alternative."
+        ],
+        "design_families": [
+          "ownership-by-post DID-style comparison",
+          "ownership-group event study",
+          "oversight-distance triple interaction"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland manufacturing firms observed in the1998–2007 industrial survey; private-firm sales thresholds and ownership-dependent coverage require explicit handli…",
+        "observation_unit": "firm-year",
+        "geography_level": "Province for the default comparison; firm and affiliated-government geography additionally needed for distance heterogeneity.",
+        "time_start": 1998,
+        "time_end": 2007,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "state capital and total capital for annual ownership share",
+          "declared annual performance outcome",
+          "sales revenue",
+          "workers",
+          "wage expenditure",
+          "material expenditure",
+          "book capital stock and deflators for published structural outcomes",
+          "firm age",
+          "lagged R&D indicator",
+          "capital intensity",
+          "registration affiliation and sample-retention history"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "industry_code",
+          "province_code",
+          "registration_affiliation_type"
+        ],
+        "treatment_key": [
+          "firm_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "differential productivity pretrend",
+        "endogenous ownership and structural change",
+        "generated outcome and monitoring inference",
+        "geographic selection and changing distance",
+        "legal scope versus ownership proxy",
+        "phase-in and anticipation"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2003-sasac-monitoring-ownership-exposure.md"
     },
     {
       "id": "china-2004-2005-fiscal-province-managing-county-rollout",
@@ -1102,6 +1760,105 @@
       ],
       "blocker_count": 4,
       "source_path": "variations/china-2005-split-share-negotiated-tradability.md"
+    },
+    {
+      "id": "china-2006-binhai-national-package-tianjin-exposure",
+      "name": "China 2006 Binhai national development package and Tianjin aggregate exposure",
+      "aliases": [
+        "滨海新区开发开放国家战略",
+        "国发2006年20号天津省级暴露",
+        "Tianjin Binhai counterfactual growth"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "urban-economics",
+        "development",
+        "industrial-economics",
+        "place-based-policy"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2006,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Binhai administrative pilot designation with a Tianjin province-equivalent quarterly outcome application.",
+        "mechanism": "Administrative selection of Binhai as a development/reform pilot. The published application compares one exposed municipality with an outcome-specific combination of other provincial economies. Selection is purposeful, not random.",
+        "treatment": "Tianjin exposure from2006Q3 for the documented GDP evaluation, with May2006 authorization retained separately.",
+        "comparison": "Donor economies must remain sufficiently unexposed and the prepolicy common-factor relationship must continue absent the package. Prepolicy fit alone does not exclude a coincident…",
+        "required_identifiers": [
+          "province_id",
+          "quarter",
+          "series_id",
+          "statistical_vintage"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "provincial real GDP growth",
+          "regional investment growth",
+          "regional employment growth",
+          "provincial export growth",
+          "provincial import growth"
+        ],
+        "application_outcomes": [
+          "Year-on-year real provincial GDP growth; monthly investment and quarterly employment/export/import are additional reported outcomes with separate periods and selected donors."
+        ],
+        "design_families": [
+          "factor-based panel counterfactual",
+          "outcome-specific donor sensitivity"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Tianjin province-equivalent aggregate and the documented20 mainland donor economies; GDP application only by default.",
+        "observation_unit": "province-quarter",
+        "geography_level": "province",
+        "time_start": 1999,
+        "time_end": 2012,
+        "minimum_frequency": "quarterly",
+        "minimum_pre_periods": 25,
+        "minimum_post_periods": 24,
+        "required_fields": [
+          "quarterly nominal provincial GDP",
+          "corresponding provincial CPI",
+          "province identifiers",
+          "quarter",
+          "statistical vintage",
+          "GDP year-on-year growth",
+          "donor eligibility and exclusions",
+          "Tianjin exposure flag"
+        ],
+        "required_identifiers": [
+          "province_id",
+          "quarter"
+        ],
+        "treatment_key": [
+          "province_id",
+          "quarter"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "donor-contamination-and-structural-change",
+        "geographic-aggregation",
+        "inference-and-measurement",
+        "selective-designation",
+        "timing-and-reporting"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2006-binhai-national-package-tianjin-exposure.md"
     },
     {
       "id": "china-2006-provincial-development-zone-approval-village-exposure",
@@ -2057,6 +2814,143 @@
       "source_path": "variations/china-2010-fuel-efficient-car-catalog-subsidy.md"
     },
     {
+      "id": "china-2014-beijing-noncapital-relief-recipient-town-buffer",
+      "name": "Beijing Noncapital Function Relief and Nearby Recipient-Town Exposure",
+      "aliases": [
+        "NCFR recipient-town buffer",
+        "北京非首都功能疏解与周边乡镇承接暴露"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "urban-economics",
+        "development",
+        "firm-entry",
+        "industrial-relocation"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "infrastructure-urban"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2014,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Town-level administrative polygon by year, including street, town and township types.",
+        "mechanism": "The authors select Hebei/Tianjin town polygons intersecting the20km outward buffer of Beijing as exposed recipients. Controls intersect a20km outward buffer of the entire Beijing-Tianjin-Hebei region and are in other provinces. This is a s…",
+        "treatment": "Recipient-town group times common annual post, anchored to the paper's2014 policy convention; verify its exact annual switch before reproducing coefficients.",
+        "comparison": "Use outer-JingJinJi towns instead of Beijing to avoid deliberately affected metropolitan controls. Assess group-specific pretrends and baseline structure because the two buffers a…",
+        "required_identifiers": [
+          "town_id",
+          "county_id",
+          "province_id",
+          "year",
+          "town_polygon_version"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "Town nighttime-light intensity",
+          "New firm registration",
+          "Regional development",
+          "Population distribution"
+        ],
+        "application_outcomes": [
+          "Log mean nighttime lights; town new registrations and gridded population as supplementary outcomes. Firm TFP2010-2015 is a different short panel, not proof of long-run null productivity effects."
+        ],
+        "design_families": [
+          "Two-region town-panel difference-in-differences",
+          "Exposure-by-year diagnostics"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Recipient towns outside Beijing and comparison towns outside Beijing-Tianjin-Hebei selected by polygon-buffer intersection.",
+        "observation_unit": "town-year",
+        "geography_level": "township-level polygons",
+        "time_start": 2010,
+        "time_end": 2019,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 4,
+        "minimum_post_periods": 4,
+        "required_fields": [
+          "Town geometry and stable IDs",
+          "Both regional boundaries and buffer membership",
+          "Year",
+          "Annual mean nighttime-light intensity",
+          "County GDP/wage/fiscal-expenditure/fixed-investment controls for the reported controlled specification"
+        ],
+        "required_identifiers": [
+          "town_id",
+          "county_id",
+          "province_id",
+          "year",
+          "town_polygon_version"
+        ],
+        "treatment_key": [
+          "town_id",
+          "year"
+        ]
+      },
+      "design_profiles": [
+        {
+          "id": "town-firm-entry",
+          "label": "New firm registration in recipient towns",
+          "design_families": [
+            "Two-region town-panel difference-in-differences"
+          ],
+          "when_to_use": "Use for formal enterprise incorporation, not verified relocation or production; manufacturing-specific results require clarification of the paper's inconsistent category label.",
+          "outcome_domains": [
+            "New firm registration"
+          ],
+          "data_fit": {
+            "population": "The same recipient/control town groups with comparable historical incorporation coverage.",
+            "observation_unit": "town-year",
+            "geography_level": "township-level polygons",
+            "time_start": 2010,
+            "time_end": 2019,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 4,
+            "minimum_post_periods": 4,
+            "required_fields": [
+              "Baseline buffer membership",
+              "Firm incorporation year",
+              "Historical registration address and geocode",
+              "Annual new-firm counts and log-zero convention",
+              "County controls for controlled specification"
+            ],
+            "required_identifiers": [
+              "firm_id",
+              "town_id",
+              "county_id",
+              "province_id",
+              "year"
+            ],
+            "treatment_key": [
+              "town_id",
+              "year"
+            ]
+          }
+        }
+      ],
+      "threat_types": [
+        "bundled-policy-and-clock",
+        "registration-and-raster-measurement",
+        "two-boundary-counterfactual"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/china-2014-beijing-noncapital-relief-recipient-town-buffer.md"
+    },
+    {
       "id": "china-2014-hukou-local-implementation",
       "name": "Local Implementation of China's 2014 Hukou Reform Framework",
       "aliases": [
@@ -2400,6 +3294,103 @@
       "source_path": "variations/china-2015-deposit-insurance-bank-group-exposure.md"
     },
     {
+      "id": "china-2015-drug-review-capacity-category-delay",
+      "name": "China 2015 drug-review capacity reform and therapeutic-category delay reduction",
+      "aliases": [
+        "药品审评审批制度改革",
+        "therapeutic-category IND review-delay decline"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm-innovation",
+        "industrial-economics",
+        "regulatory-capacity",
+        "pharmaceutical-industry",
+        "development"
+      ],
+      "topics": [
+        "development-poverty"
+      ],
+      "variation_type": "continuous-exposure",
+      "time": {
+        "start": 2015,
+        "end": null
+      },
+      "assignment": {
+        "unit": "ATC therapeutic category, fourth classification level, interacted with application year.",
+        "mechanism": "National institutional exposure with continuous category-level intensity constructed by the paper from pre/post mean IND decision durations. Categories are not randomly assigned to large delay reductions; realized intensity can reflect que…",
+        "treatment": "Standardized category decline from 2012–2014 versus 2015–2017 submission cohorts, interacted with year indicators; post is 2015–2021.",
+        "comparison": "Compare category trajectories relative to 2014, allowing differential post trends by pre-reform market size, concentration and innovation potential. Every comparison category can…",
+        "required_identifiers": [
+          "IND_application_id",
+          "primary_ATC_level_four_code",
+          "application_year",
+          "applicant_names"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "innovative drug applications",
+          "clinical development",
+          "pharmaceutical innovation"
+        ],
+        "application_outcomes": [
+          "Annual IND filing counts and counts of associated applications reaching clinical-trial phases."
+        ],
+        "design_families": [
+          "continuous-intensity PPML event study",
+          "delay-reduction quartile comparison",
+          "pre-reform backlog exposure sensitivity"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "IND applications submitted to China's CDE, with categories retained according to documented duration coverage in both construction windows.",
+        "observation_unit": "ATC-category-year",
+        "geography_level": "National China application system; no province-based assignment is needed for the default design.",
+        "time_start": 2011,
+        "time_end": 2021,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "application type identifying IND",
+          "submission/application date",
+          "official decision date and status",
+          "primary ATC-level-four classification",
+          "co-applicant list and declared counting weights",
+          "annual IND filing count including zeros",
+          "standardized category delay decline",
+          "pre-reform US sales filing count HHI IND share target novelty and patent term for the published full specification"
+        ],
+        "required_identifiers": [
+          "IND_application_id",
+          "primary_ATC_level_four_code",
+          "application_year"
+        ],
+        "treatment_key": [
+          "primary_ATC_level_four_code",
+          "application_year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "bundled and gradual national reform",
+        "category interference",
+        "clinical-trial joins and right censoring",
+        "post-measured endogenous intensity",
+        "selected categories and counting conventions"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2015-drug-review-capacity-category-delay.md"
+    },
+    {
       "id": "china-2015-local-government-debt-swap-credit-reallocation",
       "name": "China 2015 Local-Government Debt Swap and Private-Firm Credit Reallocation",
       "aliases": [
@@ -2504,6 +3495,100 @@
       "source_path": "variations/china-2015-local-government-debt-swap-credit-reallocation.md"
     },
     {
+      "id": "china-2015-tongzhou-subcenter-announcement-district-exposure",
+      "name": "Beijing Tongzhou Subcenter Announcement and District Housing Exposure",
+      "aliases": [
+        "Tongzhou subcenter housing capitalization",
+        "北京城市副中心公告与通州区住房暴露"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "urban-economics",
+        "regional-economics",
+        "place-based-policy",
+        "housing",
+        "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "boundary-discontinuity",
+      "time": {
+        "start": "2015 (municipal execution report confirms construction and support activities)",
+        "end": null
+      },
+      "assignment": {
+        "unit": "Resold private residential housing transaction, linked to a residential complex and month.",
+        "mechanism": "Residential complex location inside Tongzhou, compared with complexes in adjacent Chaoyang, Daxing and Shunyi, before and after a common announcement month. Selection of Tongzhou was purposive; distance to its border restricts the comparis…",
+        "treatment": "Indicator for location inside Tongzhou multiplied by indicator for transaction month from June 2015 onward.",
+        "comparison": "Compare changes in nearby properties across the border, controlling observed dwelling and neighbourhood attributes and stable complex characteristics. Inspect alternative bands an…",
+        "required_identifiers": [
+          "transaction_id",
+          "residential_complex_id",
+          "district_id",
+          "transaction_month",
+          "complex_coordinates"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "Housing transaction prices",
+          "Housing listing prices",
+          "Urban housing capitalization"
+        ],
+        "application_outcomes": [
+          "Log total transaction price; level total price and log listing price alternatives. Population and long-horizon price analyses are supplementary applications, not direct observations of employment/productivity."
+        ],
+        "design_families": [
+          "Boundary difference-in-differences",
+          "Monthly district-exposure event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Private resold homes in Tongzhou and adjacent Chaoyang, Daxing and Shunyi, with comparable transactions before and after announcement.",
+        "observation_unit": "housing-transaction",
+        "geography_level": "residential complex and district boundary",
+        "time_start": 2014,
+        "time_end": 2016,
+        "minimum_frequency": "monthly",
+        "minimum_pre_periods": 12,
+        "minimum_post_periods": 12,
+        "required_fields": [
+          "Transaction month, total transaction price, complex identifier and coordinates.",
+          "Private/public housing classification, floor area and hedonic dwelling/building attributes.",
+          "Historical district polygon, district status and minimum distance to Tongzhou border.",
+          "Neighbourhood amenity distances and lagged residential land supply within 3 kilometres for the reported controlled model."
+        ],
+        "required_identifiers": [
+          "transaction_id",
+          "residential_complex_id",
+          "district_id",
+          "transaction_month"
+        ],
+        "treatment_key": [
+          "residential_complex_id",
+          "transaction_month"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "control-market-spillovers",
+        "overlapping-housing-demand-restrictions",
+        "purposive-placement-and-anticipation",
+        "transaction-measurement-and-selection"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/china-2015-tongzhou-subcenter-announcement-district-exposure.md"
+    },
+    {
       "id": "china-2016-fair-competition-review-industry-exposure",
       "name": "China fair-competition review reform and administrative-monopoly industry exposure",
       "aliases": [
@@ -2597,6 +3682,106 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-2016-fair-competition-review-industry-exposure.md"
+    },
+    {
+      "id": "china-2016-village-ecommerce-access-randomization",
+      "name": "China village e-commerce access randomization in eight counties",
+      "aliases": [
+        "AEARCTR-0001582",
+        "village terminal access experiment",
+        "Connecting the Countryside via E-Commerce"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "development",
+        "regional-economics",
+        "market-access",
+        "household-consumption",
+        "retail-commerce"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban"
+      ],
+      "variation_type": "other",
+      "time": {
+        "start": 2016,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Village; household and retail outcomes inherit the village assignment.",
+        "mechanism": "Computer randomization within county candidate pools, stratified on existing delivery availability and village characteristics. Assigned early access and actual terminal opening differ because implementation is incomplete.",
+        "treatment": "Assigned village access for ITT; actual village opening for IV, instrumented by the assignment indicator.",
+        "comparison": "Compare assigned-treated and assigned-control villages within the eligible county pools over the same local baseline/endline window. Preserve county and stratification information…",
+        "required_identifiers": [
+          "study_village_id",
+          "county_id",
+          "survey_round",
+          "household_id"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "household consumption",
+          "e-commerce uptake",
+          "retail expenditure shares",
+          "household income",
+          "local retail prices",
+          "local business activity"
+        ],
+        "application_outcomes": [
+          "Household e-commerce usage and expenditure shares, income and business activity, local continuing-product prices and store product additions."
+        ],
+        "design_families": [
+          "village assignment ITT ANCOVA",
+          "assignment-instrumented actual-opening IV"
+        ],
+        "claim_type": "causal"
+      },
+      "data_fit": {
+        "population": "Survey households in the100 experimentally selected villages, retaining observed sample and replacement status.",
+        "observation_unit": "household-survey-round",
+        "geography_level": "study village nested in county",
+        "time_start": 2015,
+        "time_end": 2017,
+        "minimum_frequency": "baseline and local12-month endline",
+        "minimum_pre_periods": 1,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "assigned_access",
+          "actual_program_opening",
+          "survey_date",
+          "household_outcome",
+          "baseline_outcome_or_zone_mean",
+          "sampling_zone",
+          "original_or_replacement_status",
+          "sampling_weight"
+        ],
+        "required_identifiers": [
+          "study_village_id",
+          "county_id",
+          "survey_round",
+          "household_id"
+        ],
+        "treatment_key": [
+          "study_village_id"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "imperfect implementation and interference",
+        "registration timing",
+        "selected sample and bundled treatment",
+        "survey attrition replacement and missing villages"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 2,
+      "source_path": "variations/china-2016-village-ecommerce-access-randomization.md"
     },
     {
       "id": "china-2017-industrial-transformation-demonstration-first-cohort",
@@ -3009,6 +4194,103 @@
       ],
       "blocker_count": 3,
       "source_path": "variations/china-2020-2023-driving-restriction-episodes-intercity-travel.md"
+    },
+    {
+      "id": "china-2021-tutoring-restriction-child-demand-exposure",
+      "name": "China's2021 tutoring restriction with baseline city child-demand exposure",
+      "aliases": [
+        "双减学科培训限制",
+        "Double Reduction firm dynamics",
+        "Huang-Liu-Ma-Yang tutoring restriction"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "firm",
+        "industrial-economics",
+        "regional-economics",
+        "education-services"
+      ],
+      "topics": [
+        "firms-innovation",
+        "infrastructure-urban"
+      ],
+      "variation_type": "single-date-reform",
+      "time": {
+        "start": 2021,
+        "end": null
+      },
+      "assignment": {
+        "unit": "City-month outcomes aggregated from firm registrations or recruitment records.",
+        "mechanism": "Legal exposure follows business activity and student stage under the national regime, not a city child-count cutoff. The paper constructs continuous city demand exposure from2020 census children aged5–14 interacted with the national post p…",
+        "treatment": "Fixed2020 city children aged5–14 divided by1000 times post after July2021.",
+        "comparison": "Higher-demand and lower-demand cities must have comparable untreated changes after conditioning on fixed effects and COVID cases. Absolute child counts also track city size, educa…",
+        "required_identifiers": [
+          "city_id",
+          "year_month",
+          "firm_or_branch_id",
+          "registration_date",
+          "cancellation_date"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm entry",
+          "firm cancellation",
+          "net registrations",
+          "recruitment vacancies"
+        ],
+        "application_outcomes": [
+          "Levels of firm entry, cancellation, net entry and active registrations; recruitment is a separate outcome/data application."
+        ],
+        "design_families": [
+          "continuous-exposure DID",
+          "demand-gradient event study"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Education-service entities and branches in mainland cities; default contract serves registration dynamics aggregated to city-month, not individual child or hou…",
+        "observation_unit": "city-month",
+        "geography_level": "Mainland city matched to2020 census geography.",
+        "time_start": 2016,
+        "time_end": 2022,
+        "minimum_frequency": "monthly",
+        "minimum_pre_periods": 12,
+        "minimum_post_periods": 4,
+        "required_fields": [
+          "2020 census children ages5–14",
+          "firm business names and scopes",
+          "registration and cancellation status/dates",
+          "branch or subsidiary flag",
+          "monthly city COVID cases",
+          "documented education-subtype dictionary"
+        ],
+        "required_identifiers": [
+          "city_id",
+          "year_month",
+          "firm_or_branch_id"
+        ],
+        "treatment_key": [
+          "city_id",
+          "baseline2020 child count",
+          "year_month"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "bundled-national-policy",
+        "outcome-measurement",
+        "population-scale-exposure",
+        "spillovers-and-anticipation"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-2021-tutoring-restriction-child-demand-exposure.md"
     },
     {
       "id": "china-5a-attraction-expansion-tourism-exposure",
@@ -12993,6 +14275,111 @@
       "source_path": "variations/china-one-child-policy-twins-iv.md"
     },
     {
+      "id": "china-pilot-ftz-preexisting-production-location-exposure",
+      "name": "China pilot FTZ rollout exposure of pre-existing production establishments",
+      "aliases": [
+        "自贸试验区设立",
+        "pilot free trade zone establishment",
+        "FTZ production-location exposure"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "regional-economics",
+        "urban-economics",
+        "development",
+        "firm-performance",
+        "industrial-economics",
+        "trade"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban",
+        "trade-globalization"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2013,
+        "end": null
+      },
+      "assignment": {
+        "unit": "Official FTZ subzone territory; pre-existing production-establishment presence mapped to a firm in the inspected application.",
+        "mechanism": "Central administrative choice of designated territory and rollout date; the firm application freezes production presence one year before local implementation and excludes post2012 in-movers. Neither central selection nor a firm's inability…",
+        "treatment": "pre_local_year_operational_presence_in_relevant_zone times indicator(year>=local_cohort_year), subject to the reported mover exclusions.",
+        "comparison": "Require comparable untreated outcome paths after conditioning on prepolicy characteristics. Stop using a later cohort as an untreated control at its own onset; do not interpret a…",
+        "required_identifiers": [
+          "firm_id",
+          "establishment_id",
+          "year",
+          "historical_production_address",
+          "address_reference_year",
+          "subzone_id",
+          "boundary_version",
+          "cohort_year"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "firm productivity",
+          "firm profitability",
+          "exports",
+          "firm investment",
+          "industrial upgrading"
+        ],
+        "application_outcomes": [
+          "ROA, production-function TFP and asinh exports; accounting cost measures are channels rather than independent assigned shocks."
+        ],
+        "design_families": [
+          "cohort-specific difference-in-differences",
+          "event study",
+          "matched-panel difference-in-differences"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland pre-existing firms with historically verifiable production presence in designated territory and credible comparison observations.",
+        "observation_unit": "firm-year",
+        "geography_level": "establishment coordinates or historical address matched to FTZ subzone boundary",
+        "time_start": 1998,
+        "time_end": 2022,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 2,
+        "required_fields": [
+          "firm-year research outcome",
+          "dated production address",
+          "local subzone first-exposure year",
+          "boundary version",
+          "relocation history",
+          "prepolicy industry and firm characteristics for matching"
+        ],
+        "required_identifiers": [
+          "firm_id",
+          "year",
+          "establishment_id",
+          "subzone_id"
+        ],
+        "treatment_key": [
+          "firm_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "frequency-and-support",
+        "inference-and-overlap",
+        "location-and-eligibility",
+        "selection-and-anticipation"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-pilot-ftz-preexisting-production-location-exposure.md"
+    },
+    {
       "id": "china-political-connections-mortality",
       "name": "Political Connections and Worker Safety Compliance in Chinese Listed Firms",
       "aliases": [
@@ -14264,6 +15651,183 @@
       "blocker_codes": [],
       "blocker_count": 0,
       "source_path": "variations/china-rural-village-road-accessibility-1995-2018.md"
+    },
+    {
+      "id": "china-self-strengthening-munitions-investment",
+      "name": "China self-strengthening munitions-factory investment and civilian industrial development",
+      "aliases": [
+        "洋务运动军工投资",
+        "Self-Strengthening Movement military factories",
+        "late Qing arsenal placement"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "development",
+        "regional-economics",
+        "industrial-economics",
+        "industrial-development",
+        "economic-history"
+      ],
+      "topics": [
+        "development-poverty",
+        "history",
+        "infrastructure-urban"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 1861,
+        "end": 1894
+      },
+      "assignment": {
+        "unit": "Historical county-year for establishment exposure; historical county for accumulated investment.",
+        "mechanism": "Provincial political support interacted with defense needs, waterways, mineral access, capitals and foreign machinery access. Placement was selective. The paper compares historical host counties with nonhost counties and separately instrum…",
+        "treatment": "host_ct in the panel; log(1+county military investment in taels) in1933 cross-sectional analysis. IV_c=sum_j(pre1861 movement-related letters for governor j serving c during1861–1…",
+        "comparison": "Panel identification requires counterfactual trends conditional on selective placement and changing controls. Cross-sectional2SLS requires relevance and no direct effect of politi…",
+        "required_identifiers": [
+          "factory_name",
+          "historical_county_id_1911",
+          "prefecture_id",
+          "province_id",
+          "establishment_year",
+          "observation_year"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "civilian industrial firm entry",
+          "civilian industrial output",
+          "industrial agglomeration",
+          "industrial input-output linkages"
+        ],
+        "application_outcomes": [
+          "Annual civilian industrial firm entry and1933 civilian industrial output."
+        ],
+        "design_families": [
+          "county-year DID and event study",
+          "county cross-sectional2SLS"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland historical counties in the paper's1432-county15-province risk set; use author sample membership rather than every location on the national factory ros…",
+        "observation_unit": "county-year",
+        "geography_level": "historical county on1911 boundaries",
+        "time_start": 1858,
+        "time_end": 1937,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "civilian firm establishment year and location",
+          "civilian firm capital and ownership for coverage definition",
+          "factory establishment year and location",
+          "sample membership",
+          "historical county boundary crosswalk",
+          "geographic and political selection covariates for conditional comparisons"
+        ],
+        "required_identifiers": [
+          "historical_county_id_1911",
+          "prefecture_id",
+          "year"
+        ],
+        "treatment_key": [
+          "historical_county_id_1911",
+          "year"
+        ]
+      },
+      "design_profiles": [
+        {
+          "id": "county-entry-panel",
+          "label": "Historical civilian firm-entry panel",
+          "design_families": [
+            "DID",
+            "event-study"
+          ],
+          "when_to_use": "For annual civilian entry following factory establishment, with the1858–1937 historical county-year data and audited first-treatment dates.",
+          "outcome_domains": [
+            "civilian industrial firm entry"
+          ],
+          "data_fit": {
+            "population": "Mainland1432-county historical risk set or an explicitly justified comparable subset.",
+            "observation_unit": "county-year",
+            "geography_level": "historical county on1911 boundaries",
+            "time_start": 1858,
+            "time_end": 1937,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 3,
+            "minimum_post_periods": 3,
+            "required_fields": [
+              "annual civilian firm entry",
+              "first factory establishment year",
+              "sample membership",
+              "historical county crosswalk",
+              "selection covariates"
+            ],
+            "required_identifiers": [
+              "historical_county_id_1911",
+              "prefecture_id",
+              "year"
+            ],
+            "treatment_key": [
+              "historical_county_id_1911",
+              "year"
+            ]
+          }
+        },
+        {
+          "id": "county-output-1933-iv",
+          "label": "Historical investment and1933 civilian industrial output",
+          "design_families": [
+            "IV",
+            "cross-section"
+          ],
+          "when_to_use": "For the long-run output application, with accumulated investment and the exact governor-correspondence instrument; annual entry is not a substitute for output.",
+          "outcome_domains": [
+            "civilian industrial output"
+          ],
+          "data_fit": {
+            "population": "Mainland1432 counties linked to the1933 industrial census and1911 boundaries.",
+            "observation_unit": "county",
+            "geography_level": "historical county on1911 boundaries",
+            "time_start": 1933,
+            "time_end": 1933,
+            "minimum_frequency": "cross-sectional",
+            "minimum_pre_periods": 0,
+            "minimum_post_periods": 1,
+            "required_fields": [
+              "1933 civilian industrial output",
+              "1861–1894 accumulated factory investment in taels",
+              "1841–1860 classified governor correspondence",
+              "1861–1894 governor appointment and jurisdiction",
+              "governor residence distance",
+              "selection covariates",
+              "historical county crosswalk"
+            ],
+            "required_identifiers": [
+              "historical_county_id_1911",
+              "prefecture_id",
+              "governor_id"
+            ],
+            "treatment_key": [
+              "historical_county_id_1911"
+            ]
+          }
+        }
+      ],
+      "threat_types": [
+        "exclusion-restriction",
+        "historical-geography-and-timing",
+        "outcome-selection",
+        "selective-placement"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-self-strengthening-munitions-investment.md"
     },
     {
       "id": "china-send-down-movement-altruism",
@@ -17188,6 +18752,120 @@
       "source_path": "variations/china-urban-rail-line-launch-road-substitution.md"
     },
     {
+      "id": "china-us-antidumping-investigation-stages-2000-2006",
+      "name": "US Antidumping Investigation Stages Faced by Chinese Exporters, 2000–2006",
+      "aliases": [
+        "Lu Tao Zhang antidumping investigations",
+        "US antidumping Chinese exporters",
+        "美国反倾销调查阶段",
+        "中国出口企业反倾销冲击"
+      ],
+      "status": "grounded",
+      "knowledge_role": "global-china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "international-trade",
+        "firm-dynamics",
+        "industrial-organization",
+        "development"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "trade-globalization"
+      ],
+      "variation_type": "event-shock",
+      "time": {
+        "start": 2000,
+        "end": 2006
+      },
+      "assignment": {
+        "unit": "HS6 product-month, or Chinese exporter-HS6 product-month, for exports to the United States.",
+        "mechanism": "An investigated China-origin product enters dated proceeding stages. The paper maps US HS10 products to HS6 and joins Chinese HS8 shipments at HS6; its main sample selects cases with affirmative final ITC decisions after endpoint and overl…",
+        "treatment": "Treatment_p × Post1_pt; PreliminaryDuties_pt × Post2_pt; FinalDuties_pt × Post3_pt. Post1 is [t0,t1), Post2 is [t1,t2), Post3 is t>=t2, where t0 is initiation, t1 preliminary ITC,…",
+        "comparison": "Control 1 consists of unaffected products within HS4. Control 2 consists of unaffected products whose fitted investigation probability is at least the 75th percentile of the treat…",
+        "required_identifiers": [
+          "case ID",
+          "HS6 product code",
+          "calendar month",
+          "exporter ID",
+          "exporter name",
+          "destination country"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "export volume",
+          "export value",
+          "export unit value",
+          "exporter count",
+          "product-market exit",
+          "destination diversion",
+          "firm allocation"
+        ],
+        "application_outcomes": [
+          "Export volume, exporter counts, unit values, non-US exports and product-market exit. Export size is a productivity proxy, not directly measured baseline TFP."
+        ],
+        "design_families": [
+          "monthly product difference-in-differences",
+          "monthly firm-product difference-in-differences",
+          "event-time diagnostic"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland Chinese exporters of investigated and comparison products to the United States; non-agricultural applications should explicitly select industrial case…",
+        "observation_unit": "Exporter-HS6-product-month",
+        "geography_level": "Mainland China exporters linked to US destination exposure",
+        "time_start": 2000,
+        "time_end": 2006,
+        "minimum_frequency": "monthly",
+        "minimum_pre_periods": 1,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "export value",
+          "export quantity",
+          "destination country",
+          "case outcome",
+          "initiation date",
+          "preliminary ITC date",
+          "final ITC date",
+          "preliminary duty",
+          "final product duty",
+          "exporter-specific final duty"
+        ],
+        "required_identifiers": [
+          "exporter ID",
+          "exporter name",
+          "Chinese HS8 code",
+          "US HS10 code",
+          "harmonized HS6 code",
+          "case ID",
+          "calendar month"
+        ],
+        "treatment_key": [
+          "case ID",
+          "harmonized HS6 code",
+          "calendar month",
+          "exporter-rate link"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "aggregation-and-rate-measurement",
+        "endogenous-investigation-selection",
+        "exporter-classification-and-productivity-proxy",
+        "spillovers-and-concurrent-shocks",
+        "stage-versus-legal-treatment-timing"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 5,
+      "source_path": "variations/china-us-antidumping-investigation-stages-2000-2006.md"
+    },
+    {
       "id": "china-vat-reform-investment",
       "name": "China's 2009 Value-Added Tax Reform Enabling Deduction of Fixed Investment Input Tax",
       "aliases": [
@@ -17633,7 +19311,7 @@
         "end": 2010
       },
       "assignment": {
-        "unit": "Township-year for the spatial-regression-discontinuity application; county-year or county-industry-year where a later application can reconstruct a compatible boundary exposure.",
+        "unit": "Township-year for the spatial-regression-discontinuity application; county-year for the reported JRS tax-effort application, whose timing and city-year fixed-effect implementation remain unresolved.",
         "mechanism": "Administrative geographic eligibility. A township or county inherits program exposure from its location inside a listed western provincial-level jurisdiction. The Regional Studies application compares localities just inside and outside the…",
         "treatment": "Western-eligibility indicator interacted with post-program or individual year indicators; signed distance to the boundary enters the reported spatial RD specifications.",
         "comparison": "Compare immediately adjacent eligible and noneligible localities within a declared bandwidth, verify smoothness of observed geographic and socioeconomic characteristics, and inspe…",
@@ -17656,6 +19334,7 @@
           "infrastructure"
         ],
         "application_outcomes": [
+          "Tax-handle effort index, actual tax revenue share divided by its predicted share from a county/year fixed-effect capacity regression; log fiscal revenue per capita is an alternative outcome, not the same index or firm effective tax rate.",
           "Township night-light intensity; county GDP and industrial indicators; population density, firm entry, public-service, and welfare measures."
         ],
         "design_families": [
@@ -17699,6 +19378,7 @@
       },
       "design_profiles": [],
       "threat_types": [
+        "application-specific-fixed-effect-and-coding-conflict",
         "boundary-noncomparability",
         "bundled-policy-treatment",
         "cross-boundary-spillovers",
@@ -17879,6 +19559,7 @@
           "product mix"
         ],
         "application_outcomes": [
+          "Generated production-function productivity and R&D participation; long-run liberalization gains are model simulations rather than observed15-year outcomes.",
           "[E1, reported claim] Estimated firm markups and productivity, plus industry-level decompositions of performance changes."
         ],
         "design_families": [
@@ -17919,7 +19600,111 @@
           "post-2001 agreement maximum allowable tariff (IV variant)"
         ]
       },
-      "design_profiles": [],
+      "design_profiles": [
+        {
+          "id": "brandt-tariff-performance",
+          "label": "Brandt et al. industry output/input tariffs and firm performance",
+          "design_families": [
+            "firm fixed-effects tariff regression",
+            "allowable-tariff IV"
+          ],
+          "when_to_use": "Use the original AER application for lagged industry output/input protection and performance; this preserves the default contract and its corrected deflator. It does not require a capital/intermediate customs split.",
+          "outcome_domains": [
+            "firm productivity",
+            "markups",
+            "prices",
+            "output",
+            "employment",
+            "entry",
+            "exit",
+            "product mix"
+          ],
+          "data_fit": {
+            "population": "Chinese manufacturing ASIF firms1998–2007 after Brandt et al. cleaning and concordance restrictions.",
+            "observation_unit": "Firm-year",
+            "geography_level": "National (firm-level) with industry variation",
+            "time_start": 1998,
+            "time_end": 2007,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 3,
+            "minimum_post_periods": 5,
+            "required_fields": [
+              "firm output",
+              "inputs",
+              "value added",
+              "employment",
+              "capital stock",
+              "industry (4-digit)",
+              "ownership and entry/exit status",
+              "product/industry tariff concordances and input-output weights",
+              "price-deflator inputs needed for the paper's markup/productivity construction"
+            ],
+            "required_identifiers": [
+              "firm ID",
+              "year",
+              "industry code"
+            ],
+            "treatment_key": [
+              "industry code",
+              "lagged output tariff",
+              "lagged input tariff",
+              "post-2001 agreement maximum allowable tariff (IV variant)"
+            ]
+          }
+        },
+        {
+          "id": "mo-capital-intermediate-import",
+          "label": "Mo et al. capital/intermediate import decisions and productivity/R&D",
+          "design_families": [
+            "dynamic production-function GMM",
+            "capital/intermediate tariff IV robustness"
+          ],
+          "when_to_use": "Use only for the inspected Mo et al. capital/intermediate sourcing application with recoverable customs/ASIE linkage and BEC classification. It uses actual tariff changes to instrument import decisions, not negotiated ceilings to instrumen…",
+          "outcome_domains": [
+            "firm productivity",
+            "R&D participation",
+            "capital import participation",
+            "intermediate import participation"
+          ],
+          "data_fit": {
+            "population": "Mainland manufacturing ASIE firms2000–2006 linked to customs with audited non-importer status; all SOEs and non-SOEs with sales>=RMB5million, accounting cleani…",
+            "observation_unit": "firm-year",
+            "geography_level": "firm linked to four-digit industry exposure and province controls",
+            "time_start": 2000,
+            "time_end": 2006,
+            "minimum_frequency": "annual",
+            "minimum_pre_periods": 1,
+            "minimum_post_periods": 5,
+            "required_fields": [
+              "gross output and deflators",
+              "labor materials and capital inputs",
+              "R&D participation",
+              "capital and intermediate ordinary-import status and values",
+              "export status",
+              "ownership",
+              "firm-customs match status",
+              "WITS HS6 tariffs and declared import-value weights",
+              "HS96/HS02 to BEC concordances and manual automobile classification"
+            ],
+            "required_identifiers": [
+              "firm_id",
+              "customs-ASIE entity crosswalk",
+              "year",
+              "four-digit industry_code",
+              "province_code",
+              "HS_product_code",
+              "BEC_code",
+              "trade_type"
+            ],
+            "treatment_key": [
+              "four-digit industry_code",
+              "year",
+              "capital tariff change since2000",
+              "intermediate tariff change since2000"
+            ]
+          }
+        }
+      ],
       "threat_types": [
         "anticipation-effects",
         "concurrent-reforms"
@@ -17927,8 +19712,223 @@
       "blocker_codes": [
         "other-readiness-debt"
       ],
-      "blocker_count": 2,
+      "blocker_count": 4,
       "source_path": "variations/china-wto-accession-firm-performance.md"
+    },
+    {
+      "id": "china-wwi-textile-import-disruption-port-access",
+      "name": "WWI textile import disruption and mainland China's prewar port-access exposure",
+      "aliases": [
+        "一战纺织品进口中断",
+        "WWI Chinese textile industry",
+        "wartime import competition and port accessibility"
+      ],
+      "status": "grounded",
+      "knowledge_role": "global-china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "development",
+        "regional-economics",
+        "industrial-economics",
+        "firm-dynamics",
+        "international-trade",
+        "economic-history"
+      ],
+      "topics": [
+        "development-poverty",
+        "firms-innovation",
+        "history",
+        "infrastructure-urban",
+        "trade-globalization"
+      ],
+      "variation_type": "continuous-exposure",
+      "time": {
+        "start": 1914,
+        "end": 1919
+      },
+      "assignment": {
+        "unit": "Historical county-year.",
+        "mechanism": "Geography and prewar transport connections determine continuous proximity to import markets. The empirical exposure is log(1+shortest travel days to a port), interacted with national war/postwar windows or the national cotton-yarn import u…",
+        "treatment": "WWI_t*tau_i and PostWWI_t*tau_i, with tau_i=log(1+travel days). Price_t*tau_i is the paper's alternative encoding of the same trade disruption, not a second independent shock.",
+        "comparison": "Requires that counties with different port access would have comparable conditional changes absent the trade shock, and that other changing determinants do not produce the same ge…",
+        "required_identifiers": [
+          "historical_county_id",
+          "province_id",
+          "year",
+          "mill_id",
+          "historical_port_id",
+          "transport_segment_id"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "operating textile mills",
+          "textile industrial expansion",
+          "initial capital of new textile firms"
+        ],
+        "application_outcomes": [
+          "log(1+annual operating textile mills); alternative initial capital invested by new textile firms."
+        ],
+        "design_families": [
+          "continuous-exposure DID",
+          "event-study",
+          "county-year fixed-effects interaction"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Mainland historical counties linked to the paper's operating-mill panel; retrieve the actual1789-county membership rather than assuming every modern Chinese co…",
+        "observation_unit": "county-year",
+        "geography_level": "historical county",
+        "time_start": 1907,
+        "time_end": 1925,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 3,
+        "minimum_post_periods": 3,
+        "required_fields": [
+          "annual operating textile-mill count",
+          "mill founding and actual operation dates",
+          "mill merger acquisition and exit histories",
+          "fixed prewar travel days to ports",
+          "historical county sample membership and crosswalk",
+          "province identifier",
+          "year",
+          "domestic conflict and concession measures for diagnostics"
+        ],
+        "required_identifiers": [
+          "historical_county_id",
+          "province_id",
+          "year"
+        ],
+        "treatment_key": [
+          "historical_county_id",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "bundled-external-shock",
+        "exposure-measurement",
+        "outcome-and-historical-join",
+        "selective-port-access"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 3,
+      "source_path": "variations/china-wwi-textile-import-disruption-port-access.md"
+    },
+    {
+      "id": "china-xin-county-antipoverty-relocation-participation",
+      "name": "Xin County anti-poverty relocation participation in 2016–2017",
+      "aliases": [
+        "新县易地扶贫搬迁",
+        "Xin County APRP household relocation",
+        "Across a few prohibitive miles"
+      ],
+      "status": "grounded",
+      "knowledge_role": "china-variation",
+      "recommendation_eligibility": "conditional-candidate",
+      "country": "China",
+      "domains": [
+        "development",
+        "poverty",
+        "regional-economics",
+        "urbanization",
+        "migration",
+        "structural-transformation"
+      ],
+      "topics": [
+        "development-poverty",
+        "infrastructure-urban",
+        "labor-migration"
+      ],
+      "variation_type": "staggered-rollout",
+      "time": {
+        "start": 2016,
+        "end": 2017
+      },
+      "assignment": {
+        "unit": "Registered-poor household, linked across annual observations; individual outcomes require an additional person-to-household join.",
+        "mechanism": "Household eligibility, voluntary application and administrative approval determine participation; actual relocation year activates measured exposure. Housing modality is a selected choice within that participation mechanism. Apartment lott…",
+        "treatment": "APRP_ht=I(h ever participates in Xin County2016/2017 relocation) times I(t>=actual household relocation year).",
+        "comparison": "Compare participants' household income changes with nonparticipants' changes after pretreatment balancing and household/year effects. The early-versus-waiting participant comparis…",
+        "required_identifiers": [
+          "household_id",
+          "year",
+          "actual_relocation_year",
+          "origin_village_id",
+          "annual_poverty_register_membership"
+        ]
+      },
+      "research_fit": {
+        "outcomes": [
+          "household per capita income",
+          "wage income",
+          "spatial access",
+          "structural transformation",
+          "poverty reduction"
+        ],
+        "application_outcomes": [
+          "Log household per capita income and its wage, operational, property and transfer components; this record's default contract is household income, not the separate individual labor-supply regression."
+        ],
+        "design_families": [
+          "entropy-balanced household-panel difference-in-differences",
+          "relocation-year event study",
+          "cohort-aware comparison with untreated households"
+        ],
+        "claim_type": "reduced-form"
+      },
+      "data_fit": {
+        "population": "Registered-poor Xin County households observed in the administrative panel, including actual2016/2017 participants and nonparticipants; exclude nonpoor accompa…",
+        "observation_unit": "household-year",
+        "geography_level": "household origin village within Xin County, Henan",
+        "time_start": 2014,
+        "time_end": 2018,
+        "minimum_frequency": "annual",
+        "minimum_pre_periods": 2,
+        "minimum_post_periods": 1,
+        "required_fields": [
+          "per_capita_income",
+          "actual_relocation_year",
+          "ever_participant",
+          "annual_poverty_register_membership",
+          "household_size",
+          "woodland_area",
+          "average_education",
+          "Dibao_recipient_count",
+          "labor_force_count",
+          "unhealthy_member_count",
+          "under14_count",
+          "over65_count",
+          "pretreatment_covariates_for_balancing",
+          "concurrent_program_exposure"
+        ],
+        "required_identifiers": [
+          "household_id",
+          "year",
+          "origin_village_id"
+        ],
+        "treatment_key": [
+          "household_id",
+          "actual_relocation_year",
+          "year"
+        ]
+      },
+      "design_profiles": [],
+      "threat_types": [
+        "administrative-population-definition",
+        "bundled-assistance-and-interference",
+        "dynamic-register-and-timing",
+        "staggered-estimation-and-external-validity",
+        "voluntary-participation-and-mode-selection"
+      ],
+      "blocker_codes": [
+        "other-readiness-debt"
+      ],
+      "blocker_count": 4,
+      "source_path": "variations/china-xin-county-antipoverty-relocation-participation.md"
     },
     {
       "id": "china-yangtze-delta-city-council-membership",

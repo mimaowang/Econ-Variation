@@ -5,7 +5,7 @@ name: China 1994 Public-Housing Tenant Purchase Opportunity
 aliases: [1994公房出售改革, 单位住房产权改革, Public housing privatization and entrepreneurship]
 status: grounded
 provenance:
-  task_id: task-af568f045b25
+  task_id: task-02bf4b23efa8
 scope:
   country: China
   regions: [Mainland China]
@@ -28,7 +28,7 @@ timeline:
   implementation_end: null
   local_timing: National decision effective on publication. Local approval governs implementation; the paper reports sample areas implemented by 1997. The survey gap prevents identifying regional adoption dates.
   anticipation: Earlier reform experiments and the decision's harmonization of sales since January 1994 preclude assuming no anticipation.
-  last_verified: '2026-10-04'
+  last_verified: '2026-10-07'
 assignment:
   unit: Prereform resident couple, inherited by each eligible individual's survey observations
   treated: Public-housing heads and spouses with at least one state-employed partner at baseline; a proxy for purchase opportunity, not verified receipt
@@ -93,7 +93,7 @@ empirical_requirements:
   required_identifiers: [Longitudinal person ID, Household ID, Community ID, Survey wave]
   treatment_key: [Longitudinal person ID, Survey wave]
   treatment_source: Prereform household and employment survey linked to the national1994 decision; local rules required for verified offer or title measures
-  measurement_risks: [Baseline missingness, Spouse matching, Household changes, Restricted or changed identifiers, Nonrandom attrition, Offer versus purchase, No intervening annual observations]
+  measurement_risks: [Baseline missingness, Spouse matching, Household changes, Restricted or changed identifiers, Nonrandom attrition, Offer versus purchase, No intervening annual observations, Related housing-price application requires a separately estimated province-level mismatch measure rather than this default tenant-employment treatment]
 design_profiles: []
 evidence:
 - id: E1
@@ -123,6 +123,15 @@ evidence:
   verification_status: verified
   access_level: metadata
   locator: Crossref works endpoint title, container-title, volume94, issue2, pages532–551 and publication date2012May; published PDF first-page imprint agrees.
+- id: E4
+  source_type: paper
+  citation: Shing-Yi Wang, State Misallocation and Housing Prices, September2010 author manuscript hosted by AEA
+  url: https://www.aeaweb.org/conference/2011/retrieve.php?pdfid=142
+  date: '2010-09-01'
+  supports: [assignment.spillovers, empirical_requirements.measurement_risks]
+  verification_status: reported
+  access_level: full-text
+  locator: 37-page manuscript, Section3.1 pp13-14, Section3.2 equation12 pp16-19, Section3.3.3 equation17 and Table6 pp26-29. Table6 p28 rendered and visually inspected; final AER2011 text and deposited code not inspected. September is the cover month, not a verified day.
 design_applications:
 - paper: 'Credit Constraints, Job Mobility, and Entrepreneurship: Evidence from a Property Reform in China'
   doi: 10.1162/rest_a_00160
@@ -170,4 +179,20 @@ The inspected application is encoded above [E2, reported claim]. [Analytical inf
 
 ## Evidence Notes
 
-Institutional facts use the national attachment, not Beijing's separate implementation date [E1]. The published paper supplies reported coding and methods [E2]; metadata supplies publication identity [E3]. The blocked AER candidate `candidate-19670874707c` is related housing-reform evidence, not a second ready variation merely because it studies prices. Its separate application remains unresolved; this task does not claim to have inspected it. CHNS provider links attempted during resolution were inaccessible; neither their questionnaires nor current download conditions are certified.
+Institutional facts use the national attachment, not Beijing's separate implementation date [E1]. The published paper supplies reported coding and methods [E2]; metadata supplies publication identity [E3]. The blocked AER candidate `candidate-19670874707c` is related housing-reform evidence, not a second ready variation merely because it studies prices. CHNS provider links attempted during resolution were inaccessible; neither their questionnaires nor current download conditions are certified.
+
+The October7 follow-up inspected the September2010 AEA-hosted manuscript
+behind that AER paper [E4, reported claim]. Its housing-price test uses
+prereform province-average mismatch interacted with post-reform waves, among
+households privately housed in1993. Mismatch is predicted minus observed log
+market rental value, fitted on prereform private households; the province
+average includes both housing groups. Equation17/Table6 uses household effects,
+housing-quality controls and province-clustered bootstrap inference. These
+private households face market spillovers, not direct tenant purchase exposure.
+[Analytical inference] This application needs a separate household/province-wave
+contract, generated-regressor uncertainty and credible differential trends;
+the default entrepreneurship treatment and person-level contract cannot be
+reused unchanged. It remains a bounded related application, not an admitted
+design profile. The final publisher text and replication code remain unread.
+The manuscript's unrestricted full-title resale claim on p5 must not override
+the national decision's normal five-year market-entry condition [E1; E4].

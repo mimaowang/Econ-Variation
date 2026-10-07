@@ -10,7 +10,7 @@ aliases:
 
 status: grounded
 provenance:
-  task_id: task-7d3ea6c12121
+  task_id: task-624f27bb21bb
 scope:
   country: China
   regions:
@@ -41,7 +41,7 @@ timeline:
   implementation_end: 2007
   local_timing: '[E4, verified] Original staging rows assign product-specific annual ceilings rather than city rollout dates; inspected non-agricultural HS76061100 stages its ceiling across 2002-2004. [E1, reported claim] The application maps annual tariffs to industries over 1998-2007; post-2001 agreement ceilings instrument actual rates. Membership timing is distinct from those annual paths.'
   anticipation: '[E1, reported claim] The agreement''s maximum rates were mostly fixed by 1999, so negotiated commitments do not remove selection based on anticipated future industry performance.'
-  last_verified: '2026-09-28'
+  last_verified: '2026-10-07'
 assignment:
   unit: '[E1, reported claim] Manufacturing firm-year, inheriting 4-digit Chinese industry tariff measures.'
   treated: '[E1, reported claim] There is no untreated manufacturing group: firms face continuous lagged output-tariff and input-tariff levels, whose changes differ across industries and years.'
@@ -162,6 +162,41 @@ empirical_requirements:
   - corrected input-price-deflator construction (see E3)
   - contemporaneous applied rates versus negotiated annual ceilings, preferential rates and processing-trade exemptions
   - latest CTS is a revised working database, not an unchanged historical accession panel (see E6)
+design_profiles:
+- id: brandt-tariff-performance
+  label: Brandt et al. industry output/input tariffs and firm performance
+  design_families: [firm fixed-effects tariff regression, allowable-tariff IV]
+  outcome_domains: [firm productivity, markups, prices, output, employment, entry, exit, product mix]
+  when_to_use: Use the original AER application for lagged industry output/input protection and performance; this preserves the default contract and its corrected deflator. It does not require a capital/intermediate customs split.
+  requirements:
+    population: Chinese manufacturing ASIF firms1998–2007 after Brandt et al. cleaning and concordance restrictions.
+    observation_unit: Firm-year
+    geography_level: National (firm-level) with industry variation
+    time_start: 1998
+    time_end: 2007
+    minimum_frequency: annual
+    minimum_pre_periods: 3
+    minimum_post_periods: 5
+    required_fields: [firm output, inputs, value added, employment, capital stock, industry (4-digit), ownership and entry/exit status, product/industry tariff concordances and input-output weights, price-deflator inputs needed for the paper's markup/productivity construction]
+    required_identifiers: [firm ID, year, industry code]
+    treatment_key: [industry code, lagged output tariff, lagged input tariff, post-2001 agreement maximum allowable tariff (IV variant)]
+- id: mo-capital-intermediate-import
+  label: Mo et al. capital/intermediate import decisions and productivity/R&D
+  design_families: [dynamic production-function GMM, capital/intermediate tariff IV robustness]
+  outcome_domains: [firm productivity, R&D participation, capital import participation, intermediate import participation]
+  when_to_use: Use only for the inspected Mo et al. capital/intermediate sourcing application with recoverable customs/ASIE linkage and BEC classification. It uses actual tariff changes to instrument import decisions, not negotiated ceilings to instrument realized rates. Baseline identification relies on dynamic timing; continuous tariff exposure and exclusion remain conditional.
+  requirements:
+    population: Mainland manufacturing ASIE firms2000–2006 linked to customs with audited non-importer status; all SOEs and non-SOEs with sales>=RMB5million, accounting cleaning and>=8 employees, excluding processing-only importers in IV specifications.
+    observation_unit: firm-year
+    geography_level: firm linked to four-digit industry exposure and province controls
+    time_start: 2000
+    time_end: 2006
+    minimum_frequency: annual
+    minimum_pre_periods: 1
+    minimum_post_periods: 5
+    required_fields: [gross output and deflators, labor materials and capital inputs, R&D participation, capital and intermediate ordinary-import status and values, export status, ownership, firm-customs match status, WITS HS6 tariffs and declared import-value weights, HS96/HS02 to BEC concordances and manual automobile classification]
+    required_identifiers: [firm_id, customs-ASIE entity crosswalk, year, four-digit industry_code, province_code, HS_product_code, BEC_code, trade_type]
+    treatment_key: [four-digit industry_code, year, capital tariff change since2000, intermediate tariff change since2000]
 evidence:
 - id: E1
   source_type: paper
@@ -292,6 +327,24 @@ evidence:
   verification_status: verified
   access_level: metadata
   locator: 'Author page lists industry/IO concordances, protection measures, and input_benchmark correction dated 15 November 2018. Its replication link resolves to https://doi.org/10.3886/E112892V1 (openICPSR version V1, 11 October 2019). Inspected listings only, not linked data/code contents, restricted firm data, or reproduction results.'
+- id: E8
+  source_type: paper
+  citation: 'Mo Jiawei, Larry D. Qiu, Hongsong Zhang and Xiaoyu Dong. What You Import Matters for Productivity Growth: Experience from Chinese Manufacturing Firms. JDE152,2021,102677; inspected May2021 author manuscript.'
+  url: https://hongsongzhang.weebly.com/uploads/1/3/4/7/13473383/capitl_import_jde.pdf
+  date: '2021-05'
+  supports: [design_applications.treatment_encoding, design_applications.data_used, design_applications.empirical_design, design_applications.assumptions, design_applications.population, design_applications.threats_addressed]
+  verification_status: reported
+  access_level: full-text
+  locator: '66-page author PDF: Section2 printedpp5–7/PDF6–8; Section4.3 printedpp20–21/PDF21–22 and footnotes21–22; Table8 PDF46; AppendixA2/A3 PDF35 and A1/A2 PDF56–57, A5/A6 PDF61–62. Actual HS6 industry import-value weights, since2000 IV versus since2001 simulations, processing exclusions and customs linkage inspected; final typeset body and code not inspected.'
+- id: E9
+  source_type: other
+  citation: Crossref publisher-deposited metadata for Mo et al., Journal of Development Economics152, September2021, article102677.
+  url: https://doi.org/10.1016/j.jdeveco.2021.102677
+  date: '2021-09'
+  supports: [design_applications.paper, design_applications.journal, design_applications.year]
+  verification_status: verified
+  access_level: metadata
+  locator: Crossref works endpoint title/container-title/published/DOI read2026-10-07; author page corroborates journal and September2021. Metadata does not certify author-to-final method equality.
 design_applications:
 - paper: WTO Accession and Performance of Chinese Manufacturing Firms
   doi: 10.1257/aer.20121266
@@ -316,12 +369,34 @@ design_applications:
   evidence_refs:
   - E1
   - E3
+- paper: 'What You Import Matters for Productivity Growth: Experience from Chinese Manufacturing Firms'
+  doi: 10.1016/j.jdeveco.2021.102677
+  journal: Journal of Development Economics
+  year: 2021
+  research_question: How do capital versus intermediate imports affect productivity and R&D, and how does the tariff composition influence modeled gains?
+  population: ASIE/customs2000–2006 manufacturing sample with both importers and non-importers; processing-only importers excluded from tariff-IV tables.
+  outcome: Generated production-function productivity and R&D participation; long-run liberalization gains are model simulations rather than observed15-year outcomes.
+  data_used: [ASIE accounts and input/output deflators, GAC transactions aggregated annually and matched through firm contact information, WITS HS6 tariffs, BEC classifications with HS96 before2002 and HS02 afterward plus manual automobile adjustments]
+  treatment_encoding: Separate capital and intermediate four-digit industry import-value-weighted tariffs; IV changes relative to2000. Five IVs include both tariff changes plus lagged capital import/intermediate import/R&D; nonlinear endogenous terms are instrumented in the GMM first step. Counterfactual reference2001 is different.
+  comparison: Firm decisions and productivity across import states and industry tariff changes; not randomized capital-import receipt or binary WTO membership.
+  empirical_design: Baseline dynamic production-function model assumes import decisions precede nonstructural productivity shocks; Section4.3 tariff-IV GMM relaxes that timing restriction for the stated terms. AppendixA5 gives first stages and A6 conditional direct-tariff tests, not proof of exclusion or weak-instrument validity.
+  assumptions: [valid dynamic control-function and production specification, relevant tariff and lagged-status instruments, tariff effects on productivity restricted to modeled import channels for IV interpretation, audited industry aggregation and customs match status, adequate inference and nonlinear instrument implementation]
+  threats_addressed: [alternative production estimators, explicit tariff-IV robustness, current/lagged export controls, processing-only importer exclusion, output winsorization1/99percent in Table8, conditional direct-tariff coefficient checks]
+  evidence_refs: [E8, E9]
 readiness_blockers:
 - Reuse remains conditional on vintage-correct annual applied and bound tariff series, HS2002/CIC2003 concordances, IO weights, restricted firm-data access and corrected price-deflator/code versions. E4 closes the original commitment identity and staging boundary; E5 independently documents annual implementation, but this audit does not verify every historical applied-rate row or annual Chinese tariff notice. A contemporary CTS snapshot cannot fill that gap.
-- This record serves the Brandt et al. tariff application only. It does not establish an exposure for US PNTR, MFA quota removal, export-market access, or a general one-time WTO shock; those require distinct records and sources.
+- This record serves annual Chinese tariff liberalization, with the Brandt application as default and the Mo capital/intermediate application separate. It does not establish US PNTR, MFA quota removal, export-market access, or a general one-time WTO shock; those require distinct records and sources.
+- The Mo profile requires vintage-correct HS/BEC and manual automobile mapping, a declared import-weight reference, customs-ASIE entity resolution and verified non-importer handling. The manuscript states import-value weights without an executable weight-vintage implementation; weights may respond to the policy. Its17% customs linkage is not proof that every unmatched firm never imports. No code or final typeset methods were inspected.
+- For Mo tariff IVs, tariff cuts can affect domestic input costs and competition without own-firm importing. Insignificant conditional direct coefficients do not prove exclusion; AppendixA5 relevance is not a complete weak-IV audit. Lagged import/R&D validity, nonlinear polynomial instrumentation, generated productivity and common industry shocks require application-specific assessment. Do not substitute bound rates or Brandt IO weights into this profile.
 method_transfer: null
 ---
 ## Institutional Background
+
+The default structured assignment and design below remain the Brandt et al.
+application. The Mo et al. capital/intermediate import profile uses a different
+measurement and estimating equation within the same annual tariff regime;
+it is not an additional counted shock. Choose the application for the research
+question before checking data fit, and never union their required fields.
 
 [E2, verified] China became a WTO member on 11 December 2001. The Brandt et al. application is not a record of every consequence of that membership. It uses annual Chinese tariff measures during a longer 1998-2007 liberalization period. US permanent-normal-trade-relations policy and the textile-quota regime are related historical developments, but neither is this record's treatment variable. [E1, reported claim]
 
@@ -333,6 +408,23 @@ method_transfer: null
 [E4, verified] The original tariff tables distinguish accession ceilings, final ceilings and implementation, while the staging matrix sets out product-specific annual paths. This grounds the commitment underlying the IV; it does not replace the realized import-rate series. Applied rates can lie below bound rates, and the WTO's CTS is a continually revised working database. Its latest consolidated version should not be treated as an unchanged historical panel. [E6, verified]
 
 ## Implementation and Assignment
+
+For the Mo application, join WITS HS6 rates to customs products, classify
+capital/intermediate uses through vintage-specific HS/BEC tables, and aggregate
+by four-digit industry using the declared import-value weights [E8,reported
+claim]. Its tariff changes since2000 instrument import/R&D terms in a
+production-function GMM robustness analysis; negotiated-bound-rate IVs and
+2002 IO weights belong to the Brandt application instead. The2001 reference
+used in simulations is not the2000 reference in Table8/AppendixA5. Customs
+matching and manual automobile classifications must be audited; missing matches
+cannot automatically certify non-importing.
+
+The baseline Mo model relies on import-decision timing, while the tariff-IV
+robustness relies on exclusion and valid lagged instruments. Tariffs can alter
+domestic prices even without a firm importing directly, so its insignificant
+conditional direct-tariff coefficients are diagnostics rather than proof of
+exclusion [E8,reported claim;analytical inference]. Predicted long-run gains
+depend on the structural simulation, not observed15-year post-policy data.
 [E1, reported claim] Firm-year observations inherit lagged tariffs from their 4-digit industry. There is no completely unexposed manufacturing control group. The contrast is continuous: otherwise similar firm-years lie in industries whose output and input tariffs evolve differently. The paper instruments realized tariffs from 2001 onward with the agreement's maximum allowable tariff, recognizing that actual tariff setting can be endogenous. This is an application-specific strategy, not proof that all accession-related changes were exogenous.
 
 [E1, reported claim] Product-to-industry mapping is part of the exposure, not clerical cleanup. The paper averages WITS HS8 import rates without trade weights into CIC4 output tariffs, then constructs input tariffs with 2002 IO shares, effectively at CIC3 resolution. HS2002 and CIC2003 revisions require concordances. The industry exposure describes protection, not a firm's observed duty payment; preferences and processing-trade exemptions prevent that interpretation. [Analytical inference] A new regional application would additionally need a justified local industry-composition mapping rather than assigning one nationwide post dummy to all locations.

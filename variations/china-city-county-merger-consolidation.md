@@ -10,7 +10,7 @@ aliases:
 - 行政区划调整与辖区整合
 status: grounded
 provenance:
-  task_id: task-adf5d6fc7610
+  task_id: task-6d8b35c712b3
 scope:
   country: China
   regions:
@@ -95,7 +95,7 @@ timeline:
     Transition arrangements can also delay effective integration after the legal
     change. A pre-trend window and alternative approval-versus-operation dates are
     therefore needed before interpreting a post-year coefficient.
-  last_verified: '2026-10-02'
+  last_verified: '2026-10-07'
 assignment:
   unit: >
     The main published treatment is prefecture-year for individuals working in a
@@ -387,11 +387,15 @@ threats:
   condition: >
     The public cohort code is annual, whereas approval, local announcement,
     institutional transfer, and actual service/fiscal integration can occur in
-    different months or years.
+    different months or years. A related earlier county-incorporation application
+    reports firm entry rising one year before the formal announcement; that is
+    evidence of anticipation in that sample, not a finding about every2011–2018
+    cohort in the present record.
   evidence_refs:
   - E2
   - E3
   - E6
+  - E7
   possible_diagnostics:
   - preserve approval and effective dates separately
   - exclude transition years or use month-sensitive event time where available
@@ -465,6 +469,7 @@ empirical_requirements:
   - prefecture treatment bundles two institutional components
   - within-prefecture and neighboring spillovers can contaminate controls
   - public replication files do not include the restricted microdata or complete legal crosswalk
+  - Earlier industrial-survey applications cannot treat non-state survey disappearance as legal firm exit; a revenue coverage threshold also removes operating firms
 evidence:
 - id: E1
   source_type: policy-document
@@ -600,6 +605,27 @@ evidence:
     groups; `tableA6.do` uses the county groups; `figure4.do` constructs event time
     from `citytreatyear`. The package readme states that CMDS, CFPS, and Population
     Census individual data must be requested from their providers.
+- id: E7
+  source_type: paper
+  citation: >
+    Han, Yi, and Mingqin Wu. 2024. Inter-regional barriers and economic growth:
+    Evidence from China. Journal of Development Economics167:103197,
+    DOI10.1016/j.jdeveco.2023.103197. Institution-hosted author manuscript.
+  url: https://ae.ruc.edu.cn/docs/2023-12/33ca4602cba3404398a13f9691466d83.pdf
+  date: 2024
+  supports:
+  - threats.condition
+  - empirical_requirements.measurement_risks
+  verification_status: reported
+  access_level: full-text
+  locator: >
+    Manuscript pp.11–20,25–29; Figure7 and Table9(p.53, visually inspected):
+    related earlier1995–2013 county application, proposed-but-unapproved controls,
+    province-by-year fixed effects, and entry in the year before announcement.
+    Page28 footnote16 explains why the survey's RMB5million non-state revenue
+    threshold prevents interpreting disappearance as exit; the exit application
+    is restricted to SOEs. This source does not verify the present record's
+    complete2011–2018 legal cohort ledger or extend its time boundary.
 design_applications:
 - paper: 'The Labor Market Outcomes of Jurisdictional Consolidation: Evidence from City–County Mergers in China'
   doi: 10.1016/j.jue.2025.103788
@@ -697,6 +723,32 @@ The main risks are endogenous selection into administrative adjustment, anticipa
 The minimum contract is a versioned administrative crosswalk with original county, successor district, prefecture, approval document, approval date, effective or operation date, cohort year, and stable historical codes. Labor applications additionally need the survey year, work prefecture or county, migrant/local or hukou status, outcome, and person identifier. CMDS, CFPS, and Population Census microdata are provider-controlled; the public Mendeley package supplies programs and derived non-sensitive files, not unrestricted individual-level joins. [E5; E6]
 
 ## Evidence Notes
+
+A related earlier application by Han and Wu studies the same county-to-district
+change using1995–2013 county growth and1998–2007 industrial firms. It is not a
+separate variation merely because its outcomes and controls differ. The manuscript
+compares74 incorporated counties with185 proposed-but-unapproved counties,
+using county and province-by-year fixed effects, and separately stacks current
+incorporations against later incorporations. The proposal list comes from332
+planning books, but the first application date cannot be determined. The
+manuscript's “more than five years” control rule and event window−5 to5 require
+checking against the actual coding before reconstruction [E7, reported claim].
+
+For firm research, the manuscript documents entry already rising one year before
+announcement. Removing that year does not establish absence of earlier
+anticipation. It defines exit as absence in the following and all later survey
+years and limits exit analysis to SOEs because a non-state firm can disappear
+by falling below the survey's revenue threshold. Registered population is not
+workplace population; a null registered-population result does not establish
+absence of migration. These are useful application limits, not evidence that
+market barriers were fully eliminated [E7, reported claim].
+
+This update preserves the present2011–2018 regime and existing design profiles.
+The earlier application remains a source lead rather than an admitted matching
+profile until its named treatment/proposal matrix, historical boundaries and
+approval clock are recovered. Do not apply the later public Bo–Wang cohort code
+to reconstruct the earlier sample, or expand the canonical date range solely
+from the earlier paper's regression window [analytical inference].
 
 E1 establishes the approval authority and the requirement that administrative-division changes be documented and archived; it does not by itself establish every cohort in the paper. E2–E4 provide official examples showing that a county-to-district change names the predecessor and successor and may include transition arrangements; they do not constitute the full national ledger. E5 establishes the paper's research object, prefecture-level staggered design, and two-component interpretation; it reports the study's coding rather than independently verifying every underlying approval. E6 makes the annual treatment program and five-group logic auditable and confirms that the individual survey data remain access-controlled; it does not establish causal validity or provide a complete public legal-code crosswalk.
 

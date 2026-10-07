@@ -9,7 +9,7 @@ aliases:
 - 国发〔2000〕33号
 status: grounded
 provenance:
-  task_id: task-e6f648e1ff1b
+  task_id: task-a9aeb39d3fc7
 scope:
   country: China
   regions:
@@ -51,11 +51,11 @@ timeline:
   effective: '2001-01-01'
   implementation_start: 2000
   implementation_end: 2010
-  local_timing: The paper codes the program as beginning in 2000 and estimates post-2000 border effects. The formal State Council policy notice is dated 2000-12-26, while its stated policy window is 2001-2010 and the detailed implementation opinion was issued in September 2001. A replication should therefore report sensitivity to alternative start dates rather than silently treating all components as effective on one day.
+  local_timing: Zhu, Wang, and Lin code the program as beginning in 2000 and estimate post-2000 border effects. The formal State Council policy notice is dated 2000-12-26, while its stated policy window is 2001-2010 and the detailed implementation opinion was issued in September 2001. Wang, Xie, and Chen instead describe a 2001 shock, but Section 5.2 says time is after 2001, while Section 6.5.1 describes divergence starting in 2001. Preserve this inclusive-versus-exclusive post-year ambiguity pending their code; do not silently replace either application's timing. A replication should report alternative start dates rather than treating all components as effective on one day.
   anticipation: National planning and the leadership group preceded the detailed policy notice. Border localities, firms, and governments may have anticipated projects and incentives before the formal 2001 implementation opinion.
-  last_verified: '2026-09-28'
+  last_verified: '2026-10-07'
 assignment:
-  unit: Township-year for the spatial-regression-discontinuity application; county-year or county-industry-year where a later application can reconstruct a compatible boundary exposure.
+  unit: Township-year for the spatial-regression-discontinuity application; county-year for the reported JRS tax-effort application, whose timing and city-year fixed-effect implementation remain unresolved.
   treated: Localities located inside the twelve-jurisdiction western policy scope, especially townships within an audited bandwidth of the western eligibility boundary after the program start.
   comparison_pool: Localities on the non-western side of the same policy boundary within a pre-specified geographic bandwidth. Comparisons farther from the boundary are descriptive unless a separate design justifies them.
   rule: Overlay stable township or county centroids and boundaries on the official western-policy jurisdiction boundary. Code eligibility from the listed jurisdictions, preserve the three separately mentioned eastern ethnic autonomous prefectures, and define signed distance to the boundary before selecting an RD bandwidth.
@@ -176,6 +176,15 @@ threats:
   - Archive boundary shapefiles and crosswalk versions
   - Recompute distances from polygons and centroids
   - Report results with and without analogous prefectures
+- type: application-specific-fixed-effect-and-coding-conflict
+  basis: documented
+  condition: The JRS tax-effort application reports county and prefecture-city-year fixed effects with a time-invariant western-side indicator interacted with a common post period. If western status is constant within each actual prefecture, full city-year effects absorb this treatment exactly. Its Section 5.2 post wording also conflicts with its 2001 event discussion; the declared 2700 balanced-panel observations differ from the baseline 1512 without an inspected attrition bridge. These issues concern this fiscal application, not evidence that the existing township application or policy identity is invalid.
+  evidence_refs:
+  - E4
+  possible_diagnostics:
+  - Recover the actual city identifier, fixed-effect syntax, treatment clock and estimation sample from author code
+  - Test residual treatment variation after the stated fixed effects before adopting the specification
+  - Reconcile the sample attrition and distinguish a capacity-adjusted revenue index from directly measured tax enforcement
 empirical_requirements:
   contract_version: 1
   population: Townships or counties near the formal western-policy boundary, observed before and after program implementation.
@@ -291,6 +300,31 @@ evidence:
   verification_status: verified
   access_level: full-text
   locator: 'Inspected author manuscript (https://pengyuzhu.com/wp-content/uploads/2025/07/manuscript_for_regional_study_sep27_ver2-zhu_lin-changes-accepted.pdf), pp. 1-16 and appendix: policy-boundary RD, 1992-2019 lights, township/county data, geographic controls, pre-trend and bandwidth checks, heterogeneity, and stated spillover limits.'
+- id: E4
+  source_type: paper
+  citation: 'Wang, Baoshun, Licheng Xie, and Xiaodong Chen. 2026. "The Impact of Centralized Regional Development Strategy on Local Tax Effort in China." Journal of Regional Science 66(3): 794-812. DOI: 10.1111/jors.70036. First online 2025-11-26.'
+  url: https://doi.org/10.1111/jors.70036
+  date: 2026
+  supports:
+  - timeline.local_timing
+  - assignment.unit
+  - threats.condition
+  - design_applications.paper
+  - design_applications.doi
+  - design_applications.journal
+  - design_applications.year
+  - design_applications.research_question
+  - design_applications.population
+  - design_applications.outcome
+  - design_applications.data_used
+  - design_applications.treatment_encoding
+  - design_applications.comparison
+  - design_applications.empirical_design
+  - design_applications.assumptions
+  - design_applications.threats_addressed
+  verification_status: verified
+  access_level: full-text
+  locator: 'Inspected publisher HTML https://onlinelibrary.wiley.com/doi/full/10.1111/jors.70036, Sections 4-5, 6.2, 6.4-6.5, Tables 1 and 3-8, endnotes 10-16 and Data Availability Statement. Section 5.2 and Table 3 explicitly report prefecture-city-year effects; Sections 5.2 and 6.5.1 contain inconsistent post-year wording. Supports the reported application and its internal inconsistencies, not an independently replicated estimate.'
 design_applications:
 - paper: 'Unravelling regional inequality: the heterogeneous impact of China''s Great Western Development Program'
   doi: 10.1080/00343404.2024.2438319
@@ -320,6 +354,36 @@ design_applications:
   - Distance-dependent spillover checks, with remaining non-distance spillovers acknowledged
   evidence_refs:
   - E3
+- paper: The Impact of Centralized Regional Development Strategy on Local Tax Effort in China
+  doi: 10.1111/jors.70036
+  journal: Journal of Regional Science
+  year: 2026
+  research_question: How does western-program geographic eligibility change local government tax effort and fiscal pressure near the western-middle boundary?
+  population: Reported 225 adjacent counties and districts in 66 prefecture-level cities across 13 provinces, 1998-2009; Chongqing and missing or discontinuous county series are excluded. The stated balanced panel has 2700 observations, but baseline regressions use 1512; the observation-level bridge is not displayed.
+  outcome: Tax-handle effort index, actual tax revenue share divided by its predicted share from a county/year fixed-effect capacity regression; log fiscal revenue per capita is an alternative outcome, not the same index or firm effective tax rate.
+  data_used:
+  - China County Statistical Yearbooks, 1998-2009 economic and demographic fields
+  - Ministry of Finance National Fiscal Statistics of Prefectures and Counties, county budget revenue and expenditure
+  - Province GDP deflators to constant 1998 prices and census supplements for population
+  - DMSP-OLS county nighttime-light means, 1998-2009
+  - Prefecture enterprise registration counts for a displacement check, not individual firm migration histories
+  treatment_encoding: Western-side county eligibility interacted with a common post indicator; Section 5.2 literally says after 2001, while the introduction and event discussion use a 2001 shock. Final county-name spellings address naming changes but do not establish a historical geography crosswalk. Preserve analogous ethnic-prefecture handling and the author's actual clock before replication.
+  comparison: Adjacent middle-region counties on the non-western side of the boundary; the sample is a county-adjacency restriction, not a documented kilometre-bandwidth spatial RD or all non-western China.
+  empirical_design: Reported boundary DID; Table 3 column 2 uses county/year effects and column 3 adds prefecture-city-year effects, with county-clustered standard errors. Full city-year effects would absorb a common post interaction if treatment is constant within prefecture, so the reported richer specification requires author clarification rather than automatic recommendation. No separate matcher design profile is admitted for this unresolved fiscal specification.
+  assumptions:
+  - Boundary counties would have parallel tax-effort trends absent eligibility, despite provincial differences and other programs.
+  - The actual fixed-effect grouping leaves treatment variation and the post clock is consistently implemented.
+  - The tax-capacity prediction and actual-revenue denominator are reconstructed consistently; an effort index is not direct observation of enforcement.
+  - County identifiers and fiscal accounting are comparable across years; policy-induced controls and transfer-inclusive budget measures do not silently redefine the estimand.
+  threats_addressed:
+  - Reported placebo timing and treatment reassignment, and pre-period 1998-2000 PSM checks; these do not make actual assignment random.
+  - Section 6.5.1 calls 1998-2006 pretreatment despite a 2001 shock; its statement is preserved as inconsistent, not proof of parallel trends.
+  - Spatial exclusion shifts the comparison one county layer away, not a stated metric bandwidth; alternate 1999-2002 window and analogous-prefecture/central-rise exclusions are reported.
+  - Prefecture registration growth is log count relative to 2000 in endnote 16, not annual new-entry growth; insignificant results do not establish no relocation.
+  - Transfer heterogeneity splits total 1998-2009 receipts and is not a predetermined baseline split. Table 1 official turnover uses 2000-2001, whereas Section 6.4.3 uses 2000-2003; the conflict is not silently resolved.
+  - Some robustness tables cluster at prefecture rather than county level. Author-request data are not a public replication package.
+  evidence_refs:
+  - E4
 method_transfer: null
 readiness_blockers:
 - The canonical policy boundary must be implemented from an archived GIS version and stable township/county crosswalk; this record does not distribute a shapefile.
@@ -353,4 +417,6 @@ A usable replication needs an archived policy-boundary GIS layer, stable townshi
 
 ## Evidence Notes
 
-E1 and E2 are official sources for the policy identity, scope, and implementation regime. E3 is an inspected author-produced peer-reviewed manuscript for the 2025 *Regional Studies* paper and supports the reported spatial RD application. It does not independently establish that the boundary is exogenous, that all program components started together, or that its local estimates generalize across the whole West. The blocked JRS local-tax-effort candidate uses the same institutional policy family but a different application; it should be linked to this record only after its closed-access boundary and fiscal-data details are recoverable.
+E1 and E2 are official sources for the policy identity, scope, and implementation regime. E3 is an inspected author-produced peer-reviewed manuscript for the 2025 *Regional Studies* paper and supports the reported spatial RD application. It does not independently establish that the boundary is exogenous, that all program components started together, or that its local estimates generalize across the whole West.
+
+E4 adds the actual county tax-effort use of the same eligibility mechanism; it is not another variation. Publisher full text recovered the former source-access gap of candidate-6ebdad42e9a2, while its original blocked history is retained. The fiscal data contract needs tax shares and their capacity predictors, budget accounting, county/prefecture/year keys and adjacency, not the township-light contract's full set of inputs. However, timing, sample attrition and the reported city-year effects remain unresolved. Under ordinary prefecture nesting, absorbing city-year effects leaves no variation in western eligibility multiplied by a common post indicator [analytical inference]. A reader should request the actual grouping and code rather than infer a usable specification from its significant coefficient. This application is documented for research judgment, not offered as a validated matching profile; the existing spatial application's maturity is unchanged.

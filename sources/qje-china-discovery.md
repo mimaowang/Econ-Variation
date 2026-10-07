@@ -64,3 +64,24 @@ independent draws; the separate 2021 hybrid-work experiment remains a different 
 The table above is a discovery ledger, not a live queue. The earlier immediate-priority items have already been reconciled: Bloom et al., Feenstra & Hanson, and Hsieh & Klenow are represented by the files named above; Jin & Qian, Che & Qian, and Groves et al. were screened and skipped because the papers do not expose a recoverable regional assignment under this campaign; and the Nanchang interfirm-network paper (`10.1093/qje/qjx049`) was screened and resolved as blocked because the independently inspected implementation and peer-construction records were not recoverable. The later JPE/QJE sweep also screened and skipped the Investor Memory field-survey paper (`10.1093/qje/qjaf035`), the U.S.–China trade-war structural paper (`10.1093/qje/qjae041`), and the Fractured-Land cross-country paper (`10.1093/qje/qjad003`). These outcomes live in the task and candidate ledgers; no item should be treated as “in progress” merely because its original discovery row still describes a possible fit.
 
 For the Top-5 China regional/urban campaign, the QJE lane is audited through 2026-08-11. Future work should reopen a bounded task only when a new archive endpoint or inspectable source changes the evidence boundary; it should not promote the remaining method-transfer list into China variations by default.
+
+## Nanchang disposition reconciliation: 2026-10-07
+
+The August blocked disposition above is historical, not current guidance.
+Audit `task-aba533875c20` reconciles `candidate-215698fb2245` with completed
+grounding tasks `task-4466ef9ce2cd` (September28) and `task-f79f27d7d3fb`
+(October4). The existing grounded records are
+[`china-nanchang-interfirm-network-meetings-randomization`](../variations/china-nanchang-interfirm-network-meetings-randomization.md)
+and [`china-nanchang-randomized-peer-group-composition`](../variations/china-nanchang-randomized-peer-group-composition.md).
+The inspected author trial registry supplied the missing primary assignment
+documentation. The exact two-record shared-DOI rationale lives in
+`state/doi-assignment-audits.jsonl`: offer versus no offer differs from
+conditional peer allocation among invited firms. Different outcomes alone
+would not justify that split. Both records preserve self-selection into the
+recruitment pool, experimental identifiers, inference and evidence limits;
+this is not a generally assignable Nanchang city-year policy.
+
+The candidate now points to these serving records while retaining the original
+blocked task and timestamp as history. No new canonical, broader QJE archive
+coverage or ready increment is claimed. Use the records for research decisions;
+do not repeat body-recovery work based only on the old blocked row.

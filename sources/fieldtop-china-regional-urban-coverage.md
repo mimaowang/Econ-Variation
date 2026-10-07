@@ -256,4 +256,279 @@ Before declaring completion, run `python scripts/doctor.py`, `python scripts/val
 
 ## Current snapshot
 
+### Circuit jurisdiction and regional market integration — 2026-10-07
+
+Inspect one CER2022 source, Zhao, Yu and Guo,
+DOI10.1016/j.chieco.2022.101829. LSE Research Online provides the accepted
+manuscript. This bounded China-focused economics lane concerns legal access,
+firms and regional market integration; it is not a journal-wide audit or
+field-top ranking. SPC circuit jurisdiction is distinct from provincial
+court personnel/budget management and administrative-case relocation.
+
+### Border development and firm exports — 2026-10-07
+
+Open a bounded Southern Economic Journal source lane for Sui, Islam, Du and
+Zhang2025, DOI10.1002/soej.12766. This peer-reviewed general-economics
+extension serves mainland regional development and firms; it is not a
+field-top designation, quartile claim or journal-wide audit. The publisher
+abstract establishes scope, not treatment coding or canonical admission.
+
+### Existing-railway upgrades and peripheral counties — 2026-10-07
+
+Inspect one JoEG2017 paper by Yu Qin, DOI10.1093/jeg/lbw013, through
+its public author-uploaded body. This is a bounded source within the existing
+JoEG lane, not a journal-wide completion claim. Existing-line upgrades and
+county bypass differ from the dedicated-new-line market-access record.
+
+### Industrial organization / platform market reach — 2026-10-07
+
+Inspect one IJIO2014 source, Cai, Jin, Liu and Zhou,
+DOI10.1016/j.ijindorg.2014.03.002, through the final paper linked by
+https://chongliu.weebly.com/research.html. This bounded industrial-organization
+extension concerns Chinese online sellers' geographic market expansion.
+It is not a journal-wide audit or numerical ranking claim. Separate the
+platform-wide feedback introduction from endogenous seller reputation and
+resolve mainland geography and institutional corroboration before admission.
+
+### Corporate tax-base and innovation source — 2026-10-07
+
+Screen one JCE2019 paper by Shao and Xiao,
+DOI10.1016/j.jce.2019.02.005. The Nanjing University author publication
+page confirms its identity; the indexed abstract motivates follow-up on
+mainland firm innovation. This is a single-paper comparative-economics
+extension, not a journal-wide audit or a field-top ranking claim. Publisher
+body access currently returns403. Preserve the source as a candidate rather
+than treating its abstract as a recovered treatment construction.
+
+### Ownership-based R&D deduction extension — 2026-10-07
+
+Inspect one JCE2024 source, Liu, Qiu, Wei and Zhan,
+DOI10.1016/j.jce.2023.11.004. The author research page
+https://zhanchaoqun.github.io/research.html links its final24-page paper.
+This bounded comparative-economics source concerns mainland manufacturers'
+innovation incentives, not a field-top designation or journal-wide audit.
+Its2003 ownership eligibility expansion must be distinguished from the
+existing2008 HNTE notch and the2006 removal of the growth condition.
+
+### Procurement regulation and industrial allocation extension — 2026-10-07
+
+Open one bounded JEBO2023 source, Hang and Zhan,
+DOI10.1016/j.jebo.2023.10.014, on mainland manufacturing and government
+procurement regulation. The author research page
+https://zhanchaoqun.github.io/research.html links the final published paper.
+This is a peer-reviewed general-economics extension serving firm allocation,
+not a claim that JEBO is a regional field-top or a journal-wide audit. No
+quartile or UTD label is assigned. Inspect the2003 legal reform separately
+from the industry's survey-measured procurement dependence before admission.
+
+### Airport-governance regional-development extension — 2026-10-07
+
+One bounded Journal of Asian Economics2024 source, Liang and Zou,
+DOI10.1016/j.asieco.2023.101681, opens a peer-reviewed regional/firm
+development lane outside the five field-top journals. Publisher metadata
+establishes volume90, article101681; no field-top, SSCI-quartile or UTD claim
+is made. Source access includes an author-uploaded2020 preprint, whose
+coding must not be substituted silently for the final paper. This lane
+studies transfer of existing airport control, distinct from the recorded
+airport network expansion. One paper screen is not a journal-wide audit;
+source/version and disposition are preserved in the expansion ledger.
+
+### Electricity industrial-organization extension — 2026-10-07
+
+A bounded Journal of Industrial Economics source, Gao and Van Biesebroeck
+2014, DOI10.1111/joie.12034, concerns mainland generation restructuring and
+firm factor demand. This is an industrial-organization outlet extension,
+not another regional field-top designation or a journal-wide audit. The
+final article is openly available at PMC4809436; the original reform plan
+is reproduced by the National Energy Administration. Screen the paper's
+fixed2002 ownership exposure separately from legal SPC asset assignment.
+No ranking or quartile assertion is needed for this one-source lane.
+
+### Historical industrial-development extension — 2026-10-07
+
+Open a bounded Journal of Economic History source lane for Liu2020,
+DOI10.1017/S0022050719000858, not a journal-wide coverage claim. The primary
+Cambridge issue identifies a peer-reviewed economic-history article; the
+author's research page supplies final body/appendix links, and the paper
+cites its JEH replication deposit DOI10.3886/E115822V1. This extension serves
+mainland regional industrial development and firm entry through an external
+trade interruption. It asserts no SSCI quartile or ranking and does not
+replace the five field-top lanes. Screen/resolve provenance belongs in
+the expansion source ledger and task state.
+
+### Development-zone rectification source extension — 2026-10-07
+
+Open a one-paper Journal of the Asia Pacific Economy lane for Luo et al.2015,
+DOI10.1080/13547860.2015.1054171, on mainland industrial productivity and
+spatial spillovers. This is a published regional-development source, not a
+field-top designation, quartile assertion or journal-wide coverage audit.
+The question is whether the paper actually encodes the2003–2006 rectification
+as a recoverable comparison distinct from zone establishment or upgrading.
+The NBER2019 working paper26148 is an auxiliary closure lead, not a verified
+published version of this article. Keep the two papers and their populations
+separate. Access and disposition belong in the expansion source ledger.
+
+### Business-relief public-economics source extension — 2026-10-07
+
+Open one International Tax and Public Finance source, Cui, Hicks and Norton2022,
+DOI10.1007/s10797-022-09746-w. The publisher identifies it as Policy Watch;
+PMC9362103 provides the final body. This tax-policy outlet is not a financial-
+markets collection lane or a field-top ranking claim. Screen whether its
+mainland enterprise relief analysis uses an observed policy contrast or only
+simulates benefit incidence from pre-reform records; the latter can inform
+institutional reasoning without becoming another ready causal variation.
+
+### Selective industrial support extension — 2026-10-07
+
+Open one Economic Systems2024 source, Ge, Zhu, Chen and Huang,
+DOI10.1016/j.ecosys.2024.101191, on2009 industrial revitalization plans and
+listed-enterprise capacity utilization. The publisher identifies volume48(3),
+and the author's university page confirms the publication. This is an industrial
+and development-economics source pass, not a field-top designation or independent
+verification of a university-listed journal ranking. Actual supported-industry
+coding and plan boundaries require body inspection before admission.
+
+### SME certification industrial-development extension — 2026-10-07
+
+Open a bounded Structural Change and Economic Dynamics76(2026):152-170
+source, Wang and Wei, DOI10.1016/j.strueco.2025.12.005. This is a firm
+productivity and innovation lane outside the regional field-top outlets,
+not a ranking claim or journal-wide audit. National Little-Giant certification
+must be distinguished from provincial SRDI and separately selected funding.
+The full research application still requires inspection; source access and
+disposition are preserved in the expansion ledger.
+
+### Bureaucratic incentives and firm investment source — 2026-10-07
+
+One Economic Journal source, DOI10.1093/ej/ueaf126, is screened for
+recoverable firm-development variation. This is a one-article general-economics
+extension, not a journal-wide coverage or ranking claim. The expansion ledger
+distinguishes empirical proxies from demonstrated causal assignment.
+
+### County e-commerce entrepreneurial-development source — 2026-10-07
+
+Screen one China & World Economy34(2),2026 article, DOI10.1111/cwe.70018,
+on county/household entrepreneurship under the rural e-commerce comprehensive
+demonstration policy. This is a bounded entrepreneurial-development source,
+not a ranking or journal-wide audit; a rural sample is not itself agriculture-
+led. The expansion ledger keeps competitive county selection distinct from
+city designation and private-platform experiments.
+
+### Resource-exhausted-city industrial-development source — 2026-10-07
+
+Open one Kyklos78(4),2025 paper, DOI10.1111/kykl.12467, on industrial
+transformation under resource-exhausted-city support. This bounded general-
+economics source extension is not a field-top ranking or journal-wide audit.
+Screen by actual GDP/industry outcomes rather than a sustainability title;
+preserve mixed administrative scopes and prior support in the expansion ledger.
+
+### Cultural-system regional-development source — 2026-10-07
+
+Screen one Journal of Asian Economics76(2021) article,
+DOI10.1016/j.asieco.2021.101365, within the mainland regional-development
+lane. This bounded source extension is not a field-top ranking claim or a
+journal-wide audit. The expansion ledger preserves the access and institutional
+boundaries before any canonical publication.
+
+### AI manufacturing-upgrading source — 2026-10-07
+
+One Economic Analysis and Policy93(2026) source,
+DOI10.1016/j.eap.2026.08.068, extends the existing expansion's mainland
+firm/innovation lane. Its question is manufacturing intelligent upgrading,
+not environmental outcomes or financial allocation. This is one bounded
+article pass; the expansion ledger preserves designated-location exposure
+versus actual firm adoption and remaining paper-evidence gaps.
+
+### Historical railway industrial-development source — 2026-10-07
+
+One Journal of Development Economics182(2026) source,
+DOI10.1016/j.jdeveco.2026.103827, extends mainland historical industrial
+entry and transport-access coverage. This is a bounded article pass, not
+a journal-wide audit. The expansion ledger distinguishes actual railway
+exposure from simulated-network instruments and records full-methods gaps.
+
+### Return-migrant entrepreneurship source — 2026-10-07
+
+One Journal of Asian Economics105(2026) source, DOI10.1016/j.asieco.2026.102225,
+extends the county-development and firm-entry lane. Its research object is
+enterprise entry/survival, not agriculture-led production or a financial-
+markets question. This is a bounded article pass, not a journal-wide audit;
+the expansion ledger preserves policy-identity and research-application gaps.
+
+### Economic-zone enterprise-competition source — 2026-10-07
+
+One World Development2025 source, DOI10.1016/j.worlddev.2025.106971, is
+screened within the development/firm lane. This bounded article pass is not
+a journal-wide audit or field-top ranking claim. Zone establishment requires
+identity reconciliation with existing park cases before any new count; access
+and next evidence decisions are preserved in the expansion ledger.
+
+### Village e-commerce experimental access source — 2026-10-07
+
+One bounded AER: Insights source, DOI10.1257/aeri.20190382, extends the
+development/market-access lane. This is an article-level pass, not journal-wide
+coverage or a ranking assertion. The expansion ledger distinguishes village
+randomization from county demonstration designation and preserves follow-up
+evidence needs; the rural consumption question is not agriculture-led.
+
+### Provincial road expansion and firm competition source — 2026-10-07
+
+One bounded JDE162(2023) source, DOI10.1016/j.jdeveco.2023.103050,
+extends the existing regional-development and industrial-allocation lane.
+This is an article-level pass, not new journal-wide coverage. Full methods
+and identity reconciliation are needed before treating its transport-reliance
+interaction as a distinct usable variation; screening is preserved in the
+expansion ledger.
+
+### Anti-Monopoly Law firm-competition source — 2026-10-07
+
+One bounded Journal of Asian Economics102(2026) source,
+DOI10.1016/j.asieco.2025.102086, extends the existing firm-development lane.
+The journal is an already-used expansion outlet, not relabelled a field-top.
+This article pass retains a candidate for full-methods resolution; it does
+not certify a journal-wide audit or establish assigned firm exposure.
+
+### Government-office relocation source — 2026-10-07
+
+One bounded Economic Analysis and Policy source,
+DOI10.1016/j.eap.2026.08.062, extends the urban spatial-allocation lane.
+This is an article-level access screen, not a journal ranking or archive audit.
+The expansion ledger preserves the inaccessible-methods disposition and the
+need to distinguish a relocation event from existing Beijing announcements
+and broader noncapital-function relief. No new canonical is implied.
+
+### Circuit-court enterprise-litigation source — 2026-10-07
+
+One bounded Journal of Public Economics257(2026) source,
+DOI10.1016/j.jpubeco.2026.105615, extends the development/firm institutional
+lane. JPubE is a public-economics field journal, not one of the five regional-
+urban field-top lanes. This article-level pass does not audit its archive.
+The expansion ledger preserves actual manuscript access and a material
+jurisdiction-timing discrepancy before canonical admission.
+
+### IP judicial-jurisdiction firm-innovation source — 2026-10-07
+
+Screen one China Economic Review87(2024) paper, DOI10.1016/j.chieco.2024.102240,
+within the existing CER expansion. It is a firm-innovation and regional legal-
+institution source, not a new financial collection lane. Reconcile its actual
+assignment with the existing IP-courts record before counting another variation.
+
 Campaign switched from the general-economics five-journal target on **2026-08-11**. All five field-top lanes are **in progress**; no lane inherits the old campaign’s “audited” status. The next bounded work should rotate through JUE, RSUE, JRS, JoEG, and EG, while first closing already queued China candidates when the doctor prioritizes them. The initial source inventories and every subsequent disposition belong in task and candidate provenance rather than in this map as a second ledger.
+
+### Second-class-road toll abolition source — 2026-10-07
+
+One bounded China Economic Quarterly / 经济学（季刊）2020 article,
+PKU record253820566, extends the regional-development and logistics lane.
+This is a Chinese economics-journal expansion source, not a regional field-top
+reclassification or journal-wide audit. The publisher identity and abstract
+establish a policy-use lead; actual methods remain required before admission.
+Keep government-repayment second-class-road toll abolition separate from
+expressway construction, provincial-border booth removal and pandemic relief.
+
+### Intermodal competition and route price regulation — 2026-10-07
+
+One bounded 世界经济42(3),2019,168–192 source extends the mainland
+industrial/regional competition lane. This Chinese economics-journal
+expansion is an article pass, not a field-top reclassification or journal-wide
+audit. The expansion ledger preserves actual full-scan access and the need
+to distinguish regulatory selection from causal effects of deregulation.

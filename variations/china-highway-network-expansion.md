@@ -11,7 +11,7 @@ aliases:
 
 status: extracted
 provenance:
-  task_id: task-5d358bdce231
+  task_id: task-a7f56c1796ad
 scope:
   country: China
   regions:
@@ -42,7 +42,7 @@ timeline:
   implementation_end: 2007
   local_timing: '[E4, reported claim] Ministry issuance in 1993 is not a county-level treatment date. [E1, reported claim] Segments are classified as opening before mid-1997, mid-1997 through end-2003, or after 2003; treatment is connection by end-2003. [E5, verified] National substantial connection in 2007 coexisted with finishing work scheduled for 2008; neither supplies county opening dates.'
   anticipation: '[E1, reported claim] The paper documents that connected peripheral counties were initially larger, richer, more urbanized, and more industrialized, so it does not assume actual route placement was random.'
-  last_verified: '2026-10-05'
+  last_verified: '2026-10-07'
 assignment:
   unit: Historically consistent county-level administrative unit
   treated: '[E1, reported claim] Non-targeted peripheral county with any part within 10 km of an NTHS segment opened to traffic by end-2003.'
@@ -274,6 +274,15 @@ evidence:
   verification_status: verified
   access_level: official-document
   locator: 'Part III(2), item 2 on industrial/transport/water-project land, transport paragraph listing the five vertical and seven horizontal corridors and prioritizing infrastructure land. Inspected actual HTML October 5, 2026. The webpage dates its Ministry of Land Resources reproduction December 19, 2007; this is not original adoption or effectiveness. Planning horizon is not publication, effective or county treatment date.'
+- id: E8
+  source_type: implementation-document
+  citation: 'Ministry of Communications. 关于印发公路水路交通十五发展计划的通知, July 6, 2001; full text reproduced by Shanghai Shipping Exchange, November 19, 2001.'
+  url: https://info.chineseshipping.com.cn/cninfo/LawsRule/LandTransportation/200111/t20011119_1161990.shtml
+  date: '2001-07-06'
+  supports: [identity.implementation_regime, timeline.local_timing]
+  verification_status: verified
+  access_level: official-document
+  locator: 'Full Ministry notice and plan read 2026-10-07 on a Ministry government-support website credited to Shanghai Shipping Exchange. Section I(1) reports 18,000 km completed by 2000; III(3) targets 26,000 km by 2005; IV(1)(1) names priority corridors and partially completed routes. This is an identifiable reproduced 2001 implementation plan, not original 1992/1993 target-node provisions or proof of realized county opening.'
 design_applications:
 - paper: 'Trade Integration, Market Size, and Industrialization: Evidence from China''s National Trunk Highway System'
   doi: 10.1093/restud/rdu010
@@ -345,3 +354,18 @@ The land-use outline names the twelve corridors and prioritizes land for their
 construction, but supplies neither county opening cohorts nor a complete target
 node list. [E7, verified] These sources strengthen implementation context;
 the original node-selection and paper-used county-exposure gaps remain.
+
+The October 7 audit adds the contemporaneous 2001 development plan. Its
+reported end-2000 stock and end-2005 construction target are distinct from
+realized openings. Named corridor priorities also show why the application's
+end-2003 exposure cannot be inferred from a national completion year or a
+common 1992 post indicator. The reproduction carries the Ministry's July 6
+notice date; the November website date is not policy commencement. [E8]
+
+This plan does not resolve the original node criterion. Later descriptions
+of connections or the 2004 successor's wider city coverage cannot independently
+verify the paper's above-500,000 urban-registered-population node set. A Chinese
+court-hosted three-stage planning lead could not be inspected because HTTPS
+retrieval failed; it contributes no verified claim. Reopen the assignment gap
+with the original plan or an independently documented node inventory, not
+another aggregate completion retrospective. Maturity remains extracted.
