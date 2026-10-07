@@ -262,9 +262,9 @@ The [collection map](sources/fieldtop-china-regional-urban-coverage.md) records 
 
 ## Why is it suited to agents and continued accumulation?
 
-<p align="center"><a href="assets/econ-variation-workflow-zh.png"><img src="assets/econ-variation-workflow-zh.png" alt="Workflow: collect, verify and preserve knowledge from papers and policy sources, then compare variations against a research question and available data" width="100%"></a></p>
+<p align="center"><a href="assets/econ-variation-workflow-en.png"><img src="assets/econ-variation-workflow-en.png" alt="Workflow: collect, verify and preserve knowledge from papers and policy sources, then compare variations against a research question and available data" width="100%"></a></p>
 
-Papers and institutional sources provide leads and evidence. Once exposure, timing and comparison are established, the findings become reusable knowledge. Matching then considers your research question and available data to judge which variations fit. The labels are in Chinese; click to enlarge.
+Papers and institutional sources provide leads and evidence. Once exposure, timing and comparison are established, the findings become reusable knowledge. Matching then considers your research question and available data to judge which variations fit. Click to enlarge.
 
 AI-native means agents can both use and maintain the knowledge. Connected prose preserves institutional meaning and judgment; structured fields make that same knowledge searchable and comparable. A canonical record follows one specific change and its primary assignment mechanism. Distinct research applications keep separate requirements instead of turning every possible variable into a universal prerequisite.
 
