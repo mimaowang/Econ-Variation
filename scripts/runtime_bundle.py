@@ -7,7 +7,7 @@ import subprocess
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-RUNTIME_DIRS = {"variations", "sources", "state", "schema", "guides", "dist", "scripts"}
+RUNTIME_DIRS = {"variations", "sources", "state", "schema", "guides", "dist", "scripts", "assets"}
 RUNTIME_FILES = {"README.md", "AGENTS.md", "LICENSE", "SECURITY.md", "requirements.txt", ".gitignore"}
 
 

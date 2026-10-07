@@ -14,7 +14,8 @@ def test_runtime_membership_preserves_knowledge_and_excludes_development(monkeyp
     files = [
         "AGENTS.md", "requirements.txt", "scripts/setup.py", "scripts/task_queue.py",
         "variations/case.md", "sources/evidence.md", "state/tasks.jsonl", "schema/topics.yaml",
-        "dist/health.json", "guides/operations.md", "tests/test_queue.py",
+        "dist/health.json", "guides/operations.md", "assets/econ-variation-hero.png",
+        "tests/test_queue.py",
         "benchmarks/routing_cases.yaml", "requirements-dev.txt", "pyproject.toml",
         ".github/workflows/validate.yml", "docs/superpowers/specs/design.md", "evbase2/private.txt",
     ]
@@ -22,7 +23,7 @@ def test_runtime_membership_preserves_knowledge_and_excludes_development(monkeyp
         a, 0, stdout="\0".join(files).encode("utf-8"),
     ))
     paths = runtime_bundle.runtime_paths(tmp_path)
-    assert paths == sorted(files[:10])
+    assert paths == sorted(files[:11])
     for name in files:
         target = tmp_path / name
         target.parent.mkdir(parents=True, exist_ok=True)

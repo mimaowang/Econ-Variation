@@ -11,6 +11,8 @@
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
 
+<p align="center"><img src="assets/econ-variation-hero.png" alt="Evidence and accumulated variation knowledge connect with a research idea" width="75%"></p>
+
 ## 简体中文
 
 这是一个供经济学研究者和学生使用的开源知识库，帮助 agent 持续查证、积累经济学研究中的外生冲击与政策冲击，并为具体研究 idea 匹配合适的 variation。下载项目，在 Codex、Claude Code 等工具中，用你的 agent 打开项目文件夹，告诉它你想研究什么、有哪些数据，或希望积累哪个方向的知识，就能开始。
@@ -74,6 +76,10 @@
 [收集地图](sources/fieldtop-china-regional-urban-coverage.md)记录当前收集方向和期刊范围。高质量期刊帮助发现有价值的材料，不替代证据核验；当前作者的收集重点，也不要求每位用户重复同一轮收集或删除范围外的已有知识。
 
 ## 为什么适合 agent 使用和持续积累？
+
+<p align="center"><a href="assets/econ-variation-workflow-zh.png"><img src="assets/econ-variation-workflow-zh.png" alt="项目工作流程：从论文和政策资料中收集、查证和保存知识，再结合研究问题与已有数据比较合适的 variation" width="100%"></a></p>
+
+论文和政策资料提供线索与证据；查清影响对象、时间和比较方式后，保存为可复用的知识。匹配时再结合你的研究问题与已有数据，判断哪些 variation 合适。点击图片可放大查看。
 
 这里的“AI 原生”，指 agent 既能使用知识，也能查证、补充和维护知识。文字说明保存制度含义与判断理由，结构化字段帮助检索和比较；两者描述同一件事，而不是让自然语言迁就一套僵硬格式。一条正式记录围绕一个具体变化及其主要分配机制；同一变化用于不同研究时，各自的数据要求分开保存，避免把所有可能用到的变量都变成必需项。
 
@@ -192,6 +198,8 @@ python -m pip install -r requirements-dev.txt
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-2da44e"></a>
 </p>
 
+<p align="center"><img src="assets/econ-variation-hero.png" alt="Evidence and accumulated variation knowledge connect with a research idea" width="75%"></p>
+
 Econ-Variation is an open knowledge base for economics researchers and students. Your agent can verify and accumulate knowledge of exogenous and policy shocks used in economics research, then compare which variations fit a specific research idea. Download the repository, open its folder in Codex, Claude Code or another coding agent, and describe your question and available data—or the research area you want to build knowledge about.
 
 A **variation is a change that affects people, firms or places differently, creating a comparison for research**. Records preserve more than policy names and paper links: who is exposed, when, how treatment and comparison are constructed, what data are needed, and when the design may fail. The existing collection focuses on China. Its purpose is to make the reasoning reusable by the next researcher or agent, without repeating the original search.
@@ -253,6 +261,10 @@ Browse [variations/](variations/) and the dated [health snapshot](dist/health.js
 The [collection map](sources/fieldtop-china-regional-urban-coverage.md) records current priorities and journal scope. Publication quality helps discovery, not evidence certification. The author's campaign does not require every user to repeat it or remove existing knowledge outside its focus.
 
 ## Why is it suited to agents and continued accumulation?
+
+<p align="center"><a href="assets/econ-variation-workflow-zh.png"><img src="assets/econ-variation-workflow-zh.png" alt="Workflow: collect, verify and preserve knowledge from papers and policy sources, then compare variations against a research question and available data" width="100%"></a></p>
+
+Papers and institutional sources provide leads and evidence. Once exposure, timing and comparison are established, the findings become reusable knowledge. Matching then considers your research question and available data to judge which variations fit. The labels are in Chinese; click to enlarge.
 
 AI-native means agents can both use and maintain the knowledge. Connected prose preserves institutional meaning and judgment; structured fields make that same knowledge searchable and comparable. A canonical record follows one specific change and its primary assignment mechanism. Distinct research applications keep separate requirements instead of turning every possible variable into a universal prerequisite.
 

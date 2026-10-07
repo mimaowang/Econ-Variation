@@ -9,3 +9,6 @@ state/.*.lock
 /.venv/
 /.tmp_*
 /.tmptest/
+
+# Local figure sources and drafts; only README images are published.
+/_artwork/
